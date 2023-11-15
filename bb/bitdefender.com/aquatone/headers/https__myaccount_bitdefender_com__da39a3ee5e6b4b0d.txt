@@ -1,0 +1,18 @@
+200 OK
+X-Frame-Options: DENY
+Retry-Count: 0
+Cf-Access-Domain: myaccount.bitdefender.com
+Cf-Version: 1396-cf2959b
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Date: Thu, 23 Mar 2023 14:59:52 GMT
+Content-Type: text/html
+Access-Control-Allow-Credentials: true
+Server: cloudflare
+Access-Control-Allow-Origin: null
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Security-Policy: frame-ancestors 'none'; connect-src 'self' http://127.0.0.1:*; default-src https: 'unsafe-inline'
+Vary: Accept-Encoding
+Cf-Ray: 7ac78a5f1cf22e83-BOM
+Set-Cookie: CF_Session=n9Ej9nI2x8Upa8Fi4; Path=/; Secure; Expires=Thu, 23 Mar 2023 18:59:52 GMT; HttpOnly; SameSite=none

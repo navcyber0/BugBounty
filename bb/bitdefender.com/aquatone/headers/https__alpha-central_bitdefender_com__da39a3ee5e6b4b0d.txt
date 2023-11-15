@@ -1,0 +1,20 @@
+200 OK
+Strict-Transport-Security: max-age=3600; includeSubDomains
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://connect.facebook.net/signals/config/ https://connect.facebook.net/signals/plugins/identity.js https://static.ads-twitter.com/uwt.js https://connect.facebook.net/en_US/fbevents.js https://www.paypal.com/tagmanager/ https://www.paypal.com/sdk/ https://checkoutshopper-live.adyen.com/checkoutshopper/ https://script.hotjar.com/ https://static.hotjar.com/ https://assets.adobedtm.com/ https://cdn.livechatinc.com/ https://consent.cookiebot.com/ https://checkout-service-venus.checkout-app.nmbapp.net https://checkout-sdk.bitdefender.com/ https://checkout-sdk-stage.checkout-app.nmbapp.net/ https://sstats.bitdefender.com/ https://cdn.scarabresearch.com/ https://static.scarabresearch.com/ https://consentcdn.cookiebot.com/ https://maps.googleapis.com/ https://fls.doubleclick.net/ https://api.livechatinc.com/; connect-src 'self' https://push-hello.bitdefender.com/ https://www.paypal.com/xoplatform/logger/api/ https://checkoutshopper-live.adyen.com/checkoutshopper/ https://connect-nimbus.bitdefender.net/ https://staging.push.bitdefender.net/ https://in.hotjar.com/api/ https://starget.bitdefender.com/ https://mboxedge37.tt.omtrdc.net https://bitdefender.tt.omtrdc.net https://beta.nimbus.bitdefender.net/ https://nimbus.bitdefender.net/ https://connect.nimbus.bitdefender.net/ https://catch-nimbus.bitdefender.net https://beta.push.bitdefender.net/ https://push.bitdefender.net/ https://consentcdn.cookiebot.com/ https://recommender.scarabresearch.com/ https://recommender-eu.scarabresearch.com/ https://webchannel-content-service.scarabresearch.com/ https://sstats.bitdefender.com/ https://checkout-service.bitdefender.com/ https://checkout-sdk.bitdefender.com/ https://dpm.demdex.net/ https://maps.googleapis.com/ *.kdn.bitdefender.net/; img-src https: data:; style-src 'self' 'unsafe-inline' https://static-hello.bitdefender.com/ https://checkoutshopper-live.adyen.com/checkoutshopper/ https://checkout-sdk.bitdefender.com/ https://fonts.googleapis.com/; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com/; object-src 'none'; frame-ancestors 'self' https://v2.central.bitdefender.com/ https://beta-central.bitdefender.com/; worker-src 'none'; child-src 'none'; frame-src 'self' mailto: tel: https://bitdefender.identityforce.com/ https://secureiis.stage.ezstest.com/ https://bitdefender-rakf6ypxhkjmq4ys8xe5mekepc.stage-alt.ezstest.com/app/ https://nimbus.bitdefender.net/ https://beta.nimbus.bitdefender.net/ https://www.paypal.com/ https://checkoutshopper-live.adyen.com/checkoutshopper/ https://bitdefender.test-cgw.ezshield.net/ https://bitdefender.stage.ezstest.com/ https://vars.hotjar.com/ https://consentcdn.cookiebot.com/ https://push-hello.bitdefender.com/ https://www.youtube.com/ https://store.bitdefender.com/ https://bitdefender.demdex.net/ https://secure.livechatinc.com/; upgrade-insecure-requests; base-uri 'self'; form-action 'self'
+Cf-Cache-Status: DYNAMIC
+Retry-Count: 0
+Last-Modified: Tue, 21 Mar 2023 09:26:21 GMT
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+X-Xss-Protection: 1; mode=block
+Server: cloudflare
+Etag: W/"6419783d-aba"
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache,public
+Via: 1.1 google
+Vary: Accept-Encoding
+X-Content-Type-Options: : nosniff
+Referrer-Policy: origin
+Set-Cookie: __cflb=02DiuE2cXGogmYbkaJmgLi4iH77arrZ1q4up5YA2TPgzp; SameSite=Lax; path=/; expires=Fri, 24-Mar-23 14:00:54 GMT; HttpOnly
+Cf-Ray: 7ac78beeadba8549-BOM
+Date: Thu, 23 Mar 2023 15:00:54 GMT
+Content-Type: text/html

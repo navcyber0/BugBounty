@@ -1,0 +1,25 @@
+200 OK
+Set-Cookie: ikea_geo=reserved; path=/fr/fr/; secure bm_sz=F6B58EFD252FE597C82CFF1F488A8B91~YAAQbQosFzHFXnqJAQAAWgQYgRQGSVBYw6nozx/wrUmizh8dPp4hV/9Cv7zXVYM06yqQUs5HtZHTNyFHdLwUiX+W64i1a4cWsLx5nM7634uD01lHfbTSxVFq+wubk7JNsL+2XZZJWPHkZIi3depP+rg7pEVBGgZt69QUCin572DKXC2PMvaSDNvp4xA4bSIPVc1MVcH/NavfS2f2vW8G4RNvs1splBWSJiZWq7evlptH5F65R0sBvVlsmJ0ZjcU4jShxXUsqnSKH1oks4U8Oq9+LEy0/sUPir7VcoBnQ3ewL~3618873~3617333; Domain=.ikea.com; Path=/; Expires=Sun, 23 Jul 2023 08:53:02 GMT; Max-Age=14400 _abck=5320A193AA5C022E77AA7DF13FC9140B~-1~YAAQbQosFzDFXnqJAQAAWgQYgQqisW5YIkw+L0wUGUkSEAUcxOfS95gnWgn32BjaMJlPVm/iuL8BH5+B7IzG7xAanMVnAC0DXHAB4XBzBER+2PLUPA3BO+CSvZi+/5TI6E4QUq9fn5uPUqntHtjJ5hzG1CrKc/ak9uaNcwIBpKfiMZ+K63ut5u0BbqiOqerbrijLjdY//P760SbLmgmMRa5tdvvuJ12QDDBvKanjbYdk0h2tOVpXP+MDAZH0P2/hj1yoXHy+ekcl/xcv7tJ2PXOl4hVWuT0tt/BwKCETCaSCiYUapJE6QXSKHczTL8scYsoH2VIuFmw4TZmdoSZkexhann+tMwONmXJxHnXIsfsZ5o4F1eK3dXWmuQ==~-1~-1~1690091524; Domain=.ikea.com; Path=/; Expires=Mon, 22 Jul 2024 04:53:02 GMT; Max-Age=31536000; Secure
+X-Amz-Version-Id: 5rdqke8cvFP9u2uKXSXlwx4T9Y76dppP
+X-Amz-Meta-Md5: 8f28bbd6dea307b087e59faf4d6ae3d0
+Expires: Sun, 23 Jul 2023 05:08:02 GMT
+X-Amz-Replication-Status: PENDING
+Server-Timing: edge; dur=1 cdn-cache; desc=HIT ak_p; desc="469468_388762221_73832483_39_13957_5_-_-";dur=1
+Vary: Accept-Encoding
+Date: Sun, 23 Jul 2023 04:53:02 GMT
+Server: IKEA Server
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' *.ikea.com *.ikea.net api.addressy.com google.com *.google.com *.gstatic.com www.youtube-nocookie.com www.youtube.com blob: data: prod-cmp-latency.edgecompute.app gooh.site https://storage.googleapis.com/learnwithikeavideos/ *.ingka.com *.cdtapps.com *.ctfassets.net cdn.dimma.ingka.dev *.ipex-insights.com *.taskrabbit.com acdn.adnxs.com secure.adnxs.com *.adform.net insight.adsrvr.org js.adsrvr.org *.bing.com *.criteo.net *.criteo.com *.doubleclick.net googleads.g.doubleclick.net *.facebook.com *.facebook.net www.googleadservices.com *.googlesyndication.com cdnapisec.kaltura.com s.kmtx.io t.kmtx.io act-eu.rd.linksynergy.com nxtck.com fo-api.omnitagjs.com amplify.outbrain.com tr.outbrain.com *.pinterest.com s.pinimg.com api.pinpiaa.com intljs.rmtag.com *.snapchat.com *.teads.tv cdn.v3ty.com *.yimg.com *.cookielaw.org *.onetrust.com *.akamaihd.net *.akstat.io *.appdynamics.com *.eum-appdynamics.com *.contentsquare.net app.contentsquare.com www.googletagmanager.com *.go-mpulse.net *.optimizely.com sentry.io *.sentry.io *.techlab-cdn.com *.avo.app oppwa.com *.oppwa.com mpsnare.iesnare.com *.iesnare.com icsp.ingka.ikea.com wss://icsp.ingka.ikea.com maps.googleapis.com fonts.googleapis.com www.googleapis.com *.bambuser.com firestore.googleapis.com liveshopping-widgets.firebaseapp.com; img-src * blob: data:; frame-src *; frame-ancestors *.ikea.com; object-src 'self'; report-uri https://csp.ikea.com
+X-Amz-Meta-Esi: true
+X-Amz-Server-Side-Encryption: AES256
+Strict-Transport-Security: max-age=31536000
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Etag: "8f28bbd6dea307b087e59faf4d6ae3d0"
+X-Amz-Request-Id: 2GTCHRPV838HH322
+X-Akamai-Transformed: 9 164661 0 pmb=mTOE,1
+X-Amz-Id-2: o41ANXAFt934jll2P7qRPvQUFp0OeIUEgLG84cs+Ln7uak9iFENaB7mnMTCuURhQ+48hJSjcG5g=
+Permissions-Policy: interest-cohort=()
+X-Amz-Meta-Prioritized: false
+X-Amz-Tagging-Count: 2
+Cache-Control: private, max-age=900

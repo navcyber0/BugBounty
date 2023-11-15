@@ -1,0 +1,18 @@
+200 OK
+X-Xss-Protection: 0
+Content-Type: text/html; charset=utf-8
+X-Github-Request-Id: 542fc1ad-bc9c-49ce-a296-745086ac6459
+X-Frame-Options: deny
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src git.build.inter.ikea.com/assets-cdn/worker/ gist.git.build.inter.ikea.com/assets-cdn/worker/; connect-src 'self' uploads.git.build.inter.ikea.com media.git.build.inter.ikea.com www.githubstatus.com raw.git.build.inter.ikea.com git.build.inter.ikea.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://git.build.inter.ikea.com; font-src assets.git.build.inter.ikea.com; form-action 'self' git.build.inter.ikea.com gist.git.build.inter.ikea.com pages.git.build.inter.ikea.com; frame-ancestors 'none'; frame-src viewscreen.git.build.inter.ikea.com notebooks.git.build.inter.ikea.com; img-src * data:; manifest-src 'self'; media-src media.git.build.inter.ikea.com; script-src assets.git.build.inter.ikea.com; style-src 'unsafe-inline' assets.git.build.inter.ikea.com; worker-src git.build.inter.ikea.com/assets-cdn/worker/ gist.git.build.inter.ikea.com/assets-cdn/worker/
+Server: GitHub.com
+Set-Cookie: saml_csrf_token=BhM3xLKOUT1GknxdIXsmXTZ25R02PLQ7pN9xtlgZ3nef7OYbZqYSLjgRzs2iN-zf_BLFV1PayYzbN1obuaNQ27liK3d-tYSHyrU1emheyZs; path=/; secure; HttpOnly; SameSite=None saml_csrf_token_legacy=BhM3xLKOUT1GknxdIXsmXTZ25R02PLQ7pN9xtlgZ3nef7OYbZqYSLjgRzs2iN-zf_BLFV1PayYzbN1obuaNQ27liK3d-tYSHyrU1emheyZs; path=/; secure; HttpOnly logged_in=no; domain=git.build.inter.ikea.com; path=/; expires=Tue, 23 Jul 2024 01:08:36 GMT; secure; HttpOnly; SameSite=Lax _fi_sess=SCCaaaAfvheeaI9FXJDvg0WmzOQJeZxBCUluONv0yfVtTk%2FbeK6pZa86WIOzNlC2AGkMQyj07veIOuAgCbTGS6Fogmq7%2BNgf1L%2Bf%2FKF2vcPfk4rkMI2jVWUSam5HZjt74xtpFc6dpFq9OvefSEQwVIZDYWPgHarvhutH0Re%2F12E%3D--R4PCLZN%2B%2FdPgiDtj--MmMObZA6OrNwJ%2BAlbIBjcA%3D%3D; path=/; secure; HttpOnly; SameSite=Lax
+Etag: W/"2551f59623493d85d8ec270ece677752"
+Date: Sun, 23 Jul 2023 01:08:36 GMT
+X-Runtime: 0.049492
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Content-Type-Options: nosniff
+X-Runtime-Rack: 0.058535
+Retry-Count: 0
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame
+Cache-Control: no-store

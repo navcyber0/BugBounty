@@ -1,0 +1,13 @@
+200 OK
+Etag: "5aca3-5f816e414f398-gzip"
+Vary: Accept-Encoding
+X-Akamai-Transformed: 9 70312 0 pmb=mTOE,1
+Cache-Control: max-age=600
+X-Origin: green
+Strict-Transport-Security: max-age=600
+Content-Type: text/html
+Last-Modified: Thu, 30 Mar 2023 04:54:43 GMT
+Retry-Count: 0
+Set-Cookie: akacd_www_nab_com_au=3857614431~rv=74~id=d52bdcb32b6adfd83d630f6c2562dfc5; path=/;; Secure; SameSite=None
+Accept-Ranges: bytes
+Date: Thu, 30 Mar 2023 07:33:52 GMT

@@ -1,0 +1,21 @@
+404 Not Found
+Via: 1.1 2e90b79eb3e76e45725d5cbfc5281eae.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: BOM78-P6
+X-Amz-Cf-Id: c1RSVFqMaY1S_kU-pb8S81okNC2KXU2DBqrl5NPX5GmA13UV1L-DFw==
+Cf-Cache-Status: DYNAMIC
+Set-Cookie: __cf_bm=hrNoKv9rBKYLIC8ZAJflShL4NWpSbPk86TZh7mbViQk-1686748173-0-AUBurXO68fUkDtzh2ubJhxdgey+KPNNY9Z9olkxCLIU0HSpYLzuETRPBosBls9mPxoOwVBTYcc3n6K4+FEhrNcs=; path=/; expires=Wed, 14-Jun-23 13:39:33 GMT; domain=.just-eat.co.uk; HttpOnly; Secure; SameSite=None
+Retry-Count: 0
+Access-Control-Expose-Headers: X-Session-Id, X-CSRF-TOKEN
+X-Amzn-Remapped-Date: Wed, 14 Jun 2023 13:09:32 GMT
+X-Cache: Error from cloudfront
+Cf-Ray: 7d72cee8d9e51bc6-BOM
+Content-Type: text/html; charset=UTF-8
+Access-Control-Allow-Origin: *
+X-Amz-Apigw-Id: GgpSBHvwjoEF2ng=
+Cache-Control: max-age=3028, public, s-maxage=39028
+X-Amzn-Requestid: a9f6f342-2f55-4983-ab61-ed698478623c
+Server: cloudflare
+Date: Wed, 14 Jun 2023 13:09:33 GMT
+Strict-Transport-Security: max-age=0
+X-Powered-By: PHP/8.2.6
+X-Amzn-Trace-Id: Root=1-6489bc0c-192260193f571ceb6c043a11;Sampled=0;lineage=5a437216:0

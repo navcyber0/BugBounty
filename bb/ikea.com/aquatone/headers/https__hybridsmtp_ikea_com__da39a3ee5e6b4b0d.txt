@@ -1,0 +1,12 @@
+200 OK
+Date: Sun, 23 Jul 2023 01:13:19 GMT
+Cache-Control: no-cache, must-revalidate
+Vary: Accept-Encoding
+Age: 1084
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Accept-Ranges: bytes
+Server: BigIP
+X-Frame-Options: DENY
+Set-Cookie: MRHSession=deleted;expires=Thu, 01-Jan-1970 00:00:01 GMT;domain=email.ikea.com;path=/;secure;HttpOnly F5_ST=deleted;expires=Thu, 01-Jan-1970 00:00:01 GMT;domain=email.ikea.com;path=/;secure MRHSHint=deleted;expires=Thu, 01-Jan-1970 00:00:01 GMT;domain=email.ikea.com;path=/;secure F5_HT_shrinked=deleted;expires=Thu, 01-Jan-1970 00:00:01 GMT;domain=email.ikea.com;path=/;secure F5_fullWT=deleted;expires=Thu, 01-Jan-1970 00:00:01 GMT;domain=email.ikea.com;path=/;secure MRHSequence=deleted;expires=Thu, 01-Jan-1970 00:00:01 GMT;domain=email.ikea.com;path=/;secure
+Pragma: no-cache

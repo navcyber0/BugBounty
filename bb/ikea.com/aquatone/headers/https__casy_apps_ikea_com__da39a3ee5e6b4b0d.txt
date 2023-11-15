@@ -1,0 +1,6 @@
+200 OK
+Set-Cookie: iwad_control=00-dc8;Path=/;Domain=.apps.ikea.com iwad_channel=casy_________________;Path=/;Domain=.apps.ikea.com;Expires=Sun, 23 Jul 2023 03:09:34 GMT;Max-age=7200; iwad_urlmain=AAAAAAWK0ojFJLYIf68gFC9BX09HttTqK6aEiN+m9pcCU85hb6tKdm9c+TlFgsKN0d+Xi5YGbXsPv+A365VnRfE/IZGN;Path=/;Domain=.apps.ikea.com iwad_urltemp= ;Path=/;Domain=.apps.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_looping= ;Path=/;Domain=.apps.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_continue= ;Path=/;Domain=.apps.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT;
+Pragma: no-cache
+Retry-Count: 0
+Server: iWAD v6.2.0
+Cache-Control: no-cache

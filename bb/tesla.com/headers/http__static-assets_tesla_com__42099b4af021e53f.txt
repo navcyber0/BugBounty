@@ -1,0 +1,30 @@
+404 Not Found
+X-Tzla-Edge-Age: 120.000
+X-Origin-Age: 0
+X-Tzla-Edge-Keep: 86400.000
+Content-Type: text/html
+X-Tzla-Edge-Backend-Status: 404
+X-Tzla-Edge-Client-Req-Ttl: -1.000
+X-Tzla-Edge-Server: sjc38p1tegvr64.teslamotors.com
+Server: nginx/1.10.3
+X-Tzla-Edge-Grace: 60.000
+X-Tzla-Edge-Hostname-Vcl: static-assets.tesla
+X-Tzla-Edge-Backend-Fetch-If-Stale: false
+X-Varnish: 311439844
+X-Tzla-Edge-Cache: MISS
+Permissions-Policy: interest-cohort=()
+Cache-Control: max-age: 0s, must-revalidate
+X-Tzla-Edge-Backend-Ttfb: 0.000
+X-Tzla-Edge-Backend-Stream: false
+X-Tzla-Edge-Cache-Hits: 0
+X-Tzla-Edge-Backend-Retry: 0
+X-Tzla-Edge-Ttl: 120.000
+X-Tzla-Edge-Client-Restarts: 0
+X-Tzla-Edge-Backend-Reason: Not Found
+Date: Wed, 14 Jun 2023 13:49:40 GMT
+Strict-Transport-Security: max-age=15768000
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-Tzla-Edge-Backend-Conn-Time: 0.000

@@ -1,0 +1,38 @@
+200 OK
+Cache-Control: max-age=60s
+X-Tzla-Edge-Hostname-Vcl: checkout-ui-assets
+X-Tzla-Edge-Backend-Fetch-If-Stale: true
+X-Tzla-Edge-Client-Restarts: 0
+X-Edgeconnect-Origin-Mex-Latency: 945 475
+Access-Control-Allow-Methods: HEAD, GET
+X-Tzla-Edge-Backend-Reason: OK
+X-Varnish: 76772629 86910527
+Vary: Accept-Encoding
+X-Tzla-Edge-Backend-Retry: 0
+Content-Type: text/html; charset=utf-8
+X-Tzla-Edge-Backend-Ttfb: 0.000
+X-Tzla-Edge-Backend-Status: 200
+X-Tzla-Edge-Cache-Hits: 1
+Last-Modified: Thu, 08 Jun 2023 06:04:32 GMT
+X-Tzla-Edge-Grace: 86400.000
+X-Tzla-Edge-Backend-Conn-Time: 0.000
+X-Tzla-Edge-Ttl: -999.724
+X-Akamai-Transformed: 9 - 0 pmb=mRUM,1
+Date: Wed, 14 Jun 2023 13:52:33 GMT
+Server-Timing: cdn-cache; desc=REVALIDATE edge; dur=79 origin; dur=493 ak_p; desc="468541_388762182_790947040_57554_10107_5_-_-";dur=1
+Retry-Count: 0
+Access-Control-Allow-Origin: *
+X-Tzla-Edge-Client-Req-Ttl: -1.000
+X-Tzla-Edge-Grace-Backend-Unhealthy: 86400.000
+X-Tzla-Edge-Age: 60.000
+X-Content-Type-Options: nosniff
+X-Tzla-Edge-Cache-Hit: Graced_Hit
+Accept-Ranges: bytes
+X-Edgeconnect-Midmile-Rtt: 69 65
+Strict-Transport-Security: max-age=86400 ; includeSubDomains
+X-Tzla-Edge-Was-304: true
+X-Tzla-Edge-Backend-Stream: false
+X-Tzla-Edge-Server: sjc38p1tegvr65.teslamotors.com
+X-Frame-Options: SAMEORIGIN
+Pragma: no-cache
+Access-Control-Allow-Headers: *

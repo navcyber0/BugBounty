@@ -1,0 +1,6 @@
+200 OK
+Server: iWAD v6.2.0
+Pragma: no-cache
+Cache-Control: no-cache
+Set-Cookie: iwad_control=00-dc8;Path=/;Domain=.apps.ikea.com iwad_channel=spartacus____________;Path=/;Domain=.apps.ikea.com;Expires=Sun, 23 Jul 2023 03:06:52 GMT;Max-age=7200; iwad_urlmain=AAAAAAUVA8uO7kEM5SyCW/LZeh06kpmUJm38yI07zwYAJWyKL0tkPRtq2emcI+75WgJBxwlnRC0fBZHPkYwqXc+BZ37I;Path=/;Domain=.apps.ikea.com iwad_urltemp= ;Path=/;Domain=.apps.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_looping= ;Path=/;Domain=.apps.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_continue= ;Path=/;Domain=.apps.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT;
+Retry-Count: 0

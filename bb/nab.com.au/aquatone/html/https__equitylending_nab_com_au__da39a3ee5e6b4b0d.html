@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="expires" content="0" /><link href="App_Assets/css/desktop.css" rel="stylesheet" type="text/css" /><link href="App_Assets/components/chart/chart.css" rel="stylesheet" type="text/css" /><link href="App_Assets/components/datepick/jquery.datepick.css" rel="stylesheet" type="text/css" /><link href="App_Assets/components/selectric/selectric.css" rel="stylesheet" type="text/css" />
+    <!--[if lte IE 8]>
+    <link href="App_Assets/css/ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <script src="/App_Assets/scripts/jquery.min.js" type="text/javascript" language="javascript">
+
+</script><script src="/App_Assets/scripts/custom.min.js" type="text/javascript" language="javascript">
+
+</script><script src="/App_Assets/components/datepick/jquery.plugin.min.js" type="text/javascript" language="javascript">
+
+</script><script src="/App_Assets/components/datepick/jquery.datepick.min.js" type="text/javascript" language="javascript">
+
+</script><script src="/App_Assets/components/selectric/jquery.selectric.min.js" type="text/javascript" language="javascript">
+
+</script>
+	
+<meta name="keywords" /><meta name="description" /><title>
+	Login - NAB Equity Lending
+</title></head>
+<!-- Google Analytics -->
+<script type="text/javascript">
+    function getUrlVars() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33831338-1']);
+    var usertype = '';
+    if (usertype !== '') {
+        _gaq.push(['_setCustomVar',
+            1,          // This custom var is set to slot #1.  Required parameter.
+            'usertype', // The name acts as a kind of category for the user activity.  Required parameter.
+            usertype,   // This value of the custom variable.  Required parameter.
+            2           // Sets the scope to session-level.  Optional parameter.
+        ]);
+    }
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- -->
+<body>
+    <div id="container">
+        <form method="post" action="./Login.aspx?referrer=%2fdefault.aspx&amp;" id="aspnetForm" onkeypress="return submitFormByCorrectButton(event);">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="JA1jUsq2+3dXeAAbEakol1XvptqdycPoXqRWQnL5Vfun5PfT32MYR9Xl8dG6MAybxUx79zCo+s3kzvY40rPsQ9W59djBAeAuDCb2YM0dVmpUqvYL5/OIVt82MmXkbU55+0AGHxN0Oq2s93KXBSop7DCXN7kH0OyGPdRuT3BGOgiCKo11h/H705nOn+P6QCTFFGnJguYBqfhV1913AzW/Dov+kHfdSNwXurNn21TiBkRkt97Bvfy3+Y+fo1uMeCqEM8e+25aEo6ANa6yHGHq6zkgBVxUpLAC+RRG6pFPP9yWyw2cp8c1Jn4wFZcoe2pTM4/V2t+QBiOdoETgDxuWRoRWRCHGBRHneeqeveOjx1tE9fa3PKEu2irFtVxlaBnLwMK6G6LrCv8XMyeebRwDGlFrBcmuhN0+k2glb12gw9uLgvzGpHsMoKtvNRHw3JI+EBOm7cQenIAfuYE7Jj5wXWBrvpE1KXMxIt9Z8S7ATada4q7dcXxu1b9YTgjuWthlhGbQgqzWG0zX9gAhvdj2eNXrQQaSZ5ExJWCxzWcRjmzb9kKMLGgQzEz7rPbZpbS7CJOOCBT3JhqHk+IWJ248zfTj2MSXo1uX9I0mxcCYEq3r1j2ZEmyvRP9mYM1HSIRivfP9rgdS4Gtxhinmz7cVrYeNzAm7IIQiLkKuV6ZVpWtUVnbo4vL+tB84BUf5HxFo+clo1CxBqQNGbQYvW6lCk/1fuTZK6ywrBGokAw7nB6Koh4FN6OnF/SBepYbizsrp+P3pHQYXF/7MlhMba5/ER34Kcxq5/62mlaRvihxJXkNJjFoGQqt48zc16cL8OsL/YZp1Fi/wsMOd4e4rpKpR2t2H9EKo8FIRzIiJvcQWWxAnvD8YeekvGZDEsDTCNiOLwrzM2vPCGRShPRAJiPEUvCBDQW5EhwX6fpymr5nEskmKe7h5MyrqwyCazitky2dbMTEIOKRParHDcv/4ZXyLNupgP4rMhHlhs7Khw4w+2LmwLS+r+pTt5A8sIdc/8ME5A+HqYLB+xLei1566OnyThJUSXgqqgXViHv6VIC6Rll9M3FV+w/2rvWkFM/OlJsZUqB5frzW8KhY6ncy+nmMkaHi/3FDUX5MY0OKbIzPxoTeOZxtZ5s1DzBnCVagnI+5tPIEfpYCvNkO1fS+NDHPmGTlupXcoGV0J6rzOx1JT8rKPuSPLNjQnR38jfG8UrEihbpEO16RsKcPI5B7GDRkzaRvJ2G7AOE9sD64gRzbaRdpa9jcVgQGHVWip1Cw48WqGhf8tqw3Kld7DgoPuy/ypaLJCJ3kiY9Twlt7uivztl1hvqfDp64dpC6ldKgiuBMBoiSHylqgbaP9bf0eE5jZD7XafXJJ8hSE2IssEzTQaDCioSXQrbpqUsip1mVLvN5fE+E79hvjJkxALN020dhJzCizluTg7uO3m7A7JNDNOL1SZ8lWLUAsw8+Qx07QTgKStyOGxh8N8uM1RHTTtJGqGaI3Lw4AbadmupU/bsILL7NmQhEHAiDeQ+pO48Z4s+12IVtCT9Sg==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pwiB46TerHZ-NyS-I6hS-pB54UXI62Ofavjl-Iy1tr-nWnzOBkA8JRz0JWnerA9K-yKuj5JxmCHeF7kJeaNcVe-sjsk1&amp;t=637454464754849868" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=eRZEvhWWXgOx68SnCf3rl33682dCdCEBx0_Z5fs_ZY7Yb2Oub1rj8UoXfk77oODQf93pngvJ90qfTNiKDg0u8JMjEtDTGK2ik4GE668GjkrhNbsh-oJuFbmFE_Myz388OYU8KzbmV0DJeRtG3S1fk1oywQ81&amp;t=363be08" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Esrw6UY9vYE8WZmq81nIp6GLyPhRCHxYywdUmUsd9eAo8cfqKLnuhGyeGA1PKZ-7BNa623Dnr0LEAwAW1rmktEU04OK5LnBS8-6JS12R5DZ3Z0fjAciXfKR6RBz1PycnHu7RdmK6iqpcY3DRk2QwajUzA7-aoMWPVMCXVkW27560OAxw0&amp;t=363be08" type="text/javascript"></script>
+<script src="App_Services/WhatIfCalculator.asmx/js" type="text/javascript"></script>
+<script src="App_Services/UserSearch.asmx/js" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="agI9tFJcfsIqWXfxLSj0kBrejOYVW8xJdFDWgbA9dcCiDL7jyPYbAXIT9y03ZiF4urQBAMj6NWgnm43MWo8yLAIp+BOvR7poBvu+GwB0i0nHni+rOjbgulDKE1hblMZ0l0cswvRrTW9b5NQygFYSt3MFcCkVQRvT4XBX7u1bkCJ+cIs2" />
+</div>
+            <div class="banner-rows">
+                
+
+            </div>
+            
+
+<div id="header">
+    <div class="fixed-width">
+        
+        <ul id="ctl19_ulLinks" class="links across"></ul>
+        <a id="ctl19_hplLogo" href="Login.aspx?"><img src="App_Assets/images/master/nab-logo.png" id="ctl19_Img1" class="logo" />
+            <span class="logo-title">Equity Lending</span>
+        </a>
+        
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div id="nav">
+    <button><span class="glyphicon glyphicon-remove"></span></button>
+    <div class="clear"></div>
+    
+    
+    
+</div>
+<div class="menu-mask"></div>
+<script type="text/javascript">
+    $('#header button, #nav button, .menu-mask').click(function (e) {
+        e.preventDefault();
+        $('#nav, .menu-mask').toggleClass('is-active');
+    });
+</script>
+            <div id="content" class="fixed-width">
+                
+
+<script type="text/javascript">
+	var AJAX = 'ajax';
+var AJAX_TRUE = 'true';
+var AJAX_FALSE = 'false';
+var ADD_TRANSACTION = 'addTransaction';
+var REMOVE_TRANSACTION = 'removeTransaction';
+var AMOUNT = 'amount';
+var FACILITY_ID = 'facilityID';
+var TRANSACTION_FUNCTION = 'transactionFuction';
+var TRANSACTION_TYPE = 'transactionType';
+var UNITS = 'units';
+var UNITS_PRICE = 'unitsPrice';
+var SECURITY_CODE = 'securityCode';
+var REMOVE_INDEX = 'removeIndex';
+var WHAT_IF_AmountOutOfRange = 'Please enter a valid amount';
+var WHAT_IF_InvalidTransactionType = 'Please select a valid transaction type';
+var WHAT_IF_NoAmountEntered = 'Please enter an amount';
+var WHAT_IF_NoSecurityCode = 'Please enter a Security Code';
+var WHAT_IF_NotEnoughUnitsToSell = 'Insufficient Units';
+var WHAT_IF_NoUnitsEntered = 'Please enter number of units.';
+var WHAT_IF_UnitPriceInvalid = 'The unit price is invalid';
+var WHAT_IF_UnitsOutOfRange = 'Please enter a valid number of units.';
+var WHAT_IF_InvalidNumber = ' must be a valid number';
+var WHAT_IF_CantEnterSecurityCode = 'A security code is not valid for this type of transaction.';
+var WHAT_IF_NothingOtherThenAmount = 'Please enter a valid amount.';
+var WHAT_IF_NothingOtherThenUnits = 'Please enter number of units.';
+
+</script>
+                <div class="padding">
+                    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00$ctl00');
+//]]>
+</script>
+
+                    
+	<div id="ajax-content" class="content-no-menu">
+		
+    <script type="text/javascript">
+        if (typeof (Storage) !== "undefined" && sessionStorage.getItem("hiddenBanners")) {
+            sessionStorage.removeItem("hiddenBanners");
+        }
+    </script>
+    
+
+<div id="login-page">
+    <h1 class="heading">Log into NAB Equity Lending</h1>
+
+    
+
+
+
+    <div class="entry-box">
+		<h2>Login to NAB Equity Lending</h2>
+		
+		<div class="row">
+		    <label>Username:</label>
+            <input name="ctl00$ctl00$cBodyContainer$cBodyContainer$ucLoginControl$txtUsername" type="text" id="cBodyContainer_cBodyContainer_ucLoginControl_txtUsername" class="standardInput" />
+		</div>
+		<div class="row">
+		    <label>Password:</label>
+            <input name="ctl00$ctl00$cBodyContainer$cBodyContainer$ucLoginControl$txtPassword" type="password" id="cBodyContainer_cBodyContainer_ucLoginControl_txtPassword" class="standardInput" autocomplete="off" />
+		</div>
+		
+        <div class="row">
+			<a id="cBodyContainer_cBodyContainer_ucLoginControl_lkbLogin" class="btn btn-default" href="javascript:__doPostBack(&#39;ctl00$ctl00$cBodyContainer$cBodyContainer$ucLoginControl$lkbLogin&#39;,&#39;&#39;)">Login</a>
+		</div>
+        
+            <div class="row float-left">
+                <a href="/Registration.aspx">New user</a>
+            </div>
+            <div class="row">
+                <a href="/Forgot-Password.aspx">Forgotten your password?</a>
+            </div>
+        
+	</div>
+	<div class="info">
+	    <img src="App_Assets/images/icons/info.gif" alt="info" />
+        For further assistance contact NAB Equity Lending on <strong><a href="tel:1300135145">1300 135 145</a></strong> (Monday to Friday, 8:30am to 5:30pm AEST).
+	</div>
+</div>
+
+	</div>
+
+                </div>
+            </div>
+        </form>
+        
+
+<div id="footer">
+    <div id="bottom-link">
+	    <div class="fixed-width padding">
+	    </div>
+    </div>
+	
+		<div class="fixed-width padding">
+			<div class="links">
+				<ul class="arrows">
+					<li><a href="https://www.nabmarginlending.com.au/investor/products/margin-loan#rates" id="ctl01_hplInterestRates" onclick="return OpenPopup(this)">Interest Rates</a></li>
+					<li><a href="https://www.nabmarginlending.com.au/investor/forms-and-resources/approved-investments" id="ctl01_hplApproved" onclick="return OpenPopup(this)">Approved Investment List</a></li>
+                    <li><a href="https://www.nabmarginlending.com.au/investor/forms-and-resources" id="ctl01_hplForms" onclick="return OpenPopup(this)">Forms</a></li>	
+				</ul>
+			</div>
+			<div class="links">
+				<ul class="arrows">
+					<li><a href="https://www.nabmarginlending.com.au/investor/help-and-faqs#/?m=p" id="ctl01_hplFAQs" onclick="return OpenPopup(this)">FAQs</a></li>
+					<li><a href="https://www.nabmarginlending.com.au/investor/products/overview" id="ctl01_hplHomePage" onclick="return OpenPopup(this)">Home page</a></li>
+                    <li class="desktop-only"><a href="/Login.aspx?IsMobile=true">Mobile Site</a></li>
+				</ul>
+			</div>
+            <div class="links mobile-only">
+                <ul class="arrows">
+                    <li><a href="https://www.nabmarginlending.com.au/shared/disclaimer" id="ctl01_hplDisclaimerPage2" target="_blank">Disclaimer</a></li>
+                    <li><a href="https://www.nab.com.au/common/privacy-policy" id="ctl01_hplPrivacyPolicy2" target="_blank">Privacy Policy</a></li>
+                    
+                    <li><a href="/Login.aspx?IsMobile=false" target="_blank">Visit the Full NAB Equity Lending website</a></li>
+	                <li><a id="ctl01_accessTerms" href="https://www.nabmarginlending.com.au/investor/forms-and-resources/application-kit">Access Terms</a></li>
+	                <li><a id="ctl01_contactUs" href="https://www.nabmarginlending.com.au/investor/help-and-faqs#/?m=p">Contact Us</a></li>
+                </ul>
+            </div>
+			<div class="text">&copy; National Australia Bank Limited<span>. Use of the information contained on this page is governed by Australian law and is subject to the disclaimers which can be read on the <a href="https://www.nabmarginlending.com.au/shared/disclaimer" id="ctl01_hplDisclaimerPage" target="_blank">disclaimer page</a>. View the<a href="https://www.nab.com.au/common/privacy-policy" id="ctl01_hplPrivacyPolicy" target="_blank"> NAB Privacy Policy</a>.</span></div>
+			<div class="clear"></div>
+		</div>
+	
+</div>
+    </div>
+    <script src="/App_Assets/components/chart/chart.js" type="text/javascript" language="javascript">
+
+</script>
+</body>
+</html>

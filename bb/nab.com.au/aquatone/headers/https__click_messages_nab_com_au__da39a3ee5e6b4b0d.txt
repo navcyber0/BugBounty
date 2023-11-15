@@ -1,0 +1,14 @@
+403 Forbidden
+Date: Thu, 30 Mar 2023 07:32:17 GMT
+Content-Security-Policy: default-src 'self'; frame-ancestors 'self'
+Referrer-Policy: origin-when-cross-origin
+Set-Cookie: strict
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Xss-Protection: 1; mode=block
+Permissions-Policy: geolocation=(self), microphone=()
+Retry-Count: 0
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
+Content-Type: text/html
+X-Frame-Options: SAMEORIGIN
+Content-Length: 1233

@@ -1,0 +1,17 @@
+200 OK
+Server: nginx
+Expires: Thu, 06 Jul 2023 04:31:10 GMT
+Cache-Control: no-cache
+Strict-Transport-Security: max-age=300; includeSubDomains
+X-Frame-Options: ALLOW-FROM https://account.oneplus.in
+Set-Cookie: redirectedCountry=in; Domain=.oneplus.in; Path=/ refererstore=in; Domain=.oneplus.in; Path=/
+Content-Type: text/html
+X-Ip-Source: 2003863e2ff8e39f2691361927843bcd
+Retry-Count: 0
+Etag: W/"6491631a-17552"
+Date: Sat, 15 Jul 2023 13:11:25 GMT
+Akamai-Mon-Iucid-Del: 1300830
+X-Backend-Host: 0514:8090
+X-Gateway-Host: 91b04c698d5498c20bb6acbdf8948c025eb4523ceae6af616a99b7b71728704f5e00505b4736f8a02452189921fb2eaf
+Vary: Accept-Encoding
+Last-Modified: Tue, 20 Jun 2023 08:28:10 GMT

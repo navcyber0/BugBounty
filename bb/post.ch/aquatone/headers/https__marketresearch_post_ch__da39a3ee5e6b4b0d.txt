@@ -1,0 +1,5 @@
+200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Date: Fri, 23 Jun 2023 15:27:40 GMT
+Content-Type: text/html; charset=UTF-8
+Retry-Count: 0

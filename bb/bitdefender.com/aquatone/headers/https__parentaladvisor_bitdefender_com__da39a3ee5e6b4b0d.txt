@@ -1,0 +1,16 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+X-Webkit-Csp: default-src 'self' *.kdn.bitdefender.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' unpkg.com; object-src 'self'; style-src 'self' 'unsafe-inline' unpkg.com fonts.googleapis.com; img-src 'self' data: blob: *.kdn.bitdefender.net; media-src 'self'; frame-src 'self'; font-src 'self' fonts.gstatic.com
+Etag: W/"61bb69c8-1c987"
+Expires: Thu, 23 Mar 2023 15:00:00 GMT
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Content-Security-Policy: default-src 'self' *.kdn.bitdefender.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' unpkg.com; object-src 'self'; style-src 'self' 'unsafe-inline' unpkg.com fonts.googleapis.com; img-src 'self' data: blob: *.kdn.bitdefender.net; media-src 'self'; frame-src 'self'; font-src 'self' fonts.gstatic.com
+Date: Thu, 23 Mar 2023 15:00:00 GMT
+Content-Type: text/html
+Cache-Control: max-age=0
+Content-Security-Policy: default-src 'self' *.kdn.bitdefender.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' unpkg.com; object-src 'self'; style-src 'self' 'unsafe-inline' unpkg.com fonts.googleapis.com; img-src 'self' data: blob: *.kdn.bitdefender.net; media-src 'self'; frame-src 'self'; font-src 'self' fonts.gstatic.com
+Last-Modified: Thu, 16 Dec 2021 16:31:04 GMT
+Vary: Accept-Encoding

@@ -1,0 +1,6 @@
+200 OK
+Pragma: no-cache
+Retry-Count: 0
+Server: iWAD v6.2.0
+Set-Cookie: iwad_control= ;Path=/;Domain=;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_channel= ;Path=/;Domain=.mobi.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_control= ;Path=/;Domain=;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_channel= ;Path=/;Domain=;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_sdomain= ;Path=/;Domain=;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_urlmain= ;Path=/;Domain=;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_urltemp= ;Path=/;Domain=;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_authcnt= ;Path=/;Domain=;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_looping= ;Path=/;Domain=;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_continue= ;Path=/;Domain=;Expires=Thu, 01 Jan 1970 00:00:00 GMT; NSC_TMAA= ;Path=/;Domain=.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT; NSC_TMAS= ;Path=/;Domain=.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT;
+Cache-Control: no-cache

@@ -1,0 +1,202 @@
+<html>
+<head>
+    <title>Bitdefender GravityZone Control Center</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="Login to GravityZone Control Center. Easily manage your business devices security - endpoints, network and physical, virtual and cloud-based datacenter infrastructures." />
+    <meta name="keywords" content="gravityzone console, gravityzone control center, gz control center"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GravityZone Control Center | Bitdefender Enterprise" />
+    <meta property="og:description" content="Login to GravityZone Control Center. Easily manage your business devices security - endpoints, network and physical, virtual and cloud-based datacenter infrastructures." />
+    <meta property="og:url" content="https://gravityzone.bitdefender.com/" />
+    <meta property="og:site_name" content="Bitdefender" />
+    <meta property="og:image" content="https://download.bitdefender.com/resources/themes/draco/images/lite_v2/esft-bg.jpg" />
+    <meta property="og:image:secure_url" content="https://gravityzone.bitdefender.com/images/side-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="GravityZone Control Center" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GravityZone Control Center | Bitdefender Enterprise"/>
+    <meta name="twitter:description" content="Login to GravityZone Control Center and get access to the platform that protect all the endpoints in the enterprise universe, including end-user devices, network infrastructure and physical, virtual and cloud-based datacenter infrastructure." />
+    <meta name="twitter:site" content="https://gravityzone.bitdefender.com/" />
+    <meta name="twitter:image" content="https://gravityzone.bitdefender.com/images/side-image.png" />
+    <meta name="twitter:image:alt" content="GravityZone Control Center"/>
+    <meta name="twitter:creator" content="@Bitdefender_Ent" />
+    <link rel=”canonical” href=”https://gravityzone.bitdefender.com/”/>
+
+    <script src="configAnalytics.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+<div class="center">
+
+
+    <div class="side-image"></div>
+
+    <div id="error-message" class="errors" style="display:none">
+        <span class="ValidationError translate" style="display:none" data-error-code="0" data-text="Unsupported SAML version."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="1" data-text="Missing ID attribute on the SAML Response."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="2" data-text="The SAML Response must contain one Assertion element."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="5" data-text="The status code of the Response was not Success."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="14" data-text="Invalid XML format."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="15" data-text="Wrong InResponseTo attribute."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="16" data-text="The Assertion element of the Response is not encrypted. GravityZone requires encrypted Assertion element."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="17" data-text="The NameID element of the Response is not encrypted. GravityZone requires encrypted NameID element."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="18" data-text="The Assertion element must include a Conditions element."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="21" data-text="The Assertion element must include an AuthnStatement element."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="23" data-text="There is an encrypted attribute in the Response and GravityZone does not support it."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="24" data-text="The Response was received at the wrong destination."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="25" data-text="The Response has an empty destination value."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="26" data-text="Invalid Audience element for this Response."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="29" data-text="Invalid Issuer element in Assertion/Response."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="30" data-text="The attributes have expired, based on the SessionNotOnOrAfter attribute of the AttributeStatement element of this Response."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="31" data-text="A valid SubjectConfirmation element was not found on this Response."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="32" data-text="The message of the Response is not signed. GravityZone requires a signed message."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="33" data-text="The Assertion element of the Response is not signed. GravityZone requires a signed Assertion element."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="46" data-text="SAML Response that contains an encrypted Assertion element with encrypted NameID is not supported."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="34" data-text="No Signature found. SAML Response rejected."></span>
+        <span class="ValidationError translate" style="display:none" data-error-code="42" data-text="Signature validation failed. SAML Response rejected."></span>
+        <span class="Error translate" style="display:none" data-error-code="8" data-text="SAML Response not found. Only HTTP POST binding is supported."></span>
+        <span class="Error translate" style="display:none" data-error-code="11" data-text="The Logout Response could not be processed."></span>
+        <span class="ConnectFailed translate" style="display:none" data-error-code="0" data-text="Could not connect to the identity provider. GravityZone could not get metadata."></span>
+        <span class="InvalidCertificate translate" style="display:none" data-error-code="0" data-text="Invalid certificate for the identity provider. GravityZone could not get metadata."></span>
+        <span class="RequestTimeOutException translate" style="display:none" data-error-code="0" data-text="The request timed out to the identity provider."></span>
+        <span class="AuthenticationFailed translate" style="display:none" data-error-code="0" data-text="Could not authenticate using the configured identity provider."></span>
+        <span class="AuthenticationFailed translate" style="display:none" data-error-code="1" data-text="The email from identity provider does not match with the one from your account."></span>
+        <span class="Exception translate" style="display:none" data-error-code="0" data-text="Unexpected error occurred. If the issue persists, contact Technical Support."></span>
+    </div>
+
+    <div id="login-window">
+        <div class="login-window-content">
+            <div class="loading-mask">
+                <div class="loading-message"><span class="loadingGif"></span><span class="translate" data-text="Authenticating..."></span></div>
+            </div>
+            <div class="logo width-400"></div>
+            <div class="text main-title main-title-without-instance" style="margin-bottom: 16px;"><span class="translate" data-text="Log in to GravityZone"></span></div>
+            <div class="text main-title main-title-with-instance" style="margin-bottom: 16px; display: none"><span class="translate" data-text="Log in to :CLOUD_INSTANCE hosted at :DOMAIN"></span></div>
+            <div class="text sub-title width-400"><span class="translate" data-text="Enter your details below:"></span></div>
+            <div class="width-400 error AuthenticationSuspendedUser"><span class="translate" data-text="Authentication failed. Your company is currently suspended."></span></div>
+            <div class="width-400 error NoTargetsUser"><span class="translate" data-text="No available targets for protection management. For details, contact a GravityZone user with Partner role within your organization."></span></div>
+            <div class="width-400 error PasswordExpired"><span class="translate" data-text="Your password has expired. Set a new password to log in again."></span></div>
+            <div class="width-400 error AccountLocked"><span class="translate" data-text="Your account was locked out due to repeated unsuccessful login attempts. Reset your password to unlock it."></span></div>
+            <div class="width-400 error CompanyIsMigrating"><span class="translate" data-text="Authentication failed. Your company is being migrated."></span></div>
+            <div class="width-400 error UpdateInProgress"><span class="translate" data-text="Service temporarily unavailable. An update may be in progress. Please try again later."></span></div>
+
+
+            <form class="login-form width-400">
+                <label for="login_email" class="input-label label-EmptyEmail"><span class="translate" data-text="Email Address:"></span></label>
+                <input type="text" name="email" id="login_email" class="custom-input" placeholder="" data-text="Email"/>
+                <div class="error EmptyEmail"><span class="translate" data-text="Email field is empty."></span></div>
+                <div class="error InvalidEmail"><span class="translate" data-text="Please enter a valid email address."></span></div>
+
+                <div class="password-field" style="display: none">
+                    <label for="login_password" class="input-label label-EmptyPassword"><span class="translate" data-text="Password:"></span></label>
+                    <input type="password" name="password" id="login_password" class="custom-input" placeholder="" data-text="Password"/>
+                    <div class="error EmptyPassword"><span class="translate" data-text="Password field is empty."></span></div>
+
+                    <div class="error AuthenticationFailed"><span class="translate" data-text="Authentication failed. Wrong username or password."></span></div>
+
+                    <div>
+                        <a class="link" href="#" id="recover-password-link"><span class="translate" data-text="Reset my password"></span></a>
+                    </div>
+                </div>
+
+                <div class="zones-selection-panel" style="display:none">
+
+                    <span class="translate" data-text="We have found the user :USER_EMAIL on multiple GravityZone cloud instances."></span>
+                    <span class="translate" data-text="Please choose the GravityZone cloud instance where you want to log in:"></span>
+
+                    <div class="zones">
+                    </div>
+                </div>
+
+                <div class="error NoZoneSelection"><span class="translate" data-text="You must select a GravityZone cloud instance to log in."></span></div>
+
+
+                <div class="captcha-box">
+                    <div class="text sub-title"><span class="translate" data-text="Enter the code exactly as shown bellow."></span></div>
+                    <div class="captcha-image-input">
+                        <img src=""/>
+                        <input name="captcha" type="text" />
+                    </div>
+                    <div class="text">
+                        <a href="#" class="link refresh-captcha-link"><span class="translate" data-text="Refresh image"></span></a>
+                    </div>
+                </div>
+                <div class="error InvalidCaptcha"><span class="translate" data-text="Invalid Captcha answer"></span></div>
+
+                <div class="submit-button">
+                    <input type="submit" name="next" value="" class="button" data-text="Next"/>
+                </div>
+            </form>
+        </div>
+
+
+        <select name="language" id="language-selector">
+        </select>
+
+    </div>
+
+    <div id="recover-password-window">
+        <div class="loading-mask">
+            <div class="loading-message"><span class="loadingGif"></span><span class="translate" data-text="Loading..."></span></div>
+        </div>
+        <div class="logo width-400"></div>
+        <div class="text" style='margin-bottom:20px;margin-top:10px;'>
+            <span class="icon-ok"></span>
+            <span class="icon-error"></span>
+            <div class="text main-title main-title-without-instance" style="margin-bottom: 16px;">
+                <span class="translate NoUsersFoundException" data-text="Password Reset"></span>
+            </div>
+            <div class="text main-title main-title-with-instance" style="margin-bottom: 16px; display: none;">
+                <span class="translate NoUsersFoundException" data-text="Password Reset for :CLOUD_INSTANCE hosted at :DOMAIN"></span>
+            </div>
+            <div class="text sub-title limit-text-width" style="margin-bottom: 60px;">
+                <span class="translate" data-text="Enter the email address associated with your GravityZone account."></span>
+                <br/>
+                <span class="translate" data-text="The email with instructions will be sent to that address."></span>
+            </div>
+        </div>
+        <div class="message width-400">
+            <div class="error-message NoUsersFoundException"><span class="translate" data-text="The email address is not associated with any Control Center account. Please verify you entered the correct email address or contact your GravityZone administrator for support."></span></div>
+            <div class="error-message UsersPasswordRecoveryTimeout"><span class="translate" data-text="You have to wait before resetting your password again."></span></div>
+            <div class="error-message SAMLUsersCannotRecoverPasswordException"><span class="translate" data-text="Your GravityZone account uses SSO authentication. Contact your administrator for support."></span></div>
+            <div class="error-message CompanyIsMigrating"><span class="translate" data-text="You cannot reset your password because your company is being migrated."></span></div>
+            <div class="success-message"><span class="translate" data-text="A password reset confirmation email has been sent to the specified email address. Check your email and follow the instructions to reset your password."></span></div>
+            <input type="button" name="cancel" value="" class="button" data-text="OK" />
+        </div>
+
+        <form class="width-400">
+            <label for="recover_email" class="input-label"><span class="translate" data-text="Email Address:"></span></label>
+            <input type="text" name="email" id="recover_email" class="custom-input" placeholder="" data-text="Email"/>
+
+            <div class="captcha-box">
+                <div class="text sub-title"><span class="translate" data-text="Enter the code you view in the box. Use the exact same letter case. If unclear, try a new code."></span></div>
+                <div class="captcha-image-input">
+                    <img src=""/>
+                    <input name="captcha" type="text" />
+                </div>
+                <div class="text">
+                    <a href="#" class="link refresh-captcha-link"><span class="translate" data-text="Refresh image"></span></a>
+                </div>
+            </div>
+            <div class="error InvalidCaptcha"><span class="translate" data-text="Invalid Captcha answer"></span></div>
+
+            <div class="action-buttons">
+                <div class="button-container">
+                    <input type="button" name="cancel" value="" class="button cancel-btn" data-text="Cancel"/>
+                </div>
+                <div class="button-container">
+                    <input type="submit" name="submit" value="" class="button disabled" style='margin-left:0px;' data-text="Submit"/>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+</body>
+
+</html>

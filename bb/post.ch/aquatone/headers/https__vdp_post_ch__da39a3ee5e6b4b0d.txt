@@ -1,0 +1,12 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Referrer-Policy: same-origin
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Date: Fri, 23 Jun 2023 15:14:06 GMT
+Content-Security-Policy: block-all-mixed-content; font-src 'self'; default-src 'none'; img-src 'self' data: https://storage.vulnerability-disclosure.com; frame-src 'none'; script-src 'self'; form-action 'self'; media-src data:; connect-src 'self'; frame-ancestors 'none'; style-src 'self' 'unsafe-inline'
+Vary: Cookie
+X-Frame-Options: DENY
+Retry-Count: 0
+Server: nginx

@@ -1,0 +1,10 @@
+200 OK
+Server: nginx
+Date: Wed, 22 Mar 2023 14:56:53 GMT
+Access-Control-Allow-Headers: Authorization, Origin, Content-Type, Accept
+Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS
+Access-Control-Max-Age: 86400
+Content-Type: application/json
+Retry-Count: 0
+Request-Id: lfjt5pc203qk00170cbdxis8
+Access-Control-Allow-Origin: *

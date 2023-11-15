@@ -1,0 +1,20 @@
+404 Not Found
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Request-Id: 30ef04b9-634c-4754-8c44-28c81894c6a4
+X-Runtime: 0.030860
+Server: cloudflare
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Link: <//returnly-web-assets.s3.us-west-1.amazonaws.com/assets/new_product_flow/application-54e3fbb4d86d11eadc898ab1c180c4da48a5e61b88a7e7b939a5ddce0bd55496.css>; rel=preload; as=style; nopush,<//returnly-web-assets.s3.us-west-1.amazonaws.com/packs/js/vendor-4e0af6e9822a5c235440.js>; rel=preload; as=script; nopush,<//returnly-web-assets.s3.us-west-1.amazonaws.com/assets/flow_return-eefb2928528a83a1bc9862f337b139fd036261019c145deb1f364fa8da5b1e92.js>; rel=preload; as=script; nopush,<//returnly-web-assets.s3.us-west-1.amazonaws.com/assets/gift_return-0691142c168486d55e1881f9210fb61064e9b13a75f2f7586cd1b3b105f24aaf.js>; rel=preload; as=script; nopush,<https:///brand_assets.css?use_draft=false>; rel=preload; as=style; nopush
+Set-Cookie: _returns-web_session=i3G6jJKWBi1Ps%2FT%2BY6O8PuKChwvGmhr9D0A6XVSj3t5Vxzmlaw4Z85dX0VB6t5YnLADK1ZBJEyCPkR45QIzp3snjcWvf2%2B8w4h0spEiDcIlDX9%2BNgyMR3xq%2F%2B%2FitdNKUR5MWhKx1U%2BGis4SCJonrklSlQyJWc41nPo5%2BjFX3xMuu9Sk3MfQc0pjutZopfiCs%2BhGATtLrwgYl7oWuIm6%2FHHEJWzsV%2BKdJFk5iYctZkEPhixgDpfIAi1cuEqv%2BHY6CSlCcTa%2Fp9FefeQdTSKnBf6Obb6RH%2FkO4wRfP6Q%3D%3D--9nl9pHveuCA0RZma--GFv0BlL%2B%2BN%2Fyaz%2F3BLL%2FdA%3D%3D; path=/; secure; HttpOnly; SameSite=Lax
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Envoy-Upstream-Service-Time: 33
+Date: Sun, 23 Jul 2023 01:06:22 GMT
+X-Xss-Protection: 1; mode=block
+Referrer-Policy: strict-origin-when-cross-origin
+Cf-Ray: 7eb0053b5b36a8ff-MAA
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: no-cache
+Cf-Cache-Status: DYNAMIC
+Retry-Count: 0

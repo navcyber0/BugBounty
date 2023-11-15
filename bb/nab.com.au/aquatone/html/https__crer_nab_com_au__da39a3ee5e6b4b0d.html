@@ -1,0 +1,150 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+    <html>
+        <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>CINTELLATE</title>
+            <base href="/NAB/jsf/">
+            <style type="text/css">
+                @import "js/dojo/resources/dojo.css";
+                @import "js/dijit/themes/tundra/tundra.css";
+                @import "js/dojox/grid/resources/Grid.css";
+                @import "js/dojox/grid/resources/tundraGrid.css";
+                @import "js/dgrid/css/dgrid.css";
+            </style>
+            <link rel="icon" href="images/fav.ico" type="image/x-icon">
+            <link rel="shortcut icon" href="images/fav.ico" type="image/x-icon">
+            <script language="javascript" type="text/javascript">
+                var pentahoServerUrl = "https://crer.nab.com.au/NAB_BI/";
+                var pentahoLoginMaxWait = 15000;
+            </script>
+            <script language="javascript" id="UserSettingsScript" src="js/ClientMessages_Default.js" type="text/javascript"></script>
+            <script type="text/javascript" src="js/dojo/dojo.js?version=8.2.2.0" data-dojo-config="parseOnLoad: true, async: 0, locale:'en-au', extraLocale:['en']"></script>
+            <script type="text/javascript" src="js/layers/cintdojo.js?version=8.2.2.0" data-dojo-config="parseOnLoad: true, async: 0" ></script>
+            <script type="text/javascript" src="js/cintellate.js?version=8.2.2.0" language="javascript"></script>
+            <link rel="stylesheet" href="css/cintellate.css?version=8.2.2.0" title="style" type="text/css" />
+            <link rel="stylesheet" href="css/mobile.css?version=8.2.2.0" title="style" type="text/css" />
+            <link rel="stylesheet" href="custom/css/customStyle.css?version=8.2.2.0" title="style" type="text/css" />
+            <link href="custom/link_icons/apple-touch-icon.png" rel="apple-touch-icon">
+            <link href="custom/link_icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+            <link href="custom/link_icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+            <link href="custom/link_icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+            <link href="custom/link_icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+            <link href="custom/link_icons/icon-hires.png" rel="icon" sizes="192x192">
+            <link href="custom/link_icons/icon-normal.png" rel="icon" sizes="128x128">
+        </head>
+        <body class="tundra" onresize="resizeMenu()">
+            <div id="wholeBody">
+                <div id="mainContainer">
+
+                    <div id="leftContainer">
+                        <div id="loginContainer">
+                            <div id="loginInfo"></div>
+                        </div>
+                        <div id="clientLogo" onclick="javascript:navigateHome();"></div>
+                        <div id="menuContainer"></div>
+                        <div id="contextTitle">&nbsp;</div>
+                        <div id="contextualMenuContainer"></div>
+                        <div id="helpLink" onclick="displayHelp();">
+                            Help
+                        </div>
+                        <div id="clientMessageArea">
+                            <a href="http://cintellate.saiglobal.com" target="_blank"><img id="companyBrandImg" src="../images/cintellate.png"></a>
+                            <div id="copyrightLine">
+                                Cintellate Version 8.2.2.0 &copy; 2023 <a href='http://www.saiglobal.com' target='_blank'>SAI Global Ltd</a>
+                            </div>
+                            <div id="messageNavigation">
+                                <img src="images/msg_prev.png" class="prevMessage" onClick="sysMsg.scrollToMessage(1);" />
+                                <img src="images/msg_next.png" class="nextMessage" onClick="sysMsg.scrollToMessage(-1);" />
+                            </div>
+                            <div id="systemMessage">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="workspaceContainer">
+                        <div id="topBar">
+                            <div id="tabContainer"></div>
+                        </div>
+                        <div id="actionsArea">
+                            <div id="navigatorArea">
+                                <div id="workSpace"></div>
+                            </div>
+                            <div id="toolbarContainer"></div>
+                        </div>
+                        <div id="workspaceArea">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                </div>
+
+                <div id="loginPayload"></div>
+
+                <div id="tempMdContainer" style="display:none"></div>
+
+                <div id="quickViewDialog" data-dojo-type="dijit/Dialog" title="Quick View" class="lookupDialog" isLayoutContainer="false">
+                    <div id="quickViewNavigator"></div>
+                    <div class="lookupActions">
+                        <div id="quickViewToolbar"></div>
+                        <div class="clear"><img src="images/clear.gif" width="700" height="1"></div>
+                    </div>
+                    <div id="quickViewContainer">
+                        <div id="quickViewContent"></div>
+                    </div>
+                </div>
+
+                <div id="questionnaireRelatedRecordsDialog" data-dojo-type="dijit/Dialog" title="" class="questionnaireRelatedRecordsDialog" isLayoutContainer="false">
+                    <div class="questionnaireRelatedRecordsParent">
+                        <div class="questionnaireRelatedRecordsContainer">
+                        </div>
+                        <div class="questionnaireRelatedRecordsActions">
+                            <button type="button" data-dojo-type="dijit/form/Button" id="questionnaireRelatedRecordsDialogBtn" iconClass="toolMenu_cancel">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="questionnaireAttachmentsDialog" data-dojo-type="bmssolutions/widget/QuestionnaireAttachmentsDialog" title="Attachments" class="questionnaireAttachmentsDialog" isLayoutContainer="false">
+                    <div class="questionnaireAttachmentsParent">
+                        <div class="questionnaireAttachmentsContainer">
+                        </div>
+                        <div class="questionnaireAttachmentsActions">
+                            <button type="button" data-dojo-type="dijit/form/Button" onClick="dijit.byId('questionnaireAttachmentsDialog').hide();" label="Close" iconClass="toolMenu_cancel">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-dojo-type="bmssolutions/widget/Standby" id="standbyWidget" target="wholeBody" image="../images/progress.gif">
+                </div>
+
+                <div data-dojo-type="dijit/Dialog" id="progressDialog" style="display:none;" zIndex="10000">
+                    <div data-dojo-type="bmssolutions/widget/ProgressBar" id="jsProgress"></div>
+                    <div id="operationCancel">
+                        <button type="button" data-dojo-type="dijit/form/Button" id="operationCancelButton" onclick="cancelCurrentOperation();" iconClass="toolMenu_cancel">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+
+                <div data-dojo-type="dijit/Dialog" id="spellCheckDialog" style="display:none;" href="bmsSpellCheck.jsp?refresh=true">
+                </div>
+
+            </div>
+        </body>
+    </html>
+

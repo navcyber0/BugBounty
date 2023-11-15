@@ -1,0 +1,14 @@
+200 OK
+Expires: 0
+Content-Length: 14800
+Pragma: no-cache
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Date: Thu, 23 Mar 2023 15:00:02 GMT
+Cache-Control: no-cache, no-store, must-revalidate
+Set-Cookie: CAKEPHP=la535c2covuupcocanq7na9jf0; expires=Thu, 23-Mar-2023 19:00:02 GMT; Max-Age=14400; path=/; secure; HttpOnly
+X-Frame-Options: SAMEORIGIN SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Server: nginx
+Content-Type: text/html; charset=UTF-8

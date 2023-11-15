@@ -1,0 +1,18 @@
+200 OK
+Retry-Count: 0
+Cache-Control: no-store
+Set-Cookie: saml_csrf_token=cTayZDLBfB4n_jkRLOFRV_KiUdxXb9C6qTxBKdhqF7tvfN7fwPA2WTJTalpUTglJFHxqY3OZZ9NHMTQoTKZyBmCd8GJBDj7XBLw7xop6UIM; path=/; secure; HttpOnly; SameSite=None saml_csrf_token_legacy=cTayZDLBfB4n_jkRLOFRV_KiUdxXb9C6qTxBKdhqF7tvfN7fwPA2WTJTalpUTglJFHxqY3OZZ9NHMTQoTKZyBmCd8GJBDj7XBLw7xop6UIM; path=/; secure; HttpOnly logged_in=no; domain=git.build.inter.ikea.com; path=/; expires=Tue, 23 Jul 2024 01:12:57 GMT; secure; HttpOnly; SameSite=Lax _fi_sess=hjXZLrFMJoI1%2FgPcCHsgYHgbPHCxf0GbCk93eG90zQ17d8GeWX8mtZb6eY7WwahMnuSzoMsZUHlW%2F8XKSlEvp5bLFtzPUtmGZqvGF5DDiSl%2BFNyl3wJCubaaeA%2BOEGQd9OP1ZLQbJi8fwRkR%2BVUv905Uo5KMMIK9sF07YAPFcdw%3D--ObwgBqQxDI0my5JC--cnFG9jg2oqp1UChdeZiObA%3D%3D; path=/; secure; HttpOnly; SameSite=Lax
+X-Content-Type-Options: nosniff
+X-Runtime-Rack: 0.059877
+X-Runtime: 0.051518
+X-Github-Request-Id: 4a7641f7-39c9-4c73-b9d6-44b50f35e5a7
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Xss-Protection: 0
+Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src git.build.inter.ikea.com/assets-cdn/worker/ gist.git.build.inter.ikea.com/assets-cdn/worker/; connect-src 'self' uploads.git.build.inter.ikea.com media.git.build.inter.ikea.com www.githubstatus.com raw.git.build.inter.ikea.com git.build.inter.ikea.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://git.build.inter.ikea.com; font-src assets.git.build.inter.ikea.com; form-action 'self' git.build.inter.ikea.com gist.git.build.inter.ikea.com pages.git.build.inter.ikea.com; frame-ancestors 'none'; frame-src viewscreen.git.build.inter.ikea.com notebooks.git.build.inter.ikea.com; img-src * data:; manifest-src 'self'; media-src media.git.build.inter.ikea.com; script-src assets.git.build.inter.ikea.com; style-src 'unsafe-inline' assets.git.build.inter.ikea.com; worker-src git.build.inter.ikea.com/assets-cdn/worker/ gist.git.build.inter.ikea.com/assets-cdn/worker/
+Etag: W/"266a427e342bd3bf24a4d57eb57b55c0"
+X-Frame-Options: deny
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Server: GitHub.com
+Date: Sun, 23 Jul 2023 01:12:57 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame

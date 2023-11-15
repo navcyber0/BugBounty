@@ -1,0 +1,10 @@
+[credentials-disclosure] [http] [unknown] https://restaurantawards.menulog.com.au ["API_KEY":"CcWYHaNuMk7tkdDp5giyQahKMiupUvCh1FrPDzU2"]
+[mismatched-ssl-certificate] [ssl] [low] ablink.orders.menulog.com.au:443 [CN: *.emails.menulog.com.au]
+[mismatched-ssl-certificate] [ssl] [low] click.email.menulog.com.au:443 [CN: *.menulog.com]
+[mismatched-ssl-certificate] [ssl] [low] image.email.menulog.com.au:443 [CN: *.menulog.com]
+[mismatched-ssl-certificate] [ssl] [low] ic.menulog.com.au:443 [CN: *.cloudfront.net]
+[mismatched-ssl-certificate] [ssl] [low] mta.email.menulog.com.au:443 [CN: *.menulog.com]
+[mismatched-ssl-certificate] [ssl] [low] view.email.menulog.com.au:443 [CN: *.menulog.com]
+[mismatched-ssl-certificate] [ssl] [low] www.service-iphone.menulog.com.au:443 [CN: *.menulog.com]
+[git-mailmap] [http] [low] https://itemavailability.menulog.com.au/.mailmap
+[git-mailmap] [http] [low] https://restaurantmenumanager.menulog.com.au/.mailmap

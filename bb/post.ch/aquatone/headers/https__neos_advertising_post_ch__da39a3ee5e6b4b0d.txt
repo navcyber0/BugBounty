@@ -1,0 +1,10 @@
+403 Forbidden
+Date: Fri, 23 Jun 2023 15:27:07 GMT
+Strict-Transport-Security: max-age=31536000; preload
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Access-Control-Allow-Origin: *
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8

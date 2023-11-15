@@ -1,0 +1,10 @@
+403 Forbidden
+Content-Length: 10
+X-Request-Id: c6025e62090fc68a2d15371f5d276b79
+X-Runtime: 0.002472
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+Retry-Count: 0
+Date: Sun, 19 Mar 2023 10:52:52 GMT
+Cache-Control: no-cache
+Set-Cookie: _launchnotes_session=HzSaxqq%2FyhasSLyTOh0O8bHzWTZa2mc5Mq8nqpAz63ALz2MsmzMnxcu32vQ5BQsQHoWx%2BrzusyssR9aEwL3wDXIPEsOmusApu37a%2B8W3UddTStwi2XBh0iT8ou2ojIs6agXpn9zh6TRh2VjWJbCDOcUwNuPrdD0lCSMmJVz%2FcC8dMxsPYWcQIawe9JNaHkKedZvucXJtezaX1qIbVCfKBhvkrtDBuKgRE5i5T6sHWkU%3D--tQw%2FHoXCRqdyQbDR--0x6%2B1To01BzQyEZNqEZkmw%3D%3D; path=/; HttpOnly
+Content-Type: text/plain

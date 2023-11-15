@@ -1,0 +1,11 @@
+200 
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Cache-Control: private, max-age=0, no-cache, no-store
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+Content-Language: en-AU
+Content-Length: 5409
+Date: Thu, 30 Mar 2023 07:34:15 GMT
+Set-Cookie: cookie_prod_nabtransact=614543882.36895.0000; path=/; Httponly; Secure TS017bda53=01bb4585a83340d268808aec7844e578a5566b2ea1726c6f351afa3a2fdc08a8997ac7518471611af8c74ee3a27e4df2f1d1e857a6; Path=/; Domain=.transact.nab.com.au TS017bda53028=01fecea875d6a9656669bea12b090c2c79f1eea64d97be81f4741bf72a2c8ccac2d686d51048249f03d5c32d73b50fc06176b2faec; Path=/; Domain=.transact.nab.com.au; Secure
+Content-Type: text/html;charset=ISO-8859-1
+Pragma: no-cache

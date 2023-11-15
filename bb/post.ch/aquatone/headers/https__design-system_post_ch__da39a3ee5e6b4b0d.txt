@@ -1,0 +1,12 @@
+200 OK
+Etag: "6a60fe712d511097935b5d906b2da30d-ssl-df"
+Server: Netlify
+Strict-Transport-Security: max-age=31536000
+Vary: Accept-Encoding
+X-Nf-Request-Id: 01H3MDDFWYX418H3Q0BE0VHG0F
+Cache-Control: public, max-age=0, must-revalidate
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+Date: Fri, 23 Jun 2023 15:19:27 GMT
+Accept-Ranges: bytes
+Age: 173840

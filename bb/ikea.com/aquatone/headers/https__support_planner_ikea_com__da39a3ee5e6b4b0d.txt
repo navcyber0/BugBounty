@@ -1,0 +1,24 @@
+200 OK
+X-Frame-Options: deny
+Content-Security-Policy: script-src 'self' https://www.ikea.com 'unsafe-inline' 'unsafe-eval';
+X-Cache: CONFIG_NOCACHE
+Accept-Ranges: bytes
+Last-Modified: Wed, 14 Jun 2023 08:03:32 GMT
+X-Ms-Version: 2018-03-28
+X-Permitted-Cross-Domain-Policies: none
+X-Powered-By: delete
+Server: delete
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Content-Type: text/html
+Expect-Ct: max-age=604800,enforce
+Cache-Control: none
+X-Ms-Request-Id: 92ad8e16-a01e-0028-3b02-bd6f7e000000
+Referrer-Policy: strict-origin-when-cross-origin
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Date: Sun, 23 Jul 2023 01:07:15 GMT
+Content-Md5: MYpQwUjWboCUPBb3ECRodQ==
+Etag: "0x8DB6CADD894DFA0"
+X-Azure-Ref: 20230723T010714Z-g2yufqkde960319grq84cdsnus0000000120000000015gf1
+Content-Length: 2617
+Pragma: no-cache

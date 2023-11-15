@@ -1,0 +1,13 @@
+403 Forbidden
+Alt-Svc: h3=":443"; ma=93600
+Strict-Transport-Security: max-age=86400
+Akamai-Grn: 0.06952f17.1690074866.2b7bc68
+Akamai-Cache-Status: Error from child
+Content-Length: 308
+X-Reference-Error: 18.6952f17.1690074866.2b7bc68
+Content-Type: text/html
+Expires: Sun, 23 Jul 2023 01:14:26 GMT
+Date: Sun, 23 Jul 2023 01:14:26 GMT
+Retry-Count: 0
+Server: AkamaiGHost
+Mime-Version: 1.0

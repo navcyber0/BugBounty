@@ -1,0 +1,7 @@
+401 
+Strict-Transport-Security: max-age=15768000
+Retry-Count: 0
+Set-Cookie: JSESSIONID=33c4624f63325787ce78eefdb181b171366c5214~73EF7E3421818DFB19D9D7C6808F82F1.33c4624f63325787ce78eefdb181b171366c5214; Path=/cockpit; Secure; HttpOnly
+Content-Length: 0
+Date: Fri, 23 Jun 2023 15:18:36 GMT
+Server: 

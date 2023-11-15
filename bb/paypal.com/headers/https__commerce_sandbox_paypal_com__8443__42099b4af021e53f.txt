@@ -1,0 +1,12 @@
+404 Not Found
+Vary: Braintree-Version
+Cache-Control: no-cache, no-store
+Paypal-Debug-Id: 8f9c731802754
+Retry-Count: 0
+Server: nginx
+Content-Length: 474
+Braintree-Version: 2016-10-07
+Pragma: no-cache
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Date: Wed, 14 Jun 2023 14:01:54 GMT
+Content-Type: application/json

@@ -1,0 +1,18 @@
+Target: https://shop.just-eat.it/FUZZ
+Total requests: 220560
+
+=====================================================================
+ID           Response   Lines    Word       Chars       Payload                                                                                                
+=====================================================================
+
+000000252:   200        7 L      18 W       174 Ch      "version"                                                                                              
+000000271:   200        4 L      9 W        41 Ch       "health"                                                                                               
+000001738:   404        366 L    3068 W     69221 Ch    "restaurants"                                                                                          
+000003143:   301        7 L      11 W       162 Ch      "vendors"                                                                                              
+000005285:   404        366 L    3068 W     69193 Ch    "rest"                                                                                                 
+000005565:   404        366 L    3068 W     69217 Ch    "restricted"                                                                                           
+000010892:   404        1 L      9 W        279 Ch      "sitemaps"                                                                                             
+000011215:   404        366 L    3068 W     69217 Ch    "restaurant"                                                                                           
+000020682:   200        13 L     31 W       613 Ch      "vendorsolutions"                                                                                      
+000022278:   404        366 L    3068 W     69205 Ch    "restore"                                                                                              
+000023380:   404        366 L    3068 W     69221 Ch    "restoration"   

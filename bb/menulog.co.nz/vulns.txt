@@ -1,0 +1,12 @@
+[credentials-disclosure] [http] [unknown] https://partnersignup.menulog.co.nz [ApiKey: 'AIzaSyDKp-xPCVBgO2c3aHqeSEP1u5NOVLZHVCE']
+[credentials-disclosure] [http] [unknown] https://restaurantawards.menulog.co.nz ["API_KEY":"CcWYHaNuMk7tkdDp5giyQahKMiupUvCh1FrPDzU2"]
+[keycloak-openid-config] [http] [info] https://auth.menulog.co.nz/.well-known/openid-configuration
+[keycloak-openid-config] [http] [info] https://www.menulog.co.nz/.well-known/openid-configuration
+[editor-exposure] [http] [low] https://restaurantawards.menulog.co.nz/.editorconfig
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/menulog.co.nz/v2.0/.well-known/openid-configuration [c2836782-58bb-4552-a503-21c2a59466f9]
+[composer-config:composer.json] [http] [info] https://partneressentials.menulog.co.nz/composer.json
+[composer-config:composer.json] [http] [info] https://partneressentials.menulog.co.nz/vendor/composer/installed.json
+[ds-store-file] [http] [info] https://restaurantawards.menulog.co.nz/.DS_Store
+[google-api-key] [http] [info] https://partnersignup.menulog.co.nz [AIzaSyDKp-xPCVBgO2c3aHqeSEP1u5NOVLZHVCE]
+[google-api-key] [http] [info] https://partnersignup.menulog.co.nz/hopfully404 [AIzaSyDKp-xPCVBgO2c3aHqeSEP1u5NOVLZHVCE]
+[wordpress-readme-file] [http] [info] https://restaurantawards.menulog.co.nz/wp/readme.html

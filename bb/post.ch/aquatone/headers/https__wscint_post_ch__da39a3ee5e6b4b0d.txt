@@ -1,0 +1,10 @@
+200 
+Retry-Count: 0
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: JSESSIONID=7304D895C7B58FAC29395D457E7162F2; Path=/; Secure; HttpOnly
+Date: Fri, 23 Jun 2023 15:15:09 GMT
+Content-Type: text/html;charset=ISO-8859-1
+Content-Length: 2329
+Server: Apache/2.4.57 () OpenSSL/1.0.2k-fips
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Security-Policy: object-src 'none'; base-uri 'self';

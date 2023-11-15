@@ -1,0 +1,12 @@
+404 Not Found
+Expires: Sun, 30 Jul 2023 01:09:09 GMT
+Date: Sun, 23 Jul 2023 01:09:22 GMT
+Server: IKEA Server
+X-Frame-Options: SAMEORIGIN
+X-Ua-Compatible: IE=edge
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Content-Length: 10
+Cache-Control: max-age=604787
+Retry-Count: 0
+X-Content-Type-Options: nosniff

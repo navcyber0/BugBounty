@@ -1,0 +1,36 @@
+<!doctype html><html><head><script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TMZ7SPF');</script><script>console.log(window.location.pathname)
+      const language = window.location.pathname.split('/')[3]
+        ? window.location.pathname.split('/')[3]
+        : window.location.pathname === '/info' ? 'es' : 'en';
+      const ru = window.location.pathname.split('/')[2]
+        ? window.location.pathname.split('/')[2]
+        : window.location.pathname === '/info' ? 'es' : 'us';
+      document.documentElement.setAttribute(
+        'lang',
+        language + '-' + language.toLocaleUpperCase(),
+      );
+
+      const timer = setInterval(() => {
+        if (window.OneTrust) {
+          try {
+            window.OneTrust.changeLanguage(
+              language + '-' + ru.toLocaleUpperCase(),
+            );
+          } catch (err) {
+            console.log(err);
+          }
+          clearInterval(timer);
+        }
+      }, 1000);</script><title>IKEA Partner Portal</title><meta charset="utf-8"/><meta name="description" content="IKEA Partner Portal"/><meta name="author" content="IKEA for Business"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="index, nofollow, noimageindex, noarchive, nocache, nosnippet"/><meta property="og:title" content="IKEA Partner Portal"/><meta property="og:description" content="Exclusive portal for IKEA Partnerships"/><meta property="og:type" content="website "/><meta property="og:url" content="https://partner.ikea.com/"/><meta property="og:image" content="/static/images/social-tag-image.jpg"/><link rel="canonical" href="https://partner.ikea.com"/><link rel="shortcut icon" href="/static/images/favicon.ico"/><link rel="stylesheet" href="https://www.ikea.com/global/assets/fonts/en/fonts.css"/><script src="https://www.ikea.com/es/es/token-service/token-service-53811fe5a5df18709b0a.js"></script><script defer="defer" src="/main.31608e02f294ba11699f.js"></script><script defer="defer" src="/remoteEntry.js"></script></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMZ7SPF" height="0" width="0" style="display: none; visibility: hidden" sandbox></iframe></noscript><div id="root"></div></body></html>

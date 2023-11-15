@@ -1,0 +1,5 @@
+[weak-cipher-suites] [ssl] [medium] ablink.orders.just-eat.ie:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ablink.emails.just-eat.ie:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] cdn.just-eat.ie:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] cdn.just-eat.ie:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] partner-centre.just-eat.ie:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]

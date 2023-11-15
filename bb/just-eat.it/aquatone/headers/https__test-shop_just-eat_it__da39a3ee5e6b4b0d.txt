@@ -1,0 +1,14 @@
+200 OK
+Date: Sun, 19 Mar 2023 09:02:55 GMT
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+Content-Language: en-US
+X-Amz-Cognito-Request-Id: 29c9d145-9c5f-455a-b751-c1477187f80a
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+X-Frame-Options: DENY
+Server: Server
+Content-Type: text/html;charset=UTF-8
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate

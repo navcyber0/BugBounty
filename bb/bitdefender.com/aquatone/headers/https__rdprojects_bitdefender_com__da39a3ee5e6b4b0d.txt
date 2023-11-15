@@ -1,0 +1,14 @@
+200 OK
+X-Powered-By: PHP/7.4.33
+Link: <https://rdprojects.bitdefender.com/wp-json/>; rel="https://api.w.org/" <https://rdprojects.bitdefender.com/wp-json/wp/v2/pages/8>; rel="alternate"; type="application/json" <https://rdprojects.bitdefender.com/>; rel=shortlink
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload max-age=63072000; includeSubdomains; preload
+Cf-Ray: 7ac78ad7e88a1bdd-BOM
+Date: Thu, 23 Mar 2023 15:00:10 GMT
+Server: cloudflare
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff nosniff
+Retry-Count: 0
+X-Frame-Options: DENY DENY
+X-Xss-Protection: 1; mode=block 1; mode=block
+Cf-Cache-Status: DYNAMIC

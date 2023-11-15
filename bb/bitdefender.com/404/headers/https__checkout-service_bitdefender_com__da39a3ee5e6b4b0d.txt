@@ -1,0 +1,13 @@
+404 Not Found
+Content-Type: application/json
+Access-Control-Allow-Methods: HEAD, GET, POST, PUT, PATCH, DELETE
+Cf-Cache-Status: DYNAMIC
+Date: Thu, 23 Mar 2023 17:56:50 GMT
+Access-Control-Allow-Headers: 
+Access-Control-Expose-Headers: X-Checkout-Session
+Server: cloudflare
+Cache-Control: no-cache, private
+Cf-Ray: 7ac88da50a7f8489-BOM
+Access-Control-Allow-Origin: *
+Via: 1.1 google
+Retry-Count: 0

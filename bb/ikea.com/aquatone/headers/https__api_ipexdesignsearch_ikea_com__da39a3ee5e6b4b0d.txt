@@ -1,0 +1,19 @@
+404 Not Found
+X-Frame-Options: deny
+X-Permitted-Cross-Domain-Policies: none
+Retry-Count: 0
+Server-Timing: cdn-cache; desc=MISS edge; dur=106 origin; dur=221 ak_p; desc="469465_399341149_185199658_32708_7254_36_-_-";dur=1
+Content-Type: application/json
+Server: delete
+X-Xss-Protection: 1; mode=block
+Content-Length: 54
+Cache-Control: max-age=0, no-cache, no-store
+Date: Sun, 23 Jul 2023 01:09:16 GMT
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
+Expect-Ct: max-age=604800,enforce
+Referrer-Policy: same-origin
+X-Powered-By: delete
+Expires: Sun, 23 Jul 2023 01:09:16 GMT
+Pragma: no-cache
+Content-Security-Policy: script-src 'self' https://www.ikea.com 'unsafe-inline' 'unsafe-eval';
+Request-Context: appId=cid-v1:b49103ee-059f-4635-bed2-10c30b5bbd97

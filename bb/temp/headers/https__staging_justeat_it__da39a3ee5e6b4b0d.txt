@@ -1,0 +1,14 @@
+403 Forbidden
+Cf-Ray: 7b5147a29e35b78b-AMS
+Content-Length: 16
+X-Frame-Options: SAMEORIGIN
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Strict-Transport-Security: max-age=0
+Server: cloudflare
+Retry-Count: 0
+Date: Sun, 09 Apr 2023 08:11:31 GMT
+Content-Type: text/plain; charset=UTF-8
+Referrer-Policy: same-origin
+Set-Cookie: __cf_bm=8V9Fbjb95F4IhLDk1CVbRibg6Q7NEwn_VJ1mviaa00A-1681027891-0-ASq+uzmrgVHrwT8t6EOiNscewl5XZDZEFG5Z0vXWHeLKUef+DZXL0e1Rmo7Xba5Zt2VQrM5CktpjB+izwOZ/ois=; path=/; expires=Sun, 09-Apr-23 08:41:31 GMT; domain=.justeat.it; HttpOnly; Secure; SameSite=None
+Vary: Accept-Encoding

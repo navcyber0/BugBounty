@@ -1,0 +1,14 @@
+403 Forbidden
+Request-Context: appId=cid-v1:57956abc-a74e-4f8a-a718-fcd6a0a25cdc
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Server: Microsoft-IIS/10.0
+Cache-Control: max-age=10
+Content-Type: text/html
+Date: Sun, 23 Jul 2023 01:04:11 GMT
+Access-Control-Expose-Headers: Request-Context
+X-Client-Version: 0.2.2222.0
+X-Isp-Client-Version: 0.0.0.1
+X-Frame-Options: allow-from https://www.ikea.com
+Content-Length: 58
+Retry-Count: 0

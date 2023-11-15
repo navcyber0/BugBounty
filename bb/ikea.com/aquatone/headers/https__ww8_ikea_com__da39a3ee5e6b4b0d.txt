@@ -1,0 +1,15 @@
+200 OK
+X-Ms-Version: 2018-03-28
+Etag: "0x8DB88F4DA63199F"
+Cache-Control: max-age=900
+Expires: Sun, 23 Jul 2023 01:23:24 GMT
+Content-Type: text/html
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Server-Timing: edge; dur=1 cdn-cache; desc=HIT ak_p; desc="469465_388762278_280877_21_9081_13_-_-";dur=1
+Date: Sun, 23 Jul 2023 01:08:24 GMT
+Server: IKEA Server
+Vary: Accept-Encoding
+X-Ms-Request-Id: 5ed1a06c-701e-0021-2edd-bab94d000000
+Retry-Count: 0

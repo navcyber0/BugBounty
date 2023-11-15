@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="referrer" content="no-referrer">
+		<meta charset="UTF-8">
+		
+		<script>
+			
+			function getQueryString() {
+				var key = false, res = {}, itm = null;
+				// get the query string without the ?
+				var qs = location.search.substring(1);
+				// check for the key as an argument
+				if (arguments.length > 0 && arguments[0].length > 1) {
+					key = arguments[0];
+				}
+				// make a regex pattern to grab key/value
+				var pattern = /([^&=]+)=([^&]*)/g;
+				// loop the items in the query string, either
+				// find a match to the argument, or build an object
+				// with key/value pairs
+				while (itm = pattern.exec(qs)) {
+					if (key !== false && decodeURIComponent(itm[1].toLowerCase()) === key) {
+						return decodeURIComponent(itm[2].toLowerCase());
+					}
+					else if (key === false) {
+						res[decodeURIComponent(itm[1]).toLowerCase()] = decodeURIComponent(itm[2].toLowerCase());
+					}
+				}
+				
+				return key === false ? res : null;
+			}
+			
+			function search(key, arrayTitle){
+			    for (var i=0; i < arrayTitle.length; i++) {
+        			if (arrayTitle[i].lang === key) {
+            			return arrayTitle[i].title;
+        			}
+    			}
+			}
+			
+			function setLanguage() {
+				
+				//var url_string = window.location.href;
+				var lang = getQueryString("language");
+				
+				lang = lang ? lang.indexOf("-") != -1 ? lang.substring(0,2) : lang : "de";
+
+				var titlePage = [
+					{lang: "de", title: "Erfassung"},
+					{lang: "fr", title: "Enregistrement"},
+					{lang: "it", title: "Registrazione"},
+					{lang: "en", title: "Registration"}
+				];
+				
+				document.title = search(lang, titlePage);
+			}
+		</script>	
+		
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-preload="async"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-versionedLibCss="true"
+			data-sap-ui-theme="posttheme3external"
+			data-sap-ui-theme-roots='{"posttheme3external" : "/myposttheme/UI5"}'
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"ch.post.sap.fototool": "./"}' >
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					appWidthLimited:false,
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "ch.post.sap.fototool"
+					})
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body  onload="setLanguage();" class="sapUiBody" id="content">
+	</body>
+
+</html>

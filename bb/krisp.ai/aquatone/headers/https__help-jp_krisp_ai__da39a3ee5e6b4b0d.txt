@@ -1,0 +1,12 @@
+200 OK
+Cache-Control: public, max-age=0, must-revalidate
+Server: Vercel
+X-Matched-Path: /
+X-Vercel-Id: fra1::iad1::rm26g-1679223189995-0f3779025e41
+Age: 11
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Date: Sun, 19 Mar 2023 10:52:58 GMT
+Strict-Transport-Security: max-age=63072000
+X-Powered-By: Next.js
+X-Vercel-Cache: STALE

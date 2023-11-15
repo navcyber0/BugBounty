@@ -1,0 +1,16 @@
+POST /tnpfc/v1/otplogin HTTP/2
+Host: portal-api.tnpowerfinance.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/json
+Content-Length: 42
+Origin: https://www.tnpowerfinance.com
+Referer: https://www.tnpowerfinance.com/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Te: trailers
+
+{"panNumber":"ATXPA3132B","channel":"web"}

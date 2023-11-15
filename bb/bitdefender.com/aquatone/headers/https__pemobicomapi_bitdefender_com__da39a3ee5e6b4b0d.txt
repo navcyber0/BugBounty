@@ -1,0 +1,9 @@
+401 Unauthorized
+Server: nimbus
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Www-Authenticate: Basic realm="There is nothing here"
+X-Content-Type-Options: nosniff
+Content-Length: 172
+Retry-Count: 0
+Content-Type: text/html
+Date: Thu, 23 Mar 2023 15:00:04 GMT

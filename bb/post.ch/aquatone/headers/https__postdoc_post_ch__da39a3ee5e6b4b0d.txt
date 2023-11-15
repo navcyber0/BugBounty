@@ -1,0 +1,21 @@
+200 OK
+Content-Language: de
+Content-Type: text/html; charset=UTF-8
+X-Drupal-Dynamic-Cache: UNCACHEABLE
+X-Generator: Drupal 9 (https://www.drupal.org)
+X-Platform-Cache: MISS
+X-Ua-Compatible: IE=edge
+Cache-Control: must-revalidate, no-cache, private
+Date: Fri, 23 Jun 2023 15:30:27 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-Debug-Info: eyJyZXRyaWVzIjowfQ==
+X-Drupal-Cache: HIT
+X-Platform-Cluster: ybxgue63mby4s-master-7rqtwti
+X-Platform-Router: d4vkal3kuv2yuue7z727ukszvy
+Retry-Count: 0
+X-Commerce-Core: 2
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Platform-Processor: m5gflfuzgh3lyapbjrjrldjdke
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Traceresponse: 00-176b53707632a0d7d4aa57e95efcc7c7-e0b722ed0c6f348c-00

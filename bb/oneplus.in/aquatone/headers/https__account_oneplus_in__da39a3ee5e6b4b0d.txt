@@ -1,0 +1,17 @@
+200 OK
+X-Frame-Options: ALLOW-FROM https://cloud.oneplus.in
+Access-Control-Allow-Headers: X-Requested-With,content-type,Authorization,openToken
+Server: nginx
+Date: Sat, 15 Jul 2023 13:11:31 GMT
+Content-Security-Policy: frame-ancestors https://cloud.oneplus.in
+Strict-Transport-Security: max-age=31536000;
+Retry-Count: 0
+Last-Modified: Fri, 18 Nov 2022 02:22:08 GMT
+Expires: Fri, 14 Jul 2023 13:11:31 GMT
+Cache-Control: no-cache
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 82
+Etag: "6376ec50-52"
+Access-Control-Allow-Credentials: true

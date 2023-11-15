@@ -1,0 +1,16 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+Last-Modified: Fri, 07 Jul 2023 15:39:40 GMT
+Accept-Ranges: bytes
+Feature-Policy: camera 'none'; microphone 'none'; geolocation 'none'
+Cache-Control: no-cache, no-store, must-revalidate
+Strict-Transport-Security: max-age=0
+Date: Sun, 23 Jul 2023 01:13:28 GMT
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Referrer-Policy: no-referrer
+X-Frame-Options: SAMEORIGIN
+Etag: "a717-5ffe770e2e700"
+Content-Length: 42775

@@ -1,0 +1,8 @@
+www.just-eat.co.uk
+business.just-eat.co.uk
+app.business.just-eat.co.uk
+connect.just-eat.co.uk
+courier-help.just-eat.co.uk
+couriers.just-eat.co.uk
+partner.just-eat.co.uk
+

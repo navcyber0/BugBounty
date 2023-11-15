@@ -1,0 +1,69 @@
+[generic-tokens] [http] [unknown] https://ualaki-usource.ual.com [passwordadapter=SourcingSupplierUser"]
+[CVE-2019-7543] [http] [medium] https://aws.svcgw.useast1.pcr.ual.com/kindeditor/php/demo.php
+[CVE-2019-7543] [http] [medium] https://aws.svcgw.useast2.pcr.ual.com/kindeditor/php/demo.php
+[CVE-2019-7543] [http] [medium] https://aws.svcgw.useast1.pcr.ual.com/php/demo.php
+[CVE-2019-7543] [http] [medium] https://aws.svcgw.useast2.pcr.ual.com/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.prd.awscloud.ual.com/kindeditor/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.preprod.awscloud.ual.com/kindeditor/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.prd.awscloud.ual.com/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.preprod.awscloud.ual.com/php/demo.php
+[CVE-2021-31589] [http] [medium] https://ualaki-itsupport.ual.com/appliance/login.ns?login%5Bpassword%5D=test%22%3E%3Csvg/onload=alert(document.domain)%3E&login%5Bsubmit%5D=Change%20Password&login%5Buse_curr%5D=1
+[weak-cipher-suites] [ssl] [medium] ethicsandcompliancehub.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ethicsandcompliancehub.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] vpninp.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] vpninp.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] np-oamohsdmz.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] nq-oamohsdmz.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] myidtravel-united.ual.com:443 [[tls12 TLS_RSA_WITH_AES_128_GCM_SHA256]]
+[weak-cipher-suites] [ssl] [medium] np-oamohsdmz.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] nq-oamohsdmz.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] rwebgate.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] rwebgate.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] pndcapiauth3.ual.com:443 [[tls12 TLS_RSA_WITH_AES_128_GCM_SHA256]]
+[weak-cipher-suites] [ssl] [medium] prendcapiauth.ual.com:443 [[tls12 TLS_RSA_WITH_AES_128_GCM_SHA256]]
+[weak-cipher-suites] [ssl] [medium] prendcapigw.ual.com:443 [[tls12 TLS_RSA_WITH_AES_128_GCM_SHA256]]
+[weak-cipher-suites] [ssl] [medium] stagetechopsredirect.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] remotectx.ual.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] techopsredirect.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] resvdi.ual.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] techopsservices-gateway.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] stagetechopsredirect.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] techopsredirect.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] techopsservices-gateway.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-itsupport.ual.com:443 [[tls10 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-itsupport.ual.com:443 [[tls11 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] supportctx.ual.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] ualaki-pndcapiauth3.ual.com:443 [[tls12 TLS_RSA_WITH_AES_128_GCM_SHA256]]
+[weak-cipher-suites] [ssl] [medium] ualaki-techopsservices-gateway.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-techopsservices-gateway.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-prendcapiauth.ual.com:443 [[tls12 TLS_RSA_WITH_AES_128_GCM_SHA256]]
+[weak-cipher-suites] [ssl] [medium] ualaki-prendcapigw.ual.com:443 [[tls12 TLS_RSA_WITH_AES_128_GCM_SHA256]]
+[weak-cipher-suites] [ssl] [medium] vndcdfgpapjwu01.global.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-remotectx.ual.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] vndcdfgpapjwu01.global.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] vpnip.ual.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-resvdi.ual.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] ualaki-sndceapiauth1.ual.com:443 [[tls12 TLS_RSA_WITH_AES_128_GCM_SHA256]]
+[weak-cipher-suites] [ssl] [medium] vpnip.ual.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-usource.ual.com:443 [[tls12 TLS_RSA_WITH_AES_256_GCM_SHA384]]
+[CVE-2021-24342] [http] [medium] https://aws.svcgw.useast1.pcr.ual.com/?ajax-request=jnews
+[CVE-2021-24342] [http] [medium] https://aws.svcgw.useast2.pcr.ual.com/?ajax-request=jnews
+[CVE-2021-24342] [http] [medium] https://svcgw.preprod.awscloud.ual.com/?ajax-request=jnews
+[CVE-2021-24342] [http] [medium] https://svcgw.prd.awscloud.ual.com/?ajax-request=jnews
+[CVE-2020-8191] [http] [medium] https://aws.svcgw.useast1.pcr.ual.com/menu/stapp
+[CVE-2020-8191] [http] [medium] https://aws.svcgw.useast2.pcr.ual.com/menu/stapp
+[CVE-2020-8191] [http] [medium] https://svcgw.preprod.awscloud.ual.com/menu/stapp
+[CVE-2020-8191] [http] [medium] https://svcgw.prd.awscloud.ual.com/menu/stapp
+[CVE-2021-24407] [http] [medium] https://aws.svcgw.useast1.pcr.ual.com/wp-admin/admin-ajax.php
+[CVE-2021-24407] [http] [medium] https://aws.svcgw.useast2.pcr.ual.com/wp-admin/admin-ajax.php
+[CVE-2021-24407] [http] [medium] https://svcgw.prd.awscloud.ual.com/wp-admin/admin-ajax.php
+[CVE-2021-24407] [http] [medium] https://svcgw.preprod.awscloud.ual.com/wp-admin/admin-ajax.php
+[CNVD-2020-26585] [http] [critical] https://aws.svcgw.useast1.pcr.ual.com/index.php?s=/home/page/uploadImg
+[CNVD-2020-26585] [http] [critical] https://aws.svcgw.qa.useast1.pcr.ual.com/index.php?s=/home/page/uploadImg
+[CNVD-2020-26585] [http] [critical] https://aws.svcgw.preprod.useast1.pcr.ual.com/index.php?s=/home/page/uploadImg
+[CNVD-2020-26585] [http] [critical] https://aws.svcgw.useast2.pcr.ual.com/index.php?s=/home/page/uploadImg
+[CNVD-2020-26585] [http] [critical] https://svcgw.preprod.awscloud.ual.com/index.php?s=/home/page/uploadImg
+[CNVD-2020-26585] [http] [critical] https://svcgw.prd.awscloud.ual.com/index.php?s=/home/page/uploadImg
+[CVE-2019-6802] [http] [medium] http://vpninp.ual.com/%0d%0aSet-Cookie:crlfinjection=1;
+[web-config] [http] [medium] https://terminalmaps.ual.com/web.config
+[web-config] [http] [medium] https://terminalmaps.ual.com/web.config

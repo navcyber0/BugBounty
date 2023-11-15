@@ -1,0 +1,14 @@
+200 OK
+Pragma: no-cache
+X-Frame-Options: DENY
+Retry-Count: 0
+X-Powered-By: PHP/7.4.32
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Strict-Transport-Security: max-age=31536000; preload
+X-Content-Type-Options: nosniff
+Cf-Ray: 7ac78a803d1d84fb-BOM
+Content-Type: text/html; charset=UTF-8
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Date: Thu, 23 Mar 2023 14:59:55 GMT

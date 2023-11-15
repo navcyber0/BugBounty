@@ -1,0 +1,16 @@
+200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Via: 1.1 1b866e6eb5f6e3ef570f3588da8a7b3a.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: dItt9Y6tf9q_PN7vR9bk5NBp7iqYi-AVhs_WawxG9PzgNjTf1o73gQ==
+Cf-Cache-Status: DYNAMIC
+Strict-Transport-Security: max-age=0
+Date: Wed, 14 Jun 2023 13:06:54 GMT
+X-Amz-Server-Side-Encryption: AES256
+Content-Type: text/html
+X-Amz-Cf-Pop: MRS52-P2
+Cf-Ray: 7d72cb0b7eda852b-BOM
+X-Cache: Miss from cloudfront
+Server: cloudflare
+Retry-Count: 0
+Last-Modified: Wed, 12 Apr 2023 09:09:32 GMT
+Vary: Accept-Encoding

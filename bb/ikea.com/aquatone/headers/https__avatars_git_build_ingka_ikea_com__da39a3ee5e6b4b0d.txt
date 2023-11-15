@@ -1,0 +1,18 @@
+200 OK
+Retry-Count: 0
+X-Github-Request-Id: e18b8b63-c6fe-443a-8ac5-d767aa04cc6e
+X-Xss-Protection: 0
+Server: GitHub.com
+Etag: W/"b514bc59affefc8094635b9ce971b4bd"
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+X-Runtime-Rack: 0.036550
+Date: Sun, 23 Jul 2023 01:09:31 GMT
+Set-Cookie: saml_csrf_token=-NJnmRwfCvq-J4HdC0_7oOD0VzbLWSkLtlPiwsrOWx0kvRm5SIoxbgHHYdy1nR-B6LNlUGFLecYy42PaQCBYpcv1MU1gY5piZM2xK50Ail0; path=/; secure; HttpOnly; SameSite=None saml_csrf_token_legacy=-NJnmRwfCvq-J4HdC0_7oOD0VzbLWSkLtlPiwsrOWx0kvRm5SIoxbgHHYdy1nR-B6LNlUGFLecYy42PaQCBYpcv1MU1gY5piZM2xK50Ail0; path=/; secure; HttpOnly saml_return_to=https%3A%2F%2Favatars.git.build.ingka.ikea.com%2F; path=/; secure; HttpOnly; SameSite=None saml_return_to_legacy=https%3A%2F%2Favatars.git.build.ingka.ikea.com%2F; path=/; secure; HttpOnly _fi_sess=Rk3imiGKOkhOshndDebmRCoZeMaOyn71%2BO49ycGlkLK6fTkXt8Bo%2FWxoi0Ti8f3r28WM4OgYVO0TUwqcgX4W8I232GAQXT2WBMhQ%2FrlYyBCQIJLGmmawj%2Fcn6Hv7K32xWUQSW%2BprQ6syxq0mwyieoZ9eHhP5JBGZR6W%2BGXHBoA0%3D--2cPQnSYDbtkW1r14--DsImqCeKzBC7gEyOnC16XA%3D%3D; path=/; secure; HttpOnly; SameSite=Lax
+X-Runtime: 0.031117
+Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src git.build.ingka.ikea.com/assets-cdn/worker/ gist.git.build.ingka.ikea.com/assets-cdn/worker/; connect-src 'self' uploads.git.build.ingka.ikea.com media.git.build.ingka.ikea.com www.githubstatus.com raw.git.build.ingka.ikea.com git.build.ingka.ikea.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://git.build.ingka.ikea.com; font-src assets.git.build.ingka.ikea.com; form-action 'self' git.build.ingka.ikea.com gist.git.build.ingka.ikea.com pages.git.build.ingka.ikea.com; frame-ancestors 'none'; frame-src viewscreen.git.build.ingka.ikea.com notebooks.git.build.ingka.ikea.com; img-src * data:; manifest-src 'self'; media-src media.git.build.ingka.ikea.com; script-src assets.git.build.ingka.ikea.com; style-src 'unsafe-inline' assets.git.build.ingka.ikea.com; worker-src git.build.ingka.ikea.com/assets-cdn/worker/ gist.git.build.ingka.ikea.com/assets-cdn/worker/
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame
+Cache-Control: no-store
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff

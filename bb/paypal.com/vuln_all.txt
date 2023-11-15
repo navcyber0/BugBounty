@@ -1,0 +1,28 @@
+[generic-tokens] [http] [unknown] https://api-v2.sandbox.paypal.com
+[generic-tokens] [http] [unknown] https://api-s-v2.sandbox.paypal.com
+[generic-tokens] [http] [unknown] https://api.glb.paypal.com
+[generic-tokens] [http] [unknown] https://ccg12-origin-api-1.paypal.com
+[weak-cipher-suites] [ssl] [medium] 16695532.paypal.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] 16695532.paypal.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] api-m.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] b.stats.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] c6.glb.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] chd.stats.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] dub.stats.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] gslink.paypal.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] gslink.paypal.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] gsslink.paypal.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] gsslink.paypal.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] hnd.stats.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] image.mktg1.paypal.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] image.mktg1.paypal.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] itsmail.paypal.com:443 [[tls10 TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] itsmail.paypal.com:443 [[tls11 TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] lvs.stats.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] lyncdiscover.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] ppo.glb.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] sip.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] slc-a-origin-history.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] slc2.stats.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] slc.stats.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] stats.glb.paypal.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]

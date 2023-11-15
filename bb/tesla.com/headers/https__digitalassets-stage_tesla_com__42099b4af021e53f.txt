@@ -1,0 +1,17 @@
+404 Not Found
+X-Cld-Error: Resource not found
+Content-Type: image/gif
+Strict-Transport-Security: max-age=604800
+Cache-Control: private, no-transform, max-age=0, no-cache
+Server-Timing: cld-fastly;mitm=o;dur=1;cpu=0;start=2023-06-14T13:52:44.188Z;desc=hit,rtt;dur=16
+Access-Control-Allow-Origin: *
+Content-Length: 0
+Date: Wed, 14 Jun 2023 13:52:44 GMT
+Server: Cloudinary
+Content-Disposition: inline
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Retry-Count: 0
+Content-Transfer-Encoding: binary
+Pragma: no-cache
+Access-Control-Expose-Headers: Content-Length,Content-Disposition,Server-Timing,X-Cld-Error

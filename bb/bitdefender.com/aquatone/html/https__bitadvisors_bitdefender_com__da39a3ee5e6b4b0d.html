@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html class="rc-loginPage rc-customBackground rc-isParticipant rc-html rc-cpanelClosed rc-cpanelHidden" lang="en">
+<head><META NAME="robots" CONTENT="noindex,nofollow,nosnippet,noarchive,noimageindex"><META NAME="description" content="Private insights community"><meta content="IE=edge" http-equiv="X-UA-Compatible"><meta charset="utf-8" /><meta property="og:image" content="https://bitadvisors.bitdefender.com/site_logo?ts=329589553080"/><meta property="og:url" content="https://bitadvisors.bitdefender.com"/><meta property="og:title" content="Bitdefender Community"/><meta property="og:description" content="Private insights community"/><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/><meta name="google" content="notranslate" /><meta http-equiv="Content-Security-Policy" content="img-src data: blob: https://*; media-src blob: https://*; default-src 'self' 'unsafe-eval' 'unsafe-inline' wss://bitadvisors.bitdefender.com wss://*.twilio.com/ https://*.twilio.com/ https://*.google-analytics.com/ https://static.recollective.com/ https://media.twiliocdn.com/ https://beaconapi.helpscout.net https://d3hb14vkzrxvla.cloudfront.net/ https://pixabay.com/ https://*.youtube.com/ https://*.youtu.be/ https://*.vimeo.com/ https://*.wistia.com/ https://*.googleapis.com https://*.google.com/ https://*.gstatic.com/ https://beacon-v2.helpscout.net/ https://cdn.addpipe.com/ wss://*.addpipe.com/ data: blob:"><title>Bitdefender Community</title><link href="/site_favicon?ts=239052493176" rel="Shortcut Icon" type="image/png"><link href="/site_favicon?ts=239052493176" rel="apple-touch-icon"><link href="https://static.recollective.com/v1.5.46.2/_inc/bundle/global.css?ts=1678755477000" rel="stylesheet"><link href="//cdn.addpipe.com/2.0/pipe.css" rel="stylesheet"><script src="https://static.recollective.com/v1.5.46.2/_inc/bundle/js/core.js?ts=1678755477000"></script><script src="https://static.recollective.com/v1.5.46.2/_inc/bundle/js/global.js?ts=1678755477000"></script><script src="https://static.recollective.com/v1.5.46.2/_inc/bundle/vue/core.vue.js?ts=1678755477000"></script><script src="//cdn.addpipe.com/2.0/pipe.js"></script><link href="https://static.recollective.com/v1.5.46.2/_inc/css/control-panel.css?ts=1678755477000" rel="stylesheet"><link href="https://static.recollective.com/v1.5.46.2/_inc/css/login.css?ts=1678755477000" rel="stylesheet"><link href="https://static.recollective.com/v1.5.46.2/_inc/css/responsive.css?ts=1678755477000" rel="stylesheet"><link href="https://static.recollective.com/v1.5.46.2/_inc/css/locale/en.css?ts=1678755477000" rel="stylesheet"><link href="https://static.recollective.com/v1.5.46.2/_inc/css/locale/en_responsive.css?ts=1678755477000" rel="stylesheet"><script src="/lang.jsp?locale=en"></script><script src="https://static.recollective.com/v1.5.46.2/_inc/js/datepicker/jquery.ui.datepicker-en.js?ts=1678755477000"></script>
+<!--[if IE 9]>
+<link href="https://static.recollective.com/v1.5.46.2/_inc/css/ie/ie9.css?ts=1678756748595" rel="stylesheet" />
+<![endif]--> 
+<link href="/includes/theme-css.jsp?ts=1678756748596" rel="stylesheet">
+		<script>
+			if( typeof(Highcharts) != 'undefined' && Highcharts.theme ){
+				Highcharts.theme.colors = ['#659AD1','#847DB6','#D99AD9','#95D095','#DCCC94','#D39E7E','#79B9C2','#D28894','#76A776','#77859F','#62649E','#9A656E'];
+				Highcharts.setOptions(Highcharts.theme);
+			}
+		</script>
+		<script type="text/javascript">
+ 
+ $.datepicker.setDefaults({
+ 	monthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+ 	monthNamesShort: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+ 	dayNames: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+ 	dayNamesMin: ['Su','Mo','Tu','We','Th','Fr','Sa'],
+ 	dayNamesShort: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']		    
+	});
+	
+ 	
+ 
+ 	// Time picker - Change to match java date formatter
+ 	moment.updateLocale('en',{
+ 		meridiemParse: /AM|PM/,
+ 	    isPM: function (input) {
+ 	        return input == 'PM';
+ 	    },
+ 	    // Some languages can have several versions of am/pm. Update to match ours.
+ 	  	meridiemHour : function (hour, meridiem) {
+ 	  		if (hour === 12) hour = 0;
+            if (meridiem === 'PM') {
+                return hour += 12;
+            }
+			return hour;
+        },
+ 	    meridiem : function (hours, minutes, isLower) {
+ 	        return hours < 12 ? 'AM' : 'PM';
+ 	    },
+ 	    
+ 	    longDateFormat : {
+ 	        LT: "h:mm A",
+ 	        LTS: "h:mm:ss A"
+ 	    }
+ 	});
+ 
+	// global js variables
+	
+	// iPad 
+	
+	let isIpad13 = (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) && 
+				   !window.MSStream; // IE check	
+	
+		if ( isIpad13 ) {
+			$.ajax({
+					dataType: "json",
+					url: '/DetectediPad' 
+				}); 
+		}
+	
+	Ramius.chunk_identifier = "841::::";
+ 	Ramius.is_mobile = isIpad13 || false;
+	Ramius.is_tablet = isIpad13 || false;
+	Ramius.is_ios = isIpad13 || false;
+	Ramius.is_android = false;
+	Ramius.is_rtl = false;
+	Ramius.locale = 'en';
+	Ramius.is_compact = $(window).width() < 790;
+	Ramius.tokenParam='CSRFToken=KzZobDNSVE5IWEViK01xUmNlV0dJanB2UDlYYVN2bms3MWljUFpwaUppblhLOGpQaEtnWE5Kd2FrSDJiVkdvVEJMdFVBN1NVSmFEZVNmMld0dm15cFpVUFhyN3ZSOFN3R0h3MWdWRXBHM0E9';
+		Ramius.token='KzZobDNSVE5IWEViK01xUmNlV0dJanB2UDlYYVN2bms3MWljUFpwaUppblhLOGpQaEtnWE5Kd2FrSDJiVkdvVEJMdFVBN1NVSmFEZVNmMld0dm15cFpVUFhyN3ZSOFN3R0h3MWdWRXBHM0E9';
+		Ramius.tokenData={'CSRFToken':'KzZobDNSVE5IWEViK01xUmNlV0dJanB2UDlYYVN2bms3MWljUFpwaUppblhLOGpQaEtnWE5Kd2FrSDJiVkdvVEJMdFVBN1NVSmFEZVNmMld0dm15cFpVUFhyN3ZSOFN3R0h3MWdWRXBHM0E9'}; 
+		redactor_base.regexps = {
+			linkyoutube: null,
+			linkvimeo: null,
+			linkimage: /((https?|www)[^\s]+\.)(jpe?g|png|gif)(\?[^\s-]+)?/ig,
+			url: /(https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})/ig
+		};
+		
+		$.Redactor.prototype.video = function()	{
+			return {};
+		}
+		
+	 
+	
+	
+	
+	videojs.options.playbackRates = [0.5, 0.75, 1, 1.25, 1.5, 2]; 
+	
+	// set local storage variable for playback speed 
+	videojs.hook('beforesetup', function(videoEl, options) {
+		videoEl.onplay = function () {
+			if (typeof(Storage) !== "undefined") {
+				videoEl.playbackRate = localStorage.playbackrate || 1;
+			}
+		};
+		return options;
+	});
+	videojs.hook('setup', function(player) {
+		var videoEl = $(player.el()).find('.vjs-tech').get(0);
+		videoEl.onratechange = function() {
+			if (typeof(Storage) !== "undefined" && !videoEl.disposing) {
+			    localStorage.setItem("playbackrate", videoEl.playbackRate);
+			}
+		}
+		player.on('dispose', function(){
+			videoEl.disposing = true;
+		});
+	});
+	
+	Vue.prototype.$resourceTs = '1678756748596';
+		
+</script>
+	<script>
+		var primary_rte_colors = ["#111329","#282A3E","#404253","#585969","#70717E","#888994","#9FA0A9","#B7B8BE","#CFCFD4","#E7E7E9"];
+	
+		var secondary_rte_colors = ["#056DC9","#1D7BCE","#368AD3","#5098D9","#69A7DE","#82B6E4","#9BC4E9","#B4D3EE","#CDE1F4","#E6F0F9"];
+		
+	</script>
+	<script>
+	  
+	  var emojiSupported = (function() {
+		  var node = document.createElement('canvas');
+		  if (!node.getContext || !node.getContext('2d') ||
+		      typeof node.getContext('2d').fillText !== 'function')
+		    return false;
+		  var ctx = node.getContext('2d');
+		  ctx.textBaseline = 'top';
+		  ctx.font = '32px Arial';
+		  ctx.fillText('\ud83d\ude03', 0, 0);
+		  return ctx.getImageData(16, 16, 1, 1).data[0] !== 0;
+		})();
+	
+		if (emojiSupported) { 
+		    var script = document.createElement('script');
+		  	script.setAttribute("src", "/emoji.jsp") 
+			document.getElementsByTagName("head")[0].appendChild(script)
+		}	 
+		
+	</script><script>
+	if (window.devicePixelRatio && window.devicePixelRatio >= 2) { 
+	    var script = document.createElement('script');
+	  	script.setAttribute("src", "/retina.jsp") 
+		document.getElementsByTagName("head")[0].appendChild(script)
+	}
+	</script>
+
+<style id="theme_styles"></style>
+
+
+
+<style>.rc-mainHeader {background: #000;}
+.rc-pageTitle.rc-c-d, .rc-pageTitle.rc-c-h-d:hover {color: #fff !important;}
+.rc-mainHeader .rc-pageTitleWrap .rc-overviewLink .rc-icon-info, .rc-userHeader .rc-icon {fill: #fff;}
+.rc-userHeader > li .dropdown:hover .rc-icon, .rc-userHeader > li .dropdown.open .rc-icon, .rc-userHeader > li a:hover .rc-icon, .rc-userHeader > li.rc-search .rc-iconWrap:hover .rc-icon {fill: #a3a3a3;}
+.rc-mainHeader .rc-pageTitle {font-size: 20px;}
+.rc-mainHeader .rc-logoTitleWrap {padding-top: 0; padding-bottom: 0;}
+.rc-userHeader .rc-userAccount .rc-thumbWrap .rc-thumb {max-width: 40px; max-height: 40px;}
+.rc-userHeader .rc-admin .rc-icon-admin {width: 20px; height: 20px;}
+.rc-userHeader .rc-messages .rc-icon-messages,.rc-userHeader .rc-notifications .rc-icon-notifications {height: 20px;}
+.rc-newStudyCard:hover .rc-icon-plus {fill:#006cff; }
+.rc-newStudyCard:hover .rc-startTitle {color: #006cff;}</style>
+	
+	</head><body id="rc-body"><ul class="rc-skipLinks"><li><a href="#rc-mainPanel" class="rc-c-p-100">Skip to main content</a></li></ul><noscript><div class="alert alert-danger rc-fullPageAlert"><span class="rc-text">JavaScript must be enabled in your Web browser to use this site. <a href="http://enable-javascript.com" target="_blank">Learn how to enable JavaScript.</a></span></div></noscript>
+
+<div id="alert-bar" v-cloak></div>
+
+<script>
+
+Ramius.alertBar = new Vue(alertBarComponent);
+
+
+var cookies = navigator.cookieEnabled || ("cookie" in document && (document.cookie.length > 0 || (document.cookie = "test").indexOf.call(document.cookie, "test") > -1));
+if ( !cookies ){
+
+	Ramius.alertBar.addAlert({
+			uid: 'cookies',
+			type:'danger', 
+			body: 'Cookies must be enabled in your Web browser to use this site. They provide security and ensure you don\'t have to login every time the page changes. <a href=\"http://support.google.com/accounts/bin/answer.py?hl=en&answer=61416\" target=\"_blank\">Learn how to enable Cookies</a>'
+	});
+	
+}
+
+
+
+
+</script>
+
+
+<div style="display: none;">
+				<div id="rc-unsupported-browser" class="rc-modal rc-modalSmall">
+					<div class="rc-mb30">
+						<h3 class="rc-modalTitle">Unsupported Browser Detected</h3>
+						<p><strong>Sorry, this site does not support the web browser you are currently using.</strong></p>
+						<p>We strongly recommend <strong>Google Chrome</strong> for the best experience.</p>
+					</div>
+					<div class="rc-mb30"><a class="rc-browserLink" href="http://www.google.com/chrome">Install<br><span class="rc-font18 rc-c-p-100 rc-tdUnderline">Google Chrome</span></rm:text></a></div>
+					<div>
+						<a href="javascript:void(0);" class="btn btn-primary rc-mr20 rc-vaMiddle" onclick="$.fancybox.close();" style="min-width:90px;">OK</a><span class="rc-vaMiddle"><input type="checkbox" name="show_ie_browser_msg" id="show_ie_browser_msg" onclick="dismissBrowserWarning()"><label for="show_ie_browser_msg">Don't show me this again</label></span>
+					</div>
+				</div>
+			</div>
+			<script>
+			// put the test for the 'let' keyword in it's own script block so it won't break anything after it
+			let es6_test = true;
+			</script>
+			<script>
+			
+			$(document).ready(function() {
+					
+				if( typeof(es6_test) == 'undefined' ) {
+					$.fancybox.open({
+						src : '#rc-unsupported-browser',
+						afterShow : function(){
+							setTimeout(function(){ $('#rc-loginForm #rc-email').blur(); }, 1000);
+						}
+					});
+				}
+			});
+			
+			function dismissBrowserWarning(){
+				var d = new Date();
+		    	d.setTime(d.getTime() + (30*24*3600000));
+		    	document.cookie = "rm-browser-suggest=false; expires="+d.toUTCString() + "; path=/";
+			}		
+			</script>
+
+<div id="rc-customHead" class="rc-customHead"></div><div class="rc-loginSiteWrap"><div class="rc-siteWrap"><header class="rc-mainHeader clearfix" role="banner"><div class="rc-headWrap clearfix"><div class="rc-logoTitleWrap "><div class="rc-logo" role="presentation"><a href="/" class="rc-logoLink" aria-label="Bitdefender Community"><img class="rc-standard" src="/site_logo?ts=329589553080" alt="Bitdefender Community" /><img class="rc-retina" src="/site_logo?retina=1&ts=329589553044" alt="Bitdefender Community"/></a></div></div><ul class="rc-userHeader"><li class="rc-help"><div class="rc-fixedNavIcon"><a href="mailto:canita@bitdefender.com" target="_blank" class="rc-helpLink" tip="Help" aria-label="Help"><svg class="rc-icon rc-icon-help"><use xlink:href="/svg/svg-defs.svg?ts=1678756748596#icon-help"/></svg></a></div></li></ul></div><div id="rc-siteBar" class="rc-siteBar rc-bg-g rc-addLine"><div class="rc-compactNav"></div><script>
+					function checkCompactMode(){
+						Ramius.is_compact = $(window).width() < 790;
+	       	    		if ( Ramius.is_compact ) {
+	       	    			$('html').addClass('rc-compactMode');
+	       	    			$('#rc-siteNav').appendTo('.rc-body');
+	       	    		} else {
+	       	    			$('html').removeClass('rc-compactMode');
+	       	    			$('#rc-siteNav').appendTo('#rc-siteNavWrap');
+	       	    		}
+	       	    	 }
+					 var w_width = $(window).width();
+		  	    	 $(window).resize(function(){
+		  	    		 if($(this).width() != w_width){
+		  	    			 w_width = $(this).width();
+		  	    			 checkCompactMode();
+		  	    		 }
+		  	    	 });
+	       	    	 $(document).ready(function(){ checkCompactMode(); });
+					</script></div></header><main id="rc-panelWrap" class="rc-panelWrap" role="main"><div id="rc-mainPanel" class="rc-mainPanel">
+
+		<section class="rc-loginWrap"><input type="hidden" id="rc-external-id" name="external_id" value="" />
+	    <input type="hidden" id="rc-external-uname" name="external_uname" value="" />
+	    <input type="hidden" id="rc-external-key" name="external_key" value="" />
+	    <input type="hidden" id="rc-external-token" name="external_token" value="" />
+	    <input type="hidden" id="rc-external-src" name="external_src" value="" />
+        
+ 		<script>
+
+ 		let login_url = "/session/new";
+ 		let login_option_endpoint = "/sso/config/authentication-options";
+		let loginComponent = null;  
+		let baseLoginConfig = {"configFocus":null,"passwordEnabled":true,"ssoOptions":[],"username":"","error":false};
+		
+		let loginComponentConfig = {"configFocus":null,"passwordEnabled":true,"ssoOptions":[],"username":"","error":false};
+		
+	
+		let redirectUrl = ""; 
+		
+		
+		$(function() {
+			
+			loginComponent = new Vue({  el: '#login-widget', data: { baseData: baseLoginConfig, initialData: loginComponentConfig, redirectUrl: redirectUrl }});
+		
+		});
+ 			
+	  	Vue.component('login', {
+		    template: '#login-widget-template',
+			props: {
+				baseData: Object,
+				initialData: Object,
+				rememberMeEnabled: Boolean, 
+				redirectUrl: String				
+			}, 
+			data: function(){
+	  			return { 
+		  			passwordEnabled: false,
+					ssoOptions: [],
+					configFocus: null, 
+					username: "",
+					password: "",
+					showPassword: false,
+					rememberMe: false,
+					loginSubmitted: false,
+					identitySubmitted: false,
+					identityLoading: false,
+					error: false,
+					tzOffset: 0,
+					tzDst: false 				
+				}
+			}, 
+			computed: {
+				portal: function() {
+					
+					return false;
+				},
+				canChange: function() {
+					if ( !this.identityLoading && this.identitySubmitted ) {
+					
+						if ( !this.baseData.passwordEnabled ) return true;
+						
+					}
+					return false;
+				},
+			},
+			methods: { 
+				keydown: function(e) {
+					if ( !this.identityLoading && e.which === 13 ) {
+						if ( this.passwordEnabled ) {
+							if ( this.identitySubmitted ) {
+								this.reset(true);
+							} else {
+								this.login();
+							}
+						} else if ( !this.identitySubmitted ) {
+							this.fetchOptions();
+						} 
+					}
+				},
+				hideShowPassword: function() {
+					this.showPassword = !this.showPassword;
+				},
+				setData: function(data, includeConfigFocus) { 
+					this.identitySubmitted = data.username && data.username != '';
+					this.configFocus = includeConfigFocus ? data.configFocus : null;
+					this.passwordEnabled = data.passwordEnabled;
+		        	this.ssoOptions = data.ssoOptions;
+		        	this.error = data.error;
+		        	this.username = data.username; 
+				},
+				login: function() { 
+					if ( this.loginSubmitted ) return;
+					this.loginSubmitted = true; 
+					$('#rc-hidden-username').val(this.username);
+					$('#rc-hidden-password').val(this.password);
+					$('#rc-hidden-remember-me').val(this.rememberMe?1:0);
+					$('#rc-loginForm').submit();
+				},
+				reset: function(keepUsername) {
+					if ( this.identityLoading ) return;
+					let uname = this.username;
+					this.setData(this.baseData);
+					if ( keepUsername ) {
+						this.username = uname;
+					}						
+					Vue.nextTick( function() {
+					  	$('#rc-email').focus(); 
+					});
+				},
+				resetIfIdentityLoaded: function(keepUsername) {
+					if ( this.canChange ) {
+						this.reset(keepUsername);
+					}
+				},
+				fetchOptions: function() { 
+					if ( this.passwordEnabled ) return ;
+					if (this.identityLoading || this.username == null || this.username == '') {
+						$('#rc-email').focus();
+						return;
+					}
+					this.identitySubmitted = true;
+					this.identityLoading = true;
+					let component = this;  
+		        	$.ajax({
+				        type: "GET", 
+				        url: login_option_endpoint, 
+				        data: 'identity=' + encodeURIComponent( this.username ) + '&absolute.url.on.success='+encodeURIComponent( this.redirectUrl ),
+				        success: function (data) { 
+				        	component.identityLoading = false;
+				        	component.setData(data);
+				        	Vue.nextTick( function() {
+							  	$('#rc-password:visible').focus(); 
+							});
+		
+				        },
+				        error: function (e) { 
+							console.log(e);
+				        }
+					});  
+				}
+			}, 
+			created: function() {
+				this.setData(this.initialData, true);
+				
+				var now = new Date();
+				this.tzOffset = now.getTimezoneOffset();
+				
+				now.setMonth(0);
+				var off1 = now.getTimezoneOffset();
+				now.setMonth(6);
+				var off2 = now.getTimezoneOffset(); 
+				
+				this.tzDst = ( off1 == off2 );
+				
+			}
+			
+		});
+ 			
+ 		</script>
+ 		
+ 		<div v-cloak id="login-widget">  
+ 			 
+			<login :base-data="baseData" :initial-data="initialData" :remember-me-enabled="true" :redirect-url="redirectUrl" ></login>
+		</div>
+		
+	    <template id="login-widget-template">
+			
+	    		<div>
+	    	
+	    		<div v-if="configFocus" id="rc-portal-login">
+					<a :style="'background-color:' + configFocus.colorHex" :href="configFocus.authUri" class="rc-accountLink rc-mb30">
+			    		<span class="rc-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'/svg/svg-defs.svg?ts=1678756748596#icon-' + configFocus.type"></use></svg></span>
+						<span class="rc-text">{{configFocus.label}}</span>
+			    	</a>
+			    	<div class="rc-taCenter"><a href="javascript:void(0)" @click="reset(false)" class="rc-tdUnderline rc-c-s-d-80 rc-font16">Other login options</a></div>
+	    		</div>
+	    		<template v-else>    
+				    <div>
+			            <label class="rc-formLabel rc-labelWithLink" for="rc-email">
+			            	Email or Username
+		            		<a v-if="canChange" href="javascript:void(0)" @click="reset(true)" class="rc-link rc-c-s-100">Change</a>
+			            </label>	            
+			            <div :class="{'rc-submitInput' : !loginSubmitted && !canChange && !passwordEnabled}">	
+				            <input id="rc-email"
+				            	   name="username"
+				            	   type="text"
+				            	   required
+				            	   v-model="username"
+				            	   @keydown="keydown"
+				            	   class="form-control rc-largeInput rc-widthFull"
+				            	   :class="{'rc-error' : error}"
+				            	   :readonly="loginSubmitted || canChange"
+				            	   @click="resetIfIdentityLoaded(true)"
+				            	   autofocus />
+		            	    <button v-if="!loginSubmitted && !canChange && !passwordEnabled" @click="fetchOptions" class="btn btn-primary btn-lg btn-loader" :class="{'rc-loading':identityLoading}" :disabled="identityLoading">
+		            	    	<span class="rc-loader"><svg><use xlink:href="/svg/svg-defs.svg?ts=1678756748596#loader-spin"/></svg></span>
+		            	    	<svg class="rc-icon"><use xlink:href="/svg/svg-defs.svg?ts=1678756748596#icon-right-angle-right"></use></svg>
+		            	    </button>
+			            </div>
+			        </div>
+				    <div v-if="passwordEnabled" class="rc-mt20">
+				        <div class="rc-mb20 rc-tabIndexWrap">
+				            <div class="rc-passwordWrap" :class="{'rc-view':showPassword}">
+					            <input name="password" @keydown.enter="login" v-model="password" autocomplete="off" :type="showPassword?'text':'password'" required id="rc-password" class="form-control rc-largeInput rc-widthFull" :class="{'rc-error' : error}" />
+					            <a class="rc-viewPassword rc-large" href="javascript:void(0)" @click="hideShowPassword">
+					            	<svg class="rc-icon-eye"><use xlink:href="/svg/svg-defs.svg?ts=1678756748596#icon-eye"/></svg>
+					            	<svg class="rc-icon-eye-no"><use xlink:href="/svg/svg-defs.svg?ts=1678756748596#icon-eye-no"/></svg>
+					            </a>
+					        </div>
+					        <label class="rc-formLabel rc-labelWithLink" for="rc-password">
+				            	Password
+				            	<a href="/passwordreset" id="rc-forgot-password" class="rc-link rc-c-s-100">Forgot my password</a>
+				          		
+				            </label>
+				        </div>
+			        	<div class="rc-loginBtnWrap">
+			        		<button @click="login" name="login" id="login_button" :disabled="loginSubmitted" :class="{'rc-loading':loginSubmitted}" class="btn btn-primary btn-lg btn-loader">Login<span class="rc-loader"><svg><use xlink:href="/svg/svg-defs.svg?ts=1678756748596#loader-spin"/></svg></span></button>
+					        <div v-if="rememberMeEnabled">
+				                <input type="checkbox" v-svg-input v-model="rememberMe" id="remember_me" name="remember_me" value="1" /><label for="remember_me">Remember Me</label>
+				            </div>
+						</div>
+            			<div v-if="rememberMe" class="alert alert-info rc-mt30">
+            				<svg class="rc-icon-information"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svg/svg-defs.svg?ts=1678756748596#icon-information"></use></svg>
+            				Automatic login will be enabled in this browser. Logout to remove the "Remember Me" browser cookie at any time.
+            			</div>
+				    </div>
+				    <div v-if="ssoOptions.length > 0" class="rc-loginProvidersWrap">
+			    		<a v-for="option in ssoOptions" :key="option.id" :href="option.authUri" :style="'background-color:' + option.colorHex" class="rc-accountLink">
+				    		<span class="rc-icon"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="'/svg/svg-defs.svg?ts=1678756748596#icon-' + option.type"></use></svg></span>
+							<span class="rc-text">{{option.label}}</span>
+				    	</a>
+				    </div>
+			    </template>
+		    </div>		    
+	    </template>
+	    
+	    <form id="rc-loginForm" action="/session/new" method="post" >
+	    	<input name="username" id="rc-hidden-username" type="hidden">
+	    	<input name="password" id="rc-hidden-password" type="hidden">
+	    	<input name="remember_me" id="rc-hidden-remember-me" type="hidden">
+	    	<input name="g-recaptcha-response" id="recaptcha" type="hidden"><input type='hidden' name='CSRFToken' value="KzZobDNSVE5IWEViK01xUmNlV0dJanB2UDlYYVN2bms3MWljUFpwaUppblhLOGpQaEtnWE5Kd2FrSDJiVkdvVEJMdFVBN1NVSmFEZVNmMld0dm15cFpVUFhyN3ZSOFN3R0h3MWdWRXBHM0E9">
+	    </form>
+	    
+		<script src="https://www.google.com/recaptcha/enterprise.js?render=6LchJVweAAAAABjHHSRhfQZtMggAPRY9ZLv2hECL"></script>
+		<script>
+			grecaptcha.enterprise.ready(function() {
+			
+				$('#rc-loginForm').one('submit',
+				function(e) {
+					e.preventDefault();
+					
+				    grecaptcha.enterprise.execute('6LchJVweAAAAABjHHSRhfQZtMggAPRY9ZLv2hECL', {action: 'login'}).then(function(token) {
+				       $('#recaptcha').val(token);
+				       $('#rc-loginForm').submit();
+				    });
+				    
+				});
+			});
+		</script>
+	    
+        
+    
+</section> 
+
+<script>
+	
+	$(function() {
+		
+		// focus on #rc-email input on dom ready
+		$('#rc-email').focus();
+		
+		var inputs = $('.rc-largeInput');
+		for ( var i=0; i<inputs.length; i++ ) {
+			if ( $(inputs[i]).hasClass('rc-error') ) { $(inputs[i]).focus(); }
+		}
+		 
+		
+		if( $('.rc-largeInput.rc-error').length < 1 && $('#rc-email').val() && $('#rc-email').val().length > 0 && $('#rc-password').val() && $('#rc-password').val().length < 1 ){
+			$('#rc-password:visible').focus();
+		}
+	});
+
+</script>		  
+
+<div class="rc-clear"></div></div><!-- close rc-mainPanel --></main><!-- close rc-panelWrap --><div class="rc-clear"></div><div style="display: none;">
+	<div id="rc-sessionExpiring" class="rc-modal rc-modalSmall">
+		<h3 class="rc-modalTitle" id="rc-session-expire-title">Session Expiring</h3>
+		<p>
+		    Your session is about to expire due to inactivity.
+			Please continue your current session or logout.
+		</p>
+		<div class="alert alert-warning rc-mb30">Session will expire in <strong><span id='rc-session-countdown'>60</span> seconds</strong></div>
+		<div class="rc-btnsWrap">
+			<a href="javascript:void(0);" class="btn btn-primary" onclick="Ramius.reviveSession();">Continue</a><a href="/session/delete" class="btn" onclick="$.fancybox.close();">Logout</a>
+		</div>
+	</div>
+</div> 
+<script> 
+	if (top != self) top.location.replace(self.location.href);
+</script>
+<script>
+
+$(document).ready(function(){
+	
+	$('html').addClass('rc-loaded'); });
+
+	function readOnlyStudy() {
+		alert("No");
+	}
+	function langCommit() {
+		$('.rc-langInput').each( 
+			function(a,b) {
+				
+				var picker_label = $(b).find('.rc-langPick-label'); 
+				var lang = picker_label.length > 0 ? $(picker_label).html().toLowerCase() : "en";
+				
+				var c = $(b).find('.rc-langField');
+				if ( $(c).parents('.rc-langInput').hasClass('rc-rte-input') ) { 
+		            val = c.redactor('code.get');
+		        } else {
+					val = c.val();
+				}
+
+				var n = c.attr('name');
+				var h = $(b).find('input[name="'+n+'_'+lang+'"]'); 
+				h.val(val);			 
+			}			
+		)		
+	
+	}
+	function setFormLang(current_lang) {
+		langCommit();	
+		
+		$('.rc-langPick-label').html(current_lang);
+		$('.rc-langPick').find('.rc-icon').removeClass('rc-currentLang');
+		$('.rc-langPick').find('.rc-link-' + current_lang).addClass('rc-currentLang');
+		if ( current_lang != 'EN'  ) {
+			$('.rc-langInput').addClass('rc-nonDefaultLang');
+			$('.rc-langInput .rc-langDropdown').removeAttr('tip');
+		} else {
+			$('.rc-langInput').removeClass('rc-nonDefaultLang');
+			$('.rc-langInput .rc-langDropdown').attr('tip','Available for translation');
+		} 
+		
+		
+		$('.rc-langInput').each( 
+			function(a,b) { 
+				var c = $(b).find('.rc-langField');
+				var n = c.attr('name'); 
+				var h = $(b).find('input[name="'+n+'_'+current_lang.toLowerCase()+'"]');
+				c.val(h.val());		
+				
+				if ( current_lang != 'EN'  ) {
+				 	var tip_val = $(b).find('input[name="'+n+'_en"]').val();
+				 	try {
+					 	var stripHTML = /<\S[^><]*>/g;  
+						tip_val = tip_val.replace(stripHTML, ' ');
+						tip_val = tip_val.replace(/(&nbsp;)/g,' ');
+						tip_val = Ramius.textUtils.trimLength(tip_val,200,true);
+					} catch ( ex ) {
+					}
+				 	
+					var d = $('<div>' + 'EN: ' + tip_val + '</div>');
+ 					$(b).data('powertipjq', d).powerTip().on({
+						powerTipRender: function() {
+							$('#powerTip').addClass('rc-centerTip');
+						}
+					});
+				} else {
+					$(b).data('powertipjq', '').powerTip();
+				}
+				
+				var has_no_value = true;
+				$(c).parents('.rc-langInput').find('input[type="hidden"]').each( 
+					function(a,b) { 
+					
+						if ( $(b).val() != '' ) {
+							  has_no_value = false;
+						
+						}
+					}
+				);
+				
+				if ( has_no_value ) return;
+				if ( c.val() == '' ) {
+				  	c.addClass("rc-highlight");
+			    } else {
+			    	c.removeClass("rc-highlight");
+			    }
+				if ( $(b).hasClass('rc-rte-input') ) { 
+                    c.redactor('code.set',c.val());
+                    
+        			setTimeout(function(){
+        				try{
+        					c.redactor('core.object').textcomplete.updateVisual();
+        				}catch(e){}
+        			}, 100);        			
+        			
+		            if ( c.val() == '' ) {  
+		            	c.redactor('core.editor').addClass('rc-highlight');
+		            } else {
+		            	c.redactor('core.editor').removeClass("rc-highlight");
+		            }
+		            var as_undo = $(c).parents('.rc-langInput').find('input[name="undo_'+n+'_'+current_lang.toLowerCase()+'"]'); 
+					var obj = c.redactor('core.object');
+					obj.opts.autosaveRestoreContent =  as_undo ? as_undo.val() : ''; 
+		        }
+				
+			}			
+		)		
+	}
+	
+
+	function reloadLangInput(c) {
+		var picker_label = $('.rc-langPick-label')[0]; 
+		var lang  = picker_label ? $(picker_label).html().toLowerCase() : "en";
+		
+		var n = c.attr('name'); 
+		var h = $(c).parents('.rc-langInput').find('input[name="'+n+'_'+lang.toLowerCase()+'"]'); 
+		c.val(h.val());		
+		
+		var has_no_value = true;
+		$(c).parents('.rc-langInput').find('input[type="hidden"]').each( 
+			function(a,b) { 
+				if ( $(b).val() != '' )   has_no_value = false;
+			}
+		);
+		
+		if ( c.val() == '' ) {
+		  	c.addClass("rc-highlight");
+	    } else {
+	    	c.removeClass("rc-highlight");
+	    }
+		if ( $(c).parents('.rc-langInput').hasClass('rc-rte-input') ) {
+			
+            c.redactor('code.set',c.val());
+            
+            setTimeout(function(){
+				try{
+					c.redactor('core.object').textcomplete.updateVisual();
+				}catch(e){}
+			}, 100);
+			
+            if ( c.val() == '' ) {
+            	c.redactor('core.editor').addClass('rc-highlight');
+            } else {
+            	c.redactor('core.editor').removeClass("rc-highlight");
+            }
+           
+            var as_undo = $(c).parents('.rc-langInput').find('input[name="undo_'+n+'_'+lang.toLowerCase()+'"]'); 
+			var obj = c.redactor('core.object');
+			obj.opts.autosaveRestoreContent =  as_undo ? as_undo.val() : '';
+			
+        }
+        var picker;
+        var langs = ['EN',];
+	        	for ( var i = 0 ; i < langs.length; i ++) {
+		        	var lang = langs[i]
+			        picker = $(c).parents('.rc-langInput').find('.rc-langPick').find('.rc-link-' + lang);
+			        h = $(c).parents('.rc-langInput').find('input[name="'+n+'_' + lang +'"]');
+			         
+					if ( h.val() == '' ) { 
+					  	$(picker).addClass('rc-incomplete'); 
+					  	$(picker).removeClass('rc-completed');
+				    } else {
+					  	$(picker).addClass('rc-completed'); 
+					  	$(picker).removeClass('rc-incomplete'); 
+				    }
+			 	}
+				    
+			
+		
+	}
+	
+	function updatei18nText(inp) {
+		var c = $(inp);
+		var b = c.parents('.rc-langInput');
+		var n = c.attr('name'); 
+		 
+		var picker_label = b.find('.rc-langPick-label')[0];
+		if ( !picker_label ) return; 
+		var lang  = $(picker_label).html().toLowerCase();
+		var h = $(b).find('input[name="'+n+'_'+lang.toLowerCase()+'"]');
+		
+		h.val(c.val());			
+		
+		
+		var has_no_value = true;
+		$(c).parents('.rc-langInput').find('input[type="hidden"]').each( 
+			function(a,b) {  
+			
+				if ( $(b).val() != '' ) {
+					  has_no_value = false;				
+				}
+			}
+		);
+		
+		if ( has_no_value ) return;
+		
+		var picker = $(b).find('.rc-langPick').find('.rc-link-' + lang.toUpperCase());
+		if ( c.val() == '' ) {
+			c.addClass("rc-highlight");
+		  	$(picker).addClass('rc-incomplete'); 
+		  	$(picker).removeClass('rc-completed');
+	    } else {
+		  	$(picker).addClass('rc-completed'); 
+		  	$(picker).removeClass('rc-incomplete');
+
+	    	c.removeClass("rc-highlight");
+	    }
+	    var a = c.parents('.rc-langInput'); 
+		if ( $(a).hasClass('rc-rte-input') ) { 
+            if ( c.val() == '' ) { 
+            	c.redactor('core.editor').addClass('rc-highlight');
+            } else {
+            	c.redactor('core.editor').removeClass("rc-highlight");
+            }		
+		}
+	}
+	
+	
+	function changeLang(locale) {
+		
+		var url = ('https:' == document.location.protocol ? 'https://' : 'http://') + document.location.host +  document.location.pathname;
+		var search =  document.location.search;
+		if ( search.indexOf('locale=') > 0 ) {
+			var start = search.indexOf('locale=');
+			var end = search.indexOf( '&', start ); 
+			var begin = search.substring(0,start); 
+			if ( begin.charAt(begin.length-1) == '&' ) {
+				begin = begin.substring(0,begin.length - 1);
+			}
+			url += begin;
+			
+			if ( begin != '?' ) url += '&';
+			
+			url += "locale=" + locale;		 
+			if ( end >= 0 ) {
+				url += search.substring(end);  
+			} 
+			
+		} else {
+			if ( search == '' ) {
+				url += "?locale=" + locale;
+			} else {
+				url += search + "&locale=" + locale;
+			}			
+		}
+		
+		url += document.location.hash;
+		document.location = url;
+		
+	}
+	// test browser for touch capabilities
+	function isTouchDevice() {
+		if (('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)) {
+			$('html').addClass('touch');
+		} else {
+			$('html').addClass('no-touch');
+		}
+	}
+	
+	// The footer height changes based on the width of the page.
+	// Update the min-height of rc-siteWrap to push the footer to the bottom of page.
+	// If compact mode (is_compact) add space for the navigation at the bottom
+	function setFooterSpace(){
+		
+	}
+	
+	$(document).ready(function(){
+		isTouchDevice();
+		setFooterSpace();
+		svg4everybody();
+		rteImageBox(false);
+		
+		// trigger a window resize 500ms after a resize event (after the css transitions end) important for layout of highcharts and isotope items
+		var window_resizing = false;
+		$(window).resize(function(){
+			if ( window_resizing ) return true;
+			window_resizing = true;
+			setTimeout(function(){
+				$(window).trigger('resize');
+				setFooterSpace();
+				setTimeout(function(){
+					window_resizing = false;
+				},100);
+			}, 500);
+		});
+		
+
+	    $.fancybox.defaults.i18n = {
+	      en: {
+	        CLOSE: 'Close',
+	        NEXT: 'Next',
+	        PREV: 'Back',
+	        ERROR: 'The requested content cannot be loaded.<br/>Please try again later.',
+	        FULL_SCREEN: 'Fullscreen',
+	        THUMBS: 'Thumbnails',
+	        DOWNLOAD: 'Download',
+	        ZOOM: 'Zoom'
+	      }
+	    };
+	
+	});
+</script>
+	<script>
+		function analyticsPage(path){
+		}	
+		function analyticsEvent(category, action, label, value){
+		}
+	</script>
+	
+
+<script> 
+	$(function() {
+		if ( $('#notifier').length <= 0 ) {
+			
+			const notifier = document.createElement('div');
+			notifier.setAttribute('id','notifier')
+			notifier.setAttribute('v-cloak','')
+			notifier.innerHTML=
+				'<div class="rc-msgFlash" @mouseover="pauseTimeouts" @mouseout="resumeTimeouts">' +
+				'	<transition-group name="notifier-list" tag="div">'+
+				'		<div v-for="notice in notices" :key="notice.key" class="rc-msgWrap">'+
+				'			<span @click="removeNotice(notice.key)" class="rc-close" data-css-tip="Close"></span>'+
+				'			<div class="rc-msg" :class="notice.css">'+
+				'				<span v-html="notice.message"></span>'+
+				'				<span v-if="notice.undo" @click="undoNotice(notice)" class="rc-msgUndo">Undo</span>'+
+				'			</div>'+
+				'		</div>'+
+				'	</transition-group>'+
+				'</div>';
+			
+			document.body.append(notifier);
+			Ramius.notifier = new Vue(Ramius.notifierConfig);
+		}
+		
+		
+	});
+</script><div class="rc-clear"></div><footer id="rc-mainFooter" class="rc-mainFooter" role="contentinfo"><div class="rc-footerWrap">
+				<div class="rc-copyFooter">
+					<div class="rc-table">
+						<div class="rc-tr"><div class="rc-td"><span>Copyright &copy; <a href="https://recollective.com/?utm_source=recollective&utm_medium=copyright&utm_campaign=enterprise" target="_blank" >Recollective</a></span> <span><span>All rights reserved.</span></span></div></div>
+					</div>
+				</div></div></footer></div><!-- close rc-siteWrap -->
+		<script>
+		
+	
+		
+		</script></div><!-- close rc-loginSiteWrap --><div id="rc-customFoot" class="rc-customFoot"></div></body></html>
+ 

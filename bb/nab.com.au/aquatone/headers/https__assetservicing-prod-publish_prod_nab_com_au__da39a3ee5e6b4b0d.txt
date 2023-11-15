@@ -1,0 +1,19 @@
+200 OK
+X-Served-By: cache-hkg17932-HKG
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+Last-Modified: Thu, 30 Mar 2023 01:14:04 GMT
+X-Vhost: publish-assetservicing
+Content-Type: text/html; charset=UTF-8
+Expires: Thu, 30 Mar 2023 07:33:52 GMT
+Set-Cookie: _abck=E50EB2CFA25822E4AF77D98930D4ECD5~-1~YAAQNUs5FzH2NQ6HAQAAQxxuMQkdThngz/+vnHaPHHuJ/U6C5HRSwPoCRKApH4pxjmZtnAzeMhmha4JrKFuwYVWWrfLfDHaEhNeO9FZ74qS6l4jKR/WQ913Dyxre76RD3zWdikKph3U/uIsz5d9oDT0JKM+ul3nIHCQ6+Xr8Zp4S0tDfvQMoBW9Dqhm8fe59gCsrLtkXbWu+mVdPUWx9PgXi8al6lxrTM3ANsfHkjeLk7l+afNI++DNbJb/W9eYVyD+8uF/1nNmiwGUvpwmMXeQ9XWdL0Y1VHqPDo5CaGU5JI3IcboM3UeCdVLIMej6vwI/MUOoMjkaeyO1aRgQfm02Mg7L6ZEJUiWaHf0gynaTJGMk7XlpGSrX/ZjMK~-1~-1~-1; Domain=.nab.com.au; Path=/; Expires=Fri, 29 Mar 2024 07:31:52 GMT; Max-Age=31536000; Secure bm_sz=74C84CA0136D007BC8C4CEF870E44CC7~YAAQNUs5FzL2NQ6HAQAAQxxuMRNhvYb1AISHqrjVd/1B8eotUV6JXwm64fhzP83GHzybI1wXOohUk1gEAWBCEfODfihLWvZ4aTM9ZbeA9CYteLgJ6Zzxy7Qsa3J6SAaWKb9N50pR3So1DzJFdXC3cksDRizcxf7iQrloBzoDccQwTUDyI1un2Cc38fQ07QmcUHmlddnwPjWxZkecUFGBFto+CodPpcGvrPwguCF2JDjDgwg2iuDfWo2c0/zifFaeDJHSEY2IzuOxFtQXhQ7fbRI9rbx6h0PybZJ3TsVwru9Fhwk=~3224627~3294777; Domain=.nab.com.au; Path=/; Expires=Thu, 30 Mar 2023 11:31:52 GMT; Max-Age=14400
+Retry-Count: 0
+Cache-Control: max-age=120, s-maxage=120
+Date: Thu, 30 Mar 2023 07:31:52 GMT
+Server-Timing: cdn-cache; desc=REVALIDATE edge; dur=122 origin; dur=130 ak_p; desc="466711_389630773_903946631_25081_9259_17_-";dur=1
+Etag: "3205-5f813cef94eb1-gzip"
+Accept-Ranges: bytes
+X-Timer: S1680139751.376384,VS0,VS0,VE126
+X-Akamai-Transformed: 9 3587 0 pmb=mTOE,1mRUM,1
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000

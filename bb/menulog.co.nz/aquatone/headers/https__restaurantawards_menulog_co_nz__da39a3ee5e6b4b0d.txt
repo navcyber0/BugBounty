@@ -1,0 +1,25 @@
+200 OK
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Alt-Svc: h3=":443"; ma=86400
+Strict-Transport-Security: max-age=31536000;
+X-Permitted-Cross-Domain-Policies: none
+Set-Cookie: PHPSESSID=7abd4ccf892522ef56f47be9743718d4; path=/; secure; HttpOnly
+X-Amz-Cf-Id: NG2XMJJnjKH8bqDqLBZc32aHqpS2sxYm12QIPCIm6SNhTsH0x2iJXg==
+Content-Type: text/html; charset=UTF-8
+Referrer-Policy: no-referrer
+X-Xss-Protection: 1; mode=block
+Powered-By: S1T2
+Pragma: no-cache
+Age: 663051
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+Retry-Count: 0
+Date: Sun, 12 Mar 2023 01:33:14 GMT
+Server: 
+X-Cache: Hit from cloudfront
+Via: 1.1 1e9b46f8dd67c9dcddfe9b7210ef9314.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MAA50-P1
+X-Frame-Options: SAMEORIGIN
+Link: <https://restaurantawards.menulog.co.nz/wp-json/>; rel="https://api.w.org/" <https://restaurantawards.menulog.co.nz/wp-json/wp/v2/pages/59>; rel="alternate"; type="application/json" <https://restaurantawards.menulog.co.nz/>; rel=shortlink
+Power-By: Manta

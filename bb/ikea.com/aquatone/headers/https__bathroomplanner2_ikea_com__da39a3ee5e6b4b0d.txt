@@ -1,0 +1,15 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Ua-Compatible: IE=edge
+Vary: Accept-Encoding
+Server-Timing: cdn-cache; desc=REVALIDATE edge; dur=17 origin; dur=600 ak_p; desc="469465_388994325_340524551_61704_8320_50_-_-";dur=1
+Server: InteriorVista Server
+Last-Modified: Tue, 20 Jun 2023 12:35:54 GMT
+Etag: "6e-5fe8ee46f34ed-gzip"
+X-Akamai-Transformed: 9 109 0 pmb=mRUM,2
+Retry-Count: 0
+Strict-Transport-Security: max-age=15768000
+Content-Type: text/html
+Accept-Ranges: bytes
+Date: Sun, 23 Jul 2023 01:09:28 GMT

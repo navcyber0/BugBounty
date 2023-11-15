@@ -1,0 +1,15 @@
+404 Not Found
+Date: Sat, 01 Apr 2023 21:29:52 GMT
+Content-Type: application/json;charset=utf-8
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Retry-Count: 0
+Content-Length: 30
+Server: nginx/1.14.1
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://apis.google.com https://www.google-analytics.com https://*.googleapis.com *.gstatic.com  'sha256-lMAh4yjVuDkQ9NqkK4H+YHUga+anpFs5JAuj/uZh0Rs=' 'sha256-7t0fjA/BVlVoDzQGo5fjx1QcGZGP/YHzqHjtle6rQr0=' 'sha256-p5bK4yh76UrpdBF6R/Xm3eM2uzmTxNJFBoFXMWJTT7Y=' 'sha256-JJa56hyDfUbgNfq+0nq6Qs866JKgZ/+qCq2pkDJED8k='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com themes.googleusercontent.com ; img-src * 'self' data:; connect-src 'self' metabase.us10.list-manage.com ; manifest-src 'self';
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+Last-Modified: Sat, 01 Apr 2023 21:29:52 +0000
+X-Permitted-Cross-Domain-Policies: none

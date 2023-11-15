@@ -1,0 +1,13 @@
+403 Forbidden
+X-Frame-Options: SAMEORIGIN
+Mime-Version: 1.0
+Content-Length: 320
+Expires: Thu, 30 Mar 2023 07:32:01 GMT
+Date: Thu, 30 Mar 2023 07:32:01 GMT
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html
+Content-Security-Policy: frame-ancestors 'self'
+Strict-Transport-Security: max-age=31536000
+X-Akamai-Staging: ESSL
+Retry-Count: 0

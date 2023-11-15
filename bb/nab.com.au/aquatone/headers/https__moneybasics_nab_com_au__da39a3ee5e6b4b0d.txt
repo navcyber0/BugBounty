@@ -1,0 +1,12 @@
+200 OK
+Vary: Accept-Encoding
+X-Origin: green
+Etag: W/"5b495-5f816ed21e651-gzip"
+Date: Thu, 30 Mar 2023 07:35:16 GMT
+Accept-Ranges: bytes
+X-Akamai-Transformed: 9 - 0 pmb=mTOE,1
+Cache-Control: max-age=600
+Strict-Transport-Security: max-age=600
+Retry-Count: 0
+Content-Type: text/html
+Last-Modified: Thu, 30 Mar 2023 04:57:14 GMT

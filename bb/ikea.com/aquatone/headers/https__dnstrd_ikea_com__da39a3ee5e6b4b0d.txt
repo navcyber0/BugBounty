@@ -1,0 +1,14 @@
+200 OK
+Cache-Control: max-age=0, no-cache, no-store
+Expires: Sun, 23 Jul 2023 01:11:48 GMT
+Date: Sun, 23 Jul 2023 01:11:48 GMT
+Akamai-Cache-Status: Miss from child, Miss from parent
+Vary: Accept-Encoding
+Request-Context: appId=cid-v1:d0a10f46-9dfb-495c-ac68-f7b0ede433c1
+Akamai-Grn: 0.f643c717.1690074708.1828b8
+Retry-Count: 0
+Content-Type: application/json; charset=utf-8
+Pragma: no-cache
+Set-Cookie: shell#lang=en; path=/; secure; SameSite=None interikea#lang=; expires=Sat, 22-Jul-2023 01:11:48 GMT; path=/; secure; SameSite=None SC_ANALYTICS_GLOBAL_COOKIE=; expires=Sat, 22-Jul-2023 01:11:48 GMT; path=/; secure; SameSite=None sxa_site=InterIKEA; path=/; secure; SameSite=None ARRAffinity=67a0717447a6c641a66e28b16e8383369c4f51eb9357f1fd54abea5db85c6d72;Path=/;HttpOnly;Secure;Domain=acc.about.ikea.com ARRAffinitySameSite=67a0717447a6c641a66e28b16e8383369c4f51eb9357f1fd54abea5db85c6d72;Path=/;HttpOnly;SameSite=None;Secure;Domain=acc.about.ikea.com
+Alt-Svc: h3=":443"; ma=93600
+Strict-Transport-Security: max-age=15768000

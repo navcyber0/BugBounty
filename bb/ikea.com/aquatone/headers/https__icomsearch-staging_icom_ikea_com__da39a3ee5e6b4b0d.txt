@@ -1,0 +1,18 @@
+200 OK
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Ms-Ests-Server: 2.1.15811.7 - WEULR1 ProdSlices
+Cache-Control: no-store, no-cache
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Report-To: {"group":"network-errors","max_age":86400,"endpoints":[{"url":"https://identity.nel.measure.office.net/api/report?catId=GW+estsfd+pnq"}]}
+Nel: {"report_to":"network-errors","max_age":86400,"success_fraction":0.001,"failure_fraction":1.0}
+Expires: -1
+X-Ms-Request-Id: 8bbc1bfa-204a-4699-b2f3-1cc1464e0500
+Referrer-Policy: strict-origin-when-cross-origin
+Set-Cookie: fpc=AjMo_DkJIaNGhk7vV6Fw0Bk; expires=Tue, 22-Aug-2023 01:13:23 GMT; path=/; secure; HttpOnly x-ms-gateway-slice=estsfd; path=/; secure; httponly stsservicecookie=estsfd; path=/; secure; httponly
+Date: Sun, 23 Jul 2023 01:13:23 GMT
+Content-Type: text/html; charset=utf-8
+P3p: CP="DSP CUR OTPi IND OTRi ONL FIN"
+X-Xss-Protection: 0

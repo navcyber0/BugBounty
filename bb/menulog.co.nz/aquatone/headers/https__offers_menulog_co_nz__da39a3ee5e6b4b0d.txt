@@ -1,0 +1,22 @@
+200 OK
+X-Amz-Request-Id: Q9T0831TF1A0FP95
+X-Cache: Hit from cloudfront
+X-Amz-Cf-Pop: MAA51-P1
+Date: Sun, 19 Mar 2023 17:24:51 GMT
+Last-Modified: Sun, 05 Feb 2023 22:13:34 GMT
+X-Amz-Server-Side-Encryption: AES256
+Server: AmazonS3
+X-Frame-Options: DENY
+Referrer-Policy: same-origin
+Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=*, battery=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=*, microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), usb=(), web-share=*, xr-spatial-tracking=()
+Vary: Accept-Encoding
+Via: 1.1 547cde31b4190e0bed1b8ac7a943f83e.cloudfront.net (CloudFront)
+Age: 1159
+Content-Type: text/html
+Etag: W/"b38327b7bd3adb4c6fe13451835cbe2e"
+X-Amz-Version-Id: M0EC2oaVhMBug8ott4lBEwjMFBpYS7Rr
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+X-Amz-Cf-Id: DLsFcjnkgH84M467y6dX89ZiWoRPS7MD9y7LvTmbawSlIvAzHeWnQg==
+Retry-Count: 0
+X-Amz-Id-2: 3ilM3gQBoxKo8E+XHxAT3JUSgNwg3nJLgCQcGxmzttINK9dKH5+pRF3Ctq0kLtsbQqGzGs1cPIw=

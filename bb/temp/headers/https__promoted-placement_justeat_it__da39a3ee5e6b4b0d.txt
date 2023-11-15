@@ -1,0 +1,20 @@
+200 OK
+Server: cloudflare
+X-Amz-Server-Side-Encryption: AES256
+Cf-Cache-Status: DYNAMIC
+X-Amz-Request-Id: FH554K6BY3PMZDZZ
+X-Je-Conversation: 72cdce77-ec51-47e4-94ea-6159289bb2be
+Strict-Transport-Security: max-age=0
+Cache-Control: max-age=60
+Ratelimit-Remaining: 166
+Ratelimit-Reset: 8
+X-Ratelimit-Remaining-10: 166
+Ratelimit-Limit: 167
+X-Amz-Id-2: VkN1mxt35USXLTOw7K7QOJVbZQMfcJmDxtUTpUGgR1tIPgJQ9bMbgfJKbf4mSwE6VUVNdYiD/9U=
+Last-Modified: Tue, 07 Mar 2023 10:00:12 GMT
+Set-Cookie: __cf_bm=fJeYPWlemF6oyfWFxNyE2_p889qdwZdOJVJASU55uUg-1681027862-0-AULvWT1ZLFSlW1t9at0I7tjRCCLyylOh4+WSh+vn+zCnr+KI2A4xXzlw1XPBcixDVvatCxXXMePrF7ubHsXzsco=; path=/; expires=Sun, 09-Apr-23 08:41:02 GMT; domain=.justeat.it; HttpOnly; Secure; SameSite=None
+Date: Sun, 09 Apr 2023 08:11:02 GMT
+Content-Type: text/html; charset=UTF-8
+X-Ratelimit-Limit-10: 167
+Cf-Ray: 7b5146ec0b1806c2-AMS
+Retry-Count: 0

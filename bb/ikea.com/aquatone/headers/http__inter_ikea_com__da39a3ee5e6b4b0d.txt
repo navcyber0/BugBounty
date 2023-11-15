@@ -1,0 +1,10 @@
+200 OK
+Pragma: no-cache
+Date: Sun, 23 Jul 2023 01:14:07 GMT
+Retry-Count: 0
+Vary: Accept-Encoding
+Set-Cookie: shell#lang=en; path=/; secure; SameSite=None SC_ANALYTICS_GLOBAL_COOKIE=; expires=Sat, 22-Jul-2023 01:14:07 GMT; path=/; secure; SameSite=None sxa_site=InterIKEA; path=/; secure; SameSite=None interikea#lang=; expires=Sat, 22-Jul-2023 01:14:07 GMT; path=/; secure; SameSite=None ARRAffinity=b34c69c94728fb782ff5a7654eaf97e5cc3832d9ee615ab194ad65b00ed8aa52;Path=/;HttpOnly;Domain=www.inter.ikea.com ARRAffinity=069e115ca7c25625ebd8581b6dc49c782dc6ddd6cee7dc472cc3b69eeb2a234a;Path=/;HttpOnly;Secure;Domain=www.inter.ikea.com ARRAffinitySameSite=069e115ca7c25625ebd8581b6dc49c782dc6ddd6cee7dc472cc3b69eeb2a234a;Path=/;HttpOnly;SameSite=None;Secure;Domain=www.inter.ikea.com
+Request-Context: appId=cid-v1:b4224521-590e-4cac-a4a9-d0eaca375b1e
+Content-Type: application/json; charset=utf-8
+Cache-Control: no-cache, no-store
+Expires: -1

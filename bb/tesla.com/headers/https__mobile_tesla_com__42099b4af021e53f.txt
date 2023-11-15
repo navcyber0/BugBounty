@@ -1,0 +1,35 @@
+200 OK
+Request-Context: appId=cid-v1:ecafc92d-e60a-43a1-a158-6935c6122fd5
+X-Tzla-Edge-Backend-Status: 200
+Accept-Ranges: bytes
+Expires: Wed, 14 Jun 2023 13:53:32 GMT
+X-Tzla-Edge-Client-Restarts: 0
+Cache-Control: max-age=0, no-cache, no-store
+Retry-Count: 0
+X-Tzla-Edge-Age: 0.000
+X-Tzla-Edge-Backend-Reason: OK
+X-Tzla-Edge-Cache-Hit: 
+X-Tzla-Edge-Ttl: -0.003
+X-Tzla-Edge-Backend-Stream: false
+Server-Timing: cdn-cache; desc=MISS edge; dur=108 origin; dur=178 ak_p; desc="468541_388762182_791032587_28802_11884_4_-_-";dur=1
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-Tzla-Edge-Hostname-Vcl: warp-mobile
+X-Tzla-Edge-Was-304: false
+X-Tzla-Edge-Client-Req-Ttl: -1.000
+Date: Wed, 14 Jun 2023 13:53:32 GMT
+X-Tzla-Edge-Grace-Backend-Unhealthy: 60.000
+Content-Type: text/html; charset=utf-8
+X-Tzla-Edge-Backend-Retry: 0
+X-Tzla-Edge-Backend-Ttfb: 0.000
+X-Content-Type-Options: nosniff
+Pragma: no-cache
+Set-Cookie: .AspNetCore.Antiforgery.rjcC8NZ7ugU=CfDJ8PkfVICL959Ovno2meoycFBl2y2wo-JRQ_01YzywAk7zJuuc8_j2m-9gU9G58CjCBF1MSzJKKh_Xs244G6H_kvaxg8cNZ6i3fp5T6mHfBerYQGZbvIkzLndKojNQiaTNTzZz78HhnYswRYb6bNy6FvQ; path=/AppStore; samesite=strict; httponly
+Vary: Accept-Encoding
+X-Varnish: 595647814
+X-Tzla-Edge-Server: sjc04p1tegvr63.teslamotors.com
+X-Tzla-Edge-Cache-Hits: 0
+X-Akamai-Transformed: 9 2878 0 pmb=mRUM,1
+X-Tzla-Edge-Backend-Fetch-If-Stale: false
+X-Tzla-Edge-Grace: 60.000
+X-Tzla-Edge-Backend-Conn-Time: 0.000

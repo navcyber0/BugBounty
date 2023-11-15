@@ -1,0 +1,15 @@
+404 Not Found
+Date: Sun, 23 Jul 2023 01:05:13 GMT
+X-Amzn-Requestid: bd922df3-ce0d-4caf-83e7-b90d77ed7676
+X-Amz-Apigw-Id: IfhviEOCDoEF92w=
+X-Amzn-Trace-Id: Root=1-64bc7cc9-7f8a8f1a06ec896f0c59f18a;Sampled=0;lineage=ca489378:0
+X-Amz-Cf-Id: k3ZlMQ-MHPmO7_RyvzCk3SNSKYLz8nc1UueKfUEczixyj0LNQOz0yw==
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=31536000;
+Via: 1.1 4f07bcbac1ca576cf7ef48afd8670a08.cloudfront.net (CloudFront), 1.1 534b228d7da687f51d99c14ca2e26f52.cloudfront.net (CloudFront)
+X-Amzn-Remapped-Content-Length: 1161
+Content-Security-Policy: frame-ancestors https://view.publitas.com https://integration1-view.publitas.com https://integration2-view.publitas.com https://integration3-view.publitas.com https://publications-test.ikeadt.com;
+X-Amz-Cf-Pop: PNQ50-P2 MAA51-P1
+Retry-Count: 0
+Vary: Accept-Encoding
+X-Cache: Error from cloudfront

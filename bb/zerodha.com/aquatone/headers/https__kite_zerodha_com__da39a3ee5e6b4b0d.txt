@@ -1,0 +1,16 @@
+200 OK
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Date: Tue, 28 Mar 2023 14:02:34 GMT
+Content-Type: text/html; charset=utf-8
+Last-Modified: Tue, 28 Mar 2023 02:11:29 GMT
+Content-Security-Policy: frame-ancestors 'self' https://*.zerodha.com https://microapps.google.com/;
+Strict-Transport-Security: max-age=15552000
+Cf-Ray: 7af0695e5ab83228-BOM
+Expires: -1
+Set-Cookie: kf_session=H61hQ5griJNNMKplKOPpZP05bXL9H3XM; path=/; HttpOnly; secure; SameSite=None _cfuvid=_qsxU2pG.xAoXz1JAZf1DH3H_CxkzY86bQ5dkur_AGI-1680012154645-0-604800000; path=/; domain=.zerodha.com; HttpOnly; Secure; SameSite=None
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Retry-Count: 0

@@ -1,0 +1,2 @@
+[credentials-disclosure] [http] [unknown] https://stocks.zerodha.com [api_key=12hpqpbfwnxyvud8"]
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/zerodha.com/v2.0/.well-known/openid-configuration [a138656c-a82c-4373-8aad-1eaeac96701c]

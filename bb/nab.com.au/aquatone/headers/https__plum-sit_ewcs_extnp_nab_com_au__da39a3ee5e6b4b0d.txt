@@ -1,0 +1,13 @@
+403 Forbidden
+Content-Type: text/html
+Cache-Control: max-age=0
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Mime-Version: 1.0
+Content-Length: 296
+Expires: Thu, 30 Mar 2023 07:31:58 GMT
+Date: Thu, 30 Mar 2023 07:31:58 GMT
+Content-Security-Policy: frame-ancestors 'self'
+Server: AkamaiGHost

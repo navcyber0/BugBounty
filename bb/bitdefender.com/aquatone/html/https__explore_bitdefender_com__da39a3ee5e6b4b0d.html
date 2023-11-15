@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      PathFactory
+    </title>
+    <link href="/favicon.ico" rel="shortcut icon">
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="1W047nNs8GTCDoMxK3SecDHrydPVV68OzdV/PAuFby7MTZku0tP3eH1xKglHCw3gIfXFvEnATaZLYxvXdc6Jkg==" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+  @import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+
+  @font-face {
+    font-family: "BrownProRegular";
+      src: url("https://cdn-app.pathfactory.com/lbhq-production/2/fonts/09488fc4-25de-4f23-9e48-9659bc49e0a4.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "BrownProBold";
+      src: url("https://cdn-app.pathfactory.com/lbhq-production/2/fonts/b7425fd2-659a-420b-938e-a76c031702a4.otf") format("opentype");
+  }
+
+  html,
+  body {
+    font-family: BrownProRegular,sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  ::placeholder {
+    opacity: 0.5;
+  }
+
+  body {
+    background: #4A5FCA;
+    color: #14285A;
+    font-size: 13px;
+  }
+
+  p {
+    font-family: BrownProRegular,sans-serif;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #3B3BB3;
+    transition: all 0.3s ease-in;
+  }
+
+  form {
+    display: contents;
+  }
+
+  .alert, .notice {
+    font-size: 11px !important;
+    color: #D0021B;
+    text-align: left;
+    width: 100%;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+
+  .link-text {
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .link-text:after {
+    background: none repeat scroll 0 0 transparent;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background-color: #001EAA;
+    opacity: 0.7;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .link-text:hover:after {
+    width: 100%;
+    left: 0;
+  }
+
+  .background {
+    width: 100vw;
+    height: 100vh;
+    background-color: #4F63CB;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+
+  .box-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box {
+    width: 345px;
+    height: 600px;
+    background-color: #FFFFFF;
+    border-radius: 16.12px;
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.14);
+  }
+
+  .box-logo-content {
+    height: 84px;
+    width: 100%;
+    background: #222266;
+    border-radius: 16.12px 16.12px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 100%;
+    margin-left: 18px;
+  }
+
+  .logoIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 84px);
+  }
+
+  .container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+  }
+
+  .content {
+    position: relative;
+    padding: 15px 30px;
+  }
+
+  .bottom-link {
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+    color: #4A4A4A;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical
+  }
+
+  .label{
+    color: #3B3BB3;
+  }
+
+  .menu-link {
+    top: unset;
+    bottom: 0;
+  }
+
+  .multiple-links {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-around;
+    border-top: 1px solid #5555FF;
+    height: 60px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .form-container-custom {
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+  }
+
+  .form-container p {
+    font-size: 14px;
+    margin: 5px 0 5px 4px;
+  }
+
+  .verticalLine {
+    border-left: 0.9px solid #111;
+    width: 78%;
+  }
+
+  .login-icon {
+    position: absolute;
+    left: 40px;
+    font-size: 15px;
+    color: #5555FF;
+  }
+
+  .checkbox {
+    color: #4A4A4A;
+  }
+
+  .flex-row {
+    flex-direction: row;
+  }
+
+  .input {
+    border: 0;
+    max-height: 33px;
+    min-width: 0px;
+    width: 100%;
+    padding: 8px 4px;
+    border-radius: 4px;
+    text-align: right;
+    font-size: 13px;
+    color: #14285A;
+    font-family: BrownProRegular,sans-serif;
+  }
+
+  .input:focus {
+    outline: none;
+  }
+
+  .placeholder-left {
+    text-align: left;
+  }
+
+  .button {
+    margin-top: 15px;
+    height: 35px;
+    width: 100%;
+    background: #5555FF;
+    color: #FFFFFF;
+    font-family: BrownProRegular,sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .button:focus {
+    outline: none;
+  }
+
+  .sso-google-button {
+    width: 100%;
+    height: 40px;
+    padding: 11px 48px 11px 49px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.22px;
+    color: rgba(0,0,0,0.54);
+    background-color: #FFFFFF;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 30px;
+    line-height: 16px;
+  }
+
+  .sso-google-button:focus {
+    outline: 0;
+  }
+
+  .sso-image {
+    float: left;
+    margin-right: 24px;
+  }
+
+  .sso-google-button span {
+    float: left;
+  }
+
+  .sso-others {
+    font-family: BrownProRegular,sans-serif;
+    color: #001E5A;
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    line-height: 17px;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .sso-others:hover, .sso-google-button:hover {
+    background-color: rgba(0,0,0,0.05);
+  }
+</style>
+
+
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="box-container">
+      <div class="box">
+
+        <div class="box-logo-content">
+          <img class="logo" src="/images/PathFactoryWhite.svg" />
+          <img class="logoIcon" src="/images/LoginIcon.png" />
+        </div>
+
+        <div class="box-content">
+          <div class="container">
+           <div class="parent">
+  <style type="text/css">
+      .tool-tip {
+        position: relative;
+        display: none;
+      }
+
+      .terms {
+        color: #3B3BB3;
+        font-size: 12px;
+      }
+  </style>
+  <script>
+
+  function invalidMsg(userField) {
+    if (userField.validity.patternMismatch){
+        userField.setCustomValidity('Please enter valid characters');
+    } else {
+       userField.setCustomValidity('');
+    }
+
+    return true;
+}
+
+</script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style type="text/css">
+      .tool-tip .tool-tip-text {
+        width: 200px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 11px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 12%;
+        margin-bottom: 5px;
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+
+      .tool-tip .tool-tip-text::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+    </style>
+    <script>
+      function onSubmit() {
+        var form_element = document.getElementById('login-data');
+        if(!form_element.validity.patternMismatch) {
+          document.getElementById("login-form").submit();
+        } else {
+            if (form_element.reportValidity) {
+                form_element.reportValidity();
+            } else {
+              var toolTip = document.getElementById('tooltip-id')
+              toolTip.style.display='block';
+              setTimeout(function () {
+              toolTip.style.display='none';
+            }, 2000);
+          }
+
+        }
+      }
+    </script>
+    <div class="content">
+      <h1 class="title">bitdefender.lookbookhq.com</h1>
+      <p><a class="link-text" href="https://login.lookbookhq.com">Change Subdomain</a></p>
+      <div class="content-form">
+        <form class="new_user" id="login-form" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9gDy80Y8wnt5ldeiWZmv/v7cbD6YYqPQnqYWEnCAmcXvIFMz54PFZ8bqfpo15jxu7sJgUQT1QXgYEHL5Dst/eQ==" />
+          <div class="tool-tip" id="tooltip-id">
+              <span class="tool-tip-text">Please enter valid characters</span>
+          </div>
+          <div class="form-container form-container-custom" >
+          <span class="fa fa-envelope envelope login-icon" ></span>
+          <span class="verticalLine" >
+            <input class="input placeholder-left" pattern="^(?!^[.])(?!.*[.]{2})[a-zA-Z0-9-?.!#$%&amp;&#39;*=^_`{|}~+&quot;]+@[a-zA-Z0-9]{0,}[.\-a-zA-Z0-9]{0,253}[a-zA-Z0-9]+.[a-zA-Z0-9]{2,}$|^[a-zA-Z0-9][ ()_\-a-zA-Z0-9&amp;]{1,253}[a-zA-Z0-9()]$" oninvalid="invalidMsg(this)" oninput="invalidMsg(this)" autofocus="autofocus" placeholder="Email or Username" autocomplete="off" id="login-data" type="text" name="user[login]" />
+          </span>
+          </div>
+          <br>
+          <div class="form-container form-container-custom" >
+          <span class="fa fa-lock lock login-icon" ></span>
+          <span class="verticalLine" >
+            <input class="input placeholder-left" autocomplete="off" placeholder="Password" id="password" type="password" name="user[password]" />
+          </span>
+          </div>
+          <br>
+          <div class="form-container">
+              <button class="g-recaptcha button" id="input-button"
+                      data-sitekey="6LdqEq0UAAAAAKHATvMV2nndL2-jNj1jpn5kFSXf"
+                      data-badge="inline"
+                      data-action="login"
+                      data-callback="onSubmit">Log in</button>
+          </div>
+          <br/>
+          <div class="terms">
+  By continuing you are agreeing to PathFactory's <a href="https://www.pathfactory.com/terms-of-service/"
+    class="link-text" target="_blank">Terms of Service</a>
+  and <a href="https://www.pathfactory.com/privacy-policy/" class="link-text" target="_blank">Privacy Policy</a>
+</div>
+
+          <div class="bottom-link">
+              <div class="checkbox">
+                <label>
+                  <input name="user[remember_me]" type="hidden" value="0" /><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" />
+                  Remember Me
+                </label>
+              </div>
+          </div>
+</form>      </div>
+    </div>
+    <div class="multiple-links">
+      
+  <a class="link-text" href="/users/password/new">Forgot your password?</a>
+
+
+
+    </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

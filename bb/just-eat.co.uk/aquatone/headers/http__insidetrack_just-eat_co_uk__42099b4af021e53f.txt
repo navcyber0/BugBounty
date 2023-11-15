@@ -1,0 +1,12 @@
+200 OK
+Cf-Edge-Cache: cache,platform=wordpress
+Strict-Transport-Security: max-age=0
+Cf-Ray: 7d72ca8838aff2d6-BOM
+Date: Wed, 14 Jun 2023 13:06:33 GMT
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+Cf-Cache-Status: DYNAMIC
+Retry-Count: 0
+Server: cloudflare
+Set-Cookie: AWSALB=8wZg5OUQYqaB9+6UdSNEHV11/lDqttldXxP/VSbslSeu5nQCmqTmKwxYgK3Py6YBxu21SgluPUn9bjJg4nAc9PprEkxoNytAlrpDfzY2Qr4G+nN+7VTiZtMtcMtX; Expires=Wed, 21 Jun 2023 13:06:32 GMT; Path=/ AWSALBCORS=8wZg5OUQYqaB9+6UdSNEHV11/lDqttldXxP/VSbslSeu5nQCmqTmKwxYgK3Py6YBxu21SgluPUn9bjJg4nAc9PprEkxoNytAlrpDfzY2Qr4G+nN+7VTiZtMtcMtX; Expires=Wed, 21 Jun 2023 13:06:32 GMT; Path=/; SameSite=None; Secure
+Link: <https://insidetrack.just-eat.co.uk/wp-json/>; rel="https://api.w.org/" <https://insidetrack.just-eat.co.uk/wp-json/wp/v2/pages/82521>; rel="alternate"; type="application/json" <https://insidetrack.just-eat.co.uk/>; rel=shortlink

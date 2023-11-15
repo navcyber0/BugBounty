@@ -1,0 +1,11 @@
+200 OK
+Last-Modified: Tue, 17 Apr 2018 15:22:36 GMT
+Strict-Transport-Security: max-age=15552000
+Server: cloudflare
+Cf-Ray: 7af0695f9fee6ef4-BOM
+Content-Type: text/html
+Cf-Cache-Status: DYNAMIC
+Set-Cookie: _cfuvid=bQHQ94hy1EOVQ13VshsmZmP5OBa11MNAXiUsr1THIYc-1680012154839-0-604800000; path=/; domain=.zerodha.com; HttpOnly; Secure; SameSite=None
+Retry-Count: 0
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Date: Tue, 28 Mar 2023 14:02:34 GMT

@@ -1,0 +1,16 @@
+403 Forbidden
+X-Content-Type-Options: nosniff
+Date: Sat, 01 Apr 2023 21:38:14 GMT
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://accounts.google.com *:3000 thetake.com *.thetake.com *.thetake-api.com thetake-api.com   'unsafe-inline' 'sha256-K2AkR/jTLsGV8PyzWha7/ey1iaD9c5jWRYwa++ZlMZc=' 'sha256-ib2/2v5zC6gGM6Ety7iYgBUvpy/caRX9xV/pzzV7hf0=' 'sha256-isH538cVBUY8IMlGYGbWtBwr+cGqkc4mN6nLcA7lUjE='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline' https://accounts.google.com; font-src *; img-src * 'self' data:; connect-src 'self' https://accounts.google.com metabase.us10.list-manage.com   ; manifest-src 'self';  frame-ancestors 'none';
+Last-Modified: Sat, 1 Apr 2023 21:38:14 GMT
+Set-Cookie: metabase.DEVICE=4f7d18fc-9471-44a4-b327-43ec068bcb44;HttpOnly;Path=/;Expires=Wed, 1 Apr 2043 21:38:14 GMT;SameSite=None;Secure
+Strict-Transport-Security: max-age=31536000
+Server: nginx/1.20.0
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Retry-Count: 0
+Content-Type: text/plain
+Content-Length: 38

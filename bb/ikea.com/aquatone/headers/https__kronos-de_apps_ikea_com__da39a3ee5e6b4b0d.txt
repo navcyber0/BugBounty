@@ -1,0 +1,6 @@
+200 OK
+Server: iWAD v6.2.0
+Cache-Control: no-cache
+Pragma: no-cache
+Set-Cookie: iwad_control=00-dc8;Path=/;Domain=.apps.ikea.com iwad_channel=kronos-de____________;Path=/;Domain=.apps.ikea.com;Expires=Sun, 23 Jul 2023 03:14:03 GMT;Max-age=7200; iwad_urlmain=AAAAAAU0aGBFunO4CtciAYB3m9S1YN15wF0Gyk7DMWdXkPtCaFd3GmX+/PoWY6aMBbMDr+J6texcPb4Gig1F2gU2a6qv;Path=/;Domain=.apps.ikea.com iwad_urltemp= ;Path=/;Domain=.apps.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_looping= ;Path=/;Domain=.apps.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT; iwad_continue= ;Path=/;Domain=.apps.ikea.com;Expires=Thu, 01 Jan 1970 00:00:00 GMT;
+Retry-Count: 0

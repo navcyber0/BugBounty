@@ -1,0 +1,9 @@
+200 OK
+Vary: Accept-Encoding
+Date: Sun, 23 Jul 2023 01:10:20 GMT
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Set-Cookie: Ikea.cid=f06adaa2-be37-4e97-b9e3-456dae08efca; path=/; secure; HttpOnly; SameSite=None Ikea.cid=f06adaa2-be37-4e97-b9e3-456dae08efca; path=/; secure; HttpOnly; SameSite=None __RequestVerificationToken=NymFckmflcHZr9iwtgMIu_MactpD_1UIcyP5gLC45N_DkmBza46yPXfxApc0ydv0d8XBgFtSGiNKx8Aw9DZPkuDM_DZyz1PNfrT3ggC02wU1; path=/; secure; HttpOnly
+Cache-Control: private
+Strict-Transport-Security: max-age=31536000

@@ -1,0 +1,12 @@
+403 Forbidden
+Content-Length: 0
+Access-Control-Allow-Headers: User-Agent,device-id,IMEI,rom-version,finger-print,sub-branch,content-type,token,x-token,prod
+X-Gateway-Host: dd8fa443419c74ba821a8447acc11176b2afd245cc9d429a8965a43ae2a8c575ad39191a41f7394c3e6dec92c002aa5d
+X-Backend-Host: 0514:80
+Server: nginx
+Date: Sat, 15 Jul 2023 13:11:25 GMT
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+Cache-Control: no-cache
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *

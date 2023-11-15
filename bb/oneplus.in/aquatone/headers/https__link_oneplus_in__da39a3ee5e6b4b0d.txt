@@ -1,0 +1,11 @@
+200 OK
+Last-Modified: Thu, 13 Jul 2023 15:11:44 GMT
+Etag: "4e-6005fc0096c00-gzip"
+Accept-Ranges: bytes
+Retry-Count: 0
+X-Af: suite22-web01c
+Date: Sat, 15 Jul 2023 13:11:27 GMT
+Content-Type: text/html; charset=UTF-8
+Vary: Accept-Encoding
+X-Fe: suite22-web01c
+X-Hf: suite-haproxy01d

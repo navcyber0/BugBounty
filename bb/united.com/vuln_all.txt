@@ -1,0 +1,82 @@
+[generic-tokens] [http] [unknown] https://branddev.united.com [token":"g3PtspYR2Q1t9N27VYrv8gPfvlVz8lB55xCJ1Vyu2Fs"]
+[credentials-disclosure] [http] [unknown] https://careers.united.com/us/en ["apiKey":"AIzaSyBqM-rW0r-sR9PerNAvvsmzbBeoFu3Ycz8","apiKey":"pk]
+[credentials-disclosure] [http] [unknown] https://jetstream.united.com [accessToken: value]
+[CNVD-2020-26585] [http] [critical] https://svcgw.qa.aws.united.com/index.php?s=/home/page/uploadImg
+[CNVD-2020-26585] [http] [critical] https://svcgw.dev.aws.united.com/index.php?s=/home/page/uploadImg
+[CNVD-2020-26585] [http] [critical] https://svcgw.preprod.aws.united.com/index.php?s=/home/page/uploadImg
+[CNVD-2020-26585] [http] [critical] https://svcgw.prd.aws.united.com/index.php?s=/home/page/uploadImg
+[CVE-2020-8191] [http] [medium] https://svcgw.dev.aws.united.com/menu/stapp
+[CVE-2020-8191] [http] [medium] https://svcgw.prd.aws.united.com/menu/stapp
+[CVE-2020-8191] [http] [medium] https://svcgw.qa.aws.united.com/menu/stapp
+[CVE-2020-8191] [http] [medium] https://svcgw.preprod.aws.united.com/menu/stapp
+[CVE-2021-24342] [http] [medium] https://svcgw.dev.aws.united.com/?ajax-request=jnews
+[CVE-2021-24342] [http] [medium] https://svcgw.prd.aws.united.com/?ajax-request=jnews
+[CVE-2021-24342] [http] [medium] https://svcgw.qa.aws.united.com/?ajax-request=jnews
+[CVE-2021-24342] [http] [medium] https://svcgw.preprod.aws.united.com/?ajax-request=jnews
+[CVE-2019-7543] [http] [medium] https://svcgw.dev.aws.united.com/kindeditor/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.prd.aws.united.com/kindeditor/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.qa.aws.united.com/kindeditor/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.preprod.aws.united.com/kindeditor/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.dev.aws.united.com/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.qa.aws.united.com/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.prd.aws.united.com/php/demo.php
+[CVE-2019-7543] [http] [medium] https://svcgw.preprod.aws.united.com/php/demo.php
+[CVE-2021-24407] [http] [medium] https://svcgw.dev.aws.united.com/wp-admin/admin-ajax.php
+[CVE-2021-24407] [http] [medium] https://svcgw.prd.aws.united.com/wp-admin/admin-ajax.php
+[CVE-2021-24407] [http] [medium] https://svcgw.preprod.aws.united.com/wp-admin/admin-ajax.php
+[CVE-2021-24407] [http] [medium] https://svcgw.qa.aws.united.com/wp-admin/admin-ajax.php
+[weak-cipher-suites] [ssl] [medium] becomingunited.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] jobs.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] emprec.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] passplus.united.com:443 [[tls10 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] becomingunited.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] jobs.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] emprec.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] passplus.united.com:443 [[tls11 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] passplus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_GCM_SHA384]]
+[weak-cipher-suites] [ssl] [medium] rewardsplus.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] www.rewardsplus.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] www.emprec.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] rewardsplus.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] www.rewardsplus.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] www.emprec.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] accessedge.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_GCM_SHA384]]
+[weak-cipher-suites] [ssl] [medium] businesstravel.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] businesstravel.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ja.staging.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] gofly.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ja.dev.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] de.dev.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] es.staging.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] fr.dev.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ko.dev.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] fr.staging.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] de.staging.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] gofly.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] zh-hk.dev.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] image.salescomm.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] image.salescomm.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] zh.staging.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ko.pp.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] pt.dev.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ko.staging.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] pt.staging.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] n6jq0-origin-walletservices.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] n6jq0-origin-walletservices.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] u9df4-origin.walletservices.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] u9df4-origin.walletservices.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] sip.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_GCM_SHA384]]
+[weak-cipher-suites] [ssl] [medium] ualaki-appdevqf.united.com:443 [[tls12 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]]
+[weak-cipher-suites] [ssl] [medium] ualaki-schedulep.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-schedules.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-smartphone-preview.united.com:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-schedulep.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-schedules.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ualaki-smartphone-preview.united.com:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] es.pp.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] de.pp.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] fr.pp.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ja.pp.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] pt.pp.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] zh-hk.pp.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] zh.pp.mystatus.united.com:443 [[tls12 TLS_RSA_WITH_AES_256_CBC_SHA]]

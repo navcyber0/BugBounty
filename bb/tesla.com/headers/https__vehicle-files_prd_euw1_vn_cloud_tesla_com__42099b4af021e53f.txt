@@ -1,0 +1,10 @@
+403 Forbidden
+X-Amz-Id-2: 16SWE5+TseK52iR8ENByiIKKZyODzX8bKFNd3/k4maUYlrpW5WoSPBXrAUZfR5x5R+p/YaOxy64=
+Content-Type: application/xml
+Server: AmazonS3
+Content-Length: 243
+Retry-Count: 0
+Strict-Transport-Security: max-age=15768000
+X-Amz-Bucket-Region: eu-west-1
+X-Amz-Request-Id: RCKXGYXW9R198T7D
+Date: Wed, 14 Jun 2023 13:51:43 GMT

@@ -1,0 +1,10 @@
+200 OK
+Request-Context: appId=cid-v1:b4224521-590e-4cac-a4a9-d0eaca375b1e
+Cache-Control: no-cache, no-store
+Expires: -1
+Pragma: no-cache
+Vary: Accept-Encoding
+Date: Sun, 23 Jul 2023 01:10:52 GMT
+Retry-Count: 0
+Content-Type: application/json; charset=utf-8
+Set-Cookie: ASP.NET_SessionId=qoqormxwzcavqqmvr4lx4rxc; path=/; secure; HttpOnly; SameSite=None home#lang=; expires=Sat, 22-Jul-2023 01:10:52 GMT; path=/; secure; SameSite=None SC_ANALYTICS_GLOBAL_COOKIE=7ce4598d736743438cd265cffa61d653|False; expires=Wed, 20-Jul-2033 01:10:52 GMT; path=/; secure; HttpOnly; SameSite=None sxa_site=Master; path=/; secure; SameSite=None ARRAffinity=069e115ca7c25625ebd8581b6dc49c782dc6ddd6cee7dc472cc3b69eeb2a234a;Path=/;HttpOnly;Secure;Domain=inter.ikea.net ARRAffinitySameSite=069e115ca7c25625ebd8581b6dc49c782dc6ddd6cee7dc472cc3b69eeb2a234a;Path=/;HttpOnly;SameSite=None;Secure;Domain=inter.ikea.net

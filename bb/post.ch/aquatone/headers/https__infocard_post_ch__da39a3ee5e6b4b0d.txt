@@ -1,0 +1,15 @@
+200 OK
+Retry-Count: 0
+Date: Fri, 23 Jun 2023 15:25:25 GMT
+Content-Type: text/html
+X-Frame-Options: SAMEORIGIN
+Accept-Ranges: bytes
+X-Xss-Protection: 1; mode=block
+X-Webkit-Csp: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'self'; media-src 'self'; child-src 'self'
+Content-Length: 727
+Last-Modified: Fri, 28 Apr 2023 03:23:56 GMT
+Etag: "644b3c4c-2d7"
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'self'; media-src 'self'; child-src 'self'
+X-Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'self'; media-src 'self'; child-src 'self'

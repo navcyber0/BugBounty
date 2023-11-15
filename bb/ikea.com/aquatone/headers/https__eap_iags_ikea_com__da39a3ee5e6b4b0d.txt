@@ -1,0 +1,18 @@
+200 OK
+Cache-Control: no-cache,no-store,must-revalidate
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Date: Sun, 23 Jul 2023 01:11:05 GMT
+Accept-Ranges: bytes
+Content-Length: 42775
+X-Content-Type-Options: nosniff
+Content-Type: text/html; charset=utf-8
+Connection: Keep-Alive
+Via: NS-CACHE-10.0: 154
+Server: Apache
+Last-Modified: Thu, 07 Jul 2022 08:24:26 GMT
+Feature-Policy: camera 'none'; microphone 'none'; geolocation 'none'
+Age: 54
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: no-referrer
+Etag: "a717-5e332d04b0280"

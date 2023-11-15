@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer-when-downgrade"><link rel="icon" href="oneplus.ico"><title>Membership Center - OnePlus</title><link href="./static/230707035527/css/chunk-common.e2f871be.css" rel="preload" as="style"><link href="./static/230707035527/css/chunk-vendors.e1e8009c.css" rel="preload" as="style"><link href="./static/230707035527/css/oneplus.08a92dc2.css" rel="preload" as="style"><link href="./static/230707035527/js/chunk-common.a49f659f.js" rel="preload" as="script"><link href="./static/230707035527/js/chunk-vendors.807d4a4e.js" rel="preload" as="script"><link href="./static/230707035527/js/oneplus.a12f082f.js" rel="preload" as="script"><link href="./static/230707035527/css/chunk-vendors.e1e8009c.css" rel="stylesheet"><link href="./static/230707035527/css/chunk-common.e2f871be.css" rel="stylesheet"><link href="./static/230707035527/css/oneplus.08a92dc2.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but Membership doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app-membership"></div><input type="hidden" id="mark-currency-format" name="mark-currency-format" value="%7B%22pattern%22%3A%22%24%25s%22%2C%22precision%22%3A2%2C%22requiredPrecision%22%3A2%2C%22decimalSymbol%22%3A%22.%22%2C%22groupSymbol%22%3A%22%2C%22%2C%22groupLength%22%3A3%2C%22integerRequired%22%3A1%7D"> <input type="hidden" id="_current_store" value="in"> <input type="hidden" id="link-home" name="link-home" value="https://www.oneplus.com/"> <input type="hidden" id="_india_host" value="https://www.oneplus.in"> <input type="hidden" id="_net_host" value="https://www.oneplus.com"> <input type="hidden" id="_cn_host" value="https://www.oneplus.com/cn"> <input type="hidden" id="_in_account" value="https://account.oneplus.in"> <input type="hidden" id="_com_account" value="https://account.oneplus.com"> <input type="hidden" id="link-user-center" name="link-user-center" value="https://www.oneplus.com/customer/info"> <input type="hidden" id="mark-current-store" name="mark-current-store" value="in"> <input type="hidden" id="link-sign-in" name="link-sign-in" value="https://storeapi-nagtest8.oneplus.com/xman/user/ac-login"> <input type="hidden" id="mallapi-domain" name="mallapi-domain" value="https://mallapi.oneplus.in/v2/api/router"><script>const eu = [
+        "at",
+        "be_fr",
+        "be_nl",
+        "bg",
+        "cy_gr",
+        "cy_tr",
+        "cz",
+        "de",
+        "dk",
+        "ee",
+        "es",
+        "fi",
+        "fr",
+        "gr",
+        "hr",
+        "hu",
+        "ie",
+        "it",
+        "lt",
+        "lu_de",
+        "lu_fr",
+        "lv",
+        "mt",
+        "nl",
+        "pl",
+        "pt",
+        "ro",
+        "se",
+        "si",
+        "sk",
+        "uk"
+      ];
+      const na = ["us", "ca_fr", "ca_en"];
+      const isDev = /(\d{1,3}\.){3}\d{1,3}|local/.test(location.hostname);
+      const isProd = /www\.oneplus|membership(-eu)?\.oneplus/.test(
+        location.hostname
+      );
+      let domain = "";
+      if (isDev) {
+        domain = "wwwgtest8.oneplus.in";
+      } else if (isProd) {
+        domain = location.hostname.replace(/membership(-eu)?/, "www");
+      } else {
+        domain = location.hostname;
+      }
+      const env = isProd
+        ? ""
+        : domain.match(/^www(g(dev|test)\d{1,2})?/)?.[1] ||
+          domain.match(/^membership-(na|eu)(-test\d{1,2})/)?.[2] ||
+          domain.match(/^membership(-test\d{1,2})/)?.[1];
+      const store = (location.pathname.match(/\/([a-z]{2}(_[a-z]{2})?)\//) ||
+        [])[1];
+      const linkHome = "//" + domain + (store ? "/" + store : "");
+      let apiBaseURL = "/api/2.0";
+      let signInLink = "//storeapi" + env + ".oneplus.in/xman/user/ac-login";
+      if (
+        /(oneplus|membership\-(na|eu)\-test\d{1,2}\.wanyol)\.com/.test(
+          location.hostname
+        )
+      ) {
+        if (eu.includes(store)) {
+          signInLink =
+            "//storeapi-eu" + env + ".oneplus.com/xman/user/ac-login";
+          if (isProd) {
+            apiBaseURL = "//membershipapi-eu.oneplus.com/api/2.0";
+          }
+        } else {
+          signInLink =
+            "//storeapi-na" + env + ".oneplus.com/xman/user/ac-login";
+          if (isProd) {
+            apiBaseURL = "//membership-api.oneplus.com/api/2.0";
+          }
+        }
+      }
+
+      window.JSBridge = window.JSBridge || {};
+      window.JSBridge.showProgressBar = function() {};
+      window.JSBridge.dismissProgressBar = function() {};
+      window.GLOBAL_CONFIG = {
+        // 2.5.1
+        packageName: "com.oneplus.mall" + (env ? "." + env : ""),
+        linkHome,
+        signInLink,
+        linkRedCable: linkHome + "/membership-center#/",
+        apiBaseURL,
+        oldApiBaseURL: "https://accountapi.oneplus.com/service/member/h5",
+        opdcScript:
+          "https://cdn.opstatics.com/store/20170907/assets/scripts/opdcV3.0.0.min.js",
+        pageTitle: "Red Cable Club",
+        fromHome: "settings-home",
+        fromBC: "benefit-center",
+        fromBD: "benefit-detail",
+        defaultAvatar:
+          "https://image01.oneplus.net/shop/201807/19/1746/4d22e692ce78157be3374bac0ad0f868.png",
+
+        defaultCode: "BE00002",
+        newTagPlanCodeList: ["2131100247"],
+        showMyReward: true,
+        myRewardHidden: false,
+        privacyLink: "https://www.oneplus.com/legal/privacy-policy",
+
+        loginLink: "",
+        packageConfig: {
+          community: "net_oneplus_forums",
+          connectTV: "com_oneplus_optvassistant"
+        },
+        getTimeUrl: "https://www.oneplus.com/none-acl/bfcountdown",
+        telConfig: {
+          cn: {
+            // 中国
+            name: "China",
+            reg: /^1[1|2|3|4|5|6|7|8|9]\d{9}$/,
+            prefix: "+86",
+            mc: "cn"
+          },
+          in: {
+            // 印度
+            name: "India",
+            reg: /^[6789]\d{9}$/,
+            prefix: "+91",
+            mc: "in"
+          },
+          us: {
+            // 美国
+            name: "United States",
+            reg: /^[0-9-+()\s]{10}$/,
+            prefix: "+1",
+            mc: "us"
+          },
+          uk: {
+            name: "United Kingdom",
+            reg: /^[0-9(\-+)\s]{7,}$/i,
+            prefix: "+44",
+            mc: "uk"
+          }
+        },
+        isNewLoginConfig: {
+          bizAppKey: 'DkPXNvHbK1uQrd4nG5drut',
+          environment: 'prod', 
+          userCenter: 'https://accounts.oneplus.com/v2/profile.html'
+        }
+      };
+
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5HW9RGK");</script><script src="./static/230707035527/js/chunk-vendors.807d4a4e.js"></script><script src="./static/230707035527/js/chunk-common.a49f659f.js"></script><script src="./static/230707035527/js/oneplus.a12f082f.js"></script></body></html>

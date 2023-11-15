@@ -1,0 +1,62 @@
+<!doctype html>
+<!--[if IE 9]><html xml:lang="en" lang="en" class="no-js lt-ie9" ><![endif]-->
+<html ng-app="app" class="no-js cff-overflow-scrolling--on" xml:lang="en" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title ng-if="head.title == ''">NAB QuickBiz</title>
+    <title ng-if="head.title != ''">{{head.title}}</title>
+    <meta name="description" content="NAB QuickBiz Lending">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css?1668662385174"/>
+    <script type type="text/javascript">
+    var digitalData = {"page": {"pageInfo": { "pageName":"nab:online-forms:small-business-lending","siteType":"responsive"} },"components" : [],"event": []};
+    </script>
+    <script src='vendor/js/jquery.js?8cac69ec91c437aa'></script>
+     <script type="text/javascript">
+         if (window.location.href.indexOf("nabquickbizloan.nab.com.au") > -1 || window.location.href.indexOf("quickbuslending.nab.com.au") > -1) {
+             document.write('<script type="text/javascript" src="//nexus.ensighten.com/nab/Bootstrap.js"><\/script>');
+         } else {
+             document.write('<script type="text/javascript" src="//nexus.ensighten.com/nab/dev/Bootstrap.js"><\/script>');
+         }
+
+     </script>
+     <script type="text/javascript">
+        if(typeof(Bootstrapper) != 'object') {
+            document.write('<script type="text/javascript" src="presentation_js/prod/Bootstrap.js?de7b002001505a75"><\/script>');
+        }
+     </script>
+    <link rel='icon' type='image/ico' href='img/favicon.ico' />
+</head>
+<body class="cff-overflow-scrolling--on" ng-controller="appController">
+    <section class="ie-notice">
+        <div class="ie-notice__inner">
+            <p>The web browser you are using is out of date and won&#39;t let you complete this application. Please update your browser or try opening this page in a different browser.</p>
+        </div>
+    </section>
+    <page-header ng-if="showHeader"></page-header>
+    <div id="content" class="cff-container--outer cff-content" role="main" ng-controller="outerController" ng-class="outerClass">
+      <div ng-show="showPageLoader" class="ng-hide" id="cff-page-loader">
+        <div>
+          <div><div>
+            <img src="../img/busy-icon.svg" />
+            <h2>Please wait</h2>
+            <h5>This won't take long</h5>
+          </div></div>
+        </div>
+      </div>
+      <div class="cff-container--inner" ng-view autoscroll="true" ng-class="{'eq-form-container': (pageFillBody || isEQ) }"></div>
+    </div>
+    <page-footer ng-if="showFooter"></page-footer>
+    <input id="appRefId" type="hidden" readonly="readonly" />
+    <input id="pegaRefId" type="hidden" readonly="readonly" />
+
+    <nab-chat-widget></nab-chat-widget>
+
+    <script type="text/javascript" src="vendor/vendor.js?87c91824b804605c"></script>
+    <script type="text/javascript" src="presentation_js/presentation.js?b952cba75c6b55e4"></script>
+    <script type="text/javascript" src="js/app.js?03cda8dad032c851"></script>
+    <noscript>Please note that you need to enable JavaScript to use this site.</noscript>
+</body>
+</html>

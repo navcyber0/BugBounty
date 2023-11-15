@@ -1,0 +1,10 @@
+401 Unauthorized
+Server: nginx
+Www-Authenticate: Basic realm="This site is protected by a username and password."
+Pragma: no-cache
+Expires: -1
+Cache-Control: private, must-revalidate
+Date: Fri, 23 Jun 2023 15:24:46 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 0
+Retry-Count: 0

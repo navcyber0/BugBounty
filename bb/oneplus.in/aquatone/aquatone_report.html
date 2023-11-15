@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Aquatone Report">
+  <meta name="author" content="Michael Henriksen (https://twiter.com/michenriksen)">
+  <meta name="generator" content="Aquatone v1.7.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Aquatone Report</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/visjs-network@4.24.7/dist/vis.min.css"
+    integrity="sha384-hv6STAGuk4qTwmryFbZZTn3QrGRyZW1soC9K/Dy68zs8subBFOU69tg/GGZfkIBb" crossorigin="anonymous">
+  <style type="text/css">
+    footer {
+      border-top: 1px solid rgba(0, 0, 0, .125);
+      margin-top: 50px;
+      padding: 50px;
+      text-align: center;
+      font-size: 12px;
+      color: rgb(68, 68, 68);
+    }
+
+    footer a {
+      color: inherit !important;
+      text-decoration: underline;
+    }
+
+    .carousel {
+      margin-bottom: 50px;
+    }
+
+    .carousel-item {
+      color: #383d41;
+      text-align: center;
+    }
+
+    .carousel-item .page-card {
+      width: 300px;
+      text-align: left;
+      margin: 25px 10px 55px 10px;
+      display: inline-block;
+    }
+
+    .single-page-container .page-card,
+    .single-page-container .page-headers-table {
+      margin: 0px 0px 50px 0px;
+    }
+
+    .page-screenshot-container {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(0, 0, 0, .125);
+    }
+
+    .page-screenshot {
+      transition: transform .5s ease-out;
+      cursor: zoom-in;
+      width: 100%;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+    }
+
+    .carousel-control-prev-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%236c757d' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+    }
+
+    .carousel-control-next-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%236c757d' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+    }
+
+    .carousel-indicators li {
+      background-color: #6c757d;
+    }
+
+    .badge {
+      margin-right: 5px;
+    }
+
+    .page-headers-table {
+      width: 100%;
+    }
+
+    .page-headers-table td {
+      font-family: Anonymous Pro, Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+    }
+
+    .page-headers-table td.header-value {
+      word-break: break-all;
+    }
+
+    .single-page-container {
+      border-bottom: 1px solid rgba(0, 0, 0, .125);
+      margin-bottom: 50px;
+    }
+
+    .graph-container {
+      position: relative;
+      width: 100%;
+      height: 700px;
+      margin-top: 20px;
+      border: 1px solid rgba(0, 0, 0, .125);
+    }
+
+    .graph {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .graph-loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background-color: #ffffff;
+      text-align: center;
+      padding-top: 25%;
+    }
+
+    .graph-loading-overlay .progress {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 35px;
+    }
+
+    .show-more-button {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    #screenshotModal .page-screenshot {
+      width: 100%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">AQUATONE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
+      aria-controls="#navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="#/pages/by-similarity">By Similarity</a>
+            <a class="dropdown-item" href="#/pages/by-hosts">By Hosts</a>
+            <a class="dropdown-item" href="#/pages/single">Single Pages</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#/pages/graph">Graph</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="container" id="app">
+    <router-view></router-view>
+  </main>
+
+  <footer id="footer">
+    <p class="text-muted">AQUATONE v1.7.0 &middot; made with <span
+        style="color:red;font-weight:bold">&#65533;</span> by <a href="https://michenriksen.com" target="_blank">Michael
+        Henriksen</a></p>
+    <p><a href="https://www.buymeacoffee.com/michenriksen" target="_blank"><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKoAAAAlCAYAAADSkHKPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACOBJREFUeNrsXM9PVEccn10VJG2VxDTtSTfEpIdGWe5G4dK0J/EfqNDYM+K1acC/AEyvJqCH9mICntpDk8Vwanpgj01MA6Y2PYmIpssKMp3PwOfx3WHe2/e2u8trmU8yWXbe/PjOd77z/TWPLSgPtNaj5qOsAgKOBtVCobAoKwqOgA6bjzlTSoFXAUeMNVPGjcAuNQiqEdKxfSENCMgTIKzzBaFJK4EnATnFCAV1NZj7gDy7AcX9wCkIaUCeUTrZyej+2bNntqTBhQsXbAkI8OFkJwe/deuW2tjYUP39/cl6fW1NXbt2Td2/f//ww62lvc/Tw2G3jjOM6Z/WHUC1WtWnTp3SRgibtkUbb9vtVa3/KBsPul/r+ooOOL5ou0ZdWlpST548UcvLy9aUP3z4MFU/aN07d+6oy5cvW+06PGw06PMhpXY39hrg7wEdNEsw/e0BhHR+fl4NDAyo8+fPW8FNg0uXLlk3AX0BK6gfzin1YlKpnTWlzs2E3QqC2uYQrVRSV69ebanv7u7uwZf3Rg806gdjsf4tihXsgLYCisO4cId4C35zn3MvqFtbW2p7e1sVCgXV19enTpw4YethtqEVq78uqvLFavoB/zZuQ8UwYadkx4gQI6DE+Pi41dqjo6OWscTNmzfV2NhYkLZ/gcnJSbuXc3NzDbwcGhqyvDauY74FtV6vq1qtporFotWAOzs7UWSP01cul1X503419VUGQX2+V9Y+Gs6kHSmci4uLh3xlPLt9+3aQuBZBzSkBDSsVQrdQbKXT27dv7eeZM2dUb2+vPVnv3r2LnkNQ1/7MOKjRqNXn2c0JGAdMT0+rSqWiVldXo9N/7969IG1tEFS5JxTSbpr9lgW1p6fHfr5+/doKLcw/TT8wODi4t8i+DH7jpmHMumo0+xkwNTVlNTEYODEx0cDUbm4sNbmr3X3aic/u3r0bBZGd8DNnZ2ftHEn8wDM38PXRnOSfMhjGXFQgBCwe6l3Llxqt5FGNuddv3rzR6+vr2hCnjbBGz16+fKlnZmbgvOjKo7KufK/SlW+U7WP8ITtGGqAd+himNdQbc2/rjd9qvxtNa7+jnjBa39YZDWzHwXcUF6BnYWHBOz/6Ym6jzW07jIdi3CC9srISPWc9+OKOzWcoGCdpreYgRm2xNrTHPEl9uE7yCTQR4IukDwXtyX/Wyf3AnKgDLUlzgQecy1i4hjni+JmEtif8wThJVCslraBSAMEg/A0mSmahTjKXggsGsg3o5cFyBV6uJWl+bIq7BowlBYuFm4c1sh+Fxd18Cd9Yck0+UEB8PCHtvgJ+yOcS5KU89AB5iDVxXTiIchyuE3RlRbHdpgb+KWA2We0fhNQFPiZMSrMrV5+fOjIyYv1UaXIePHgQmVdmJOR3zAN6kfsFkDmQoI/LNblg0EeTiv5YB9ZANwBzGKGMxqDphAlEP7Q1GiZxfTCnpBkROHhLJLlKNLNGiLzZEtJM2sA/4PHjx1E7dy/IX7eevMZcDGDRhmMhbgDtvr4d81GbARsY55M1E7gsTrqcA3OC0ShgFJiBDYZ/RuZyQyiY/E4hgG8t/S1udNosBAVCtict7uaQBmwgNzPuQMjNRpG+Zhxt9JUxL313/g1+gHf4DuEhbdevXz8UNLk0xfm55DHGp7+NvqzH2Dz4ks8d9VGbAao9yd+KA8wJ+9Xrdb25udng/7qgGfLNRf9Pmj2CJoj9XLMox5btYK5dn9BngmVf19/jHDTl0qTTX4YZle5PnCsj14Q+MLmuW+JzJ9ifJpgugnRB4nxR0it5Jc07+c1+bj1oJB+xR0dm+hkRulFfWo3KV/2Qq0V+Fp/NcPbs2abpK2pqahMAc7lamW1oBmleoUmQ6EbxIU4bQVvJOai92EaadNCIyBiJdh//SF/DNbMwvWmzHC5PmCUhnXjOOaSFsxc5Dl2Yk2affbFu151BPdYO9w6fWCfdjyPTqIwmM0d2+8ENYIRU12o1+xkHaDH3dDMIokPvnnAZgTIAk9EoTrkbHEFbcRyZGWDWQQZJUutQE7uBifyOsdkXn5jb5Z2cQ9LLNXE8GaSwzh1Lrl9qSzmum4kAX9xgjrySWQP8LSN6OabM5pC2pECw41G/3MAsYCSeBWQeFowNB2MovBQqMI5MZGTqRqG+wnSVrGPayWfyfHRx02Q79Jfzsg3qOZ9rEuPopGDwYLluCetpyjmOHA+CS7eBbUGvu/a47IYcTx4Kl9c8jBib47gKpuuCSibRV01T0NaXx0wjqL6C8XBgpNaTz1yNSWaDbvjKPqF2BYGHwPXjsB7USS3rbjK/41Ouw+dTujlan9ZP8tN9fPE9kzlUl7dYfxwv5frQztWypFsKv5veOjJBBSF2E66U9PSEii9fm825eCAgWV0MCBRzodgs1Ll5WGwKGE/NQg0uzW7SBnNzfVaAifdm4Jg8wOjrJsix/rgcMtrLtWHNmBtrci8SXDcI9PnWSteH5t2nBPCMQihNOS9VqEWlZpfa3rUgaNNKoN0+Qf1tWeufvtP6r6eN0f+3Rvh+V/HlZ8OAL7KfsE7Bd2GRJTptZb4sJrBbkNG9zABIP50CKC8x0N53+FGfdIvWvTf8f3lkwkYTEZ5+X6mPLzZG/8X+g/dKXWybyPepiZo/y8c/9iHilhE1ovJOvoARlzvNE9xLBWYueLGBIvO0SZcjXX0pxYvBzw3lhumfXGlYoE159CZsxou9l1HysGG8TWK6iOmaVm5S/k84itf6OiuoX85G2rRBo/YkCGEtP4LKmyjQgs3h7c1/Qeu1GzycuEFDztPNM4NXPNTd4E9H/12aJnP+h6oqnYtJPv+ocqO1Xr16FdEi78KPI3CBAWGUFx/4rwkIJ8qNGzci4e3G3hUQTJnPqU5NgA1vdu+PE+l7caLbwAbg5RapVfACSLdfEs4LwAtqTb5swheA+B4Bbpq6oVEL+z/ps6AComtCXgnyZezjjLgXpSHA3eRN+JG0gP/EeWEwNR54EZBjjFtB3f9V3yCsAbkUUshn+Gn0gNyaeyV+Gv0fAQYAjgHbsU2Sh1QAAAAASUVORK5CYII="
+          alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;"></a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/underscore@1.9.1/underscore-min.js"
+    integrity="sha384-5DWzr9S4agqS3WKvPrhFKJagpYyHOBsf3/DxuDKORyqCv2sYer9c/ExdhPOL8CGh"
+    crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"
+    integrity="sha384-8t+aLluUVnn5SPPG/NbeZCH6TWIvaXIm/gDbutRvtEeElzxxWaZN+G/ZIEdI/f+y"
+    crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue-router@3.0.6/dist/vue-router.min.js"
+    integrity="sha384-eNSGvYAboU/sfO4dGv1q8C58mrNJs93uBoyn/VQ5S8+KB/XqmiocEDAkgdaCGOMT"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/visjs-network@4.24.7/dist/vis.min.js"
+    integrity="sha384-oakKFXWtujbJX7wGZH2I3z1MXq8kc0RqfMnyFBYctBBM/1G5r9ZpLG7ese6fTdu4"
+    crossorigin="anonymous"></script>
+
+  <script type="text/x-template" id="pageCarouselTemplate">
+      <div class="page-similarity-cluster carousel slide" :id="'carousel_' + id" data-interval="false">
+        <ol class="carousel-indicators">
+          <li :data-target="'#carousel_' + id" v-for="(pageGroup, index) in pagesInGroups" :data-slide-to="index" :class="{ 'active': index === 0 }"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item" v-for="(pageGroup, index) in pagesInGroups" :class="{ 'active': index === 0 }">
+            <page-card v-for="page in pageGroup" v-bind:page="page" v-bind:key="page.uuid"></page-card>
+          </div>
+
+          <a class="carousel-control-prev" :href="'#carousel_' + id" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" :href="'#carousel_' + id" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <hr />
+    </div>
+  </script>
+
+  <script type="text/x-template" id="PageCardTemplate">
+    <div class="card page-card">
+      <div class="card-header text-truncate" :title="page.url">
+        ${ page.url }
+      </div>
+      <div class="page-screenshot-container" v-on:mouseover="zoomScreenshot" v-on:mouseout="unzoomScreenshot" v-on:mousemove="alignZoomWithCursor">
+        <img v-if="page.hasScreenshot" :src="page.screenshotPath" class="card-img page-screenshot" :alt="page.url" v-on:click="openScreenshotModal" />
+        <img v-else src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAeAAAAEsBAMAAADp0H1pAAAAG1BMVEXi4+U4PUG3ubyNkJPMztCipKd3e35NUVViZmq38XKqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFb0lEQVR4nO3YTVfbRhSH8cEvwBITDCwFadIucWhilnJomy7tnqTZ4qYFLwEfEpbQNOCP3XvvzEgzwWFBnC56nt85sS3pzssfjWQ5zgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4v3lc6mu7kJfW78fP6/2Td6/1vfXi5rmUPN5/85tWNvbVnu5QafuGr3xizQ9d0uGh1e4PY99vqiGl5kfb8MekbaOqCnU2dDhoqik8TO9IX1fktTV+vz++CLuXt94dnPmdL066UjabnW3JXJrbM3FlO0TaXprfbjrXt/Yjl3T462x2fWmtfMaOZl31m801fR2s28ZYtk+rqfk6G3qzjB0nU3hg4PU44VfnVX4ZWsZqxJ0/+dEOL5P59D9vv6wfnqaB0w5XkjPSfq/72hu2sWrH3x7PCezrrMMf1pPAdcVD9E/ChN1MPzQe+d3hzX0oQ5m+vDq6G7hqv7SXHtDAaYdp4NVna/UQg0JfP+7YRh441FmHt4sL/GrPT7jp/+K90qa5HjrfiGW2tTYncGy/U6QHRi7vMA08KO3CmdTlrY0Vu3TzwKHOKnbKhQW2pSUTDlPyb60QWM98Pa/2vMCx/aBID4xc3mEa+MBnlQxiahmulq/0PQ8c6qxD6X1Rgd2NS89Q6C4s6bDzvsCx/Z0lnXWYBr7wWW2XX0orw4YthzxwqPNneHFL2iYmE+757Ua6EOPOMJqchjmBQ/u4+qvAWYdJYNlhW8un1ewlmJ3pLHCssw5vFhhYB5YJ+0sqLuZV//00qcucnbM5gUN7dzvMA2cdJoHjn81Ort8/Cc2ywLHO7tJHCwzcmtqEb8KOrn/rTUsXbrQxxqGs8+bmsZBoPX3/K2nvmlv2DGEHjq9d3mESWO5P/qzrSfUX8kX4kAWOdb3jyfUfLgkcp/DQwG5Uzgnc6uuXfdypMW63Cxltqo858qGv78+S9vIHOfvThQP79wTWaNMwtF8GmssKssCxTjqc6DNPFThO4cGB5bv/bmBZRo8+C/yPm/PgUbXXiV/vJUv6S4EnsfWgsHNri9d3nAWOdfqvcbm4ryW7ymTCcfVWgV1vmC/pmZsf2Le3uXSTwFmHSWDdHhTO/lANe7RYGoZLPQsc66xDGWBxgd2J9nfit+M3sLPb6ElaNhjOD+zbm5MkcNZhHbitl+BY69unbtnajfSilMfwLHBV578RNxYZeGVPJjwK46xVh2SqcnnWZdXKizuy9mZQ1IGzDuvAqx/lCjxY8/0vFbprFq76LHBV1w9zWWDg9oY+Kfn7XvgRY7pxpy/TczU3sLU3sjirwFmHdeCBZmzZOr9xb0MY58vTwFXdNwjsZjLhkLSK6DTwapZv9oXA1t6kgbMO68D++MwX3dQJtHx8Z4DZN1nSbvC93D/83eq2PiRPBq1HaZks8PmBtb3ZSZZ01mEd+L0LXcmf53X129T/XEwDV3XWofw5Fhm4+eHIbsrO/6oVhQ5yGnbGMpn1/MDavhHS1T8P0w6rwOGmuGTHPllvg8J2dbPAdZ1dTeMF/nhQ+p8bzc3C/fzBD+62X8u3aqH/vVC4l/vJz8PzXSEH+vq+m7Rf+lQmv9M1cNphFThM134dNbb26ino964GtgG+S+pkpCfj8zhiWU/hawKPJLB72un4p0OnT02djj5ouF86nc7f8c7Rdc2Okntnzz4k7Vv9Tme7TAOnHVaBwwf//x1npb5O/RFZvRrY+u0mdTLSpTzDhhGH9RS+Xmu3TD4Xd3fe7+XufR0CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8N/4F338izdGxWW8AAAAASUVORK5CYII=" class="card-img page-screenshot page-no-screenshot" />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title" v-if="page.pageTitle">${ page.pageTitle }</h5>
+        <h5 class="card-title" v-else><em>No title</em></h5>
+        <p class="card-text">
+          <span :class="'badge badge-pill text-break text-wrap ' + badgeClassForStatus()">${ page.status }</span><a v-for="tag in page.tags" :href="tag.link" target="_blank" class="badge badge-pill text-break" :class="'badge-' + tag.type">${ tag.text }</a>
+        </p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-outline-primary btn-sm card-link" v-on:click="openDetailsModal">View Details</a> <a class="btn btn-outline-secondary btn-sm card-link float-right" :href="page.url" target="_blank">Visit Page</a>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/x-template" id="pageHeadersTableTemplate">
+    <table class="table table-striped table-hover table-sm page-headers-table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Header</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="header in headers" :class="classForHeader(header)">
+          <td class="header-name">${ header.name }</td>
+          <td class="header-value">${ header.value }</td>
+        </tr>
+      </tbody>
+    </table>
+  </script>
+
+  <script type="text/x-template" id="singlePageTemplate">
+    <div class="row single-page-container">
+        <div class="col-4">
+          <page-card v-bind:page="page"></page-card>
+        </div>
+        <div class="col-8">
+          <page-headers-table v-bind:headers="page.headers"></page-headers-table>
+        </div>
+    </div>
+  </script>
+
+  <script type="text/x-template" id="pagesBySimilarityPageTemplate">
+    <div>
+      <h2 class="display-4 text-center border-bottom pb-3">Pages by Similarity</h2>
+      <div v-if="clusterIndex - 1 < pageSimilarityClusters.length" v-for="clusterIndex in clustersToShow">
+        <page-carousel v-bind:id="pageSimilarityClusters[clusterIndex - 1].uuid" v-bind:pages="pageSimilarityClusters[clusterIndex - 1].pages"
+          v-bind:key="pageSimilarityClusters[clusterIndex - 1].uuid">
+        </page-carousel>
+      </div>
+      <button @click="clustersToShow += 15" :disabled="clustersToShow >= pageSimilarityClusters.length" class="btn btn-primary btn-lg btn-block show-more-button">Show More</button>
+    </div>
+  </script>
+
+  <script type="text/x-template" id="pagesByHostsPageTemplate">
+    <div>
+      <h2 class="display-4 text-center border-bottom pb-3">Pages by Hosts</h2>
+      <div v-if="clusterIndex - 1 < pagesByHosts.length" v-for="clusterIndex in clustersToShow">
+        <page-carousel v-bind:id="pagesByHosts[clusterIndex - 1].id" v-bind:pages="pagesByHosts[clusterIndex - 1].pages"
+          v-bind:key="pagesByHosts[clusterIndex - 1].id">
+        </page-carousel>
+      </div>
+      <button @click="clustersToShow += 15" :disabled="clustersToShow >= pagesByHosts.length" class="btn btn-primary btn-lg btn-block show-more-button">Show More</button>
+    </div>
+  </script>
+
+  <script type="text/x-template" id="singlePagesPageTemplate">
+    <div>
+      <h2 class="display-4 text-center border-bottom pb-3">Pages</h2>
+      <div v-if="pageIndex - 1 < pages.length" v-for="pageIndex in pagesToShow">
+        <single-page v-bind:id="pages[pageIndex - 1].uuid" v-bind:page="pages[pageIndex - 1]" v-bind:key="pages[pageIndex - 1].uuid"></single-page>
+      </div>
+      <button @click="pagesToShow += 15" :disabled="pagesToShow >= pages.length" class="btn btn-primary btn-lg btn-block show-more-button">Show More</button>
+    </div>
+  </script>
+
+  <script type="text/x-template" id="graphPageTemplate">
+    <div class="graph-container">
+      <div class="graph" id="graph"></div>
+      <div class="graph-loading-overlay" id="graphLoadingOverlay">
+        <h3>Loading graph...</h3>
+        <div class="progress">
+          <div class="progress-bar bg-info" id="graphProgress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="2500"></div>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/javascript">
+    function parseSession(session) {
+      let data = {
+        version: session.version,
+        stats: session.stats,
+        pages: [],
+        pageSimilarityClusters: []
+      }
+      for (let pageUrl in session.pages) {
+        data.pages.push(session.pages[pageUrl]);
+      }
+      for (let uuid in session.pageSimilarityClusters) {
+        let cluster = {
+          uuid: uuid,
+          pages: []
+        }
+        for (let pageUrl of session.pageSimilarityClusters[uuid]) {
+          cluster.pages.push(session.pages[pageUrl])
+        }
+        data.pageSimilarityClusters.push(cluster);
+      }
+      data.pageSimilarityClusters.sort((a, b) => {
+        return a.pages.length - b.pages.length;
+      });
+      return data;
+    }
+
+    Vue.component('PagesBySimilarityPage', {
+      template: '#pagesBySimilarityPageTemplate',
+      delimiters: ['${', '}'],
+      data() {
+        return {
+          clustersToShow: 15
+        }
+      },
+      props: {
+        pageSimilarityClusters: Array
+      }
+    });
+
+    Vue.component('PagesByHostsPage', {
+      template: '#pagesByHostsPageTemplate',
+      delimiters: ['${', '}'],
+      data() {
+        return {
+          clustersToShow: 15
+        }
+      },
+      props: {
+        pages: Array
+      },
+      computed: {
+        pagesByHosts() {
+          result = {}
+          for (let page of this.pages) {
+            if (page.hostname in result) {
+              result[page.hostname].pages.push(page);
+            } else {
+              result[page.hostname] = {
+                id: _.uniqueId('host-cluster_'),
+                pages: [page]
+              }
+            }
+          }
+          return _.values(result);
+        }
+      }
+    });
+
+    Vue.component('SinglePagesPage', {
+      template: '#singlePagesPageTemplate',
+      delimiters: ['${', '}'],
+      data() {
+        return {
+          pagesToShow: 15
+        }
+      },
+      props: {
+        pages: Array
+      }
+    });
+
+    Vue.component('GraphPage', {
+      template: '#graphPageTemplate',
+      delimiters: ['${', '}'],
+      props: {
+        pages: Array,
+        pageSimilarityClusters: Array
+      },
+      computed: {
+        makeDatasets() {
+          let nodes = {};
+          let edges = [];
+
+          for (let page of this.pages) {
+            pageId = `page_${page.uuid}`;
+            nodes[pageId] = {
+              id: pageId,
+              label: page.url,
+              group: 'page',
+              value: 1
+            };
+
+            if (page.tags) {
+              for (let tag of page.tags) {
+                let tagId = `tag_${tag.hash}`;
+                if (!(tagId in nodes)) {
+                  nodes[tagId] = {
+                    id: tagId,
+                    label: tag.text,
+                    group: 'tag',
+                    value: 1,
+                  };
+                } else {
+                  nodes[tagId].value += 3;
+                }
+                edges.push({
+                  from: pageId, to: tagId
+                });
+              }
+            }
+
+            if (page.addrs) {
+              for (let addr of page.addrs) {
+                let addrId = `addr_${addr}`;
+                if (!(addrId in nodes)) {
+                  nodes[addrId] = {
+                    id: addrId,
+                    label: addr,
+                    group: 'addr',
+                    value: 1
+                  };
+                } else {
+                  nodes[addrId].value += 3
+                }
+                edges.push({
+                  from: pageId, to: addrId
+                });
+              }
+            }
+          }
+
+          for (let cluster of this.pageSimilarityClusters) {
+            if (cluster.pages.length <= 1) {
+              continue;
+            }
+
+            clusterId = `cluster_${cluster.uuid}`;
+            nodes[clusterId] = {
+              id: clusterId,
+              label: 'Similar',
+              group: 'similarity',
+              value: 1 + (cluster.pages.length * 3)
+            };
+
+            for (page of cluster.pages) {
+              edges.push({
+                from: `page_${page.uuid}`, to: clusterId
+              });
+            }
+          }
+
+
+          return [new vis.DataSet(_.values(nodes)), new vis.DataSet(edges)]
+        }
+      },
+      mounted: function () {
+        this.$nextTick(() => {
+          $('#footer').hide();
+          $('#graphLoadingOverlay').show();
+          let datasets = this.makeDatasets;
+          let data = {
+            nodes: datasets[0],
+            edges: datasets[1]
+          }
+          let progress = $('#graphProgress');
+
+          let network = new vis.Network($('#graph')[0], data, {
+            layout: {
+              improvedLayout: false,
+            },
+            nodes: {
+              shape: 'dot',
+            },
+            edges: {
+              color: { inherit: 'to' },
+              smooth: false,
+            },
+            physics: {
+              enabled: false,
+              forceAtlas2Based: {
+                springLength: 230,
+                springConstant: 0.18
+              },
+              maxVelocity: 146,
+              solver: 'forceAtlas2Based',
+              timestep: 0.35,
+              stabilization: {
+                enabled: true,
+                iterations: 2500,
+                updateInterval: 25
+              },
+            },
+            groups: {
+              'page': {
+                color: '#28a745'
+              },
+              'tag': {
+                color: '#007bff'
+              },
+              'addr': {
+                color: '#17a2b8'
+              },
+              'similarity': {
+                color: '#ffc107'
+              }
+            }
+          });
+
+          network.on('stabilizationProgress', (params) => {
+            let percentage = (params.iterations / params.total) * 100;
+            progress.attr('aria-valuenow', params.iterations).css('width', `${percentage}%`);
+          });
+
+          network.once('stabilizationIterationsDone', () => {
+            progress.attr('aria-valuenow', 2500).css('width', '100%');
+            $('#graphLoadingOverlay').hide();
+          });
+
+          network.stabilize(2500);
+        });
+      },
+      destroyed: function () {
+        this.$nextTick(() => {
+          $('#footer').show();
+        });
+      }
+    });
+
+    Vue.component('NotFoundPage', {
+      template: "<h1>Ooops. Don't know where that is.</h1>"
+    });
+
+    Vue.component('page-carousel', {
+      template: '#pageCarouselTemplate',
+      delimiters: ['${', '}'],
+      props: {
+        id: String,
+        pages: Array,
+      },
+      computed: {
+        pagesInGroups() {
+          return _.chunk(this.pages, 3);
+        }
+      }
+    });
+
+    Vue.component('page-card', {
+      template: '#PageCardTemplate',
+      delimiters: ['${', '}'],
+      props: {
+        page: Object
+      },
+      methods: {
+        badgeClassForStatus() {
+          let statusCode = parseInt(/^(\d+)\s/.exec(this.page.status)[0]);
+          if (statusCode > 499) {
+            return 'badge-danger';
+          } else if (statusCode > 399) {
+            return 'badge-warning';
+          } else if (statusCode > 299) {
+            return 'badge-info';
+          } else if (statusCode > 199) {
+            return 'badge-success';
+          } else {
+            return 'badge-secondary';
+          }
+        },
+        zoomScreenshot(event) {
+          $(event.target).css({ 'transform': 'scale(2)' });
+        },
+        unzoomScreenshot(event) {
+          $(event.target).css({ 'transform': 'scale(1)' });
+        },
+        alignZoomWithCursor(event) {
+          let container = $(event.target).closest('.page-screenshot-container');
+          $(event.target).css({ 'transform-origin': ((event.pageX - container.offset().left) / container.width()) * 100 + '% ' + ((event.pageY - container.offset().top) / container.height()) * 100 + '%' });
+        },
+        openScreenshotModal(event) {
+          event.preventDefault();
+          let modalTemplate = $("#screenshotModal");
+          modalTemplate.find('.modal-title').text(this.page.url);
+          modalTemplate.find('.screenshot-link').attr('href', this.page.screenshotPath);
+          modalTemplate.find('.page-screenshot').attr('src', this.page.screenshotPath).attr('alt', this.page.url);
+          modalTemplate.modal('show');
+        },
+        openDetailsModal(event) {
+          event.preventDefault();
+          let modalTemplate = $("#detailsModal");
+          let res = Vue.compile('<page-headers-table v-bind:headers="headers"></page-headers-table>');
+          new Vue({
+            data: {
+              headers: this.page.headers
+            },
+            render: res.render,
+            staticRenderFns: res.staticRenderFns
+          }).$mount('#detailsModal .page-headers-table');
+          modalTemplate.find('.modal-title').text(this.page.url);
+          modalTemplate.find('.visit-page-button').attr('href', this.page.url);
+          modalTemplate.find('.view-raw-headers-button').attr('href', this.page.headersPath);
+          modalTemplate.find('.view-raw-response-button').attr('href', this.page.bodyPath);
+          modalTemplate.modal('show');
+        }
+      }
+    });
+
+    Vue.component('page-headers-table', {
+      template: '#pageHeadersTableTemplate',
+      delimiters: ['${', '}'],
+      props: {
+        headers: Array
+      },
+      methods: {
+        classForHeader(header) {
+          if (header.increasesSecurity) {
+            return 'table-success';
+          } else if (header.decreasesSecurity) {
+            return 'table-warning';
+          }
+          return '';
+        }
+      }
+    });
+
+    Vue.component('single-page', {
+      template: '#singlePageTemplate',
+      delimiters: ['${', '}'],
+      props: {
+        page: Object
+      }
+    })
+
+    const session = {"version":"1.7.0","stats":{"startedAt":"2023-07-15T18:41:23.759436532+05:30","finishedAt":"0001-01-01T00:00:00Z","portOpen":0,"portClosed":0,"requestSuccessful":24,"requestFailed":1,"responseCode2xx":14,"responseCode3xx":0,"responseCode4xx":10,"responseCode5xx":0,"screenshotSuccessful":24,"screenshotFailed":0},"pages":{"https://account.oneplus.in":{"uuid":"d1443f54-5c67-4389-973c-3bc76e0fc32d","url":"https://account.oneplus.in","hostname":"account.oneplus.in","addrs":["13.126.9.137"],"status":"200 OK","pageTitle":"","headersPath":"headers/https__account_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__account_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__account_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"X-Frame-Options","value":"ALLOW-FROM https://cloud.oneplus.in","decreasesSecurity":false,"increasesSecurity":true},{"name":"Access-Control-Allow-Headers","value":"X-Requested-With,content-type,Authorization,openToken","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:31 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Security-Policy","value":"frame-ancestors https://cloud.oneplus.in","decreasesSecurity":false,"increasesSecurity":true},{"name":"Strict-Transport-Security","value":"max-age=31536000;","decreasesSecurity":false,"increasesSecurity":true},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Last-Modified","value":"Fri, 18 Nov 2022 02:22:08 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Expires","value":"Fri, 14 Jul 2023 13:11:31 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cache-Control","value":"no-cache","decreasesSecurity":false,"increasesSecurity":false},{"name":"Access-Control-Allow-Methods","value":"POST, GET, OPTIONS","decreasesSecurity":false,"increasesSecurity":false},{"name":"Accept-Ranges","value":"bytes","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Length","value":"82","decreasesSecurity":false,"increasesSecurity":false},{"name":"Etag","value":"\"6376ec50-52\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Access-Control-Allow-Credentials","value":"true","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://accountapi.oneplus.in":{"uuid":"5732c624-8634-4c5c-97da-66f88f32ea8e","url":"https://accountapi.oneplus.in","hostname":"accountapi.oneplus.in","addrs":["104.18.5.40","104.18.4.40","2606:4700::6812:528","2606:4700::6812:428"],"status":"200 OK","pageTitle":"","headersPath":"headers/https__accountapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__accountapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__accountapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Date","value":"Sat, 15 Jul 2023 13:11:31 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Xss-Protection","value":"1; mode=block","decreasesSecurity":false,"increasesSecurity":true},{"name":"Cache-Control","value":"no-cache, must-revalidate","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Closed","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cf-Ray","value":"7e72407859576eee-BOM","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Content-Type-Options","value":"nosniff","decreasesSecurity":false,"increasesSecurity":true},{"name":"Pragma","value":"no-cache","decreasesSecurity":false,"increasesSecurity":false},{"name":"Expires","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0269:80","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"d26e46d1c093ea74e8f26bfce73676a4b2afd245cc9d429a8965a43ae2a8c575e32eb2f642624214231600df6af460fb","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"application/json;charset=UTF-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cf-Cache-Status","value":"DYNAMIC","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"cloudflare","decreasesSecurity":true,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Frame-Options","value":"DENY","decreasesSecurity":false,"increasesSecurity":true}],"tags":[{"text":"CloudFlare","type":"info","link":"http://www.cloudflare.com","hash":"9ea92fc7dce5e740ccc8e64d8f9e3336a96efc2a"}],"notes":null},"https://cloud.oneplus.in":{"uuid":"3d8f5579-de6f-426e-94e2-f72fba72b7c0","url":"https://cloud.oneplus.in","hostname":"cloud.oneplus.in","addrs":["129.227.195.103"],"status":"200 OK","pageTitle":"","headersPath":"headers/https__cloud_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__cloud_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__cloud_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Content-Length","value":"4175","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Last-Modified","value":"Wed, 12 Jul 2023 07:19:46 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Etag","value":"\"64ae5412-104f\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Accept-Ranges","value":"bytes","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0570:8080","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cache-Control","value":"max-age=300","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Frame-Options","value":"SAMEORIGIN","decreasesSecurity":false,"increasesSecurity":true},{"name":"X-Gateway-Host","value":"aa8ebe90029590bc6b698d24ca0afb733f49ef0cb03627023ff6a5beac0b05902bcf9ea5cd0a3cb038a655b78466aeb9","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:25 GMT","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://engineer.oneplus.in":{"uuid":"c517ff5d-69fa-47fd-9629-d0c75c3e1f58","url":"https://engineer.oneplus.in","hostname":"engineer.oneplus.in","addrs":["104.86.189.33","104.86.189.34"],"status":"200 OK","pageTitle":"OnePlus Engineer App","headersPath":"headers/https__engineer_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__engineer_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__engineer_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Cache-Control","value":"no-cache","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"e83ec1684668265c4f8f49e007d6c1b55eb4523ceae6af616a99b7b71728704f6a2f5b996a8a2ddb42532daefe1ef00a","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:29 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Etag","value":"\"6459e687-646\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Expires","value":"Sat, 15 Jul 2023 13:11:28 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0271:8080","decreasesSecurity":false,"increasesSecurity":false},{"name":"Akamai-Mon-Iucid-Del","value":"1281147","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"Accept-Ranges","value":"bytes","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Ip-Source","value":"2003863e2ff8e39f2691361927843bcd 2003863e2ff8e39f2691361927843bcd","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Length","value":"1606","decreasesSecurity":false,"increasesSecurity":false},{"name":"Last-Modified","value":"Tue, 09 May 2023 06:21:59 GMT","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://gateway-oppo.oneplus.in":{"uuid":"2fe1867c-3804-4db8-8687-8bc893732b7a","url":"https://gateway-oppo.oneplus.in","hostname":"gateway-oppo.oneplus.in","addrs":["129.227.29.195"],"status":"404 Not Found","pageTitle":"HTTP Status 404 – Not Found","headersPath":"headers/https__gateway-oppo_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__gateway-oppo_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__gateway-oppo_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"X-Gateway-Host","value":"b856e81f7b7a881173da0e07c47e70c83f49ef0cb03627023ff6a5beac0b05908ba41c46495d430448696b5e2c89554a","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:30 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html;charset=utf-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Length","value":"796","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Language","value":"en","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0224:12880","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://gateway.oneplus.in":{"uuid":"a331e5e7-3660-4282-9acb-223f987c8d52","url":"https://gateway.oneplus.in","hostname":"gateway.oneplus.in","addrs":["13.235.130.115"],"status":"404 ","pageTitle":"HTTP Status 404 – Not Found","headersPath":"headers/https__gateway_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__gateway_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__gateway_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Content-Length","value":"796","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Language","value":"en","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:29 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html;charset=utf-8","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://levinapi.oneplus.in":{"uuid":"51a36bf4-4a4f-4a32-8371-ea71c17a09dc","url":"https://levinapi.oneplus.in","hostname":"levinapi.oneplus.in","addrs":["104.18.4.40","104.18.5.40","2606:4700::6812:428","2606:4700::6812:528"],"status":"404 Not Found","pageTitle":"HTTP Status 404 – Not Found","headersPath":"headers/https__levinapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__levinapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__levinapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"X-Gateway-Host","value":"83ac2dedf3cc9edd312dfeea42191bbf3f49ef0cb03627023ff6a5beac0b05908ba41c46495d430448696b5e2c89554a","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:30 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Language","value":"en","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0259:12880","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html;charset=utf-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cf-Cache-Status","value":"DYNAMIC","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"cloudflare","decreasesSecurity":true,"increasesSecurity":false},{"name":"Cf-Ray","value":"7e72406c8b4785ad-BOM","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"CloudFlare","type":"info","link":"http://www.cloudflare.com","hash":"9ea92fc7dce5e740ccc8e64d8f9e3336a96efc2a"}],"notes":null},"https://link.oneplus.in":{"uuid":"0846cad2-1324-4faa-a4a0-0031f99fb6b9","url":"https://link.oneplus.in","hostname":"link.oneplus.in","addrs":["172.64.155.79","104.18.32.177"],"status":"200 OK","pageTitle":"","headersPath":"headers/https__link_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__link_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__link_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Last-Modified","value":"Thu, 13 Jul 2023 15:11:44 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Etag","value":"\"4e-6005fc0096c00-gzip\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Accept-Ranges","value":"bytes","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Af","value":"suite22-web01c","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:27 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html; charset=UTF-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Vary","value":"Accept-Encoding","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Fe","value":"suite22-web01c","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Hf","value":"suite-haproxy01d","decreasesSecurity":false,"increasesSecurity":false}],"tags":null,"notes":null},"https://mallapi.oneplus.in":{"uuid":"e4c961f8-da2c-41ff-b125-94e5a1ba0874","url":"https://mallapi.oneplus.in","hostname":"mallapi.oneplus.in","addrs":["129.227.29.195"],"status":"404 Not Found","pageTitle":"HTTP Status 404 – Not Found","headersPath":"headers/https__mallapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__mallapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__mallapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:30 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html;charset=utf-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Length","value":"796","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Language","value":"en","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0224:12880","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"0a725075608e85acdb7685ad88e57d7b3f49ef0cb03627023ff6a5beac0b05908ba41c46495d430448696b5e2c89554a","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://memberapi.oneplus.in":{"uuid":"a933ba3b-8c92-4cb5-9458-7033b89a8009","url":"https://memberapi.oneplus.in","hostname":"memberapi.oneplus.in","addrs":["129.227.29.195"],"status":"404 Not Found","pageTitle":"HTTP Status 404 – Not Found","headersPath":"headers/https__memberapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__memberapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__memberapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:30 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html;charset=utf-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Length","value":"796","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Language","value":"en","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0258:12880","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"8873c64fe308f5a6129e04849e4527953f49ef0cb03627023ff6a5beac0b05908ba41c46495d430448696b5e2c89554a","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://membership.oneplus.in":{"uuid":"e5983918-c4a5-4ef4-98a1-accb023841a6","url":"https://membership.oneplus.in","hostname":"membership.oneplus.in","addrs":["129.227.29.154"],"status":"200 OK","pageTitle":"Membership Center - OnePlus","headersPath":"headers/https__membership_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__membership_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__membership_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Content-Length","value":"7375","decreasesSecurity":false,"increasesSecurity":false},{"name":"Etag","value":"\"64a7d4f0-1ccf\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Accept-Ranges","value":"bytes","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:31 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"Last-Modified","value":"Fri, 07 Jul 2023 09:03:44 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0202:8000","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"efea21f7078588bc94aaa57d3a2c58483f49ef0cb03627023ff6a5beac0b05908ba41c46495d430448696b5e2c89554a","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://oneplus.in":{"uuid":"70295112-77e8-49d2-88af-6df23bb80a8c","url":"https://oneplus.in","hostname":"oneplus.in","addrs":["129.227.29.195"],"status":"200 OK","pageTitle":"OnePlus Official Site | OnePlus India","headersPath":"headers/https__oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Last-Modified","value":"Sat, 15 Jul 2023 06:58:47 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Etag","value":"W/\"333c0-6008118d85d04\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Strict-Transport-Security","value":"max-age=300; includeSubDomains","decreasesSecurity":false,"increasesSecurity":true},{"name":"Vary","value":"Accept-Encoding","decreasesSecurity":false,"increasesSecurity":false},{"name":"Akamai-Mon-Iucid-Del","value":"1300830","decreasesSecurity":false,"increasesSecurity":false},{"name":"Set-Cookie","value":"redirectedCountry=in; Domain=.oneplus.in; Path=/ refererstore=in; Domain=.oneplus.in; Path=/","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Ip-Source","value":"2003863e2ff8e39f2691361927843bcd","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Frame-Options","value":"ALLOW-FROM https://account.oneplus.in","decreasesSecurity":false,"increasesSecurity":true},{"name":"X-Gateway-Host","value":"94f711abbff9bba2192404a5bc2348c15eb4523ceae6af616a99b7b71728704f5e00505b4736f8a02452189921fb2eaf","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:30 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Cache-Control","value":"no-cache","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0514:8090","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"},{"text":"Google Tag Manager","type":"info","link":"http://www.google.com/tagmanager","hash":"32c1785f479b1aa00e898891bc206fd131fcf7b7"}],"notes":null},"https://opbr-tv-in.oneplus.in":{"uuid":"a7262da7-775b-45c4-b9d8-4deb1027bd08","url":"https://opbr-tv-in.oneplus.in","hostname":"opbr-tv-in.oneplus.in","addrs":["129.227.195.151"],"status":"403 Forbidden","pageTitle":"","headersPath":"headers/https__opbr-tv-in_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__opbr-tv-in_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__opbr-tv-in_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Content-Length","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Access-Control-Allow-Headers","value":"User-Agent,device-id,IMEI,rom-version,finger-print,sub-branch,content-type,token,x-token,prod","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"dd8fa443419c74ba821a8447acc11176b2afd245cc9d429a8965a43ae2a8c575ad39191a41f7394c3e6dec92c002aa5d","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0514:80","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:25 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html; charset=utf-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cache-Control","value":"no-cache","decreasesSecurity":false,"increasesSecurity":false},{"name":"Access-Control-Allow-Credentials","value":"true","decreasesSecurity":false,"increasesSecurity":false},{"name":"Access-Control-Allow-Origin","value":"*","decreasesSecurity":true,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://os-thirdapi.oneplus.in":{"uuid":"887fc4f6-92ab-4c7a-b704-bf2378fd9656","url":"https://os-thirdapi.oneplus.in","hostname":"os-thirdapi.oneplus.in","addrs":["129.227.29.195"],"status":"404 Not Found","pageTitle":"HTTP Status 404 – Not Found","headersPath":"headers/https__os-thirdapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__os-thirdapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__os-thirdapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Language","value":"en","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0257:12880","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"60f5f6763130991caa025d42787860da3f49ef0cb03627023ff6a5beac0b05908ba41c46495d430448696b5e2c89554a","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:25 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html;charset=utf-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Length","value":"796","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://pay.oneplus.in":{"uuid":"ab8a13d0-c017-458d-9117-f4a46427b165","url":"https://pay.oneplus.in","hostname":"pay.oneplus.in","addrs":["104.18.4.40","104.18.5.40","2606:4700::6812:528","2606:4700::6812:428"],"status":"403 Forbidden","pageTitle":"403 Forbidden","headersPath":"headers/https__pay_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__pay_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__pay_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"X-Backend-Host","value":"0592:8090","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"5631a581f411e608c761c196345514643f49ef0cb03627023ff6a5beac0b059076caa4307ddb654c5e6d3bf0f5da2d6d","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"cloudflare","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:26 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Frame-Options","value":"ALLOW-FROM https://account.oneplus.in","decreasesSecurity":false,"increasesSecurity":true},{"name":"Cf-Cache-Status","value":"DYNAMIC","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cf-Ray","value":"7e7240542f13f401-BOM","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"CloudFlare","type":"info","link":"http://www.cloudflare.com","hash":"9ea92fc7dce5e740ccc8e64d8f9e3336a96efc2a"}],"notes":null},"https://payapi.oneplus.in":{"uuid":"98cc81ad-daf5-4302-a836-4d2c674dc45e","url":"https://payapi.oneplus.in","hostname":"payapi.oneplus.in","addrs":["104.18.5.40","104.18.4.40","2606:4700::6812:528","2606:4700::6812:428"],"status":"200 OK","pageTitle":"","headersPath":"headers/https__payapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__payapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__payapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Date","value":"Sat, 15 Jul 2023 13:11:25 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html;charset=UTF-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"83ac2dedf3cc9edd312dfeea42191bbf3f49ef0cb03627023ff6a5beac0b05908ba41c46495d430448696b5e2c89554a","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cf-Cache-Status","value":"DYNAMIC","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"cloudflare","decreasesSecurity":true,"increasesSecurity":false},{"name":"Set-Cookie","value":"power_token=nsn9socgvj6j_1689426685891; Domain=oneplus.net; Path=/","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0268:12080","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cf-Ray","value":"7e724052beacf4a4-BOM","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"CloudFlare","type":"info","link":"http://www.cloudflare.com","hash":"9ea92fc7dce5e740ccc8e64d8f9e3336a96efc2a"}],"notes":null},"https://reviewapi.oneplus.in":{"uuid":"f1b6fc77-8ebe-4bc8-a785-a5dc862efa90","url":"https://reviewapi.oneplus.in","hostname":"reviewapi.oneplus.in","addrs":["104.18.5.40","104.18.4.40","2606:4700::6812:528","2606:4700::6812:428"],"status":"200 OK","pageTitle":"OnePlus - OnePlus (India)","headersPath":"headers/https__reviewapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__reviewapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__reviewapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Expires","value":"Thu, 06 Jul 2023 04:31:10 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cache-Control","value":"no-cache","decreasesSecurity":false,"increasesSecurity":false},{"name":"Strict-Transport-Security","value":"max-age=300; includeSubDomains","decreasesSecurity":false,"increasesSecurity":true},{"name":"X-Frame-Options","value":"ALLOW-FROM https://account.oneplus.in","decreasesSecurity":false,"increasesSecurity":true},{"name":"Set-Cookie","value":"redirectedCountry=in; Domain=.oneplus.in; Path=/ refererstore=in; Domain=.oneplus.in; Path=/","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Ip-Source","value":"2003863e2ff8e39f2691361927843bcd","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Etag","value":"W/\"6491631a-17552\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:25 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Akamai-Mon-Iucid-Del","value":"1300830","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0514:8090","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"91b04c698d5498c20bb6acbdf8948c025eb4523ceae6af616a99b7b71728704f5e00505b4736f8a02452189921fb2eaf","decreasesSecurity":false,"increasesSecurity":false},{"name":"Vary","value":"Accept-Encoding","decreasesSecurity":false,"increasesSecurity":false},{"name":"Last-Modified","value":"Tue, 20 Jun 2023 08:28:10 GMT","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"},{"text":"Google Tag Manager","type":"info","link":"http://www.google.com/tagmanager","hash":"32c1785f479b1aa00e898891bc206fd131fcf7b7"},{"text":"jQuery","type":"info","link":"https://jquery.com","hash":"61ca870c2763b90da43197f43bf497893e9b1166"}],"notes":null},"https://sgtm-in.oneplus.in":{"uuid":"491be32c-7191-4531-a94c-66713d889b96","url":"https://sgtm-in.oneplus.in","hostname":"sgtm-in.oneplus.in","addrs":["216.239.36.21","216.239.32.21","216.239.38.21","216.239.34.21"],"status":"400 Bad Request","pageTitle":"","headersPath":"headers/https__sgtm-in_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__sgtm-in_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__sgtm-in_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"X-Cloud-Trace-Context","value":"2d26b6b65498c144f1d5b644e311c8d5;o=1","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:26 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"Google Frontend","decreasesSecurity":true,"increasesSecurity":false},{"name":"Content-Length","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Google App Engine","type":"info","link":"http://code.google.com/appengine","hash":"e9e954f8413b2c2b6a45707020c3b7c55f582671"}],"notes":null},"https://storeapi.oneplus.in":{"uuid":"29bbd437-d483-40ba-be51-ca0a6be2ff3b","url":"https://storeapi.oneplus.in","hostname":"storeapi.oneplus.in","addrs":["104.18.4.40","104.18.5.40","2606:4700::6812:428","2606:4700::6812:528"],"status":"200 OK","pageTitle":"","headersPath":"headers/https__storeapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__storeapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__storeapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"X-Srcache-Fetch","value":"BYPASS","decreasesSecurity":false,"increasesSecurity":false},{"name":"Access-Control-Allow-Headers","value":"X-Requested-With,content-type,Authorization,openToken","decreasesSecurity":false,"increasesSecurity":false},{"name":"Access-Control-Allow-Credentials","value":"true","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0269:80","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"cloudflare","decreasesSecurity":true,"increasesSecurity":false},{"name":"Cf-Ray","value":"7e724075eeee1be5-BOM","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:31 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Content-Type-Options","value":"nosniff","decreasesSecurity":false,"increasesSecurity":true},{"name":"Cache-Control","value":"no-cache, must-revalidate","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Xss-Protection","value":"1; mode=block","decreasesSecurity":false,"increasesSecurity":true},{"name":"Expires","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Frame-Options","value":"DENY","decreasesSecurity":false,"increasesSecurity":true},{"name":"Access-Control-Allow-Methods","value":"POST, GET, OPTIONS","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"a1fa925c6bf222dd539d7bc077f0f6b3b2afd245cc9d429a8965a43ae2a8c575e32eb2f642624214231600df6af460fb","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cf-Cache-Status","value":"DYNAMIC","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"application/json;charset=UTF-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Pragma","value":"no-cache","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"CloudFlare","type":"info","link":"http://www.cloudflare.com","hash":"9ea92fc7dce5e740ccc8e64d8f9e3336a96efc2a"}],"notes":null},"https://support.oneplus.in":{"uuid":"fa0153e2-9bcb-458c-83dd-4996fb9daa3f","url":"https://support.oneplus.in","hostname":"support.oneplus.in","addrs":["34.198.162.235","52.207.202.126"],"status":"200 OK","pageTitle":"Support - OnePlus (India)","headersPath":"headers/https__support_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__support_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__support_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"X-Backend-Host","value":"0514:8080","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Akamai-Mon-Iucid-Del","value":"1359885","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Length","value":"65832","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Last-Modified","value":"Tue, 11 Jul 2023 02:09:06 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Accept-Ranges","value":"bytes","decreasesSecurity":false,"increasesSecurity":false},{"name":"Etag","value":"W/\"10128-6002c957bfccd\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cache-Control","value":"no-cache","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"a57f5ff823fb2c92b4475bcb3da56b733f49ef0cb03627023ff6a5beac0b059076caa4307ddb654c5e6d3bf0f5da2d6d","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:31 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Ip-Source","value":"2003863e2ff8e39f2691361927843bcd","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"},{"text":"Google Tag Manager","type":"info","link":"http://www.google.com/tagmanager","hash":"32c1785f479b1aa00e898891bc206fd131fcf7b7"}],"notes":null},"https://supportapi.oneplus.in":{"uuid":"0c4e1478-ea0e-44ff-8d78-c0160804eaed","url":"https://supportapi.oneplus.in","hostname":"supportapi.oneplus.in","addrs":["129.227.29.195"],"status":"404 Not Found","pageTitle":"HTTP Status 404 – Not Found","headersPath":"headers/https__supportapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__supportapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__supportapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Content-Language","value":"en","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0224:12880","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"b856e81f7b7a881173da0e07c47e70c83f49ef0cb03627023ff6a5beac0b05908ba41c46495d430448696b5e2c89554a","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:31 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html;charset=utf-8","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Length","value":"796","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://tv.oneplus.in":{"uuid":"251b5b33-702c-44c1-a7ba-8398d1f9e9ca","url":"https://tv.oneplus.in","hostname":"tv.oneplus.in","addrs":["104.86.189.49","104.86.189.48"],"status":"200 OK","pageTitle":"Welcome to tengine!","headersPath":"headers/https__tv_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__tv_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__tv_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Etag","value":"\"6322dd7d-22b\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Access-Control-Allow-Origin","value":"*","decreasesSecurity":true,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:28 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Akamai-Mon-Iucid-Del","value":"1398898","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Content-Length","value":"555","decreasesSecurity":false,"increasesSecurity":false},{"name":"Last-Modified","value":"Thu, 15 Sep 2022 08:08:29 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Accept-Ranges","value":"bytes","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0514:80","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"c9e8cfe44705ba2b1e6c7a6871703c08b2afd245cc9d429a8965a43ae2a8c575ad39191a41f7394c3e6dec92c002aa5d","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Ip-Source","value":"2003863e2ff8e39f2691361927843bcd","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html; charset=utf-8","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://vodapi.oneplus.in":{"uuid":"3b15d56d-0faa-4374-bf8e-5012a1c20b73","url":"https://vodapi.oneplus.in","hostname":"vodapi.oneplus.in","addrs":["129.227.195.151"],"status":"200 OK","pageTitle":"Welcome to tengine!","headersPath":"headers/https__vodapi_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__vodapi_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__vodapi_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"Etag","value":"\"6322dd7d-22b\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Access-Control-Allow-Origin","value":"*","decreasesSecurity":true,"increasesSecurity":false},{"name":"Accept-Ranges","value":"bytes","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Gateway-Host","value":"dd8fa443419c74ba821a8447acc11176b2afd245cc9d429a8965a43ae2a8c575ad39191a41f7394c3e6dec92c002aa5d","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"Last-Modified","value":"Thu, 15 Sep 2022 08:08:29 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Length","value":"555","decreasesSecurity":false,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0514:80","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:31 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html; charset=utf-8","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"}],"notes":null},"https://www.oneplus.in":{"uuid":"ee598af3-4ca4-4f94-b9e0-b46b3a8683e7","url":"https://www.oneplus.in","hostname":"www.oneplus.in","addrs":["104.86.189.35","104.86.189.34","2600:1417:78::6856:bd22","2600:1417:78::6856:bd23"],"status":"200 OK","pageTitle":"OnePlus Official Site | OnePlus India","headersPath":"headers/https__www_oneplus_in__da39a3ee5e6b4b0d.txt","bodyPath":"html/https__www_oneplus_in__da39a3ee5e6b4b0d.html","screenshotPath":"screenshots/https__www_oneplus_in__da39a3ee5e6b4b0d.png","hasScreenshot":true,"headers":[{"name":"X-Frame-Options","value":"ALLOW-FROM https://account.oneplus.in","decreasesSecurity":false,"increasesSecurity":true},{"name":"X-Ip-Source","value":"2003863e2ff8e39f2691361927843bcd","decreasesSecurity":false,"increasesSecurity":false},{"name":"Retry-Count","value":"0","decreasesSecurity":false,"increasesSecurity":false},{"name":"Strict-Transport-Security","value":"max-age=300; includeSubDomains","decreasesSecurity":false,"increasesSecurity":true},{"name":"X-Gateway-Host","value":"94f711abbff9bba2192404a5bc2348c15eb4523ceae6af616a99b7b71728704f5e00505b4736f8a02452189921fb2eaf","decreasesSecurity":false,"increasesSecurity":false},{"name":"Date","value":"Sat, 15 Jul 2023 13:11:31 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Vary","value":"Accept-Encoding","decreasesSecurity":false,"increasesSecurity":false},{"name":"Content-Type","value":"text/html","decreasesSecurity":false,"increasesSecurity":false},{"name":"Last-Modified","value":"Sat, 15 Jul 2023 06:58:47 GMT","decreasesSecurity":false,"increasesSecurity":false},{"name":"Cache-Control","value":"no-cache","decreasesSecurity":false,"increasesSecurity":false},{"name":"Akamai-Mon-Iucid-Del","value":"1300830","decreasesSecurity":false,"increasesSecurity":false},{"name":"Etag","value":"W/\"333c0-6008118d85d04\"","decreasesSecurity":false,"increasesSecurity":false},{"name":"Set-Cookie","value":"redirectedCountry=in; Domain=.oneplus.in; Path=/ refererstore=in; Domain=.oneplus.in; Path=/","decreasesSecurity":false,"increasesSecurity":false},{"name":"Server","value":"nginx","decreasesSecurity":true,"increasesSecurity":false},{"name":"X-Backend-Host","value":"0514:8090","decreasesSecurity":false,"increasesSecurity":false}],"tags":[{"text":"Nginx","type":"info","link":"http://nginx.org/en","hash":"c5f9bde4da1314a38cd29cddb1dd216b15d84c8e"},{"text":"Google Tag Manager","type":"info","link":"http://www.google.com/tagmanager","hash":"32c1785f479b1aa00e898891bc206fd131fcf7b7"}],"notes":null}},"pageSimilarityClusters":{"1ba40697-8cfe-4145-b3ca-1f561485daa0":["https://engineer.oneplus.in"],"2737b433-f5c6-4dcf-977d-633821071d03":["https://pay.oneplus.in"],"4076aa6a-6b02-42a7-80f2-62af17f9b5a7":["https://support.oneplus.in"],"49693ed9-680a-42f7-b437-414d5525afa2":["https://payapi.oneplus.in"],"628ea59b-248c-4473-91ba-62fdfe084df0":["https://cloud.oneplus.in"],"7f561cf5-309c-4bb0-a16d-f70c68d012fb":["https://gateway-oppo.oneplus.in","https://mallapi.oneplus.in","https://memberapi.oneplus.in","https://os-thirdapi.oneplus.in","https://supportapi.oneplus.in","https://gateway.oneplus.in","https://levinapi.oneplus.in"],"88c8095c-cb5a-44e6-831c-88fbe5848d24":["https://tv.oneplus.in","https://vodapi.oneplus.in"],"9889efd6-9073-4c38-9702-c27a95a353ad":["https://link.oneplus.in"],"c0d4e3b6-d153-42e5-b416-95f8ee1e9e49":["https://sgtm-in.oneplus.in","https://opbr-tv-in.oneplus.in","https://accountapi.oneplus.in","https://storeapi.oneplus.in"],"d8723207-8cbf-4422-9896-4e8fdd677839":["https://www.oneplus.in","https://oneplus.in"],"de1c01af-53e0-44b8-bed0-50a6c19e982e":["https://account.oneplus.in"],"e32862cf-50d5-4d0d-bbe2-399f1d84bd77":["https://reviewapi.oneplus.in"],"e97ec21d-6e81-4af4-9aec-dffd70ff5bb6":["https://membership.oneplus.in"]}};
+    const data = _.extend(parseSession(session), { currentRoute: window.location.hash });
+    const router = new VueRouter({
+      routes: [
+        { path: '/', alias: '/pages/by-similarity', component: Vue.component('PagesBySimilarityPage'), props: { pageSimilarityClusters: data.pageSimilarityClusters } },
+        { path: '/pages/by-hosts', component: Vue.component('PagesByHostsPage'), props: { pages: data.pages } },
+        { path: '/pages/single', component: Vue.component('SinglePagesPage'), props: { pages: data.pages } },
+        { path: '/pages/graph', component: Vue.component('GraphPage'), props: { pages: data.pages, pageSimilarityClusters: data.pageSimilarityClusters } },
+        { path: '/pages/stats', component: Vue.component('StatsPage'), props: { pages: data.pages, pageSimilarityClusters: data.pageSimilarityClusters, stats: data.stats } },
+        { path: '*', component: Vue.component('NotFoundPage') }
+      ]
+    })
+
+    var app = new Vue({
+      el: '#app',
+      data: data,
+      delimiters: ['${', '}'],
+      router: router
+    });
+  </script>
+
+  <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="screenshotModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <a href="" target="_blank" class="screenshot-link"><img class="page-screenshot" src="" alt="" /></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="detailsModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>Response Headers:</h3>
+          <table class="page-headers-table"></table>
+        </div>
+        <div class="modal-footer">
+          <a href="" target="_blank" class="btn btn-primary visit-page-button">Visit Page</a>
+          <a href="" target="_blank" class="btn btn-primary view-raw-headers-button">View Raw Headers</a>
+          <a href="" target="_blank" class="btn btn-primary view-raw-response-button">View Raw Response</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

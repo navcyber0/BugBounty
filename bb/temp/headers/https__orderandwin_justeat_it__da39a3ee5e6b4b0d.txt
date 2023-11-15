@@ -1,0 +1,20 @@
+404 Not Found
+Cf-Ray: 7b5146201ce21c98-AMS
+Date: Sun, 09 Apr 2023 08:10:30 GMT
+Cache-Control: max-age=2970, public, s-maxage=56970
+X-Amz-Cf-Pop: AMS50-C1
+Set-Cookie: __cf_bm=e1jVS_YENaYQIl84ENzAoBQ1iLThMS.w6FrA8aRRemc-1681027830-0-AR+PiU3Ayv2ZpKeGQ6yJ5NF9CYHGDiilXGkAhQ+87a6rSGtzw9wxtsMx5LlE9jvE/MwtS8DeoaMH3NOV28zsMMQ=; path=/; expires=Sun, 09-Apr-23 08:40:30 GMT; domain=.justeat.it; HttpOnly; Secure; SameSite=None
+Retry-Count: 0
+X-Amzn-Requestid: 0415d226-cfba-4ae5-810a-fd1ed90a3d58
+Via: 1.1 63cf97e5788a160a76e89d4e12e2ca28.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: DA0m89RhD4gJwAq6UjFRgGtFPsWf5cnpvO5fypj02_G5NeUXWC8iQw==
+Cf-Cache-Status: DYNAMIC
+Content-Type: text/html; charset=UTF-8
+Access-Control-Allow-Origin: *
+X-Amz-Apigw-Id: DGbmeEdXDoEFV9A=
+X-Amzn-Trace-Id: Root=1-643272f5-0853179021148bd11019318c;Sampled=0;lineage=5a437216:0
+Server: cloudflare
+Strict-Transport-Security: max-age=0
+Access-Control-Expose-Headers: X-Session-Id, X-CSRF-TOKEN
+X-Amzn-Remapped-Date: Sun, 09 Apr 2023 08:10:30 GMT
+X-Cache: Error from cloudfront

@@ -1,0 +1,11 @@
+200 
+Date: Fri, 23 Jun 2023 15:14:02 GMT
+Server: Apache/2.4.41 (Ubuntu)
+X-Frame-Options: DENY
+X-Xss-Protection: 1
+Content-Type: text/html;charset=UTF-8
+Vary: Accept-Encoding
+Retry-Count: 0
+Strict-Transport-Security: max-age=63072000
+Content-Language: de-CH
+Set-Cookie: CFID=1ee2e9ac-e7ad-4fe3-8498-153e264e57c7;Path=/;Secure;HttpOnly CFTOKEN=0;Path=/;Secure;HttpOnly

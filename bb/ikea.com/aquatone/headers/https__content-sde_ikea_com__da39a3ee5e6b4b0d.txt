@@ -1,0 +1,15 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Content-Length: 50102
+Pragma: no-cache
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Cache-Control: no-cache, no-store
+Expires: 0
+X-Oracle-Dms-Rid: 0
+X-Content-Type-Options: nosniff
+X-Oracle-Dms-Ecid: a92cfd74-375f-4965-aa10-af08bd619c3a-000035c1
+Date: Sun, 23 Jul 2023 01:10:42 GMT
+Set-Cookie: JSESSIONID=rfmATHglWCfkGO7qzuyGSMWorYIRS8yXfP8-8UH-ZfZuWdhEUG88!1951380973!-1154780961; path=/; HttpOnly capture-sde.ikea.com=48839434.18495.0000; path=/; Httponly; Secure TS013c4751=01b2df3c7036b1ab9c3f9b44cb452cacaf4ebbe5f168a466c0beac3fc28499db36da7d8c13550e998934f21b74ef48f147742f778d; Path=/ TS94bde38c027=08a38d9783ab20003cd18a95b596cd1857dc85d6bb832137126f6faaf728035cfbf7eae5ab5911d60822489484113000a4d81d6904c96b47ccbc3598d4eb1607d667e638786183a04bec9f9e89e4ebcf59702975ad2aeaf87512ee0dc7ab5367; Path=/
+X-Xss-Protection: 1; mode=block
+Content-Type: application/json; charset=utf-8

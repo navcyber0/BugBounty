@@ -1,0 +1,10 @@
+403 Forbidden
+X-Amz-Bucket-Region: eu-west-1
+Date: Sun, 23 Jul 2023 01:09:06 GMT
+Server: AmazonS3
+Via: 1.1 dc3ba3079f46dad6613a8162e38ac6d0.cloudfront.net (CloudFront)
+Content-Type: application/xml
+X-Cache: Error from cloudfront
+X-Amz-Cf-Pop: MRS52-P1
+X-Amz-Cf-Id: 3Vd6dXKnlnEi8hc89CAJidbFHJDncn8YfWEzrx6cactoI3gDy-r9Bg==
+Retry-Count: 0

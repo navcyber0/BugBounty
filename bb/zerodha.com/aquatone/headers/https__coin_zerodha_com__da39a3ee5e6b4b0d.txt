@@ -1,0 +1,18 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Expires: -1
+Permissions-Policy: interest-cohort=()
+Cf-Cache-Status: DYNAMIC
+Pragma: no-cache
+Content-Security-Policy: frame-ancestors 'self'
+Set-Cookie: _cfuvid=sG0kyhnqQqQwSs2WWRcpSSjOU0aC6onoPnCyuDTwpww-1680012154044-0-604800000; path=/; domain=.zerodha.com; HttpOnly
+Retry-Count: 0
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Last-Modified: Tue, 28 Mar 2023 07:34:50 GMT
+Strict-Transport-Security: max-age=15552000
+Server: cloudflare
+Cf-Ray: 7af0695a8c6784e9-BOM
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Date: Tue, 28 Mar 2023 14:02:34 GMT
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: : 1;mode=block

@@ -1,0 +1,2168 @@
+﻿<!DOCTYPE html>
+<html lang="sv-SE" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IKEA | Bokning av planeringsservice</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css?ver=1.0.11540902777">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css?ver=1.0.11540902777">
+
+
+    <link href="./css/bootstrap-datepicker-1.8.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <link href="./css/LoginCSS.css" rel="stylesheet" type="text/css" />
+    <link href="./css/SignUpCSS.css" rel="stylesheet" type="text/css" />
+    <link href="./css/standards.css" rel="stylesheet" type="text/css" />
+    <link href="./css/responsive.css" rel="stylesheet" type="text/css" />
+    <!-- styles -->
+    <esi:include src="https://www.ikea.com/se/sv/header-footer/style-fragment-recursive.html" onerror="continue">
+    </esi:include>
+    <script>
+        var region = "";
+        var language = "";
+        var city = "";
+        var store = "";
+        var service = ""
+        var userInfo = "";
+        var GlobleToken = "";
+        var ResourceID = "";
+        var GlobalContactId = "";
+        var GlobalOpportunityId = "";
+        var StoreAddr = "";
+        var ServiceTypeId = "";
+        var SelectedOrgValue = "";
+        var ResourceOwnerId = "";
+        var userProfile = {};
+        var getWeekMonth = "";
+        // var getWeekNumber = "";
+        var ischkedConsentSignUp = false;
+        var ischkedConsentGuest = false;
+        var signupcheckedTime = "";
+        var guestcheckedTime = "";
+        var bookingResponseStatus = undefined;
+        var bookingResponseMessage = undefined;
+        var getBookingStatus = undefined;
+        var cancelBookingStatus = undefined;
+        var errFlag = false;
+        var opportunityType = "Köksspecialist – Butik";
+        var customerType = "";
+        var profileCreationResponseStatus = undefined;
+        var profileErrorCode = undefined;
+        var profileUpdateResponseStatus = undefined;
+        var phoneUpdateResponseStatus = undefined;
+        var profileUpdateErrorCode = undefined;
+        var deleteSessionStatus = undefined;
+        var deleteSessionHeaders = undefined;
+        var IDLE_TIMEOUT = 3600; // 60 minutes
+        var _localStorageKey = 'global_countdown_last_reset_timestamp';
+        var _idleSecondsTimer = null;
+        var _lastResetTimeStamp = (new Date()).getTime();
+        var _localStorage = null;
+        var rebookData = undefined;
+        var clickedStatus;
+        var retrieveContactInfoData = undefined;
+        var phoneChanged = false;
+        var bookingWaitingCustomerResponseStatus = undefined;
+        var bookingWaitingCustomerResponseMessage = undefined;
+        var futureBookings = undefined;
+        var bookingErrorMessage = undefined;
+        var storeDetailsResponse = undefined;
+        var isUserLoggedIn = false;
+        var storeList = [
+                {
+                    "displayName": "Borlänge",
+                    "msdyn_name": "Borlänge",
+                    "cityName": "Borlänge"
+                },
+                {
+                    "displayName": "Gävle",
+                    "msdyn_name": "Gävle",
+                    "cityName": "Gävle"
+                },
+                {
+                    "displayName": "Göteborg Bäckebol",
+                    "msdyn_name": "Bäckebol",
+                    "cityName": "Göteborg"
+                },
+                {
+                    "displayName": "Göteborg Kållered",
+                    "msdyn_name": "Kållered",
+                    "cityName": "Göteborg"
+                },
+                {
+                    "displayName": "Göteborg City - planeringsstudio",
+                    "msdyn_name": "Göteborg City",
+                    "cityName": "Göteborg",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Göteborg Frölunda Torg - planeringsstudio",
+                    "msdyn_name": "Frölunda",
+                    "cityName": "Göteborg",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Gotland Visby - planeringsstudio",
+                    "msdyn_name": "Visby",
+                    "cityName": "Gotland",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Halmstad - planeringsstudio",
+                    "msdyn_name": "Halmstad",
+                    "cityName": "Halmstad",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "HaparandaTornio",
+                    "msdyn_name": "Haparanda",
+                    "cityName": "Haparanda"
+                },
+                {
+                    "displayName": "Helsingborg",
+                    "msdyn_name": "Helsingborg",
+                    "cityName": "Helsingborg"
+                },
+                {
+                    "displayName": "Jönköping",
+                    "msdyn_name": "Jönköping",
+                    "cityName": "Jönköping"
+                },
+                {
+                    "displayName": "Kalmar",
+                    "msdyn_name": "Kalmar",
+                    "cityName": "Kalmar"
+                },
+                {
+                    "displayName": "Karlstad",
+                    "msdyn_name": "Karlstad",
+                    "cityName": "Karlstad"
+                },
+                {
+                    "displayName": "Linköping",
+                    "msdyn_name": "Linköping",
+                    "cityName": "Linköping"
+                },
+                {
+                    "displayName": "Luleå - planeringsstudio",
+                    "msdyn_name": "Luleå",
+                    "cityName": "Haparanda",
+                    "isHspStore": true
+                },  
+                {
+                    "displayName": "Lund - planeringsstudio",
+                    "msdyn_name": "Lund",
+                    "cityName": "Lund",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Malmö",
+                    "msdyn_name": "Malmö",
+                    "cityName": "Malmö"
+                },
+                {
+                    "displayName": "Norrköping - planeringsstudio",
+                    "msdyn_name": "Norrköping",
+                    "cityName": "Norrköping",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Skellefteå - planeringsstudio",
+                    "msdyn_name": "Skellefteå",
+                    "cityName": "Skellefteå",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Stockholm Barkarby",
+                    "msdyn_name": "Barkarby",
+                    "cityName": "Stockholm"
+                },
+                {
+                    "displayName": "Stockholm Bromma - planeringsstudio",
+                    "msdyn_name": "Bromma",
+                    "cityName": "Stockholm",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Stockholm Täby - planeringsstudio",
+                    "msdyn_name": "Täby",
+                    "cityName": "Stockholm",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Stockholm City Gallerian",
+                    "msdyn_name": "Stockholm City Gallerian",
+                    "cityName": "Stockholm"
+                },
+                {
+                    "displayName": "Stockholm Kungens Kurva",
+                    "msdyn_name": "Kungens Kurva",
+                    "cityName": "Stockholm"
+                },
+                {
+                    "displayName": "Stockholm Sickla - planeringsstudio",
+                    "msdyn_name": "Sickla",
+                    "cityName": "Stockholm",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Sundsvall",
+                    "msdyn_name": "Sundsvall",
+                    "cityName": "Sundsvall"
+                },
+                {
+                    "displayName": "Sälen - planeringsstudio",
+                    "msdyn_name": "Sälen",
+                    "cityName": "Borlänge",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Uddevalla",
+                    "msdyn_name": "Uddevalla",
+                    "cityName": "Uddevalla"
+                },
+                {
+                    "displayName": "Umeå",
+                    "msdyn_name": "Umeå",
+                    "cityName": "Umeå"
+                },
+                {
+                    "displayName": "Uppsala",
+                    "msdyn_name": "Uppsala",
+                    "cityName": "Uppsala"
+                },
+                {
+                    "displayName": "Västerås",
+                    "msdyn_name": "Västerås",
+                    "cityName": "Västerås"
+                },
+                {
+                    "displayName": "Växjö - planeringsstudio",
+                    "msdyn_name": "Växjö",
+                    "cityName": "Växjö",
+                    "isHspStore": true
+                },
+                {
+                    "displayName": "Älmhult",
+                    "msdyn_name": "Älmhult",
+                    "cityName": "Älmhult"
+                },
+                {
+                    "displayName": "Örebro",
+                    "msdyn_name": "Örebro",
+                    "cityName": "Örebro"
+                },
+                {
+                    "displayName": "Östersund - planeringsstudio",
+                    "msdyn_name": "Östersund",
+                    "cityName": "Sundsvall",
+                    "isHspStore": true
+                },
+            ];
+
+        function PageLoad() {
+            try {
+                let url = new URL(window.location.href);
+                let params = new URLSearchParams(url.search);
+
+                if (params.get('_ga') || params.get('_gl')) {
+                    params.delete('_ga');
+                    params.delete('_gl');
+                    url.search = params.toString();
+                    const newUrl = url.toString();
+                    window.history.pushState('', '', newUrl);
+                }
+
+                var pathArgs = decodeURI(window.location.pathname).split('/');
+                if (pathArgs && pathArgs.length > 6) {
+                    region = pathArgs[1];
+                    language = pathArgs[2];
+                    city = pathArgs[3];
+                    store = pathArgs[4];
+                    service = pathArgs[5];
+                }
+                GetWebCalendarItems();
+                createStoreOptions();
+                // GetStoreDetails();
+                loadCalender();
+                CheckCIEAccessToken();
+                showLogoutBtn();
+                showRebookBtn();
+                hideWaitingList();
+                hideRedirectToOnlineCalendarBtn();
+            } catch (err) {
+                throw err.message;
+            }
+        }
+
+        
+        async function UpdatePhone(phone, partyId, email) {
+            phoneUpdateResponseStatus = undefined;
+            try {
+                var xhr = new XMLHttpRequest();
+                xhr.withCredentials = true;
+
+                var data = JSON.stringify({
+                    "mobile": phone,
+                    "emailAddress" : email,
+                    "partyId": partyId
+                });
+
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        phoneUpdateResponseStatus = xhr.status;
+
+                        if(xhr.status < 400) {
+                            var userData = userInfo;
+                            userData.mobile = phone;
+                            localStorage.setItem("userInfo", JSON.stringify(userData));
+                        }
+                    }
+                });
+
+                xhr.open("POST", "/api/UpdatePhone", false);
+                xhr.setRequestHeader("accept", "application/json");
+                xhr.setRequestHeader("content-type", "application/json");
+                xhr.setRequestHeader("cache-control", "no-cache");
+                xhr.send(data);
+            }
+            catch (e) {
+                throw e.message;
+            }
+        }
+
+
+        function GetWebCalendarItems() {
+            try {
+                var xhr = new XMLHttpRequest();
+                xhr.withCredentials = true;
+
+                var data = JSON.stringify({
+                    "city": city,
+                    "store": store,
+                    "serviceType": service,
+                    "opportunityType": opportunityType
+                });
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        var JSNobjOutput = JSON.parse(this.responseText);
+                        // GlobleToken = JSNobjOutput.token;
+                        ResourceID = JSNobjOutput.bookableresourceId;
+                        GlobalOpportunityId = JSNobjOutput.opportunityTypeId;
+                        ServiceTypeId = JSNobjOutput.serviceTypeId;
+                        SelectedOrgValue = JSNobjOutput.storeId;
+                        ResourceOwnerId = JSNobjOutput.resourceOwnerId;
+                    }
+                });
+
+                xhr.open("POST", "/api/WebCalendarMetadata", false);
+                xhr.setRequestHeader("accept", "application/json");
+                xhr.setRequestHeader("content-type", "application/json");
+                xhr.setRequestHeader("cache-control", "no-cache");
+
+                xhr.send(data);
+            }
+            catch (e) {
+                throw e.message;
+            }
+        }
+
+        function loadCalender() {
+            $('.month-week-tabs').show();
+            /*  $('html,body').animate({ scrollTop: 500 }, 500); */
+            $('.book-btn').show();
+            var result = getWeekNumber(new Date());
+            document.getElementById("week-num").innerHTML = result[1];
+            getWeekMonth = result[1] + '-' + result[0];
+            //var SelectedOrg = document.getElementById("dd_Org");
+            // var SelectedOrgValue = SelectedOrg.options[SelectedOrg.selectedIndex].value;
+            if (SelectedOrgValue != null && SelectedOrgValue != "" && SelectedOrgValue != 'undefined') {
+                if (ResourceID != "" && ResourceID != null) {
+                    getTimeslotsInWeek();
+                }
+            }
+        }
+
+        function GetBookingStatus(BookingId) {
+            try {
+                getBookingStatus = undefined;
+                bookingMessage = undefined;
+
+                var bookingStatusData = JSON.stringify({
+                    "bookingId": BookingId
+                });
+
+                var xhr = new XMLHttpRequest();
+                xhr.withCredentials = true;
+
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        var res = JSON.parse(this.responseText);
+                        getBookingStatus = res;
+                    }
+                });
+
+                xhr.open("POST", "/api/GetBookingStatus", false);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.setRequestHeader("accept", "application/json");
+                xhr.send(bookingStatusData);
+            }
+            catch (e) {
+                console.log(e.message);
+            }
+        }
+
+        function cancelBooking(bookingId) {
+            try {
+                cancelBookingStatus = undefined;
+
+                var data = JSON.stringify({
+                    //   token: GlobleToken,
+                    bookingId: bookingId
+                });
+
+                var xhr = new XMLHttpRequest();
+                xhr.withCredentials = true;
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        cancelBookingStatus = this.status;
+                    }
+                });
+                xhr.open("PATCH", "/api/CancelBooking", false);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.setRequestHeader("cache-control", "no-cache");
+                xhr.send(data);
+            } catch (error) {
+                throw error.message;
+            }
+        }
+
+        async function CreateBooking(BookingId, ServiceTypeId, OpportunityTypeId, Name, Email, Phone,
+            IkeaFamilyCardNo, selectedKitchenplanVal, selectedOnlineBooking, Message, SignUpTime, IsCheckedFlag, weekOfTheDay) {
+
+            try {
+                bookingResponseStatus = undefined;
+                bookingResponseMessage = undefined;
+                var calendarType = (customerType.toLowerCase() == "onlinemöte" && service.toLowerCase() == "personlig kökplanering") ? 2 : 1;
+                var data = JSON.stringify({
+                    "name": Name,
+                    "emailAddress": Email,
+                    "phone": Phone,
+                    "familyCardNo": IkeaFamilyCardNo,
+                    "convertwebbooking": selectedKitchenplanVal,
+                    "onlineBooking": selectedOnlineBooking,
+                    "message": Message,
+                    "signUpTime": SignUpTime,
+                    "isCheckedFlag": IsCheckedFlag,
+                    "serviceTypeId": ServiceTypeId,
+                    "opportunityTypeId": OpportunityTypeId,
+                    "bookingId": BookingId,
+                    "calendarType": calendarType,
+                    "weekOfTheDay": weekOfTheDay
+                });
+
+                $('.loader-ikea').show();
+                const res = await fetch("/api/CreateBooking", {
+                    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                    mode: 'cors', // no-cors, *cors, same-origin
+                    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                    credentials: 'same-origin', // include, *same-origin, omit
+                    headers: {
+                        'Content-Type': 'application/json'
+                        // 'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    redirect: 'follow', // manual, *follow, error
+                    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                    body: data // body data type must match "Content-Type" header
+                });
+
+                if (res && res.status) {
+                    $('.loader-ikea').hide();
+
+                    bookingResponseStatus = res.status;
+
+                    const resJson = await res.json();
+                    if (resJson && resJson.error) {
+                        bookingErrorMessage = resJson.error;
+                    }
+
+                    if (res.statusText) {
+                        bookingResponseMessage = res.statusText;
+                    }
+
+                    return res;
+                }
+
+            }
+            catch (e) {
+                console.log(e.message);
+            }
+        }
+
+        async function CreateB2BKitchenBooking(
+            BookingId,
+            ServiceTypeId,
+            OpportunityTypeId,
+            Name,
+            Email,
+            Phone,
+            companyName,
+            companyAccountNumber,
+            organizationNumber,
+            selectedKitchenplanVal,
+            selectedOnlineBooking,
+            Message,
+            SignUpTime,
+            IsCheckedFlag,
+            weekOfTheDay) {
+
+            try {
+                bookingResponseStatus = undefined;
+                bookingResponseMessage = undefined;
+                var calendarType = (customerType.toLowerCase() == "onlinemöte" && service.toLowerCase() == "personlig kökplanering") ? 2 : 1;
+                var data = JSON.stringify({
+                    "name": Name,
+                    "emailAddress": Email,
+                    "phone": Phone,
+                    "companyName": companyName,
+                    "companyAccountNumber": companyAccountNumber ? companyAccountNumber : null,
+                    "organizationNumber": organizationNumber ? organizationNumber : null,
+                    "convertwebbooking": selectedKitchenplanVal,
+                    "onlineBooking": selectedOnlineBooking,
+                    "isB2BCustomerBookedViaKitchen": true,
+                    "message": Message,
+                    "signUpTime": SignUpTime,
+                    "isCheckedFlag": IsCheckedFlag,
+                    "serviceTypeId": ServiceTypeId,
+                    "opportunityTypeId": OpportunityTypeId,
+                    "bookingId": BookingId,
+                    "calendarType": calendarType,
+                    "weekOfTheDay": weekOfTheDay
+                });
+
+                $('.loader-ikea').show();
+                const res = await fetch("/api/CreateBooking", {
+                    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                    mode: 'cors', // no-cors, *cors, same-origin
+                    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                    credentials: 'same-origin', // include, *same-origin, omit
+                    headers: {
+                        'Content-Type': 'application/json'
+                        // 'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    redirect: 'follow', // manual, *follow, error
+                    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                    body: data // body data type must match "Content-Type" header
+                });
+
+                if (res && res.status) {
+                    $('.loader-ikea').hide();
+
+                    const resJson = await res.json();
+                    bookingResponseStatus = res.status;
+
+                    if (resJson && resJson.error) {
+                        bookingErrorMessage = resJson.error;
+                    }
+
+                    if (res.statusText) {
+                        bookingResponseMessage = res.statusText;
+                    }
+
+                    return res;
+                }
+
+            }
+            catch (e) {
+                console.log(e.message);
+            }
+        }
+
+
+        function createCustomerWaitingBooking(ResourceOwnerId, firstName, lastName, fullName, Email, Phone,
+            selectedKitchenplanVal, selectedDate, startTime, endTime, IsCheckedFlag, weekOfTheDay, freeTextMessage) {
+
+            try {
+                bookingWaitingCustomerResponseStatus = undefined;
+                bookingWaitingCustomerResponseMessage = undefined;
+                var calendarType = (customerType.toLowerCase() == "onlinemöte" && service.toLowerCase() == "personlig kökplanering") ? 2 : 1;
+                var data = JSON.stringify({
+                    // "token": GlobleToken,
+                    "firstName": firstName,
+                    "lastName": lastName,
+                    "name": fullName,
+                    "emailAddress": Email,
+                    "phone": Phone,
+                    "convertwebbooking": selectedKitchenplanVal,
+                    "startTime": (selectedDate + " " + startTime),
+                    "endTime": (selectedDate + " " + endTime),
+                    "isCheckedFlag": IsCheckedFlag,
+                    "resourceOwnerId": ResourceOwnerId,
+                    "calendarType": calendarType,
+                    "weekOfTheDay": weekOfTheDay,
+                    "freeTextMessage": freeTextMessage
+                });
+
+                var xhr = new XMLHttpRequest();
+                xhr.withCredentials = true;
+
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        bookingWaitingCustomerResponseStatus = this.status;
+                        if (this.status >= 400) {
+                            // Get the error booking response message
+                            bookingWaitingCustomerResponseMessage = JSON.parse(this.responseText).error;
+                        }
+                        console.log(this.status);
+                    }
+                });
+
+                xhr.open("POST", "/api/CreateCustomerWaitingBooking", false);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.setRequestHeader("cache-control", "no-cache");
+                xhr.send(data);
+            }
+            catch (e) {
+                console.log(e.message);
+            }
+        }
+
+        function createStoreOptions() {
+
+            var storeDataList = storeList; // storeList is defined above
+
+            for (var field in storeDataList) {
+
+                var cityName = storeDataList[field].cityName;
+                $('<option data-city="' + cityName + '" value="' + storeDataList[field].msdyn_name + '">' + storeDataList[field].displayName + '</option>').appendTo('#store-select');
+
+                if (store.toLowerCase() == storeDataList[field].msdyn_name.toLowerCase()) {
+                    $("#store-select").val(storeDataList[field].msdyn_name);
+
+                    if(storeDataList[field].isHspStore && storeDataList[field].isHspStore === true) {
+                        $('.select-online-physical-option option:contains("Fysiskt i varuhuset")').text('Fysiskt i planeringsstudion');
+                    }
+                }
+            }
+
+        }
+
+
+        function GetStoreDetails() {
+
+            try {
+                var data = JSON.stringify({});
+
+                var xhr = new XMLHttpRequest();
+                xhr.withCredentials = true;
+
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        var JSNobjOutput = JSON.parse(this.responseText);
+                        storeDetailsResponse = JSNobjOutput.storeDetails;
+                        // createStoreOptions();
+                        if (this.status >= 400) {
+
+                        }
+                        console.log(this.status);
+                    }
+                });
+
+                xhr.open("POST", "/api/GetAllStoreDetails", false);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.setRequestHeader("cache-control", "no-cache");
+                xhr.send(data);
+            }
+            catch (e) {
+                console.log(e.message);
+            }
+        }
+
+        function deleteCieAccessToken() {
+            localStorage.removeItem('userInfo');
+            isUserLoggedIn = false;
+            userInfo = null;
+        }
+
+        // Start: Logout functionality
+        // Delete IRW session context
+        function deleteSession() {
+            try {
+                deleteSessionStatus = undefined;
+                deleteSessionHeaders = undefined;
+
+                var data = null;
+                var xhr = new XMLHttpRequest();
+                xhr.withCredentials = true;
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        deleteSessionStatus = xhr.status;
+                        deleteSessionHeaders = xhr.getResponseHeader('headerCookie');
+                    }
+                });
+                xhr.open("DELETE", "/api/DeleteSession", false);
+                xhr.send(data);
+            } catch (err) {
+                throw err.message;
+            }
+        };
+
+        try {
+            _localStorage = window.localStorage;
+        }
+        catch (ex) {
+        }
+
+        AttachEvent(document, 'click', ResetTime);
+        AttachEvent(document, 'mousemove', ResetTime);
+        AttachEvent(document, 'keypress', ResetTime);
+        AttachEvent(window, 'load', ResetTime);
+
+        // Get last rest time
+        function GetLastResetTimeStamp() {
+            var lastResetTimeStamp = 0;
+            if (_localStorage) {
+                lastResetTimeStamp = parseInt(_localStorage[_localStorageKey], 10);
+                if (isNaN(lastResetTimeStamp) || lastResetTimeStamp < 0)
+                    lastResetTimeStamp = (new Date()).getTime();
+            } else {
+                lastResetTimeStamp = _lastResetTimeStamp;
+            }
+
+            return lastResetTimeStamp;
+        }
+
+        // Set last reset time
+        function SetLastResetTimeStamp(timeStamp) {
+            if (_localStorage) {
+                _localStorage[_localStorageKey] = timeStamp;
+            } else {
+                _lastResetTimeStamp = timeStamp;
+            }
+        }
+
+        // Reset time
+        function ResetTime() {
+            SetLastResetTimeStamp((new Date()).getTime());
+        }
+
+        // Handle Events
+        function AttachEvent(element, eventName, eventHandler) {
+            if (element.addEventListener) {
+                element.addEventListener(eventName, eventHandler, false);
+                return true;
+            } else if (element.attachEvent) {
+                element.attachEvent('on' + eventName, eventHandler);
+                return true;
+            } else {
+                //nothing to do, browser too old or non standard anyway
+                return false;
+            }
+        }
+
+        function WriteProgress(msg) {
+            var oPanel = document.getElementById("SecondsUntilExpire");
+            if (oPanel)
+                oPanel.innerHTML = msg;
+            else if (console)
+                console.log(msg);
+        }
+
+        // Check for the idle time
+        function CheckIdleTime() {
+            var currentTimeStamp = (new Date()).getTime();
+            var lastResetTimeStamp = GetLastResetTimeStamp();
+            var secondsDiff = Math.floor((currentTimeStamp - lastResetTimeStamp) / 1000);
+            if (secondsDiff <= 0) {
+                ResetTime();
+                secondsDiff = 0;
+            }
+            WriteProgress((IDLE_TIMEOUT - secondsDiff) + "");
+            if (secondsDiff >= IDLE_TIMEOUT) {
+                window.clearInterval(_idleSecondsTimer);
+                ResetTime();
+                deleteCieAccessToken();
+                //deleteSession();
+                if (deleteSessionStatus == 200) {
+                    var cookieHeaders = JSON.parse(deleteSessionHeaders);
+                    if (cookieHeaders != null) {
+                        cookieHeaders.forEach(function (element) {
+                            document.cookie = element;
+                        });
+                    }
+                    window.location.reload();
+                }
+            }
+        }
+
+        function hideRedirectToOnlineCalendarBtn() {
+            if (store.toLowerCase() === "visby") {
+                $('#online-calendar-btn').hide();
+            }
+        }
+
+        function showLogoutBtn() {
+            var isUserLoggedIn = userInfo !== null && userInfo.userType === "R" ? true : false;
+
+            if (isUserLoggedIn) {
+                $('#logout-btn').addClass("show").css({ "display": "block", "opacity": "1" });
+                _idleSecondsTimer = window.setInterval(CheckIdleTime, 1000);
+            } else {
+                $('#logout-btn').removeClass("show").css({ "display": "none", "opacity": "0" });
+            }
+        }
+        // End: Logout functionality 
+
+        // Start: Rebook Functonality
+        var isCookieExists = document.cookie.split(';').some(function (item) {
+            return item.trim().startsWith('rebookObject=');
+        });
+
+        if (isCookieExists) {
+            // var rebookData = JSON.parse(document.cookie.split('; ').find((row) => row.startsWith('rebookObject')).split('=')[1]);
+            var rebookDataObject = document.cookie.split(';').find(function (row) {
+                return row.trim().startsWith('rebookObject');
+            });
+
+            rebookData = JSON.parse(rebookDataObject.split('=')[1]);
+        }
+
+        function showRebookBtn() {
+            var isUserLoggedIn = userInfo !== null && userInfo.userType === "R" ? true : false;
+
+            if (rebookData != undefined && isUserLoggedIn) {
+                $('#rebook-btn').addClass("show").css({ "display": "block", "opacity": "1", "margin-left": "10px" });
+                $('#pull-booking-btn').css({ "visibility": "hidden" });
+                document.getElementById('book-rebook-label').innerHTML = 'Omboka';
+            } else {
+                $('#rebook-btn').removeClass("show").css({ "display": "none", "opacity": "0" });
+                document.getElementById('book-rebook-label').innerHTML = 'Boka nu';
+            }
+        }
+        // End: Rebook Functionality
+
+        function hideWaitingList() {
+            if (store.toLowerCase() == "city kök") {
+                $('.waiting-list-container').addClass("show").css({ "display": "none" });
+            } else {
+                $('.waiting-list-container').addClass("show").css({ "display": "block" });
+            }
+        }
+
+
+    </script>
+</head>
+
+<body onload="PageLoad();">
+    <div id="headermenu">
+        <!-- page header & navigation -->
+        <esi:include src="https://www.ikea.com/se/sv/header-footer/header-fragment-recursive.html" onerror="continue">
+        </esi:include>
+        <!-- page content-->
+    </div>
+    <main class="main no-outline" id="content">
+        <article class="article">
+
+            <div class="pg_wrapper component">
+
+                <section class="content-section visit-book">
+
+                    <div class="container">
+                        <!-- List of stores dropdown -->
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-4 m-top15">
+                                <label for="preview-select-store-option" class="store-list-label"><strong>Välj varuhus
+                                    </strong>
+                            </div>
+                        </div>
+                        <div class="row store-list">
+                            <div class="col-lg-4 col-md-4 col-sm-12 m-top10">
+                                <select id="store-select">
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-2"></div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-top10 button-column">
+                                <button class="common-btn btn btn--filled"
+                                    style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                    id="online-calendar-btn">
+                                    Byt till kalender för onlinemöte
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="btn-booking">
+                            <button class="common-btn btn-mybooking btn btn--filled"
+                                style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                id="pull-booking-btn">
+                                Mina bokningar
+                            </button>
+
+                            <button class="common-btn btn-cancel-rebooking btn btn--filled"
+                                style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                id="rebook-btn">
+                                Avbryt ombokning
+                            </button>
+
+                            <button class="common-btn btn-session-logout btn btn--filled btn-logout"
+                                style="background: #ffffff; border: 1px solid #111111; color:#111111; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                id="logout-btn">
+                                Logga ut
+                            </button>
+                        </div>
+                        <!-- Logout Button-->
+
+                        <span id="SecondsUntilExpire" class='hide-timer'></span>
+
+                        <div class="heading-section">
+                            <h2 class="section-title">Boka personlig köksplanering fysiskt</h2>
+
+                            <span id="web-calendar-header-section"> </span>
+
+                        </div>
+                        <!-- <div class="online-heading">                           
+                            <div class="online-text-header">
+                                <p> Tider med fetstil är endast tillgängliga för onlinemöte. </p>
+                            </div>
+                        </div>   -->
+
+                        <div class="visit-book-inner multistep_form step3">
+                            <div class="month-week-tabs">
+                                <div class="month-week-container">
+                                    <div id="weekTab" class="calender-content active-content">
+                                        <div class="new-week-calendar-wrap">
+                                            <div class="new-week-calendar-container">
+                                                <div class="calendar-navs-weeks" id="stickyWeek">
+                                                    <div class="nav-left-icon"></div>
+                                                    <div class="nav-weekname">
+                                                        Vecka <span id="week-num"></span>
+                                                    </div>
+                                                    <div class="nav-right-icon"></div>
+                                                </div>
+                                                <div class="calendar-weeks-main-container clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="monthTab" class="calender-content">
+                                        Month Calendar in next phase
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="loader" class="loader-ikea"> <img width="100px" src="./images/spiner.gif">
+                            </div>
+                            <!-- <div class="book-btn"><button class="common-btn book_kitchen_appointment btn btn--filled"
+                                    id="book_kitchen_appointment" disabled="disabled">Boka nu</button></div> -->
+                        </div>
+
+                        <div class="swedesh-online-calendar-container">
+                            <div class="m-top15">
+                                <p><b>Hittar du ingen tid som passar?</b></p>
+                            </div>
+                            <div class="m-top15">
+                                <p><b>Vi rekommenderar att du träffar din närmsta köksavdelning. Önskar du träffa en annan köksavdelning i Sverige online, se alla våra lediga onlinetider.</b></p>
+                            </div>
+                            <div class="m-top20 m-bot40">
+                                <button class="common-btn btn btn--filled"
+                                    style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                    id="swedesh-online-calendar-btn">
+                                    Lediga tider
+                                </button>
+                            </div>
+                        </div>
+                        <div class="waiting-list-container">
+                            <div class="m-top15">
+                                <p><b>Vill du träffa din närmaste köksavdelning, skriv upp dig på vår väntelista så tar vi kontakt om vi får möjlighet att hjälpa dig på din önskade tid.</b></p>
+                            </div>
+                            <div class="m-top20 m-bot40">
+                                <button class="common-btn btn btn--filled"
+                                    style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                    id="waiting-booking-btn">
+                                    Väntelistan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="modal fade slot-modal" id="preview-book" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body preview-body preview-font-size-15" id="mod-popUp">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <label for="User Name" class="chkrespRight"><strong>Namn:</strong></label>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <span id="user_Name"></span>
+                                        <span class='hidden' id="first_name"></span>
+                                        <span class='hidden' id="last_name"></span>
+                                        <span class='hidden' id="user_id"></span>
+                                        <span class='hidden' id="party_id"></span>
+                                        <span class='hidden' id="profile_type"></span>
+                                        <span class='hidden' id="preferred_bu_code"></span>
+                                        <span class='hidden' id="socialSecurityNo"></span>
+                                        <span class='hidden' id="birthDate"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <label for="Email" class="chkrespRight"><strong>Mailadress:</strong></label>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <span id="emailRes"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <label for="Mobile"
+                                            class="chkrespRight mobil-preview"><strong>Telefonnummer:</strong>
+                                            <span class="red">*</span></label>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <!-- <span id="mobileConsent"></span> -->
+                                        <input type="text" name="mobileConsent"
+                                            id="mobileConsent" placeholder="Fyll i telefonnummer" class="form-control">
+                                        <span class="error" id="err_preview_mobile"></span>
+                                    </div>
+                                </div>
+                                <!-- <div class="row">
+                                    <div class="col-lg-4 col-sm-4 m-top15">
+                                        <label for="preview-select-kitchenplan-option"><strong>Vad önskar du att få hjälp med på ditt bokade besök, välj ett utav följande alternativ:</strong>
+                                        <span class="red">*</span></label>
+                                    </div> 
+                                    <div class="col-lg-8 col-sm-8 m-top15">                                          
+                                        <select id="preview-select-kitchenplan-option" class="select-plan-option">
+                                            <option value="0" selected>välj alternativet här</option>
+                                            <option value="1">1. Planera</option>
+                                            <option value="2">2. Beställa utan måttbeställd bänkskiva</option>
+                                            <option value="3">3. Beställa med måttbeställd bänkskiva</option>
+                                            <option value="4">4. Endast måttbeställd bänkskiva</option>
+                                        </select> 
+                                        <span class="error" id="err_preview_select"></span> 
+                                    </div>           
+                                </div> -->
+
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <label for="message" class="chkrespRight"><strong><span
+                                                    id="preview-freetext-label"></span></strong></label>
+                                    </div>
+                                    <div class="col-lg-8 col-sm-8">
+                                        <textarea name="message" class="form-control guest-message-textarea"
+                                            id="bk_message" rows="2" cols="50"
+                                            placeholder="Fyll i meddelande"></textarea>
+                                        <span class="error" id="err_preview_message"></span>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="row">
+                                    <div class="col-lg-4 col-sm-4 m-top15">
+                                        <label for="preview-select-online-booking"><strong> Hur vill du genomföra ditt
+                                                möte? </strong>
+                                            <span class="red">*</span></label>
+                                    </div>
+                                    <div class="col-lg-8 col-sm-8 m-top15">
+                                        <select id="preview-select-online-booking" class="select-plan-option select-online-physical-option">
+                                            <option value="0" selected>välj alternativet här</option>
+                                            <option value="1">Onlinemöte</option>
+                                            <option value="2">Fysiskt i varuhuset</option>
+                                        </select>
+                                        <span class="error" id="error_preview_bookingError"></span>
+                                    </div>
+                                </div> -->
+
+                                <div class="row" style="display:none">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <label for="familyCard" class="chkrespRight"><strong>Family card
+                                                number:</strong></label>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <span id="familyCard_no">9999999</span>
+                                    </div>
+                                </div>
+
+                                <div class="row m-top10">
+                                    <div class="col-lg-12 col-sm-12 preview-text-fontsize-16">
+                                        <!-- <div class="text">
+                                            <label> <b> Alla över 18 år måste kunna legitimera sig om ni besöker oss innan kl 10 eller utanför ordinarie öppettider. </b> </label> 
+                                        </div> -->
+                                    </div>
+                                </div>
+
+                                <div id="checkBoxtext ">
+                                    <div class="popUpAlgn">
+                                        <button class="btn btn--filled" id="bk_now_online_physical"
+                                            style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                            tabindex="4"><span id="book-rebook-label"></span></button>
+                                        <button class="btn btn--text preview-book-close" data-dismiss="modal"
+                                            aria-label="Close"
+                                            style="background: #ffffff; color: #111111; border: 1px solid #111111; padding: 0.75rem 1.5rem; border-radius: 64px;">Stäng</button>
+                                        <button class="btn btn--filled"
+                                            style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                            id="preview_logout" tabindex="4">Logga ut</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <a href="https://www.ikea.com/se/sv/"> <img class="c-header__logpopUp" id=""
+                                                src="./images/ikea-logo.svg" alt="ikea">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Pop-up Guest Booking -->
+                <div class="modal fade slot-modal" id="kitchen_appointment_Guest_form" tabindex="-1" role="dialog"
+                    style="overflow: scroll">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close close-popup normal-popup kitchen-guest-close"
+                                data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                            <button type="button" class="close close-popup confo-popup" data-dismiss="modal"
+                                onclick="document.location.reload();" aria-label="Close"><span
+                                    aria-hidden="true">X</span></button>
+                            <div class="modal-body">
+                                <form id="form_enquerys" class="form_enquery" method="post"
+                                    enctype="multipart/form-data" autocomplete="off">
+                                    <input type="hidden" name="appointment_types" id="appointment_types"
+                                        class="form-control">
+
+                                    <input type="hidden" name="dates" id="dates" class="form-control"> <input
+                                        type="hidden" name="times" id="times" class="form-control"> <input type="hidden"
+                                        name="numbers" id="numbers" value="TW93QkJkd2F5Y2pISlhCN2dBc1F2dz09">
+                                    <div class="row">
+                                        <div class="col-sm-12 guest-title">
+                                            <h2>Boka som gäst</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="g_name">Namn <span
+                                                        class="red">*</span></label></div>
+                                            <input type="text" name="g_name" id="g_name" placeholder="Fyll i namn"
+                                                class="form-control">
+                                            <span class="error" id="err_g_name"></span>
+                                        </div>
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="g_last">Efternamn <span
+                                                        class="red">*</span></label></div>
+                                            <input type="text" name="g_last" id="g_last" placeholder="Fyll i efternamn"
+                                                class="form-control">
+                                            <span class="error" id="err_g_last"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="g_email">Mailadress <span
+                                                        class="red">*</span></label></div>
+                                            <input type="email" name="g_email" id="g_email"
+                                                placeholder="Fyll i mailadress" class="form-control"><span
+                                                class="error eamilerror" id="err_g_email"></span>
+                                        </div>
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="g_phone">Telefonnummer <span
+                                                        class="red">*</span></label></div>
+                                            <input type="text" name="g_phone" id="g_phone" maxlength="10"
+                                                placeholder="Fyll i telefonnummer" class="form-control">
+                                            <span class="error phoneerror" id="err_g_phone"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="g_number">Ikea Family kortnummer </label>
+                                            </div>
+                                            <input name="g_number" id="g_number" maxlength="20"
+                                                placeholder="Fyll i IKEA Family kortnummer" class="form-control">
+                                            <span class="error" id="err_g_number"></span>
+                                        </div>
+
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="select-kitchenplan-option">Vad önskar du att få hjälp med på ditt bokade besök, välj ett utav följande alternativ:
+                                                <span class="red">*</span></label>
+                                            </div>                                            
+                                            <select id="select-kitchenplan-option"  class="select-plan-option">
+                                                <option value="0" selected>välj alternativet här</option>
+                                                <option value="1">1. Planera</option>
+                                                <option value="2">2. Beställa utan måttbeställd bänkskiva</option>
+                                                <option value="3">3. Beställa med måttbeställd bänkskiva</option>
+                                                <option value="4">4. Endast måttbeställd bänkskiva</option>
+                                            </select>
+                                            <span class="error" id="error_kitchenPlanError"></span>                                            
+                                        </div>  
+                                    </div>                                        -->
+
+                                    <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <!-- <div class="text"><label for="message">Övrigt</label> -->
+                                            <div class="text"><label for="message"><span
+                                                        id="guest-freetext-label"></span></label>
+                                            </div>
+                                            <textarea name="message" class="form-control guest-message-textarea"
+                                                id="g_message" rows="3" cols="50"
+                                                placeholder="Fyll i meddelande"></textarea>
+                                            <span class="error" id="err_message"></span>
+                                        </div>
+
+                                        <!-- <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="select-online-booking">Hur vill du genomföra
+                                                    ditt möte?
+                                                    <span class="red">*</span></label>
+                                            </div>
+                                            <select id="select-online-booking" class="select-plan-option select-online-physical-option">
+                                                <option value="0" selected>välj alternativet här</option>
+                                                <option value="1">Onlinemöte</option>
+                                                <option value="2">Fysiskt i varuhuset</option>
+                                            </select>
+                                            <span class="error" id="error_online_bookingError"></span>
+                                        </div> -->
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 guest-free-text-message">
+                                            <!-- <div class="text">
+                                                <label> <b> Alla över 18 år måste kunna legitimera sig om ni besöker oss innan kl 10 eller utanför ordinarie öppettider. </b> </label>
+                                            </div> -->
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-top10 m-bot15">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="consent-s" id="consent-s">
+                                                <span class="checkbox__symbol">
+                                                    <span class="checkbox__box-highlight"></span>
+                                                    <span class="checkbox__box">
+                                                        <svg viewBox="0 0 24 24" class="svg-icon checkbox__checkmark">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10.5 15.6l-4.8-5.3-1.4 1.4 6.2 6.7L20.7 8.2l-1.4-1.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="checkbox__label">
+                                                    <label for="consent-s" class=""> Jag har läst och förstått
+                                                        <a href="" class="linkColor"
+                                                            onClick="openLinkInModal('https://www.ikea.com/se/sv/customer-service/integritetspolicy-foer-ikea-kunder-pub019133cd'); return false;">IKEA’s
+                                                            integritetspolicy</a>
+                                                    </label>
+                                                </span>
+                                                <span class="error" id="err_g_checkbox"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6"> <button type="button" disabled id="guest_booking"
+                                                class="btn btn--filled save_guest_data_physical_online"
+                                                style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;">Spara
+                                                och
+                                                skicka</button><span id="enq_succ"></span> </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pop-up kitchen_appointment_form -->
+
+                <!-- Pop-up Guest Booking -->
+                <div class="modal fade slot-modal" id="kitchen_appointment_waitingCustomer_form" tabindex="-1"
+                    role="dialog" style="overflow: scroll">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close close-popup normal-popup kitchen-waitingCustomer-close"
+                                data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                            <button type="button" class="close close-popup confo-popup" data-dismiss="modal"
+                                onclick="document.location.reload();" aria-label="Close"><span
+                                    aria-hidden="true">X</span></button>
+                            <div class="modal-body">
+                                <form id="waiting_form_enquerys" class="form_enquery" method="post"
+                                    enctype="multipart/form-data" autocomplete="off">
+                                    <input type="hidden" name="waiting_appointment_types" id="waiting_appointment_types"
+                                        class="form-control">
+
+                                    <input type="hidden" name="waiting_dates" id="waiting_dates" class="form-control">
+                                    <input type="hidden" name="waiting_times" id="waiting_times" class="form-control">
+                                    <input type="hidden" name="waiting_numbers" id="waiting_numbers"
+                                        value="TW93QkJkd2F5Y2pISlhCN2dBc1F2dz09">
+                                    <div class="row">
+                                        <div class="col-sm-12 guest-title">
+                                            <p> Här kan du välja att skriva upp dig på våran vänstelista för att ha
+                                                chansen till ett tidigare möte tillsammans med oss. Om vi får en sen
+                                                avbokning eller en kund som inte dyker upp kommer vi att ringa er i
+                                                turordning på listan för att se om ni har möjlighet att planera
+                                                tillsammans med oss inom tidsspannet som du själv har valt.</p>
+                                            <p> Vänligen fyll i nedan information så hör vi av oss om vi får något
+                                                återbud! </p>
+                                            <p> <i> Då dessa tider oftast kommer att ske med kort varsel kommer mötet i
+                                                    första hand genomföras online. </i></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="w_name">Namn<span class="red">*</span></label>
+                                            </div>
+                                            <input type="text" name="w_name" id="w_name" placeholder="Fyll i namn"
+                                                class="form-control">
+                                            <span class="error" id="err_w_name"></span>
+                                        </div>
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="w_last">Efternamn <span
+                                                        class="red">*</span></label></div>
+                                            <input type="text" name="w_last" id="w_last" placeholder="Fyll i efternamn"
+                                                class="form-control">
+                                            <span class="error" id="err_w_last"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="w_email">Mailadress <span
+                                                        class="red">*</span></label></div>
+                                            <input type="email" name="w_email" id="w_email"
+                                                placeholder="Fyll i mailadress" class="form-control"><span
+                                                class="error eamilerror" id="err_w_email"></span>
+                                        </div>
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="w_phone">Telefonnummer <span
+                                                        class="red">*</span></label></div>
+                                            <input type="text" name="w_phone" id="w_phone" maxlength="10"
+                                                placeholder="Fyll i telefonnummer" class="form-control">
+                                            <span class="error phoneerror" id="err_w_phone"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-4 m-top15">
+                                            <div class="text"><label for="w_Date">Datum <span
+                                                        class="red">*</span></label></div>
+                                            <input class="datepicker" data-date-format="mm/dd/yyyy">
+                                            <span class="error" id="error_DateError"></span>
+
+                                        </div>
+
+                                        <div class="col-sm-4 m-top15">
+                                            <div class="text"><label for="select-startTime-option">Start:
+                                                    <span class="red">*</span></label>
+                                            </div>
+                                            <select id="select-startTime-option" class="select-plan-option">
+                                                <option value="0" selected>Välj starttid</option>
+                                                <option value="1">8:00</option>
+                                                <option value="2">9:00</option>
+                                                <option value="3">10:00</option>
+                                                <option value="4">11:00</option>
+                                                <option value="5">12:00</option>
+                                                <option value="6">13:00</option>
+                                                <option value="7">14:00</option>
+                                                <option value="8">15:00</option>
+                                                <option value="9">16:00</option>
+                                                <option value="10">17:00</option>
+                                                <option value="11">18:00</option>
+                                                <option value="12">19:00</option>
+                                            </select>
+                                            <span class="error" id="error_startTimeError"></span>
+                                        </div>
+
+                                        <div class="col-sm-4 m-top15">
+                                            <div class="text"><label for="select-endTime-option">Slut:
+                                                    <span class="red">*</span></label>
+                                            </div>
+                                            <select id="select-endTime-option" class="select-plan-option">
+                                                <option value="0" selected>Välj sluttid</option>
+                                                <option value="1">9:00</option>
+                                                <option value="2">10:00</option>
+                                                <option value="3">11:00</option>
+                                                <option value="4">12:00</option>
+                                                <option value="5">13:00</option>
+                                                <option value="6">14:00</option>
+                                                <option value="7">15:00</option>
+                                                <option value="8">16:00</option>
+                                                <option value="9">17:00</option>
+                                                <option value="10">18:00</option>
+                                                <option value="11">19:00</option>
+                                                <option value="12">20:00</option>
+                                            </select>
+                                            <span class="error" id="error_endTimeError"></span>
+                                            <span class="error" id="error_startEndTimeError"></span>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <!-- <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="select-waiting-kitchenplan-option">Vad önskar du att få hjälp med på ditt bokade besök, välj ett utav följande alternativ:
+                                                <span class="red">*</span></label>
+                                            </div>                                         
+                                            <select id="select-waiting-kitchenplan-option"  class="select-plan-option">
+                                                <option value="0" selected>välj alternativet här</option>
+                                                <option value="1">1. Planera</option>
+                                                <option value="2">2. Beställa utan måttbeställd bänkskiva</option>
+                                                <option value="3">3. Beställa med måttbeställd bänkskiva</option>
+                                                <option value="4">4. Endast måttbeställd bänkskiva</option>
+                                            </select>
+                                            <span class="error" id="error_waiting_kitchenPlanError"></span>       
+                                        </div> -->
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text">
+                                                <label for="waiting_list_freetext_message"> Övrigt</label>
+                                            </div>
+                                            <textarea name="waiting_list_freetext_message" class="waiting-list-textarea"
+                                                id="waiting_list_freetext_message" rows="3" cols="50"
+                                                placeholder="Fyll i meddelande"></textarea>
+                                            <span class="error" id="err_waiting_list_freetext_message"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-top30 m-bot15">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="consent-waiting" id="consent-waiting">
+                                                <span class="checkbox__symbol">
+                                                    <span class="checkbox__box-highlight"></span>
+                                                    <span class="checkbox__box">
+                                                        <svg viewBox="0 0 24 24" class="svg-icon checkbox__checkmark">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10.5 15.6l-4.8-5.3-1.4 1.4 6.2 6.7L20.7 8.2l-1.4-1.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+
+                                                <span class="checkbox__label">
+                                                    <label for="consent-waiting"> Jag har läst och förstått
+                                                        <a href="" class="linkColor"
+                                                            onClick="openLinkInModal('https://www.ikea.com/se/sv/customer-service/integritetspolicy-foer-ikea-kunder-pub019133cd'); return false;">IKEA’s
+                                                            integritetspolicy</a>
+                                                    </label>
+                                                </span>
+                                                <span class="error" id="err_g_checkbox"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-top-15">
+                                        <div class="col-sm-6"> <button type="button" disabled
+                                                id="waiting_customer_booking"
+                                                class="btn btn--filled save_waiting_customer_data"
+                                                style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;">Spara
+                                                och
+                                                skicka</button><span id="enq_succ"></span> </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pop-up kitchen_appointment_form -->
+
+                <!-- Error handling -->
+                <div class="modal fade slot-modal" id="error-msg-popup" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close close-popup btn-close error-msg-close"
+                                data-dismiss="modal" onclick="window.location.reload();" aria-label="Close"><span
+                                    aria-hidden="true">X</span></button>
+                            <div class="modal-body">
+                                <div class="alert alert--light alert--error alert--l">
+                                    <div class="alert__icon">
+                                        <div class="alert__icon-style">
+                                            <svg viewBox="0 0 24 24" class="svg-icon svg-icon--250">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path fill="#E00751"
+                                                        d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z">
+                                                    </path>
+                                                    <path fill="#FFF" fill-rule="nonzero"
+                                                        d="M13.414 12l4.233 4.234-1.414 1.414L12 13.415l-4.243 4.243-1.414-1.415 4.242-4.242L6.35 7.766l1.415-1.414L12 10.587l4.242-4.243 1.415 1.414-4.243 4.243z"
+                                                        class="white"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="alert__container">
+                                        <div class="alert__text">
+                                            <h4 class="alert__title"></h4>
+                                            <p class="error__description"></p>
+                                            <br>
+                                            <!-- <button class="btn btn--text" data-dismiss="modal"
+                                aria-label="Close" onclick="document.location.reload();">stänga</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Online Confirmation -->
+                <div class="modal fade slot-modal" id="online-confirmation-msg-popup" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <!-- <button type="button" class="close close-popup btn-close confirmation-msg-close" data-dismiss="modal"
+                                onclick="window.location.reload();" aria-label="Close"><span
+                                    aria-hidden="true">X</span></button> -->
+                            <div class="modal-body">
+                                <div class="alert alert--light alert--confirmation alert--l">
+                                    <div class="alert__container">
+                                        <p class="online-confirmation-description"></p>
+                                        <button class="btn btn--filled online-popup-btn online-confirmation-ok"
+                                            style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;">OK</button>
+                                        <button class="btn btn--text online-popup-btn online-confirmation-cancel"
+                                            style="background: #cecece; color: #111111; padding: 0.75rem 1.5rem; border-radius: 64px;">Avbryt</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Private Business Customers -->
+                <div class="modal fade slot-modal" id="private-business-customer-msg-popup" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close close-popup btn-close confirmation-msg-close"
+                                data-dismiss="modal" onclick="window.location.reload();" aria-label="Close"><span
+                                    aria-hidden="true">X</span></button>
+                            <div class="modal-body">
+                                <div class="alert alert--light alert--l">
+                                    <div class="alert__container">
+                                        <p class="private-business-customer-description"></p>
+                                        <button class="btn btn--filled private-customer-popup-btn private"
+                                            style="background: black; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;">Privatkund</button>
+                                        <button class="btn btn--filled business-customer-popup-btn business"
+                                            style="background: black; color: #ffffff; padding: 0.75rem 1.5rem; border-radius: 64px;">Företagskund</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- loader ikea
+                <div class="loader-ikea"> <img width="100px" src="./images/spiner.gif">
+                </div> -->
+
+                <!-- Multiple Booking Confirmation -->
+                <div class="modal fade slot-modal" id="multiple-bookings-confirmation-msg-popup" tabindex="-1"
+                    role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <!-- <button type="button" class="close close-popup btn-close confirmation-msg-close" data-dismiss="modal"
+                                onclick="window.location.reload();" aria-label="Close"><span
+                                    aria-hidden="true">X</span></button> -->
+                            <div class="modal-body">
+                                <div class="alert alert--light alert--confirmation alert--l">
+                                    <div class="alert__container">
+                                        <p class="multiple-bookings-confirmation-description"></p>
+                                        <button
+                                            class="btn btn--filled multi-booking-popup-btn multiple-bookings-confirmation-ok"
+                                            style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;">Ja</button>
+                                        <button
+                                            class="btn btn--text multi-booking-popup-btn multiple-bookings-confirmation-cancel"
+                                            style="background: #cecece; color: #111111; padding: 0.75rem 1.5rem; border-radius: 64px;">Nej</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Confirmation Booking -->
+                <div class="modal fade slot-modal" id="confirmation-msg-popup" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close close-popup btn-close confirmation-msg-close"
+                                data-dismiss="modal" onclick="window.location.reload();" aria-label="Close"><span
+                                    aria-hidden="true">X</span></button>
+                            <div class="modal-body">
+                                <div class="alert alert--light alert--confirmation alert--l">
+                                    <div class="alert__icon">
+                                        <div class="alert__icon-style">
+                                            <svg viewBox="0 0 24 24" class="svg-icon svg-icon--250">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path fill="#0A8A00"
+                                                        d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z">
+                                                    </path>
+                                                    <path fill="#FFF"
+                                                        d="M10.873 13.478l-3.41-3.657L6 11.185l4.832 5.066 7.28-6.788L16.746 8z"
+                                                        class="white"></path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="alert__container">
+                                        <div class="alert__text">
+                                            <h4 class="alert__title confirmation-title"></h4>
+                                            <p class="confirmation-description"></p>
+                                            <a href="https://www.ikea.com/se/sv/"> <img class="c-header__logpopUp"
+                                                    src="./images/ikea-logo.svg" alt="ikea logo"> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Pop-up kitchen_appointment_form -->
+                <div class="modal fade slot-modal" id="kitchen_appointment_form" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close close-popup normal-popup kitchen-close"
+                                data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
+                            <button type="button" class="close close-popup confo-popup" data-dismiss="modal"
+                                onclick="document.location.reload();" aria-label="Close"><span
+                                    aria-hidden="true">X</span></button>
+                            <div class="modal-body">
+                                <form id="form_enquery" class="form_enquery" method="post" enctype="multipart/form-data"
+                                    autocomplete="off">
+                                    <input type="hidden" name="appointment_type" id="appointment_type"
+                                        class="form-control">
+
+                                    <input type="hidden" name="date" id="date" class="form-control"> <input
+                                        type="hidden" name="time" id="time" class="form-control"> <input type="hidden"
+                                        name="number" id="number" value="TW93QkJkd2F5Y2pISlhCN2dBc1F2dz09">
+                                    <input type="hidden" class="textBox" name="EmailIdReEnter" id="f_number"
+                                        value="98765432" autocomplete="on">
+                                    <div id="loginBody">
+                                        <div id="loginPageLeftBody">
+                                            <div id="loginHeader">
+                                                <h2 id="hdrTop"><span id="hdrLogin">Logga in här</span>
+                                                </h2>
+
+                                            </div>
+                                            <div id="userIdText"><label for="UserId"
+                                                    class="logInAlgn">*Mailadress</label>
+                                                <input type="text" class="userId" name="userid" id="uidInp" tabindex="1"
+                                                    value="" autocomplete="off" title="Var vänlig fyll i det här fältet"
+                                                    autofocus>
+
+                                            </div>
+
+                                            <div class="errorMessage" id="useridError"></div>
+
+                                            <div id="passwordText">
+                                                <label for="password" class="logInAlgn">*Lösenord</label><input
+                                                    type="password" class="password" name="password" tabindex="2"
+                                                    id="pwdInp" autocomplete="off"
+                                                    title="Var vänlig fyll i det här fältet">
+                                            </div>
+
+                                            <div class="errorMessage" id="passwordError"></div>
+
+                                            <div class="signUpErrorMessage" id="checkBoxError"></div>
+                                            <button class="login_data btn btn--filled"
+                                                style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                                id="loginButtonId" tabindex="4">Logga in</button>
+
+                                        </div>
+
+                                        <div id="loginPageRightBody">
+                                            <div id="containerPart">
+                                                <div id="sectionHeader">
+                                                    <h2>Har du inget Konto?</h2>
+                                                </div>
+
+                                                <div id="sectionHeadLine">
+                                                    <p>Det finns många fördelar att skapa ett konto</p>
+                                                </div>
+                                                <div id="sectionText">
+                                                    <ul>
+                                                        <li>Du kan skapa och spara inköpslistor/plocklistor
+                                                            som förenklar ditt varuhusbesök.
+                                                        <li>Skapa och spara Köksritningar
+                                                        <li>Gå med i IKEA FAMILY och ta del av mängder med erbjudanden
+                                                    </ul>
+                                                </div>
+                                                <div class="next-level-btn">
+                                                    <!-- <button type="submit" class="createButton btn btn--outlined" style="background: transparent; color: #111111; border-radius: 64px; padding: 0.625rem 1.5rem; border: 2px solid #111111;"
+                                                        id="createAccountButtonId" tabindex="5">Skapa konto</button> -->
+                                                    <button type="button"
+                                                        class="createButton guest-create btn btn--outlined"
+                                                        style="background: transparent; color: #111111; border-radius: 64px; padding: 0.625rem 1.5rem; border: 2px solid #111111;"
+                                                        tabindex="6" id="guestLogin">Boka som gäst</button>
+                                                </div>
+
+                                                <!-- <input type="hidden" name="addnlQryStrParameters" id="addnlQryStrParameters" value="RetailUnit=gb&amp;Language=en"> -->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <!-- new customised sign up form-->
+                                <form id="form_enquery_signup" class="form_enquery" method="post"
+                                    enctype="multipart/form-data" autocomplete="off">
+                                    <div id="signUpBody">
+                                        <div id="text-right-login">
+                                            <label for="loginlink">Har du redan ett konto?</label>
+                                            <a class="linkColor login-link">Logga in här</a>
+                                        </div>
+
+                                        <div id="headertext">
+                                            <h1><label for="header">Skapa profil</label></h1>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="text"><label for="firstName" id="firstNameLabel">Förnamn
+                                                        <span class="red">*</span></span></label></div>
+                                                <input type="text" class="textBox form-control" name="FirstName"
+                                                    id="u_name" placeholder="Fyll i namn" maxlength="15" value=""
+                                                    autocomplete="on">
+                                                <div class="signUpErrorMessage" id="firstnameError"></div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="text"><label for="surname" id="surNameLabel">Efternamn <span
+                                                            class="red">*</span></label></div>
+                                                <input type="text" class="textBox form-control" name="Surname"
+                                                    id="surnameInp" placeholder="Fyll i efternamn" maxlength="40"
+                                                    value="" autocomplete="on">
+                                                <div class="signUpErrorMessage" id="surnameError"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="text"><label for="mobile" id="mobileLabel">Mobilnummer<span
+                                                            class="red">*</span></label>
+                                                </div>
+                                                <input type="text" class="textBox form-control" name="MobilePhoneNumber"
+                                                    id="u_phone" placeholder="Fyll i telefonnummer" value=""
+                                                    autocomplete="on">
+                                                <div class="signUpErrorMessage" id="mobileError"></div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="text"><label for="email" id="emailLabel">Mailadress <span
+                                                            class="red">*</span></span></label></div>
+                                                <input type="text" class="textBox form-control" name="EmailId"
+                                                    id="u_email" placeholder="Fyll i mailadress" maxlength="100"
+                                                    value="" autocomplete="on">
+                                                <div class="signUpErrorMessage" id="emailError"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="text"><label for="re-email" id="re-emailLabel">Ange
+                                                        mailadress
+                                                        igen
+                                                    </label></div>
+                                                <input type="text" class="textBox form-control" name="EmailIdReEnter"
+                                                    id="re-email" placeholder="Fyll i mailadress igen" value=""
+                                                    autocomplete="on">
+                                                <div class="signUpErrorMessage" id="reemailError"></div>
+                                            </div>
+                                            <div class="col-sm-6 passwordToolTip">
+                                                <div class="text">
+                                                    <label for="password" id="passwordLabel">Lösenord</label>
+                                                </div>
+                                                <input type="password" class="textBox form-control" name="Password"
+                                                    id="pwdInps" placeholder="Fyll i lösenord" maxlength="20"
+                                                    autocomplete="off">
+                                                <span>
+                                                    <p>Ditt lösenord måste innehålla:</p>
+                                                    <ul>
+                                                        <li>Minst 8 tecken i följd</li>
+                                                        <li>-Max 2 identiska tecken i följd</li>
+                                                    </ul>
+                                                    <p>Minst 3 av följande 4 tecken:</p>
+                                                    <ul>
+                                                        <li>-Små bokstäver (a-z)</li>
+                                                        <li>-Stora bokstäver (a-z)</li>
+                                                        <li>-Siffror (1-9)</li>
+                                                        <li>-Specialteckan (ex. !@#$%)</li>
+                                                    </ul>
+                                                </span>
+                                                <div class="signUpErrorMessage" id="password_Error"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6 passwordToolTip">
+                                                <div class="text"><label for="re-password" id="re-passwordLabel">
+                                                        Ange lösenord igen
+                                                    </label>
+                                                </div>
+                                                <input type="password" class="textBox form-control"
+                                                    name="PasswordReEnter" id="repwdInp"
+                                                    placeholder="Fyll i lösenordet igen" autocomplete="off">
+                                                <span>
+                                                    <p>Ditt lösenord måste innehålla:</p>
+                                                    <ul>
+                                                        <li>-Minst 8 tecken i följd</li>
+                                                        <li>-Max 2 identiska tecken i följd</li>
+                                                    </ul>
+                                                    <p>Minst 3 av följande 4 tecken:</p>
+                                                    <ul>
+                                                        <li>-Små bokstäver (a-z)</li>
+                                                        <li>-Stora bokstäver (a-z)</li>
+                                                        <li>-Siffror (1-9)</li>
+                                                        <li>-Specialteckan (ex. !@#$%)</li>
+                                                    </ul>
+                                                </span>
+                                                <div class="signUpErrorMessage" id="repasswordError"></div>
+                                            </div>
+                                            <!-- <div class="col-sm-6">
+                                                <div class="text"><label for="signup-select-online-booking"> Hur vill du
+                                                        genomföra ditt möte?
+                                                        <span class="red">*</span></label>
+                                                </div>
+                                                <select id="signup-select-online-booking" class="select-plan-option select-online-physical-option">
+                                                    <option value="0" selected>välj alternativet här</option>
+                                                    <option value="1">Onlinemöte</option>
+                                                    <option value="2">Fysiskt i varuhuset</option>
+                                                </select>
+                                                <span class="signUpErrorMessage" id="signupOnlinebookingError"></span>
+                                            </div> -->
+
+                                            <!-- <div class="col-sm-6">
+                                                <div class="text"><label for="signup-select-kitchenplan-option">Vad önskar du att få hjälp med på ditt bokade besök, välj ett utav följande alternativ:
+                                                    <span class="red">*</span></label>
+                                                </div>                                            
+                                                <select id="signup-select-kitchenplan-option" class="select-plan-option">
+                                                    <option value="0" selected>välj alternativet här</option>
+                                                    <option value="1">1. Planera</option>
+                                                    <option value="2">2. Beställa utan måttbeställd bänkskiva</option>
+                                                    <option value="3">3. Beställa med måttbeställd bänkskiva</option>
+                                                    <option value="4">4. Endast måttbeställd bänkskiva</option>
+                                                </select>
+                                                <div class="signUpErrorMessage" id="signUpKitchenPlanError"></div>                                            
+                                            </div>   -->
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="text"><label for="message"><span
+                                                            id="signup-freetext-label"></span></label>
+                                                </div>
+                                                <textarea name="message" class="form-control guest-message-textarea"
+                                                    id="s_message" rows="3" cols="50"
+                                                    placeholder="Fyll i meddelande"></textarea>
+                                                <span class="error" id="s_err_message"></span>
+                                            </div>
+
+                                        </div>
+
+                                        <!-- <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="text"><label for="message">Övrigt</label>
+                                                </div>
+                                                <textarea name="message" class="form-control guest-message-textarea" id="s_message" rows="3" cols="50" placeholder="Fyll i meddelande"></textarea>
+                                                <span class="error" id="err_message"></span>
+                                            </div>  
+                                        </div> -->
+
+                                        <div class="row">
+                                            <div class="col-sm-12 m-top15 m-bot15">
+                                                <div id="checkBoxtext ">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" name="IKEAAgreementInput"
+                                                            id="signUpcheckInp">
+                                                        <span class="checkbox__symbol">
+                                                            <span class="checkbox__box-highlight"></span>
+                                                            <span class="checkbox__box">
+                                                                <svg viewBox="0 0 24 24"
+                                                                    class="svg-icon checkbox__checkmark">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M10.5 15.6l-4.8-5.3-1.4 1.4 6.2 6.7L20.7 8.2l-1.4-1.4z">
+                                                                    </path>
+                                                                </svg>
+                                                            </span>
+                                                        </span>
+                                                        <span class="checkbox__label">
+                                                            <label for="signUpcheckInp" class=""> Jag har läst och
+                                                                förstått
+                                                                <a href="" class="linkColor"
+                                                                    onClick="openLinkInModal('https://www.ikea.com/se/sv/customer-service/integritetspolicy-foer-ikea-kunder-pub019133cd'); return false;">
+                                                                    IKEA’s integritetspolicy </a>
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="signUpErrorMessage" id="checkBoxError"></div>
+
+
+                                        <div class="lotsOfErrorHelp" id="lotsOfError">
+                                            <div id="signUpHelp">
+                                                SIGN UP HELP:
+                                            </div>
+
+                                            <a href="javascript:focusInputTextBoxFromSignUpHelp('#firstNameLabel');"
+                                                id="firstNameErrorHelp" class="signUpErrorMessageForHelp"></a>
+
+                                            <a href="javascript:focusInputTextBoxFromSignUpHelp('#surNameLabel');"
+                                                id="surnameNameErrorHelp" class="signUpErrorMessageForHelp"></a>
+
+                                            <a href="javascript:focusInputTextBoxFromSignUpHelp('#mobileLabel');"
+                                                id="mobileErrorHelp" class="signUpErrorMessageForHelp"></a>
+
+                                            <a href="javascript:focusInputTextBoxFromSignUpHelp('#emailLabel');"
+                                                id="emailErrorHelp" class="signUpErrorMessageForHelp"></a>
+
+                                            <a href="javascript:focusInputTextBoxFromSignUpHelp('#re-emailLabel');"
+                                                id="reemailErrorHelp" class="signUpErrorMessageForHelp"></a>
+
+                                            <a href="javascript:focusInputTextBoxFromSignUpHelp('#passwordLabel');"
+                                                id="passwordErrorHelp" class="signUpErrorMessageForHelp"></a>
+
+                                            <a href="javascript:focusInputTextBoxFromSignUpHelp('#re-passwordLabel');"
+                                                id="repasswordErrorHelp" class="signUpErrorMessageForHelp"></a>
+
+                                            <a href="javascript:focusInputTextBoxFromSignUpHelp('#captcha_image');"
+                                                id="captchaErrorHelp" class="signUpErrorMessageForHelp"></a>
+
+                                            <a href="javascript:focusInputTextBoxFromSignUpHelp('#checkInp');"
+                                                id="checkBoxErrorHelp" class="signUpErrorMessageForHelp"></a>
+
+                                            <div id="fieldValidationFailedHelp" class="signUpErrorMessageForHelp"></div>
+                                            <div id="unexpectdExceptionHelp" class="signUpErrorMessageForHelp"></div>
+
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <button id="createProfileButton"
+                                                    class="btn btn--filled btn-create-profile"
+                                                    style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;"
+                                                    disabled="disabled">
+                                                    Skapa profil</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+                            </form>
+                            <!-- new sign up form end -->
+                            <!--Result div -->
+                            <div class="modal-body-inner resp-div">
+                                <h3 class="section-title" id="slot-head"></h3>
+                                <p id="popupsignUp-text"></p>
+                                <p class="conf-no">Mer info kommer på mailen </p>
+
+                                <p class="confirmation-small-desc">Din bokning är bekräftad
+                                    .Ha ett bra besök.</p>
+                                <a class="c-header__logpopUp" href="https://www.ikea.com/se/sv/"> <img
+                                        src="./images/ikea-logo.svg" alt="ikea logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pop-up Kitchen B2B Booking -->
+                <div class="modal fade slot-modal" id="b2b_kitchen_appointment_form" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <button type="button" class="close close-popup normal-popup kitchen-b2b-close"
+                                data-dismiss="modal" onclick="window.location.reload();" aria-label="Close"><span
+                                    aria-hidden="true">X</span></button>
+                            <button type="button" class="close close-popup confo-popup" data-dismiss="modal"
+                                onclick="window.location.reload();" aria-label="Close">
+                                <span aria-hidden="true">X</span></button>
+                            <div class="modal-body">
+                                <form id="form_enquery" class="form_enquery" method="post" enctype="multipart/form-data"
+                                    autocomplete="off">
+                                    <input type="hidden" name="appointment_types" id="appointment_types"
+                                        class="form-control">
+
+                                    <input type="hidden" name="dates" id="dates" class="form-control"> <input
+                                        type="hidden" name="times" id="times" class="form-control"> <input type="hidden"
+                                        name="numbers" id="numbers" value="TW93QkJkd2F5Y2pISlhCN2dBc1F2dz09">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <span id="kitchen_appointment_header"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="b2b_kitchen_firstname">Förnamn <span
+                                                        class="red">*</span></label></div>
+                                            <input type="text" name="b2b_kitchen_firstname" id="b2b_kitchen_firstname"
+                                                placeholder="Fyll i namn" class="form-control">
+                                            <span class="error" id="err_b2b_kitchen_firstname"></span>
+                                        </div>
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="b2b_kitchen_last">Efternamn <span
+                                                        class="red">*</span></label></div>
+                                            <input type="text" name="b2b_kitchen_last" id="b2b_kitchen_last"
+                                                placeholder="Fyll i efternamn" class="form-control">
+                                            <span class="error" id="err_b2b_kitchen_last"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="b2b_kitchen_email">Epost <span
+                                                        class="red">*</span></label></div>
+                                            <input type="email" name="b2b_kitchen_email" id="b2b_kitchen_email"
+                                                placeholder="Fyll i mailadress" class="form-control"><span
+                                                class="error eamilerror" id="err_b2b_kitchen_email"></span>
+                                        </div>
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="b2b_kitchen_phone">Telefonnummer <span
+                                                        class="red">*</span></label></div>
+                                            <input type="text" maxlength="10" name="b2b_kitchen_phone"
+                                                id="b2b_kitchen_phone" placeholder="Fyll i telefonnummer"
+                                                class="form-control">
+                                            <span class="error phoneerror" id="err_b2b_kitchen_phone"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="b2b_kitchen_company">Företagsnamn
+                                                    <span class="red">*</span></label>
+                                            </div>
+                                            <input type="text" name="b2b_kitchen_company" id="b2b_kitchen_company"
+                                                placeholder="Fyll i företagsnamn" class="form-control">
+                                            <span class="error" id="err_b2b_kitchen_company"></span>
+                                        </div>
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="b2b_kitchen_company_account_number">IKEA
+                                                    företagskontonummer </label>
+                                            </div>
+                                            <input name="b2b_number" id="b2b_kitchen_company_account_number"
+                                                maxlength="20" placeholder="Fyll i IKEA företagskontonummer"
+                                                class="form-control">
+                                            <span class="error" id="b2b_kitchen_company_account_number"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text"><label
+                                                    for="b2b_kitchen_org_number">Organisationsnummer</label>
+                                            </div>
+                                            <input type="text" name="b2b_kitchen_org_number" id="b2b_kitchen_org_number"
+                                                placeholder="Fyll i Organisationsnummer" class="form-control">
+                                            <span class="error" id="err_b2b_kitchen_org_number"></span>
+                                        </div>
+                                        <!-- <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="b2b-select-online-booking">Hur vill du
+                                                    genomföra ditt möte?
+                                                    <span class="red">*</span></label>
+                                            </div>
+                                            <select id="b2b-select-online-booking" class="select-plan-option select-online-physical-option">
+                                                <option value="0" selected>välj alternativet här</option>
+                                                <option value="1">Onlinemöte</option>
+                                                <option value="2">Fysiskt i varuhuset</option>
+                                            </select>
+                                            <span class="error" id="error_b2b_online_bookingError"></span>
+                                        </div> -->
+                                    </div>
+
+                                    <div class="row">
+                                        <!-- <div class="col-sm-6 m-top15">
+                                            <div class="text"><label for="select-kitchenplan-option">Vad önskar du att få hjälp med på ditt bokade besök, välj ett utav följande alternativ:
+                                                <span class="red">*</span></label>
+                                            </div>                                            
+                                            <select id="select-b2b-kitchenplan-option"  class="select-plan-option">
+                                                <option value="0" selected>välj alternativet här</option>
+                                                <option value="1">1. Planera</option>
+                                                <option value="2">2. Beställa utan måttbeställd bänkskiva</option>
+                                                <option value="3">3. Beställa med måttbeställd bänkskiva</option>
+                                                <option value="4">4. Endast måttbeställd bänkskiva</option>
+                                            </select>
+                                            <span class="error" id="error_kitchenplan_b2b"></span>                                            
+                                        </div>  -->
+                                        <div class="col-sm-6 m-top15">
+                                            <div class="text">
+                                                <label for="b2b_kitchen_freetext_message">Kort beskrivning av vad du
+                                                    vill ha hjälp med</label>
+                                                <span class="red">*</span></label>
+                                            </div>
+                                            <textarea name="b2b_kitchen_freetext_message"
+                                                class="form-control guest-message-textarea"
+                                                id="b2b_kitchen_freetext_message" rows="3" cols="50"
+                                                placeholder="Fyll i meddelande"></textarea>
+                                            <span class="error" id="err_b2b_kitchen_freetext_message"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row m-top20 m-bot15">
+                                        <div class="col-sm-12">
+                                            <div class="checkbox">
+                                                <input type="checkbox" name="consent-s" id="consent-s-b2b-kitchen">
+                                                <span class="checkbox__symbol">
+                                                    <span class="checkbox__box-highlight"></span>
+                                                    <span class="checkbox__box">
+                                                        <svg viewBox="0 0 24 24" class="svg-icon checkbox__checkmark">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10.5 15.6l-4.8-5.3-1.4 1.4 6.2 6.7L20.7 8.2l-1.4-1.4z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                                <span class="checkbox__label">
+                                                    <label for="consent-s" class="">Jag har läst och förstått
+                                                        <a href="" class="linkColor"
+                                                            onClick="openLinkInModal('https://www.ikea.com/se/sv/customer-service/integritetspolicy-foer-ikea-kunder-pub019133cd'); return false;">
+                                                            IKEA’s integritetspolicy </a>
+                                                    </label>
+                                                </span>
+                                                <span class="error" id="err_g_checkbox"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <button type="button" disabled id="booking_b2b"
+                                                class="btn btn--filled save_b2b_kitchen_data"
+                                                style="background: #111111; color: #ffffff; border-radius: 64px; padding: 0.75rem 1.5rem;">
+                                                Bekräfta Bokning </button>
+                                            <span id="enq_succ"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </article>
+    </main>
+    <div id="footermenu">
+        <!-- footer -->
+        <esi:include src="https://www.ikea.com/se/sv/header-footer/footer-fragment-recursive.html" onerror="continue">
+        </esi:include>
+    </div>
+
+    <script src="./js/jquery-3.3.1.min.js" defer></script>
+    <script src="./js/bootstrap.min.js" defer> </script>
+
+    <script src="./js/bootstrap-datepicker-1.8.min.js" defer> </script>
+    <script src="./js/bootstrap-datepicker.sv.js" charset="UTF-8" defer></script>
+
+    <script src="./js/custom.js" defer></script>
+    <script src="./js/kitchen_appointment_new.js" defer></script>
+    <script src="./js/custom-screen.js" defer></script>
+    <script src="./js/Login.js" defer></script>
+    <script src="./js/logout.js" defer></script>
+    <script src="./js/SignUp.js" defer></script>
+    <script src="./js/week-calender.js" defer></script>
+    <script src="./js/Util.js" defer></script>
+    <!-- scripts -->
+    <esi:include src="https://www.ikea.com/se/sv/header-footer/script-fragment-recursive.html" onerror="continue">
+    </esi:include>
+</body>
+
+</html>

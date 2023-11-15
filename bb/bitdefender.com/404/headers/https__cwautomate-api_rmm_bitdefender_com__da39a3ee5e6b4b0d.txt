@@ -1,0 +1,8 @@
+404 Not Found
+Set-Cookie: ARRAffinity=b6f26099a9f2b70d00ac54af609b18334963ec4b2c4c309470fdb9bea9358e46;Path=/;HttpOnly;Secure;Domain=cwautomate-api.rmm.bitdefender.com ARRAffinitySameSite=b6f26099a9f2b70d00ac54af609b18334963ec4b2c4c309470fdb9bea9358e46;Path=/;HttpOnly;SameSite=None;Secure;Domain=cwautomate-api.rmm.bitdefender.com
+Request-Context: appId=cid-v1:1e79975d-ec78-40d3-9045-2a461e0ed792
+X-Powered-By: ASP.NET
+Content-Length: 0
+Retry-Count: 0
+Date: Thu, 23 Mar 2023 17:56:52 GMT
+Server: Microsoft-IIS/10.0

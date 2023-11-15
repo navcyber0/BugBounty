@@ -1,0 +1,18 @@
+403 Forbidden
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+Cross-Origin-Opener-Policy: same-origin
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Cf-Ray: 7aa6094a1e34b7be-AMS
+Cf-Chl-Bypass: 1
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xcNjxdHcIqSQkWRSZHxKefHmi2KMGhH6xlBr8j03dDy0r3kmg8T94aFegaUmRiXNX1JQy%2FGMHBLqlYJ7CSTect6ajuX7IEce%2FT7MKRhMHleDZw%2BMJwfLR2ZbcjcfEZpcgMQwSK%2Fs7ioX2w%3D%3D"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Date: Sun, 19 Mar 2023 13:24:32 GMT
+Cross-Origin-Embedder-Policy: require-corp
+Cross-Origin-Resource-Policy: same-origin
+Permissions-Policy: accelerometer=(),autoplay=(),camera=(),clipboard-read=(),clipboard-write=(),fullscreen=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()
+Referrer-Policy: same-origin
+X-Frame-Options: SAMEORIGIN
+Expires: Thu, 01 Jan 1970 00:00:01 GMT

@@ -1,0 +1,2163 @@
+<!doctype html>
+<html lang="en-US">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="5ac712f3a2a8fa1b43b77147-text/javascript">if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script type="5ac712f3a2a8fa1b43b77147-text/javascript">class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<title>Incorrect Detection: Report a false positive or false negative to Bitdefender</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" href="https://www.bitdefender.com/consumer/support/answer/29358/" hreflang="en" />
+<link rel="alternate" href="https://www.bitdefender.it/consumer/support/answer/30011/" hreflang="it" />
+<link rel="alternate" href="https://www.bitdefender.com.br/consumer/support/answer/53384/" hreflang="pt-BR" />
+<link rel="alternate" href="https://www.bitdefender.pt/consumer/support/answer/53385/" hreflang="pt-PT" />
+<link rel="alternate" href="https://www.bitdefender.fr/consumer/support/answer/53375/" hreflang="fr" />
+<link rel="alternate" href="https://www.bitdefender.de/consumer/support/answer/53382/" hreflang="de" />
+<link rel="alternate" href="https://www.bitdefender.ro/consumer/support/answer/53381/" hreflang="ro" />
+<link rel="alternate" href="https://www.bitdefender.es/consumer/support/answer/53383/" hreflang="es" />
+<link rel="alternate" href="https://www.bitdefender.nl/consumer/support/answer/53386/" hreflang="nl" />
+<link rel="alternate" href="https://www.bitdefender.se/consumer/support/answer/53387/" hreflang="sv" />
+<link href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-57x57.png" sizes="57x57" rel="apple-touch-icon-precomposed" />
+<link href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-114x114.png" sizes="114x114" rel="apple-touch-icon-precomposed" />
+<link href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon-precomposed" />
+<link href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-144x144.png" sizes="144x144" rel="apple-touch-icon-precomposed" />
+<link href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon-precomposed" />
+<link href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-120x120.png" sizes="120x120" rel="apple-touch-icon-precomposed" />
+<link href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-76x76.png" sizes="76x76" rel="apple-touch-icon-precomposed" />
+<link href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-152x152.png" sizes="152x152" rel="apple-touch-icon-precomposed" />
+<link href="https://download.bitdefender.com/resources/images/favicon/favicon-196x196.png" sizes="196x196" rel="icon" type="image/png" />
+<link href="https://download.bitdefender.com/resources/images/favicon/favicon-96x96.png" sizes="96x96" rel="icon" type="image/png" />
+<link href="https://download.bitdefender.com/resources/images/favicon/favicon-32x32.png" sizes="32x32" rel="icon" type="image/png" />
+<link href="https://download.bitdefender.com/resources/images/favicon/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png" />
+<link href="https://download.bitdefender.com/resources/images/favicon/favicon-128.png" sizes="128x128" rel="icon" type="image/png" />
+<meta content="https://download.bitdefender.com/resources/images/favicon/mstile-144x144.png" name="msapplication-TileImage" />
+<meta content="https://download.bitdefender.com/resources/images/favicon/mstile-70x70.png" name="msapplication-square70x70logo" />
+<meta content="https://download.bitdefender.com/resources/images/favicon/mstile-150x150.png" name="msapplication-square150x150logo" />
+<meta content="https://download.bitdefender.com/resources/images/favicon/mstile-310x150.png" name="msapplication-wide310x150logo" />
+<meta content="https://download.bitdefender.com/resources/images/favicon/mstile-310x310.png" name="msapplication-square310x310logo" />
+
+<meta name="description" content="Fill out this form to send a sample file or website for analysis to Bitdefender Labs to rule out a potential incorrect detection." />
+<link rel="canonical" href="https://www.bitdefender.com/consumer/support/answer/29358/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="it_IT" />
+<meta property="og:locale:alternate" content="pt_BR" />
+<meta property="og:locale:alternate" content="pt_PT" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:locale:alternate" content="de_DE" />
+<meta property="og:locale:alternate" content="ro_RO" />
+<meta property="og:locale:alternate" content="es_ES" />
+<meta property="og:locale:alternate" content="nl_NL" />
+<meta property="og:locale:alternate" content="sv_SE" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Incorrect Detection: Report a false positive or false negative to Bitdefender" />
+<meta property="og:description" content="Fill out this form to send a sample file or website for analysis to Bitdefender Labs to rule out a potential incorrect detection." />
+<meta property="og:url" content="https://www.bitdefender.com/consumer/support/answer/29358/" />
+<meta property="og:site_name" content="Bitdefender" />
+<meta property="article:modified_time" content="2023-01-30T07:36:46+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="2 minutes" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.bitdefender.com/consumer/support/answer/29358/","url":"https://www.bitdefender.com/consumer/support/answer/29358/","name":"Incorrect Detection: Report a false positive or false negative to Bitdefender","isPartOf":{"@id":"https://www.bitdefender.com/consumer/support/#website"},"datePublished":"2019-08-07T15:09:02+00:00","dateModified":"2023-01-30T07:36:46+00:00","description":"Fill out this form to send a sample file or website for analysis to Bitdefender Labs to rule out a potential incorrect detection.","breadcrumb":{"@id":"https://www.bitdefender.com/consumer/support/answer/29358/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.bitdefender.com/consumer/support/answer/29358/"]}]},{"@type":"BreadcrumbList","@id":"https://www.bitdefender.com/consumer/support/answer/29358/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Consumer Support","item":"https://www.bitdefender.com/consumer/support/"},{"@type":"ListItem","position":2,"name":"Incorrect Detection: Report a False Positive or False Negative detection to Bitdefender Labs"}]},{"@type":"WebSite","@id":"https://www.bitdefender.com/consumer/support/#website","url":"https://www.bitdefender.com/consumer/support/","name":"Bitdefender","description":"Do your thing, protected","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.bitdefender.com/consumer/support/?searchwp={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.bitdefender.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='main-theme-css' href='https://www.bitdefender.com/assets/bitdefender-theme/assets/css/bitdefender.css?ver=1.1.2' type='text/css' media='all' />
+<link rel='stylesheet preload' as='style' id='wp-style-fonts-css' href='https://www.bitdefender.com/assets/bitdefender-theme/assets/css/style-fonts.css?ver=1.0.10' type='text/css' media='all' crossorigin='anonymous' />
+<link rel='stylesheet' id='font-awesome-css' href='https://www.bitdefender.com/assets/bitdefender-theme/assets/css/fontawesome.css?ver=5.15.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awsolid-css' href='https://www.bitdefender.com/assets/bitdefender-theme/assets/css/solid.css?ver=5.15.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-regular-css' href='https://www.bitdefender.com/assets/bitdefender-theme/assets/css/regular.css?ver=5.15.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-brands-css' href='https://www.bitdefender.com/assets/bitdefender-theme/assets/css/brands.css?ver=5.15.4' type='text/css' media='all' />
+<link rel='stylesheet' id='draco-megamenu-css' href='https://download.bitdefender.com/resources/themes/draco/menu_json/mega_menu.css?ver=1.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='searchwp-live-search-css' href='https://www.bitdefender.com/wp-content/plugins/searchwp-live-ajax-search/assets/styles/style.css?ver=1.7.2' type='text/css' media='all' />
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://www.bitdefender.com/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.bitdefender.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.bitdefender.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript" src='//assets.adobedtm.com/8a93f8486ba4/62c1fd5cdcbd/launch-b77a56f2d5f1.min.js?ver=6.0.2' async='async' id='adobedtm-up-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.bitdefender.com/assets/bitdefender-theme/assets/js/visitorapi.min.js?ver=1.0.1' id='adobeVisitor-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.bitdefender.com/assets/bitdefender-theme/assets/js/jquery.colorbox-min.js?ver=6.0.2' id='colorbox-js'></script>
+
+<script type="text/plain" data-cookieconsent="statistics">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PLJJB3');
+         </script> 
+<script type="rocketlazyloadscript">
+		   window.LANG = "en_US";
+		   window.commonTexts = JSON.parse( '{"Read more":"Read more","See less":"See less"}' );
+        </script>
+<meta name="google-site-verification" content="cP720QC_2EAPblTFK7hDDzUH4Lwb72PkTQg4bJVxPEc" /><style type="text/css">.grecaptcha-badge {z-index: 99}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+</head>
+<body class="support-template-default single single-support postid-29358">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg>
+<div class="wpr-is-menu bit-mm">
+<div class="bit-mm__bar">
+<div class="bit-mm__bar__container bd-container 123">
+<div class="bit-mm__logo__container">
+<a href="https://www.bitdefender.com">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Bitdefender Homepage" data-lazy-src="https://www.bitdefender.com/assets/images/bitdefender-logo-new.png"><noscript><img src="https://www.bitdefender.com/assets/images/bitdefender-logo-new.png" alt="Bitdefender Homepage"></noscript>
+</a>
+<a class="logo-support-link" href="https://www.bitdefender.com/consumer/support"></a>
+</div>
+<div class="bit-mm__back__container">
+<a href="" class="bit-mm__back"></a>
+</div>
+<div class="bit-mm__cart__container"></div>
+<div class="bit-mm__hamburger-trigger__container">
+<button class="hamburger-trigger " value="Mobile menu" aria-label="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+<div class="bit-mm__search">
+</div>
+<div class="bit-mm__profile__container__d">
+<div class="bd-menu">
+<ul>
+<li><a href="https://www.bitdefender.com/business/support/?lang=en"><i class="far fa-building"></i>Support for Business</a></li>
+<li>
+<a class="my-account" href="#"><i class="far fa-user-circle"></i>My Account</a>
+<div class="my-account-options">
+ <a href="https://login.bitdefender.com/central/login.html?lang=en_US&redirect_url=https:%2F%2Fcentral.bitdefender.com%2F&adobe_mc=MCMID%3D85025944717725733713396037032688820599%7CMCORGID%3D0E920C0F53DA9E9B0A490D45%2540AdobeOrg%7CTS%3D1649395289" class="bitdefender-my-account">Bitdefender Central</a>
+<a href="https://gravityzone.bitdefender.com/?adobe_mc=MCMID%3D42745824756242357392805586943792588867%7CMCORGID%3D0E920C0F53DA9E9B0A490D45%2540AdobeOrg%7CTS%3D1649394798" class="bitdefender-gravity-zone">GravityZone CLOUD Control</a>
+</div>
+</li>
+<li> <div class="bd-lg-switcher">
+<select id="bd-change-language">
+<option value="https://www.bitdefender.com/consumer/support/answer/29358/" selected> English ( US ) </option> <option value="https://www.bitdefender.co.uk/consumer/support/answer/29358/"> English ( UK ) </option> <option value="https://www.bitdefender.com.au/consumer/support/answer/29358/"> English ( AU ) </option> <option value="https://www.bitdefender.it/consumer/support/answer/30011/"> Italia</option> <option value="https://www.bitdefender.com.br/consumer/support/answer/53384/"> Brasil</option> <option value="https://www.bitdefender.pt/consumer/support/answer/53385/"> Portugal</option> <option value="https://www.bitdefender.fr/consumer/support/answer/53375/"> France</option> <option value="https://www.bitdefender.de/consumer/support/answer/53382/"> Deutschland</option> <option value="https://www.bitdefender.ro/consumer/support/answer/53381/"> România</option> <option value="https://www.bitdefender.es/consumer/support/answer/53383/"> España</option> <option value="https://www.bitdefender.nl/consumer/support/answer/53386/"> Nederland</option> <option value="https://www.bitdefender.se/consumer/support/answer/53387/"> Sverige</option> </select>
+</div>
+</li> </ul>
+<div class="hamburger-trigger__container">
+<button class="hamburger-trigger" value="Mobile menu" aria-label="button">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+</div>
+</div>
+<div class="bit-mm__projected__panel__head">
+<i class="fal fa-arrow-left"></i>
+<a href="" class="h-tab__back"></a>
+</div>
+</div>
+</div>
+<div class="bit-mm__tabs-bar">
+<div class="bit-mm__navigation__container bd-container">
+<nav class="h-tabs ">
+<div class="h-tab__triggers">
+<div class="h-tab__trigger has--child trigger ">
+<a href="/solutions/" class="h-tab__trigger__title trigger__to" data-trigger-type="h-tab" data-trigger-to="home">For Home <span class="tab__trigger__arrow"></span></a>
+</div>
+<div class="h-tab__trigger has--child trigger ">
+<a href="/business/" class="h-tab__trigger__title trigger__to" data-trigger-type="h-tab" data-trigger-to="business">For Business <span class="tab__trigger__arrow"></span></a>
+</div>
+<div class="h-tab__trigger has--child trigger ">
+<a href="/partners/" class="h-tab__trigger__title trigger__to" data-trigger-type="h-tab" data-trigger-to="partners">For Partners <span class="tab__trigger__arrow"></span></a>
+</div>
+<div class="h-tab__trigger has--child trigger ">
+<a href="/company/" class="h-tab__trigger__title trigger__to" data-trigger-type="h-tab" data-trigger-to="company">Company <span class="tab__trigger__arrow"></span></a>
+</div>
+<div class="h-tab__trigger   ">
+<a href="https://www.bitdefender.com/blog/labs/" class="h-tab__trigger__title trigger__to">Labs </a>
+</div>
+<div class="h-tab__trigger ext__trigger business-support">
+<a class="h-tab__trigger__title" href="https://www.bitdefender.com/business/support/?lang=en"><i class="far fa-building"></i>Support for Business</a>
+</div>
+<div class="h-tab__trigger ext__trigger has--child trigger__to my-account">
+<a class="h-tab__trigger__title trigger__to my-account" data-trigger-type="h-tab" data-trigger-to="my-account" href="#"><i class="far fa-user-circle"></i>My Account</a>
+</div>
+<div class="h-tab__trigger ext__trigger has--child trigger__to language-switcher">
+<li class="h-tab__trigger__title trigger__to language-switcher" data-trigger-type="h-tab" data-trigger-to="language-switcher"><div class="selected-country"><span><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="English" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> English ( US ) </span></div></li> </div>
+</div>
+<div class="h-tab__panels">
+<div class="h-tab__panel homee" data-menu="homee" id="MainMenu|Homee">
+<div class="v-tabs">
+<div class="v-tabs__panels noLeftTabs">
+<div id="MainMenu|Homee|
+																	 Home1										" class="v-tab__panel" data-menu="home1">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">Security plans</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+ <div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Premium Security';" href="/solutions/premium-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Premium Security</a>
+</div>
+<div class="item__body">
+<p>Complete protection and unlimited VPN for 10 users.</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Total Security';" href="/solutions/total-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Total Security</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill green ">
+Most Popular </span>
+</li>
+</ul>
+</div>
+<div class="item__body">
+<p>Complete protection for 5 or 10 devices. Limited VPN.</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Internet Security';" href="/solutions/internet-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Internet Security</a>
+</div>
+<div class="item__body">
+<p>Windows only security with limited VPN.</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Antivirus Plus for Windows';" href="/solutions/antivirus.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Antivirus Plus for Windows</a>
+</div>
+<div class="item__body">
+<p>Basic protection for Windows only.</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Antivirus for Mac';" href="/solutions/antivirus-for-mac.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Antivirus for Mac</a>
+</div>
+<div class="item__body">
+<p>Basic protection for Mac only.</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Premium VPN';" href="/solutions/vpn.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Premium VPN</a>
+</div>
+<div class="item__body">
+<p>Ultra-fast VPN that keeps your online identity and activities safe from hackers, ISP's and snoops.</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='See all security plans';" href="/solutions/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">See all security plans</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+ <div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">For existing customers</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/renewal/?icid=menu_quickrenew" class="item__title">Renewal & Upgrade</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/consumer/support/" class="item__title">Support</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">Trial & free products</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/Downloads/" class="item__title">Security plan trials</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/free.html" class="item__title">Antivirus Free</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/premium-services/" class="item__title">See all Bitdefender Premium services</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-tab__panel home" data-menu="home" id="MainMenu|Home">
+<div class="v-tabs">
+<div class="v-tabs__triggers">
+<div class="v-tab__ext">
+<a href="/solutions/" class="v-tab__ext__title">All Solutions</a>
+</div>
+<div class="v-tab__trigger ">
+<a href="" class="v-tab__trigger__title trigger__to" data-trigger-type="v-tab" data-trigger-to="pc">PC</a>
+</div>
+<div class="v-tab__trigger ">
+<a href="" class="v-tab__trigger__title trigger__to" data-trigger-type="v-tab" data-trigger-to="mac">Mac</a>
+</div>
+<div class="v-tab__trigger ">
+<a href="" class="v-tab__trigger__title trigger__to" data-trigger-type="v-tab" data-trigger-to="mobile">Mobile</a>
+</div>
+<div class="v-tab__trigger ">
+<a href="" class="v-tab__trigger__title trigger__to" data-trigger-type="v-tab" data-trigger-to="multiplatform">Multiplatform</a>
+</div>
+</div>
+<div class="v-tabs__panels ">
+<div id="MainMenu|Home|
+																	 Pc										" class="v-tab__panel" data-menu="pc">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">PRODUCTS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Ultimate Security';" href="/solutions/ultimate-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Ultimate Security</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+ </ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+ <a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Premium Security';" href="/solutions/premium-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Premium Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Small Office Security';" href="/solutions/small-office-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Small Office Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Total Security';" href="/solutions/total-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Total Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Internet Security';" href="/solutions/internet-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Internet Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Antivirus Plus';" href="/solutions/antivirus.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Antivirus Plus</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Family Pack';" href="/solutions/family-pack.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Family Pack</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Smart Home Security';" href="/smart-home/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Smart Home Security</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">Already a customer?</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Renewal & Upgrade';" href="/renewal/?icid=menu_quickrenew" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Renewal & Upgrade</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Get Support';" href="/consumer/support/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Get Support</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Join the community!';" href="//community.bitdefender.com/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Join the community!</a>
+</div>
+ </li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">SERVICES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/identity-theft-protection.html" class="item__title">Bitdefender Identity Theft Protection</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/digital-identity-protection.html" class="item__title">Bitdefender Digital Identity Protection</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/vpn.html" class="item__title">Bitdefender Premium VPN</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/premium-services/home-network-support.html" class="item__title">Bitdefender Home Network Support</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/premium-services/computer-tune-up.html" class="item__title">Bitdefender Computer Tune-Up</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/premium-services/vip-support.html" class="item__title">Bitdefender VIP Support</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/premium-services/" class="item__title">Premium Services</a>
+</div>
+<div class="item__body">
+<p>Live Support offered by certified experts</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/password-manager.html" class="item__title">Password Manager</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">TOOLBOX</div>
+<ul class="section__items accordion__body">
+ <li class="section__item">
+<div class="item__head">
+<a href="/toolbox/" class="item__title">Free Tools</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/free.html" class="item__title">Antivirus Free</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/home-scanner.html" class="item__title">Home Scanner</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="undercolumns">
+<ul class="undercolumn__items">
+<li class="undercolumn__item">
+<a href="/solutions/antivirus-comparison.html">Compare Solutions</a>
+</li>
+ <li class="undercolumn__item">
+<a href="/Downloads/">Trial Downloads</a>
+</li>
+<li class="undercolumn__item">
+<a href="https://login.bitdefender.com/central/login.html?lang=en_US&redirect_url=https:%2F%2Fcentral.bitdefender.com%2F">Log in to Central</a>
+</li>
+<li class="undercolumn__item">
+<a href="/toolbox/">Free Tools</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="MainMenu|Home|
+																	 Mac										" class="v-tab__panel" data-menu="mac">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">PRODUCTS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Ultimate Security';" href="/solutions/ultimate-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Ultimate Security</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Premium Security';" href="/solutions/premium-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Premium Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Small Office Security';" href="/solutions/small-office-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Small Office Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Total Security';" href="/solutions/total-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Total Security</a>
+</div>
+</li>
+<li class="section__item">
+ <div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Family Pack';" href="/solutions/family-pack.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Family Pack</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Smart Home Security';" href="/smart-home/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Smart Home Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Antivirus for Mac';" href="/solutions/antivirus-for-mac.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Antivirus for Mac</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">Already a customer?</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Renewal & Upgrade';" href="/renewal/?icid=menu_quickrenew" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Renewal & Upgrade</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Get Support';" href="/consumer/support/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Get Support</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Join the community!';" href="//community.bitdefender.com/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Join the community!</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">SERVICES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/identity-theft-protection.html" class="item__title">Bitdefender Identity Theft Protection</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/digital-identity-protection.html" class="item__title">Bitdefender Digital Identity Protection</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+ </li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/vpn.html" class="item__title">Bitdefender Premium VPN</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/premium-services/" class="item__title">Premium Services</a>
+</div>
+<div class="item__body">
+<p>Live Support offered by certified experts</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/password-manager.html" class="item__title">Password Manager</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">TOOLBOX</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/toolbox/" class="item__title">Free Tools</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/virus-scanner-for-mac.html" class="item__title">Virus Scanner for Mac</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="undercolumns">
+<ul class="undercolumn__items">
+<li class="undercolumn__item">
+<a href="/solutions/antivirus-comparison.html">Compare Solutions</a>
+</li>
+<li class="undercolumn__item">
+<a href="/Downloads/">Trial Downloads</a>
+</li>
+<li class="undercolumn__item">
+<a href="https://login.bitdefender.com/central/login.html?lang=en_US&redirect_url=https:%2F%2Fcentral.bitdefender.com%2F">Log in to Central</a>
+</li>
+<li class="undercolumn__item">
+<a href="/toolbox/">Free Tools</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="MainMenu|Home|
+																	 Mobile										" class="v-tab__panel" data-menu="mobile">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">PRODUCTS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Ultimate Security';" href="/solutions/ultimate-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Ultimate Security</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+ <li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Premium Security';" href="/solutions/premium-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Premium Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Small Office Security';" href="/solutions/small-office-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Small Office Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Total Security';" href="/solutions/total-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Total Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Smart Home Security';" href="/smart-home/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Smart Home Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Mobile Security for Android';" href="/solutions/mobile-security-android.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Mobile Security for Android</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Mobile Security for iOS';" href="/solutions/mobile-security-ios.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Mobile Security for iOS</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">Already a customer?</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Renewal & Upgrade';" href="/renewal/?icid=menu_quickrenew" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Renewal & Upgrade</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Get Support';" href="/consumer/support/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Get Support</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Join the community!';" href="//community.bitdefender.com/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Join the community!</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">SERVICES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+ <a href="/solutions/identity-theft-protection.html" class="item__title">Bitdefender Identity Theft Protection</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/digital-identity-protection.html" class="item__title">Bitdefender Digital Identity Protection</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/vpn.html" class="item__title">Bitdefender Premium VPN</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/premium-services/" class="item__title">Premium Services</a>
+</div>
+<div class="item__body">
+<p>Live Support offered by certified experts</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/password-manager.html" class="item__title">Password Manager</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">TOOLBOX</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/toolbox/" class="item__title">Free Tools</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/antivirus-free-for-android.html" class="item__title">Antivirus Free for Android</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="undercolumns">
+<ul class="undercolumn__items">
+<li class="undercolumn__item">
+<a href="/solutions/antivirus-comparison.html">Compare Solutions</a>
+</li>
+<li class="undercolumn__item">
+<a href="/Downloads/">Trial Downloads</a>
+</li>
+<li class="undercolumn__item">
+<a href="https://login.bitdefender.com/central/login.html?lang=en_US&redirect_url=https:%2F%2Fcentral.bitdefender.com%2F">Log in to Central</a>
+</li>
+<li class="undercolumn__item">
+<a href="/toolbox/">Free Tools</a>
+</li>
+ </ul>
+</div>
+</div>
+<div id="MainMenu|Home|
+																	 Multiplatform										" class="v-tab__panel" data-menu="multiplatform">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">PRODUCTS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Ultimate Security';" href="/solutions/ultimate-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Ultimate Security</a>
+<ul class="item__props">
+<li class="item__prop">
+ <span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Premium Security';" href="/solutions/premium-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Premium Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Small Office Security';" href="/solutions/small-office-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Small Office Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Total Security';" href="/solutions/total-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Total Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Family Pack';" href="/solutions/family-pack.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Family Pack</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Bitdefender Smart Home Security';" href="/smart-home/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Bitdefender Smart Home Security</a>
+</div>
+ </li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">Already a customer?</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Renewal & Upgrade';" href="/renewal/?icid=menu_quickrenew" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Renewal & Upgrade</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Get Support';" href="/consumer/support/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Get Support</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Join the community!';" href="//community.bitdefender.com/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Join the community!</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">SERVICES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/identity-theft-protection.html" class="item__title">Bitdefender Identity Theft Protection</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/digital-identity-protection.html" class="item__title">Bitdefender Digital Identity Protection</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/vpn.html" class="item__title">Bitdefender Premium VPN</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/premium-services/" class="item__title">Premium Services</a>
+</div>
+<div class="item__body">
+<p>Live Support offered by certified experts</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/password-manager.html" class="item__title">Password Manager</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">TOOLBOX</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/toolbox/" class="item__title">Free Tools</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/solutions/free.html" class="item__title">Antivirus Free</a>
+</div>
+</li>
+</ul>
+</div>
+ </div>
+</div>
+<div class="undercolumns">
+<ul class="undercolumn__items">
+<li class="undercolumn__item">
+<a href="/solutions/antivirus-comparison.html">Compare Solutions</a>
+</li>
+<li class="undercolumn__item">
+<a href="/Downloads/">Trial Downloads</a>
+</li>
+<li class="undercolumn__item">
+<a href="https://login.bitdefender.com/central/login.html?lang=en_US&redirect_url=https:%2F%2Fcentral.bitdefender.com%2F">Log in to Central</a>
+</li>
+<li class="undercolumn__item">
+<a href="/toolbox/">Free Tools</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+ </div>
+<div class="h-tab__panel business" data-menu="business" id="MainMenu|Business">
+<div class="v-tabs">
+<div class="v-tabs__triggers">
+<div class="v-tab__ext">
+<a href="/business/" class="v-tab__ext__title">Solutions Overview</a>
+</div>
+<div class="v-tab__trigger ">
+<a href="" class="v-tab__trigger__title trigger__to" data-trigger-type="v-tab" data-trigger-to="products">Products</a>
+</div>
+<div class="v-tab__trigger ">
+<a href="" class="v-tab__trigger__title trigger__to" data-trigger-type="v-tab" data-trigger-to="solutions-services">Solutions & Services</a>
+</div>
+<div class="v-tab__trigger ">
+<a href="" class="v-tab__trigger__title trigger__to" data-trigger-type="v-tab" data-trigger-to="threat-research">Threat Research</a>
+</div>
+<div class="v-tab__trigger ">
+<a href="" class="v-tab__trigger__title trigger__to" data-trigger-type="v-tab" data-trigger-to="why-bitdefender">Why Bitdefender</a>
+</div>
+</div>
+<div class="v-tabs__panels ">
+<div id="MainMenu|Business|
+																	 Products										" class="v-tab__panel" data-menu="products">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">MID-MARKET & ENTERPRISE</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='GravityZone Business Security';" href="/business/smb-products/business-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">GravityZone Business Security</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="icon  item__icon cart">
+</span>
+</li>
+</ul>
+</div>
+<div class="item__body">
+<p>Next-Gen AV for Small Businesses</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='GravityZone Business Security Premium';" href="/business/products/gravityzone-premium-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">GravityZone Business Security Premium</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="icon  item__icon cart">
+</span>
+</li>
+</ul>
+</div>
+<div class="item__body">
+<p>Prevention, Hardening, Risk, and Incident Analytics</p>
+</div>
+ </li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='GravityZone Business Security Enterprise';" href="/business/products/enterprise-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">GravityZone Business Security Enterprise</a>
+</div>
+<div class="item__body">
+<p>Integrated Prevention, EDR and Risk Analytics</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='GravityZone XDR';" href="/business/products/gravityzone-xdr.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">GravityZone XDR</a>
+</div>
+<div class="item__body">
+<p>Detect, discover, hunt, and respond across your organization.</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Endpoint Detection and Response';" href="/business/enterprise-products/endpoint-detection-response.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Endpoint Detection and Response</a>
+</div>
+<div class="item__body">
+<p>Advanced attack visibility with guided investigation</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Managed Detection and Response';" href="/business/enterprise-products/managed-detection-response-service.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Managed Detection and Response</a>
+</div>
+<div class="item__body">
+<p>SOC-Driven, Security-Focused Outcomes</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">SPECIALTY & ADD-ON</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/business/products/cloud-server-security.html" class="item__title">GravityZone Security for Virtualized Environments</a>
+</div>
+<div class="item__body">
+<p>Protection for Virtual Servers and Desktops</p>
+</div>
+ </li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-addons/email-security.html" class="item__title">GravityZone Email Security</a>
+</div>
+<div class="item__body">
+<p>Cloud-based Email Security</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/products/container-security.html" class="item__title">GravityZone Security for Containers</a>
+</div>
+<div class="item__body">
+<p>Purpose-built Container and Linux security</p>
+ </div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">MANAGED SERVICE PROVIDERS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/business/service-providers-products/cloud-security-msp.html" class="item__title">GravityZone Cloud MSP Security</a>
+</div>
+<div class="item__body">
+<p>Advanced MSP Security Suite</p>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/products/mdr-for-msp.html" class="item__title">MDR for MSPs</a>
+</div>
+<div class="item__body">
+ <p>Threat detection, investigation, and response</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">GRAVITYZONE PLATFORM</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/" class="item__title">Platform Overview</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/compare.html" class="item__title">Compare Products</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/deals/" class="item__title">Online deals</a>
+<ul class="item__props">
+<li class="item__prop">
+<span class="icon  item__icon cart">
+</span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/renew-upgrade/" class="item__title">Renew & Upgrade</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/products/free-trials/" class="item__title">Try for free</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="//businessresources.bitdefender.com/replace-symantec?utm_campaign=symrep2020&utm_source=web&utm_medium=menu" class="item__title">Switching from Symantec?</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">ALL PRODUCTS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/business/all-products.html" class="item__title">Full list</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="undercolumns">
+<ul class="undercolumn__items">
+<li class="undercolumn__item">
+<a href="/business/">Solutions Overview</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/compare.html">Compare Products</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/inquire/">Contact</a>
+</li>
+<li class="undercolumn__item">
+<a href="https://gravityzone.bitdefender.com/">Log in to GravityZone</a>
+</li>
+<li class="undercolumn__item">
+<a href="/partners/partner-locator.html">Find a Partner</a>
+</li>
+ <li class="undercolumn__item">
+<a href="/business/all-products.html">All Products (A-Z)</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="MainMenu|Business|
+																	 Solutions-services										" class="v-tab__panel" data-menu="solutions-services">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">SOLUTIONS FOR</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Endpoints Security';" href="/business/solutions/endpoint-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Endpoints Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Small to Medium Business';" href="/business/solutions/small-medium-business-cybersecurity.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Small to Medium Business</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Datacenters Security';" href="/business/solutions/data-center-security.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Datacenters Security</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Cloud Workloads Protection';" href="/business/solutions/cloud-workload-protection.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Cloud Workloads Protection</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Managed Security Services';" href="/business/solutions/managed-security-services.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Managed Security Services</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Cyber Resilience';" href="/business/solutions/cyber-resilience.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Cyber Resilience</a>
+ </div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Cybersecurity Compliance';" href="/business/solutions/cybersecurity-compliance.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Cybersecurity Compliance</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">SECURITY SERVICES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/business/enterprise-products/managed-detection-response-service.html" class="item__title">Managed Detection and Response</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/oem/advanced-threat-intelligence.html" class="item__title">Advanced Threat Intelligence</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">SUPPORT & PROFESSIONAL SERVICES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/business/customer-portal/enterprise-standard-support.html" class="item__title">Enterprise Standard Support</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/services/enterprise-premium-support.html" class="item__title">Enterprise Premium Support</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/services/enterprise-professional-services.html" class="item__title">Professional Services</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">SPECIFIC USECASES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/business/industry-solutions/education-cybersecurity.html" class="item__title">Education</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/industry-solutions/energy-utilities-cybersecurity.html" class="item__title">Energy and Utilities</a>
+ </div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/industry-solutions/financial-services-cybersecurity.html" class="item__title">Financial Services</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+ <a href="/business/industry-solutions/healthcare-cybersecurity.html" class="item__title">Healthcare</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/industry-solutions/managed-it-services-cybersecurity.html" class="item__title">Managed IT Services</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/industry-solutions/manufacturing-cybersecurity.html" class="item__title">Manufacturing</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/industry-solutions/public-sector-cybersecurity.html" class="item__title">Public Sector</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/industry-solutions/technology.html" class="item__title">Technology</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/industry-solutions/telecommunications-cybersecurity.html" class="item__title">Telecommunications</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/industry-solutions/retail-cybersecurity.html" class="item__title">Retail</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="undercolumns">
+<ul class="undercolumn__items">
+<li class="undercolumn__item">
+<a href="/business/">Solutions Overview</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/compare.html">Compare Products</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/inquire/">Contact</a>
+</li>
+<li class="undercolumn__item">
+<a href="https://gravityzone.bitdefender.com/">Log in to GravityZone</a>
+</li>
+<li class="undercolumn__item">
+<a href="/partners/partner-locator.html">Find a Partner</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/all-products.html">All Products (A-Z)</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="MainMenu|Business|
+																	 Threat-research										" class="v-tab__panel" data-menu="threat-research">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">LATEST NEWS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Analysis from Bitdefender Labs';" href="https://www.bitdefender.com/blog/labs/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Analysis from Bitdefender Labs</a>
+<ul class="item__props">
+<li class="item__prop">
+ <span class="pill red ">
+New </span>
+</li>
+</ul>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Events and Webinars';" href="/business/events-webinars/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Events and Webinars</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Threat Map';" href="//threatmap.bitdefender.com/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Threat Map</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">RESEARCH</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="https://www.bitdefender.com/blog/labs/tag/whitepapers/" class="item__title">Threat Research Papers</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="//businessresources.bitdefender.com/business-threat-landscape-report-2020" class="item__title">Annual Threat Report</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">TOOLS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="https://www.bitdefender.com/blog/labs/tag/free-tools/" class="item__title">Free Security Tools</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="undercolumns">
+<ul class="undercolumn__items">
+<li class="undercolumn__item">
+<a href="/business/">Solutions Overview</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/compare.html">Compare Products</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/inquire/">Contact</a>
+</li>
+<li class="undercolumn__item">
+<a href="https://gravityzone.bitdefender.com/">Log in to GravityZone</a>
+</li>
+<li class="undercolumn__item">
+<a href="/partners/partner-locator.html">Find a Partner</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/all-products.html">All Products (A-Z)</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="MainMenu|Business|
+																	 Why-bitdefender										" class="v-tab__panel" data-menu="why-bitdefender">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+ <div class="section__title accordion__head ">AT A GLANCE</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Awards & Certifications';" href="/business/awards.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Awards & Certifications</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Technology Alliances';" href="/business/technology-alliances.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Technology Alliances</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='OEM Partnerships';" href="/oem/technology-partnerships.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">OEM Partnerships</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Business Insights Blog';" href="//businessinsights.bitdefender.com/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Business Insights Blog</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">RESOURCES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Webinars';" href="/business/webinars.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Webinars</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Case Studies';" href="/business/resource-library.html?type=Case-Study" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Case Studies</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Whitepapers';" href="/business/resource-library.html?type=Whitepaper" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Whitepapers</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Resource Library';" href="/business/resource-library.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Resource Library</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">INNOVATION & TECHNOLOGIES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/endpoint-human-risk-assessment.html" class="item__title">Endpoint and Human Risk Assessment</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/vulnerability-management.html" class="item__title">Vulnerability Management</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/anti-ransomware.html" class="item__title">Anti-ransomware</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/application-control.html" class="item__title">Application Control</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/exploit-defense.html" class="item__title">Exploit Defense</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/fileless-attack-defense.html" class="item__title">Fileless Attack Defense</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/hyperdetect.html" class="item__title">Machine Learning (HyperDetect)</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/network-attack-defense.html" class="item__title">Network Attack Defense</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/sandbox-analyzer.html" class="item__title">Sandbox Analyzer</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head "></div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/xdr-extended-detection-and-response.html" class="item__title">Extended Detection and Response</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/incident-visualization.html" class="item__title">Incident Visualization</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/process-inspector.html" class="item__title">Behavior Analysis (Process Inspector)</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/network-traffic-analytics.html" class="item__title">Network Traffic Analytics</a>
+</div>
+</li>
+ <li class="section__item">
+<div class="item__head">
+<a href="/business/gravityzone-platform/root-cause-analysis.html" class="item__title">Root Cause Analysis</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="undercolumns">
+<ul class="undercolumn__items">
+<li class="undercolumn__item">
+<a href="/business/">Solutions Overview</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/compare.html">Compare Products</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/inquire/">Contact</a>
+</li>
+<li class="undercolumn__item">
+<a href="https://gravityzone.bitdefender.com/">Log in to GravityZone</a>
+</li>
+<li class="undercolumn__item">
+<a href="/partners/partner-locator.html">Find a Partner</a>
+</li>
+<li class="undercolumn__item">
+<a href="/business/all-products.html">All Products (A-Z)</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-tab__panel partners" data-menu="partners" id="MainMenu|Partners">
+<div class="v-tabs">
+<div class="v-tabs__panels noLeftTabs">
+<div id="MainMenu|Partners|
+																	 Partners-menu										" class="v-tab__panel" data-menu="partners-menu">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">RESELLER PARTNERS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Reselling Partner Program Overview';" href="/partners/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Reselling Partner Program Overview</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Become a Reseller';" href="//pan.bitdefender.com/partners/save/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Become a Reseller</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Find a Reseller';" href="/partners/partner-locator.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Find a Reseller</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Log in to PAN Portal';" href="https://pan.bitdefender.com/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Log in to PAN Portal</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">SERVICE PROVIDERS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='MSP Partner Program Overview';" href="/partners/msp-partners/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">MSP Partner Program Overview</a>
+</div>
+ </li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Become an MSP Partner';" href="//pan.bitdefender.com/partners/save/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Become an MSP Partner</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Find an MSP Partner';" href="/partners/partner-locator.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Find an MSP Partner</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Log in to PAN Portal';" href="https://pan.bitdefender.com/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Log in to PAN Portal</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">TECHNOLOGY LICENSING SOLUTIONS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/oem/" class="item__title">OEM Technology Solutions</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/oem/advanced-threat-intelligence.html" class="item__title">Advanced Threat Intelligence</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/oem/endpoint-protection.html" class="item__title">Endpoint Protection SDKs</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/oem/gateway-protection.html" class="item__title">Gateway Protection SDKs</a>
+</div>
+</li>
+</ul>
+</div>
+<div class="section accordion">
+<div class="section__title accordion__head ">LICENSING OPTIONS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/oem/sdk-integration.html" class="item__title">SDK Integration</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/oem/rebranding-private-label-or-white-label.html" class="item__title">Rebranding</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/oem/bundling-or-pre-installation.html" class="item__title">Bundling</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+ <div class="section accordion">
+<div class="section__title accordion__head ">CONNECTED HOME PARTNERS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="/iot/" class="item__title">IoT Security Platform</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-tab__panel company" data-menu="company" id="MainMenu|Company">
+<div class="v-tabs">
+<div class="v-tabs__panels noLeftTabs">
+<div id="MainMenu|Company|
+																	 Company-menu										" class="v-tab__panel" data-menu="company-menu">
+<div class="columns">
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">ABOUT US</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Overview';" href="/company/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Overview</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Management';" href="/company/management.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Management</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Security Experts';" href="/company/experts.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Security Experts</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Awards & Certifications';" href="/business/awards.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Awards & Certifications</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Customers';" href="/business/case-studies.html" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Customers</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Analyst Relations';" href="/company/analyst-relations/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Analyst Relations</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a onclick="if (!window.__cfRLUnblockHandlers) return false; s_objectID='Careers';" href="/company/job-opportunities/" class="item__title" data-cf-modified-5ac712f3a2a8fa1b43b77147-="">Careers</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">NEWS</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+ <div class="item__head">
+<a href="/blog/" class="item__title">Blogs</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/cyberpedia/" class="item__title">Bitdefender Cyberpedia</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/news/" class="item__title">Latest News</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="column">
+<div class="section accordion">
+<div class="section__title accordion__head ">RESOURCES</div>
+<ul class="section__items accordion__body">
+<li class="section__item">
+<div class="item__head">
+<a href="//research.bitdefender.com/" class="item__title">Research</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/resources-library/industry-reports.html" class="item__title">Industry reports</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="/business/whitepapers.html" class="item__title">White Papers</a>
+</div>
+</li>
+<li class="section__item">
+<div class="item__head">
+<a href="//threatmap.bitdefender.com/" class="item__title">Threat Map</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="h-tab__panel support-menu" data-menu="support-menu" id="MainMenu|Support-menu">
+<div class="h-tab__panel__body">
+<p></p>
+<a href="/consumer/support/" class="btn blue_empty">Support for Home Products</a>
+<a href="/business/customer-portal/enterprise-standard-support.html" class="btn blue_empty">Support for Business Products</a>
+</div>
+</div>
+<div class="h-tab__panel your-account" data-menu="your-account" id="MainMenu|Your-account">
+<div class="h-tab__panel__body">
+<p>Log in to your Bitdefender account and manage security for what matters.</p>
+<a href="https://login.bitdefender.com/central/login.html?lang=en_US&redirect_url=https:%2F%2Fcentral.bitdefender.com%2F" class="btn blue_empty">Bitdefender Central</a>
+<a href="https://gravityzone.bitdefender.com/" class="btn blue_empty">GravityZone CLOUD Control Center</a>
+</div>
+</div>
+<div class="h-tab__panel my-account" data-menu="my-account" id="MainMenu|My-account">
+<div class="h-tab__panel__body">
+<div class="my-account-options">
+<a href="https://login.bitdefender.com/central/login.html?lang=en_US&redirect_url=https:%2F%2Fcentral.bitdefender.com%2F&adobe_mc=MCMID%3D85025944717725733713396037032688820599%7CMCORGID%3D0E920C0F53DA9E9B0A490D45%2540AdobeOrg%7CTS%3D1649395289" class="bitdefender-my-account">Bitdefender Central</a>
+<a href="https://gravityzone.bitdefender.com/?adobe_mc=MCMID%3D42745824756242357392805586943792588867%7CMCORGID%3D0E920C0F53DA9E9B0A490D45%2540AdobeOrg%7CTS%3D1649394798" class="bitdefender-gravity-zone">GravityZone CLOUD Control</a>
+</div>
+</div>
+</div>
+<div class="h-tab__panel language-switcher" data-menu="language-switcher" id="MainMenu|Language-switcher">
+<div class="h-tab__panel__body">
+<ul class="bd-countries">
+<li><a href="https://www.bitdefender.com/consumer/support/answer/29358/" class="url_link selected"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="English" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="English" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> English ( US ) </a></li> <li><a href="https://www.bitdefender.co.uk/consumer/support/answer/29358/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="United Kingdom" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH4QwaBzgfdECf9gAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0xMi0yNlQwNzo1NjozMCswMDowMAZreKUAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMTItMjZUMDc6NTY6MzArMDA6MDB3NsAZAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAV5JREFUKFNjvF9Y918wwJNhy2cuhpYZhxhu3H/DAAKh7toMzeeXg9m1hpEMq3deBbPV5YUYcsS/MvgI/GAA6WPyuCnMsHjBfgbrvWsZTpSaMCzpDGLQUBQBK0YGII2TzdgZdqi/ZYhNcGQ46hzMYNF9hoExtGjVf7ACOSGGeN53DAIMfxgEIoMYrj36wMCemQnW/LW9g0Hi8F4GPgtjhp86ugwTl5yAu5TxhmMg2ABs4Mete2CaQ00JTGMDTFCabAD3Asjf+TEWDOxXLjN8OnGW4YWtMwN3ZQVY0c/p0xm05AQYPixfx/CBgYVh4WchhpuP3oHlmP8J2zWkhRozJMgxMHycuYBh1fHHDNlXmBluv/zK4PTiClhR4zM+hgZgDEk7mDIYSnIxaJ7cy/DzwyeGzQ9/MjB+OHj8//sN2xm2fOBgmPKSm+HmQ4jJuKIR5NKaDDsGH95vDO83bGcAAMUIf5oVmXpLAAAAAElFTkSuQmCC" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAYAAADwdn+XAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH4QwaBzgfdECf9gAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxNy0xMi0yNlQwNzo1NjozMCswMDowMAZreKUAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTctMTItMjZUMDc6NTY6MzArMDA6MDB3NsAZAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAV5JREFUKFNjvF9Y918wwJNhy2cuhpYZhxhu3H/DAAKh7toMzeeXg9m1hpEMq3deBbPV5YUYcsS/MvgI/GAA6WPyuCnMsHjBfgbrvWsZTpSaMCzpDGLQUBQBK0YGII2TzdgZdqi/ZYhNcGQ46hzMYNF9hoExtGjVf7ACOSGGeN53DAIMfxgEIoMYrj36wMCemQnW/LW9g0Hi8F4GPgtjhp86ugwTl5yAu5TxhmMg2ABs4Mete2CaQ00JTGMDTFCabAD3Asjf+TEWDOxXLjN8OnGW4YWtMwN3ZQVY0c/p0xm05AQYPixfx/CBgYVh4WchhpuP3oHlmP8J2zWkhRozJMgxMHycuYBh1fHHDNlXmBluv/zK4PTiClhR4zM+hgZgDEk7mDIYSnIxaJ7cy/DzwyeGzQ9/MjB+OHj8//sN2xm2fOBgmPKSm+HmQ4jJuKIR5NKaDDsGH95vDO83bGcAAMUIf5oVmXpLAAAAAElFTkSuQmCC" alt="United Kingdom" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> English ( UK ) </a></li> <li><a href="https://www.bitdefender.com.au/consumer/support/answer/29358/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Australia" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAIAAAB/FOjAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAABmJLR0QA/wD/AP+gvaeTAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTAyLTI2VDIzOjQ0OjQ1KzAwOjAw4jEKZgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wMi0yNlQyMzo0NDo0NSswMDowMJNsstoAAADvSURBVChTY9yYOoFBXKxp+59ywQsMDAydN6TqPFmAIv4tT4FcIGBiYgSS//79h3J/3n+k+fD0ac/bnjxPPTkenPa7p8n/4+eJMxBpIDAxEQciKAeoAUSIizO8e8vw5zcDCyuDkDDDy5dgKSg4deoFEBkZiXNysgC5TOwWJtc/cphuUtr+Q2H7F2nT7arX5U3ZFeWAchYWkkAE1sXw+/e//2BHAd3XDRZBdysyUFYWuH//I0QK7CQwKCw0ASIoBxXcvfsB4WkoxcTIy8sKRMzMIHuQgampBBBBOchOYgSrhDgUGTAzgwz9+/cfiMPAAABKok9Zgp/qsgAAAABJRU5ErkJggg==" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAICAIAAAB/FOjAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAABmJLR0QA/wD/AP+gvaeTAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTAyLTI2VDIzOjQ0OjQ1KzAwOjAw4jEKZgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0wMi0yNlQyMzo0NDo0NSswMDowMJNsstoAAADvSURBVChTY9yYOoFBXKxp+59ywQsMDAydN6TqPFmAIv4tT4FcIGBiYgSS//79h3J/3n+k+fD0ac/bnjxPPTkenPa7p8n/4+eJMxBpIDAxEQciKAeoAUSIizO8e8vw5zcDCyuDkDDDy5dgKSg4deoFEBkZiXNysgC5TOwWJtc/cphuUtr+Q2H7F2nT7arX5U3ZFeWAchYWkkAE1sXw+/e//2BHAd3XDRZBdysyUFYWuH//I0QK7CQwKCw0ASIoBxXcvfsB4WkoxcTIy8sKRMzMIHuQgampBBBBOchOYgSrhDgUGTAzgwz9+/cfiMPAAABKok9Zgp/qsgAAAABJRU5ErkJggg==" alt="Australia" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> English ( AU ) </a></li> <li><a href="https://www.bitdefender.it/consumer/support/answer/30011/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Italiano" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAUVBMVEUAiQAAgADk5OTe3t7vAAB3yXf9/f36+vr5Vlb3RkZjwWNYvVj4+Pj1MzP1KChQuFD1GxviAABHtUf19fXzDw4/sT8AcAA2qzYAWgDLy8vDw8ObXclsAAAAVElEQVR4AQXBSwoCQRQEsNT70CC69P5XdCUMA2ISSAiBWAQScg8bN7GJWxFDrCivwhCLMipGx3LKUOi2HAZluy2HgXprxQGfGL6G63B5MJ5FCD/4A3DaCLvbBle5AAAAAElFTkSuQmCC" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAUVBMVEUAiQAAgADk5OTe3t7vAAB3yXf9/f36+vr5Vlb3RkZjwWNYvVj4+Pj1MzP1KChQuFD1GxviAABHtUf19fXzDw4/sT8AcAA2qzYAWgDLy8vDw8ObXclsAAAAVElEQVR4AQXBSwoCQRQEsNT70CC69P5XdCUMA2ISSAiBWAQScg8bN7GJWxFDrCivwhCLMipGx3LKUOi2HAZluy2HgXprxQGfGL6G63B5MJ5FCD/4A3DaCLvbBle5AAAAAElFTkSuQmCC" alt="Italiano" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> Italia</a></li> <li><a href="https://www.bitdefender.com.br/consumer/support/answer/53384/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Brazil" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAn1BMVEUAYQAAWwAAUgAARwAAOgAALgAAIwB/voB4uni242pttG1kr2Rdq11RpFEAGAD9/Uv8/VT690U/mz83lTguki4ADQCp2lJ3d+Q+dfpkaun47zii1B9IoEhgslHOy6fZ5virw/Iubfhsc6v29iMfih+Wy3Nbg+lzm/m61vd+oNr08hZ2uDcAAQCPlLSuraIzmA8yjzKw3z8nXvcTgxM1pTDYD/UeAAAAfUlEQVR4AUWIA3oFMBCE/4mT2nbvf6biQ91n27tjAaDNi7gaFuLAIexiUDc6QKUfhKaVva5Dh/Xu3rwrqYPTzfeYVNvrRvUiUUbvO5hIVR0f8f7TYCo797+6POgOqtm9n8nGQ1qP/395v7cHw4FsQohnXhE3DOSQSETOmN8EHiUfBxs2q7sAAAAASUVORK5CYII=" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAn1BMVEUAYQAAWwAAUgAARwAAOgAALgAAIwB/voB4uni242pttG1kr2Rdq11RpFEAGAD9/Uv8/VT690U/mz83lTguki4ADQCp2lJ3d+Q+dfpkaun47zii1B9IoEhgslHOy6fZ5virw/Iubfhsc6v29iMfih+Wy3Nbg+lzm/m61vd+oNr08hZ2uDcAAQCPlLSuraIzmA8yjzKw3z8nXvcTgxM1pTDYD/UeAAAAfUlEQVR4AUWIA3oFMBCE/4mT2nbvf6biQ91n27tjAaDNi7gaFuLAIexiUDc6QKUfhKaVva5Dh/Xu3rwrqYPTzfeYVNvrRvUiUUbvO5hIVR0f8f7TYCo797+6POgOqtm9n8nGQ1qP/395v7cHw4FsQohnXhE3DOSQSETOmN8EHiUfBxs2q7sAAAAASUVORK5CYII=" alt="Brazil" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> Brasil</a></li> <li><a href="https://www.bitdefender.pt/consumer/support/answer/53385/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Portugal" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABL0lEQVR4AV2RA2yEQRCFNxcnRVw3qG3bthXUbZxaUaOGRVA7ro2wDWoEtW2b9/b2nHx3v943uztDSAwhAQJ86P83keCJw2HcEAJoqLivmJHbnQt+s7OFfMXHMz5DAgBPCKBCUktSRmdK43Dw3Gz451TIc68nPr+7uLzZWr2Zm78bGLxpa797e1+IC0erUeAmL+ol3R8CEE+/qqvDv2BbwjYi6yJR+6Ys5m5zA0C7HbWEIEy/KCpKC8uzQRf5fkivX3zBZIIw/Swvj8cTKthRIbDGDwcYnXRF7avy/KM5q8NZg2cDPWEaYHt8AceFACBsTdui9nmn8VWmpngawN+ngiEVHCocGM5Vpu8G0rUB5iAS0CKAYwCsg/YB1lPWKESBSCAqhMiKwHQueJwI2BeDC83C2lDIxUCuAAAAAElFTkSuQmCC" alt="Portugal" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> Portugal</a></li> <li><a href="https://www.bitdefender.fr/consumer/support/answer/53375/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Français" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEVzldTg4ODS0tLxDwDtAwDjAADD0uz39/fy8vL3k4nzgna4yOixwuXu7u7s6+zn5+fyd2rvcGPtZljYAABrjNCpvOHrWkxegsqfs93NAADpUUFRd8THAABBa7wnVbERRKa8vLyxsLCoqKigoKClCvcsAAAAXklEQVR4AS3JxUEAQQAEwZo13Mk/R9w5/7UERJCIGIgj5qfRJZEpPyNfCgJTjMR1eRRnJiExFJz5Mf1PokWr/UztIjRGQ3V486u0HO55m634U6dMcf0RNPfkVCTvKjO16xHA8miowAAAAABJRU5ErkJggg==" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEVzldTg4ODS0tLxDwDtAwDjAADD0uz39/fy8vL3k4nzgna4yOixwuXu7u7s6+zn5+fyd2rvcGPtZljYAABrjNCpvOHrWkxegsqfs93NAADpUUFRd8THAABBa7wnVbERRKa8vLyxsLCoqKigoKClCvcsAAAAXklEQVR4AS3JxUEAQQAEwZo13Mk/R9w5/7UERJCIGIgj5qfRJZEpPyNfCgJTjMR1eRRnJiExFJz5Mf1PokWr/UztIjRGQ3V486u0HO55m634U6dMcf0RNPfkVCTvKjO16xHA8miowAAAAABJRU5ErkJggg==" alt="Français" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> France</a></li> <li><a href="https://www.bitdefender.de/consumer/support/answer/53382/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Deutsch" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABLElEQVR4AY2QgUZEQRSGz9ydmzbYkBWABBJYABHEFhJ6m0WP0DMEQNIr9AKrN8ne2Tt3Zs7MOdOZmRBEv+v34Tvub9R6fdNlAzU+snSME/wdjbjbbJ6EiEg6BA8102QbjKNpoMzw8v6qD/sOALbbT2MC1NgaAWOKOgxf5czY+4dbAX2G/THzcozLrvPV85IQyqVz0rvg2p9Pei4HjzSsiFbV4JgyhhxCjpGdZ0RhdikLB9/b8Qig7MkpSovR7Cp59q6CazaNFiTt4J82o6uvdMVwTsztKTXZod4jgOJJuqNAjFyGrBR8gM6XwKfIC4KanBSTZ0rClKh08D9DFh3egW7ebH7NcRDQWrz9rM2Ne+mDOXB2mZJ8agL19nwxR2iZXGm1gDbQKhDjd4yHb2oW/KR8xHicAAAAAElFTkSuQmCC" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAABLElEQVR4AY2QgUZEQRSGz9ydmzbYkBWABBJYABHEFhJ6m0WP0DMEQNIr9AKrN8ne2Tt3Zs7MOdOZmRBEv+v34Tvub9R6fdNlAzU+snSME/wdjbjbbJ6EiEg6BA8102QbjKNpoMzw8v6qD/sOALbbT2MC1NgaAWOKOgxf5czY+4dbAX2G/THzcozLrvPV85IQyqVz0rvg2p9Pei4HjzSsiFbV4JgyhhxCjpGdZ0RhdikLB9/b8Qig7MkpSovR7Cp59q6CazaNFiTt4J82o6uvdMVwTsztKTXZod4jgOJJuqNAjFyGrBR8gM6XwKfIC4KanBSTZ0rClKh08D9DFh3egW7ebH7NcRDQWrz9rM2Ne+mDOXB2mZJ8agL19nwxR2iZXGm1gDbQKhDjd4yHb2oW/KR8xHicAAAAAElFTkSuQmCC" alt="Deutsch" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> Deutschland</a></li> <li><a href="https://www.bitdefender.ro/consumer/support/answer/53381/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Romana" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEUAJsgAFMT13wDyAgLqAAB4muX8/G3581z5Vlb3RkZagt78/Ef5+T/08Tn1NTX1KSlQe9709Ez5+TX36S71GxvkAABHdNv4+CvzDw8AA7lqjuFBcNn29h/05Rg6adnfAAAAAK3nvQDrwgDkqgALguDCAAAAX0lEQVR4ARXHtWEDQBAEwNmn4BMz9V+eIzsTS8c7EWqR2mQgkJDTYHIZ5cRRg7XJWjG9tLIypqmVV7k0aN8f1vTw3OXaNft5mwyyG7NTxi/5+WPFSdYpPA+fSG60/4074PMLPA8bHzoAAAAASUVORK5CYII=" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEUAJsgAFMT13wDyAgLqAAB4muX8/G3581z5Vlb3RkZagt78/Ef5+T/08Tn1NTX1KSlQe9709Ez5+TX36S71GxvkAABHdNv4+CvzDw8AA7lqjuFBcNn29h/05Rg6adnfAAAAAK3nvQDrwgDkqgALguDCAAAAX0lEQVR4ARXHtWEDQBAEwNmn4BMz9V+eIzsTS8c7EWqR2mQgkJDTYHIZ5cRRg7XJWjG9tLIypqmVV7k0aN8f1vTw3OXaNft5mwyyG7NTxi/5+WPFSdYpPA+fSG60/4074PMLPA8bHzoAAAAASUVORK5CYII=" alt="Romana" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> România</a></li> <li><a href="https://www.bitdefender.es/consumer/support/answer/53383/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Español" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAflBMVEX/AAD9AAD3AADxAADrAAD/eXn9bGz8YWH8WVn6UVH5SEj5Pz/3NDT0Kir9/QD+/nL+/lT18lDt4Uf6+j/39zD39yf19R3n5wDxflXsZ1Pt4Y3x8zr0wbLs1NXz8xPj4wD37t3jmkvsUU/Bz6nrykm3vJ72IiL0FBTyDAvhAABEt4UZAAAAX0lEQVR4AQXBQUrFQBBAwXqTDkYE94Jb73+qfwVRcYxVQRBRToiUfoaVpGTrtdS9SO0Z9FR9lVy/g5c99+dKl30N5uxPuviexXEc9/msC7TOkd4kHu/Dlh4itCJ8AP4B0w4Qwmm7CFQAAAAASUVORK5CYII=" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAflBMVEX/AAD9AAD3AADxAADrAAD/eXn9bGz8YWH8WVn6UVH5SEj5Pz/3NDT0Kir9/QD+/nL+/lT18lDt4Uf6+j/39zD39yf19R3n5wDxflXsZ1Pt4Y3x8zr0wbLs1NXz8xPj4wD37t3jmkvsUU/Bz6nrykm3vJ72IiL0FBTyDAvhAABEt4UZAAAAX0lEQVR4AQXBQUrFQBBAwXqTDkYE94Jb73+qfwVRcYxVQRBRToiUfoaVpGTrtdS9SO0Z9FR9lVy/g5c99+dKl30N5uxPuviexXEc9/msC7TOkd4kHu/Dlh4itCJ8AP4B0w4Qwmm7CFQAAAAASUVORK5CYII=" alt="Español" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> España</a></li> <li><a href="https://www.bitdefender.nl/consumer/support/answer/53386/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Nederlands" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAY1BMVEX/AAD8AADzAADqAAD/fYz+dYT6aHr7XG36VGb6R1f4L0H/ECz+mKXw8fH9/f36+vr19vbW1tbS0tIAG493n89cjcZNgsA/eLkzcbUpaLAcYKwAAFEAA4ANU6UAADsAAHgAAGcSgiW+AAAAS0lEQVR4AQXBiQ3CQBAAMc/dConQf688SoIdBIIyQiR9R0tCuM2rNxHpMqsDIWiBEE4NgnBiHhVJcs48P0uSjXsPl4hLmH2EHzb4A7DPDGppZMSwAAAAAElFTkSuQmCC" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAY1BMVEX/AAD8AADzAADqAAD/fYz+dYT6aHr7XG36VGb6R1f4L0H/ECz+mKXw8fH9/f36+vr19vbW1tbS0tIAG493n89cjcZNgsA/eLkzcbUpaLAcYKwAAFEAA4ANU6UAADsAAHgAAGcSgiW+AAAAS0lEQVR4AQXBiQ3CQBAAMc/dConQf688SoIdBIIyQiR9R0tCuM2rNxHpMqsDIWiBEE4NgnBiHhVJcs48P0uSjXsPl4hLmH2EHzb4A7DPDGppZMSwAAAAAElFTkSuQmCC" alt="Nederlands" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> Nederland</a></li> <li><a href="https://www.bitdefender.se/consumer/support/answer/53387/" class="url_link "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2011'%3E%3C/svg%3E" alt="Sweden" width="16" height="11" style="width: 16px; height: 11px;" data-lazy-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEUAP4H9wAAAKnQAHmsAEF8AB1QAAEd7sct5r8r+5HX943BopcNcnr9Qlrf93VFBjbI2hq0rfqgAADf72UcieqT51jn40i72ziL0yxTmiwD00DQUcKEMaJsAABztngB+lbt6AAAAVklEQVR4AUXHBWEDQABD0fcPhgrmX+KYuW04QXRgzpUi8ZzzbfA5JB9zCDZpTlYNtgtJrQHb+Pv/6/SxqrczvU7nct8I8ve5XnrveXvzJqaW3HDHNfgCGFkLqHdB0OIAAAAASUVORK5CYII=" /><noscript><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAXVBMVEUAP4H9wAAAKnQAHmsAEF8AB1QAAEd7sct5r8r+5HX943BopcNcnr9Qlrf93VFBjbI2hq0rfqgAADf72UcieqT51jn40i72ziL0yxTmiwD00DQUcKEMaJsAABztngB+lbt6AAAAVklEQVR4AUXHBWEDQABD0fcPhgrmX+KYuW04QXRgzpUi8ZzzbfA5JB9zCDZpTlYNtgtJrQHb+Pv/6/SxqrczvU7nct8I8ve5XnrveXvzJqaW3HDHNfgCGFkLqHdB0OIAAAAASUVORK5CYII=" alt="Sweden" width="16" height="11" style="width: 16px; height: 11px;" /></noscript> Sverige</a></li> </ul>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+<div class="bd-full-width">
+<div class="bd-search-sm bd-article">
+<div class="bd-container bd-subheader">
+<div class="bd-breadcrumb">
+<div class="bitdef-brcmb"><span><span><a href="https://www.bitdefender.com/consumer/support/">Consumer Support</a> » <span class="breadcrumb_last" aria-current="page">Incorrect Detection: Report a False Positive or False Negative detection to Bitdefender Labs</span></span></span></div> </div>
+<div class="bd-title-form">
+<form action="https://www.bitdefender.com/consumer/support/search-wp-default/" class="bd-sform-sm" role="search" method="get">
+<label for="support-search-sm" class="screenreader" aria-hidden="true">Bitdefender Support Center</label>
+<div class="bd-input-icon">
+<input type="search" name="searchwp" id="support-search-sm" class="search" placeholder="Search here" data-swplive="true" data-swpengine="local_wp_search" autocomplete="off" />
+<i class="fas fa-search"></i>
+</div>
+</form>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+<div class="bd-container bd-post" id="primary">
+<aside id="secondary" class="bd-widget-area">
+<div id="sticky-sidebar">
+<h4>Navigate to</h4>
+<ul class="bd-archor-list">
+</ul>
+</div>
+</aside>
+<main id="main" class="site-main" role="main">
+<h1 class="single-title">Incorrect Detection: Report a False Positive or False Negative detection to Bitdefender Labs</h1>
+<article id="post-29358" class="bd-single post-29358 support type-support status-publish hentry support_products-bitdefender-antivirus-for-mac support_products-bitdefender-antivirus-plus-2020 support_products-bitdefender-internet-security-2020 support_products-bitdefender-mobile-security-android support_products-bitdefender-mobile-security-for-ios support_products-bitdefender-total-security-2020 support_products-netgear-armor support_products-protection-for-windows support_products-threat-prevention-removal-bitdefender-antivirus-for-mac support_products-threat-prevention-removal-netgear support_products-threat-prevention-removal-is-2020 support_products-threat-prevention-removal-av-plus-2020 support_products-threat-prevention-removal-ts-2020 support_products-threat-prevention-removal-mobile-security-ios support_products-threat-prevention-removal-bitdefender-mobile-security-android operating_systems-android operating_systems-ios operating_systems-macos operating_systems-windows support_categories-prevention-threat-removal-en support_subscription-bitdefender-antivirus-for-mac-en support_subscription-bitdefender-antivirus-free support_subscription-bitdefender-antivirus-plus-en support_subscription-bitdefender-box support_subscription-bitdefender-family-pack-en support_subscription-bitdefender-internet-security-en support_subscription-bitdefender-mobile-security-for-android-en support_subscription-mobile-security-for-ios support_subscription-bitdefender-premium-security-en support_subscription-bitdefender-small-office-security-en support_subscription-bitdefender-total-security-en support_subscription-bitdefender-ultimate-security-en support_subscription-bitdefender-ultimate-security-plus support_subscription-i-dont-know support_subscription-netgear-armor-powered-by-bitdefender-en support_tag-detection">
+
+ 
+<div class="entry-content bd-content bd-headers">
+<p>Fill out the form below to report an incorrect detection to Bitdefender Labs. For example, if you think Bitdefender has incorrectly classified as malware a file or a website you trust (false positive). Or that it missed a threat (false negative). Once confirmed, false alarms are corrected within hours.</p>
+<p> </p>
+<h2><span style="font-size: 22px;"><strong>What is a False Positive?</strong></span></h2>
+<p>In cybersecurity, a false positive detection or false alarm refers to a situation where security software incorrectly identifies a harmless file or website as a threat. It occurs when a program or webpage performs an action that appears to the antivirus program to be a virus-like activity. We strive to reduce false-positive reports to a minimum. However, Bitdefender may on occasion mistakenly flag a safe website or a legitimate file as a false positive threat.</p>
+<p> </p>
+<h2><span style="font-size: 22px;"><strong>What is a False Negative?</strong></span></h2>
+<p>A false negative refers to a situation where security software fails to detect an actual threat. Bitdefender detects about 99.51% of viruses in the wild, so it is possible, although very unlikely, that a virus will get past its filters. This is mainly because new malware is released continuously and there is a time gap between when a virus is created and when we add detection for it. Other situations concern <a href="https://www.bitdefender.com/consumer/support/answer/26046/" target="_blank" rel="noopener">PUA/PUP</a> programs installed with the user’s consent in bundled packages, which do not trigger an alert because the user has accepted the license agreement to use them.</p>
+<p> </p>
+<div class="before-sample-form">
+<h2 class="subtitle ">Submit a File or a Website for malware analysis</h2>
+</div>
+<div class="sample-upload-form">
+<div class="content single-page">
+<div class="form-section section-separator">
+<div class="open-header">Please report a potential incorrect detection of Bitdefender security solutions here. The information submitted is treated confidentially and is used exclusively for anti-malware analysis.</div>
+<p class="info-text">(fields marked with * are mandatory)</p>
+</div>
+<form role="form" name="contact_form" id="contact_form" method="POST" action="https://sampleupload.bitdefender.com/?formAction=submit" enctype="multipart/form-data">
+<div class="form-section section-separator">
+<div class="form-group">
+<label for="category" class="col-form-label">Select the category*</label>
+<div class="form-selection dropdown input-container">
+<select id="category" class="form-control" name="nfo[category]">
+<option value="0"> -- Please select the category --</option>
+<option value="fp">False Positive</option>
+<option value="fn">False Negative</option>
+</select>
+<a id="help_pn" href="javascript:void(0)" style="font-size:0.9em;cursor:help;" data-toggle="tooltip" data-html="true" data-placement="bottom" data-content="False Positive - A false positive, also known as a false alarm or false detection occurs when an antivirus product wrongly detects a legitimate file or website as infected.  False Negative - A false negative is the opposite of a false positive. A false negative occurs when an antivirus product fails to detect a malware.">
+What is a False Positive or False Negative? </a>
+</div>
+</div>
+<div class="form-group row">
+<label for="category" class="col-form-label">Full Name*</label>
+<div class="input-container">
+<input type="text" class="form-control input-text" placeholder="" name="nfo[contact_name]" value="" id="fname">
+<div class="clear"></div>
+</div>
+</div>
+<div class="form-group row">
+<label for="category" class="col-form-label">E-mail*</label>
+<div class="input-container">
+<input type="text" class="form-control input-text" placeholder="johndoe@domain.com" name="nfo[contact_email]" value="" id="emailc">
+<div class="clear"></div>
+</div>
+</div>
+<div class="form-group row">
+<label for="category" class="col-form-label">Sample type*</label>
+<div id="first_step">
+<ul>
+<li><input type="radio" name="nfo[sample_type]" value="file" id="rbtn_file"> <label>File</label></li>
+<li class="checked"><input type="radio" name="nfo[sample_type]" checked value="url" id="rbtn_url"> <label>URL</label></li>
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+<div id="consumer_files" class="files_attach">
+<div class="form-group">
+<label for="category" class="col-form-label">Attach a file</label>
+<div>
+<div class="wpr-upload-btn-wrapper" style="margin-bottom: 0;">
+<button class="btnr" title="Choose file>">Choose file</button>
+<span style="margin-bottom: 0; padding-bottom: 0">No file selected</span>
+<input class="upload chsFile" size="59" name="file_attach" type="file" id="file_attach" />
+</div>
+
+<p class="info-text" style="margin-top: -16px; margin-left: 5px;"><span class="bold">Note: </span>file upload is limited to 25MB</p>
+</div>
+</div>
+<div class="form-group row" id="insert_after_on_file">
+<label for="category" class="col-form-label">Detection name</label>
+<div class="input-container">
+<textarea type="text" class="form-control input-text" placeholder="Please write the detection name as it appears in your Bitdefender Notification/Events window. Open the main Bitdefender interface, navigate to Notifications/Events and select the event generated by the file in question." name="nfo[contact_detection]" value="" id="detection" style="height: 80px"></textarea>
+<div class="clear"></div>
+</div>
+</div>
+<div class="form-group row">
+<label for="category" class="col-form-label">Screenshot</label>
+<div class="">
+<div class="wpr-upload-btn-wrapper" style="margin-bottom: 0;">
+<button class="btnr" title="Choose file>">Choose file</button>
+<span style="margin-bottom: 0; padding-bottom: 0">No file selected</span>
+<input class="upload chsFile2" size="59" name="file_attach2" type="file" id="file_attach2" />
+</div>
+<p class="info-text" style="margin-top: -16px;margin-left: 5px; margin-bottom: 0;"><span class="bold">Note: </span>file upload is limited to 25MB and has to have the following type format: jpg, gif, jpeg, png </p>
+<p class="info-text" style="margin-top: -10px;margin-left: 5px;">(Please upload a screenshot of the event generated by Bitdefender. Click <a style="color: #005ed9;" class="screenshot__help__link" href="#" target="_blank" rel="noopener noreferrer" title="How to create a screenshot">here </a>to see how to create a screenshot)</p>
+</div>
+</div>
+<div class="form-group sensitive_files_cont" style="margin-left: 5px;">
+<label for="sensitive_files" class="col-form-label">Sensitive files*</label>
+<div>
+<input type="checkbox" class="form-control col-md-8" placeholder="" name="nfo[sensitive_files]" value="true" id="sensitive_files" style="-webkit-box-shadow: none; height: 20px; width: 20px; display: inline-block;">
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div id="url_container">
+<div class="form-group">
+<label for="category" class="col-form-label">URL*</label>
+<div class="input-container">
+<input type="text" class="form-control input-text" placeholder="" name="nfo[url]" value="" id="url">
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<div class="form-group row" id="user_comments_container">
+<label for="user_comments" class="col-form-label">Description <span style="color: #ababab">(Optional)</span></label>
+<div class="input-container">
+<textarea type="text" class="form-control input-text" placeholder="" name="nfo[user_comments]" value="" id="user_comments" style="height: 80px"></textarea>
+<div class="clear"></div>
+</div>
+</div>
+<input type="hidden" name="do[submit]" value="_general_send" />
+<div class="form-group row" style="margin-left: 5px;">
+<label for="captcha" class="col-form-label">Insert captcha</label>
+<div id="cptch" class="col-xs-12 col-md-7">
+<input type="hidden" name="nfo[reGoogle]" value="auto-detect">
+<div class="g-recaptcha" data-sitekey="6LdyDf8SAAAAAPbUORhFnToOQtpWP_chfK5ts-RP"></div>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+</div>
+</div>
+</div>
+<div class="form-section">
+<div class="form-group">
+<div id="submit_contact">
+<div class="submit_btn">
+<a href="javascript:void(0)" style="color: white">Submit</a>
+<input id="formAction" type="hidden" name="formAction" value="">
+</div>
+</div>
+<p class="personal-data">Personal data is processed according to <a class="text" href="/site/view/legal-privacy-policy-for-home-users-solutions.html" target="_blank" rel="noopener noreferrer">Bitdefender Privacy Policies for Home users solutions</a> and <a class="text" href="/site/view/legal-privacy-policy-for-bitdefender-websites.html" target="_blank">Website</a>.</p>
+<input type="hidden" name="do[submit]" value="submit">
+</div>
+<input type="hidden" name="nfo[redirect]" value="https://www.bitdefender.com/consumer/support/answer/29358/" />
+</div>
+</form>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+<footer class="entry-footer">
+<h2>Related Articles</h2>
+<ul>
+<li><a href='https://www.bitdefender.com/consumer/support/answer/29603/' title='Am I protected? Find out if Bitdefender is protecting your PC'>Am I protected? Find out if Bitdefender is protecting your PC</a></li><li><a href='https://www.bitdefender.com/consumer/support/answer/1519/' title='How to stop Bitdefender Web Protection from blocking a safe Website'>How to stop Bitdefender Web Protection from blocking a safe Website</a></li><li><a href='https://www.bitdefender.com/consumer/support/answer/15252/' title='What is a Trojan? Prevention &#038; Removal'>What is a Trojan? Prevention &#038; Removal</a></li><li><a href='https://www.bitdefender.com/consumer/support/answer/13427/' title='How to exclude files and folders from Bitdefender Antivirus scan'>How to exclude files and folders from Bitdefender Antivirus scan</a></li><li><a href='https://www.bitdefender.com/consumer/support/answer/2576/' title='What should I do when Bitdefender detects an infection on my computer?'>What should I do when Bitdefender detects an infection on my computer?</a></li> </ul>
+</footer>
+</article>
+</main>
+</div>
+</div>
+<footer id="colophon" class="site-footer bd-full-width bd-bg-black">
+<div class="bd-container">
+<div class="site-info">
+<div class="footer-logo">Bitdefender<sup>&reg;</sup></div>
+<ul class="menu">
+<li><a href=" https://www.bitdefender.com/site/view/legal-eula.html">Legal Terms</a></li>
+<li><a href=" https://www.bitdefender.com/site/view/legal-privacy-policy-for-bitdefender-websites.html">Privacy Policy</a></li>
+<li><a href=" https://www.bitdefender.com/consumer/support">Contact Us</a></li>
+</ul>
+<div class="bd-copyright">Copyright &copy; 1997-2023</div>
+</div>
+</div>
+</footer>
+<div class=" clearfix"></div>
+<div class="backTop">
+<a href="javascript:void(0)" title="Scroll to the top of the page"></a>
+</div>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		   var canRunAds = false;
+        </script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.bitdefender.com/site/Main/generalDigitalData?p=/consumer/support/answer/29358/&dl=en&h=ip-10-122-2-104.eu-west-1.compute.internal&s=www.bitdefender.com&wp=2&sp=1&pag=&sq=&err="></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.bitdefender.com/themes/draco/scripts/digitalDataUtils.min.js"></script>
+<style>
+            .searchwp-live-search-results {
+                opacity: 0;
+                transition: opacity .25s ease-in-out;
+                -moz-transition: opacity .25s ease-in-out;
+                -webkit-transition: opacity .25s ease-in-out;
+                height: 0;
+                overflow: hidden;
+                z-index: 9999995; /* Exceed SearchWP Modal Search Form overlay. */
+                position: absolute;
+                display: none;
+            }
+
+            .searchwp-live-search-results-showing {
+                display: block;
+                opacity: 1;
+                height: auto;
+                overflow: auto;
+            }
+
+            .searchwp-live-search-no-results {
+                padding: 3em 2em 0;
+                text-align: center;
+            }
+
+            .searchwp-live-search-no-min-chars:after {
+                content: "Continue typing";
+                display: block;
+                text-align: center;
+                padding: 2em 2em 0;
+            }
+        </style>
+<script type="rocketlazyloadscript">
+            var _SEARCHWP_LIVE_AJAX_SEARCH_BLOCKS = true;
+            var _SEARCHWP_LIVE_AJAX_SEARCH_ENGINE = 'local_wp_search';
+            var _SEARCHWP_LIVE_AJAX_SEARCH_CONFIG = 'default';
+        </script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='google-invisible-recaptcha-js-before'>
+var renderInvisibleReCaptcha = function() {
+
+    for (var i = 0; i < document.forms.length; ++i) {
+        var form = document.forms[i];
+        var holder = form.querySelector('.inv-recaptcha-holder');
+
+        if (null === holder) continue;
+		holder.innerHTML = '';
+
+         (function(frm){
+			var cf7SubmitElm = frm.querySelector('.wpcf7-submit');
+            var holderId = grecaptcha.render(holder,{
+                'sitekey': '6LcNvzMUAAAAACUlp0S6MPbhE4I-5ILw4lND-tJA', 'size': 'invisible', 'badge' : 'bottomright',
+                'callback' : function (recaptchaToken) {
+					if((null !== cf7SubmitElm) && (typeof jQuery != 'undefined')){jQuery(frm).submit();grecaptcha.reset(holderId);return;}
+					 HTMLFormElement.prototype.submit.call(frm);
+                },
+                'expired-callback' : function(){grecaptcha.reset(holderId);}
+            });
+
+			if(null !== cf7SubmitElm && (typeof jQuery != 'undefined') ){
+				jQuery(cf7SubmitElm).off('click').on('click', function(clickEvt){
+					clickEvt.preventDefault();
+					grecaptcha.execute(holderId);
+				});
+			}
+			else
+			{
+				frm.onsubmit = function (evt){evt.preventDefault();grecaptcha.execute(holderId);};
+			}
+
+
+        })(form);
+    }
+};
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' async defer src='https://www.google.com/recaptcha/api.js?onload=renderInvisibleReCaptcha&#038;render=explicit' id='google-invisible-recaptcha-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript" id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?api(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.bitdefender.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" id="Cookiebot" data-culture="EN" data-cbid="4a55b566-7010-4633-9b03-7ba7735be0b6" async data-rocket-type='text/javascript' src='https://consent.cookiebot.com/uc.js?ver=6.0.2' id='cookieBot-js'></script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript" id='adobeDataLayer-js-extra'>
+/* <![CDATA[ */
+var wpr_data_layer = {"is_contact_flow":"0","english_page_path":{"url":"https:\/\/www.bitdefender.com\/consumer\/support\/answer\/29358\/","link_id":29358,"query":"","host":"https:\/\/www.bitdefender.com","path":"\/consumer\/support\/answer\/29358\/","title":"Incorrect Detection: Report a False Positive or False Negative detection to Bitdefender Labs","lang":"us","page_slug":"answer","page_slug_items":["support","consumer","answer","29358"]},"is_homepage":"0","is_search_page":""};
+/* ]]> */
+</script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript" id='adobeDataLayer-js-before'>
+Object.freeze(wpr_data_layer);
+</script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript" src='https://www.bitdefender.com/assets/bitdefender-theme/assets/js/adobeDataLayer.js?ver=1.0.23' id='adobeDataLayer-js'></script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript" src='https://www.bitdefender.com/assets/bitdefender-theme/assets/js/wpr-script.js?ver=1.0.52-en' id='wpr-script-js'></script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript" id='bit-main-js-extra'>
+/* <![CDATA[ */
+var bitobj = {"widget_label":"Need some assistance?","display_bot_chat":"1","bot_chat_allowed_ips":"","user_country_code":"IN","user_ip":"162.158.38.186","is_support_page":"","is_single_support":"1","current_page_id":"29358","current_language":"en","language_code":"en_US","code_language":"en","ajax_url":"https:\/\/www.bitdefender.com\/consumer\/support\/wp-admin\/admin-ajax.php","title_select_issue":"Type of issue:","title_get_product":"Which product do you need help with?","title_get_os":"Select OS:","title_is_helpful":"We found these articles to help you:","title_let_us_know":"Let us know if you:","title_select_subscription":"Which product do you need help with?","title_refund":"Choose refund reason:","theme_url":"https:\/\/www.bitdefender.com\/assets\/bitdefender-theme\/","email_message":"Please enter a valid e-mail address","message_desc":"Please enter at least 20 characters","help_page":"https:\/\/www.bitdefender.com\/consumer\/support\/help\/","bitdef_email_validate":"cde66c77cc","file_size":"Maximum file size allowed is 250MB","file_extension":"The file extensions is not valid","file_no_file":"No file selected"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='bit-main-js-before'>
+Object.freeze(bitobj);
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.bitdefender.com/assets/bitdefender-theme/assets/js/bitdefender.min.js?ver=1.0.52-en' id='bit-main-js'></script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript" id='bit-feedback-js-extra'>
+/* <![CDATA[ */
+var fb_obj = {"ajax_url":"https:\/\/www.bitdefender.com\/consumer\/support\/wp-admin\/admin-ajax.php","nonce":"9f6c6d2b85","post_id":"29358"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.bitdefender.com/assets/bitdefender-theme/assets/js/feedback.js?ver=1.5' id='bit-feedback-js'></script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript" id='swp-live-search-client-js-extra'>
+/* <![CDATA[ */
+var searchwp_live_search_params = [];
+searchwp_live_search_params = {"ajaxurl":"https:\/\/www.bitdefender.com\/consumer\/support\/wp-admin\/admin-ajax.php","origin_id":29358,"config":{"default":{"engine":"default","input":{"delay":300,"min_chars":3},"results":{"position":"bottom","width":"auto","offset":{"x":0,"y":5}},"spinner":{"lines":12,"length":8,"width":3,"radius":8,"scale":1,"corners":1,"color":"#424242","fadeColor":"transparent","speed":1,"rotate":0,"animation":"searchwp-spinner-line-fade-quick","direction":1,"zIndex":2000000000,"className":"spinner","top":"50%","left":"50%","shadow":"0 0 1px transparent","position":"absolute"}}},"msg_no_config_found":"No valid SearchWP Live Search configuration found!","aria_instructions":"When autocomplete results are available use up and down arrows to review and enter to go to the desired page. Touch device users, explore by touch or with swipe gestures."};;
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.bitdefender.com/wp-content/plugins/searchwp-live-ajax-search/assets/javascript/dist/script.min.js?ver=1.7.2' id='swp-live-search-client-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.bitdefender.com/wp-content/themes/bitdefender-theme/assets/js/sample-upload.js?ver=1.0.1' id='sample-upld-js'></script>
+<script type="5ac712f3a2a8fa1b43b77147-text/javascript">window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.bitdefender.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js" type="5ac712f3a2a8fa1b43b77147-text/javascript"></script><script type="5ac712f3a2a8fa1b43b77147-text/javascript">function lazyLoadThumb(e){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script><script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="5ac712f3a2a8fa1b43b77147-|49" defer=""></script></body>
+</html>

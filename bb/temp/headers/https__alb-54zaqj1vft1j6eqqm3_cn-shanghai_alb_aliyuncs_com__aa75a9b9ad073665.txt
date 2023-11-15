@@ -1,0 +1,15 @@
+404 Not Found
+Date: Sat, 01 Apr 2023 21:30:46 GMT
+Content-Length: 20
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Last-Modified: Sun, 2 Apr 2023 05:30:46 +0800
+Strict-Transport-Security: max-age=31536000
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+Content-Type: application/json;charset=utf-8
+Set-Cookie: metabase.DEVICE=b5337a4c-99b4-4b71-8e5f-3b5ea11bb102;HttpOnly;Path=/;SameSite=Lax;Expires=Tue, 20 Jan 2043 22:06:10 +0800
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://apis.google.com https://www.google-analytics.com https://*.googleapis.com *.gstatic.com  'sha256-lMAh4yjVuDkQ9NqkK4H+YHUga+anpFs5JAuj/uZh0Rs=' 'sha256-sMNbXyc1lLzhHbH/CKs11HIQMnMkZAN2eA99WhJeEC0=' 'sha256-JJa56hyDfUbgNfq+0nq6Qs866JKgZ/+qCq2pkDJED8k='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline'; font-src 'self' ; img-src * 'self' data:; connect-src 'self' metabase.us10.list-manage.com ; manifest-src 'self';  frame-ancestors 'none';
+X-Frame-Options: DENY
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Retry-Count: 0

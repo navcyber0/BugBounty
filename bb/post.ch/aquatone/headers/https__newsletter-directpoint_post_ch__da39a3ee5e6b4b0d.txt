@@ -1,0 +1,10 @@
+200 OK
+Server: nginx
+Etag: "48d-55f0a69174e40-gzip"
+Vary: Accept-Encoding
+Date: Fri, 23 Jun 2023 15:28:49 GMT
+Content-Type: text/html
+Retry-Count: 0
+Last-Modified: Tue, 28 Nov 2017 12:46:41 GMT
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=63072000

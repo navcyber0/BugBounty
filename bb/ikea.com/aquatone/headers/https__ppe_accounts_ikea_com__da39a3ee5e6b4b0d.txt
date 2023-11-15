@@ -1,0 +1,15 @@
+503 Service Unavailable
+Content-Type: text/html
+Content-Security-Policy: default-src 'none'; font-src 'self' https://fonts.googleapis.com https://fonts.gstatic.com data:; style-src 'self' https://fonts.googleapis.com https://www.gstatic.com 'unsafe-inline'; img-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.recaptcha.net https://www.gstatic.com; frame-src https://www.recaptcha.net; connect-src https://*.ikea.com https://*.ikeadt.com https://*.ingka.com https://*.techlab-cdn.com https://api.addressy.com; manifest-src 'self';
+Server: AkamaiGHost
+X-Xss-Protection: 1; mode=block
+Mime-Version: 1.0
+Date: Sun, 23 Jul 2023 01:15:18 GMT
+Strict-Transport-Security: max-age=86400 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Ua-Compatible: IE=edge
+Set-Cookie: _abck=FE26A92696EB90E9A53BEDE6D4EB7892~-1~YAAQZAosF0VzeH+JAQAAW65QgArX4HkZ0VRkG0PBDByCvF9dPKAiHVmC8Z4G2LGNNW4Y0py0JOE/DiYkXXYnFEAIT12Eetpcs1zYvXwybv4GTJSXgojL1YgFKciSNJp2YPwRCs6zWJSxWjMRa5olAeZKxySY7RDNPTRSurYTkolbz2rOWnFJTOmW+mNeNLwDGet28JVwrlG/dUHRUHYyRYY4/ZOkQJgDLpV5tNdFI9rH7eXOGkfvM+YMK/+kZXIMGRvZpJjTFi3NwW3shkB7WTOLWe+p+12hEg2qrLD1p+gWEPqujRtgk6vqZ1HvadarMxmFvf1Ik52hkZNaDXP5Dn++wqUVahCaHghbZ60cZDQft48K7L5I4BTl~-1~-1~1690078429; Domain=.ikea.com; Path=/; Expires=Mon, 22 Jul 2024 01:15:18 GMT; Max-Age=31536000; Secure bm_sz=FFF59F447C5D9DA7D5DFEC7800EEC712~YAAQZAosF0ZzeH+JAQAAW65QgBRS4GIVpTdHP5MrhF2TaDiLLhxLTDd8lms0yTRzsdBYwiNs08PiwwNzie6cJ3IcI3L5AaYhfybu8BEN1BwLyyVeTgLZLAAAEiwh8KU+EnaAQeHmFfnbNBR1DnAC0XuaVJEmhKjCPhciX5VBmaW+GiKpSz59/KCplmoSEgzhmtDNoRDzO8bfFs392gqFIDgMz+8rUq+BmCipMUWNUdokg26x4j+wDp8rPV33mSs+YU9jicUaalixLmJlmnossh5e+Cmy9XeWMlS40PqsrRJI~3225136~4337715; Domain=.ikea.com; Path=/; Expires=Sun, 23 Jul 2023 05:15:18 GMT; Max-Age=14400
+Retry-Count: 0
+Content-Length: 266
+Cache-Control: max-age=0
+Expires: Sun, 23 Jul 2023 01:15:18 GMT

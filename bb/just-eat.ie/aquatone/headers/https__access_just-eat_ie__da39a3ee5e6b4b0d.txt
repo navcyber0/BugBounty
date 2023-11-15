@@ -1,0 +1,15 @@
+200 OK
+Last-Modified: Tue, 17 Jan 2023 08:26:20 GMT
+Via: 1.1 912fe8d927c37ab06a5ab9f3fd8505be.cloudfront.net (CloudFront)
+Retry-Count: 0
+Date: Sun, 19 Mar 2023 13:26:13 GMT
+Etag: "df7cdf8c4f053e36c21f6dc4cc17da35"
+X-Amz-Server-Side-Encryption: AES256
+X-Amz-Cf-Id: g0MSuTOnGvRnJkaZsJMPevEAKGq87gC9kVeyvKpdxtYpLGXU3cn5WQ==
+Content-Type: text/html
+Cache-Control: no-cache, no-store, must-revalidate
+Accept-Ranges: bytes
+X-Cache: Miss from cloudfront
+Content-Length: 3476
+Server: AmazonS3
+X-Amz-Cf-Pop: MRS52-P3

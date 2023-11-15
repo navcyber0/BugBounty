@@ -1,0 +1,25 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+Via: 1.1 d68267701a73309606caf4eace3fada0.cloudfront.net (CloudFront)
+Date: Tue, 21 Feb 2023 04:23:21 GMT
+Strict-Transport-Security: max-age=31536000;
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Power-By: Manta
+Alt-Svc: h3=":443"; ma=86400
+Set-Cookie: PHPSESSID=c6a4482757a8ccf5362c8c492aef34dc; path=/; secure; HttpOnly
+X-Amz-Cf-Pop: BOM52-C1
+Pragma: no-cache
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: no-referrer
+Powered-By: S1T2
+Age: 2352312
+Retry-Count: 0
+Cache-Control: no-store, no-cache, must-revalidate
+Link: <https://restaurantawards.menulog.com.au/wp-json/>; rel="https://api.w.org/" <https://restaurantawards.menulog.com.au/wp-json/wp/v2/pages/59>; rel="alternate"; type="application/json" <https://restaurantawards.menulog.com.au/>; rel=shortlink
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+X-Amz-Cf-Id: Gz7P9kvvS0Gs4G8M5A_mx5m-rhv8Se_f0fPWguD_Wym4f765-m7XDw==
+Content-Type: text/html; charset=UTF-8
+Server: 
+Expires: Thu, 19 Nov 1981 08:52:00 GMT

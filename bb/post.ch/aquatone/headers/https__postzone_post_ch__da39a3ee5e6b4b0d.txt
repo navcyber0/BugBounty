@@ -1,0 +1,17 @@
+200 OK
+Date: Fri, 23 Jun 2023 15:31:25 GMT
+Vary: X-Forwarded-Proto,Accept-Encoding
+Content-Language: de
+Content-Script-Type: text/javascript
+Expires: 
+Content-Style-Type: text/css
+X-Content-Type-Options: nosniff
+X-Frame-Options: sameorigin
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+X-Ua-Compatible: IE=edge
+Accept-Ranges: none
+Strict-Transport-Security: max-age=63072000; includeSubdomains
+Server: nginx
+Cache-Control: private, pre-check=0, post-check=0, max-age=0, no-transform
+Pragma: no-cache

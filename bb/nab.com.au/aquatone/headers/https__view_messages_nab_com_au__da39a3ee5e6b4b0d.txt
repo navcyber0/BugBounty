@@ -1,0 +1,14 @@
+200 OK
+Date: Thu, 30 Mar 2023 07:34:20 GMT
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Referrer-Policy: origin-when-cross-origin
+X-Xss-Protection: 1; mode=block
+Permissions-Policy: geolocation=(self), microphone=()
+Set-Cookie: strict
+Content-Length: 932
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
+Content-Security-Policy: default-src 'self'; frame-ancestors 'self'
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Retry-Count: 0

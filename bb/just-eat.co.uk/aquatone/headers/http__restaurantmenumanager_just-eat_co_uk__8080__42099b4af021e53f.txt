@@ -1,0 +1,16 @@
+200 OK
+Server: cloudflare
+Strict-Transport-Security: max-age=0
+Vary: Accept-Encoding
+X-Amz-Cf-Id: pY7dw9_1VrdPKpaZ6ZU0hyMr8OBMZ9Is66Mf4843n6GyaZWefumZuA==
+X-Cache: RefreshHit from cloudfront
+X-Amz-Cf-Pop: BOM78-P3
+Cf-Ray: 7d72d2cbfee2856b-BOM
+Retry-Count: 0
+Date: Wed, 14 Jun 2023 13:12:11 GMT
+X-Amz-Server-Side-Encryption: AES256
+Cache-Control: max-age=300
+Via: 1.1 20032fc4f15e2de50ab8bfe12f9cd0fe.cloudfront.net (CloudFront)
+Cf-Cache-Status: DYNAMIC
+Content-Type: text/html
+Last-Modified: Mon, 12 Jun 2023 15:00:10 GMT

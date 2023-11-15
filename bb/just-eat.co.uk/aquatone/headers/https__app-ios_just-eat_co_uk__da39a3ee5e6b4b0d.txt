@@ -1,0 +1,18 @@
+200 OK
+X-Ratelimit-Limit-Second: 10
+Ratelimit-Remaining: 9
+Set-Cookie: je-full-address-search-enabled=true; expires=Sat, 25 Mar 2023 15:35:48 GMT; path=/ x-je-conversation=15834e15-ba21-4926-b752-d3865e2de527; expires=Sun, 19 Mar 2073 15:35:48 GMT; path=/ je-auser=5961944d-1ccf-4a5d-83d4-1abb6356d626; expires=Tue, 04-Feb-2070 23:59:59 GMT; path=/; SameSite=None; Secure __cf_bm=c3MdOdGKPKBLGyVV64WRVMkL7m1zP8.YioZ.Zr2KaSc-1679240148-0-AUUxFhsZCPPe+g5tNZ6DyNaX32HRefd9KdZvi9IR4YL0TtgSrrLpNSd92nl+nwAdmwR3nBsX+Ok7m3ZDMMh23+U=; path=/; expires=Sun, 19-Mar-23 16:05:48 GMT; domain=.just-eat.co.uk; HttpOnly; Secure; SameSite=None
+Cf-Cache-Status: DYNAMIC
+Strict-Transport-Security: max-age=0
+Server: cloudflare
+X-Server-Name: smartgateway_server_1
+Content-Type: text/html; charset=utf-8
+Ratelimit-Reset: 1
+X-Frame-Options: SAMEORIGIN
+X-Je-Conversation: 2ef6c44a-58d9-46bb-8de4-fde53657229c
+Retry-Count: 0
+X-Ratelimit-Remaining-Second: 9
+Ratelimit-Limit: 10
+Vary: Accept-Encoding
+Cf-Ray: 7aa6c98d685e06d4-AMS
+Date: Sun, 19 Mar 2023 15:35:48 GMT

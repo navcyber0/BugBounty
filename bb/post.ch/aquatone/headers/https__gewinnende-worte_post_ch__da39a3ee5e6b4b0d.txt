@@ -1,0 +1,13 @@
+200 OK
+Content-Type: text/html
+Date: Fri, 23 Jun 2023 15:23:45 GMT
+Server: Apache
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Retry-Count: 0
+Last-Modified: Mon, 25 Mar 2019 20:28:29 GMT
+Content-Length: 3951
+Strict-Transport-Security: max-age=31536000
+Pragma: no-cache
+Expires: Wed, 11 Jan 1984 05:00:00 GMT

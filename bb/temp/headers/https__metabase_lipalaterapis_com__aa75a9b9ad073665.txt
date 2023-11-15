@@ -1,0 +1,15 @@
+403 Forbidden
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://accounts.google.com    'sha256-K2AkR/jTLsGV8PyzWha7/ey1iaD9c5jWRYwa++ZlMZc=' 'sha256-ib2/2v5zC6gGM6Ety7iYgBUvpy/caRX9xV/pzzV7hf0=' 'sha256-isH538cVBUY8IMlGYGbWtBwr+cGqkc4mN6nLcA7lUjE='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline' https://accounts.google.com; font-src *; img-src * 'self' data:; connect-src 'self' https://accounts.google.com metabase.us10.list-manage.com   ; manifest-src 'self';  frame-ancestors 'none';
+Content-Type: text/plain
+Last-Modified: Sat, 1 Apr 2023 21:37:37 GMT
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Date: Sat, 01 Apr 2023 21:37:37 GMT
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: metabase.DEVICE=ad8874e7-6f53-433a-b416-d948e959883f;HttpOnly;Path=/;Expires=Wed, 1 Apr 2043 21:37:37 GMT;SameSite=None;Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+Server: Jetty(9.4.48.v20220622)

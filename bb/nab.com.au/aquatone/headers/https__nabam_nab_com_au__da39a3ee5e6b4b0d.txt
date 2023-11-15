@@ -1,0 +1,19 @@
+200 OK
+Accept-Ranges: bytes
+Date: Thu, 30 Mar 2023 07:35:20 GMT
+Strict-Transport-Security: max-age=31536000
+Retry-Count: 0
+Vary: Accept-Encoding
+Content-Security-Policy: frame-ancestors 'self'
+Last-Modified: Thu, 30 Mar 2023 04:16:29 GMT
+X-Vhost: publish-mlcam
+Content-Type: text/html;charset=utf-8
+X-Timer: S1680157943.692890,VS0,VS0,VE126
+Cache-Control: max-age=300
+Expires: Thu, 30 Mar 2023 07:40:20 GMT
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Etag: "10e5d-5f8165b63f50c-gzip"
+X-Served-By: cache-hkg17931-HKG
+X-Frame-Options: SAMEORIGIN
+Access-Control-Allow-Origin: *

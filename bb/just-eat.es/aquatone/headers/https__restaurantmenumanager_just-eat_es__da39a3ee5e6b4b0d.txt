@@ -1,0 +1,17 @@
+200 OK
+Date: Mon, 20 Mar 2023 09:40:56 GMT
+Content-Type: text/html
+Via: 1.1 d0fd84edde50ec44c2c9adee7d3cf8fc.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: F_mZRFspsEkFiWGctK6FI4zda3AzorPkiozuLadiCVrnQoXGEQO2cA==
+Cf-Ray: 7aacff16c88752da-CCU
+Strict-Transport-Security: max-age=0
+Retry-Count: 0
+Server: cloudflare
+X-Amz-Server-Side-Encryption: AES256
+Cache-Control: max-age=300
+X-Amz-Cf-Pop: BOM78-P2
+Cf-Cache-Status: DYNAMIC
+Set-Cookie: __cf_bm=d5i9kTpLPEYv8x1GEUTI97ziZi2ajFFv59JKxjMVJSo-1679305256-0-AZqXnX8dNhc0bBl4U6Ubglfzlx+yiMtsG/MFuzVGQCjgCzjod/n764Hg/8cCLMwNsSHaSonPPfV5Ms7P7kYJbGc=; path=/; expires=Mon, 20-Mar-23 10:10:56 GMT; domain=.just-eat.es; HttpOnly; Secure; SameSite=None
+Last-Modified: Mon, 13 Mar 2023 11:32:00 GMT
+Vary: Accept-Encoding
+X-Cache: RefreshHit from cloudfront

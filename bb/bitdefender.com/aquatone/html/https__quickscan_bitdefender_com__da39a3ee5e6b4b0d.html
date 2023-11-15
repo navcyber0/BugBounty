@@ -1,0 +1,1977 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <title>Bitdefender Safety Check - Free Vulnerability Scanner</title>
+  <meta name="description" content="Bitdefender Safety Check is a free vulnerability scanner that works smoothly alongside any security solution to make sure you are really safe."/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PLJJB3');</script>
+  <!-- End Google Tag Manager -->
+  
+  <style>
+    @font-face {
+      font-family: "roboto";
+      src: url("/content/dam/bitdefender/font/roboto/roboto-300.woff2") format("woff2"), url("/content/dam/bitdefender/font/roboto/roboto-300.woff") format("woff"), url("/content/dam/bitdefender/font/roboto/roboto-300.otf") format("opentype");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 300;
+      font-stretch: normal;
+    }
+  
+    @font-face {
+      font-family: "roboto";
+      src: url("/content/dam/bitdefender/font/roboto/roboto-500.woff2") format("woff2"), url("/content/dam/bitdefender/font/roboto/roboto-500.woff") format("woff"), url("/content/dam/bitdefender/font/roboto/roboto-500.otf") format("opentype");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 500;
+      font-stretch: normal;
+    }
+  
+    @font-face {
+      font-family: "roboto";
+      src: url("/content/dam/bitdefender/font/roboto/roboto-400.woff2") format("woff2"), url("/content/dam/bitdefender/font/roboto/roboto-400.woff") format("woff"), url("/content/dam/bitdefender/font/roboto/roboto-400.otf") format("opentype");
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      font-stretch: normal;
+    }
+  </style>
+  
+
+  
+
+<link rel="alternate" hreflang="x-default" href="https://www.bitdefender.com/solutions/safety-check.html"/>
+<link rel="alternate" hreflang="de" href="https://www.bitdefender.de/solutions/safety-check.html"/>
+<link rel="alternate" hreflang="en" href="https://www.bitdefender.com/solutions/safety-check.html"/>
+<link rel="alternate" hreflang="nl" href="https://www.bitdefender.nl/solutions/safety-check.html"/>
+
+
+
+
+<link rel="canonical" href="https://www.bitdefender.com/solutions/safety-check.html"/>
+
+
+	
+
+
+
+
+<meta name="keywords" content="vulnerability scanner"/>
+
+
+
+
+
+
+	<meta property="og:locale" content="en"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Bitdefender Safety Check"/>
+	<meta property="og:description" content="Bitdefender Safety Check is a free vulnerability scanner that works smoothly alongside any security solution to make sure you are really safe."/>
+	<meta property="og:site_name" content="Bitdefender"/>
+	<meta property="og:url" content="https://www.bitdefender.com/solutions/safety-check.html"/>
+	<meta name="twitter:title" content="Bitdefender Safety Check"/>
+	<meta name="twitter:description" content="Bitdefender Safety Check is a free vulnerability scanner that works smoothly alongside any security solution to make sure you are really safe."/>
+	<meta name="twitter:creator" content="@Bitdefender"/>
+	<meta name="twitter:site" content="https://www.bitdefender.com/solutions/safety-check.html"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta property="og:image:width" content="1200"/>
+	<meta property="og:image:height" content="630"/>
+	<meta property="og:image:alt" content="Bitdefender Safety Check"/>
+	<meta property="title" content="Bitdefender Safety Check"/>
+	<meta property="description" content="Bitdefender Safety Check is a free vulnerability scanner that works smoothly alongside any security solution to make sure you are really safe."/>
+
+
+
+	<meta property="og:image" content="/content/dam/bitdefender/splitter-homepage/Generic.jpg"/>
+	<meta property="og:image:secure_url" content="/content/dam/bitdefender/splitter-homepage/Generic.jpg"/>
+	<meta name="twitter:image" content="/content/dam/bitdefender/splitter-homepage/Generic.jpg"/>
+
+
+
+
+  <link rel="shortcut icon" href="/content/dam/bitdefender/favicon/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="/content/dam/bitdefender/favicon/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" sizes="57x57" href="/content/dam/bitdefender/favicon/apple-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="60x60" href="/content/dam/bitdefender/favicon/apple-icon-60x60.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="/content/dam/bitdefender/favicon/apple-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="/content/dam/bitdefender/favicon/apple-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="/content/dam/bitdefender/favicon/apple-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="/content/dam/bitdefender/favicon/apple-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="/content/dam/bitdefender/favicon/apple-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="/content/dam/bitdefender/favicon/apple-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/content/dam/bitdefender/favicon/apple-icon-180x180.png"/>
+<link rel="icon" type="image/png" sizes="192x192" href="/content/dam/bitdefender/favicon/android-icon-192x192.png"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/content/dam/bitdefender/favicon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="96x96" href="/content/dam/bitdefender/favicon/favicon-96x96.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/content/dam/bitdefender/favicon/favicon-16x16.png"/>
+<link rel="manifest" href="/content/dam/bitdefender/favicon/manifest.json"/>
+<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+<meta name="msapplication-TileColor" content="#ffffff"/>
+<meta name="msapplication-TileImage" content="/content/dam/bitdefender/favicon/ms-icon-144x144.png"/>
+<meta name="theme-color" content="#ffffff"/>
+
+  <!-- Styles injected by Dynamic Product Compare Styles Injector -->
+  
+    
+
+
+  
+
+  
+    
+    
+
+    
+
+    
+
+
+
+    
+
+
+        <script type="text/javascript" src="//assets.adobedtm.com/8a93f8486ba4/5492896ad67e/launch-b1f76be4d2ee.min.js" async></script>
+
+
+    
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/bitdefender/clientlibs/clientlib-site.lc-bf03f500ef4626f01f4a5365d49b1c28-lc.min.css" type="text/css">
+
+
+
+    
+
+  
+</head>
+
+<body class="page-with-header-footer page basicpage" data-cmp-data-layer-enabled id="page-with-header-footer-12e14779a9" data-page-name="safety-check">
+  
+
+    
+        <input id="tracking-footer-data-layer" type="hidden" data-layer-domain="bitdefender.com" data-layer-pagename="us:solutions:safety-check" data-layer-section="us" data-layer-subsection="solutions" data-layer-subsubsection="safety-check" data-layer-subsubsubsection="safety-check" data-layer-pageinstanceid="production" data-layer-language="en" data-layer-date="23/03/2023" data-layer-domainperiod="2"/>
+    
+
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLJJB3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  
+    <input type="hidden" id="country" name="country" value="us" data-country="us"/>
+    <input type="hidden" id="language" name="language" value="en" data-lang="en" data-langName="En"/>
+    <input type="hidden" id="cookie_geolocation" name="cookie_geolocation" value=""/>
+    
+  
+  
+  
+    
+    <div class="xfpage page basicpage">
+
+
+    
+    <div id="container-1322891920" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="homepage-navigation-v2 aem-GridColumn aem-GridColumn--default--12"><header class="main-header white-text-logo dex">
+  
+  <div class="content-wrap">
+    <div class="we-container">
+        <div class="logo">
+            <a onclick="s_objectID='Bitdefender Logo';" href="#">
+                <img src="/content/dam/bitdefender/black_company_logo.svg" alt="Bitdefender Cybersecurity"/>
+            </a>
+        </div>
+        <div class="search-box">
+            <form id="searchform" action="/search.html">
+                <input type="hidden" name="start" value="10" id="start"/>
+                <label for="search">search</label>
+                <input id="search" type="search" name="q" class="search-input" required="" placeholder="Search bitdefender.com"/>
+                <button type="submit" id="static-submit" class="search-btn">
+                    <img src="/content/dam/bitdefender/search_icon_black.svg" alt="Search icon"/>
+                </button>
+                <button class="input-remove-btn">
+                    <img src="/content/dam/bitdefender/close_black_icon.svg" alt="close"/>
+                </button>
+            </form>
+        </div>
+        <button class="close">
+            <img src="/content/dam/bitdefender/close_black_icon.svg" alt="Close"/>
+        </button>
+    </div>
+</div>
+
+  
+  <div id="Main Menu|Top Links" class="utility">
+  <div class="we-container">
+    
+      
+    
+      
+        <ul class="left">
+          
+            <li>
+              <a onclick="s_objectID='For Home';" class="active" href="/solutions/">For Home</a>
+            </li>
+          
+            <li>
+              <a onclick="s_objectID='For Business';" href="/business/">For Business</a>
+            </li>
+          
+            <li>
+              <a onclick="s_objectID='For Partner';" href="/partners/">For Partners</a>
+            </li>
+          
+        </ul>
+      
+    
+      
+    
+      
+    
+      
+    
+
+    <ul class="right">
+      <li class="search-icon">
+        <a href="#">
+          <img src="/content/dam/bitdefender/search_icon.svg" alt="Search icon"/>
+        </a>
+      </li>
+
+      
+        
+          
+            <li>
+              
+              
+                
+                  <a onclick="s_objectID='Company Link';" data-link="/company/" href="/company/">Company</a>
+                
+                
+               
+              
+            </li>
+          
+            <li>
+              
+              
+                
+                  <a onclick="s_objectID='Blog Link';" data-link="/blog/" href="/blog/">Blog</a>
+                
+                
+               
+              
+            </li>
+          
+            <li>
+              
+              
+                
+                  <a onclick="s_objectID='Support Link';" data-link="#" href="#">Support</a>
+                
+                
+               
+              <div class="sub-menu">
+                <div class="btn-outer">
+                  <span class="h5">How can we help</span>
+                  
+                    
+                      <div class="btn-wrap">
+                        
+                          <a class="we-btn-blue-border" href="/consumer/support/" data-link="/consumer/support/" onclick="s_objectID='Support for Home Products';"><span>Support for Home Products</span></a>
+                        
+                          <a class="we-btn-blue-border" href="https://www.bitdefender.com/business/support/?lang=en" data-link="https://www.bitdefender.com/business/support/?lang=en" onclick="s_objectID='Support for Business Products';"><span>Support for Business Products</span></a>
+                        
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            </li>
+          
+            <li>
+              
+              
+                
+                  <a onclick="s_objectID='Login Link';">LOGIN</a>
+                
+                
+               
+              <div id="Main Menu|Utility|Login" class="sub-menu">
+                <div class="btn-outer">
+                  <span class="h5">Your account</span>
+                  
+                    
+                      <div class="btn-wrap">
+                        
+                          <a class="we-btn-blue-border" href="https://login.bitdefender.com/central/login.html?lang=en_US&redirect_url=https:%2F%2Fcentral.bitdefender.com%2F" data-link="https://login.bitdefender.com/central/login.html?lang=en_US&amp;redirect_url=https:%2F%2Fcentral.bitdefender.com%2F" onclick="s_objectID='Bitdefender Central';"><span>Bitdefender Central</span></a>
+                        
+                          <a class="we-btn-blue-border" href="https://gravityzone.bitdefender.com/" data-link="https://gravityzone.bitdefender.com/" onclick="s_objectID='GravityZone CLOUD Control Center';"><span>GravityZone CLOUD Control Center</span></a>
+                        
+                          <a class="we-btn-blue-border" href="https://auth.mdr.bitdefender.com/login" data-link="https://auth.mdr.bitdefender.com/login" onclick="s_objectID='MDR Portal';"><span>MDR Portal</span></a>
+                        
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            </li>
+          
+            <li>
+              
+              
+                
+                  <a>EN</a>
+                
+                
+               
+              
+            </li>
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</div>
+
+  <div id="Main Menu" class="menu">
+    <div class="we-container">
+      
+      <div class="humberger-wrap">
+    <div class="humberger">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+    </div>
+</div>
+<div id="Main Menu|Logo Container" class="logo">
+    <a onclick="s_objectID='Bitdefender Logo';" href="/">
+        <img class="white-logo" src="/content/dam/bitdefender/splitter-homepage/white_company_logo.svg" alt="Bitdefender Cybersecurity"/>
+        <img class="black-logo" src="/content/dam/bitdefender/splitter-homepage/black_company_logo.svg" alt="Bitdefender Cybersecurity"/>
+    </a>
+</div>
+
+      <nav>
+        <ul class="h-100">
+          <li class="inner-menu mega-menu-v2__inner-menu h-100">
+  <a onclick="s_objectID='Home Solutions';" class="mega-menu-v2__main-link" href="#">Home Solutions</a>
+  <div id="Main Menu|Home Solutions" class="mega-menu mega-menu-v2">
+    <div class="mega-menu-v2__row">
+      <div class="mega-menu-v2__col mega-menu-v2__col--w-100">
+        <span class="mega-menu-v2__group-title mega-menu-v2--open-submenu" data-openSubmenu="submenu-featured">All-in-One Plans</span>
+        
+      </div>
+    </div>
+    
+      
+
+      
+
+      
+
+      
+    
+      
+
+      
+
+      
+
+      
+    
+      <div id="Main Menu|Home Solutions|All-in-One Plans" class="mega-menu-v2__row mega-menu-v2__submenu submenu-featured">
+        
+          <div class="mega-menu-v2__col">
+            <a class="mega-menu-v2__link" data-link="/solutions/ultimate-security.html" href="/solutions/ultimate-security.html" onclick="s_objectID='Ultimate Security';">
+              <span class="mega-menu-v2__title mega-menu-v2__title--featured">
+                Ultimate Security
+                <span class="pill pill--new">new</span>
+                
+              </span>
+              <span class="mega-menu-v2__icons-wrap mega-menu-v2__hide-mobile">
+                <img class="mega-menu-v2__icon mega-menu-v2__icon--windows lazyload" width="12" src="/content/dam/bitdefender/xsmall-windows-icon.svg" alt="windows icon"/>
+              
+                <img class="mega-menu-v2__icon mega-menu-v2__icon--mac lazyload" width="12" src="/content/dam/bitdefender/xsmall-mac-icon.svg" alt="mac icon"/>
+              
+                <img class="mega-menu-v2__icon mega-menu-v2__icon--android lazyload" width="12" src="/content/dam/bitdefender/xsmall-android-icon.svg" alt="android icon"/>
+              
+                <img class="mega-menu-v2__icon mega-menu-v2__icon--ios lazyload" width="12" src="/content/dam/bitdefender/xsmall-ios-icon.svg" alt="ios icon"/>
+              </span>
+              <span class="mega-menu-v2__description mega-menu-v2__hide-mobile">Device security, unlimited VPN, Password Manager and Identity Theft Protection</span>
+            </a>
+          </div>
+        
+          <div class="mega-menu-v2__col">
+            <a class="mega-menu-v2__link" data-link="/solutions/premium-security.html" href="/solutions/premium-security.html" onclick="s_objectID='Premium Security';">
+              <span class="mega-menu-v2__title mega-menu-v2__title--featured">
+                Premium Security
+                
+                <span class="pill pill--evolved">evolved</span>
+              </span>
+              <span class="mega-menu-v2__icons-wrap mega-menu-v2__hide-mobile">
+                <img class="mega-menu-v2__icon mega-menu-v2__icon--windows lazyload" width="12" src="/content/dam/bitdefender/xsmall-windows-icon.svg" alt="windows icon"/>
+              
+                <img class="mega-menu-v2__icon mega-menu-v2__icon--mac lazyload" width="12" src="/content/dam/bitdefender/xsmall-mac-icon.svg" alt="mac icon"/>
+              
+                <img class="mega-menu-v2__icon mega-menu-v2__icon--android lazyload" width="12" src="/content/dam/bitdefender/xsmall-android-icon.svg" alt="android icon"/>
+              
+                <img class="mega-menu-v2__icon mega-menu-v2__icon--ios lazyload" width="12" src="/content/dam/bitdefender/xsmall-ios-icon.svg" alt="ios icon"/>
+              </span>
+              <span class="mega-menu-v2__description mega-menu-v2__hide-mobile">Device security, unlimited VPN and Password Manager</span>
+            </a>
+          </div>
+        
+      </div>
+
+      
+
+      
+
+      
+    
+      
+
+      
+        <hr class="mega-menu-v2__separator mega-menu-v2__hide-mobile"/>
+        <div class="mega-menu-v2__row">
+          <!-- Left -->
+          <div class="mega-menu-v2__col">
+            
+    <div id="Main Menu|Home Solutions|Device Security" class="mega-menu-v2__group">
+        <span class="mega-menu-v2__group-title mega-menu-v2--open-submenu" data-openSubmenu="submenu-item0">Device Security</span>
+        <a class="mega-menu-v2__link mega-menu-v2__link--group-title mega-menu-v2__hide-mobile" data-link="/solutions/antivirus-comparison.html" href="/solutions/antivirus-comparison.html">Compare</a>
+        <div class="mega-menu-v2__submenu mega-menu-v2__submenu submenu-item0">
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/total-security.html" href="/solutions/total-security.html" onclick="s_objectID='Total Security';">
+                    <span class="mega-menu-v2__title">
+                        Total Security
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/internet-security.html" href="/solutions/internet-security.html" onclick="s_objectID='Internet Security';">
+                    <span class="mega-menu-v2__title">
+                        Internet Security
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/antivirus.html" href="/solutions/antivirus.html" onclick="s_objectID='Antivirus Plus';">
+                    <span class="mega-menu-v2__title">
+                        Antivirus Plus
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/antivirus-for-mac.html" href="/solutions/antivirus-for-mac.html" onclick="s_objectID='Antivirus for Mac';">
+                    <span class="mega-menu-v2__title">
+                        Antivirus for Mac
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/mobile-security-android.html" href="/solutions/mobile-security-android.html" onclick="s_objectID='Mobile Security for Android';">
+                    <span class="mega-menu-v2__title">
+                        Mobile Security for Android
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/mobile-security-ios.html" href="/solutions/mobile-security-ios.html" onclick="s_objectID='Mobile Security for iOS';">
+                    <span class="mega-menu-v2__title">
+                        Mobile Security for iOS
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/family-pack.html" href="/solutions/family-pack.html" onclick="s_objectID='Family Pack';">
+                    <span class="mega-menu-v2__title">
+                        Family Pack
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/small-office-security.html" href="/solutions/small-office-security.html" onclick="s_objectID='Small Office Security';">
+                    <span class="mega-menu-v2__title">
+                        Small Office Security
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+          
+            
+          
+            
+          
+            
+          
+            
+          </div>
+
+          <!-- Center -->
+          <div class="mega-menu-v2__col">
+            
+          
+            
+    <div id="Main Menu|Home Solutions|Privacy" class="mega-menu-v2__group">
+        <span class="mega-menu-v2__group-title mega-menu-v2--open-submenu" data-openSubmenu="submenu-item1">Privacy</span>
+        
+        <div class="mega-menu-v2__submenu mega-menu-v2__submenu submenu-item1">
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/vpn.html" href="/solutions/vpn.html" onclick="s_objectID='Premium VPN';">
+                    <span class="mega-menu-v2__title">
+                        Premium VPN
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/password-manager.html" href="/solutions/password-manager.html" onclick="s_objectID='Password Manager';">
+                    <span class="mega-menu-v2__title">
+                        Password Manager
+                        <span class="pill pill--new">new</span>
+                        
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+          
+            
+    <div id="Main Menu|Home Solutions|Identity Protection" class="mega-menu-v2__group">
+        <span class="mega-menu-v2__group-title mega-menu-v2--open-submenu" data-openSubmenu="submenu-item2">Identity Protection</span>
+        
+        <div class="mega-menu-v2__submenu mega-menu-v2__submenu submenu-item2">
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/digital-identity-protection.html" href="/solutions/digital-identity-protection.html" onclick="s_objectID='Digital Identity Protection';">
+                    <span class="mega-menu-v2__title">
+                        Digital Identity Protection
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/identity-theft-protection.html" href="/solutions/identity-theft-protection.html" onclick="s_objectID='Identity Theft Protection';">
+                    <span class="mega-menu-v2__title">
+                        Identity Theft Protection
+                        <span class="pill pill--new">new</span>
+                        
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+          
+            
+          
+            
+          </div>
+
+          <!-- Right -->
+          <div class="mega-menu-v2__col">
+            
+          
+            
+          
+            
+          
+            
+    <div id="Main Menu|Home Solutions|Try Bitdefender" class="mega-menu-v2__group">
+        <span class="mega-menu-v2__group-title mega-menu-v2--open-submenu" data-openSubmenu="submenu-item3">Try Bitdefender</span>
+        
+        <div class="mega-menu-v2__submenu mega-menu-v2__submenu submenu-item3">
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/free.html" href="/solutions/free.html" onclick="s_objectID='Antivirus Free';">
+                    <span class="mega-menu-v2__title">
+                        Antivirus Free
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/solutions/antivirus-free-for-android.html" href="/solutions/antivirus-free-for-android.html" onclick="s_objectID='Antivirus Free for Android';">
+                    <span class="mega-menu-v2__title">
+                        Antivirus Free for Android
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+          
+            
+    <div id="Main Menu|Home Solutions|Existing Customers" class="mega-menu-v2__group">
+        <span class="mega-menu-v2__group-title mega-menu-v2--open-submenu" data-openSubmenu="submenu-item4">Existing customers</span>
+        
+        <div class="mega-menu-v2__submenu mega-menu-v2__submenu submenu-item4">
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/renewal/" href="/renewal/" onclick="s_objectID='Renew';">
+                    <span class="mega-menu-v2__title">
+                        Renew
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        
+            <div>
+                <a class="mega-menu-v2__link mega-menu-v2__link--item" data-link="/consumer/support/" href="/consumer/support/" onclick="s_objectID='Support';">
+                    <span class="mega-menu-v2__title">
+                        Support
+                        
+                        
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+          </div>
+        </div>
+      
+
+      
+
+      
+    
+      
+
+      
+
+      
+        
+        <div class="mega-menu-v2__row mega-menu-v2__footer mega-menu-v2__submenu submenu-footer">
+          <div class="mega-menu-v2__col mega-menu-v2__col--w-auto">
+            <a class="mega-menu-v2__link " data-link="/premium-services/" href="/premium-services/" onclick="s_objectID='Premium Services';">
+              Premium Services
+            </a>
+          
+            <a class="mega-menu-v2__link " data-link="/smart-home/" href="/smart-home/" onclick="s_objectID='Smart Home Cybersecurity';">
+              Smart Home Cybersecurity
+            </a>
+          
+            <a class="mega-menu-v2__link " data-link="https://www.bitdefender.com/cyberpedia/" href="https://www.bitdefender.com/cyberpedia/" onclick="s_objectID='Cyberpedia';">
+              Cyberpedia
+            </a>
+          
+            
+          
+            
+          
+            
+          </div>
+          <div class="mega-menu-v2__col mega-menu-v2__col--w-auto mega-menu-v2__col--align-right">
+            
+          
+            
+          
+            
+          
+            <a class="mega-menu-v2__link" data-link="/toolbox/" href="/toolbox/">
+              Free Tools
+            </a>
+          
+            <a class="mega-menu-v2__link" data-link="/Downloads/" href="/Downloads/">
+              Trial Downloads
+            </a>
+          
+            <a class="mega-menu-v2__link" data-link="https://community.bitdefender.com/en/" href="https://community.bitdefender.com/en/">
+              Join our community
+            </a>
+          </div>
+        </div>
+      
+
+      
+    
+  </div>
+</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+
+    
+<div class="root container responsivegrid">
+
+    
+    
+    
+    <div id="container-e9972d9361" class="cmp-container">
+        
+        <div class="container responsivegrid">
+
+    
+    <div id="container-8b8f22e9c3" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="banner-with-pricing aem-GridColumn aem-GridColumn--default--12">
+<div class="banner-with-pricing bd-root no-padding-top">
+  <div id="datalayer-hidden-val">
+    <input type="hidden" name="productId" id="productId"/>
+    <input type="hidden" value="$" name="product-currency-symbol" id="product-currency-symbol"/>
+    <input type="hidden" value="true" name="card-visibility" id="card-visibility"/>
+    <input type="hidden" value="consumer" name="producttype" class="producttype"/>
+  </div>
+  <section class="paid-product-banner cart-option-2 ">
+    
+      <div class="we-datalayer" data-cmp-data-layer="{&#34;banner-with-pricing-187565233&#34;:{&#34;@type&#34;:&#34;bitdefender/components/banner-with-pricing&#34;,&#34;@id&#34;:&#34;banner-with-pricing-187565233&#34;,&#34;repo:modifyDate&#34;:&#34;2022-12-16T14:26:19Z&#34;,&#34;parentId&#34;:&#34;page-with-header-footer-894154458&#34;}}"></div>
+    
+    <div class="bg-img">
+      
+      <img class="lazyload" src="/content/dam/bitdefender/solutions/safety-check/sc_hero.jpg" alt="home scanner"/>
+    </div>
+    <div class="v-middle-wrapper">
+      <div class="v-middle-inner we-container">
+        <div class="v-middle">
+          <div class="column-wrapper">
+            
+              
+            
+              
+            
+              
+                <div class="breadcrumb hover-black">
+                  
+                    <a href="/">Home</a>
+                    
+                      <a href="/solutions/">Solutions</a>
+                      
+                    
+                      <a href="/solutions/safety-check.html">Bitdefender Safety Check</a>
+                      
+                    
+                  
+                </div>
+              
+            
+
+            
+            <div class="text-wrap">
+              <div class="content-wrap">
+                <h1 class="wow fadeInUp">
+                  Bitdefender Safety Check
+                </h1>
+                <span class="wow fadeInUp" data-wow-delay="0.2s">
+                  Protection for
+                </span>
+                <div class="icons-wrap">
+                  
+                    
+                      <span class="icon-wrapper">
+                        Windows
+                      </span>
+                    
+                  
+                </div>
+              </div>
+              
+               <h4><b>The Second Opinion Scanner ✔✔</b><br />
+</h4>
+<p><b>Here&#39;s why you need a second opinion scanner:</b></p>
+<p>Bitdefender Safety Check is a free vulnerability scanner that works smoothly</p>
+<p>alongside any security solution to make sure you are really safe.</p>
+<p> </p>
+
+              <input type="hidden" id="nonproductdiscounst"/>
+              <!-- <sly data-sly-use.cards="com.bitdefender.core.models.CardsResourceModel"> -->
+              <div class="btn-wrap">
+                
+                  
+                  
+                    <a class="wow fadeInUp we-btn-red service-overlay-btn banner-with-pricing-free-trial-button" href="https://download.bitdefender.com/safetycheck/windows/rise/setup.exe" data-click-event="product downloaded" data-product-id="8431"><span>FREE DOWNLOAD</span></a>
+                  
+                
+                
+              </div>
+              <!-- </sly> -->
+               <ul><li>No worries. Keep your guard up</li><li>No lag. Has close to zero system impact</li><li>No costs. <i>It’s completely FREE</i></li></ul>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <input type="hidden" class="exposed-popup-cta-url"/>
+</div>
+
+<!-- Download pop-up -->
+
+  <section class="service-overlay">
+    <div class="search-overlay">
+      <div class="content-outer">
+        <div class="content-wrap">
+          <div class="inner-box">
+            <h3>Thank you for downloading Bitdefender Safety Check</h3>
+            
+            <h4>Get Started with Bitdefender in 2 easy steps:</h4>
+            <div class="column-wrapper we-row disconnected-entries">
+
+              <div class="we-col-two separator">
+                <div class="bg-img">
+                  <img src="/content/dam/bitdefender/consumers/solutions/images/Bitdefender%20Safety%20Check.png"/>
+                </div>
+                <span>1. Double-click the downloaded Bitdefender file and the installer will start immediately.</span>
+              </div>
+
+              <div class="we-col-two separator">
+                <div class="bg-img">
+                  <img src="/content/dam/bitdefender/consumers/solutions/images/Main%20UI%20(1).png"/>
+                </div>
+                <span>2. Enjoy the peace of mind of having a second opinion solution coming from Bitdefender.</span>
+              </div>
+            </div>
+          </div>
+          <div class="close"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Web scan pop-up -->
+</div>
+<div class="col-with-img aem-GridColumn aem-GridColumn--default--12">
+
+
+<section class="two-col-with-image no-padding-bottom">
+  
+    <div class="we-datalayer" data-cmp-data-layer="{&#34;col-with-img-933098934&#34;:{&#34;@type&#34;:&#34;bitdefender/components/col-with-img&#34;,&#34;@id&#34;:&#34;col-with-img-933098934&#34;,&#34;repo:modifyDate&#34;:&#34;2022-12-16T14:26:19Z&#34;,&#34;parentId&#34;:&#34;page-with-header-footer-894154458&#34;}}"></div>
+  
+  <div class="we-container">
+
+    
+    
+        
+
+          <div class="column-wrapper we-row we-flex-wrap we-align-items-start we-justify-content-left ">
+            <div class="img-wrap">
+              <div class="bg-img">
+                <img src="/content/dam/bitdefender/solutions/safety-check/solution_test.jpg"/>
+              </div>
+              
+            </div>
+
+            <div class="text-wrap">
+              
+              
+                
+                  <h3 class="default"></h3>
+                
+                
+              
+              <h3>Dare to test your security solution?</h3>
+<p>Count on us to watch your back. Get notified if threats slipped by your current defenses. Bitdefender Safety Check doesn’t hog resources and it works beside any security solution currently installed.</p>
+
+              
+                
+              
+            </div>
+          </div>
+        
+    
+    <input type="hidden" class="exposed-popup-cta-label"/>
+    <input type="hidden" class="exposed-popup-cta-url"/>
+  </div>
+</section>
+
+<!-- Web scan pop-up -->
+</div>
+<div class="col-with-img aem-GridColumn aem-GridColumn--default--12">
+
+
+<section class="two-col-with-image default-padding">
+  
+    <div class="we-datalayer" data-cmp-data-layer="{&#34;col-with-img-148390685&#34;:{&#34;@type&#34;:&#34;bitdefender/components/col-with-img&#34;,&#34;@id&#34;:&#34;col-with-img-148390685&#34;,&#34;repo:modifyDate&#34;:&#34;2022-12-16T14:26:19Z&#34;,&#34;parentId&#34;:&#34;page-with-header-footer-894154458&#34;}}"></div>
+  
+  <div class="we-container">
+
+    
+    
+        
+
+          <div class="column-wrapper we-row we-flex-wrap we-align-items-start we-justify-content-left img-to-right">
+            <div class="img-wrap">
+              <div class="bg-img">
+                <img src="/content/dam/bitdefender/solutions/safety-check/Heavyweight.jpg" alt="Scan for intruders "/>
+              </div>
+              
+            </div>
+
+            <div class="text-wrap">
+              
+              
+                
+                  <h3 class="h2"></h3>
+                
+                
+              
+              <h3><b>Heavyweight detection, featherweight footprint</b></h3>
+<p><b>Lightning-fast scanning?</b> <i>Checked</i>.</p>
+<p><b>Instant alerts?</b> <i>Checked</i>.</p>
+<p><b>Seamless updates?</b> <i>You bet.</i></p>
+<p>Take advantage of the award-winning scanning technologies with the same lightning-fast speed you have come to expect from Bitdefender. No downside: this extra level of peace of mind comes with a feather-light touch. </p>
+<p>Potential threats are evaluated online against databases that are updated every second, around the clock.</p>
+
+              
+                
+              
+            </div>
+          </div>
+        
+    
+    <input type="hidden" class="exposed-popup-cta-label"/>
+    <input type="hidden" class="exposed-popup-cta-url"/>
+  </div>
+</section>
+
+<!-- Web scan pop-up -->
+</div>
+<div class="quote-with-logo aem-GridColumn aem-GridColumn--default--12">
+
+<section class="logo-with-video no-padding-top" id="awards">
+  <div class="outer bg-light-sky-blue">
+    
+      <div class="we-datalayer" data-cmp-data-layer="{&#34;quote-with-logo-254282658&#34;:{&#34;@type&#34;:&#34;bitdefender/components/quote-with-logo&#34;,&#34;@id&#34;:&#34;quote-with-logo-254282658&#34;,&#34;repo:modifyDate&#34;:&#34;2022-12-16T14:26:19Z&#34;,&#34;parentId&#34;:&#34;page-with-header-footer-894154458&#34;}}"></div>
+    
+    <div class="we-container">
+      
+      
+        <div class="column-wrapper we-row we-flex-wrap we-justify-content-center">
+          <div class="we-col-three">
+            
+              <div class="img-wrap ">
+                
+                <img src="/content/dam/bitdefender/consumers/solutions/bitdefender-premium-security/editors-choice-h_2x.png" class="lazyload" alt="Pc-editors-choice"/>
+              </div>
+            
+            <div class="text-wrap">
+              
+                <span class="quote"> <p><i>“PCMag Editor&#39;s Choice”</i></p>
+ </span>
+              
+              
+                
+                
+                  <span class="description">PCMag December 2021</span>
+                
+                
+                  
+
+
+
+
+
+
+                
+              
+            </div>
+          </div>
+        
+          <div class="we-col-three">
+            
+              <div class="img-wrap ">
+                
+                <img src="/content/dam/bitdefender/consumer-awards/AV_comparatives_2021_osp_200x50.png" class="lazyload" alt="Av-comparatives"/>
+              </div>
+            
+            <div class="text-wrap">
+              
+                <span class="quote"> <p><i>“Outstanding Security Product”</i></p>
+ </span>
+              
+              
+                
+                
+                  <span class="description">AV-Comparatives January 2022</span>
+                
+                
+                  
+
+
+
+
+
+
+                
+              
+            </div>
+          </div>
+        
+          <div class="we-col-three">
+            
+              <div class="img-wrap ">
+                
+                <img src="/content/dam/bitdefender/consumers/toolbox/techradar-5-star-2020.png" class="lazyload" alt="Tech-radar"/>
+              </div>
+            
+            <div class="text-wrap">
+              
+                <span class="quote"> <p><i>“TechRadar Editor&#39;s Choice”</i></p>
+ </span>
+              
+              
+                
+                
+                  <span class="description">TechRadar March 2022</span>
+                
+                
+                  
+
+
+
+
+
+
+                
+              
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+</div>
+<div class="col-two-media aem-GridColumn aem-GridColumn--default--12">
+
+  <section class="full-bg-with-video default-padding">
+  <div class="bg-img">
+    <img class="lazyload" data-src="/content/dam/bitdefender/solutions/safety-check/sc_new.jpg" alt="Bitdefender Home Scanner"/>
+  </div>
+  <div class="v-middle-wrapper">
+    <div class="v-middle-inner we-container">
+      <div class="v-middle">
+        <div class="col-outer we-justify-content-end img-left">
+          <div class="left-box">
+
+            
+              <h3 class="heading-3 wow fadeInUp default">Better Safe Than Sorry!</h3>
+            
+            
+            
+            <div class="paragraph wow fadeInUp"><p>Especially when using Internet-connected devices every day. <b>Our scanner alerts you if you are not 100% protected.</b></p>
+<p>Install Bitdefender Safety Check now! It&#39;s free and it will run in parallel with other security solutions with no slow-downs.</p>
+</div>
+            <div class="btn-wrap">
+              
+                <a class="we-btn-red  " href="https://download.bitdefender.com/safetycheck/windows/rise/setup.exe" data-click-event="product downloaded" data-product-id="8431"><span>FREE DOWNLOAD</span></a>
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Download pop-up -->
+
+  
+    <div class="we-datalayer" data-cmp-data-layer="{&#34;col-two-media-1946746257&#34;:{&#34;@type&#34;:&#34;bitdefender/components/col-two-media&#34;,&#34;@id&#34;:&#34;col-two-media-1946746257&#34;,&#34;repo:modifyDate&#34;:&#34;2022-12-16T14:26:19Z&#34;,&#34;parentId&#34;:&#34;page-with-header-footer-894154458&#34;}}"></div>
+  
+</div>
+<div class="col-with-img aem-GridColumn aem-GridColumn--default--12">
+
+
+<section class="two-col-with-image default-padding">
+  
+    <div class="we-datalayer" data-cmp-data-layer="{&#34;col-with-img-814709431&#34;:{&#34;@type&#34;:&#34;bitdefender/components/col-with-img&#34;,&#34;@id&#34;:&#34;col-with-img-814709431&#34;,&#34;repo:modifyDate&#34;:&#34;2022-12-16T14:26:20Z&#34;,&#34;parentId&#34;:&#34;page-with-header-footer-894154458&#34;}}"></div>
+  
+  <div class="we-container">
+
+    
+    
+        
+
+          <div class="column-wrapper we-row we-flex-wrap we-align-items-start we-justify-content-left img-to-right">
+            <div class="img-wrap">
+              <div class="bg-img">
+                <img src="/content/dam/bitdefender/solutions/safety-check/aware.jpg" alt="Scan for intruders "/>
+              </div>
+              
+            </div>
+
+            <div class="text-wrap">
+              
+              
+                
+                  <h3 class="h2"></h3>
+                
+                
+              
+              <h2>Stay aware. Always. </h2>
+<p>Now you can double-check your current security solution and take action if something goes wrong.<br />
+Patch any security flaws you might have had and enjoy the stellar level of detection Bitdefender has to offer.</p>
+<p><br />
+Did we mention it’s <b>FREE</b>?</p>
+
+              
+                
+              
+            </div>
+          </div>
+        
+    
+    <input type="hidden" class="exposed-popup-cta-label"/>
+    <input type="hidden" class="exposed-popup-cta-url"/>
+  </div>
+</section>
+
+<!-- Web scan pop-up -->
+</div>
+<div class="three-box-column aem-GridColumn aem-GridColumn--default--12">
+
+  <section class="col-three-block col-three-grid bg-white no-padding-top">
+  <div class="outer-wrapper">
+    <div class="we-container">
+      
+        <div class="intro-block with-link">
+          <div class="text-wrap wow fadeInUp">
+
+            
+            
+              <h2 class="wow fadeInUp default">Bitdefender Safety Check</h2>
+            
+            
+            
+            <h4><b>Extra Peace of Mind</b></h4>
+<p>Rest assured knowing that, if your primary antivirus solution failed, we will let you know something bad happened</p>
+
+          </div>
+
+        </div>
+
+      
+
+      <div class="column-wrapper we-row we-align-items-start we-flex-wrap we-justify-content-left wow fadeInUp">
+
+        <div class="we-col-three no-extra-padding ">
+          
+            <div class="icon-wrap wow"><img src="/content/dam/bitdefender/solutions/safety-check/up_running.svg"/></div>
+          
+          <div class="content-wrap wow fadeInUp">
+            
+              <div class="text-wrap">
+                
+                
+                
+                  
+                
+                
+                  <p><b>Up &amp; Running Instantly</b></p>
+<p>No sign-up required &amp; blazing fast installation process.<br />
+</p>
+<p> </p>
+
+                
+                
+              </div>
+            
+
+            
+          </div>
+        </div>
+      
+
+        <div class="we-col-three no-extra-padding ">
+          
+            <div class="icon-wrap wow"><img src="/content/dam/bitdefender/solutions/safety-check/no_impact.svg"/></div>
+          
+          <div class="content-wrap wow fadeInUp">
+            
+              <div class="text-wrap">
+                
+                
+                
+                  
+                
+                
+                  <p><b>Virtually No Impact on Resources</b></p>
+<p>Works seamlessly with your existing security solution.<br />
+</p>
+
+                
+                
+              </div>
+            
+
+            
+          </div>
+        </div>
+      
+
+        <div class="we-col-three no-extra-padding ">
+          
+            <div class="icon-wrap wow"><img src="/content/dam/bitdefender/solutions/safety-check/no_uninstall.svg"/></div>
+          
+          <div class="content-wrap wow fadeInUp">
+            
+              <div class="text-wrap">
+                
+                
+                
+                  
+                
+                
+                  <p><b>Hassle-free</b></p>
+<p>No need to uninstall your current security solution.<br />
+</p>
+
+                
+                
+              </div>
+            
+
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-wrap">
+        <a class="we-btn-red  " href="https://download.bitdefender.com/safetycheck/windows/rise/setup.exe" data-click-event="product downloaded" data-product-id="8431"><span>FREE DOWNLOAD</span></a>
+      </div>
+
+      
+
+      
+    </div>
+  </div>
+</section>
+
+<!-- Download pop-up -->
+
+  
+    <div class="we-datalayer" data-cmp-data-layer="{&#34;three-box-column-320003143&#34;:{&#34;@type&#34;:&#34;bitdefender/components/three-box-column&#34;,&#34;@id&#34;:&#34;three-box-column-320003143&#34;,&#34;repo:modifyDate&#34;:&#34;2022-12-16T14:26:20Z&#34;,&#34;parentId&#34;:&#34;page-with-header-footer-894154458&#34;}}"></div>
+  
+</div>
+<div class="product-tab aem-GridColumn aem-GridColumn--default--12">
+
+  <section class="system-requirement no-padding " id="system-requirements">
+  <div class="we-container">
+    
+      <div class="intro-block">
+        
+
+          
+            <h2 class="wow fadeInUp default">System Requirements</h2>
+          
+          
+          
+        
+        
+      </div>
+    
+    <div class="tab-buttons">
+      <span>Select</span>
+      <ul>
+        <li id="windows">Windows</li>
+        <li id="macos">macOS</li>
+        <li id="ios">iOS</li>
+        <li id="android">Android</li>
+        <li id="standard">Standard</li>
+        <li id="premium">Premium</li>
+      </ul>
+    </div>
+    
+      <div class="row-outer">
+        <div class="accordion-items" id="windows">
+          <h3 class="h4">Bitdefender SAFETY CHECK</h3>
+          <div class="panels">
+            <div class="we-col-2">
+              <p><b>SYSTEM REQUIREMENTS</b></p>
+<p><b>Operating System: </b>Windows 7 with Service Pack 1, Windows 8.1, Windows 10 and Windows 11</p>
+<p><b>Memory (RAM)</b>: 2 GB</p>
+<p><b>Available free hard disk space:</b> 2.5 GB free space</p>
+<p><b>Processor architecture</b>: x86 or x64</p>
+<p>* System performance may be affected on devices that have old generation CPUs</p>
+
+            </div>
+            
+              <div class="we-col-2">
+                <p><b>SOFTWARE REQUIREMENTS</b></p>
+<p>Internet Explorer version 11</p>
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    
+    
+  </div>
+</section>
+
+  
+    <div class="we-datalayer" data-cmp-data-layer="{&#34;product-tab-2044477059&#34;:{&#34;@type&#34;:&#34;bitdefender/components/product-tab&#34;,&#34;@id&#34;:&#34;product-tab-2044477059&#34;,&#34;repo:modifyDate&#34;:&#34;2022-12-16T14:26:20Z&#34;,&#34;parentId&#34;:&#34;page-with-header-footer-894154458&#34;}}"></div>
+  
+
+</div>
+<div class="faq-accordion aem-GridColumn aem-GridColumn--default--12">
+
+  <section class="accordion default-padding">
+    <div class="we-container">
+      
+        <div class="we-datalayer" data-cmp-data-layer="{&#34;faq-accordion-638729006&#34;:{&#34;@type&#34;:&#34;bitdefender/components/faq-accordion&#34;,&#34;@id&#34;:&#34;faq-accordion-638729006&#34;,&#34;repo:modifyDate&#34;:&#34;2022-12-16T14:26:20Z&#34;,&#34;parentId&#34;:&#34;page-with-header-footer-894154458&#34;}}"></div>
+      
+      
+        <div class="intro-block with-link">
+          <div class="text-wrap wow fadeInUp">
+            
+              <h2 class="wow fadeInUp default">
+                F.A.Q.</h2>
+            
+            
+            
+            
+          </div>
+
+          
+
+        </div>
+      
+      <div class="row-outer">
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">What does Bitdefender Safety Check do?</h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>Bitdefender Safety Check is a free vulnerability scanner. It continuously scans your Windows PC for proof of compromise and vulnerable user settings to let you know when you are at risk.</p>
+
+            </div>
+          </div>
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">What type of devices and operating systems does the tool support?</h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>Bitdefender Safety Check is only available to scan Windows PCs.</p>
+
+            </div>
+          </div>
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">I already have a security solution installed. Will my system be impacted? </h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>Bitdefender Safety Check will not cause any additional slow-down to your system.</p>
+
+            </div>
+          </div>
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">Do I have to uninstall my current security solution? </h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>There is no need to immediately uninstall your current security solution. Bitdefender Safety Check acts as a second opinion scanner, working seamlessly alongside any other security solution.</p>
+
+            </div>
+          </div>
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">What is a “second opinion” scanner?</h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>Bitdefender Safety Check makes sure you get notified if vulnerabilities are found on your system and your primary security solution fails to protect you from all threats.</p>
+
+            </div>
+          </div>
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">What types of threats are detected?</h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>Bitdefender Safety Check detects if anything has slipped by your current security solution and left a mark on your system. It also detects if something is wrong with your current configuration so you can close security gaps.</p>
+
+            </div>
+          </div>
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">How does it prevent additional malware from infecting my system?</h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>Although it does not protect you against malware on its own, Bitdefender Safety Check lets you test Bitdefender’s world-class antimalware solutions.</p>
+<p>You can try Bitdefender Total Security for 30 days (totally free) and see the best detection technologies in action.</p>
+
+            </div>
+          </div>
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">Is Bitdefender Safety Check really free?</h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>Bitdefender Safety Check is completely free. There is no expiration date tied to it, and you can install this free vulnerability scanner on as many Windows PCs as you want.</p>
+
+            </div>
+          </div>
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">Do I need a Bitdefender account to use Bitdefender Safety Check?</h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>No, there is no need for you to sign up. Just install the free tool and start using it.</p>
+
+            </div>
+          </div>
+        
+          <div class="accordion-items">
+
+            
+            
+              
+              <h4 class="wow fadeInUp default">Can I use it if I already have a Bitdefender solution installed on my device?</h4>
+              
+              
+            
+
+            <div class="panels">
+              <p>If you have Bitdefender on your system, it means that you already enjoy the highest level of protection we can offer. All the components and technologies of Bitdefender Safety Check are already included in your current product.</p>
+
+            </div>
+          </div>
+        
+      </div>
+      
+
+    </div>
+  </section>
+
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+        
+    </div>
+
+</div>
+
+
+    
+    <div class="xfpage page basicpage">
+
+
+    
+    <div id="container-9fae9285fa" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="footer aem-GridColumn aem-GridColumn--default--12">
+<footer class="main-footer footer-v2 dex no-border-top position-top">
+  <div class="we-container">
+    
+      <div class="we-datalayer" data-cmp-data-layer="{&#34;footer-82567317&#34;:{&#34;@type&#34;:&#34;bitdefender/components/footer&#34;,&#34;@id&#34;:&#34;footer-82567317&#34;,&#34;repo:modifyDate&#34;:&#34;2023-03-14T13:45:58Z&#34;,&#34;parentId&#34;:&#34;xfpage-1967528589&#34;}}"></div>
+    
+
+    <div class="first-row">
+      <div class="first-row__left-col">
+        <div class="first-row__logo-container">
+          <a href="/">
+            
+            <img src="/content/dam/bitdefender/white_logo.png" alt="Bitdefender Cybersecurity" class="first-row__logo"/>
+          </a>
+        </div>
+      </div>
+      <div class="first-row__right-col">
+        <ul class="first-row__links-container">
+          <li class="first-row__item"><a href="/solutions/" class="first-row__link">For Home</a></li>
+          <li class="first-row__item"><a href="/business/" class="first-row__link">For Business</a></li>
+          <li class="first-row__item"><a href="/partners/" class="first-row__link">For Partners</a></li>
+          <li class="first-row__item"><a href="/company/" class="first-row__link">Company</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="second-row">
+      <div class="second-row__left-col">
+        <p class="second-row__column-title">Follow Bitdefender</p>
+        <ul class="second-row__links-container">
+          <li class="second-row__link-item"><a href="https://www.facebook.com/bitdefender" class="second-row__link">Facebook</a></li>
+          <li class="second-row__link-item"><a href="https://twitter.com/bitdefender" class="second-row__link">Twitter</a></li>
+          <li class="second-row__link-item"><a href="https://www.linkedin.com/company/bitdefender" class="second-row__link">Linkedin</a></li>
+          <li class="second-row__link-item"><a href="https://www.youtube.com/c/Bitdefender" class="second-row__link">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="second-row__right-col">
+        <p class="second-row__column-title">Quick Links</p>
+        <ul class="second-row__links-container two-columns">
+          
+            
+              <li class="second-row__link-item"><a href="https://central.bitdefender.com/" class="second-row__link">Bitdefender Central</a></li>
+            
+            
+          
+            
+              <li class="second-row__link-item"><a href="https://gravityzone.bitdefender.com/" class="second-row__link">Gravityzone Cloud Control Center</a></li>
+            
+            
+          
+            
+              <li class="second-row__link-item"><a href="https://www.bitdefender.com/cyberpedia/" class="second-row__link">Bitdefender Cyberpedia</a></li>
+            
+            
+          
+            
+              <li class="second-row__link-item"><a href="https://pan.bitdefender.com/partners/save/" class="second-row__link">Partner Advantage Network Portal</a></li>
+            
+            
+          
+            
+            
+              <li class="second-row__link-item"><a href="/consumer/support/" class="second-row__link">Support  for Home Products</a></li>
+            
+          
+            
+              <li class="second-row__link-item"><a href="https://www.bitdefender.com/business/support/?lang=en" class="second-row__link">Support  for Business Products</a></li>
+            
+            
+          
+            
+            
+              <li class="second-row__link-item"><a href="/company/" class="second-row__link">Investors</a></li>
+            
+          
+            
+            
+              <li class="second-row__link-item"><a href="/company/job-opportunities/" class="second-row__link">Careers</a></li>
+            
+          
+        </ul>
+      </div>
+    </div>
+
+    <div class="mobile-device-view">
+      <div class="mobile-container">
+        <p class="mobile-container__label">Quick Links</p>
+        <ul class="mobile-container__content">
+          
+            
+              <li class="mobile-container__item">
+                <a href="https://central.bitdefender.com/" class="mobile-container__link">Bitdefender Central</a>
+              </li>
+            
+            
+          
+            
+              <li class="mobile-container__item">
+                <a href="https://gravityzone.bitdefender.com/" class="mobile-container__link">Gravityzone Cloud Control Center</a>
+              </li>
+            
+            
+          
+            
+              <li class="mobile-container__item">
+                <a href="https://www.bitdefender.com/cyberpedia/" class="mobile-container__link">Bitdefender Cyberpedia</a>
+              </li>
+            
+            
+          
+            
+              <li class="mobile-container__item">
+                <a href="https://pan.bitdefender.com/partners/save/" class="mobile-container__link">Partner Advantage Network Portal</a>
+              </li>
+            
+            
+          
+            
+            
+              <li class="mobile-container__item">
+                <a href="/consumer/support/" class="mobile-container__link">Support  for Home Products</a>
+              </li>
+            
+          
+            
+              <li class="mobile-container__item">
+                <a href="https://www.bitdefender.com/business/support/?lang=en" class="mobile-container__link">Support  for Business Products</a>
+              </li>
+            
+            
+          
+            
+            
+              <li class="mobile-container__item">
+                <a href="/company/" class="mobile-container__link">Investors</a>
+              </li>
+            
+          
+            
+            
+              <li class="mobile-container__item">
+                <a href="/company/job-opportunities/" class="mobile-container__link">Careers</a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="resource-view country-selector__container" id="country-selector">
+        
+            <div class="country-selector__title">
+                Choose Your Country
+            </div>
+        
+        <ul class="country-selector__content">
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.com.au/"><span>Australia - English</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.be/"><span>België - Nederlands</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.fr/"><span>Belgique - Français</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.com.br/"><span>Brasil - Português</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.es/"><span>España - Español</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.fr/"><span>France - Français</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.it/"><span>Italia - Italiano</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.nl/"><span>Nederland - Nederlands</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.de/"><span>Österreich - Deutsch</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.pt/"><span>Portugal - Português</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.ro/"><span>România - Română</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.se/"><span>Sverige - Svenska</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.co.uk/"><span>United Kingdom - English</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.com/"><span>United States - English</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://www.bitdefender.com/"><span>WorldWide - English</span></a>
+                    </li>
+                
+            
+                
+                    <li class="country-selector__item">
+                        <a class="country-selector__path" href="https://bitdefender.co.jp/"><span>日本 - 日本語</span></a>
+                    </li>
+                
+            
+        </ul>
+    </div>
+
+
+
+    <div class="mobile-device-view">
+      <div class="follow-links-mobile-container">
+        <p class="follow-links-mobile-container__label">Follow Bitdefender</p>
+        <ul class="follow-links-mobile-container__content">
+          <li class="follow-links-mobile-container__item">
+            <a href="https://www.facebook.com/bitdefender" class="follow-links-mobile-container__link">Facebook</a>
+          </li>
+          <li class="follow-links-mobile-container__item">
+            <a href="https://twitter.com/bitdefender" class="follow-links-mobile-container__link">Twitter</a>
+          </li>
+          <li class="follow-links-mobile-container__item">
+            <a href="https://www.linkedin.com/company/bitdefender" class="follow-links-mobile-container__link">Linkedin</a>
+          </li>
+          <li class="follow-links-mobile-container__item">
+            <a href="https://www.youtube.com/c/Bitdefender" class="follow-links-mobile-container__link">Youtube</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright-wrap d-flex">
+      <div class="d-flex flex-column">
+        <ul class="link-wrap">
+          
+            
+              <li><a href="/legal/" class="copyright-bottom-link">Legal Information</a></li>
+            
+              <li><a href="/site/view/legal-privacy-policy-for-bitdefender-websites.html" class="copyright-bottom-link">Privacy Policy</a></li>
+            
+              <li><a href="/sitemap.html" class="copyright-bottom-link">Site Map</a></li>
+            
+              <li><a href="/consumer/support/" class="copyright-bottom-link">Contact Us</a></li>
+            
+              <li><a href="javascript: Cookiebot.renew();//" class="copyright-bottom-link">Privacy Settings</a></li>
+            
+          
+        </ul>
+        <div class="copyright">
+          
+            <p class="copyright-text">Copyright © 1997 - 2023 Bitdefender</p>
+          
+        </div>
+      </div>
+      <div class="copyright-buttons">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+
+    
+    
+    
+<script src="/etc.clientlibs/bitdefender/clientlibs/clientlib-dependencies.lc-c4583e25ac4752dbea610cfad59ed904-lc.min.js"></script>
+<script src="/etc.clientlibs/bitdefender/clientlibs/clientlib-site.lc-715f0e26477ef42ddf1ac98ac414129e-lc.min.js"></script>
+
+
+
+    
+
+    
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="4a55b566-7010-4633-9b03-7ba7735be0b6" type="text/javascript" async></script>
+
+    
+
+    
+
+    
+
+
+
+    
+
+
+
+    
+    
+<script src="/etc.clientlibs/core/wcm/components/commons/datalayer/v1/clientlibs/core.wcm.components.commons.datalayer.v1.lc-59f048dd03e40cfd8f1b5d630deb8074-lc.min.js"></script>
+
+
+
+    
+    
+
+    <div class="video-overlay">
+      <div class="v-middle-inner">
+        <div class="v-middle">
+          <div class="video-wrap">
+            <div class="video-container">
+              <iframe src="" allowfullscreen webkitallowfullscreen mozallowfullscreen playsinline allow='autoplay' title="Video Overlay"></iframe>
+            </div>
+            <button class="closeVideo">
+              <img src="/content/dam/bitdefender/close_blue_icon.svg" alt="Close"/>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</body>
+
+</html>

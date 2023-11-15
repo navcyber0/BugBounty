@@ -1,0 +1,14 @@
+403 Forbidden
+X-Permitted-Cross-Domain-Policies: none
+X-Content-Type-Options: nosniff
+Date: Sat, 01 Apr 2023 21:36:27 GMT
+Content-Type: text/plain
+Content-Length: 38
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Set-Cookie: metabase.DEVICE=0d629974-c823-4434-a2f4-32a29c26f450;HttpOnly;Path=/;SameSite=Lax;Expires=Sun, 18 Jan 2043 11:20:56 GMT
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Server: Jetty(9.4.32.v20200930)
+Last-Modified: Sat, 1 Apr 2023 21:36:27 GMT
+Strict-Transport-Security: max-age=31536000
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate

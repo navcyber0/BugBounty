@@ -1,0 +1,12 @@
+200 OK
+Cache-Control: max-age=600
+Date: Thu, 30 Mar 2023 07:34:01 GMT
+Accept-Ranges: bytes
+X-Akamai-Transformed: 9 70162 0 pmb=mTOE,1
+Retry-Count: 0
+X-Origin: green
+Etag: "5a762-5f816c1eef954-gzip"
+Last-Modified: Thu, 30 Mar 2023 04:45:10 GMT
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=600
+Content-Type: text/html

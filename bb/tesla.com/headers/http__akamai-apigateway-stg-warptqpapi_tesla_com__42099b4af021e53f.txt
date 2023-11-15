@@ -1,0 +1,13 @@
+401 Unauthorized
+Server-Timing: cdn-cache; desc=MISS edge; dur=336 origin; dur=168 ak_p; desc="468541_388762182_790753414_50842_13557_4_-_-";dur=1
+X-Edgeconnect-Origin-Mex-Latency: 168
+Expires: Wed, 14 Jun 2023 13:50:00 GMT
+Pragma: no-cache
+Date: Wed, 14 Jun 2023 13:50:00 GMT
+Www-Authenticate: Bearer realm="http://akamai-apigateway-stg-warptqpapi.tesla.com/"
+Content-Type: application/problem+json
+Cache-Control: max-age=0, no-cache, no-store
+Retry-Count: 0
+Content-Length: 65
+X-Edgeconnect-Midmile-Rtt: 214
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains

@@ -1,0 +1,18 @@
+200 OK
+Date: Wed, 14 Jun 2023 13:13:03 GMT
+Content-Type: text/html
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: null
+Content-Security-Policy: frame-ancestors 'none'; connect-src 'self' http://127.0.0.1:*; default-src https: 'unsafe-inline'
+Referrer-Policy: strict-origin-when-cross-origin
+Cf-Ray: 7d72d40e7a081798-MAA
+Cf-Version: 1437-2b8b155
+X-Xss-Protection: 1; mode=block
+Vary: Accept-Encoding
+Retry-Count: 0
+Set-Cookie: CF_Session=n3UpJilkJ1ygLkgXw; Path=/; Secure; Expires=Wed, 14 Jun 2023 17:13:03 GMT; HttpOnly; SameSite=none
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Access-Control-Allow-Credentials: true
+Cf-Access-Domain: id.business.just-eat.co.uk
+X-Frame-Options: DENY
+Server: cloudflare

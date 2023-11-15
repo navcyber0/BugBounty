@@ -1,0 +1,14 @@
+403 Forbidden
+X-Xss-Protection: 1; mode=block
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Server: Jetty(9.4.32.v20200930)
+Last-Modified: Sat, 1 Apr 2023 21:36:29 GMT
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Content-Type: text/plain
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+Date: Sat, 01 Apr 2023 21:36:29 GMT
+Content-Length: 38
+Set-Cookie: AWSALB=KIl8ObynhlCDBfBr6Mfp274rmav83mZ752cLGytUBbyyb+OL3rxBXO/ecjjFz/r8pRtzs9oBHkD7LCL1q2Cw2KsjHwWBAnRmYbSzG9HLezqlBK5gFFhLxCGiIC0r; Expires=Sat, 08 Apr 2023 21:36:29 GMT; Path=/ AWSALBCORS=KIl8ObynhlCDBfBr6Mfp274rmav83mZ752cLGytUBbyyb+OL3rxBXO/ecjjFz/r8pRtzs9oBHkD7LCL1q2Cw2KsjHwWBAnRmYbSzG9HLezqlBK5gFFhLxCGiIC0r; Expires=Sat, 08 Apr 2023 21:36:29 GMT; Path=/; SameSite=None; Secure metabase.DEVICE=f78c6835-98b8-460e-8faf-1e0f8466a6b4;HttpOnly;Path=/;SameSite=Lax;Expires=Sat, 24 Jan 2043 12:11:10 GMT
+X-Permitted-Cross-Domain-Policies: none

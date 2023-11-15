@@ -1,0 +1,14 @@
+200 OK
+Link: <https://geschaeftsbericht.post.ch/22/ar/de/wp-json/>; rel="https://api.w.org/"
+Vary: Accept-Encoding
+Content-Type: text/html; charset=UTF-8
+X-Frame-Options: sameorigin
+Cache-Control: public, must-revalidate, proxy-revalidate, max-age=3600 private
+Set-Cookie: SERVERID=nsw-lamp-prod-05; path=/
+Date: Fri, 23 Jun 2023 15:23:52 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+Referrer-Policy: origin
+Retry-Count: 0
+Server: Apache
+X-Xss-Protection: 1; mode=block

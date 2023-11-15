@@ -1,0 +1,9 @@
+200 OK
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Cache-Control: no-cache, no-store, max-age=0, no-transform, private
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Date: Thu, 23 Mar 2023 15:00:30 GMT
+Server: jag
+Retry-Count: 0
+Content-Length: 0

@@ -1,0 +1,5 @@
+[credentials-disclosure] [http] [unknown] https://www.oziva.in [auth_token  = localStorage,"accessToken":"45784e51033b0dd380e5bb25a77a9409",accessToken: authData,AccessToken = '2edc93cb80d2e079172d67f0f61a9812',AccessToken = '396634c1ce60f5ea2593342adb2991bd',Access-Token': StorefrontAccessToken,accessToken = response]
+[weak-cipher-suites:tls-1.0] [ssl] [medium] blog.oziva.in:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites:tls-1.1] [ssl] [medium] blog.oziva.in:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[CVE-2017-5487:usernames] [http] [medium] https://blog.oziva.in/wp-json/wp/v2/users/ [arti,oziva_admin,parvathy,Janani Suri,OZiva,admin,avni,mamta,Amitabha Kushari,janai,nidhi,admin test,Nidhi Singh,Mamta,Parvathy Raja,amitabha,ozivacommunity,Avni Verma,Dr Arti Priya]
+[header-blind-ssrf] [http] [high] https://blog.oziva.in/?Host

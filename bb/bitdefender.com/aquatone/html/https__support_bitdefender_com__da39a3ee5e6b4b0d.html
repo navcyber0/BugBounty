@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>Login - Bitdefender Support Center</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+<link href="https://assets-eu1-cloud.deskpro.com/assets/52602/pub/build/fontawesome.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://assets-eu1-cloud.deskpro.com/assets/52602/pub/build/DeskPRO_PortalBundle_vendors_style.css" media="all" rel="stylesheet" type="text/css" />
+
+<!--[if lte IE 8]>
+<script type="text/javascript" src="https://assets-eu1-cloud.deskpro.com/assets/52602/pub/node_modules/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!--[if lte IE 11]>
+<script type="text/javascript" src="https://assets-eu1-cloud.deskpro.com/assets/52602/pub/build/polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if IE]>
+<link href="https://assets-eu1-cloud.deskpro.com/assets/52602/pub/build/DeskPRO_PortalBundle_iestyle.css" media="all" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<link href="https://assets-eu1-cloud.deskpro.com/assets/52602/pub/build/DeskPRO_PortalBundle_ie9style.css" media="all" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link href="https://assets-eu1-cloud.deskpro.com/assets/52602/pub/build/DeskPRO_PortalBundle_ie8style.css" media="all" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<style type="text/css">
+        body .as-no-dpui { display: block; }
+    body .as-dpui { display: none; }
+    body.with-dpui .as-no-dpui { display: none; }
+    body.with-dpui .as-dpui { display: block; }
+    body.with-js .with-dpx { visibility: hidden; }
+    body.with-js .with-dpx { visibility: hidden; }
+    .without-dpui .dpx-placeholder { display: none; }
+    body.with-js.with-dpui.with-pageload-dpx-done .dpx-placeholder { display: none; }
+    body.with-js.without-dpui.with-pageload-done .with-dpx { visibility: visible; }
+    body.with-js.with-dpui.with-pageload-dpx-done .with-dpx { visibility: visible; }
+</style>
+
+<link href="https://assets-eu1-cloud.deskpro.com/assets/52602/pub/build/DeskPRO_PortalBundle_print_style.css" media="print" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+/*! modernizr 3.2.0 (Custom Build) | MIT *
+ * http://modernizr.com/download/?-blobconstructor-canvas-filereader-ie8compat-json-localstorage-notification-sessionstorage-svg !*/
+!function(e,n,t){function o(e,n){return typeof e===n}function s(){var e,n,t,s,a,i,l;for(var d in c)if(c.hasOwnProperty(d)){if(e=[],n=c[d],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(s=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=s:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=s),r.push((s?"":"no-")+l.join("-"))}}function a(e){var n=d.className,t=Modernizr._config.classPrefix||"";if(f&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(o,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),f?d.className.baseVal=n:d.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):f?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}var r=[],c=[],l={_version:"3.2.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){c.push({name:e,fn:n,options:t})},addAsyncTest:function(e){c.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr,Modernizr.addTest("blobconstructor",function(){try{return!!new Blob}catch(e){return!1}},{aliases:["blob-constructor"]}),Modernizr.addTest("ie8compat",!e.addEventListener&&!!n.documentMode&&7===n.documentMode),Modernizr.addTest("json","JSON"in e&&"parse"in JSON&&"stringify"in JSON),Modernizr.addTest("notification","Notification"in e&&"permission"in e.Notification&&"requestPermission"in e.Notification),Modernizr.addTest("svg",!!n.createElementNS&&!!n.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect),Modernizr.addTest("filereader",!!(e.File&&e.FileList&&e.FileReader)),Modernizr.addTest("localstorage",function(){var e="modernizr";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(n){return!1}}),Modernizr.addTest("sessionstorage",function(){var e="modernizr";try{return sessionStorage.setItem(e,e),sessionStorage.removeItem(e),!0}catch(n){return!1}});var d=n.documentElement,f="svg"===d.nodeName.toLowerCase();Modernizr.addTest("canvas",function(){var e=i("canvas");return!(!e.getContext||!e.getContext("2d"))}),s(),a(r),delete l.addTest,delete l.addAsyncTest;for(var u=0;u<Modernizr._q.length;u++)Modernizr._q[u]();e.Modernizr=Modernizr}(window,document);
+</script>
+
+<script type="text/javascript">
+  (function() {
+    window.DP_LOAD_FN = window.DP_LOAD_FN || [];
+    window.onDeskproReady = function(cb) {
+      if (window.DP_PAGE_IS_READY) {
+        cb();
+      } else {
+        window.DP_LOAD_FN.push(cb);
+      }
+    };
+
+    window.DESKPRO_BASE_URL = '/en';
+    window.DESKPRO_ROOT_URL = 'https://support.bitdefender.com/';
+    window.DESKPRO_LEGACY_WEB_URL = 'https://assets-eu1-cloud.deskpro.com/assets/52602/web';
+    window.DESKPRO_APP_ASSETS_URL = 'https://assets-eu1-cloud.deskpro.com/assets/52602/pub/build';
+    window.DESKPRO_MULTI_LANG = true;
+    window.DESKPRO_LANG = 'en';
+    window.DESKPRO_LOCALE = 'en-US';
+    window.DESKPRO_ENABLED_LANGS = [{code: 'de', title:'Deutsch',flag:'locale_de.png'},{code: 'en', title:'English',flag:'locale_en-US.png'},{code: 'es-ES', title:'Español',flag:'locale_es-ES.png'},{code: 'fr', title:'Français',flag:'locale_fr.png'},{code: 'it', title:'Italiano',flag:'locale_it.png'},{code: 'nl', title:'Nederlands',flag:'locale_nl.png'},{code: 'pt-PT', title:'Português (europeu)',flag:'locale_pt-PT.png'},{code: 'ro', title:'Română',flag:'locale_ro.png'},{code: 'sv', title:'Svenska',flag:'locale_sv.png'},{code: 'tr', title:'Türkçe',flag:'locale_tr.png'},{code: 'ja', title:'日本語',flag:'locale_ja.png'}];
+    window.DP_ASSET_URL = 'https://assets-eu1-cloud.deskpro.com/assets/52602/web';
+    window.DP_BASE_URL = '/en';
+
+    window.DESKPRO_USERSOURCES = [];
+    window.DESKPRO_HAS_LOGIN_FORM = true;
+    window.DESKPRO_IS_FORGOT_PASSWORD_VISIBLE = true;
+    window.DESKPRO_CAN_USE_TICKETS = false;
+    window.DESKPRO_CAN_VIEW_TICKETS_LINK = false;
+    window.DESKPRO_CAN_USE_COMMUNITY = false;
+    window.DESKPRO_CAN_USE_CHAT = false;
+    window.PORTAL_MODE = 'normal';
+
+    window.DESKPRO_PHRASES = {};
+    window.DP_SET_PHRASES = function(p) {
+      window.DESKPRO_PHRASES = p;
+      if (window.PortalApp && window.PortalApp.phrases) {
+        window.PortalApp.phrases.setPhrases(p);
+      }
+    }
+    window.FontAwesomeConfig = {
+      autoReplaceSvg: 'nest'
+    };
+  })();
+</script>
+<script type="text/javascript" src="/en/portal/api/lang/widget-phrases.js"></script>
+
+
+<script type="text/javascript" src="https://assets-eu1-cloud.deskpro.com/assets/52602/pub/build/DeskPRO_PortalBundle.js" async="async"></script>
+
+
+
+    <link href="/file.php/289287323SCRBPWGWGDPHSRW0/portal.css?local=1&amp;g=289287327BDAGTSXMJGKQHYX0" media="all" rel="stylesheet" type="text/css" />
+
+  <meta name="generator" content="DeskPRO.Cloud 52602/1631604864" />
+</head>
+<body class=" portal-mode-normal">
+
+<script type="text/javascript">
+  (function() {
+    document.body.className = document.body.className + ' with-js';
+
+    // Features that determine if 'DPUI' can be enabled for this user
+    window.WITH_DPUI =
+      Modernizr && !Modernizr.ie8compat &&
+      Modernizr.json &&
+      Modernizr.blobconstructor
+    ;
+
+    if (window.WITH_DPUI) {
+      document.body.className += ' with-dpui';
+    } else {
+      document.body.className += ' without-dpui';
+    }
+
+    if ("ontouchstart" in document.documentElement) {
+      document.body.className += ' with-touch-device';
+    } else {
+      document.body.className += ' without-touch-device';
+
+
+    }
+  })();
+</script>
+
+<!--DESKPRO_WIDGET_LOADER::BEGIN-->
+<script type="text/javascript">
+window.DESKPRO_WIDGET_OPTIONS = {"widget":{"type":"column","position":"right","enabled":true,"primary_color":"#62ad8c"},"button":{"translations":[{"language":1,"name":"Chat Now","contact_us":"Contact Us"},{"language":2,"name":"Chatta adesso","contact_us":"Contattaci"},{"language":3,"name":"Chatea ahora","contact_us":"Cont\u00e1ctenos"},{"language":4,"name":"Jetzt chatten","contact_us":"Kontaktiere uns"},{"language":5,"name":"Discuter maintenant","contact_us":"Contactez-nous"},{"language":6,"name":"Chat Now","contact_us":"Contact Us"},{"language":7,"name":"Chat Now","contact_us":"Contact Us"},{"language":8,"name":"Chat Now","contact_us":"Contact Us"},{"language":10,"name":"Praat nu","contact_us":"Neem contact met ons op"},{"language":11,"name":"Chat Now","contact_us":"Contact Us"},{"language":12,"name":"Chatta nu","contact_us":"Kontakta Oss"}],"size":"medium","colors":{"background":"#62ad8c","text":"#ffffff","border":"#4e9576"}},"chat":{"request_user_info":false,"proactive":true,"popup":{"translations":[{"language":1,"title":"Customer Support","message":"Need help? Just reply to start a live chat with one of our team.","heading":"Ask us a question!","subheading":"Our team are online and ready to help with your enquiries. Send us a message to get started.","start_button":"Start a conversation"},{"language":2,"title":"Servizio Clienti","message":"Ho bisogno di aiuto? Rispondi semplicemente per avviare una chat dal vivo con uno dei nostri team.","heading":"Facci una domanda!","subheading":"Il nostro team \u00e8 online e pronto ad aiutarti con le tue richieste. Mandaci un messaggio per iniziare.","start_button":"Inizia una conversazione"},{"language":3,"title":"Atenci\u00f3n al cliente","message":"\u00bfNecesitas ayuda? Solo tienes que responder para iniciar un chat en vivo con uno de nuestro equipo.","heading":"\u00a1Haznos una pregunta!","subheading":"Nuestro equipo est\u00e1 en l\u00ednea y listo para ayudarle con sus consultas. Env\u00edenos un mensaje para empezar.","start_button":"Iniciar una conversaci\u00f3n"},{"language":4,"title":"Kundendienst","message":"Brauche Hilfe? Antworten Sie einfach, um einen Live-Chat mit einem unserer Mitarbeiter zu beginnen.","heading":"Stellen Sie uns eine Frage!","subheading":"Unser Team ist online und bereit, Ihnen bei Ihren Anfragen zu helfen. Senden Sie uns eine Nachricht, um loszulegen.","start_button":"Eine Konversation beginnen"},{"language":5,"title":"Service client","message":"Besoin d'aide pour? Il vous suffit de r\u00e9pondre pour d\u00e9marrer une discussion en direct avec l'un de nos collaborateurs.","heading":"Posez-nous une question!","subheading":"Notre \u00e9quipe est en ligne et pr\u00eate \u00e0 r\u00e9pondre \u00e0 vos questions. Envoyez-nous un message pour commencer.","start_button":"D\u00e9marrer une conversation"},{"language":6,"title":"Customer Support","message":"Need help? Just reply to start a live chat with one of our team.","heading":"Ask us a question!","subheading":"Our team are online and ready to help with your enquiries. Send us a message to get started.","start_button":"Start a conversation"},{"language":7,"title":"Customer Support","message":"Need help? Just reply to start a live chat with one of our team.","heading":"Ask us a question!","subheading":"Our team are online and ready to help with your enquiries. Send us a message to get started.","start_button":"Start a conversation"},{"language":8,"title":"Customer Support","message":"Need help? Just reply to start a live chat with one of our team.","heading":"Ask us a question!","subheading":"Our team are online and ready to help with your enquiries. Send us a message to get started.","start_button":"Start a conversation"},{"language":10,"title":"Klantenondersteuning","message":"Hulp nodig? Antwoord gewoon om een \u200b\u200blivechat te starten met een van ons team.","heading":"Stel ons een vraag!","subheading":"Ons team staat online en staat klaar om u te helpen met uw vragen. Stuur ons een bericht om aan de slag te gaan.","start_button":"Start een gesprek"},{"language":11,"title":"Customer Support","message":"Need help? Just reply to start a live chat with one of our team.","heading":"Ask us a question!","subheading":"Our team are online and ready to help with your enquiries. Send us a message to get started.","start_button":"Start a conversation"},{"language":12,"title":"Kundsupport","message":"Beh\u00f6vs hj\u00e4lp? Bara svara p\u00e5 att starta en livechatt med ett av v\u00e5ra team.","heading":"Fr\u00e5ga oss en fr\u00e5ga!","subheading":"V\u00e5rt team \u00e4r online och redo att hj\u00e4lpa dig med dina fr\u00e5gor. Skicka oss ett meddelande f\u00f6r att komma ig\u00e5ng.","start_button":"Starta en konversation"}],"style":"agent_text_button","delay":0},"begin_mode":"form","select_department":"custom","waiting_timeout":150,"required_name":false,"required_email":false,"custom_fields":[{"id":1,"display_order":0,"is_enabled":true},{"id":2,"display_order":0,"is_enabled":true},{"id":3,"display_order":1,"is_enabled":true},{"id":4,"display_order":2,"is_enabled":true},{"id":5,"display_order":0,"is_enabled":true}],"user_groups":[]},"ticket":{"select_department":"custom","select_subject":"custom","default_subject":""},"language":1,"noFetchOptions":true,"helpdeskUrl":"https:\/\/support.bitdefender.com\/","baseUrl":"https:\/\/support.bitdefender.com\/"};
+</script>
+<script async type="text/javascript" id="dp-widget-loader" src="https://support.bitdefender.com/dyn-assets/pub/build/widget_loader.min.js"></script>
+<!--DESKPRO_WIDGET_LOADER::END-->
+<div class="dp-page-body">
+
+
+<div class="world with-searchbox">
+    <section class="page-top-section">
+        <div class="column-full">
+                    <header class="top-bar ">
+  <div class="mobile-view big-button-collection-expand-mobile">
+    <a class="dpx-toggle-big-buttons" href="#"><i class="fas fa-bars"></i> <span class="title">Navigate</span></a>
+  </div>
+  <div class="brand ">
+    <a href="/en">
+              <h1>Bitdefender Support Center</h1>
+          </a>
+  </div>
+  <ul id="menu">
+                <li class="register-greeting">
+        <a href="/en/register" class="button-small button-marked">Register</a>
+      </li>
+    
+                  <li class="register-or-signup">
+          <span><hr> or <hr></span>
+        </li>
+            <li>
+        <div class="dropdown-group">
+          <a href="/en/login" id="top-login-btn" class="button-small button-marked clickaway-dropdown" data-clickaway-target="top-login-dropdown">Login <i
+                    class="fas fa-caret-down"></i></a>
+          <div class="dp-react-widget">
+            <div class="active-button-dropdown language-dropdown" id="top-login-dropdown" style="min-width: 300px">
+              <div class="small-form">
+                <div>
+                                      <form method="post" id="login-sidebar">
+                      <input type="hidden" name="_failure_path" value="/en/login?retry=auth" />
+                      <label for="login-form-username">
+                        <span>Your email</span>
+                        <input
+                          type="text"
+                          placeholder="email@example.com"
+                          name="dropdown_username"
+                          id="login-form-username"
+                          tabIndex="21"
+                        />
+                      </label>
+
+                      <label for="login-form-password">
+                        <div id="login-form-failed-reason"></div>
+                        <span>Your password</span>
+                        <input
+                          type="password"
+                          placeholder="Your password"
+                          name="dropdown_password"
+                          id="login-form-password"
+                          tabIndex="22"
+                        />
+                      </label>
+
+                      <div class="permanent-login">
+                        <label for="login-form-remember-me">
+                          <input
+                            type="checkbox"
+                            name="remember_me"
+                            id="login-form-remember-me"
+                            tabIndex="23"
+                          />
+                          Stay Logged In?
+                        </label>
+                      </div>
+
+                      <button type="submit" tabIndex="24">Login</button>
+
+                                              <div class="secondary-action">
+                          <a href="/en/login/reset-password" id="login-form-reset-password" tabIndex="25">
+                            Need a password reminder?
+                          </a>
+                        </div>
+                                          </form>
+                                    <div id="login-form-usersources"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      
+        <li class="language-switcher-container">
+      <form method="POST" action="/en/change-language" id="language-changer" class="as-no-dpui">
+        <select name="lang_code" class="button button-dropdown button-dropdown-language">
+                      <option value="de"
+              >
+              Deutsch
+            </option>
+                      <option value="en"
+              selected="selected">
+              English
+            </option>
+                      <option value="es-ES"
+              >
+              Español
+            </option>
+                      <option value="fr"
+              >
+              Français
+            </option>
+                      <option value="it"
+              >
+              Italiano
+            </option>
+                      <option value="nl"
+              >
+              Nederlands
+            </option>
+                      <option value="pt-PT"
+              >
+              Português (europeu)
+            </option>
+                      <option value="ro"
+              >
+              Română
+            </option>
+                      <option value="sv"
+              >
+              Svenska
+            </option>
+                      <option value="tr"
+              >
+              Türkçe
+            </option>
+                      <option value="ja"
+              >
+              日本語
+            </option>
+                  </select>
+        <button class="button button-plain button-small" type="submit">Go</button>
+      </form>
+            <div class="language-changer-widget dpx-placeholder">
+        <a href="#" class="button-small button-language">
+          <img src="https://assets-eu1-cloud.deskpro.com/assets/52602/web/images/flags/locale_en-US.png" alt="">
+          <span class="text">English</span>
+          <span class="extra"><i class="fas fa-caret-down"></i></span>
+        </a>
+      </div>
+    </li>
+      </ul>
+</header>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="column-full">
+          <div class="content">
+    <div class="search-and-ticket">
+    <div class="search-form">
+      <form method="POST" action="/en/search" id="omnisearch" autocomplete="off">
+        <div class="input-wrap">
+          <i class="fas fa-search"></i>
+          <a href="#" class="search-clear" style="display: none;"><i class="fas fa-times"></i></a>
+          <input type="text" class="omnisearch" name="q" autocomplete="off" placeholder="Search...">
+          <input type="hidden" name="search_log_id" />
+          <!-- .active on this if we need it active -->
+        </div>
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </div>
+
+      </div>
+    
+</div>
+        </div>
+    </section>
+
+    
+        <div class="breadcrumbs">
+        <ul>
+            <li>
+        <a href="/en"><i class="fas fa-home"></i>Portal</a>
+        <i class="fas fa-angle-right"></i>      </li>
+          <li>
+        <a href="/en/login" class="active-page">Login</a>
+              </li>
+      </ul>
+    </div>
+
+    <div id="login-page">
+    
+        <header class="large-title">
+            <h1>Login</h1>
+            <p>Already have an account? Login below.</p>
+        </header>
+
+        <section class="padded">
+            
+            
+            
+                    
+
+            
+            
+                            <form id="login" class="form-ticket" action="/en/login/authenticate-password" method="post" novalidate>
+                    <input type="hidden" name="_failure_path" value="/en/login?retry=auth"/>
+                                            <input type="hidden" name="_destination" value="https://support.bitdefender.com/en"/>
+                    
+                    <div class="column-half">
+                        <div class="bucket">
+                            <label class="title">Your email</label>
+                            <input type="text" placeholder="Your email" name="username"
+                                   id="login_username" value="" tabindex="1"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="column-half omega">
+                        <div class="bucket">
+                            <label class="title">Your password</label>
+                            <input type="password" placeholder="Your password"
+                                   name="password" id="login_password" tabindex="2"
+                            >
+                                                            <div class="form-meta form-meta-grey form-meta-top">
+                                    <a href="/en/login/reset-password" tabindex="5">
+                                        Need a password reminder?
+                                    </a>
+                                </div>
+                                                    </div>
+                    </div>
+
+                                                                
+        <div class="column-full"><div class="bucket"><div class="captcha-field"><img id="captcha_641c699da879a" src="/en/generate-captcha/gcb_captcha?n=7d3506d3443a371505519097ac7788b8?1679583645" title="captcha" width="130" height="50" /><script type="text/javascript">
+                function reload_captcha_641c699da879a() {
+                    var img = document.getElementById('captcha_641c699da879a');
+                    img.src = '/en/generate-captcha/gcb_captcha?n=7d3506d3443a371505519097ac7788b8?n=' + (new Date()).getTime();
+                }
+            </script><a class="captcha_reload" href="javascript:reload_captcha_641c699da879a();"><i class="fas fa-sync" aria-hidden="true"></i></a><input type="text" id="deskpro_captcha_captcha" name="deskpro_captcha[captcha]" required="required" class="shorter" /></div>    </div></div>
+    
+    
+                    
+                    <div class="column-full">
+                        <div class="bucket">
+                            <button class="button" id="login_button" tabindex="4">Login</button>
+                                                        <div class="remember-me"><label for="remember_me">
+                                    <input tabindex="3" type="checkbox" name="remember_me">
+                                    <span>Stay Logged In?</span>
+                                </label>
+                            </div>
+                                                    </div>
+                    </div>
+                </form>
+                    </section>
+
+        
+                                    <hr class="divider" />
+                        <header class="large-title">
+                <h1>Register</h1>
+                <p>Register an account so you can easily manage your communications.</p>
+            </header>
+
+            <section class="padded">
+                <a class="button button-secondary" href="/en/register">Register</a>
+            </section>
+                </div>
+
+  <section class="page-bottom-section">
+    <div class="column-full">
+      <footer class="site-footer">
+  <hr>
+      <div class="quick-jump as-touch-focus">
+      <i class="fas fa-bars"></i> Quick Jump
+      <div class="dropdown-content">
+        <ul>
+          <li class="item-home"><a href="/en"><i class="fas fa-home"></i> Bitdefender Support Center</a></li>
+                                                                    </ul>
+      </div>
+    </div>
+
+    <div class="back-to-top">
+      <a onclick="window.scrollTo(0,0); return false;">Top <i class="fas fa-angle-double-up"></i></a>
+    </div>
+  
+      <a href="https://www.deskpro.com/" class="footer-mark">
+      <span class="logo-wrapper"><span class="deskpro-logo"></span></span>
+      <span class="tagline">Helpdesk software provided by <strong>Deskpro</strong></span>
+    </a>
+  </footer>
+    </div>
+  </section>
+</div>
+
+</div>
+
+
+<style>
+.deskpro-form-widget.field_department { display: none !important; }
+</style>
+<script>
+(function() {
+	var fn = function() {
+	    $('.dp_ticket_form form').on('submit', function() {
+	        var $dep = $('#ticket_department');
+	        //$dep.val($dep.find('option[value!=""]:not([disabled])').first().val());
+	        $dep.val("185");
+	    });
+	};
+
+	if (window.$ && window.$.fn && window.$.fn.jquery) {
+		fn();
+	} else {
+		window.DP_LOAD_FN = window.DP_LOAD_FN || [];
+		window.DP_LOAD_FN.push(fn);
+	}
+})();
+</script><script type="text/javascript">
+    (function(){
+        document.body.className = document.body.className + ' with-pageload-done';
+        if (window.WITH_DPUI) {
+            window.setTimeout(function () {
+                // fallback to make sure elements are displayed in case of a script error
+                document.body.className = document.body.className + ' with-pageload-dpx-done';
+            }, 4000);
+        }
+    })();
+</script>
+
+<script type="text/javascript">
+    
+</script>
+
+<script>
+!function(t){t.dp_refresh_csrf_token=function(){var n=function(t){for(var n=t+"=",e=document.cookie.split(";"),r=0;r<e.length;r++){for(var o=e[r];" "==o.charAt(0);)o=o.substring(1,o.length);if(0==o.indexOf(n))return o.substring(n.length,o.length)}return null}("_dp_csrf_token"),e=/.*\[_dp_csrf_token\]*./;n||(n=(Math.random()+1).toString(36).substring(2,17)+(Math.random()+1).toString(36).substring(2,17),document.cookie="_dp_csrf_token="+n+"; path=/; "+("https:"===document.location.protocol?"SameSite=None; Secure;":""));for(var r=document.getElementsByTagName("input"),o=1;o<r.length;o++)"hidden"==r[o].getAttribute("type")&&r[o].getAttribute("name").match(e)&&(r[o].value=n);t.dp_get_csrf_token=function(){return n}},t.dp_refresh_csrf_token()}(window);
+</script><script>
+!function(){function t(t){for(var n=t+"=",e=document.cookie.split(";"),r=0;r<e.length;r++){for(var o=e[r];" "==o.charAt(0);)o=o.substring(1,o.length);if(0==o.indexOf(n))return o.substring(n.length,o.length)}return null}function n(t,n){for(var e="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".split(""),r=1===n?e:e.slice(0,26),o=1===n?36:26,i="";t-->0;)i+=r[Math.floor(Math.random()*o)];return i}var e="dp__v",r=t(e);r||(r=Math.ceil((new Date).getTime()/1e3/60)+"-"+n(8,1)+"-"+n(8,1)+"-"+n(6,1)+"-"+n(3,2),document.cookie=e+"="+r+"; path=/")}();
+</script><script type="text/javascript">
+var DP_PAGE_TYPE = 'deskpro';
+var DP_PAGE_ID   = 'page';
+</script><script type="text/javascript">!function(e){function t(n){if(r[n])return r[n].exports;var o=r[n]={i:n,l:!1,exports:{}};return e[n].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var r={};t.m=e,t.c=r,t.i=function(e){return e},t.d=function(e,r,n){t.o(e,r)||Object.defineProperty(e,r,{configurable:!1,enumerable:!0,get:n})},t.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(r,"a",r),r},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="/pub/build/",t(t.s=2408)}({2408:function(e,t,r){"use strict";!function(e,t,r){function n(e){!r.readyState||"complete"!==r.readyState&&"interactive"!==r.readyState?r.addEventListener?r.addEventListener("DOMContentLoaded",e):t.attachEvent&&t.attachEvent("onload",e):e()}function o(){if(i)return i;var e=/^\d{8,9}-[A-Z0-9]{8}-[A-Z0-9]{8}-[A-Z0-9]{6}-[A-Z]{3}$/;if(t.DP_VISITOR_ID&&t.DP_VISITOR_ID.match(e))return i=t.DP_VISITOR_ID;var n=r.cookie.match("(^|;)\\s*dp__v\\s*=\\s*([^;]+)");if(n=n?n.pop():null,n&&!n.match(e)&&(n=null),!n){n=function(){for(var e=Math.floor((new Date).getTime()/1e3/60)+"-",t="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",r="ABCDEFGHIJKLMNOPQRSTUVWXYZ",n=0;8>n;n+=1)e+=t.charAt(Math.floor(Math.random()*t.length));e+="-";for(var o=0;8>o;o+=1)e+=t.charAt(Math.floor(Math.random()*t.length));e+="-";for(var a=0;6>a;a+=1)e+=t.charAt(Math.floor(Math.random()*t.length));e+="-";for(var i=0;3>i;i+=1)e+=r.charAt(Math.floor(Math.random()*r.length));return e}();var o=new Date;o.setTime(o.getTime()+63072e6),r.cookie="dp__v="+n+";expires="+o.toGMTString()+";path=/"}return i=n,t.DP_VISITOR_ID=i,n}function a(e){var n=e||{},a=n.url||t.DP_PAGE_URL||t.location.href,i=n.title||t.DP_PAGE_TITLE||r.title||null,u=n.referrer||t.DP_PAGE_REFERRER||r.referrer||null,l=n.pageType||t.DP_PAGE_TYPE||"page",d=n.pageId||t.DP_PAGE_ID||"page",p=n.meta||t.DP_PAGE_META||{},c=o();return!p.pageTitle&&i&&(p.pageTitle=i),{url:a,pageTitle:i,referrer:u,pageType:l,pageId:d,meta:p,visitorId:c}}var i=null;!function(e,t){n(function(){var n=a(t),o=[];o.push("visitor_id="+encodeURIComponent(n.visitorId)),o.push("url="+encodeURIComponent(n.url)),n.referrer&&o.push("referrer="+encodeURIComponent(n.referrer));var i=n.meta,u=!0,l=!1,d=void 0;try{for(var p,c=Object.keys(i)[Symbol.iterator]();!(u=(p=c.next()).done);u=!0){var f=p.value;i[f]&&o.push("meta["+encodeURIComponent(f)+"]="+encodeURIComponent(i[f]))}}catch(e){l=!0,d=e}finally{try{!u&&c.return&&c.return()}finally{if(l)throw d}}o=o.join("&");var h=e+"/dp/hit/"+n.pageType+"/"+n.pageId+".gif?"+o,s=r.createElement("img");s.setAttribute("src",h),s.setAttribute("role","presentation"),s.setAttribute("alt",""),s.setAttribute("width",1),s.setAttribute("height",1),s.setAttribute("style","position:absolute;bottom:0;left:0;width:1px;height:1px;overflow:hidden;border:none;margin:0;padding:0;"),r.body.appendChild(s)})}(e)}(window.DESKPRO_ROOT_URL.replace(/\/+$/, ''),window,document)}});</script></body>
+</html>
+

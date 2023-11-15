@@ -1,0 +1,21 @@
+200 OK
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+X-Amz-Id-2: Q8uVuGRX6MSHkQ8I+mErQ+rpZWqh55satpM17taOCYbsYpJrgY2+SIJ0/AoQwDNVTDjO9KHHWNk=
+Last-Modified: Tue, 18 Jul 2023 07:04:53 GMT
+Content-Type: text/html
+Date: Sun, 23 Jul 2023 01:13:59 GMT
+Server: IHP3 Server
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.ikeadt.com https://*.ikea.com https://www.google-analytics.com https://www.googletagmanager.com https://www.gstatic.com https://www.google.com https://*.amazonaws.com https://browser.sentry-cdn.com https://cdn.cookielaw.org; style-src 'self' 'unsafe-inline' https://*.ikea.com; img-src 'self' data: https://*.ikeadt.com https://*.ikea.com https://www.google-analytics.com https://*.cloudfront.net https://*.amazonaws.com https://cdn.cookielaw.org; connect-src 'self' https://*.ikeadt.com https://*.ikea.com https://*.ingka.com https://*.ingkadt.com https://planning-insight.ikea.com https://kompis-proxy.azurewebsites.net https://*.ipex-insights.com https://*.by.me https://www.google-analytics.com https://analytics.google.com/ https://stats.g.doubleclick.net https://*.cloudfront.net https://*.amazonaws.com https://*.sentry.io https://cdn.cookielaw.org https://geolocation.onetrust.com https://privacyportal-eu.onetrust.com; media-src 'none'; object-src 'none'; prefetch-src 'none'; child-src 'self' https://*.by.me https://www.google.com; frame-ancestors 'self' https://*.ikeadt.com https://*.ikea.com; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content; base-uri 'self';
+X-Amz-Request-Id: SWVN5729HQFS4ZDA
+X-Amz-Server-Side-Encryption: AES256
+Cache-Control: no-cache
+X-Frame-Options: sameorigin
+Etag: "658c03c20f3bcd41ab5fe70a3fe878ff"
+Set-Cookie: bluegreen=green; path=/; secure; HttpOnly; SameSite=Strict
+X-Xss-Protection: 1, mode=block
+Vary: Accept-Encoding
+Expires: Sun, 23 Jul 2023 01:13:59 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+X-Permitted-Cross-Domain-Policies: none
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains

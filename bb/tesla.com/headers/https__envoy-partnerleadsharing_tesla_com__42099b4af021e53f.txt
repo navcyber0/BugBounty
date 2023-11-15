@@ -1,0 +1,14 @@
+401 Unauthorized
+Content-Length: 14
+Access-Control-Allow-Origin: https://partners.tesla.com
+Retry-Count: 0
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Expires: Wed, 14 Jun 2023 13:52:51 GMT
+Cache-Control: max-age=0, no-cache
+Pragma: no-cache
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Content-Type: text/plain
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization,Origin,Access-Control-Allow-Origin,Auth-System,channel,idtoken,idToken
+Date: Wed, 14 Jun 2023 13:52:51 GMT
+Server-Timing: cdn-cache; desc=MISS edge; dur=73 origin; dur=472 ak_p; desc="468541_386090540_17494228_54411_8663_13_-_-";dur=1

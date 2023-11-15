@@ -1,0 +1,18 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+Cache-Control: must-revalidate, no-cache, no-store, private
+Access-Control-Allow-Origin: https://verify.nab.com.au
+Content-Security-Policy: script-src 'self' 'unsafe-eval' *.googleapis.com
+Retry-Count: 0
+Server: Apache
+Content-Length: 1140
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Pragma: no-cache
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff
+Set-Cookie: XSRF-TOKEN=eyJpdiI6ImRIRjRTR2cwb2FKQzFRRTcxS25QelE9PSIsInZhbHVlIjoiQThlS1lTZzQzd2VhUjB0NHM4aEVwaUFQdFdMOGM3em9jbCtyVjJSc1BYaThMcjZLcEFRSVdCQzBpekRLMDNRViIsIm1hYyI6ImY4ZTQ5ODlkMzMzYjk1NTI3MWUxNTQ0MTM2MDgzMjM2OGY1MzgyOWEwYjkzM2NjOTAxZDJiYmRkOWNhMTFiNTcifQ%3D%3D; expires=Thu, 30-Mar-2023 09:34:17 GMT; Max-Age=7200; path=/; secure; samesite=lax;HttpOnly;Secure nab_session=eyJpdiI6Im5uaG9DRzJIM0pVbHBieHZYZUxIaFE9PSIsInZhbHVlIjoiRzIzZE8xa05paUNCWGhvQWdodG9KclROaGExSDQ1NldRWGE5NGw5Nm9YcDBBa2NZaEtja1EzQWlWMXJScExFdSIsIm1hYyI6ImJkNTkzNzYwMDI0MDIwZmRhMDhjZjk5M2Q0YWM2ZWEwOTg3ZDI5ZjM0ZDJlZTFiZTFjYWFjZmVjMzA0YTk0ZDUifQ%3D%3D; expires=Thu, 30-Mar-2023 09:34:17 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax;HttpOnly;Secure
+Referrer-Policy: same-origin no-referrer
+Expires: 0
+Date: Thu, 30 Mar 2023 07:34:17 GMT

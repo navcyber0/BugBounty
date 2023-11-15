@@ -1,0 +1,11 @@
+200 OK
+Date: Thu, 23 Mar 2023 15:00:31 GMT
+Content-Type: text/html; charset=utf-8
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Strict-Transport-Security: max-age=31536000
+Server: nginx/1.4.6 (Ubuntu)
+Retry-Count: 0
+Pragma: no-cache
+Set-Cookie: PHPSESSID=7dcb6cfe9941c214eabfc06065b5746b; expires=Fri, 24-Mar-2023 01:00:31 GMT; path=/; secure; httponly
+Vary: Accept-Encoding

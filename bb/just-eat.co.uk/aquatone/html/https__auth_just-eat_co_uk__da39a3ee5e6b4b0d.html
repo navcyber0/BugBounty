@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Just Eat API Documentation</title>
+    <!-- needed for adaptive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!--
+    ReDoc uses font options from the parent element
+    So override default browser styles
+    -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+      }
+      /* search bar */
+      div[role='search'] {
+        background-color: white !important;
+      }
+      /* search input text */
+      .search-input {
+        color: black !important;
+        font-weight: 300 !important;
+      }
+      /* side bar */
+      .-depth2 {
+        background-color: white;
+        color: black !important;
+      }
+
+      .scrollbar-container ul .active span,
+      .scrollbar-container ul li label:hover {
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="redoc_container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/redoc@v2.0.0-rc.53/bundles/redoc.standalone.js"></script>
+    <script>
+      fetch('./openapi.yaml', {
+        method: 'HEAD'
+      })
+      .then(response => {
+        let path = response.status == 404 ? './docs/openapi.yaml' :'./openapi.yaml'
+        Redoc.init(
+          path,
+          {
+            theme: {
+              colors: {
+                http: {
+                  get: '#0d6aa3',
+                },
+                success: {
+                  main: '#0d6aa3',
+                  light: '#F08633',
+                },
+                primary: { main: '#F08633' },
+                responses: {
+                  success: {
+                    color: '#0d6aa3',
+                    backgroundColor: '13,106,163,0.07',
+                    tabTextColor: '#0d6aa3',
+                  },
+                },
+              },
+              spacing: {
+                sectionVertical: 20,
+              },
+              rightPanel: {
+                backgroundColor: '#302b24',
+                codeBlock: {
+                  backgroundColor: '#F08633',
+                },
+              },
+              menu: {
+                backgroundColor: '#F08633',
+                activeTextColor: '#FFFFFF',
+                textColor: '#FFFFFF',
+                level1Items: {
+                  textTransform: 'uppercase',
+                },
+              },
+            },
+            menuToggle: true,
+            showExtensions: true,
+          },
+          document.getElementById('redoc_container'),
+        )
+      })
+    </script>
+  </body>
+</html>

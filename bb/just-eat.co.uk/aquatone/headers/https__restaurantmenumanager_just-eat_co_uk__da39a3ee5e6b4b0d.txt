@@ -1,0 +1,17 @@
+200 OK
+Cache-Control: max-age=300
+Strict-Transport-Security: max-age=0
+Cf-Ray: 7aa6da2aad32b8fd-AMS
+X-Cache: RefreshHit from cloudfront
+X-Amz-Cf-Pop: AMS50-C1
+Date: Sun, 19 Mar 2023 15:47:08 GMT
+Content-Type: text/html
+Retry-Count: 0
+X-Amz-Server-Side-Encryption: AES256
+Set-Cookie: __cf_bm=tJkfcaAwm1uXsEliNl7OpY9qpg.1x.ObOjsn0jT1uhU-1679240828-0-AeDrNUNkFjQ3BUiYO2c14mOyjUAQWmU5kNd/9na6Ht07QT/mIM0eBydZ0xP/Enla7pBT264kVnKA/fjV+IL7WaM=; path=/; expires=Sun, 19-Mar-23 16:17:08 GMT; domain=.just-eat.co.uk; HttpOnly; Secure
+Last-Modified: Mon, 13 Mar 2023 11:32:14 GMT
+Vary: Accept-Encoding
+Via: 1.1 dd133741afef09b02f3e6afd7cb39f40.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: ov_O8_0T25lN5I8I6w9ozQRriOFjeSTsmjxBSlzylORMLmyRXvuv9g==
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare

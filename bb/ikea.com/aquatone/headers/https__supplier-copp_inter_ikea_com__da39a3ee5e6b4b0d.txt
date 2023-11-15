@@ -1,0 +1,13 @@
+200 OK
+Content-Length: 97055
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'none' ; manifest-src 'self' ; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://maps.googleapis.com/ ; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ ; img-src 'self' data: https://integration.ecovadis-survey.com https://integration.ecovadis-surveys.com https://maps.googleapis.com/ https://maps.gstatic.com/ https://media.rs-online.com https://www.ecovadis-survey.com/ https://www.ecovadis-surveys.com/ https://www.manutan.fr ; font-src 'self' data: https://fonts.gstatic.com/ ; connect-src 'self' data: https://maps.googleapis.com/ https://maps.gstatic.com/ ws://supplier-copp.inter.ikea.com wss://supplier-copp.inter.ikea.com ; child-src 'self' blob: https://integration.ecovadis-survey.com https://integration.ecovadis-surveys.com https://www.ecovadis-survey.com/ https://www.ecovadis-surveys.com/ ; frame-src 'self' blob: https://*.docusign.com https://*.docusign.net https://integration.ecovadis-survey.com https://integration.ecovadis-surveys.com https://project.ivalua.com https://www.ecovadis-survey.com/ https://www.ecovadis-surveys.com/ ; frame-ancestors 'self' ; form-action * ; object-src 'self'
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+Date: Sun, 23 Jul 2023 01:07:09 GMT
+Retry-Count: 0
+Server: 
+Set-Cookie: ASP.NET_SessionId=hugh50fnttwaldrbsgdmoyze; path=/; secure; HttpOnly; SameSite=None
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block

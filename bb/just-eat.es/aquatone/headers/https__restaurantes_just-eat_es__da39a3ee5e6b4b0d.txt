@@ -1,0 +1,11 @@
+200 OK
+X-Powered-By: ASP.NET
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Cf-Ray: 7aacfefb6d054a6b-SIN
+Date: Mon, 20 Mar 2023 09:40:52 GMT
+Last-Modified: Wed, 16 Nov 2022 12:53:54 GMT
+Set-Cookie: __cf_bm=d2iaeWdw_ULOKMvineJmDyPzCRW1h09c81_pJ8SzmbM-1679305252-0-Aa6OqKWnptfjk+tZafwGxiOkcU8lisBKdK4yAk1dc3TxcPlYa+y5iw2QOz6WP2AYvEo1jHnD8XM/uJFg+A7nyuY=; path=/; expires=Mon, 20-Mar-23 10:10:52 GMT; domain=.just-eat.es; HttpOnly; Secure; SameSite=None
+Strict-Transport-Security: max-age=0
+Content-Type: text/html
+Retry-Count: 0

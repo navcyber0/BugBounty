@@ -1,0 +1,18 @@
+403 Forbidden
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Cross-Origin-Resource-Policy: same-origin
+Content-Type: text/html; charset=UTF-8
+Cross-Origin-Opener-Policy: same-origin
+Referrer-Policy: same-origin
+Retry-Count: 0
+Date: Sun, 19 Mar 2023 17:44:08 GMT
+Permissions-Policy: accelerometer=(),autoplay=(),camera=(),clipboard-read=(),clipboard-write=(),fullscreen=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()
+X-Frame-Options: SAMEORIGIN
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MOzBy6%2BjoGh2RZ2r96ioAHqjASlbp0BB8rbTUB3tcoljyBtQsUVk7BRoLwsc6xI5k9V8Cd8vBy9RlLQ7kVZ%2FEEU1PwQ7YSeVaI%2BHpAA79m6GynPdxHPBp3cvZ%2FKZEG4%2FqMxBew%3D%3D"}],"group":"cf-nel","max_age":604800}
+Cross-Origin-Embedder-Policy: require-corp
+Vary: Accept-Encoding
+Server: cloudflare
+Cf-Ray: 7aa7858e192e85a2-BOM
+Cf-Chl-Bypass: 1

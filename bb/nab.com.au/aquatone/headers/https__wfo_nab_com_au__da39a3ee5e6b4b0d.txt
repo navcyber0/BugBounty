@@ -1,0 +1,12 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+X-Ua-Compatible: IE=edge
+X-Xss-Protection: 1; mode=block
+Date: Thu, 30 Mar 2023 07:34:44 GMT
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+Expires: Thu, 30 Mar 2023 18:25:41 GMT
+Last-Modified: Wed, 29 Mar 2023 18:25:41 GMT
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Cache-Control: private, max-age=39057

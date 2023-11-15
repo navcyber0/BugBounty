@@ -1,0 +1,16 @@
+200 OK
+Server: AmazonS3
+X-Amz-Cf-Pop: HAM50-C1
+Age: 232
+Last-Modified: Wed, 04 Jan 2023 08:48:16 GMT
+X-Amz-Version-Id: Im7a1kZevyOSA9bDEc2Yj85jQ4XBkG8g
+Etag: "58892bee35877015eac164a2181c943b"
+X-Cache: Hit from cloudfront
+Content-Length: 2407
+X-Amz-Server-Side-Encryption: AES256
+Accept-Ranges: bytes
+Date: Sun, 19 Mar 2023 10:49:19 GMT
+Via: 1.1 4151e9c487816c27efe39c7f30779450.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: Vdi9N0hqeo6pOe537rTzgVNSlhsk507yrvkCIoWKOoUSOOXRZtHCSA==
+Content-Type: text/html
+Retry-Count: 0

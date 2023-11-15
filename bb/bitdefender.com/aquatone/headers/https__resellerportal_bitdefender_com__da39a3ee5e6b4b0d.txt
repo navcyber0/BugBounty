@@ -1,0 +1,14 @@
+200 OK
+Date: Thu, 23 Mar 2023 15:00:10 GMT
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Server: nginx
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+X-Oneagent-Js-Injection: true
+Request-Id: 1327692-1679583610.755-45.119.28.169-516
+Via: 1.1 google
+Content-Type: text/html; charset=utf-8
+X-Ruxit-Js-Agent: true
+Server-Timing: dtSInfo;desc="0", dtRpid;desc="1343355602"
+Set-Cookie: dtCookie=v_4_srv_1_sn_4130FD4F76F3B6CBC425B7E0F7F6DB44_perc_100000_ol_0_mul_1_app-3A50b7808a9f64654a_0_rcs-3Acss_1; Path=/; Domain=.bitdefender.com; secure internaluid=CpkLCGQcaXoplEJMYlsvAg==; path=/; secure; httponly; SameSite=strict
+Strict-Transport-Security: max-age=31536000

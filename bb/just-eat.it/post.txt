@@ -1,0 +1,19 @@
+POST /login?client_id=6ifni4jfu65akta93qkmsf3546&redirect_uri=https%3A%2F%2Facc-shop.just-eat.it%2Foauth2%2Fidpresponse&response_type=code&scope=openid&state=KsBTJTR524wzVVqzq8RJv9wFw28iD%2FRvhjjwFYgKj2g3QijrfqqItqmCVUt3YOP72VebInGgwq9xwBNwsbHL0%2Bir5ZPntLQLbRvCi9c3gyjP9789jOo4jnmdFCEulYf1phXgGwxjaiTbH%2Fjdo1JVNVzMy416s37yhdyFNWAhNYaGyBzQGTrgSVEKUDaonXRqToOzHMSbwD8%3D HTTP/2
+Host: take-alb-auth.auth.eu-central-1.amazoncognito.com
+Cookie: XSRF-TOKEN=cb0235c8-3aa0-4b79-9c39-b75c66a642d8; csrf-state=""; csrf-state-legacy=""; cognito-fl="W10="
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 951
+Origin: https://take-alb-auth.auth.eu-central-1.amazoncognito.com
+Referer: https://take-alb-auth.auth.eu-central-1.amazoncognito.com/login?client_id=6ifni4jfu65akta93qkmsf3546&redirect_uri=https%3A%2F%2Facc-shop.just-eat.it%2Foauth2%2Fidpresponse&response_type=code&scope=openid&state=KsBTJTR524wzVVqzq8RJv9wFw28iD%2FRvhjjwFYgKj2g3QijrfqqItqmCVUt3YOP72VebInGgwq9xwBNwsbHL0%2Bir5ZPntLQLbRvCi9c3gyjP9789jOo4jnmdFCEulYf1phXgGwxjaiTbH%2Fjdo1JVNVzMy416s37yhdyFNWAhNYaGyBzQGTrgSVEKUDaonXRqToOzHMSbwD8%3D
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Te: trailers
+
+_csrf=cb0235c8-3aa0-4b79-9c39-b75c66a642d8&username=admin&password=admin&cognitoAsfData=eyJwYXlsb2FkIjoie1wiY29udGV4dERhdGFcIjp7XCJVc2VyQWdlbnRcIjpcIk1vemlsbGEvNS4wIChYMTE7IExpbnV4IHg4Nl82NDsgcnY6MTAyLjApIEdlY2tvLzIwMTAwMTAxIEZpcmVmb3gvMTAyLjBcIixcIkRldmljZUlkXCI6XCJiNzB5dGRiM21ja2xydGI2ZmxreToxNjc5MjAzMzUzODAyXCIsXCJEZXZpY2VMYW5ndWFnZVwiOlwiZW4tVVNcIixcIkRldmljZUZpbmdlcnByaW50XCI6XCJNb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZfNjQ7IHJ2OjEwMi4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzEwMi4wUERGIFZpZXdlcjpDaHJvbWUgUERGIFZpZXdlcjpDaHJvbWl1bSBQREYgVmlld2VyOk1pY3Jvc29mdCBFZGdlIFBERiBWaWV3ZXI6V2ViS2l0IGJ1aWx0LWluIFBERjplbi1VU1wiLFwiRGV2aWNlUGxhdGZvcm1cIjpcIkxpbnV4IHg4Nl82NFwiLFwiQ2xpZW50VGltZXpvbmVcIjpcIi41OjMwXCJ9LFwidXNlcm5hbWVcIjpcImFkbWluXCIsXCJ1c2VyUG9vbElkXCI6XCJcIixcInRpbWVzdGFtcFwiOlwiMTY3OTk4NDQxNjU1M1wifSIsInNpZ25hdHVyZSI6ImNXSXZLMXNVRkZETEY3c3F5TWFISnBxT1dpR2JXSzhkNGF5NlF6L1ZnMUk9IiwidmVyc2lvbiI6IkpTMjAxNzExMTUifQ%3D%3D&signInSubmitButton=Sign+in

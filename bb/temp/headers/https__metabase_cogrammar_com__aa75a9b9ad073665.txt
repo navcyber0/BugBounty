@@ -1,0 +1,15 @@
+404 Not Found
+Last-Modified: Sat, 01 Apr 2023 21:29:50 +0000
+Strict-Transport-Security: max-age=31536000
+Content-Type: application/json;charset=utf-8
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Retry-Count: 0
+Server: nginx/1.14.1
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://apis.google.com https://www.google-analytics.com https://*.googleapis.com *.gstatic.com  'sha256-xlgrBEvjf72cXGba6bCV/PwIVp1DcbdhY74VIXN8fA4=' 'sha256-6xC9z5Dcryu9jbxUZkBJ5yUmSofhJjt7Mbnp/ijPkFs=' 'sha256-uKEj/Qp9AmQA2Xv83bZX9mNVV2VWZteZjIsVNVzLkA0='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com themes.googleusercontent.com ; img-src * 'self' data:; connect-src 'self' metabase.us10.list-manage.com ; manifest-src 'self';
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Date: Sat, 01 Apr 2023 21:29:50 GMT
+Content-Length: 30

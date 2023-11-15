@@ -1,0 +1,14 @@
+200 OK
+Etag: "6322dd7d-22b"
+Access-Control-Allow-Origin: *
+Date: Sat, 15 Jul 2023 13:11:28 GMT
+Akamai-Mon-Iucid-Del: 1398898
+Server: nginx
+Content-Length: 555
+Last-Modified: Thu, 15 Sep 2022 08:08:29 GMT
+Accept-Ranges: bytes
+X-Backend-Host: 0514:80
+X-Gateway-Host: c9e8cfe44705ba2b1e6c7a6871703c08b2afd245cc9d429a8965a43ae2a8c575ad39191a41f7394c3e6dec92c002aa5d
+Retry-Count: 0
+X-Ip-Source: 2003863e2ff8e39f2691361927843bcd
+Content-Type: text/html; charset=utf-8

@@ -1,0 +1,11 @@
+503 Service Unavailable
+Set-Cookie: currency=DKK; Path=/ theme=ikea-nextgen; Path=/ host-theme=ikea-nextgen; Path=/
+X-Azure-Ref: 20230723T010359Z-r0thgpw1492up1em3e59esfmu800000000ug000000006ktm
+Content-Type: text/html; charset=utf-8
+Cache-Control: public, max-age=0
+Etag: W/"1ccd-189738a7c78"
+Last-Modified: Thu, 20 Jul 2023 13:43:23 GMT
+X-Cache: CONFIG_NOCACHE
+Date: Sun, 23 Jul 2023 01:04:00 GMT
+Retry-Count: 0
+Vary: Accept-Encoding

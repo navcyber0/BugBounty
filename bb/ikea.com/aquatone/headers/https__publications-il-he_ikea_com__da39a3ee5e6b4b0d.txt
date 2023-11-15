@@ -1,0 +1,20 @@
+200 OK
+X-Amz-Cf-Pop: MAA50-P1
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Referrer-Policy: strict-origin-when-cross-origin
+Retry-Count: 0
+X-Cache: Miss from cloudfront
+Via: 1.1 44fe33c21aac1200d713d0808e5b18d8.cloudfront.net (CloudFront)
+Strict-Transport-Security: max-age=63113904
+X-Runtime: 0.028185
+Content-Type: text/html; charset=utf-8
+Date: Sun, 23 Jul 2023 01:05:20 GMT
+Server: nginx
+Etag: W/"5f6b03f574c963ad5cc48e12a6721c47"
+X-Amz-Cf-Id: OJHxcSljh86eK-u-PABdJ7wNiHVEHg-mJCT9foXeCkYq-FX7raZBxA==
+X-Permitted-Cross-Domain-Policies: none
+Cross-Origin-Opener-Policy: same-origin
+Cache-Control: max-age=60, public
+X-Request-Id: 1b216f61-737b-4bfd-8404-70fbbadbd529
+Vary: Accept-Encoding

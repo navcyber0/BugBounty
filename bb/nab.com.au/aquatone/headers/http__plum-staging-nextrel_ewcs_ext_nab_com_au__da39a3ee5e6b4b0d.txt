@@ -1,0 +1,20 @@
+200 OK
+Access-Control-Allow-Origin: *
+Accept-Ranges: bytes
+X-Vhost: publish-plum
+Last-Modified: Thu, 30 Mar 2023 05:48:03 GMT
+Content-Type: text/html;charset=utf-8
+Expires: Thu, 30 Mar 2023 07:37:25 GMT
+Content-Security-Policy: frame-ancestors 'self'
+X-Timer: S1680155972.949665,VS0,VS0,VE505
+Date: Thu, 30 Mar 2023 07:32:25 GMT
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000
+Etag: "11c86-5f817a2d4c2a4-gzip"
+Retry-Count: 0
+X-Served-By: cache-tyo11962-TYO
+Vary: Accept-Encoding
+X-Akamai-Staging: ESSL ESSL ESSL
+Cache-Control: max-age=300

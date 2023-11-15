@@ -1,0 +1,11 @@
+200 
+X-Xss-Protection: 1
+Content-Type: text/html;charset=UTF-8
+Content-Language: de-CH
+Set-Cookie: CFID=153dfa6d-c87b-4a89-b6c5-a7603eaa65a2;Path=/;Secure;HttpOnly CFTOKEN=0;Path=/;Secure;HttpOnly
+Retry-Count: 0
+Date: Fri, 23 Jun 2023 15:14:00 GMT
+X-Frame-Options: DENY
+Vary: Accept-Encoding
+Server: Apache
+Strict-Transport-Security: max-age=63072000

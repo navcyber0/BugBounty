@@ -1,0 +1,12 @@
+200 OK
+X-Edgeconnect-Midmile-Rtt: 39
+X-Edgeconnect-Origin-Mex-Latency: 642
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Etag: W/"643d8980-b2c"
+Date: Wed, 14 Jun 2023 13:53:29 GMT
+Server-Timing: cdn-cache; desc=MISS edge; dur=720 origin; dur=642 ak_p; desc="468541_388762182_791026454_136554_13641_5_-_-";dur=1
+Vary: Accept-Encoding
+Content-Type: text/html
+Last-Modified: Mon, 17 Apr 2023 18:01:36 GMT
+X-Akamai-Transformed: 9 1491 0 pmb=mRUM,1
+Retry-Count: 0

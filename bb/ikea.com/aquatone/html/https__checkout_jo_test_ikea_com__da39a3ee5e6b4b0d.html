@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>IKEA Jordan TEST</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    
+    
+    <link href="/Themes/K3Checkout/Content/select2.min.css" rel="stylesheet" type="text/css" />
+<link href="/Themes/K3Checkout/Content/styles_20221220.css" rel="stylesheet" type="text/css" />
+<link href="/Content/jquery-ui-themes/smoothness/jquery-ui-1.10.0.custom.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="/Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-ui-1.10.0.min.js" type="text/javascript"></script>
+<script src="/Scripts/public.common.js" type="text/javascript"></script>
+<script src="/Scripts/public.ajaxcart.js" type="text/javascript"></script>
+<script src="/Scripts/select2.min.js" type="text/javascript"></script>
+<script src="/Plugins/K3.Nop.Plugin.IOWSCheckout/Contents/k3ccheckout.js" type="text/javascript"></script>
+
+    
+    
+    
+    
+    
+<link rel="shortcut icon" href="https://checkout.jo.test.ikea.com/favicon-1.ico" />
+    
+    <script>
+        if ('False' === 'True') {
+            var isWebView = true;
+        } else {
+            var isWebView = false;
+        }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'site_level_1': 'checkout',
+            'visit_platform': 'web',
+            'country_code': 'jo',
+            'language_code': 'en',
+            'page_url': 'https://checkout.jo.test.ikea.com/',
+            'visit_day': 'sunday',
+            'visit_hour': '01:10'
+        });
+    </script>
+
+    
+
+    
+
+</head>
+<body>
+    <div id="container">
+        <div id="allContent">
+            <div id="mainPadding">
+                
+                <input name="__RequestVerificationToken" type="hidden" value="_paSLh4sgGoZzjN62VAySQ_1qqaVlg1ELeXtd9irqDgSoDhE0l2C40YJY0biLamD7zf4fxMp0CReJsvqMfh7OIYd-dOO-6sbO7pOV5zsV9Q1" />
+                
+
+
+<div id="dialog-notifications-success" title="Notification" style="display:none;">
+</div>
+<div id="dialog-notifications-error" title="Error" style="display:none;">
+</div>
+<div id="bar-notification" class="bar-notification">
+    <span class="close" title="Close">&nbsp;</span>
+</div>
+
+
+
+
+<div>
+    <div>
+        
+        <script type="text/javascript">
+            AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+        </script>
+        
+
+
+<div class="clearBox">&nbsp;</div>
+<div class="logoContainer halfBox">
+    <img src="https://checkout.jo.test.ikea.com/Themes/K3Checkout/Content/images/ikea_logo_20191126.svg" alt="IKEA" class="logo" id="imgIKEALogoHeader" border="0">
+</div>
+
+<div id="continueShopping" class="checkoutRight">
+        <a href="https://www.ikea.com/jo/en/cart/">Modify shopping cart</a>
+</div>
+<div class="clearBox">&nbsp;</div>
+        
+        
+        <div class="ajax-loading-block-window" style="display: none">
+            <div class="loading-image">
+            </div>
+        </div>
+        <div id="main">
+            
+<div>
+    
+    
+<div>
+    Page not found
+</div>
+
+    
+</div>
+
+        </div>
+        
+        
+    </div>
+
+    
+<div class="footerBottom">
+    <hr class="footerline" />
+    <div class="prefooter">
+        We use the latest SSL technology to encrypt all personal information.
+    </div>
+
+    <div class="footer">
+        <div class="footer-menu-wrapper">
+            <ul>
+                <li>&copy; Inter IKEA Systems B.V. 1999-2023</li>
+                
+                
+                <li><a target="_blank" href="https://www.ikea.com/jo/en/customer-service/about-online-shopping/online-shopping-terms-conditions.html">Conditions of use</a></li>
+                <li><a target="_blank" href="https://www.ikea.com/ms/en_JO/customer-service/about-shopping/return-policy.html">Shipping and Returns</a></li>
+                <li><a target="_blank" href="https://www.ikea.com/ms/en_JO/privacy_policy/privacy_policy.html">Privacy Info</a></li>
+                <li><a target="_blank" href="https://www.ikea.com/ms/en_JO/this-is-ikea/about-the-ikea-group/index.html">About us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    
+    <!--VALIDATE AJAX CROSS SITE FORGERY-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.inputs select').select2();
+        });
+        function GetAntiForgeryToken() {
+            var tokenField = $("input[type='hidden'][name$='RequestVerificationToken']");
+            if (tokenField.length === 0) {
+                return null;
+            } else {
+                return {
+                    name: tokenField[0].name,
+                    value: tokenField[0].value
+                };
+            }
+        }
+
+        $.ajaxPrefilter(
+            function(options, localOptions, jqXHR) {
+                if (options.type !== "GET") {
+                    var token = GetAntiForgeryToken();
+                    if (token !== null) {
+                        if (options.data != null) {
+                            if (options.data.indexOf("RequestVerificationToken") !== -1) return;
+                            if (options.data.indexOf("X-Requested-With") === -1) {
+                                options.data = "X-Requested-With=XMLHttpRequest" + ((options.data === "") ? "" : "&" + options.data);
+                            }
+                        } else {
+                            options.data = "X-Requested-With=XMLHttpRequest";
+                        }
+
+                        options.data = options.data + "&" + token.name + '=' + token.value;
+                    }
+                }
+            }
+        );
+    </script>
+    <!--END VALIDATE AJAX CROSS SITE FORGERY-->
+
+</div>
+
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

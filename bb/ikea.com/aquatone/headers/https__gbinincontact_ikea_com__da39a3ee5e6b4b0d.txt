@@ -1,0 +1,9 @@
+403 Forbidden
+Date: Sun, 23 Jul 2023 01:13:10 GMT
+Retry-Count: 0
+Server: IKEA Server
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Ua-Compatible: IE=edge
+Content-Type: text/html
+Content-Length: 1233

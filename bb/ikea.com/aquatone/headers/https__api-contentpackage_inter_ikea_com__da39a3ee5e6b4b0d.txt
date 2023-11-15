@@ -1,0 +1,26 @@
+404 Not Found
+Referrer-Policy: no-referrer
+X-Dns-Prefetch-Control: off
+Access-Control-Allow-Credentials: true
+Etag: W/"35-HdFibscKa8pn1ZcuaQFpmFdrDR0"
+Vary: Origin, Accept-Encoding
+Cross-Origin-Resource-Policy: same-origin
+X-Content-Type-Options: nosniff
+Set-Cookie: connect.sid=s%3AUzAKzNBM6nSUaSnF4qPrMQIno8BqiLb0.HqFVKwl0WaTY9xKr%2FGIFg4V15uxsglqb9TXSVLB11yI; Path=/; HttpOnly
+Request-Context: appId=cid-v1:
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+X-Permitted-Cross-Domain-Policies: none
+Access-Control-Expose-Header: access-token
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization, Content-Encoding, access-control-allow-origin, access-token
+Origin-Agent-Cluster: ?1
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+X-Download-Options: noopen
+Date: Sun, 23 Jul 2023 01:09:04 GMT
+Access-Control-Allow-Origin: undefined
+X-Xss-Protection: 0
+Access-Control-Expose-Headers: access-token
+Cross-Origin-Embedder-Policy: require-corp
+Cross-Origin-Opener-Policy: same-origin

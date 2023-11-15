@@ -1,0 +1,17 @@
+200 OK
+Server: cloudflare
+Cf-Ray: 7b5145ab5bb11c10-AMS
+Retry-Count: 0
+Date: Sun, 09 Apr 2023 08:10:11 GMT
+Cache-Control: max-age=300
+X-Cache: RefreshHit from cloudfront
+Via: 1.1 bb1fd0922e473ba97ff6a00f6c71141a.cloudfront.net (CloudFront)
+Strict-Transport-Security: max-age=0
+X-Amz-Server-Side-Encryption: AES256
+Vary: Accept-Encoding
+X-Amz-Cf-Id: YI8aU2igsyAZ-6l5QG7FIab-m-Vona-GTOYqzOfGmy8HoLdbU57lwA==
+Cf-Cache-Status: DYNAMIC
+Content-Type: text/html
+Last-Modified: Wed, 29 Mar 2023 14:57:52 GMT
+X-Amz-Cf-Pop: AMS54-C1
+Set-Cookie: __cf_bm=t4qm40nXgBqQwoKYRtD45V_d0Dq4sF4yN4v2OM26aZY-1681027811-0-ASbZdNvyebmgYCHjmpQsPdQsbga0p7eqhmDiWoXJP+Zeg8AQzacHidLxWrCltqpH4AeESVhmdSmfxgk7ql/MiXM=; path=/; expires=Sun, 09-Apr-23 08:40:11 GMT; domain=.justeat.it; HttpOnly; Secure; SameSite=None

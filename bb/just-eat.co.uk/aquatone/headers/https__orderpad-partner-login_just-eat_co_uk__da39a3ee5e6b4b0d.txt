@@ -1,0 +1,17 @@
+200 OK
+Last-Modified: Wed, 15 Mar 2023 12:28:03 GMT
+Etag: "e1b75cb5519a9f8d8979a94d8a1354da"
+Via: 1.1 df82305b97992378d05ae949e544e3e0.cloudfront.net (CloudFront)
+Age: 233
+Retry-Count: 0
+Content-Type: text/html
+Accept-Ranges: bytes
+Server: AmazonS3
+Vary: Accept-Encoding
+X-Amz-Cf-Pop: HAM50-P1
+X-Amz-Server-Side-Encryption: AES256
+Date: Sun, 19 Mar 2023 15:40:23 GMT
+Cache-Control: max-age=300
+X-Amz-Cf-Id: kdzdlHslf-OZXUpGmEDiEN_AKTXcW3Cekct3URPdmxV23BjGatHhpw==
+Content-Length: 656
+X-Cache: Hit from cloudfront

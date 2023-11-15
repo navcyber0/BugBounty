@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+      const REMOTE_FILE_VERSION = 1.17;
+      const mInitOrigin = window.location.origin + '/';
+      function addScript(url, id) {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.defer = true;
+        script.id = id;
+        script.addEventListener('load', function (event) {
+          const loaded = true;
+        }, {once: true});
+        script.addEventListener('error', function (e) {
+          const loaded = false;
+        }, {once: true});
+        script.src = url;
+        var scriptContainer = document.getElementsByTagName('head')[0];
+        scriptContainer.appendChild(script);
+      }
+      const initScript = 'applicationInit.js';
+      addScript(mInitOrigin + 'scripts/'+ initScript +'?'+ REMOTE_FILE_VERSION, 'script_' + performance.now());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+200 OK
+Vary: Accept-Encoding
+X-Cache-Enabled: True
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Link: <https://survalyzer.com/wp-json/>; rel="https://api.w.org/" <https://survalyzer.com/wp-json/wp/v2/pages/8>; rel="alternate"; type="application/json" <https://survalyzer.com/>; rel=shortlink
+X-Httpd-Modphp: 1
+Host-Header: 8441280b0c35cbc1147f8ba998a563a7
+Server: nginx
+Date: Fri, 23 Jun 2023 15:22:55 GMT
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: default-src 'unsafe-inline' 'unsafe-eval' https: data:; connect-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: mediastream: wss://survalyzer.3cx.ch
+Content-Type: text/html; charset=UTF-8
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Permissions-Policy: camera=(), microphone=*
+Referrer-Policy: strict-origin
+X-Proxy-Cache: HIT
+X-Cdn-C: static

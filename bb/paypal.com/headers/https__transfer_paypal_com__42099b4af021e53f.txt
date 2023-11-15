@@ -1,0 +1,10 @@
+403 Forbidden
+K13-D40-P85-D92: 403
+Content-Length: 345
+Retry-Count: 0
+Content-Type: text/html
+Date: Wed, 14 Jun 2023 13:52:41 GMT
+Server: ECAcc (tir/CD8C)
+Server-Timing: content-encoding;desc="", x-cdn;desc="edgecast"
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Timing-Allow-Origin: *

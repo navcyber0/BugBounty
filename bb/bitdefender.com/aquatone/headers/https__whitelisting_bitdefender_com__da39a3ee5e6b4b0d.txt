@@ -1,0 +1,10 @@
+200 OK
+Server: nginx
+Content-Type: text/html
+Etag: "757410642"
+Last-Modified: Mon, 12 Mar 2018 12:47:57 GMT
+Content-Security-Policy: script-src 'none'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+Content-Length: 14
+Date: Thu, 23 Mar 2023 15:00:48 GMT
+Retry-Count: 0
+Accept-Ranges: bytes

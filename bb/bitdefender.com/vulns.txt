@@ -1,0 +1,13 @@
+[wordpress-readme-file] [http] [info] https://rdprojects.bitdefender.com/readme.html
+[wordpress-readme-file] [http] [info] https://research.bitdefender.com/readme.html
+[keycloak-openid-config] [http] [info] https://auth.mdr.bitdefender.com/.well-known/openid-configuration
+[keycloak-openid-config] [http] [info] https://auth.mdrt.bitdefender.com/.well-known/openid-configuration
+[package-json] [http] [info] https://api.pan.bitdefender.com/package.json
+[package-json] [http] [info] https://api-stage.pan-stage.bitdefender.com/package.json
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/bitdefender.com/v2.0/.well-known/openid-configuration [487baf29-f1da-469a-9221-243f830c36f3]
+[composer-config:composer.json] [http] [info] https://eu-tc.gcp.gravityzone.bitdefender.com/vendor/composer/installed.json
+[composer-config:composer.json] [http] [info] https://eu-tc.gravityzone.bitdefender.com/vendor/composer/installed.json
+[composer-config:composer.json] [http] [info] https://gravityzone.bitdefender.com/vendor/composer/installed.json
+[composer-config:composer.json] [http] [info] https://us-tc.gcp.gravityzone.bitdefender.com/vendor/composer/installed.json
+[composer-config:composer.json] [http] [info] https://us-tc.gravityzone.bitdefender.com/vendor/composer/installed.json
+[composer-config:composer.json] [http] [info] https://www.gravityzone.bitdefender.com/vendor/composer/installed.json

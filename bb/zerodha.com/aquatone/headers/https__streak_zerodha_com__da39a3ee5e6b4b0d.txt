@@ -1,0 +1,15 @@
+200 OK
+Content-Type: text/html
+Retry-Count: 0
+Strict-Transport-Security: max-age=15552000
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sSLsKlOxMl5tqKUrrZyqf2IbR%2Fg%2F%2BH77vUFOQKBavx80TmE418FRkrlAvuM%2FbzskEgiGSr8yrPs4Oi%2F3%2F4aaIwcT70SMoH4oXEkjZhXseN2LKRakX0n2HWZ8HmneTAIk93A%3D"}],"group":"cf-nel","max_age":604800}
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Date: Tue, 28 Mar 2023 14:02:38 GMT
+Last-Modified: Mon, 27 Mar 2023 13:48:44 GMT
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Server: cloudflare
+Cf-Ray: 7af06972aba646f7-SIN
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Cache-Control: public, max-age=36000
+Cf-Cache-Status: DYNAMIC

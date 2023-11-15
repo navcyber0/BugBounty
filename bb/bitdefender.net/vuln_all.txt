@@ -1,0 +1,105 @@
+[weak-cipher-suites] [ssl] [medium] bluecoat-fe328ba7-3324-4ff1-ae6e-5f597c9d053e.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] bluecoat-fe328ba7-3324-4ff1-ae6e-5f597c9d053e.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[mismatched-ssl-certificate] [ssl] [low] 0upmidg.cdn.bitdefender.net:443 [CN: secupgr.cdn.bitdefender.net]
+[untrusted-root-certificate] [ssl] [low] 0upmidg.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] a001.buc.gts.kdn.bitdefender.net:443 [CN: *.kdn.bitdefender.net]
+[mismatched-ssl-certificate] [ssl] [low] aip-central.bitdefender.net:443 [CN: cybersecurity.allstateidentityprotection.com]
+[untrusted-root-certificate] [ssl] [low] att-nca-push.bitdefender.net:443
+[untrusted-root-certificate] [ssl] [low] atts-nvi-push.bitdefender.net:443
+[untrusted-root-certificate] [ssl] [low] beta.nimbus.bitdefender.net:443
+[untrusted-root-certificate] [ssl] [low] beta.push.bitdefender.net:443
+[weak-cipher-suites] [ssl] [medium] cisco-081992ac-962e-4ef7-b909-7140f440b6ab.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] cisco-081992ac-962e-4ef7-b909-7140f440b6ab.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[mismatched-ssl-certificate] [ssl] [low] cdn-m3.buh.adn.vdc.bitdefender.net:443 [CN: Kubernetes Ingress Controller Fake Certificate]
+[self-signed-ssl] [ssl] [low] cdn-m3.buh.adn.vdc.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] download.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] download.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] flow-lb.bitdefender.net:443 [CN: Kubernetes Ingress Controller Fake Certificate]
+[self-signed-ssl] [ssl] [low] flow-lb.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] forensics-api-dev.bitdefender.net:443 [CN: *.bitdefender-testing.com]
+[untrusted-root-certificate] [ssl] [low] forensics-api-dev.bitdefender.net:443
+[untrusted-root-certificate] [ssl] [low] karma.bitdefender.net:443
+[weak-cipher-suites] [ssl] [medium] egosecure-4a20befb-46ed-4858-a44e-fb71dd753256.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] egosecure-4a20befb-46ed-4858-a44e-fb71dd753256.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[mismatched-ssl-certificate] [ssl] [low] ncon-down.bitdefender.net:443 [CN: secupgr.cdn.bitdefender.net]
+[untrusted-root-certificate] [ssl] [low] ncon-down.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] nordnet-central.bitdefender.net:443 [CN: my.securitoo.com]
+[mismatched-ssl-certificate] [ssl] [low] orangenimbus.bbu.dsd.bitdefender.net:443 [CN: *.bitdefender.ro]
+[untrusted-root-certificate] [ssl] [low] orangenimbus.bbu.dsd.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] orangesecurity.bbu.dsd.bitdefender.net:443 [CN: *.bitdefender.ro]
+[untrusted-root-certificate] [ssl] [low] orangesecurity.bbu.dsd.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] orangesecurity.bbu.gts.bitdefender.net:443 [CN: *.bitdefender.ro]
+[untrusted-root-certificate] [ssl] [low] orangesecurity.bbu.gts.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] part1.hq.cog.vdc.bitdefender.net:443 [CN: partners.bitdefender.com]
+[untrusted-root-certificate] [ssl] [low] part1.hq.cog.vdc.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] part1.hq.vdc.bitdefender.net:443 [CN: partners.bitdefender.com]
+[untrusted-root-certificate] [ssl] [low] part1.hq.vdc.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] patches-please-change-me.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] patches-please-change-me.cdn.bitdefender.net:443
+[weak-cipher-suites] [ssl] [medium] f-secure-ad67cfff-824f-4345-b87b-93695805f675.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] f-secure-ad67cfff-824f-4345-b87b-93695805f675.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[mismatched-ssl-certificate] [ssl] [low] push.nimbus.bitdefender.net:443 [CN: misp-feed.bitdefender.com]
+[untrusted-root-certificate] [ssl] [low] sba-update.bitdefender.net:443
+[untrusted-root-certificate] [ssl] [low] secupgr.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] sfr-central.bitdefender.net:443 [CN: cybersecurite.sfr.fr]
+[mismatched-ssl-certificate] [ssl] [low] sourcenext-central.bitdefender.net:443 [CN: central.sourcenext.info]
+[weak-cipher-suites] [ssl] [medium] ipswitch-759594bd-57cf-4d10-811d-cf607fe24078.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ipswitch-759594bd-57cf-4d10-811d-cf607fe24078.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ivanti-60013e4c-1d97-4269-b5b7-625530f25c30.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ivanti-60013e4c-1d97-4269-b5b7-625530f25c30.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] logmein-49b66164-6e2e-475b-a860-2d728211586c.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] logmein-49b66164-6e2e-475b-a860-2d728211586c.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] microfocus-2dcb60a8-26c9-4560-9cc2-34a16ea5f6e6.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] microfocus-2dcb60a8-26c9-4560-9cc2-34a16ea5f6e6.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] microworld-24c34601-b5df-4e60-9465-592191c17dae.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] microworld-24c34601-b5df-4e60-9465-592191c17dae.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] netgear-07a2d5b3-0d1e-49d4-9038-f3e9ce19f9ce.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] netgear-07a2d5b3-0d1e-49d4-9038-f3e9ce19f9ce.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ninjarmm-3480aad7-7d04-4871-ab29-f5f44b394f1d.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] ninjarmm-3480aad7-7d04-4871-ab29-f5f44b394f1d.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[mismatched-ssl-certificate] [ssl] [low] upgr-midgress-21.fra.htz.bitdefender.net:443 [CN: secupgr.cdn.bitdefender.net]
+[untrusted-root-certificate] [ssl] [low] upgr-midgress-21.fra.htz.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-midgress-23.fra.htz.bitdefender.net:443 [CN: secupgr.cdn.bitdefender.net]
+[untrusted-root-certificate] [ssl] [low] upgr-midgress-23.fra.htz.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxiii-p.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxiii-p.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-midgress-24.fra.htz.bitdefender.net:443 [CN: secupgr.cdn.bitdefender.net]
+[untrusted-root-certificate] [ssl] [low] upgr-midgress-24.fra.htz.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxiii-rgr.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxiii-rgr.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxiii.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxiii.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxiii-rp.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxiii-rp.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxv-p.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxv-p.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxiv-p.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxiv-p.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxiv.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxiv.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxv.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxv.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxvi-p.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxvi-p.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-mmxvi.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-mmxvi.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-rp-vtr-p.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-rp-vtr-p.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgr-rp-vtr.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgr-rp-vtr.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] upgrade-please-change-me.cdn.bitdefender.net:443 [CN: edgecastcdn.net]
+[untrusted-root-certificate] [ssl] [low] upgrade-please-change-me.cdn.bitdefender.net:443
+[mismatched-ssl-certificate] [ssl] [low] videotron-central.bitdefender.net:443 [CN: videotron-central.monportaildesecurite.com]
+[mismatched-ssl-certificate] [ssl] [low] vipre-login.bitdefender.net:443 [CN: login.mobile.myvipre.com]
+[weak-cipher-suites] [ssl] [medium] oemeval001-94027265-32ef-489b-ae6c-27b60ba758fd.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] oemeval001-94027265-32ef-489b-ae6c-27b60ba758fd.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[mismatched-ssl-certificate] [ssl] [low] windtre-login.bitdefender.net:443 [CN: security-login.windtre.it]
+[untrusted-root-certificate] [ssl] [low] www.push.bitdefender.net:443
+[weak-cipher-suites] [ssl] [medium] rpvideotron-e93bc98b-1acb-4ac8-9f97-bb3b575b212c.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] rpvideotron-e93bc98b-1acb-4ac8-9f97-bb3b575b212c.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] sourcenext-102b7e23-ec49-4e55-ac84-edc9fa134b22.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] soliton-bb424119-3e74-4347-865a-5c3c15057a6a.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] sourcenext-102b7e23-ec49-4e55-ac84-edc9fa134b22.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] soliton-bb424119-3e74-4347-865a-5c3c15057a6a.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] zemana-2a56bdb2-17ce-4b85-b8f5-f756f21d8121.2d7dd.cdn.bitdefender.net:443 [[tls10 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]
+[weak-cipher-suites] [ssl] [medium] zemana-2a56bdb2-17ce-4b85-b8f5-f756f21d8121.2d7dd.cdn.bitdefender.net:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]

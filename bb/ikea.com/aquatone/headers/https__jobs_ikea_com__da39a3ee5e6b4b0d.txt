@@ -1,0 +1,14 @@
+200 OK
+Server: Kestrel
+X-Powered-By: Containerized
+Retry-Count: 0
+X-Content-Type-Options: nosniff
+Pragma: no-cache
+Cache-Control: no-cache, no-store
+X-Frame-Options: DENY
+Vary: Accept-Encoding
+X-Ua-Compatible: IE=edge
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Content-Type: text/html; charset=utf-8
+Date: Sun, 23 Jul 2023 01:13:57 GMT
+X-Xss-Protection: 1; mode=block

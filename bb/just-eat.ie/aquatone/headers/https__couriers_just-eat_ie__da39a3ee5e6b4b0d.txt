@@ -1,0 +1,17 @@
+200 OK
+X-Amz-Cf-Id: FMPap2pVV7XxhOTPhlJnp-Fl5lHTFxeY03ZSWUoBUpKUehXubPfcBg==
+Date: Sun, 19 Mar 2023 13:24:13 GMT
+X-Amz-Cf-Pop: AMS54-C1
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Retry-Count: 0
+Content-Type: text/html
+X-Cache: Hit from cloudfront
+Age: 81068
+Vary: Accept-Encoding
+Cf-Ray: 7aa608d28d8a1c83-AMS
+Set-Cookie: __cf_bm=C5QhrGSfZoAvRFGn910QVI8ncGn_uvsGPq.AeMqY9mg-1679232253-0-AU2WFT3ND9qWEEu+D3/zzzCHtuyta2VUlVjLeX4TxC3O5dMeusFTDxzkiazYtFPNFe9+aYwgO5I5/qTXcGb6bD4=; path=/; expires=Sun, 19-Mar-23 13:54:13 GMT; domain=.just-eat.ie; HttpOnly; Secure; SameSite=None
+Strict-Transport-Security: max-age=0
+Last-Modified: Thu, 16 Mar 2023 14:29:51 GMT
+X-Amz-Server-Side-Encryption: AES256
+Via: 1.1 6642832e0f3e501fb9fdc5f35d4351d8.cloudfront.net (CloudFront)

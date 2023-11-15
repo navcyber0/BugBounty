@@ -1,0 +1,15 @@
+200 OK
+Content-Type: text/html
+Cache-Control: no-cache, no-store, must-revalidate
+X-Amz-Cf-Pop: HAM50-P2
+X-Cache: Miss from cloudfront
+X-Amz-Cf-Id: bFmIpo4M1euW1u2uHnNpR9nLsTj7T9Ybcbeds5TuBjK2Pk3yc0jk0w==
+Content-Length: 3482
+Date: Sun, 19 Mar 2023 15:35:44 GMT
+Accept-Ranges: bytes
+Server: AmazonS3
+Via: 1.1 4ca183c2610619d28671590d4fd6b380.cloudfront.net (CloudFront)
+Retry-Count: 0
+Last-Modified: Tue, 17 Jan 2023 08:25:37 GMT
+Etag: "aed58e0529ea5876cb066985d3ce5ea5"
+X-Amz-Server-Side-Encryption: AES256

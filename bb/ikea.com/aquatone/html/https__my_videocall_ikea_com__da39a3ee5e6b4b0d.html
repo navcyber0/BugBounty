@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en" class="blanknav ">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png?v=M4m7Mgm6Mm">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png?v=M4m7Mgm6Mm">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png?v=M4m7Mgm6Mm">
+  <link rel="manifest" href="/static/favicon/manifest.json?v=M4m7Mgm6Mm">
+  <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg?v=M4m7Mgm6Mm" color="#0a2136">
+  <link rel="shortcut icon" href="/static/favicon/favicon.ico?v=M4m7Mgm6Mm">
+  <meta name="msapplication-TileColor" content="#0a2136">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-itunes-app" content="app-id=1018923867, app-argument=http://45.119.28.237/">
+  <title>Pexip</title>
+</head>
+
+<body>
+  <div id="root">
+    <style nonce="fl6mNKLGZBD35FjmM7UZURoPUQl5c5iS37r-PLrsQrk">
+      .loading__wrapper {
+        display: none;
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      @keyframes loading-rotate {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      .loading {
+        -webkit-animation: loading-rotate 2s linear infinite;
+        animation: loading-rotate 2s linear infinite;
+        height: 100%;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+
+      .loading:before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+      }
+
+      @keyframes loading-dash {
+        0% {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+        }
+
+        50% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -35px;
+        }
+
+        100% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -124px;
+        }
+      }
+
+      .loading__path {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+        stroke: #4990e2;
+        -webkit-animation: loading-dash 1.5s ease-in-out infinite;
+        animation: loading-dash 1.5s ease-in-out infinite;
+        stroke-linecap: round;
+      }
+    </style>
+    <div class="loading__wrapper" id="loading">
+      <svg class="loading" viewBox="25 25 50 50">
+        <circle class="loading__path" cx="50" cy="50" fill="none" r="20" stroke-miterlimit="10" stroke-width="3">
+        </circle>
+      </svg>
+    </div>
+    <noscript>
+      <div id="ErrorPage" class="Wrapper">
+        <div class="Wrapper--content">
+          <div class="image">
+            <img src="/img/noscript.svg" alt="No script" />
+          </div>
+          <div class="message">
+            <h1>Javascript required!</h1>
+            <p>Looks like you don't have javascript enabled.</p>
+            <p>Please enable javascript before continuing.</p>
+          </div>
+        </div>
+      </div>
+    </noscript>
+  </div>
+  <script nonce="fl6mNKLGZBD35FjmM7UZURoPUQl5c5iS37r-PLrsQrk">
+    document.getElementById('loading').style.display = 'block';
+    window.mypagesOptions = {
+        authError: null,
+        accessToken: null,
+        refreshToken: null,
+        flags: ["safari-allow-screen-sharing", "use-native-web-socket", "new-search", "use-media-control", "enable-townhall", "control-center-info", "moon-user", "moon-profile", "enter-the-lobby", "require-packetization-mode", "presentation-bundling"],
+        remoteHosts: {},
+      };
+  </script>
+  <script type="module" src="https://static.videxio.net/sleipnir/mypages.3.1.21-36e5d24.es6.js"></script>
+  <script nomodule src="https://static.videxio.net/sleipnir/mypages.3.1.21-36e5d24.es5.js"></script>
+</body>
+
+</html>

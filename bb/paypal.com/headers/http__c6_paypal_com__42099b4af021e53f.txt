@@ -1,0 +1,16 @@
+404 Not Found
+Paypal-Debug-Id: cecd68b5248b6
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Via: 1.1 varnish, 1.1 varnish
+Content-Length: 0
+Date: Wed, 14 Jun 2023 13:45:27 GMT
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1686750327.853025,VS0,VE242
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+Timing-Allow-Origin: *
+Accept-Ranges: bytes
+Traceparent: 00-0000000000000000000cecd68b5248b6-6ad910f25c6ef7a7-01
+X-Served-By: cache-qpg1241-QPG, cache-hyd1100026-HYD
+Retry-Count: 0

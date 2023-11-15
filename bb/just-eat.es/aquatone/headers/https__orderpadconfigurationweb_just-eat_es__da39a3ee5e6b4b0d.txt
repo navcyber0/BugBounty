@@ -1,0 +1,17 @@
+200 OK
+Cf-Ray: 7aacfe88e978529d-CCU
+Vary: Accept-Encoding
+Last-Modified: Thu, 16 Mar 2023 09:46:28 GMT
+Via: 1.1 912fe8d927c37ab06a5ab9f3fd8505be.cloudfront.net (CloudFront)
+Set-Cookie: __cf_bm=FFP1eAw9Cr10GeFPU1jDKDtyyyiPhzm8OxcFa8019gk-1679305233-0-AWFec8kZjF8mcgCvDKJVdGMfaBYRo5+Cr70B0V4e5RRxKncFWVBLFWHWxAWnU3AJV5cNDupyVFXjyYXRTNWsqVk=; path=/; expires=Mon, 20-Mar-23 10:10:33 GMT; domain=.just-eat.es; HttpOnly; Secure; SameSite=None
+Retry-Count: 0
+Cache-Control: no-cache, no-store, must-revalidate
+X-Cache: Miss from cloudfront
+X-Amz-Cf-Pop: MRS52-P3
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Content-Type: text/html
+X-Amz-Server-Side-Encryption: AES256
+X-Amz-Cf-Id: RF6iGxNOBbWI3h6yEj4u1UB6BIksmIk-BeWwV6XjDE7U2DCPkMBXrw==
+Strict-Transport-Security: max-age=0
+Date: Mon, 20 Mar 2023 09:40:33 GMT

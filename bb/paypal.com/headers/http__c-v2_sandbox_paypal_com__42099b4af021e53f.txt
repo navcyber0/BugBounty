@@ -1,0 +1,22 @@
+200 OK
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Wed, 14 Jun 2023 13:45:36 GMT
+X-Served-By: cache-qpg1269-QPG, cache-hyd1100025-HYD
+X-Timer: S1686750336.668797,VS0,VE609
+Origin-Trial: AlIogV3KFtnbfVCyl9Z2NprE7FD8PYCt+TQiYdE3ppeJjJ0xJKcthYwOxXpRCNopxVWdOIENMcNSvQCGAmj0fw0AAAB2eyJvcmlnaW4iOiJodHRwczovL3BheXBhbC5jb206NDQzIiwiZmVhdHVyZSI6IlNlbmRGdWxsVXNlckFnZW50QWZ0ZXJSZWR1Y3Rpb24iLCJleHBpcnkiOjE2ODQ4ODYzOTksImlzU3ViZG9tYWluIjp0cnVlfQ==
+Set-Cookie: enforce_policy=global; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Thu, 13 Jun 2024 13:45:36 GMT; Secure; SameSite=None cookie_check=yes; Max-Age=315619198; Domain=.paypal.com; Path=/; Expires=Tue, 14 Jun 2033 13:45:34 GMT; HttpOnly; Secure; SameSite=None LANG=en_GB%3BIN; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Wed, 14 Jun 2023 22:31:32 GMT; HttpOnly; Secure; SameSite=None x-pp-s=eyJ0IjoiMTY4Njc1MDMzNjE0OCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure; SameSite=None ts=vreXpYrS%3D1781444735%26vteXpYrS%3D1686752135%26vr%3Dba27904a1880a6022c926ca4feb5d5a7%26vt%3Dba27904a1880a6022c926ca4feb5d5a6%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Sat, 13 Jun 2026 13:45:36 GMT; HttpOnly; Secure; SameSite=None ts_c=vr%3Dba27904a1880a6022c926ca4feb5d5a7%26vt%3Dba27904a1880a6022c926ca4feb5d5a6; Path=/; Domain=paypal.com; Expires=Sat, 13 Jun 2026 13:45:36 GMT; Secure; SameSite=None x-cdn=fastly:HYD; Domain=paypal.com; Path=/; Secure
+Server-Timing: content-encoding;desc=gzip
+Content-Type: text/html; charset=utf-8
+X-Cache: MISS, MISS
+X-Content-Type-Options: nosniff
+Vary: Accept-Encoding
+Accept-Ch: Sec-CH-UA-Full
+Etag: W/"16e6b-YF+rj1tTf58togLMV5d42BlruQM"
+Paypal-Debug-Id: f740631c18bea
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Cache-Hits: 0, 0
+Retry-Count: 0
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.brighttalk.com https://*.paypal.com https://*.paypalobjects.com https://www.youtube-nocookie.com https://www.xoom.com https://*.paypal-mktg.com https://*.qualtrics.com; script-src 'nonce-CovJS4702rdjKYvSMv1SELPJxm5F4+pM/4IUmXISI0aro4Nm' 'self' https://*.paypal.com https://*.paypalobjects.com https://assets-cdn.s-xoom.com https://pypd.paypal-mktg.com 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://nominatim.openstreetmap.org https://*.paypal.com https://*.paypalobjects.com https://*.google-analytics.com https://*.salesforce.com https://*.force.com https://nexus.ensighten.com https://api.paypal-retaillocator.com https://*.brighttalk.com https://paypal.us-4.evergage.com https://*.qualtrics.com; style-src 'self' https://*.paypal.com https://*.paypalobjects.com https://assets-cdn.s-xoom.com 'unsafe-inline'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com https://assets-cdn.s-xoom.com data:; img-src 'self' https: data:; form-action 'self' https://*.paypal.com https://*.salesforce.com https://secure.opinionlab.com https://*.paypal-mktg.com https://*.paypal-corp.com https://signup.partnerize.com; base-uri 'self' https://*.paypal.com; object-src 'none'; frame-ancestors 'self' https://*.paypal.com; upgrade-insecure-requests;
+X-Xss-Protection: 1; mode=block

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+      const querystring = location.search;
+      const urlParams = new URLSearchParams(querystring);
+      window.location.assign('/index2.html?' + Date.now() + '&' + urlParams);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

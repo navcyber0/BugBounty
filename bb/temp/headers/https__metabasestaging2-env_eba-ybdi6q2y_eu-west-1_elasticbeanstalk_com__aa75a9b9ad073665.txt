@@ -1,0 +1,16 @@
+403 Forbidden
+Date: Sat, 01 Apr 2023 21:31:27 GMT
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+X-Permitted-Cross-Domain-Policies: none
+X-Frame-Options: DENY
+Set-Cookie: metabase.DEVICE=81cc86e4-4717-4acd-b06f-cde2d296328a;HttpOnly;Path=/;SameSite=Lax;Expires=Fri, 10 Jan 2042 20:48:10 GMT
+X-Content-Type-Options: nosniff
+Content-Length: 38
+Server: nginx/1.20.0
+Last-Modified: Sat, 1 Apr 2023 21:31:27 GMT
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Content-Type: text/plain
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://apis.google.com https://*.googleapis.com *.gstatic.com https://www.google-analytics.com   'sha256-lMAh4yjVuDkQ9NqkK4H+YHUga+anpFs5JAuj/uZh0Rs=' 'sha256-ib2/2v5zC6gGM6Ety7iYgBUvpy/caRX9xV/pzzV7hf0=' 'sha256-JJa56hyDfUbgNfq+0nq6Qs866JKgZ/+qCq2pkDJED8k='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline'; font-src 'self' ; img-src * 'self' data:; connect-src 'self' metabase.us10.list-manage.com www.google-analytics.com sp.metabase.com ; manifest-src 'self';  frame-ancestors 'none';
+Retry-Count: 0

@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Backoffice - Multi Formulários IKEA</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    
+    <link rel="stylesheet" href="/apps/backoffice/public/static/css/utils.css?0.3.6">
+    <link rel="stylesheet" href="/apps/backoffice/public/static/css/style.css">
+    <link rel="stylesheet" href="/apps/backoffice/public/static/css/responsive.css?0.3.6" />
+    <script src='https://www.google.com/recaptcha/api.js?render=6LcImIkUAAAAAEmJKYU8pV_nHJpE28GQ8dH0TBaC'></script>
+    <script src="/apps/backoffice/public/static/js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+    <div id="login">
+        <div id="l-left">
+            <h2>backoffice</h2>
+            <a href="http://www.waynext.com" target="_blank" title="WayNext" id="logo"><img src="/apps/backoffice/public/static/img/waynext.gif" alt="WayNext" class="wn"></a>
+        </div>
+        <div id="l-right">
+            <form method="post" id="edit" class="login-form">
+                <input type="hidden" name="__nonce" value="466474d2a5358b068c6e399c206560b2" />
+                <input type="hidden" name="__recaptcha_token" value="">
+    
+                <fieldset class="login-box user-pwd-box">
+                    
+                    <label for="username" class="imp">Username</label>
+                    <input class="text" autofocus="autofocus" value="" name="username" id="username" required="required" type="text" maxlength="255" />
+
+                    <label for="password" class="imp">Password</label>
+                    <input class="text" value="" name="password" id="password" required="required" type="password" maxlength="255" />
+                    <br clear="all" />
+                    <p class="password-recovery"><a href="/recovery-password">Esqueceu a password?</a></p>
+                    
+                </fieldset>
+                    
+                <fieldset class="login-box code-box hidden">
+                    <p style="font-size: 1.3em; color: #6d6d6d;">Por favor introduza o código de 6 dígitos enviado por SMS para o seu telemóvel:</p>
+                    <label for="code" class="imp">Código</label>
+                    <input class="text" value="" name="code" id="code" type="text" maxlength="6" disabled />
+                    
+                    <br clear="all" />
+                    
+                    <p class="fr resend-code-container">
+                        <span class="countdown hidden" data-interval="120">Caso não receba o PIN dentro de 2 minutos terá a possibilidade de o reenviar.</span>
+                        <a class="resend-code hidden" href="#">Reenviar código</a>
+                    </p>
+
+                </fieldset>
+                    
+                <p class="error-msg">
+                                    </p>
+                <input type="submit" class="login" value="Entrar" />
+                
+            </form>
+        </div>
+        <p class="clearfix"><!-- --></p>
+    </div>
+    <a href="http://www.waynext.com" target="_blank" title="WayNext" id="logo1"><img src="/apps/backoffice/public/static/img/waynext.gif" alt="WayNext" class="wn"></a>
+    <script src="/apps/backoffice/public/static/js/libs/bundle-libs.js?0.3.6"></script>
+    <script src="/apps/backoffice/public/static/js/login.js"></script>
+</body>
+</html>

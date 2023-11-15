@@ -1,0 +1,20 @@
+200 OK
+Cache-Control: no-store
+X-Request-Id: 4104ea8b9c433b056c13f7a407ba0343
+Vary: Accept-Encoding
+X-Xss-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+Referrer-Policy: strict-origin-when-cross-origin
+Link: </vite/assets/service_worker_register-096479bb.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush,</vite/assets/tailwind-4a7bdb52.css>; rel=preload; as=style; nopush,</vite/assets/application-65d9fb18.js>; rel=modulepreload; as=script; crossorigin=anonymous; nopush
+Pragma: no-cache
+Set-Cookie: session=7474acce27fff5bd97ed68469ac27757; path=/; secure; HttpOnly; SameSite=Lax
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Etag: W/"fc25a47360c31e16daabee6753fe10b5"
+Content-Security-Policy: frame-ancestors 'self'
+Date: Fri, 23 Jun 2023 15:13:05 GMT
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+Expires: 0
+Strict-Transport-Security: max-age=15724800; includeSubDomains

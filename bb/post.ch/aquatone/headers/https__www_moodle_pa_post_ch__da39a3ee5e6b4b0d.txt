@@ -1,0 +1,17 @@
+200 OK
+Strict-Transport-Security: max-age=63072000; includeSubdomains
+Retry-Count: 0
+Content-Script-Type: text/javascript
+Content-Language: de
+X-Content-Type-Options: nosniff
+Server: nginx
+Content-Type: text/html; charset=utf-8
+Expires: 
+Pragma: no-cache
+Content-Style-Type: text/css
+Accept-Ranges: none
+Date: Fri, 23 Jun 2023 15:16:05 GMT
+Vary: X-Forwarded-Proto,Accept-Encoding
+X-Frame-Options: sameorigin
+Cache-Control: private, pre-check=0, post-check=0, max-age=0, no-transform
+X-Ua-Compatible: IE=edge

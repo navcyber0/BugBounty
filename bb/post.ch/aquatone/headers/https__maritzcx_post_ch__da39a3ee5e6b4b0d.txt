@@ -1,0 +1,15 @@
+200 OK
+X-Permitted-Cross-Domain-Policies: none
+X-Powered-By: PHP/7.4.9
+Cache-Control: no-cache; no-store; must-revalidate
+Date: Fri, 23 Jun 2023 15:27:17 GMT
+Content-Type: text/html; charset=UTF-8
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Server: Apache
+Pragma: no-cache
+Set-Cookie: PHPSESSID=4u3t4l60snm2j84fr9n404foe2; Path=/; secure; httpOnly
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Expires: Thu, 19 Nov 1981 08:52:00 GMT

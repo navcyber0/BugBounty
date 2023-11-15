@@ -1,0 +1,12 @@
+401 Unauthorized
+Server: Apache
+X-Cache: Error from cloudfront
+X-Amz-Cf-Pop: MRS52-P2
+Www-Authenticate: Basic realm="Lithium"
+Via: 1.1 0b76b1af8ab2b84ac7a253f502e75320.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: 8mQPBxkgkay3l27v86l_SmSyKOAcnAGXV1B8h_gr6XmZaONjAqIuhA==
+Retry-Count: 0
+Content-Type: text/html;charset=UTF-8
+Content-Length: 167
+Date: Sun, 23 Jul 2023 01:09:56 GMT
+Set-Cookie: AWSALB=ugJeWcfFodOurYFdXLRePw/s+dDOrWr5z+qnmC7v5VFSF0d+9tTTG6017S4aTtBWhxUPsGAa1b/oka3ttm6VUPFOtvFPkyiVAR+NVhmbrhQ04vmKQ1UKUrAnRaYW; Expires=Sun, 30 Jul 2023 01:09:56 GMT; Path=/ AWSALBCORS=ugJeWcfFodOurYFdXLRePw/s+dDOrWr5z+qnmC7v5VFSF0d+9tTTG6017S4aTtBWhxUPsGAa1b/oka3ttm6VUPFOtvFPkyiVAR+NVhmbrhQ04vmKQ1UKUrAnRaYW; Expires=Sun, 30 Jul 2023 01:09:56 GMT; Path=/; SameSite=None; Secure

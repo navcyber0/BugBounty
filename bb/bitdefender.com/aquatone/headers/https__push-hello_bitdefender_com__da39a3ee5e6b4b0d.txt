@@ -1,0 +1,14 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+X-Envoy-Upstream-Service-Time: 5
+Server: istio-envoy
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+Content-Security-Policy-Report-Only: frame-ancestors ; report-uri https://csp.gservice.emarsys.net/csp-report;
+Vary: Accept-Encoding
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Date: Thu, 23 Mar 2023 15:00:09 GMT
+Cache-Control: post-check=0, pre-check=0, no-store, no-cache, must-revalidate
+Content-Security-Policy: frame-ancestors 'self' *.emarsys.net *.bitdefender.com

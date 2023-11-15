@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bitdefender Threat Map</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- <script src="js/jquery.js"></script> -->
+ 	 <script src="js/moment.js"></script>
+	<script src='js/socket.io-client/socket.io.js'></script>
+	<script src="js/app.js"></script>
+	 <script src="js/main.js"></script>
+ 	 <script src="js/attack.js"></script>
+	 <!-- <script src="js/city_coord.js"></script> -->
+	 <script src="js/ws.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/flags.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<!-- <div id="modalGenerate">
+		<div id="modalGenerateContainer">
+			<i class="fa fa-times" aria-hidden="true" onclick="HideModal('modalGenerate')"></i>
+			<h3>Generate Raport</h3>
+			<p class="subtitle">Choose the date range for the report:</p>
+			<div class="selectDiv" id="selectDiv">
+			  <select class="select" id="select" name="custom dates">
+			  	<option value="Monthly" id="option1">Today</option>
+			    <option value="CustomDates" id="option2">Yesterday</option>
+			    <option value="Weekly" id="option3">Last 7 days</option>
+			    <option value="Daily" id="option4">Last 14 days</option>
+			    <option value="Monthly" id="option5">Last 30 days</option>
+			    <option value="CustomDates" id="valid">Custom Dates</option>
+			  </select>
+			</div>
+
+			<div id="inputs">
+			<form action="#" class="ws-validate">
+			    <div class="form-row show-inputbtns">
+			        <input type="date" data-date-inline-picker="false" data-date-open-on-focus="true" />
+			    </div>
+			</form>
+			  <span>to</span>
+			<form action="#" class="ws-validate">
+			    <div class="form-row show-inputbtns">
+			        <input type="date" data-date-inline-picker="false" data-date-open-on-focus="true" />
+			    </div>
+			</form>
+		  	</div>
+
+		  	<hr />
+
+		  	<p class="text">Choose the events  that will be included in report:</p>
+		  	<form action="" id="form">
+		  		<div class="inline-block">
+					<input type="checkbox" name="attacks" value="attacks"><p class="attacks">attacks</p>
+				</div>
+				<div class="inline-block">
+					<input type="checkbox" name="infections" value="infections"><p class="infections">infections</p>
+				</div>
+				<div class="inline-block">
+					<input type="checkbox" name="spam" value="spam"><p class="spam">spam</p>
+				</div>
+			</form>
+
+			<hr />
+
+			<button class="bluebutton" onclick="HideModal('modalGenerate')">Generate PDF</button>
+		</div>
+</div>
+ -->
+<header>
+	<img id="logo" src="img/logo.png" />
+	<!-- <button id="raport" onclick="ShowModal('modalGenerate')">Generate raport</button> -->
+</header>
+<div id="container">
+	<!-- <img id="image" class="map" src="img/map.png" /> -->
+	<canvas id="drawCanvas" width="1200" height="720" style="width: auto; display: block; margin: 0 auto; max-width: 100%;"></canvas>
+	<span id="center"></span>
+</div>
+<footer>
+	<div class="footer">
+		<div class="first">
+			<div class="header" onclick="TogglePanel(this, 'inside_legend')">
+				<p>Legend</p>
+				<i class="fa fa-angle-down" aria-hidden="true" ></i>
+				
+			</div>
+			<div class="inside" id="inside_legend">
+				<p class="attacks">attacks</p>
+				<p class="infections">infections</p>
+				<p class="spam">spam</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer2">
+			<div class="second">
+			<div class="header" onclick="TogglePanel(this, 'inside_liveattacks')">
+				<p>Live attacks</p>
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+			</div>
+			<div class="inside" id="inside_liveattacks">
+				
+				<table class="table_data" width="100%" cellpadding="0" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Time</th>
+							<th>Attack</th>
+							<th>Attack type</th>
+							<th>Attack country</th>
+							<th>Target country</th>
+						</tr>
+					</thead>
+					<tbody id="attacks_data">
+						<!-- <tr>
+							<td class="timestamp">Wed 7 Dec 10:52:30 AM</td>
+							<td class="malware">Operator.Sality.ebs</td>
+							<td class="type_infections">infections</td>
+							<td class="country">Republic of Korea</td>
+							<td class="country">United States</td>
+						</tr>
+						<tr>
+							<td class="timestamp">Wed 7 Dec 10:52:30 AM</td>
+							<td class="malware">Operator.Sality.ebs</td>
+							<td class="type_attack">attack</td>
+							<td class="country">Republic of Korea</td>
+							<td class="country">United States</td>
+						</tr>
+						<tr>
+							<td class="timestamp">Wed 7 Dec 10:52:30 AM</td>
+							<td class="malware">Operator.Sality.ebs</td>
+							<td class="type_spam">spam</td>
+							<td class="country">Republic of Korea</td>
+							<td class="country">United States</td>
+						</tr> -->
+					</tbody>
+				</table>
+				
+				
+			</div>
+			</div>
+	</div>
+	<div class="footer3">
+		<div class="third">
+			<div class="header" onclick="TogglePanel(this, 'inside_locations')">
+				<p>Locations</p>
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+				
+			</div>
+			<div class="inside" id="inside_locations">
+					<div class="">
+					<ul class="locations" id="top_locations">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+</body>
+</html>

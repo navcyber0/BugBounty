@@ -1,0 +1,10 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Etag: "d91-gEg3osA796wXHJ6QaEgqPbKO15E"
+X-Edgeconnect-Origin-Mex-Latency: 722
+Strict-Transport-Security: max-age=86400 ; includeSubDomains
+Retry-Count: 0
+X-Powered-By: Next.js
+X-Edgeconnect-Midmile-Rtt: 125
+Date: Wed, 14 Jun 2023 13:52:32 GMT
+Vary: Accept-Encoding

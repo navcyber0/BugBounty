@@ -1,0 +1,17 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Content-Language: de
+X-Content-Type-Options: nosniff
+Server: nginx
+Expires: 
+Content-Script-Type: text/javascript
+X-Ua-Compatible: IE=edge
+Content-Style-Type: text/css
+X-Frame-Options: sameorigin
+Date: Fri, 23 Jun 2023 15:16:12 GMT
+Vary: X-Forwarded-Proto,Accept-Encoding
+Cache-Control: private, pre-check=0, post-check=0, max-age=0, no-transform
+Retry-Count: 0
+Pragma: no-cache
+Accept-Ranges: none
+Strict-Transport-Security: max-age=63072000; includeSubdomains

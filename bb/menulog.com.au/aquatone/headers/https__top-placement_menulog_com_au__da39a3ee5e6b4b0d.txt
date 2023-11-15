@@ -1,0 +1,15 @@
+200 OK
+Via: 1.1 95c609b9857a3c82556a22c04aca9f98.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MAA50-P2
+Retry-Count: 0
+Content-Length: 462
+Last-Modified: Tue, 20 Sep 2022 10:03:57 GMT
+Cache-Control: max-age=300
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+Etag: "68d888fffc1a59aab48075677260d643"
+X-Amz-Cf-Id: agh7w2CrjgOeijChzBRC-ubybwrCNEo7YmXx_WEjJzDLVcaM6On4ZA==
+Content-Type: text/html
+Server: AmazonS3
+Date: Mon, 20 Mar 2023 09:48:48 GMT
+X-Cache: RefreshHit from cloudfront

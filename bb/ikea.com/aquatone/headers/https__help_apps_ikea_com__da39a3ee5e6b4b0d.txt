@@ -1,0 +1,9 @@
+200 OK
+Server: iWAD v6.2.0-dc6
+X-Xss-Protection: 1; mode=block
+Cache-Control: no-cache, no-store
+Strict-Transport-Security: max-age=0
+Date: Sun, 23 Jul 2023 01:13:08 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: NSC_ttwt_tvqqpsu-tfswfs-ifmq___Fyu_=ffffffff0913163845525d5f4f58455e445a4a423660;expires=Sun, 23-Jul-2023 01:37:28 GMT;path=/;secure
+Retry-Count: 0

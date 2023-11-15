@@ -1,0 +1,13 @@
+404 Not Found
+Cf-Cache-Status: DYNAMIC
+Strict-Transport-Security: max-age=0
+Server: cloudflare
+Cf-Ray: 7d72cd13dc598565-BOM
+Date: Wed, 14 Jun 2023 13:08:17 GMT
+Retry-Count: 0
+X-Amz-Cf-Pop: BOM78-P4
+X-Amz-Cf-Id: 3F_dsEeoLW9hLEzHAf0cPjqQLVzOb3z-WKETKme6fJL2YEe3Ypd3bw==
+Set-Cookie: __cf_bm=jeEeQFldWlKcjKLnuRuUQNpGXgoOC3QQVCsUha5qhTM-1686748097-0-AXCcu2CW3QPaCy/3EwXx8Rpw6Q40Ox2i8Yuxb+ufDV/gn8zAEc4/3PLty0X/hdeavV5NSN0fX/4c+q5rXt7BVmY=; path=/; expires=Wed, 14-Jun-23 13:38:17 GMT; domain=.just-eat.co.uk; HttpOnly; Secure; SameSite=None
+X-Cache: Error from cloudfront
+Via: 1.1 3ce6bbb301e06f9df427094c97e7896c.cloudfront.net (CloudFront)
+Content-Type: application/xml

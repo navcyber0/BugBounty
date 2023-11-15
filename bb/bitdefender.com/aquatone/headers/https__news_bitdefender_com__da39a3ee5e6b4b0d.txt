@@ -1,0 +1,24 @@
+200 OK
+X-Aem-Cloudflare-Geolocation: IN
+X-Content-Type-Options: nosniff
+X-Cache: MISS
+Content-Type: text/html;charset=utf-8
+Content-Security-Policy: upgrade-insecure-requests; frame-ancestors 'self' https://explore.bitdefender.com/;
+Referrer-Policy: no-referrer-when-downgrade
+Accept-Ranges: bytes
+Cf-Cache-Status: DYNAMIC
+X-Served-By: cache-bom4748-BOM
+Vary: Accept-Encoding,cf-ipcountry,x-aem-client-country,Cookie
+Date: Thu, 23 Mar 2023 14:59:51 GMT
+Strict-Transport-Security: max-age=31557600
+Retry-Count: 0
+X-Aem-Client-Country: IN
+X-Xss-Protection: 1; mode=block
+X-Timer: S1679583591.491048,VS0,VS0,VE226
+Server: cloudflare
+Set-Cookie: cf-ipcountry=IN;path=/;Max-age=1800 affinity="ca76a39653a2280b"; Path=/; HttpOnly
+Cf-Ray: 7ac78a66aafaf4ca-BOM
+Expect-Ct: enforce, max-age=21600
+Age: 6283
+X-Vhost: bitdefender.com
+X-Aem-Client-Continent: AS

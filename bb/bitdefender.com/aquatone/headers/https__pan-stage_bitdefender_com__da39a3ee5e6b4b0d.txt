@@ -1,0 +1,11 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 14809
+Set-Cookie: CAKEPHP=gd0rfar4sisomtf1parilgean3; expires=Thu, 23-Mar-2023 18:59:59 GMT; Max-Age=14400; path=/; secure; HttpOnly
+Cache-Control: no-cache, no-store, must-revalidate
+Retry-Count: 0
+Server: nginx/1.18.0
+Date: Thu, 23 Mar 2023 14:59:59 GMT
+Expires: 0
+X-Frame-Options: SAMEORIGIN
+Pragma: no-cache

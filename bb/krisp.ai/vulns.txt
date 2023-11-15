@@ -1,0 +1,2 @@
+[credentials-disclosure] [http] [unknown] https://krisp.ai [API_KEY = 'krisp]
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/krisp.ai/v2.0/.well-known/openid-configuration [4ab62a10-3d4e-490a-9e5e-1e10c7cbdacf]

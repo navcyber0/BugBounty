@@ -1,0 +1,16 @@
+404 Not Found
+Last-Modified: Sat, 1 Apr 2023 21:30:35 GMT
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block
+Content-Length: 30
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate no-cache="set-cookie"
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Server: nginx/1.18.0
+Set-Cookie: AWSELB=F7474DD7181997B1FDDFBEE7005203EC9C5A1B43C605AA9EB3CEC8ADA42FABEDD80E91F9601CE651BD9F17F16E0DC564640BB942F513E18236BC7CC510272F86CB9F88F13C;PATH=/ AWSELBCORS=F7474DD7181997B1FDDFBEE7005203EC9C5A1B43C605AA9EB3CEC8ADA42FABEDD80E91F9601CE651BD9F17F16E0DC564640BB942F513E18236BC7CC510272F86CB9F88F13C;PATH=/;SECURE;SAMESITE=None
+Retry-Count: 0
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://apis.google.com https://www.google-analytics.com https://*.googleapis.com *.gstatic.com  'sha256-lMAh4yjVuDkQ9NqkK4H+YHUga+anpFs5JAuj/uZh0Rs=' 'sha256-sMNbXyc1lLzhHbH/CKs11HIQMnMkZAN2eA99WhJeEC0=' 'sha256-JJa56hyDfUbgNfq+0nq6Qs866JKgZ/+qCq2pkDJED8k='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline'; font-src 'self' ; img-src * 'self' data:; connect-src 'self' metabase.us10.list-manage.com ; manifest-src 'self';  frame-ancestors 'none';
+Content-Type: application/json;charset=utf-8
+Date: Sat, 01 Apr 2023 21:30:35 GMT
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY

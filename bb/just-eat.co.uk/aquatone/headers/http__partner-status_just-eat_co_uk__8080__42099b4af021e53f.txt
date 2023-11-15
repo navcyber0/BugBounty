@@ -1,0 +1,14 @@
+200 OK
+Date: Wed, 14 Jun 2023 13:12:43 GMT
+Strict-Transport-Security: max-age=0
+Cf-Ray: 7d72d38eae331bd0-BOM
+Last-Modified: Wed, 09 Nov 2022 09:57:15 GMT
+X-Amz-Cf-Pop: TLV50-C1
+Content-Type: text/html
+Cache-Control: max-age=86400
+X-Cache: RefreshHit from cloudfront
+X-Amz-Cf-Id: K6DgDSzRb6C_ecRGnFMzCZGkTO--zRnBQxroxePxodFZSETrXk51qA==
+Cf-Cache-Status: DYNAMIC
+Via: 1.1 f98f465ca5f7e28aad47b7480dfd5060.cloudfront.net (CloudFront)
+Server: cloudflare
+Retry-Count: 0

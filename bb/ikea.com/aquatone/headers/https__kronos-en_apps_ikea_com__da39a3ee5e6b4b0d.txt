@@ -1,0 +1,21 @@
+200 OK
+Report-To: {"group":"network-errors","max_age":86400,"endpoints":[{"url":"https://identity.nel.measure.office.net/api/report?catId=GW+estsfd+pnq"}]}
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Expires: -1
+Referrer-Policy: strict-origin-when-cross-origin
+Date: Sun, 23 Jul 2023 01:14:01 GMT
+Pragma: no-cache
+Vary: Accept-Encoding
+X-Dns-Prefetch-Control: on
+X-Ms-Request-Id: eb9d23b0-47cb-4852-8507-02ae26770100
+Nel: {"report_to":"network-errors","max_age":86400,"success_fraction":0.001,"failure_fraction":1.0}
+X-Xss-Protection: 0
+Link: <https://aadcdn.msftauth.net>; rel=preconnect; crossorigin <https://aadcdn.msftauth.net>; rel=dns-prefetch <https://aadcdn.msauth.net>; rel=dns-prefetch
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: DENY
+P3p: CP="DSP CUR OTPi IND OTRi ONL FIN"
+Set-Cookie: buid=0.AREAemMLclplz0CBavIvQHVcLJT6ymzbXflBv5Pzx8UnEkkRAAA.AQABAAEAAAD--DLA3VO7QrddgJg7WevrYHMk2JHxruM09eWx13j14kkmGYAWLFsXc_G_LkQsIW6f_Dn2bifjYTKoo_cEsRadDaT5eJTTnIY0u5I_23h07BGuCb_9NmOLvfaxFYXA1N8gAA; expires=Tue, 22-Aug-2023 01:14:02 GMT; path=/; secure; HttpOnly esctx=PAQABAAEAAAD--DLA3VO7QrddgJg7Wevr0ecGMig3bRN7lzYhM0mTgESl7fgy6eV0wR52gr5x55y2WfmzUzVWss-nF3txN10MU6P6twkPep3pF24d9LhcNXHk1KicB31JGFm76YVjKQHmzHBgRdaDs0CsV7mNh1CElvgUlYOi90_eHdrpDqavSXJbpHZBVNJFZjYG5hMk9rKdcAy9DTgxPzr0aai2IucPS2m1Cy25lkhZZc8O9yw07A-1Vd7Qe5T5gTcYZFHc73wgAA; domain=.login.microsoftonline.com; path=/; secure; HttpOnly fpc=Alt2uMEg08BPj1BrcO1YRAdNpfZ4AQAAANl1TtwOAAAA; expires=Tue, 22-Aug-2023 01:14:02 GMT; path=/; secure; HttpOnly x-ms-gateway-slice=estsfd; path=/; secure; httponly stsservicecookie=estsfd; path=/; secure; httponly
+Cache-Control: no-store, no-cache
+X-Content-Type-Options: nosniff
+X-Ms-Ests-Server: 2.1.15811.7 - WEULR2 ProdSlices

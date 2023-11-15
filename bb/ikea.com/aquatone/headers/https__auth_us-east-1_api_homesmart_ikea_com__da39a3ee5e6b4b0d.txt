@@ -1,0 +1,8 @@
+403 Forbidden
+X-Amzn-Errortype: ForbiddenException
+X-Amz-Apigw-Id: IfiXDHRboAMFkcw=
+Date: Sun, 23 Jul 2023 01:09:26 GMT
+Content-Type: application/json
+Content-Length: 23
+Retry-Count: 0
+X-Amzn-Requestid: ba19e424-0dd3-4af5-b93e-da4c2afc57da

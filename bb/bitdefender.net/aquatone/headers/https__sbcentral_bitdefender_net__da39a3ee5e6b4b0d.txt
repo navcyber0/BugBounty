@@ -1,0 +1,18 @@
+200 OK
+Last-Modified: Mon, 13 Dec 2021 13:56:36 GMT
+X-Content-Type-Options: nosniff
+X-Webkit-Csp: default-src 'self'; connect-src 'self' https://nimbus.bitdefender.net ; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com; object-src 'self'; style-src 'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com; img-src 'self' https://download.bitdefender.com; media-src 'self'; frame-src 'self'; font-src 'self'
+Date: Wed, 22 Mar 2023 14:57:16 GMT
+Content-Type: text/html
+Retry-Count: 0
+Vary: Accept-Encoding
+Content-Security-Policy: default-src 'self'; connect-src 'self' https://nimbus.bitdefender.net ; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com; object-src 'self'; style-src 'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com; img-src 'self' https://download.bitdefender.com; media-src 'self'; frame-src 'self'; font-src 'self'
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Expires: Wed, 22 Mar 2023 14:57:15 GMT
+Cache-Control: max-age=0
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Security-Policy: default-src 'self'; connect-src 'self' https://nimbus.bitdefender.net ; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com; object-src 'self'; style-src 'self' 'unsafe-inline' https://maxcdn.bootstrapcdn.com; img-src 'self' https://download.bitdefender.com; media-src 'self'; frame-src 'self'; font-src 'self'
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Cf-Ray: 7abf49383b42a914-MAA

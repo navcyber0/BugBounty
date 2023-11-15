@@ -1,0 +1,16 @@
+200 OK
+Access-Control-Allow-Origin: *
+Cache-Control: public, max-age=0, must-revalidate
+Feature-Policy: vibrate none; geolocation none; camera 'none'; microphone 'none'
+Referrer-Policy: no-referrer
+Vary: Accept-Encoding
+Retry-Count: 0
+Date: Sun, 19 Mar 2023 10:53:16 GMT
+Content-Type: text/html; charset=utf-8
+X-Content-Type-Options: nosniff
+X-Frame-Options: sameorigin
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HwJKLVfBhCnRJjXNRs4sfCa466YGJsGrDE3oJHUrEFuq8cVkBq%2BsxJT0Aji%2BsIpPo5XykWNwHPqcvxkVJxBL9JXRl9rMlgaCrHlphjVQOlzgFzXJKd%2Bdro1MwQEzIN2hDml7pWGBUA%3D%3D"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Cf-Ray: 7aa52bb198ba06e0-AMS
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare

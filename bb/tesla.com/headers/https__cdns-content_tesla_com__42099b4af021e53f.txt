@@ -1,0 +1,10 @@
+403 Forbidden
+Server: AkamaiGHost
+Mime-Version: 1.0
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Date: Wed, 14 Jun 2023 13:52:32 GMT
+Retry-Count: 0
+Content-Type: text/html
+Content-Length: 176
+Cache-Control: max-age=0
+Expires: Wed, 14 Jun 2023 13:52:32 GMT

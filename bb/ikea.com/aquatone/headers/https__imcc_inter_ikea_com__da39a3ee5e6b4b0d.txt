@@ -1,0 +1,14 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+Vary: Accept-Encoding
+Cache-Control: public, must-revalidate, max-age=30
+Etag: "18596034"
+Last-Modified: Thu, 20 Apr 2023 10:08:33 GMT
+Content-Type: text/html
+Referrer-Policy: same-origin
+X-Dns-Prefetch-Control: off
+Date: Sun, 23 Jul 2023 01:13:37 GMT
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Set-Cookie: akavpau_MAINTENANCE=1690075117~id=a65d5a83ac0e0b8a6c0984240b4da209; Path=/; HttpOnly; Secure; SameSite=None
+Strict-Transport-Security: max-age=15768000

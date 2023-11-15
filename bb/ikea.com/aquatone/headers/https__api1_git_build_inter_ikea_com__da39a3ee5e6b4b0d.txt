@@ -1,0 +1,18 @@
+200 OK
+X-Github-Request-Id: 26ce8747-c48b-4cc3-b7da-9bc81988f56a
+X-Content-Type-Options: nosniff
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Server: GitHub.com
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame
+Set-Cookie: saml_csrf_token=9DPGNsvSL1x9hGi-kjv97O8qKRo-a9q7CVDTxg3yXDTPJAAC0fokndejk2vPduLCBuTRWrmUIR7s2idiK-9b-nBW0cGQZljQG_ZKzGJ-gh4; path=/; secure; HttpOnly; SameSite=None saml_csrf_token_legacy=9DPGNsvSL1x9hGi-kjv97O8qKRo-a9q7CVDTxg3yXDTPJAAC0fokndejk2vPduLCBuTRWrmUIR7s2idiK-9b-nBW0cGQZljQG_ZKzGJ-gh4; path=/; secure; HttpOnly logged_in=no; domain=git.build.inter.ikea.com; path=/; expires=Tue, 23 Jul 2024 01:09:15 GMT; secure; HttpOnly; SameSite=Lax _fi_sess=zs4qj%2FtrDif47eRr6sbX8tJwvg%2Bz1zR54W46cz%2BprZxOnYVC%2BkI%2F5f%2BdNWGHkOB%2BOZnDwhWy1n8PNzXed9WzO616a9aKVGAySlNf2g6MkAbhwIDrTbLrkW26vZJvpPz6fteBTfgsAfPIyopkeEypPPcL3JSIGsJZMZCrl3S0azg%3D--hHa3D4ptONqoU94o--NxeEYW6RqtWH%2BETaPVCowQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+Date: Sun, 23 Jul 2023 01:09:15 GMT
+X-Frame-Options: deny
+X-Xss-Protection: 0
+X-Runtime-Rack: 0.054520
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-store
+Etag: W/"cc8f22f725a8acecd332e4d5a85914c2"
+X-Runtime: 0.046683
+Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src git.build.inter.ikea.com/assets-cdn/worker/ gist.git.build.inter.ikea.com/assets-cdn/worker/; connect-src 'self' uploads.git.build.inter.ikea.com media.git.build.inter.ikea.com www.githubstatus.com raw.git.build.inter.ikea.com git.build.inter.ikea.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://git.build.inter.ikea.com; font-src assets.git.build.inter.ikea.com; form-action 'self' git.build.inter.ikea.com gist.git.build.inter.ikea.com pages.git.build.inter.ikea.com; frame-ancestors 'none'; frame-src viewscreen.git.build.inter.ikea.com notebooks.git.build.inter.ikea.com; img-src * data:; manifest-src 'self'; media-src media.git.build.inter.ikea.com; script-src assets.git.build.inter.ikea.com; style-src 'unsafe-inline' assets.git.build.inter.ikea.com; worker-src git.build.inter.ikea.com/assets-cdn/worker/ gist.git.build.inter.ikea.com/assets-cdn/worker/
+Retry-Count: 0

@@ -1,0 +1,12 @@
+403 Forbidden
+Date: Thu, 30 Mar 2023 07:35:12 GMT
+Content-Security-Policy: frame-ancestors 'self'
+X-Frame-Options: SAMEORIGIN
+Retry-Count: 0
+Content-Type: text/html
+Cache-Control: max-age=0
+Expires: Thu, 30 Mar 2023 07:35:12 GMT
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Mime-Version: 1.0
+Content-Length: 297

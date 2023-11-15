@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <title>NAB Property Insights: Estimate Property Value & Get Property Reports</title>
+  <meta name="Nab" content="" />
+  <meta name="description" content="Want to know what your house is worth? Get a Free NAB Property Report with estimated property value and local area insights today."/>
+  <meta name="keywords" content="" />
+    <meta property="fb:page_id" content="174238599281322" />
+  <meta property="twitter:account_id" content="7302852" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <!-- Browser favicon -->
+  <link rel="icon" href="https://www.nab.com.au/etc/designs/nabrwd/clientlibs/images/favicon.ico"/>
+  <link rel="shortcut icon" href="https://www.nab.com.au/etc/designs/nabrwd/clientlibs/images/favicon.ico" type="image/x-icon"/>
+  <!-- iOS tile icons -->
+  <link rel="apple-touch-icon" href="https://www.nab.com.au/etc/designs/nabrwd/clientlibs/images/nab-app-icon-60.png"/>
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.nab.com.au/etc/designs/nabrwd/clientlibs/images/nab-app-icon-76.png"/>
+  <link rel="apple-touch-icon" sizes="240x240" href="https://www.nab.com.au/etc/designs/nabrwd/clientlibs/images/nab-app-icon-240.png"/>
+  <link rel="apple-touch-icon" sizes="304x304" href="https://www.nab.com.au/etc/designs/nabrwd/clientlibs/images/nab-app-icon-304.png"/>
+  <link rel="apple-touch-icon" sizes="540x540" href="https://www.nab.com.au/etc/designs/nabrwd/clientlibs/images/nab-app-icon-540.png"/>
+   <!-- Sripts -->
+  <script>
+    digitalData = {};
+    digitalData.event = [];
+    var digitalData = {"page": {"pageInfo": { "pageName":"nab:campaigns:personal:home-loans:property-insights","siteType":"externally-hosted-template"} },"components" : [],"event": []};
+  </script>
+  <!-- Browser script -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="/etc/designs/bootstrap/bootstrap-managed-designs/bootstrap-nabcampaigns/clientlibs.min.css" type="text/css" async>
+  <link rel="stylesheet" href="/assets/css/main.css" type="text/css" async>
+  <!-- print.css -->
+  <link rel="stylesheet" href="/assets/css/print.css"  media="print" type="text/css" async>
+</head>
+<body itemscopeitemtype="http://schema.org/WebPage" class="campaign layout-no-nav" data-spy="scroll" data-target="#nav-middlefixed" data-offset="61" data-global-offset='60'>
+<div class="container clearfix">
+  <nav id="skiplinks" role="navigation">
+    <ul>
+      <li>
+        <a href="#content">Skip to Content</a>
+      </li>
+      <li>
+        <a href="#nav">Skip to Navigation</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div id="body-wrapper">
+  <div id="content-wrapper">
+    <main role="main" id="content">
+      <div class="header-banner">
+        <div class="container">
+          <div class="row">
+            <div class="header-banner-content">
+              <div class="logo-main">
+                <a id="logo" itemprop="url" href="https://www.nab.com.au/">
+                  <img itemprop="image" srcset="/assets/img/global/nab-logo-white.png 1x, /assets/img/global/nab-logo-white-2x.png 2x, /assets/img/global/nab-logo-white-3x.png 3x" src="/assets/img/global/nab-logo-white.png" alt="National Australia Bank" />
+                </a>
+                <a id="home-link" class="sr-only" href="https://www.nab.com.au/">NAB Home</a>
+              </div>
+              <div class="header-banner-details">         
+                <h5 class="color-red">Property insights</h5>   
+                <h1 class="header-banner-title text-black">SEARCH LOCATIONS FOR ESTIMATED PROPERTY VALUES AND INSIGHTS</h1>
+                <p>Buying or selling? Get ahead with property value estimates, insights and property reports.</p>
+                <div class="form-search">
+                  <div class="form-field form-field-append-btn">
+                  <label for="data_propertyaddresssuburb" class="label-hidden">Search suburb, address or postcode</label>
+                    <input type="text" id="data_propertyaddresssuburb" name="data_propertyaddresssuburb" class="search-input has-autocomplete required ui-autocomplete-input" placeholder="Search suburb, address or postcode" aria-label="Search">
+                    <button id="bottomSearch" class="form-btn search-btn searchButtonOrig" type="button">Search</button>
+                    <a href="#" id="fullSearch" class="form-btn search-btn searchButtonOrig" type="button">Search</a>
+                    <div id="form-notification" class="input-notification"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+    
+<section id="HousingInsights">
+  <div class="loader-overlay small-loader">
+    <svg class="circular" viewBox="25 25 50 50">
+      <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10"/>
+    </svg>
+  </div>
+</section>
+<div id="dataContent" class="data-content data-content-firstpage" style="height: 0; overflow: hidden;"></div>
+<section id="signup-section"  style="display: none;">
+  <div class="standard-content text-center" id="signup-form-section">
+    <div class="container mild-padding-bottom">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ptop">
+          <h2>GET THE FULL PROPERTY REPORT</h2>
+          <p class="line2">Want a deeper insight into your searched location? Enter your email and the property report will generate below, a link will also be sent to your email.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <form action="" id="signup-form" class="styled-form" method="post" data-parsley-validate="">
+          <div class="form-row">
+            <label for="signup-email">Email address</label>
+            <input type="email" id="signup-email" name="signup-email" placeholder="e.g. john@gmail.com" data-parsley-type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" data-parsley-error-message="Please enter a valid email address" data-parsley-required="true">
+          </div>
+          <div class="form-row-captcha">
+              <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LcutBwUAAAAAEZMlF0GLqwkO774CQ7TbMVRfayj"></div>
+              <input type="checkbox" id="recaptcha-checkbox" data-parsley-error-message="The reCAPTCHA was not checked. Please try again, or call 13 78 79." required>
+          </div>
+          <div class="form-row no-margin-bottom">
+            <input type="hidden" id="signup-p" name="signup-p">
+          </div>
+          <div class="form-row-btn text-center">
+            <p class="text-red form-error-message"></p>
+            <input type="hidden" id="property-address-suburb" name="property-address-suburb" />
+            <button class="btn btn-red" type="submit" id="signup-submit">Get report</button>
+            <p class="form-disclaimer">
+              <small>
+                By clicking Get Report, you agree to NAB contacting you about your home loan needs. <br/>View our <a class="link" href="https://www.nab.com.au/common/privacy-policy/privacy-notification" target="_blank">privacy notification</a> for more information.
+              </small>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="homeContent">
+  <section id="property-report" class="mbottom">
+    <div class="container">
+      <div>
+        <div class="col-xs-12 col-md-8 col-md-offset-2 ptop">
+          <!-- "IE" targets IE9 and lower without the need to add the browser version/number -->
+          <!--[if IE]>
+          <div id="browser-compatibility-warning" class="text-center">
+              <h6 class="text-red">We don’t support this current version of your browser.</h6>
+              Use the latest browser with up-to-date security patches applied for the best. Call 13 78 79 for your report if you don’t have a compatible system.
+          </div>
+          <![endif]-->
+          <div class="loan text-center">
+            <h5 class="color-red">Property insights</h5>
+            <h2>What you'll get</h2>
+          </div>
+          <div class="text-center">
+            <p class="line2 section-center">Our property valuation reports give you insights about a suburb or specific property and are emailed to you within five minutes, so you can be prepared to make your decision.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="property-report col-md-12">
+          <div class="row icon-grid-3x3 icon-grid-wide">
+            <div class="col-xs-12 col-sm-4 icon-grid-item">
+              <div class="icon-grid-img">
+                <svg class="icon icon-paper"><use xlink:href="/assets/icons/symbol-defs.svg#icon-paper-8"></use></svg>
+              </div>
+              <div class="icon-grid-text">
+                <h6>Property details</h6>
+                <p> Each property valuation report provides you key property details and handy information, from the number of bathrooms to the size of the block, to help with your property search.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 icon-grid-item">
+              <div class="icon-grid-img">
+                <svg class="icon icon-chart"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chart"></use></svg>
+              </div>
+              <div class="icon-grid-text">
+                <h6>Estimated values</h6>
+                <p> Get instant property value estimates based on available market data. This means less surprises if you're buying or selling a property.</p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 icon-grid-item">
+              <div class="icon-grid-img">
+                <svg class="icon icon-folder-home"><use xlink:href="/assets/icons/symbol-defs.svg#icon-folder-home"></use></svg>
+              </div>
+              <div class="icon-grid-text">
+                <h6>Sales & rental history</h6>
+                <p> See similar properties that have sold – and their property valuation – to get a better idea of how much your house is worth. Or, find out how much you can expect to earn if you start renting out.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+          <section class="lets-talk bg-grey module-top-padding module-bottom-padding" id="contact">
+            <div class="off-white contact large">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-md-8 col-md-offset-2 ptop">
+                    <div class="loan text-center">
+                      <h5 class="color-red">Let's talk</h5>
+                    </div>
+                    <div class="text-center">
+                      <h2>WE'RE READY TO HELP YOU</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+                      <div class="clearfix print-hide contact-item mobile-spacing-top col-md-4 col-xs-12">
+                        <div class="cta-business-banking text-center">
+                          <div class="clearfix">
+                            <div class="contact-icon">
+                              <svg class="icon icon-customer-support"><use xlink:href="/assets/icons/symbol-defs.svg#icon-customer-support"></use></svg>
+                            </div>
+                          </div>
+                          <div class="contact-box">
+                            <h6>Get started</h6>
+                            <a href="https://www.nab.com.au/common/forms/home-loan-appointment" class="btn btn-red" type="button">Book an appointment</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="clearfix contact-item mobile-spacing-top col-md-4 col-xs-12">
+                        <div class="cta-business-banking text-center">
+                          <div class="clearfix">
+                            <div class="contact-icon">
+                              <svg class="icon icon-mobile"><use xlink:href="/assets/icons/symbol-defs.svg#icon-mobile-new"></use></svg>
+                            </div>
+                          </div>
+                          <div class="contact-box">
+                            <h6><a href="tel:137879" class="text-black"> Call 13 78 79</a></h6>
+                          </div>
+                          <span>7 days a week</span>
+                        </div>
+                      </div>
+                      <div class="clearfix print-hide contact-item last-item col-md-4 col-xs-12">
+                        <div class="cta-business-banking text-center">
+                          <div class="clearfix">
+                            <div class="contact-icon">
+                              <svg class="icon icon-location-pin"><use xlink:href="/assets/icons/symbol-defs.svg#icon-location-pin"></use></svg>
+                            </div>
+                          </div>
+                          <div class="contact-box">
+                            <h6>Talk to us today</h6>
+                            <a href="https://www.nab.com.au/locations/" class="btn btn-red" type="button">Find a branch</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="accordion-fullwidth js-accordion print-hide">
+          <div class="container">
+            <button class="accordion-trigger js-accordion-trigger">
+              <h6>Important information</h6>
+              <svg class="icon icon-chevron"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron"></use></svg>
+            </button>
+            <div class="accordion-content footer">
+              <div class="accordion-content-inner">
+                <div class="text-small">
+                  <p class="display-date">
+                    Report prepared on: Thursday, March 30, 2023                  </p>
+
+              <p><b>1. Important notice about the information provided via this webpage</b></p><br/>
+
+              <p>The information provided via this webpage has been prepared by RP Data Pty Ltd ABN 67087 759 171 trading as CoreLogic Asia Pacific ('CoreLogic') and National Australia Bank Limited ABN 12 004 044 937 AFSL and Australian Credit Licence 230686 ('NAB'). CoreLogic is not related to NAB.</p>
+              <br/> 
+              <p>On this webpage, the suburb housing market performance that is generated by the suburb search, and the information contained in the ‘Market Performance’ section, has been provided by CoreLogic. The information contained in the ‘Future Expectations’ section has been prepared by NAB. The National Housing Market Report and each State and Territory Housing Market Report that can be downloaded from this website contain important information about the nature and sources of the information contained in those reports. Please refer to individual reports for details.</p>
+              <br/>
+              <p>NAB has not been involved in the preparation of CoreLogic’s information provided via this webpage. Any views in CoreLogic’s information do not necessarily reflect NAB’s views and to the maximum extent permitted by law, NAB does not make any representation or any warranty in relation to, or accept responsibility for the accuracy, completeness, currency or appropriateness of CoreLogic’s information in this webpage.</p>
+              <br/>
+              <p>The information provided via this webpage is provided for general information purposes only and is a summary based on selective information which may not be complete for your particular purposes. To the extent that any information provided via this webpage constitutes financial advice, it doesn’t take into account any person’s particular financial situation or goals.</p>
+              <br/>
+              <p>NAB recommends that you seek advice specific to your circumstances from your financial adviser. Before acting on any advice or information provided via this webpage, you should consider whether it is appropriate for your circumstances and independently check the suitability of the information, including by obtaining advice from appropriate professionals or experts.</p>
+              <br/>
+              <p>NAB does not accept liability for any loss or damage whatsoever which may directly or indirectly result from any advice, opinion, information, representation or omission, whether negligent or otherwise, contained in or provided via this webpage.</p>
+              <br/>
+              <p>Any application for a loan that is made to NAB is subject to NAB’s terms, conditions, fees, charges and eligibility criteria (available on request), including NAB’s standard valuation process. Any estimated value or estimated value range contained in this publication will not be used by NAB in valuing the property.</p>
+              <br/>
+              <p><b>2. Important notice about forward-looking statements </b></p>
+              <br/>
+              <p>Information provided by either CoreLogic or NAB via this webpage may contain certain forward-looking statements. The words “anticipate”, “believe”, “expect”, “project”, forecast”, “estimate”, “likely”, “intend”, “outlook”, “should”, “could”, “may”, “target”, “plan” and other similar expressions are intended to identify forward-looking statements.</p>
+              <br/>
+              <p>These forward-looking statements are not guarantees of future performance and involve known and unknown risks, uncertainties and other factors, many of which are beyond the control of either NAB or CoreLogic, that may cause actual results to differ materially from those expressed or implied in these statements.</p>
+              <br/>
+              <p>There can be no guarantee that actual outcomes will not differ materially from these statements. There are usually differences between forecast and actual results because events and actual circumstances frequently do not occur as forecast and their differences may be material.</p>
+              <br/>
+              <p>NAB does not accept responsibility for the accuracy or completeness of any statements in this report whether as a result of new information, future events or results or otherwise, or responsibility to update or revise any statement to reflect any change in the events, conditions or circumstances on which a forecast is based.</p>
+              <br/>
+
+              <p><b>3. Copyright and Disclaimer Notices for data</b></p><br/>
+
+              <p><b>Copyright</b></p><br/>
+              <p>This publication contains materials, content, data and information <b>(CoreLogic Data)</b> provided by RP Data Pty Ltd trading as CoreLogic Asia Pacific <b>(CoreLogic)</b>.</p>
+              <br/>
+              <p>&copy; Copyright 2018. CoreLogic and its licensors (including Local, State, and Commonwealth Governments) own all rights, title and interests (including all intellectual property rights) in the CoreLogic Data. All rights reserved. You must not reproduce, modify, adapt, publish, communicate, distribute or resell this publication or CoreLogic Data (in any form or media) without our prior written permission.</p>
+              <br/>
+              <p>
+                RP Data Pty Ltd trading as CoreLogic Asia Pacific<br/>
+                ABN 67 087 759 171<br/>
+                P: 1300 734 318<br/>
+                E: support@corelogic.com.au
+              </p>
+              <p><br/>
+                    <b>Licence</b>
+              </p><br/>
+
+                  <p>
+                  CoreLogic grants to you a non-exclusive, non-transferable, non-sublicensable, royalty-free, irrevocable, licence to use the publication in Australia, limited to:
+              </p><br/>
+
+                  <p>
+                (a) downloading this publication from the website on a computer or mobile device via a web browser;
+              </p><br/>
+
+                  <p>
+                    (b) copying and storing this publication for your own personal use; and
+              </p><br/>
+
+                  <p>
+                    (c) printing pages from this publication for your own personal use.
+                </p><br/>
+
+                  <p>
+                    <b>Data & Research publications</b>
+              </p><br/>
+
+                  <p>
+                  Whilst all reasonable effort is made to ensure the information in this publication is current, CoreLogic does not warrant the accuracy or completeness of the data and information contained in this publication and to the full extent not prohibited by law excludes all loss or damage arising in connection with the data and information contained in this publication.
+              </p><br/>
+
+                  <p>
+                  CoreLogic does not provide, through this publication, any investment, legal, financial or taxation advice as to the suitability of any property. You acknowledge and agree that You will exercise Your independent judgement in accessing and using this publication and this publication should not be relied upon in lieu of appropriate professional advice.
+              </p><br/>
+
+                  <p>
+                  An automated valuation model estimate <b>(AVM Estimate)</b> is a computer generated, statistically derived estimate of the value of the subject property and must not be relied upon as a professional valuation or an accurate representation of the market value of the subject property as determined by a valuer. It is generated (i) by a mathematical model in reliance on available data; (ii) without the physical inspection of the subject property; (iii) without taking into account any market conditions (including building, planning, or economic), and/or (iv) without identifying observable features or risks (including adverse environmental issues, state of repair, improvements, renovations, aesthetics, views or aspect) which may, together or separately, affect the value. An AVM Estimate is
+                  current only at the date of publication or supply. CoreLogic expressly excludes any warranties and representations that an AVM Estimate is an accurate representation as to the market value of the subject property. To the full extent permitted by law, CoreLogic excludes all liability for any loss or damage howsoever arising suffered by the recipient, whether as a result of the recipient's reliance on the accuracy of an AVM Estimate or otherwise arising in connection with an AVM Estimate.
+                  
+              </p><br/>
+                  <p>
+                  The listing prices shown represents listing prices CoreLogic has recorded based on available data regarding the advertising campaign for the property. In some instances CoreLogic may have derived the price from the advertisement text. Where it has not been possible to derive the price from the advertisement text (for example “Auctions”), the discount calculations will be unavailable.
+              </p><br/>
+                  <p>
+                    <b>State Disclaimers</b>
+              </p><br/>
+
+              <p class=MsoNormal><b>Queensland Data</b></p><br/>
+
+              <p class=MsoNormal>Based on or contains data provided by the State of Queensland (Department of Natural Resources and Mines) 2018. In consideration of the State permitting use of this data you acknowledge and agree that the State gives no warranty in relation to the data (including accuracy, reliability, completeness, currency or suitability) and accepts no liability (including without limitation, liability in negligence) for any loss, damage or costs (including consequential damage) relating to any use of the data. Data must not be used for direct marketing or be used in breach of the privacy laws.</p>
+                  <br/>
+
+              <p class=MsoNormal><b>South Australian Data</b></p><br/>
+
+              <p class=MsoNormal>&copy; 2018 Copyright in this information belongs to the South Australian Government and the South Australian Government does not accept any responsibility for the accuracy or completeness of the information or its suitability for purpose.</p><br/>
+
+              <p class=MsoNormal><b>New South Wales Data</b></p><br/>
+
+              <p>Contains property sales information provided under licence from the Land and Property Information ("LPI"). RP Data Pty Ltd trading as CoreLogic is authorised as a Property Sales Information provider by the LPI.</p><br/>
+
+              <p class=MsoNormal><b>Victorian Data</b></p><br/>
+
+              <p>The State of Victoria owns the copyright in the Property Sales Data and reproduction of that data in any way without the consent of the State of Victoria will constitute a breach of the Copyright Act 1968 (Cth). The State of Victoria does not warrant the accuracy or completeness of the Property Sales Data and any person using or relying upon such information does so on the basis that the State of Victoria accepts no responsibility or liability whatsoever for any errors, faults, defects or omissions in the information supplied.</p><br/>
+
+              <p class=MsoNormal><b>Western Australian Data</b></p><br/>
+
+              <p>Based on information provided by and with the permission of the Western Australian Land Information Authority (2018) trading as Landgate.</p><br/>
+
+              <p class=MsoNormal><b>Australian Capital Territory Data</b></p><br/>
+
+              <p>The Territory Data is the property of the Australian Capital Territory. No part of it may in any form or by any means (electronic, mechanical, microcopying, photocopying, recording or otherwise) be reproduced, stored in a retrieval system or transmitted without prior written permission. Enquiries should be directed to: Director, Customer Services ACT Planning and Land Authority GPO Box 1908 Canberra ACT 2601.</p><br/>
+
+              <p class=MsoNormal><b>Tasmanian Data</b></p><br/>
+
+              <p>This product incorporates data that is copyright owned by the Crown in Right of Tasmania. The data has been used in the product with the permission of the Crown in Right of Tasmania. The Crown in Right of Tasmania and its employees and agents:</p><br/>
+
+              <p>(a) give no warranty regarding the data's accuracy, completeness, currency or suitability for any particular purpose; and</p><br/>
+
+              <p>(b) do not accept liability howsoever arising, including but not limited to negligence for any loss resulting from the use of or reliance upon the data.</p><br/>
+
+                  <p>Base data from the LIST &copy; State of Tasmania http://www.thelist.tas.gov.au</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer-socialmedia footer-black">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-6">
+                <ul class="list-unstyled list-inline">
+                  <li><a href="https://www.nab.com.au/contact-us" target="_blank">Contact us</a></li>
+                  <li><a href="https://www.nab.com.au/locations" target="_blank">Find us</a></li>
+                  <li><a href="https://www.nab.com.au/personal/feedback" target="_blank">Feedback</a></li>
+                  <li><a href="https://www.nab.com.au/common/privacy-policy" target="_blank">Privacy</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-md-6">
+                <ul class="list-unstyled list-inline footer-sociallist">
+                  <li class="social-icon social-icon-facebook">
+                    <a href="https://www.facebook.com/NAB" target="_blank">
+                      <svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg>
+                    </a>
+                  </li>
+                  <li class="social-icon social-icon-linkedin">
+                    <a href="https://www.linkedin.com/company/national-australia-bank" target="_blank">
+                      <svg class="icon icon-linkedin"><use xlink:href="/assets/icons/symbol-defs.svg#icon-linkedin"></use></svg>
+                    </a>
+                  </li>
+                  <li class="social-icon social-icon-twitter">
+                    <a href="https://twitter.com/NAB" target="_blank">
+                      <svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg>
+                    </a>
+                  </li>
+                  <li class="social-icon social-icon-youtube">
+                    <a href="https://www.youtube.com/user/nab" target="_blank">
+                      <svg class="icon icon-youtube"><use xlink:href="/assets/icons/symbol-defs.svg#icon-youtube"></use></svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xs-12">
+                <div class="footer-disclaimer text-center">
+                  &copy; National Australia Bank Limited. ABN &#8203;12&#8203; 004&#8203; 004&#8203; 937&#8203; AFSL and Australian Credit Licence 230686. <a href="https://www.nab.com.au/common/website-disclaimer" target="_blank">Disclaimer page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+</div>
+
+
+<!-- Information shown before form submission -->
+<script id="result-overview" type="text/template">
+  <div class="nav-middlefixed-wrapper">
+    <div class="nav-middlefixed is-fixed-height no-border js-scrolltofix">
+      <div class="container">
+        <div class="row">
+          <nav role="navigation">
+            <div class="nav-device-control clearfix">
+              <button class="nav-device-trigger js-nav-trigger" aria-expanded="false" aria-controls="nav-middlefixed">
+                  Jump to 
+                  <svg class="icon icon-chevron-nav" aria-hidden="true"><use xlink:href="/assets/icons/symbol-defs.svg#icon-chevron"></use></svg>
+              </button>
+            </div>
+            <div id="nav-middlefixed">
+              <div class="progress-bar-bg"></div>
+              <ul class="nav nav-links">
+                <li class="nav-item">
+                  <a href="#dataContent" class="nav-link js-nav-trigger-close js-scrollTo" data-scrollto="#dataContent">Property snapshot</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#signup-section" class="nav-link js-nav-trigger-close js-scrollTo" data-scrollto="#signup-section">Get the full property report</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link js-nav-trigger-close js-scrollTo" data-scrollto="#contact">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pre-report-container bg-grey">
+    <section class="pre-report-title">
+      <div class="standard-content text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+              <h5 class="color-red">A snapshot view of</h5>   
+              {{#if nameAndNumber}}
+              <h2 class="no-margin">{{{locality}}} {{{correctSingleline}}}</h2>
+              {{else if localityname}}
+                <h2 class="no-margin">{{{localityname}}}</h2>
+              {{else}}
+                <h2 class="no-margin">No results</h2>
+              {{/if}}
+              {{#ifCond json '==' 'first'}}
+                <b class="hidden">
+                <a class="js-scrollTo" href="#signup-anchor">
+                  <span class="btn-chevron-black btn-chevron text-black">Get the full property report</span>
+                </a>
+                </b>
+              {{/ifCond}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{#ifCond nameAndNumber '||' localityname }}
+      <section id="search_overview" class="bg-grey search-overview">
+      <div class="container">
+          <div class="row">
+            <div class="search-overview-details col-xs-12 col-md-8 p-0">
+              <div class="col-xs-12 col-sm-6 p-hz-12">
+                <div class="search-overview-item stats-numberpanel">
+                  <div class="stats-numberpanel-icon">
+                    <svg class="icon icon-home"><use xlink:href="/assets/icons/symbol-defs.svg#icon-home"></use></svg>
+                  </div>
+                  <div class="stats-numberpanel-text">
+                  {{#ifCond type '==' 'property' }}
+                      <span class="stats-description"><strong>Estimated property value</strong></span>
+                      <span class="stats-confidence">{{#if estimatedvaluelowrange}}<a href="#{{{confidencelowercase}}}">{{{confidenceuppercase}}} confidence </a>{{/if}}</span>
+                      {{#if estimatedvaluelowrange}}
+                        <div class="stats-numberpanel-link text-red">
+                          <div class="stats-largenumber">${{{estimatedvaluelowrange}}}-${{{estimatedvaluehighrange}}}</div>
+                        </div>
+                        {{else}}
+                        <span class="stats-description-light text-black">&nbsp;</span>
+                        <span class="stats-largenumber text-red">n/a</span>
+                      {{/if}}
+                  {{else}}
+                    <div class="stats-numberpanel-link">
+                      <span class="stats-description text-black">Median sales price</span>
+                      <span class="stats-description-light text-black">&nbsp;</span>
+                      <span class="stats-largenumber text-red">{{#if medianpricepast3months}}${{{medianpricepast3months}}}{{else}} n/a {{/if}}</span>
+                    </div>
+                  {{/ifCond}}
+                  </div>
+                </div>
+              </div>
+              {{#if medianpricechangevalue}}
+              <div class="col-xs-12 col-sm-6 p-hz-12">
+                <div class="search-overview-item stats-numberpanel">
+                  <div class="stats-numberpanel-icon">
+                    <svg class="icon icon-suburb-pin"><use xlink:href="/assets/icons/symbol-defs.svg#icon-suburb-pin"></use></svg>
+                  </div>
+                  <div class="stats-numberpanel-text">
+                    <a class="stats-numberpanel-link js-scrollTo" href="#median-value">
+                      <span class="stats-description text-black">Median price change</span>
+                      <span class="stats-description-light text-black">&nbsp;</span>
+                      <span class="stats-largenumber stats-largenumber-percent stats-inline">{{#if medianpricechangevalue}}{{{medianpricechangevalue}}}{{else}} n/a {{/if}}{{#if medianpricechangevalue}}%{{/if}}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {{else}}
+              <div class="col-xs-12 col-sm-6 p-hz-12">
+                <div class="search-overview-item stats-numberpanel">
+                  <div class="stats-numberpanel-icon">
+                    <svg class="icon icon-suburb-pin"><use xlink:href="/assets/icons/symbol-defs.svg#icon-suburb-pin"></use></svg>
+                  </div>
+                  <div class="stats-numberpanel-text">
+                    <span class="stats-description text-black">Median sales price</span>
+                    <span class="stats-description-light text-black">&nbsp;</span>
+                    <span class="stats-largenumber text-red">{{#if medianpricepast3months}}${{{medianpricepast3months}}}{{else}} n/a {{/if}}</span>
+                  </div>
+                </div>
+              </div>
+              {{/if}}
+              <div class="col-xs-12 col-sm-6 p-hz-12">
+                <div class="search-overview-item stats-numberpanel">
+                  <div class="stats-numberpanel-icon">
+                    <svg class="icon icon-homes"><use xlink:href="/assets/icons/symbol-defs.svg#icon-homes"></use></svg>
+                  </div>  
+                  <div class="stats-numberpanel-text">
+                    <a href="#median-rent" class="js-scrollTo">
+                      <span class="stats-description text-black">Median rent in suburb</span>
+                      <span class="stats-description-light text-black">&nbsp;</span>
+                      <span class="stats-largenumber stats-inline">{{#if medianaskingrent12months}}{{{medianaskingrent12months}}}{{else}} n/a {{/if}}{{#if medianaskingrent12months}}/w{{/if}}</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 p-hz-12">
+                <div class="search-overview-item stats-numberpanel">
+                  <div class="stats-numberpanel-icon">
+                    <svg class="icon icon-flag"><use xlink:href="/assets/icons/symbol-defs.svg#icon-flag"></use></svg>
+                  </div>
+                  <div class="stats-numberpanel-text">
+                    <a class="stats-numberpanel-link js-scrollTo" href="#signup-section">
+                      <span class="stats-description text-black">Estimated rental yield</span>
+                      <span class="stats-description-light text-black">&nbsp;</span>
+                      <span class="stats-largenumber stats-largenumber-percent stats-inline">{{#if rentalyieldvalue}}{{{rentalyieldvalue}}}%{{else}} n/a {{/if}}</span>
+                    </a>
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <div class="search-overview-map col-xs-12 col-md-4 p-hz-12">
+                <div class="map-iframe-container">
+                {{#if nameAndNumber}}
+                <iframe src="/suburb-map.php?lat={{{addressLat}}}&lng={{{addressLng}}}"
+                  width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                {{else}}
+                <iframe src="/suburb-map.php?postcode={{{postcodevalue}}}"
+                  width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                {{/if}}
+                  <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16857.218907598563!2d144.97526795911415!3d-37.86452375325209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6686866392389%3A0x5045675218cdae0!2sSt+Kilda+VIC+3182!5e0!3m2!1sen!2sau!4v1499297301126"
+                  width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+                </div>
+            </div>
+          </div>          
+          <div class="search-overviewPanels container">
+            <div class="row">
+              <ul class="stats-numberpanels hidden print-show">
+                <li class="stats-numberpanel">
+                  <span class="stats-description"><strong>Estimated property value</strong></span>
+                  <span class="stats-confidence">{{#if estimatedvaluelowrange}}<a href="#{{{confidence}}}">{{{confidenceuppercase}}} confidence </a>{{/if}}</span>
+                  {{#if estimatedvaluelowrange}}
+                    <div class="stats-numberpanel-link text-red">
+                      <div class="stats-largenumber">${{{estimatedvaluelowrange}}}-${{{estimatedvaluehighrange}}}</div>
+                    </div>
+                    {{else}}
+                    <span class="stats-description-light text-black w100">&nbsp;</span>
+                    <span class="stats-largenumber text-red ptop15">n/a</span>
+                  {{/if}}
+                </li>
+                <li class="stats-numberpanel">
+                  <div class="stats-numberpanel-link">
+                    <span class="stats-description text-black">Median sales price</span>
+                    <span class="stats-description-light text-black w100">&nbsp;</span>
+                    <span class="stats-largenumber text-red ptop15">{{#if medianpricepast3months}}${{{medianpricepast3months}}}{{else}} n/a {{/if}}</span>
+                  </div>
+                </li>
+                {{#if showmedianpricechange}}
+                  {{#if medianpricechange}}
+                  <li class="stats-numberpanel">
+                    <a class="stats-numberpanel-link js-scrollTo" href="#median-value">
+                      <span class="stats-description text-black">Median price change</span>
+                      <span class="stats-description-light text-black w100">&nbsp;</span>
+                      <span class="stats-largenumber stats-largenumber-percent stats-inline ptop15">{{{medianpricechange}}}%</span>
+                    </a>
+                  </li>
+                  {{/if}}
+                {{/if}}
+                <li class="stats-numberpanel">
+                  <a href="#median-rent" class="js-scrollTo">
+                    <span class="stats-description text-black">Median rent in suburb</span>
+                    <span class="stats-description-light text-black w100">&nbsp;</span>
+                    <span class="stats-largenumber stats-inline ptop15">{{#if medianrent}}{{{medianrent}}}/w{{else}} n/a {{/if}}</span>
+                  </a>
+                </li>
+                {{#if rentalyieldvalue}}
+                <li class="stats-numberpanel">
+                  <a class="stats-numberpanel-link js-scrollTo" href="#signup-section">
+                    <span class="stats-description text-black">Estimated rental yield</span>
+                    <span class="stats-description-light text-black w100">&nbsp;</span>
+                    <span class="stats-largenumber stats-largenumber-percent stats-inline ptop15">{{#if rentalyieldvalue}}{{{rentalyieldvalue}}}%{{else}} n/a {{/if}}</span>
+                  </a>
+                </li>
+                {{/if}}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    {{/ifCond}}
+  </div>
+</script>
+<script id="result-property-gallery" class="module-bottom-spacer-none" type="text/template">
+  <div class="prop-slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 p-hz-12">
+          <div class="prop-content priceline-border-shadow clearfix">
+            <h2 class="prop-title color-red">{{{nameAndNumber}}}</h2>
+            <p class="col-xs-12 col-sm-6 col-lg-4 no-left-padding col1-lg"><b>RPD:</b><br />{{#if rpd}}{{{rpd}}}{{else}}n/a{{/if}}</p>
+            <p class="col-xs-12 col-sm-6 col-lg-4 no-left-padding col2-lg"><b>Council area:</b><br />{{#if councilArea}}{{{councilArea}}}{{else}}n/a{{/if}}</p>
+            <p class="col-xs-12 col-sm-6 col-lg-4 no-left-padding col3-lg"><b>Land use primary:</b><br />{{#if landUsePrimary}}{{{landUsePrimary}}}{{else}}n/a{{/if}}</p>
+            <p class="col-xs-12 col-sm-6 col-lg-4 no-left-padding col1-lg"><b>Lot/Plan:</b><br />{{#if lotPlan}}{{{lotPlan}}}{{else}}n/a{{/if}}</p>
+            <p class="col-xs-12 col-sm-6 col-lg-4 no-left-padding col2-lg"><b>Property Type:</b><br />{{#if propertyType}}{{{propertyType}}}{{else}}n/a{{/if}}</p>
+
+
+            <div class="prop-features col-xs-12 col-sm-6 col-lg-4 p-0 col3-lg">
+              <h6>Features</h6>
+              <ul class="prop-iconset prop-iconset-inline list-unstyled">
+                <li>
+                  <svg class="icon icon-car"><use xlink:href="/assets/icons/symbol-defs.svg#icon-car"></use></svg>
+                  <span>
+                    {{#if carSpaces}}
+                      {{{carSpaces}}}
+                    {{else}}
+                      -
+                    {{/if}}
+                  </span>
+                </li>
+                <li>
+                  <svg class="icon icon-shower"><use xlink:href="/assets/icons/symbol-defs.svg#icon-shower"></use></svg>
+                  <span>
+                    {{#if bathrooms}}
+                      {{{bathrooms}}}
+                    {{else}}
+                      -
+                    {{/if}}
+                  </span>
+                </li>
+                <li>
+                  <svg class="icon icon-bed"><use xlink:href="/assets/icons/symbol-defs.svg#icon-bed"></use></svg>
+                  <span>
+                    {{#if bedrooms}}
+                      {{{bedrooms}}}
+                    {{else}}
+                      -
+                    {{/if}}
+                  </span>
+                </li>
+                <li>
+                  <svg class="icon icon-housebox"><use xlink:href="/assets/icons/symbol-defs.svg#icon-housebox"></use></svg>
+                  <span>
+                    {{#if islandareaapprox}}<small>approx</small>{{/if}}
+                    {{{landArea}}}m<sup>2</sup>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4 p-hz-12">
+          <div class="prop-slider-gallery priceline-border-shadow">
+            {{#if photoArray}}
+              <div class="prop-slide" {{#photoArray}}{{#if isDefaultPhoto}} style="background-image: url('{{url}}')" {{/if}}{{/photoArray}}>
+              <span class="sr-only">Property photo</span>
+              </div>
+            {{else}}
+              <div class="prop-slide" style="background-image: url('/assets/img/global/placeholder-large.gif')">
+              <span class="sr-only">No property image available</span>
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<!-- High confidence popup -->
+<div id="high" class="overlay">
+   <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+         <h2>HIGH CONFIDENCE</h2>
+         <p class="line1">High confidence typically a result of a greater number of available comparable properties and/or a lesser degree of variability between the subject and comparable properties and/or high availability of comparable property data in the area. </p>
+         <p class="line2">An Estimated Property Value and High confidence is more reliable than an Estimated Property Value with Medium or Low confidence.</p>
+         <a class="close-btn-ok" href="#">OK</a>
+      </div>
+   </div>
+</div>
+<!-- Medium confidence popup -->
+<div id="medium" class="overlay">
+   <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+         <h2>MEDIUM CONFIDENCE</h2>
+         <p class="paragraph">Medium confidence typically a result of medium degree of available comparable properties and variability between the subject and comparable properties in the area and/or medium availability of comparable property data in the area.</p>
+         <a class="close-btn-ok" href="#">OK</a>
+      </div>
+   </div>
+</div>
+<!-- Low confidence popup -->
+<div id="low" class="overlay">
+   <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+         <h2>LOW CONFIDENCE</h2>
+         <p class="line1">Low confidence typically a result of fewer available comparable properties and/or a high degree of variability between the subject and comparable properties in the area and/or low availability of comparable property data in the area.</p>
+         <p class="line2">This Estimated Property Value is not reliable and should only be used with caution.</p>
+         <a class="close-btn-ok" href="#">OK</a>
+      </div>
+   </div>
+</div>
+<!-- Bot email limit 30 - popup -->
+<div id="botPopup" class="overlay">
+   <div class="popup">
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+         <h2>LOOKS LIKE YOU'VE REACHED <br class="mobileHidden" />YOUR PROPERTY REPORT LIMIT!</h2>
+         <p class="paragraph">If you'd like to speak to someone about a NAB home loan, please call us on 13 78 79</p>
+         <a class="close-btn-ok button-ok" href="#">OK</a>
+      </div>
+   </div>
+</div>
+
+
+<!-- browser scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="//nexus.ensighten.com/nab/prod/Bootstrap.js"></script>
+<script src='https://www.google.com/recaptcha/api.js' defer></script>
+<script type="text/javascript" src="//nab.com.au/etc/designs/bootstrap/bootstrap-base-design/bootstrap-base/clientlibs-modernizr.js"></script>
+<script type="text/javascript" src="//nab.com.au/etc/designs/bootstrap/bootstrap-base-design/bootstrap-base/clientlibs-jquery.js"></script>
+<script type="text/javascript" src="//nab.com.au/etc/designs/bootstrap/bootstrap-base-design/bootstrap-base/clientlibs-jqueryui.js"></script>
+<!-- site theme js -->
+<script type="text/javascript" src="//nab.com.au/etc/designs/bootstrap/bootstrap-managed-designs/bootstrap-nabcampaigns/clientlibs.min.js" defer ></script>
+<script type="text/javascript" src="/javascripts/autocomplete.js" defer></script>
+<script type="text/javascript" src="/javascripts/autocompletefullreport.js" defer></script>
+<script type="text/javascript" src="/assets/js/vendors.min.js" defer></script>
+<script type="text/javascript" src="/assets/js/script.min.js" defer></script>
+<script type="text/javascript" >
+
+  //Triggered event when user clicks anywhere in the property report form
+  $('#signup-form').click(function(e) {
+    digitalData.event.push({
+        "eventType": "prospect-form-start",
+        "data": {
+            "eventType": "prospect-form-start",
+            "name": "Request a Property or Suburb Report"
+        }
+    });
+    $(document).trigger("prospect-form-start");
+  });
+
+  $("#signup-submit").click(function(e) {
+    var form = $('#signup-form');
+    form.parsley().validate();
+    if (form.parsley().isValid()){
+      $.Event(e).preventDefault();
+      $.ajax({
+        url: '/process.php',
+        data: $('#signup-form').serialize(),
+        success: function(data, textStatus, jqXHR) {
+          var response = JSON.parse(data);
+          var status = response.status;
+          if (status==401) {
+            var message = response.message;
+            if($('#parsley-id-multiple-recaptcha-checkbox').length)
+            {
+              $('#parsley-id-multiple-recaptcha-checkbox').css("display","block;");
+            }
+            $('#recaptcha-checkbox').parsley().addError('custom-error-message', {message: message, updateClass: true});
+          }
+           else if(status==406)
+                {
+                     var message = response.message;
+                     //$('#recaptcha-checkbox').parsley().addError('custom-error-message', {message: message, updateClass: true});
+                     $('#botPopup').css({'visibility':'visible','opacity':1});
+                }
+          else
+          {
+          // Triggered event when user successfully clicks “Get Report” with no validation errors
+          var callbackrequest = ($('#request-callback').is(':checked')) ? 'yes' : 'no';
+          digitalData.event.push({
+              "eventType": "prospect-form-complete",
+              "data": {
+                  "eventType": "prospect-form-complete",
+                  "name": "Request a Property or Suburb Report",
+                  "userAction": "Property report:call back requested:"+callbackrequest
+              }
+          });
+          $(document).trigger("prospect-form-complete");
+
+          $("#signup-form").submit();
+          }
+        },
+        error: function(response, status, errorThrown) {
+          var specificField = $('#recaptcha-checkbox').parsley();
+          $('#recaptcha-checkbox').parsley().addError('custom-error-message', {message: "reCAPTCHA validation failed.", updateClass: true});
+        },
+        type: "POST"
+      });
+    }
+  });
+  $("#saveReportSubmit").click(function(e) {
+    var form = $('#email-pdf-form');
+    form.parsley().validate();
+    if (form.parsley().isValid()){
+      $.Event(e).preventDefault();
+      $.ajax({
+        url: '/eprocess.php',
+        data: $('#email-pdf-form').serialize(),
+        success: function(data, textStatus, jqXHR) {
+          var response = JSON.parse(data);
+          var status = response.status;
+          if (status==200) {
+            var message = response.message;
+            $('#saveReportEmail').parsley().addError('custom-error-message', {message: message, updateClass: true});
+          }
+        },
+        error: function(response, status, errorThrown) {
+        },
+        type: "POST"
+      });
+    }
+  });
+</script>
+<script type="text/javascript"  src="/TQ-iM2u60rT8otrxYaCJ794PQXY/r5r1VDGz1z5a9V/I2UNAQ/V0pRV/wBwTkw"></script></body>
+</html>

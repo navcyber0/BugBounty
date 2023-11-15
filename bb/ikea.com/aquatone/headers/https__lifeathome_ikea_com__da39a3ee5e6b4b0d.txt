@@ -1,0 +1,19 @@
+200 OK
+Date: Sun, 23 Jul 2023 01:14:20 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+Retry-Count: 0
+Etag: "1d7e68c34a2caf49199eb6bc9bb37ad2"
+Last-Modified: Sun, 23 Jul 2023 00:37:11 GMT
+Pragma: no-cache
+Vary: Accept-Encoding
+Permissions-Policy: geolocation=(), microphone=()
+Server: INGKA Server
+Content-Type: text/html; charset=utf-8
+X-Powered-By: PHP/7.3.27
+Cache-Control: private, no-cache, no-store, must-revalidate
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+Link: <https://lifeathome.ikea.com/wp-json/>; rel="https://api.w.org/" <https://lifeathome.ikea.com/wp-json/wp/v2/pages/11470>; rel="alternate"; type="application/json" <https://lifeathome.ikea.com/>; rel=shortlink
+Expires: Sun, 23 Jul 2023 01:14:20 GMT
+Server-Timing: cdn-cache; desc=HIT edge; dur=1 ak_p; desc="469465_388994325_340544744_18_8002_19_-_-";dur=1
+Strict-Transport-Security: max-age=15768000

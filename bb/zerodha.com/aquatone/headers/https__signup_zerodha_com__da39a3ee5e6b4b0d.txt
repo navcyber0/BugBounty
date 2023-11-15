@@ -1,0 +1,13 @@
+200 OK
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Last-Modified: Thu, 16 Mar 2023 15:50:52 GMT
+Strict-Transport-Security: max-age=15552000
+Server: cloudflare
+Retry-Count: 0
+Date: Tue, 28 Mar 2023 14:02:35 GMT
+Content-Type: text/html
+Set-Cookie: _cfuvid=RPUopZuADfdSrE2WEoMDePpuMobfnYp9k5sq3M4U9I0-1680012155034-0-604800000; path=/; domain=.zerodha.com; HttpOnly; Secure; SameSite=None
+Cf-Ray: 7af06960ccd43188-BOM
+Cf-Cache-Status: DYNAMIC

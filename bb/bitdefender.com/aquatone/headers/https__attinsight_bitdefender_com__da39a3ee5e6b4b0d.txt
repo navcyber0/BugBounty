@@ -1,0 +1,10 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+Osd-Name: insights-dashboards-opensearch-dashboards-public
+Accept-Ranges: bytes
+Cache-Control: private, no-cache, no-store, must-revalidate
+Content-Security-Policy: script-src 'unsafe-eval' 'self'; worker-src blob: 'self'; style-src 'unsafe-inline' 'self'
+Date: Thu, 23 Mar 2023 14:59:00 GMT
+Set-Cookie: security_authentication=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; Path=/
+Content-Length: 196
+Retry-Count: 0

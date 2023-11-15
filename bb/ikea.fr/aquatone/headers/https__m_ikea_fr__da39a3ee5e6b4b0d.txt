@@ -1,0 +1,8 @@
+410 Gone
+Content-Length: 9
+Cache-Control: max-age=0
+Date: Sun, 23 Jul 2023 04:53:05 GMT
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000
+Server: IKEA Server
+Content-Type: text/html

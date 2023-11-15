@@ -1,0 +1,25 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+X-Ms-Content-Source: Runtime
+X-Azure-Ref: 20230723T011223Z-5txxddc0955mz8ep4yx95mgahw00000000hg00000000am89
+X-Cache: CONFIG_NOCACHE
+Permissions-Policy: accelerometer=(), ambient-light-sensor=(), battery=(), camera=(), gyroscope=(), magnetometer=(), microphone=(), screen-wake-lock=()
+Accept-Ranges: bytes
+Date: Sun, 23 Jul 2023 01:12:23 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Security-Policy: frame-ancestors 'self'
+Timing-Allow-Origin: *
+X-Ua-Compatible: IE=edge
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Last-Modified: Sun, 23 Jul 2023 01:11:00 GMT
+Etag: "oWp_Ls4tPmUl"
+X-Ms-Version: 11.247.2.1 (v11.247.0.1#decba558d0.230720-0234) Signed
+Access-Control-Allow-Origin: *
+Referrer-Policy: strict-origin-when-cross-origin
+Cache-Control: public, stale-while-revalidate=900, max-age=900
+Expires: Sun, 23 Jul 2023 01:29:00 GMT
+Vary: Accept-Encoding, host
+X-Xss-Protection: 1; mode=block
+Set-Cookie: browserId=b858cbc0-ac5a-4341-b324-ce158eaa72f2; domain=intune.microsoft.com; path=/; secure; HttpOnly; SameSite=None

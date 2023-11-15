@@ -1,0 +1,26 @@
+200 OK
+X-Content-Type-Options: nosniff nosniff
+X-Frame-Options: SAMEORIGIN
+X-Cache-Tag: resourceType:dynamic,deviceType:desktop
+X-Permitted-Cross-Domain-Policies: master-only
+X-Vanilla-Cache-Control: public, max-age=120
+X-Lookup-Mode: normal
+Retry-Count: 0
+X-Vanilla-Version: 2023.004
+X-Xss-Protection: 0
+Content-Type: text/html; charset=utf-8
+Link: <https://community.bitdefender.com/en/discussions/p2>; rel="next"
+Expires: Thu, 23 Mar 2023 15:01:20 GMT
+X-Backend: cl50074
+Cache-Control: max-age=120
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 7ac7899caa0b857b-BOM
+Content-Security-Policy: frame-ancestors 'self'
+Server: cloudflare
+Last-Modified: Thu, 23 Mar 2023 12:09:10 GMT
+X-App: 680ace1183a653f99732197bd52508515a83b915/cl50074
+P3p: CP="CAO PSA OUR"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Accept-Encoding, Cookie
+X-Backend-Time: 2023-03-23T14:59:20Z
+Date: Thu, 23 Mar 2023 14:59:20 GMT

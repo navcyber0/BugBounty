@@ -1,0 +1,10 @@
+403 Forbidden
+Server: AkamaiGHost
+Mime-Version: 1.0
+Content-Type: text/html
+Date: Sun, 23 Jul 2023 01:13:42 GMT
+X-Content-Type-Options: nosniff
+Content-Length: 262
+Expires: Sun, 23 Jul 2023 01:13:42 GMT
+Retry-Count: 0
+Strict-Transport-Security: max-age=31536000

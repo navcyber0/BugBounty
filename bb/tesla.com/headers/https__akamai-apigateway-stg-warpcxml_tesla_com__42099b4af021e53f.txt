@@ -1,0 +1,13 @@
+401 Unauthorized
+Retry-Count: 0
+Www-Authenticate: Bearer realm="http://akamai-apigateway-stg-warpcxml.tesla.com/"
+Content-Type: application/problem+json
+Expires: Wed, 14 Jun 2023 13:52:02 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Date: Wed, 14 Jun 2023 13:52:02 GMT
+X-Edgeconnect-Midmile-Rtt: 234
+X-Edgeconnect-Origin-Mex-Latency: 172
+Pragma: no-cache
+Server-Timing: cdn-cache; desc=MISS edge; dur=335 origin; dur=172 ak_p; desc="468541_386090540_17440493_50791_9325_12_-_-";dur=1
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Content-Length: 65

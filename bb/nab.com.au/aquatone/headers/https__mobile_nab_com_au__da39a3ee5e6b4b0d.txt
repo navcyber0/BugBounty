@@ -1,0 +1,13 @@
+200 OK
+Set-Cookie: akacd_www_nab_com_au=3857614513~rv=13~id=9348ff6d5a0eab9a46f0a8015c5fe1cc; path=/;; Secure; SameSite=None
+Last-Modified: Thu, 30 Mar 2023 04:44:12 GMT
+X-Akamai-Transformed: 9 - 0 pmb=mTOE,1mRUM,1
+Cache-Control: max-age=600
+Strict-Transport-Security: max-age=600
+Content-Type: text/html
+Vary: Accept-Encoding
+Etag: "675d7-5f816be79d0de-gzip"
+Retry-Count: 0
+X-Origin: green
+Accept-Ranges: bytes
+Date: Thu, 30 Mar 2023 07:35:14 GMT

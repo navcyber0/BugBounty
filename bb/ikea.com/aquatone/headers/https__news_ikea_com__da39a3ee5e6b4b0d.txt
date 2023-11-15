@@ -1,0 +1,28 @@
+403 
+Content-Type: text/plain; charset=utf-8
+Sprequestguid: c727c9a0-f031-6000-e74d-35dd883c008a
+X-Proxy-Routingcorrectness: 1
+X-Feproxyinfo: PN2PR01CA0101.INDPRD01.PROD.OUTLOOK.COM
+Server: Microsoft-IIS/10.0
+X-Backendhttpstatus: 403
+X-Msedge-Ref: MIRA: 4217abbb-9766-8be1-1614-446652440460 PN2PR01CA0101 2023-07-23T01:14:07.457Z
+X-Sharepointhealthscore: 3
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+P3p: CP="ALL IND DSP COR ADM CONo CUR CUSo IVAo IVDo PSA PSD TAI TELo OUR SAMo CNT COM INT NAV ONL PHY PRE PUR UNI"
+Ms-Cv: oMknxzHwAGDnTTXdiDwAig.0
+Microsoftsharepointteamservices: 16.0.0.23905
+X-Feserver: PN2PR01CA0101
+Date: Sun, 23 Jul 2023 01:14:07 GMT
+Retry-Count: 0
+X-Ms-Invokeapp: 1; RequireReadOnly
+X-Feefzinfo: PNQ
+Request-Id: 4217abbb-9766-8be1-1614-446652440460
+Alt-Svc: h3=":443",h3-29=":443"
+X-Networkstatistics: 0,525568,0,0,458,0,24211
+X-Proxy-Backendserverstatus: 403
+X-Firsthopcafeefz: PNQ
+X-Powered-By: ASP.NET
+Content-Length: 13
+Sprequestduration: 30
+Spiislatency: 0

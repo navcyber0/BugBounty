@@ -1,0 +1,19 @@
+200 OK
+Last-Modified: Thu, 30 Mar 2023 04:16:29 GMT
+Content-Type: text/html;charset=utf-8
+X-Timer: S1680157943.692890,VS0,VS0,VE126
+Expires: Thu, 30 Mar 2023 07:39:33 GMT
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+X-Served-By: cache-hkg17931-HKG
+Cache-Control: max-age=300
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000
+Access-Control-Allow-Origin: *
+Etag: "10e5d-5f8165b63f50c-gzip"
+Date: Thu, 30 Mar 2023 07:34:33 GMT
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+X-Vhost: publish-mlcam
+Vary: Accept-Encoding
+Content-Security-Policy: frame-ancestors 'self'

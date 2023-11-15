@@ -1,0 +1,8 @@
+403 Forbidden
+Date: Wed, 14 Jun 2023 13:48:53 GMT
+K13-D40-P85-D92: 403
+Server: ECAcc (tir/CD2D)
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Content-Length: 345
+Retry-Count: 0
+Content-Type: text/html

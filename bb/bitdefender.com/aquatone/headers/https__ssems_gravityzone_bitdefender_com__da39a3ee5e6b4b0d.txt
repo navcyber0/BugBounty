@@ -1,0 +1,24 @@
+200 OK
+X-Served-By: cache-lga21941-LGA, cache-lga21959-LGA, cache-hyd1100020-HYD
+X-Cache: MISS, HIT, MISS
+X-Cache-Hits: 0, 242, 0
+Retry-Count: 0
+X-Download-Options: noopen
+X-Runtime: 0.215338
+Cache-Control: max-age=0, public, must-revalidate, s-maxage=600
+Date: Thu, 23 Mar 2023 15:00:31 GMT
+X-Request-Id: 0a9dea78-91a5-4b79-a855-9cc3da73a376
+X-Permitted-Cross-Domain-Policies: none
+Vary: Accept-Encoding
+Server: Cowboy
+Accept-Ranges: bytes
+Age: 121
+Etag: "59e08d8ab2d1812f73e5dc3d78a3027e"
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: block-all-mixed-content; upgrade-insecure-requests
+X-Timer: S1679583631.044184,VS0,VE253
+Strict-Transport-Security: max-age=300
+Content-Type: text/html; charset=utf-8
+Via: 1.1 vegur, 1.1 varnish, 1.1 varnish, 1.1 varnish
+Last-Modified: Thu, 23 Feb 2023 07:17:33 GMT

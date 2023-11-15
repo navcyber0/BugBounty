@@ -1,0 +1,19 @@
+404 Not Found
+X-Cache: Error from cloudfront
+X-Amz-Cf-Pop: MAA51-P3
+Date: Mon, 20 Mar 2023 09:48:51 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Amz-Apigw-Id: CEvQnGknDoEF5nQ=
+Content-Type: text/html; charset=UTF-8
+Content-Length: 469
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: X-Session-Id, X-CSRF-TOKEN
+Server: CloudFront
+Cache-Control: max-age=669, public, s-maxage=51069
+Etag: "ab9c5f90bcb6722fc6ab975fdff00285"
+X-Amzn-Remapped-Date: Mon, 20 Mar 2023 09:48:51 GMT
+Retry-Count: 0
+X-Amzn-Trace-Id: Root=1-64182c03-15d49ae14d2399905eb9209f;Sampled=0;lineage=5a437216:0
+X-Amzn-Requestid: 87094ad6-51fe-4e7f-bb0e-12effd8c0daa
+Via: 1.1 e1acdf78be4f900c171f369da51345c4.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: XaL1z6GhGXTM02WHIEdWRVvm8N3-swm9M2Z7jTpJHJPUGdciWwNBzw==

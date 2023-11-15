@@ -1,0 +1,20 @@
+200 OK
+Content-Type: text/html
+Etag: W/"4a40c4da5dd241ff0138a59b7d841025"
+Server: Caddy AmazonS3
+Via: 1.1 df153902fc47e450893ee30df220e710.cloudfront.net (CloudFront)
+X-Amz-Meta-Access-Control-Allow-Headers: Content-Type
+X-Amz-Request-Id: TWF44VKEWWKACECN
+Cache-Control: no-cache
+X-Amz-Meta-Accept-Encoding: gzip
+X-Amz-Meta-X-Xss-Protection: 1; mode=block
+X-Cache: RefreshHit from cloudfront
+Date: Fri, 23 Jun 2023 15:31:32 GMT
+Last-Modified: Mon, 08 May 2023 11:35:50 GMT
+Vary: Accept-Encoding
+X-Amz-Id-2: ZefsBpoaJPxkYKc+4VsrCc4T5VGmyBIDHnjhzCAvzeeRqWYCKbovxNiKkipWCLZSbOlVq00bPw0=
+X-Amz-Meta-X-Content-Type-Options: nosniff
+X-Amz-Cf-Id: W5BCifsia-328pb4B3MyR9hh2VkbKrgLgUEbIPkpvI-YDtkNzr4g6Q==
+X-Amz-Cf-Pop: DUB56-P1
+Retry-Count: 0
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload

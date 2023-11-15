@@ -1,0 +1,24 @@
+500 Internal Server Error
+X-Akamai-Config-Log-Detail: true
+X-Amzn-Trace-Id: Root=1-64253ae4-2d7f4b717c6cc14c0f230a46
+X-Forwarded-For: 246.8.191.190, 45.119.28.61, 23.57.75.55, 23.62.8.9, 10.39.0.164
+X-Real-Ip: 23.62.8.9
+X-True-Client-Ip: 45.119.28.61
+Content-Type: text/html
+Akamai-Client-Cipher: ECDHE-RSA-AES256-GCM-SHA384 TLS_AES_256_GCM_SHA384
+Cache-Control: no-cache, max-age=0
+Retry-Count: 0
+Pragma: no-cache
+True-Client-Ip: 45.119.28.61
+X-Akamai-Sr-Hop: 1
+Content-Length: 74
+Date: Thu, 30 Mar 2023 07:31:49 GMT
+Akamai-Client-Tls-Version: tls1.2 tls1.3
+Forwarded: for=206.74.244.2;proto=http;by=222.135.59.25
+Host: api.partner.nab.com.au
+Set-Cookie: _abck=474F01728A5415E112300F784D11CB37~-1~YAAQN0s5F1kYkRKHAQAAMQ9uMQkxUv0C3QOOHzUKteXO7/r2xuLOLTBAa859VttubXCuwFKMjcM6UwYr4dJGepcLmfir/CvH642CN3/jFDzC5WY5RB8ax6/xNOxbN2/4xonfppoWPpIREiHhXBg9dzioIYSqwPWCyN4KlfzN0WoSscvb0aijXANCN7e5Y7+c4OEf/UY5fqt7GkEJacN41ZwwNcg459HGDtBUD8OhVPDBMFOW/P64Y16OcwsZN003gAExkUifCVViGHT5iH+1rh+3r2BC4Vb1CETg58bVo02gkjXeW0mhb/ew/beJ17gg8f/arpS9sIr1GaS4ZOpG+p4nRmciuO+DJjhUNhF6q/9GQa4a0zjs8toIubg=~-1~-1~-1; Domain=.nab.com.au; Path=/; Expires=Fri, 29 Mar 2024 07:31:49 GMT; Max-Age=31536000; Secure bm_sz=6BEF68A3E96D8556DB3CAB943FDC5B05~YAAQN0s5F1oYkRKHAQAAMQ9uMROOdo0Jn3DnNuqaJINeAyVuauXZoAdAyN0hEtxWxnHHAPng7aCl7I+9UULophR5PrhSqR1drNYxpZ5/abO8ITDf6ty17+wU9vXoslqW9uizloXLWFVJAVYFdaRpxxI2ToTIe7843U10cqcJZP/xglcFQPhjDfleJFZpViSm9p6M+ZB+BYgvacy9iAHnXAWeHGnXM4jgO1ku8nDjMYsGcXv1R52u0eXlczQimSk1/iNQd7vj6DI9WFu6Pq5B7QZSAOC0mZgjZE1I41sjXuxr2rs=~3159097~3425858; Domain=.nab.com.au; Path=/; Expires=Thu, 30 Mar 2023 11:31:48 GMT; Max-Age=14399
+X-Correlationid: Id-e43a25647264490e7d9e0c62 0
+X-Forwarded-Port: 443
+X-Forwarded-Proto: https
+Akamai-Origin-Hop: 2
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.108 Safari/537.36

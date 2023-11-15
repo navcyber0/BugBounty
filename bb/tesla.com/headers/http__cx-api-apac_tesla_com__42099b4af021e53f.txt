@@ -1,0 +1,13 @@
+200 OK
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+Cache-Control: max-age=0, no-cache
+Retry-Count: 0
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Access-Control-Expose-Headers: Cache-Control, Content-Language, Content-Length, Content-Type, Expires, Last-Modified, Pragma, X-Correlation-Id, Content-Disposition
+Server-Timing: cdn-cache; desc=MISS edge; dur=104 origin; dur=182 ak_p; desc="468541_388762182_790770875_28672_10858_9_-_-";dur=1
+Code-Version: release/202208294
+X-Request-Id: f05cb4c5-d1cf-115a-6ccf-ce4c48ed973a
+Expires: Wed, 14 Jun 2023 13:50:16 GMT
+Pragma: no-cache
+Date: Wed, 14 Jun 2023 13:50:16 GMT

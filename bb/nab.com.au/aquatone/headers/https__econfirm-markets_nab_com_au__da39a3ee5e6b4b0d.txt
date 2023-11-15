@@ -1,0 +1,7 @@
+200 OK
+Date: Thu, 30 Mar 2023 07:33:53 GMT
+Set-Cookie: ASP.NET_SessionId=w3tsivqgtuh0u5vi5p4tzviz; path=/; HttpOnly; SameSite=Lax
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+Cache-Control: private
+Retry-Count: 0

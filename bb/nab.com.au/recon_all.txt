@@ -1,0 +1,13 @@
+https://advantedge-dev1-nextrel-nabgroup.ewcs.extnp.nab.com.au
+https://advantedge-dev2-publish.ewcs.extnp.nab.com.au
+https://advantedge-sit3-preview.ewcs.extnp.nab.com.au
+https://advantedge-dev3-preview.ewcs.extnp.nab.com.au
+https://advantedge-sit2-preview.ewcs.extnp.nab.com.au
+https://afl.nab.com.au
+https://api.developer.extnp.nab.com.au
+https://advantedge-staging-dev1-publish.ewcs.extnp.nab.com.au
+https://advantedge-staging-dev1-nextrel-nabgroup.ewcs.extnp.nab.com.au
+https://advantedge-staging-uat1-nabgroup.ewcs.extnp.nab.com.au
+https://advantedge-sit1-publish.ewcs.extnp.nab.com.au
+https://advantedge-dev2-nextrel-nabgroup.ewcs.extnp.nab.com.au
+https://apimlc.nab.com.au

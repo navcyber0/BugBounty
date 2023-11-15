@@ -1,0 +1,12 @@
+200 OK
+X-Akamai-Transformed: 9 69128 0 pmb=mTOE,1
+Last-Modified: Wed, 29 Mar 2023 02:05:57 GMT
+Etag: "56c17-5f8006ab529c1-gzip"
+X-Origin: green
+Strict-Transport-Security: max-age=600
+Vary: Accept-Encoding
+Cache-Control: max-age=600
+Date: Thu, 30 Mar 2023 07:30:56 GMT
+Retry-Count: 0
+Content-Type: text/html
+Accept-Ranges: bytes

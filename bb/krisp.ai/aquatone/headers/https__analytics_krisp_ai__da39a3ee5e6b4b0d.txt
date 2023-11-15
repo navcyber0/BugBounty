@@ -1,0 +1,15 @@
+403 Forbidden
+X-Cache: Error from cloudfront
+Content-Length: 23
+X-Amzn-Requestid: f63da1a4-77d5-4986-91e8-c58802604c4a
+X-Amzn-Errortype: ForbiddenException
+Cf-Ray: 7aa52a56b9d31b0c-AMS
+Date: Sun, 19 Mar 2023 10:52:21 GMT
+X-Amz-Apigw-Id: CBln1E9WoAMFowQ=
+Via: 1.1 abc3ecd1d98ae9cd426d47386509de18.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: j2bZ9BB6wAfxcvwOKWSVGU5z1-8ZRkiaO1VK2cVZEDBfxCuViEXMRw==
+Content-Type: application/json
+X-Amz-Cf-Pop: AMS50-C1
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Retry-Count: 0

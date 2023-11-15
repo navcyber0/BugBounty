@@ -1,0 +1,12 @@
+403 Forbidden
+Content-Type: text/html; charset=utf-8
+Accept-Ranges: bytes
+Date: Wed, 14 Jun 2023 13:47:02 GMT
+X-Cache: MISS
+X-Cache-Hits: 0
+Retry-Count: 0
+Content-Length: 420
+Server: Varnish
+Retry-After: 0
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100025-HYD

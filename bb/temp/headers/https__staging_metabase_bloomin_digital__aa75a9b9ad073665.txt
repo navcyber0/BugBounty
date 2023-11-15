@@ -1,0 +1,16 @@
+403 Forbidden
+Strict-Transport-Security: max-age=31536000
+Content-Type: text/plain
+X-Xss-Protection: 1; mode=block
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Retry-Count: 0
+Server: Jetty(9.4.43.v20210629)
+Date: Sat, 01 Apr 2023 21:31:42 GMT
+Content-Length: 38
+X-Frame-Options: DENY
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://apis.google.com https://*.googleapis.com *.gstatic.com    'sha256-lMAh4yjVuDkQ9NqkK4H+YHUga+anpFs5JAuj/uZh0Rs=' 'sha256-ib2/2v5zC6gGM6Ety7iYgBUvpy/caRX9xV/pzzV7hf0=' 'sha256-JJa56hyDfUbgNfq+0nq6Qs866JKgZ/+qCq2pkDJED8k='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline'; font-src 'self' ; img-src * 'self' data:; connect-src 'self' metabase.us10.list-manage.com   ; manifest-src 'self';  frame-ancestors 'none';
+Last-Modified: Sat, 1 Apr 2023 23:31:42 +0200
+Set-Cookie: metabase.DEVICE=cf21567e-720e-430f-bf06-ad09794f8bea;HttpOnly;Path=/;SameSite=Lax;Expires=Sat, 1 Feb 2042 12:01:30 +0100
+X-Permitted-Cross-Domain-Policies: none
+X-Content-Type-Options: nosniff

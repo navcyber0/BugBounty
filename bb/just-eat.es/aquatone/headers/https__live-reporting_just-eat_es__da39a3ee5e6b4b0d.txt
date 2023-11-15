@@ -1,0 +1,13 @@
+404 Not Found
+Content-Type: application/xml
+Via: 1.1 ca84731125cd3dd43582c552f31363f2.cloudfront.net (CloudFront)
+Cf-Cache-Status: DYNAMIC
+Retry-Count: 0
+Cf-Ray: 7aacfea20b544a8f-SIN
+Date: Mon, 20 Mar 2023 09:40:38 GMT
+X-Amz-Cf-Pop: SGN50-P1
+X-Amz-Cf-Id: JJSTIPbtgGUxt2tqUYocpdf9Ar-c2bFR3tzELbVArmpz70kdXZ2CuQ==
+Set-Cookie: __cf_bm=VsmixNrdyjDiZdSTm_v1GGU4_4r.g_D4F3SBFCkbB38-1679305238-0-AYI1Cu0vJ61Hd/gV1iesY+KhLV7jJ6DlRk5ATsBMK9ZMIp5GDGs9NiR55PKAXPofVtrCgCxKk5QoLMo2NxhgK4w=; path=/; expires=Mon, 20-Mar-23 10:10:38 GMT; domain=.just-eat.es; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+X-Cache: Error from cloudfront
+Strict-Transport-Security: max-age=0

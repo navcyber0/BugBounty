@@ -1,0 +1,14 @@
+200 OK
+Content-Security-Policy: default-src 'self'; frame-ancestors 'self'
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Xss-Protection: 1; mode=block
+Permissions-Policy: geolocation=(self), microphone=()
+Date: Wed, 22 Mar 2023 14:28:39 GMT
+Retry-Count: 0
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
+Content-Type: text/html; charset=utf-8
+Referrer-Policy: origin-when-cross-origin
+Set-Cookie: strict
+Content-Length: 932
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff

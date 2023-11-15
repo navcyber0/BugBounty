@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<!-- post css & js -->
+<link rel="stylesheet" href="https://www.post.ch/api/staticasset?serviceId=bra&file=post.css" />
+<link rel="stylesheet" href="https://www.post.ch/api/staticasset?serviceId=bra&file=post-modules.css" />
+<script src="https://www.post.ch/api/staticasset?serviceId=bra&file=head.js" type="text/javascript"></script>
+
+<!-- Eigene CSS Verknüpfungen -->
+ <style>
+div#os_content div#lastRow {
+ padding-bottom: 84px !important;
+}
+
+div#os_content div#current_status {
+  padding-bottom: 10px;
+}
+ 
+div#os_content h2 {
+  font-family: "Frutiger LT W01 65 Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.625em;
+  font-weight: normal;
+  margin: 1.84615em 0;
+  line-height: 1.23077em;
+  margin-bottom: 1.23077em;
+  margin-top: 0;
+}
+ 
+div#os_content h3 {
+  font-family: "FrutigerLTW01-45Light", Helvetica, Arial, sans-serif;
+  font-size: 1.625em;
+  font-weight: normal;
+  margin: 1.53846em 0;
+  line-height: 1.23077em;
+  color: black;
+  margin-top: -1.23077em;
+}
+ 
+div#os_content div#explanation {
+  font-family: "FrutigerLTW01-55Roman", Helvetica, Arial, sans-serif;
+  font-size: 1.0625em;
+  line-height: 1.64706em;
+  margin-bottom: 2.35294em;
+  color: black;
+  margin: 1em 0 10px 0px;
+}
+
+div#os_content div.alert {
+  max-width: 519px;
+  background-color: #a51728;
+  margin-bottom: 20px ;
+  color: #ffffff;
+}
+div#os_content div.alert .prefix{
+  float:left; 
+  padding:0.2em 0 0 0.5em; 
+  font-size:2.5em; 
+}
+
+div#os_content div.alert .text {
+  width_: 441px;
+  height_: 22px;
+  padding: 17px 25px 17px 64px ;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+div#os_content div.alert .text .title {
+  font-weight: bold;
+}
+
+div#os_content #result h4 {
+    border-bottom: 1px solid #ddd;
+}
+
+div#os_content table.table_result {
+  text-align: left;
+}
+
+div#os_content table.table_result td {
+    border_: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+div#os_content div#search_form input, 
+div#os_content div#search_form button {
+  margin-bottom: 10px; 
+  margin-right: 5px;
+  width:17em;
+  min-width: 17em;
+}
+
+</style>
+</head>
+
+<body>
+	<div id="os_content">
+		<div class="u_row">
+			<div class="u_large_12 u_column">
+				<!-- Content der aktuellen Seite des Onlinedienstes -->
+				<h2 data-i18n="appname-title">orig:Betreibungsregisterauszug</h2>
+				<h3 data-i18n="appname-subtitle">orig:Status der Bestellung
+					verfolgen</h3>
+		
+				<div id="explanation">
+					<span data-i18n="explanation">orig:Bitten geben Sie die Bestellnummer ein und klicken Sie auf «Status anzeigen».</span> <BR>
+				</div>
+			</div>
+		</div>
+		
+
+		<div id="lastRow" class="u_large_8 u_medium_10 u_small_12 u_columns">
+			<div id="alert_message" class="alert" style="display: none;">
+			    <div class="prefix">!</div>
+				<div id="msg-box" class="text">
+				     <span class="title">
+				      orig: Bitte pr&uuml;fen Sie Ihre Eingabe.
+				    </span>
+					<br>
+                    Keine Bestellung mit dieser Bestellnummer im System gefunden.</div>
+			</div>
+		
+			<div id="search_form" class="fm_formcontainer">
+			  <form>
+				<label class="fm_label" for="key" data-i18n="Bestellnummer">orig:Bestellnummer</label>
+				<div class="fm_fieldhint" data-i18n="Bestellnummer_expl">
+				  orig:Sie finden die Bestellnummer auf dem Auskunftsgesuch Ihrer Bestellung.
+				</div>
+				
+				<!-- Bestellnummer -->
+				<input tabindex="1" class="u_textinput" type="text" id="key" name="key" placeholder="Bestellnummer">
+				
+				<!-- Status anzeigen -->
+				<button tabindex="2" class="u_button" type="button" id="getStatus" data-i18n="search">orig:Status anzeige</button>
+				</form>
+			</div>
+	
+			<div id="result" style="display: none;">
+				<table class="table_result">
+					<tr>
+						<td data-i18n="Bestellnummer">orig:Bestellnummer</td>
+						<td><span id="result_downloadKey"></span></td>
+					</tr>
+					<tr>
+						<td data-i18n="creation-time">orig:Zeitpunkt der Bestellung</td>
+						<td><span id="result_creationTime"></span></td>
+					</tr>
+					<tr>
+						<td data-i18n="change-time">orig:Letzte Zustands&auml;nderung</td>
+						<td><span id="result_lastStatusChange"></span></td>
+					</tr>
+				</table>
+				<h4 data-i18n="state-of-order">orig:Status der Bestellung:</h4>
+				<div id="current_status"></div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+<!-- will be filled by javscript functions.js -->
+<script id="os_config" type="application/json"></script>
+
+<script src="https://www.post.ch/assets/portal/vendor/jquery-1.11.0.js" type="text/javascript"></script>
+
+<!-- Eigene JS Verknüpfungen -->
+<!-- i18n stuff -->
+<script src="status/javascript/jquery_i18n/jquery.i18n.js" type="text/javascript"></script>
+<script src="status/javascript/jquery_i18n/jquery.i18n.messagestore.js" type="text/javascript"></script>
+<script src="status/javascript/jquery_i18n/jquery.i18n.fallbacks.js" type="text/javascript"></script>
+<script src="status/javascript/jquery_i18n/jquery.i18n.language.js" type="text/javascript"></script>
+<script src="status/javascript/jquery_i18n/jquery.i18n.parser.js" type="text/javascript"></script>
+<script src="status/javascript/jquery_i18n/jquery.i18n.emitter.js" type="text/javascript"></script>
+<script src="status/javascript/jquery_i18n/jquery.i18n.emitter.bidi.js" type="text/javascript"></script>
+<script src="status/javascript/jquery_i18n/main-jquery_i18n.js" type="text/javascript"></script>
+
+<!-- date parser -->   
+<script src="status/javascript/jquery-dateformat.js" type="text/javascript"></script>
+
+<!-- custom stuff -->
+<script src="status/javascript/functions.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+// supported langs
+var supportedLangs = new Array("de", "fr", "it", "en");
+    // set default locale to de
+	lang = "de";
+    
+    // set locale according to lang parameter
+    langFromUrl = jQuery.urlParam('lang')
+    if( jQuery.inArray(langFromUrl, supportedLangs) !== -1 ) {
+      lang=langFromUrl;
+    } 
+    
+    // fill up json configuration 
+    // important to set current language
+    var configObj = {os_config:{currentLang:lang,currentUrl :"status.html",isHeaderResponsive:true},os_lang:[{lang:"de",url:"?lang=de"},{lang:"fr",url: "?lang=fr"},{lang:"it",url:"?lang=it"},{lang:"en",url:"?lang=en"}]};
+    var JSON_Config = JSON.stringify(configObj);
+    document.getElementById("os_config").innerHTML =  JSON_Config
+</script>
+
+<script src="https://www.post.ch/api/headerjs?serviceid=bra" type="text/javascript"></script>
+
+</body>
+</html>

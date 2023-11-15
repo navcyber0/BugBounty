@@ -1,0 +1,20 @@
+404 Not Found
+Access-Control-Allow-Origin: *
+Set-Cookie: __cf_bm=ecr93sd5JjHMVe774.w8Ehfz7k4x01t7K_wfMOjkcuQ-1679240706-0-AXpU5sxLvDOa+9Vl4MIvbuVM83JC+i294hjdcCRRyr7kGBg4bWFE+rsDpGX/FLHbfD56BN0p8DbxFBlmqvaz++8=; path=/; expires=Sun, 19-Mar-23 16:15:06 GMT; domain=.just-eat.co.uk; HttpOnly; Secure; SameSite=None
+Strict-Transport-Security: max-age=0
+Access-Control-Expose-Headers: X-Session-Id, X-CSRF-TOKEN
+X-Amzn-Requestid: 258c43d3-3819-4b93-b95c-f4a4a1fead1b
+Via: 1.1 c149c6b8a4d6f497cac6f2d9e9e6be40.cloudfront.net (CloudFront)
+Cf-Ray: 7aa6d72e3f280c59-AMS
+Retry-Count: 0
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+X-Amzn-Trace-Id: Root=1-64172e02-61be512a1ca934cd28c2e678;Sampled=0;lineage=5a437216:0
+X-Amz-Cf-Pop: AMS54-C1
+X-Amz-Apigw-Id: CCQgbHiHjoEFfHA=
+Cache-Control: max-age=894, public, s-maxage=29694
+X-Amzn-Remapped-Date: Sun, 19 Mar 2023 15:45:06 GMT
+X-Cache: Error from cloudfront
+X-Amz-Cf-Id: 6iXAOzIBxX3NXWn5U6b7ulEoBxYeAFMOKaES2-HNBs4VdtsDQdPNrQ==
+Date: Sun, 19 Mar 2023 15:45:06 GMT
+Content-Type: text/html; charset=UTF-8

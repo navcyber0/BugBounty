@@ -1,0 +1,13 @@
+200 OK
+Last-Modified: Mon, 12 Jun 2023 17:56:16 GMT
+Expires: Wed, 14 Jun 2023 13:50:43 GMT
+Cache-Control: max-age=0, no-cache
+Pragma: no-cache
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Content-Type: text/html
+Vary: Accept-Encoding
+Server-Timing: cdn-cache; desc=MISS edge; dur=115 origin; dur=659 ak_p; desc="468541_388762182_790797335_77353_10368_3_-_-";dur=1
+Retry-Count: 0
+Etag: W/"64875c40-4cc"
+X-Akamai-Transformed: 9 650 0 pmb=mRUM,1
+Date: Wed, 14 Jun 2023 13:50:43 GMT

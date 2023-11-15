@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page - GraphQlServiceV6</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css?v=ZJg29BfKMfPQ1nmIkdqg6iWhTGRNJx2HnD4FfdtVCcU" />
+    <link rel="stylesheet" href="/GraphQlServiceV6.Api.styles.css?v=l2cUVnWT76hPAyiAbdst79d6pri1y6-U-NmUqh3aaKw" />
+</head>
+<body>
+    <header>
+        <nav b-pgpw05ukk8 class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div b-pgpw05ukk8 class="container-fluid">
+                <a class="navbar-brand" href="/">GraphQlServiceV6</a>
+                <button b-pgpw05ukk8 class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span b-pgpw05ukk8 class="navbar-toggler-icon"></span>
+                </button>
+                <div b-pgpw05ukk8 class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul b-pgpw05ukk8 class="navbar-nav flex-grow-1">
+                        <li b-pgpw05ukk8 class="nav-item">
+                            <a class="nav-link text-dark" href="/">Home</a>
+                        </li>
+                        <li b-pgpw05ukk8 class="nav-item">
+                            <a b-pgpw05ukk8 class="nav-link text-dark" href="/graphql">Client</a>
+                        </li>
+                        <li b-pgpw05ukk8 class="nav-item">
+                            <a b-pgpw05ukk8 class="nav-link text-dark" href="/voyager">Voyager</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div b-pgpw05ukk8 class="container">
+        <main b-pgpw05ukk8 role="main" class="pb-3">
+            
+<div>
+    <h1 class="display-4">Authentication</h1>
+    <p>Do a POST request to "/auth" with below settings. Use your own client secret in the request to get a Bearer token back valid for 1 hour.</p>
+    <img src="/authpost.png"/>
+    <br/><br/><br/>
+    <p>Go to the client at "/graphql" and add your Bearer token.</p>
+    <img src="/authclient.png"/>
+</div>
+<br/><br/><br/>
+<div>
+    <h1 class="display-4">Sample request</h1>
+    <p>Below you have a sample query to get some users and the mapped OU.</p>
+    <img src="/samplequery.png"/>
+</div>
+<br/><br/><br/>
+<div>
+    <h1 class="display-4">Available queries</h1>
+    <p>Best way to see current queries is to check Voyager for the query definition. Below is a snapshot for reference.</p>
+    <img src="/queries.png"/>
+</div>
+        </main>
+    </div>
+
+    <footer b-pgpw05ukk8 class="border-top footer text-muted">
+        <div b-pgpw05ukk8 class="container">
+            &copy; 2022 - GraphQlServiceV6
+        </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=BxFAw9RUJ1E4NycpKEjCNDeoSvr4RPHixdBq5wDnkeY"></script>
+    
+</body>
+</html>

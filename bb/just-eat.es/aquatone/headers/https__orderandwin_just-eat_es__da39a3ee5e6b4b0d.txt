@@ -1,0 +1,20 @@
+404 Not Found
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=0
+Cache-Control: max-age=1173, public, s-maxage=51573
+X-Amzn-Trace-Id: Root=1-64182a0b-4c2ba7192ef75dc06ff3334a;Sampled=0;lineage=5a437216:0
+X-Amz-Cf-Pop: SGN50-P1
+Retry-Count: 0
+X-Amz-Apigw-Id: CEuB5F45joEF63A=
+Access-Control-Expose-Headers: X-Session-Id, X-CSRF-TOKEN
+X-Cache: Error from cloudfront
+Via: 1.1 6bd86ab31c21b96f38fb151157f48b80.cloudfront.net (CloudFront)
+Cf-Cache-Status: DYNAMIC
+X-Amzn-Remapped-Date: Mon, 20 Mar 2023 09:40:27 GMT
+X-Amzn-Requestid: 80714c4a-eed7-42d4-88a1-c917b2ff887d
+X-Amz-Cf-Id: x2gaXmvKL6giNT_UDUP5kcESYpAn3JHQXwMMAXRvr0vW0A7j5bwtLg==
+Server: cloudflare
+Cf-Ray: 7aacfe637db3499c-SIN
+Date: Mon, 20 Mar 2023 09:40:28 GMT
+Access-Control-Allow-Origin: *
+Set-Cookie: __cf_bm=MHWwqKANAtZB_Fd4UJ9tSqa8U.TMdNjwoA40pbxbEgk-1679305228-0-ASfg6aPoH/0+2Zi0X2imVGlhkbfqVqxKqVqMuKi//apw7bS7QP5LvI+FWR7ED3pwGNOCPbyP9A3qXaH63tkAT80=; path=/; expires=Mon, 20-Mar-23 10:10:28 GMT; domain=.just-eat.es; HttpOnly; Secure; SameSite=None

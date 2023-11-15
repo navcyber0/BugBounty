@@ -1,0 +1,14 @@
+403 Forbidden
+Date: Wed, 14 Jun 2023 13:12:55 GMT
+Cache-Control: max-age=15
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=w0bebeDC84lp2eEsm45sUAk148Lr3tYwDDhlmYv00ANng8QpcHpzs1JrPwUXv2E2xuw%2FwB9WXPzh%2FjELsP4ODEjjiEihXU9f7Xlmiv2E1qdi%2Fjag1yBR7%2FuhThFJbQWyVt9SYhi5UNO5Kn7UGtZh0rEX1zkPaaQMY18%3D"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Cf-Ray: 7d72d3e47cfbb28e-MAA
+Retry-Count: 0
+Expires: Wed, 14 Jun 2023 13:13:10 GMT
+Set-Cookie: __cf_bm=w2NREXojq.iCV1sU9a3OnYc419PXUZ979bBNEDOpwPE-1686748375-0-AYoOCvr14+BVDmFKzGYhg3EjuUsDdhNx0XmJI269xLng+7dDT3zblzhMEKwopkP5n6uxdIA89KZdGhhzX0ecDrg=; path=/; expires=Wed, 14-Jun-23 13:42:55 GMT; domain=.business.just-eat.co.uk; HttpOnly; Secure; SameSite=None __cfruid=fc987439c20999951a4be1571c9ca856b7b5df0a-1686748375; path=/; domain=.business.just-eat.co.uk; HttpOnly; Secure; SameSite=None
+Vary: Accept-Encoding
+Content-Type: text/html; charset=UTF-8
+X-Frame-Options: SAMEORIGIN
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Alt-Svc: h3=":8443"; ma=86400

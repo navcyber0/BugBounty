@@ -1,0 +1,15 @@
+200 OK
+Access-Control-Allow-Methods: GET, POST
+Content-Type: text/html; charset=UTF-8
+Content-Length: 281
+Server: nginx
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Accept-Ranges: bytes
+Last-Modified: Thu, 16 Mar 2023 00:00:14 GMT
+X-Frame-Options: SAMEORIGIN
+Date: Thu, 30 Mar 2023 07:31:15 GMT
+X-Content-Type-Options: nosniff
+Etag: "119-5f6f925249f80"
+Access-Control-Allow-Origin: *
+Retry-Count: 0

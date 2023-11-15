@@ -1,0 +1,12 @@
+200 OK
+Retry-Count: 0
+Date: Fri, 23 Jun 2023 15:31:31 GMT
+Set-Cookie: AWSALB=kHd8GHG1rt5QgHulu2lyJGyk7MYeNfLdwunJT01D5OYwT67JjWJG7NDJZaMoxvnur8RXPu70NVSWmqTacdmaVkazy3AuvNLkeZev2jSUgoLPAD73GHEQOipRNRUk; Expires=Fri, 30 Jun 2023 15:31:29 GMT; Path=/ AWSALBCORS=kHd8GHG1rt5QgHulu2lyJGyk7MYeNfLdwunJT01D5OYwT67JjWJG7NDJZaMoxvnur8RXPu70NVSWmqTacdmaVkazy3AuvNLkeZev2jSUgoLPAD73GHEQOipRNRUk; Expires=Fri, 30 Jun 2023 15:31:29 GMT; Path=/; SameSite=None; Secure SESSf2bc6783083c53e25b59646e461a3784=1dae983f7164dc88a62ee6d2018dd1b1; expires=Sun, 16-Jul-2023 19:04:50 GMT; Max-Age=2000000; path=/; samesite=Lax; domain=.post.ch; secure; HttpOnly qm_sso_bypass=0; expires=Sat, 24-Jun-2023 15:31:30 GMT; Max-Age=86400; path=/; Samesite=Lax; domain=.post.ch; secure; HttpOnly
+Server: Apache
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+X-Frame-Options: sameorigin
+Content-Type: text/html; charset=utf-8
+Last-Modified: Fri, 23 Jun 2023 15:31:30 GMT

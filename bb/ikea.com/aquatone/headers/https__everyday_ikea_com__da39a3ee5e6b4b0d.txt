@@ -1,0 +1,17 @@
+200 OK
+Vary: Accept-Encoding Accept-Encoding
+X-Rid: ca964489c6a48ad97b20e90c156ec023
+X-Content-Type-Options: nosniff
+Server: nginx
+Content-Type: text/html; charset=UTF-8
+P3p: CP="Tumblr's privacy policy is available here: https://www.tumblr.com/policy/en/privacy"
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy-Report-Only: script-src 'self' https://assets.tumblr.com https://sb.scorecardresearch.com/beacon.js https://ssl.google-analytics.com/ga.js https://www.google-analytics.com/analytics.js https://fc.yahoo.com/sdarla/php/client.php https://s.yimg.com/rq/darla/ https://www.googletagservices.com/tag/js/gpt.js https://securepubads.g.doubleclick.net/gpt/ https://securepubads.g.doubleclick.net/gampad/ads https://pagead2.googlesyndication.com/pagead/osd.js https://www.google.com/recaptcha/api.js https://*.gemini.yahoo.com https://s.yimg.com/av/gemini/ga/gemini-iframe.js https://s.yimg.com/av/curveball/ 'unsafe-eval' 'nonce-17tTTyXLSKi076fx2KbpieTc' https://www.google.com/recaptcha/api.js https://www.gstatic.com; object-src 'none'; worker-src blob:; base-uri 'self'; report-uri https://www.tumblr.com/svc/cspreports;
+Retry-Count: 0
+Date: Sun, 23 Jul 2023 01:12:42 GMT
+X-Frame-Options: deny
+Set-Cookie: tmgioct=64bc7e8a171b060855750280; expires=Wed, 20-Jul-2033 01:12:42 GMT; Max-Age=315360000; path=/; domain=.tumblr.com; HttpOnly
+X-Ua-Compatible: IE=Edge,chrome=1
+X-Nc: bom 2
+Strict-Transport-Security: max-age=31536000; preload
+Referrer-Policy: origin-when-cross-origin

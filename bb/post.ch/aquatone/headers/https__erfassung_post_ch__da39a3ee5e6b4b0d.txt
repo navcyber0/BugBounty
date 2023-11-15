@@ -1,0 +1,12 @@
+200 
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Server: SAP
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Etag: W/"2ce2e926f8f11b24ed3b1577d25c037cefcc7abb"
+X-Frame-Options: DENY
+Vary: accept-encoding
+Content-Type: text/html
+Date: Fri, 23 Jun 2023 15:22:03 GMT
+Referrer-Policy: origin-when-cross-origin
+Content-Security-Policy: script-src 'self' 'unsafe-eval' 'unsafe-inline' *.post.ch *.hana.ondemand.com; style-src 'self' 'unsafe-eval' 'unsafe-inline' *.post.ch *.hana.ondemand.com;

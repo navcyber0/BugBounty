@@ -1,0 +1,16 @@
+404 Not Found
+Content-Length: 1364
+Date: Wed, 14 Jun 2023 13:45:18 GMT
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:HYD; Domain=paypal.com; Path=/; Secure
+Retry-Count: 0
+Via: 1.1 varnish, 1.1 varnish
+X-Cache-Hits: 0, 0
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-qpg1227-QPG, cache-hyd1100033-HYD
+X-Cache: MISS, MISS
+X-Timer: S1686750318.867930,VS0,VE228
+Content-Type: text/xml
+Paypal-Debug-Id: f122099a528be

@@ -1,0 +1,14 @@
+401 Unauthorized
+Content-Type: text/plain
+X-Ratelimit-Reset: 1
+Expires: Wed, 14 Jun 2023 13:51:58 GMT
+Pragma: no-cache
+Content-Length: 14
+X-Ratelimit-Limit: 1000, 1000;w=1
+X-Ratelimit-Remaining: 999
+Server: envoy
+Cache-Control: max-age=0, no-cache, no-store
+Date: Wed, 14 Jun 2023 13:51:58 GMT
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Retry-Count: 0
+Www-Authenticate: Bearer realm="http://akamai-apigateway-stg-packaging2.tesla.com/"

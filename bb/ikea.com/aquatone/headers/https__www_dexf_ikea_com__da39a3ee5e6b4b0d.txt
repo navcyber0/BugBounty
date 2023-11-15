@@ -1,0 +1,17 @@
+200 OK
+X-Frame-Options: DENY
+Expires: Sun, 23 Jul 2023 01:08:33 GMT
+Date: Sun, 23 Jul 2023 01:08:33 GMT
+Server: DEXF Server
+Last-Modified: Mon, 15 May 2023 13:15:10 GMT
+Content-Security-Policy: font-src https://*.ikea.com/ https://www.ikea.com/ https://www.ikea.com/ https://unpkg.com/;style-src 'self' 'unsafe-inline' https://*.ikea.com/ https://www.ikea.com/ https://www.ikea.com/ https://unpkg.com/;img-src data: 'self' https://*.ikea.com/ https://www.ikea.com/ https://www.ikea.com/ https://*.google-analytics.com https://*.googletagmanager.com;connect-src 'self' https://*.dexf.red.cdtapps.com/ https://api.dexf.ikea.com/ https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;script-src 'self' 'sha256-Oqi8z4CiO568dcXxzhs3pcR2//3VeCq2MRs8W99SZzY=' https://unpkg.com/ https://*.googletagmanager.com;
+Content-Language: en
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: text/html;charset=UTF-8
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000
+Retry-Count: 0
+Vary: Accept-Encoding

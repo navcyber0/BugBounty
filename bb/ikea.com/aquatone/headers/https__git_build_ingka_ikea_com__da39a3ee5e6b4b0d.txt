@@ -1,0 +1,18 @@
+200 OK
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame
+X-Github-Request-Id: efdd1852-65de-41d5-8fa2-fe0793370ba4
+X-Xss-Protection: 0
+Server: GitHub.com
+Cache-Control: no-store
+Set-Cookie: saml_csrf_token=l_d_V6I2NiVoBhpKAu3JxL_CEjDlBup3UTTdS-08xdExQlKoJ0qsQUWPJ9tcZK2ZejyGd32TvW3vGPaxRRWuovbf-AuDTHLca86G0zkKoQk; path=/; secure; HttpOnly; SameSite=None saml_csrf_token_legacy=l_d_V6I2NiVoBhpKAu3JxL_CEjDlBup3UTTdS-08xdExQlKoJ0qsQUWPJ9tcZK2ZejyGd32TvW3vGPaxRRWuovbf-AuDTHLca86G0zkKoQk; path=/; secure; HttpOnly logged_in=no; domain=git.build.ingka.ikea.com; path=/; expires=Tue, 23 Jul 2024 01:13:02 GMT; secure; HttpOnly; SameSite=Lax _fi_sess=EpqznZTgSjBWqsJ4NC%2F1CvqdBvHozppsjAfIhp4pB8gazU3EOS7QDi%2Fvcl4D7EzLcSiDNTrFaz6%2FK1YwL0lnf3Fq2dDTbEcABgk88TgJtApceAy4jKc%2BOttEauXUYrJ9BKB%2FtbVT0N0PcEiJxh%2FkgdT3Ycvu%2FWvL9NqBnQfnPcI%3D--zglb7kGPtkPYVswP--E%2BO5bMMYBsbZ7yBdtkVyIg%3D%3D; path=/; secure; HttpOnly; SameSite=Lax
+X-Content-Type-Options: nosniff
+X-Runtime-Rack: 0.041432
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: deny
+Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src git.build.ingka.ikea.com/assets-cdn/worker/ gist.git.build.ingka.ikea.com/assets-cdn/worker/; connect-src 'self' uploads.git.build.ingka.ikea.com media.git.build.ingka.ikea.com www.githubstatus.com raw.git.build.ingka.ikea.com git.build.ingka.ikea.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://git.build.ingka.ikea.com; font-src assets.git.build.ingka.ikea.com; form-action 'self' git.build.ingka.ikea.com gist.git.build.ingka.ikea.com pages.git.build.ingka.ikea.com; frame-ancestors 'none'; frame-src viewscreen.git.build.ingka.ikea.com notebooks.git.build.ingka.ikea.com; img-src * data:; manifest-src 'self'; media-src media.git.build.ingka.ikea.com; script-src assets.git.build.ingka.ikea.com; style-src 'unsafe-inline' assets.git.build.ingka.ikea.com; worker-src git.build.ingka.ikea.com/assets-cdn/worker/ gist.git.build.ingka.ikea.com/assets-cdn/worker/
+Retry-Count: 0
+Date: Sun, 23 Jul 2023 01:13:02 GMT
+Etag: W/"85eeae9e657f3822e25a8b1c73ea493b"
+X-Runtime: 0.035280
+Strict-Transport-Security: max-age=31536000; includeSubdomains

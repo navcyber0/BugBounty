@@ -1,0 +1,20 @@
+200 OK
+X-Amz-Id-2: lgvgNQUnq5gGSW5FujLHibTQpKgCwl3pNjf26Vn9Q8KFFkQRsXWcWlonQXwM7l0NCtUaUPi/goYf6pDgLV9ZIA==
+Last-Modified: Mon, 24 Apr 2023 11:23:42 GMT
+Strict-Transport-Security: max-age=0
+Ratelimit-Remaining: 41
+Ratelimit-Reset: 5
+X-Amz-Request-Id: R134CBKJBJ204Y54
+Set-Cookie: __cf_bm=70LyLPOa8a5JBXSbVt3dVKHX5WTS.ymAwY3UY3YkAHE-1686748025-0-Aab7nGwiVmkz+BTNBCc4/ipGfzXUCvk2zbN07uOiZJU8ic48bYP46k86scFsNvQT6toLSTl+bjwcTVRefbUnHiE=; path=/; expires=Wed, 14-Jun-23 13:37:05 GMT; domain=.just-eat.co.uk; HttpOnly; Secure; SameSite=None
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+X-Ratelimit-Remaining-10: 41
+X-Amz-Server-Side-Encryption: AES256
+Server: cloudflare
+Date: Wed, 14 Jun 2023 13:07:05 GMT
+X-Ratelimit-Limit-10: 42
+Ratelimit-Limit: 42
+Cache-Control: max-age=60
+X-Je-Conversation: 65a8c965-adb6-480f-84bc-3e4f67ba8eeb
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 7d72cb516a8b2e11-BOM

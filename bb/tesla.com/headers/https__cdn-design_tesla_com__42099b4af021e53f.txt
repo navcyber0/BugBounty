@@ -1,0 +1,40 @@
+200 OK
+X-Tzla-Edge-Ttl: 60.000
+X-Varnish-Fwd-Match-Rule: zz_default_cdn-design
+X-Varnish-Fwd-Server: dal11p1tegvr005.cb1.dal11.tzla.net
+X-Edgeconnect-Origin-Mex-Latency: 585 585
+Akamai-Request-Bc: [a=23.3.70.44,b=17476215,c=g,n=IN_KA_BANGALORE,o=9498],[c=c,n=IN_TN_CHENNAI,o=20940],[c=c,n=HK__KOWLOON,o=20940],[a=199.120.56.248,c=o]
+X-Tzla-Edge-Backend-Reason: OK
+X-Tzla-Edge-Cache-Hit: 
+Accept-Ranges: bytes
+X-Akamai-Transformed: 9 38 0 pmb=mRUM,1
+Strict-Transport-Security: max-age=86400 ; includeSubDomains
+Content-Type: text/html; charset=utf-8
+X-Tzla-Edge-Hostname-Vcl: cdn-design
+X-Content-Type-Options: nosniff
+X-Tzla-Edge-Age: 60.000
+X-Tzla-Edge-Client-Restarts: 0
+Server-Timing: cdn-cache; desc=REVALIDATE edge; dur=82 origin; dur=585 ak_p; desc="468541_386090540_17476215_66682_9242_11_-_-";dur=1
+X-Varnish: 416394326 999767518
+X-Tzla-Edge-Client-Req-Ttl: -1.000
+X-Edgeconnect-Midmile-Rtt: 66 71
+X-Tzla-Edge-Backend-Fetch-If-Stale: false
+X-Tzla-Edge-Backend-Ttfb: 0.000
+X-Tzla-Edge-Backend-Status: 200
+Originip: 199.120.56.248
+Date: Wed, 14 Jun 2023 13:52:33 GMT
+Vary: Accept-Encoding
+Etag: W/"12-fNq4NZwCFbbJ3eYhT6g2Je2SRnk"
+Cache-Control: max-age=60
+X-Tzla-Edge-Was-304: true
+Retry-Count: 0
+X-Powered-By: Express
+X-Frame-Options: SAMEORIGIN
+X-Tzla-Edge-Cache-Hits: 0
+X-Tzla-Edge-Grace-Backend-Unhealthy: 60.000
+X-Tzla-Edge-Backend-Stream: true
+X-Tzla-Edge-Server: dal11p1tegvr004.cb1.dal11.tzla.net
+Origin-Hostname: cdn-design.tesla.com
+X-Tzla-Edge-Grace: 60.000
+X-Tzla-Edge-Backend-Retry: 0
+X-Tzla-Edge-Backend-Conn-Time: 0.000

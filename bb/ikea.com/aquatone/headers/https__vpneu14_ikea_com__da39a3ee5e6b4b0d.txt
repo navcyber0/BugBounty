@@ -1,0 +1,13 @@
+200 OK
+Retry-Count: 0
+Pragma: no-cache
+Date: Sun, 23 Jul 2023 01:07:50 GMT
+X-Xss-Protection: 1
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob:; frame-ancestors 'self'
+Content-Type: text/html; charset=utf-8
+Cache-Control: no-store
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Set-Cookie: webvpn=; expires=Thu, 01 Jan 1970 22:00:00 GMT; path=/; secure webvpn_as=; expires=Thu, 01 Jan 1970 22:00:00 GMT; path=/; secure webvpnc=; expires=Thu, 01 Jan 1970 22:00:00 GMT; path=/; secure webvpn_portal=; expires=Thu, 01 Jan 1970 22:00:00 GMT; path=/; secure webvpnSharePoint=; expires=Thu, 01 Jan 1970 22:00:00 GMT; path=/; secure samlPreauthSessionHash=; expires=Thu, 01 Jan 1970 22:00:00 GMT; path=/; secure acSamlv2Token=; expires=Thu, 01 Jan 1970 22:00:00 GMT; path=/; secure acSamlv2Error=; expires=Thu, 01 Jan 1970 22:00:00 GMT; path=/; secure webvpnlogin=1; path=/; secure
+Connection: Keep-Alive
+Strict-Transport-Security: max-age=31536000; includeSubDomains

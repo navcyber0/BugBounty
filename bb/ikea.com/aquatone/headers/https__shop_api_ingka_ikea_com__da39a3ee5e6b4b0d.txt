@@ -1,0 +1,18 @@
+403 Forbidden
+Content-Length: 23
+X-Amz-Cf-Pop: MAA50-P1
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+X-Amzn-Errortype: ForbiddenException
+X-Amz-Apigw-Id: Ifh8yGoLjoEFrOA=
+Set-Cookie: akacd_shop-prod=3867527196~rv=90~id=bcb46764133a91a596c9c1137581c95b; path=/;; Secure; SameSite=None _abck=09B0BE8F2B7267C6CD9A5B4E2D596CCD~-1~YAAQdropF0VrD1qJAQAAub5IgAoBMSAUSC3f8BG3PQcWlSiPhSw+7AhdT1jmGVXObddULetQWbhszylRhWDnYRUvISJ+tn2N8R1rwziUjFFJAs7XrDAUKJf3X7G+gNEIfVFN39Cm1eWUnwDp8llVDSAdNn5N+ZcLaUX/wOL8KxJqOtBDXgUDZ9jih9hzpnF2RMKpIatB2Dqd51n9Dpz0yxcmQO9M//y57mGBng0tiEI6wtbZ2Q8YW2XgQcXc5TYR52KjwMrsk9nxiAjZ5+Mawp/9uEZS06HgSifX6zkpxoaBwwDfdKYDFGC3NYD+liobjTq1BwxPZZr4X//NnnQUU2vYpEnovsgdh2cIaE/jeQxRXGGb9HjzKpT2~-1~-1~1690077906; Domain=.ikea.com; Path=/; Expires=Mon, 22 Jul 2024 01:06:38 GMT; Max-Age=31536000; Secure bm_sz=0DC2C7CDEC369D7CA78B9905BDBE9F47~YAAQdropF0ZrD1qJAQAAub5IgBTN534g3AfQrmGggZrf+SUuOzqDF4Ua0WPUrGsCeJTjhFnUWVH71mNwcH/xPcCCm3jXLdYdHAUB56GUl63XoTYdJ+6nWjJsWPkQb/PHveRJGrgyo3QOTAaAAtYyRW51WX1zXz2KJojXKABJP0CxlYfnfyTPjq/wRAnnFYDkOv02q2q9Ju521C1apTxxZyv9CoeGlBIwomzGDXs2rBnC3jm4MHJh1Axo7WMLP7BLqjk5tkR53bhh+/t9nQ+WA8hVeFDzaPMQFLs+quETELCM~4468804~3356737; Domain=.ikea.com; Path=/; Expires=Sun, 23 Jul 2023 05:06:37 GMT; Max-Age=14399
+Strict-Transport-Security: max-age=31536000
+Content-Type: application/json
+X-Amzn-Requestid: 2ed30979-108d-4d39-94fe-5eb534a0f615
+Server: IKEA Shoppable App
+X-Xss-Protection: 1; mode=block
+X-Amz-Cf-Id: Jw02GRZaaDNYEK5a-edoqplTMXLfXY6x4f9Tf-0-jTGd_fh35J1BZQ==
+Cache-Control: max-age=5
+Expires: Sun, 23 Jul 2023 01:06:43 GMT
+Date: Sun, 23 Jul 2023 01:06:38 GMT

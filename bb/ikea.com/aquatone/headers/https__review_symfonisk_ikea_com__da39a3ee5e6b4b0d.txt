@@ -1,0 +1,9 @@
+401 Unauthorized
+Retry-Count: 0
+Content-Type: text/html
+X-Powered-By: ASP.NET
+Content-Length: 58
+Date: Sun, 23 Jul 2023 01:06:21 GMT
+Server: Microsoft-IIS/10.0
+Set-Cookie: ARRAffinity=5d8752394d54a0460a4e04471ec07f847ddee4bb8096446bf7be243e91c29394;Path=/;HttpOnly;Secure;Domain=review.symfonisk.ikea.com ARRAffinitySameSite=5d8752394d54a0460a4e04471ec07f847ddee4bb8096446bf7be243e91c29394;Path=/;HttpOnly;SameSite=None;Secure;Domain=review.symfonisk.ikea.com
+Www-Authenticate: Basic realm ="demo"

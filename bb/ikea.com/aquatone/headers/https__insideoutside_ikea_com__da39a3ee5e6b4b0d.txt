@@ -1,0 +1,14 @@
+200 OK
+Vary: Accept-Encoding
+Set-Cookie: ARRAffinity=7d39f79e4feec1961d26b8bde6107e2f6bf65844bcf1c9e6baf7751b28ebf6c7;Path=/;HttpOnly;Secure;Domain=ico-worker.ingka.com ARRAffinitySameSite=7d39f79e4feec1961d26b8bde6107e2f6bf65844bcf1c9e6baf7751b28ebf6c7;Path=/;HttpOnly;SameSite=None;Secure;Domain=ico-worker.ingka.com
+Expires: Sun, 23 Jul 2023 02:13:35 GMT
+Date: Sun, 23 Jul 2023 01:13:35 GMT
+Strict-Transport-Security: max-age=86400
+Content-Type: text/html; charset=utf-8
+Etag: "8f65a40dc22d0d4cedb7c71e646c99f8"
+Cache-Control: public, max-age=3600
+Retry-Count: 0
+Pragma: public
+Server: IKEA Server
+Last-Modified: Sun, 23 Jul 2023 01:13:35 GMT
+X-Powered-By: PHP/7.4.30 ASP.NET

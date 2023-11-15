@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset = "UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#000000" />
+
+      <base href="/" />
+      <link rel="stylesheet" href="https://www.ikea.com/global/assets/fonts/en/fonts.css">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+         rel="stylesheet" />
+         <script> 
+            const cookies = document.cookie.split(';').map(cookie => cookie.trim());
+            const myCookie = cookies.find(cookie => cookie.startsWith('idam_user_country_name='));
+            dataLayer = [{ 
+            'userCountry': myCookie.split("=")[1] 
+            }];
+         </script> 
+         <!-- Google Tag Manager snippet -->
+      <script>
+         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+         var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+         j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+         f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-MWQFDL5');
+      </script>
+   <!-- End Google Tag Manager snippet -->
+
+   <!-- OneTrust Cookies Consent Notice start for content-package.inter.ikea.com --> 
+   <script src=https://cdn.cookielaw.org/scripttemplates/otSDKStub.js data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="72f910c3-02c7-4d70-bad3-5e922cf6188d" >
+   </script> 
+   <script type="text/javascript"> function OptanonWrapper() { } </script> 
+   <!-- OneTrust Cookies Consent Notice end for content-package.inter.ikea.com -->
+   
+            
+      
+      <title>IKEA Content Packages</title>
+   </head>
+   <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id = "root"></div>
+      
+      <!-- <script src="./bundle/index_bundle.js"></script> -->
+   <script src="index_bundle.js"></script></body>
+</html>

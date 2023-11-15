@@ -1,0 +1,15 @@
+200 OK
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Retry-Count: 0
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Date: Tue, 28 Mar 2023 14:02:36 GMT
+Pragma: no-cache
+Expires: -1
+Content-Security-Policy: frame-ancestors 'self' https://*.zerodha.com https://microapps.google.com/;
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Last-Modified: Tue, 28 Mar 2023 02:11:29 GMT
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15552000
+Cf-Ray: 7af0696729e2f40d-BOM

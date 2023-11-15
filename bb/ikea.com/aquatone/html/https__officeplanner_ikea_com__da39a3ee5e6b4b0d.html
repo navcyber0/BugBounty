@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="referrer" content="no-referrer-when-downgrade"> -->
+
+    <link rel="manifest" href="../manifest.json">
+
+    <title>IKEA Planner</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../libs/ISCustomization/Splashscreen/Splashscreen.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/fontcss/">
+
+
+
+    <style></style>
+
+    <link rel="preload" as="font" href="../assets/fonts/Noto-Ikea-400-Latin-Regular.woff2" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" as="font" href="../assets/fonts/Noto-Ikea-700-Latin-Bold.woff2" type="font/woff2"
+        crossorigin="anonymous">
+    <link rel="preload" as="font" href="../assets/fonts/Ikea-Lato.woff2" type="font/woff2"
+        crossorigin="anonymous">
+
+    <style>
+        @font-face {
+            font-family: 'Noto IKEA Latin';
+            font-style: normal;
+            font-weight: normal;
+            src: url("../assets/fonts/Noto-Ikea-400-Latin-Regular.woff2") format("woff2");
+        }
+
+        @font-face {
+            font-family: 'Noto IKEA Latin';
+            font-style: normal;
+            font-weight: bold;
+            src: url("../assets/fonts/Noto-Ikea-700-Latin-Bold.woff2") format("woff2");
+        }
+    </style>
+
+    <style>
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: italic;
+            font-weight: 400;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 100;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 100;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 300;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            src: url("../assets/fonts/Ikea-Lato.woff2") format('woff2');
+            
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 900;
+            src: url("../assets/fonts/Ikea-Lato.woff2")format('woff2');
+            
+        }
+    </style>
+
+</head>
+
+<body class="tw-use-design-system" data-deployment="" data-deployment-locale="">
+    <template id="splashscreen--template">
+        <div class="is--splashscreen" style="display: none;">
+            <div class="splashscreen--center">
+                <img class="splashscreen--logo" src="logo_mobile.png" alt="2020 logo">
+                <div class="splashscreen--animation-container">
+                    <span class="splashscreen--animation-bar splashscreen--animation"></span>
+                </div>
+                <div class="splashscreen--message-container">
+                    <span class="splashscreen--message"></span><span class="splashscreen--done"></span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        function detectBrowser() {
+            try {
+                var ua = window.navigator.userAgent;
+                if (ua.indexOf("Edg/") > -1) {
+                    return "EdgeChromium";
+                }
+                else if (ua.indexOf("Edge") > -1) {
+                    return "EdgeLegacy";
+                }
+                else if (ua.indexOf("Trident/") > -1) {
+                    return "IE";
+                }
+
+            } catch (e) {
+                console.error("Error in function detectBrowserAndVersion");
+                console.error(e);
+            }
+        }
+
+        function getParameterByName(name) {
+            var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+            return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+        }
+
+        var currentBrowser = detectBrowser() || "";
+
+        const deploymentName = document.body.getAttribute("data-deployment");
+        var locale = getParameterByName("locale") || document.body.getAttribute("data-deployment-locale");
+        var language = locale.split("-")[0];
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || ('standalone' in navigator);
+        if (isMobile) {
+            //Redirection in case of mobile devices. - smartphones and tablets
+            var mobileDevicesRedirectionLink = "https://www.ikea.com/{countrycode}/{language}/planner/office-planner/";
+            mobileDevicesRedirectionLink = mobileDevicesRedirectionLink.replace(/{countrycode}/g, (deploymentName || "se"));
+            mobileDevicesRedirectionLink = mobileDevicesRedirectionLink.replace(/{language}/g, (language || "sv"));
+            window.location.href = mobileDevicesRedirectionLink;
+        }
+        if (currentBrowser && currentBrowser === "IE" || currentBrowser === "EdgeLegacy") {
+            //Redirection in case of browser not supported.
+            var nonSupportedBrowserRedirectionLink = "https://www.ikea.com/{countrycode}/{language}/planner/browser-not-supported/";
+            nonSupportedBrowserRedirectionLink = nonSupportedBrowserRedirectionLink.replace(/{countrycode}/g, (deploymentName || "se"));
+            nonSupportedBrowserRedirectionLink = nonSupportedBrowserRedirectionLink.replace(/{language}/g, (language || "sv"));
+            window.location.href = nonSupportedBrowserRedirectionLink;
+        }
+
+    </script>
+
+    <div id="main-content-container" style="height: 100%;"></div>
+
+<script type="text/javascript" src="vendors~tenant.bundle.a1052a07d9d4fab8ca76.js"></script><script type="text/javascript" src="tenant.bundle.a1052a07d9d4fab8ca76.js"></script></body>
+
+</html>

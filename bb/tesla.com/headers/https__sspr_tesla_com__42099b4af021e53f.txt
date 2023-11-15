@@ -1,0 +1,14 @@
+200 OK
+Accept-Ranges: bytes
+Retry-Count: 0
+Last-Modified: Fri, 08 Oct 2021 06:36:49 GMT
+Etag: "615fe701-254ff"
+X-Edgeconnect-Origin-Mex-Latency: 620
+Date: Wed, 14 Jun 2023 13:51:08 GMT
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Server: nginx
+X-Edgeconnect-Midmile-Rtt: 105
+X-Akamai-Transformed: 9 152831 0 pmb=mRUM,1
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+Server-Timing: cdn-cache; desc=MISS edge; dur=304 origin; dur=620 ak_p; desc="468541_388762182_790827759_92450_10479_4_-_-";dur=1

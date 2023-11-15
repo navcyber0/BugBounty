@@ -1,0 +1,22 @@
+200 OK
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 7b514127faf50bad-AMS
+Ratelimit-Remaining: 4166
+Ratelimit-Reset: 4
+X-Cache: Error from cloudfront
+Server: cloudflare
+Content-Type: text/html; charset=UTF-8
+Age: 13
+Set-Cookie: __cf_bm=TvZTl3Rk6qSPjSrs1iZ2G0s2biYBrjquxsv.u7y7TF4-1681027626-0-AYvdOm73iL486RABI7G7oFgLk8rEYvSpLTok86nrjGwcQ+35Wgl9Z+n/dzGiXrrbqma9x7Xwn+zSLOUorSGLkGs=; path=/; expires=Sun, 09-Apr-23 08:37:06 GMT; domain=.just-eat.io; HttpOnly; Secure
+Strict-Transport-Security: max-age=0
+Last-Modified: Wed, 22 Mar 2023 12:48:13 GMT
+X-Amz-Server-Side-Encryption: AES256
+Via: 1.1 2900c8bea7962de658e6de19988c7118.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: DUB56-P1
+Date: Sun, 09 Apr 2023 08:07:06 GMT
+X-Ratelimit-Limit-5: 4167
+X-Ratelimit-Remaining-5: 4166
+Ratelimit-Limit: 4167
+X-Amz-Cf-Id: LMgfN9OriaVPZGAUbQ1LKXQRmdYEbbGqQXgVzDdJMARTjdTClRFCQA==
+Retry-Count: 0
+X-Je-Conversation: 38ffb48b-4820-47da-9d09-14240c52318e

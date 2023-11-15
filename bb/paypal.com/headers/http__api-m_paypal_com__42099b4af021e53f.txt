@@ -1,0 +1,12 @@
+403 BLOCK_HTTP
+Content-Type: text/html; charset=utf-8
+Date: Wed, 14 Jun 2023 13:44:43 GMT
+Via: 1.1 varnish
+Content-Length: 423
+Server: Varnish
+Retry-After: 0
+X-Cache: MISS
+X-Cache-Hits: 0
+Retry-Count: 0
+Accept-Ranges: bytes
+X-Served-By: cache-hyd1100033-HYD

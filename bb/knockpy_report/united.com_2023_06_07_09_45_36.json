@@ -1,0 +1,6315 @@
+{
+    "accessedge.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.33",
+            "209.87.119.30"
+        ],
+        "code": 404,
+        "server": "RTC/6.0"
+    },
+    "activeagent.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.153",
+            "12.169.195.153"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "activate.united.com": {
+        "domain": "edge-geo.nc0.co",
+        "alias": [
+            "activate.united.com",
+            "united.activate.ensighten.com",
+            "united.edge.nc0.co"
+        ],
+        "ipaddr": [
+            "54.248.150.184"
+        ],
+        "code": 204,
+        "server": "nginx"
+    },
+    "apiauth-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "apiauth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.113",
+            "12.169.195.113"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "api.prd.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "api.prd.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "apigw-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.20"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "apigw.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.112"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "animaltravel.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "animaltravel.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "api.preprod.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "api.preprod.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "api.stg.aws.united.com": {
+        "domain": "e88991.x.akamaiedge.net",
+        "alias": [
+            "api.stg.aws.united.com",
+            "api.stg.aws.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.43",
+            "23.44.10.67"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "alpha.vacations.united.com": {
+        "domain": "alpha.vacations.united.com.cdn.cloudflare.net",
+        "alias": [
+            "alpha.vacations.united.com",
+            "alpha.vacations.united.com.dxcloud.episerver.net"
+        ],
+        "ipaddr": [
+            "104.18.16.8",
+            "104.18.17.8"
+        ],
+        "code": 200,
+        "server": "cloudflare"
+    },
+    "api.qa.aws.united.com": {
+        "domain": "e88991.x.akamaiedge.net",
+        "alias": [
+            "api.qa.aws.united.com",
+            "api.qa.aws.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.67",
+            "23.44.10.43"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "api.dev.aws.united.com": {
+        "domain": "e88991.x.akamaiedge.net",
+        "alias": [
+            "api.dev.aws.united.com",
+            "api.dev.aws.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.43",
+            "23.44.10.67"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "atw-dev.united.com": {
+        "domain": "e15015.dscx.akamaiedge.net",
+        "alias": [
+            "atw-dev.united.com",
+            "atw-dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 400,
+        "server": "AkamaiGHost"
+    },
+    "atw.united.com": {
+        "domain": "e29805.dscx.akamaiedge.net",
+        "alias": [
+            "atw.united.com",
+            "atw.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 503,
+        "server": "AkamaiGHost"
+    },
+    "assets.mystatus.united.com": {
+        "domain": "d1wkosmjfl1tze.cloudfront.net",
+        "alias": [
+            "assets.mystatus.united.com"
+        ],
+        "ipaddr": [
+            "18.161.97.116",
+            "18.161.97.109",
+            "18.161.97.76",
+            "18.161.97.126"
+        ],
+        "code": 403,
+        "server": "AmazonS3"
+    },
+    "aws.devgw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.devgw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "alexa-qa.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "alexa-qa.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 503,
+        "server": "AkamaiGHost"
+    },
+    "aws.dev.webauth.united.com": {
+        "domain": "dp-dev-webauth-nlb-8277dedee07d9cb7.elb.us-east-1.amazonaws.com",
+        "alias": [
+            "aws.dev.webauth.united.com"
+        ],
+        "ipaddr": [
+            "3.233.142.162",
+            "34.233.170.3"
+        ],
+        "code": 502,
+        "server": "awselb/2.0"
+    },
+    "apicauthsso-openid-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.189"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "aws.prdgw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.prdgw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "aws.oh.qagw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.oh.qagw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "apaclient.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "apaclient.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": "Oracle-HTTP-Server"
+    },
+    "aws.preprodgw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.preprodgw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "apicauthsso-saml-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.188"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "atw-qa.united.com": {
+        "domain": "e15015.dscx.akamaiedge.net",
+        "alias": [
+            "atw-qa.united.com",
+            "atw-qa.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 503,
+        "server": "AkamaiGHost"
+    },
+    "aws.oh.stagegw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.oh.stagegw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "atw-stage.united.com": {
+        "domain": "e15015.dscx.akamaiedge.net",
+        "alias": [
+            "atw-stage.united.com",
+            "atw-stage.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 503,
+        "server": "AkamaiGHost"
+    },
+    "aws.oh.preprodgw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.oh.preprodgw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "aws.oh.devgw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.oh.devgw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "aws.qagw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.qagw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "aws.oh.prdgw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.oh.prdgw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "aws.stagegw.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "aws.stagegw.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "baggageclaimform-qa.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "baggageclaimform-qa.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "baggageclaimform.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "baggageclaimform.united.com",
+            "baggageclaimform.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "airwatch.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.49"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "autopilot-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.52"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "184.31.63.128"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "beta.vacations.united.com": {
+        "domain": "beta.vacations.united.com.cdn.cloudflare.net",
+        "alias": [
+            "beta.vacations.united.com",
+            "beta.vacations.united.com.dxcloud.episerver.net"
+        ],
+        "ipaddr": [
+            "104.18.16.8",
+            "104.18.17.8"
+        ],
+        "code": 200,
+        "server": "cloudflare"
+    },
+    "bigpanda-ndc-stage-apicalls.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "bigpanda-ndc-stage-apicalls.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "api.test.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.25"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "bigpanda-ndc-apicalls.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "bigpanda-ndc-apicalls.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "apaclientqa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.210.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "boardingpass.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "boardingpass.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": "Oracle-HTTP-Server"
+    },
+    "brand.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 403,
+        "server": "Apache"
+    },
+    "auth2.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.127.109"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.127.105"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "businesstravel.united.com": {
+        "domain": "web-9-1360424633.us-east-1.elb.amazonaws.com",
+        "alias": [
+            "businesstravel.united.com",
+            "unitedairlines.unstackdns.com"
+        ],
+        "ipaddr": [
+            "3.213.12.65",
+            "34.237.173.31",
+            "54.146.28.104"
+        ],
+        "code": 200,
+        "server": "nginx"
+    },
+    "auth1.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.127.110"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "cc.cruises.united.com": {
+        "domain": "unitedcc.wthsites.com",
+        "alias": [
+            "cc.cruises.united.com"
+        ],
+        "ipaddr": [
+            "45.60.121.26"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "cardmemberoffers.united.com": {
+        "domain": "ual-app-balancer-595247618.us-west-2.elb.amazonaws.com",
+        "alias": [
+            "cardmemberoffers.united.com",
+            "cardmemberoffers.united.lacek.net"
+        ],
+        "ipaddr": [
+            "44.239.185.170"
+        ],
+        "code": 503,
+        "server": "awselb/2.0"
+    },
+    "becomingunited.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.23"
+        ],
+        "code": 200,
+        "server": "nginx"
+    },
+    "brand-staging.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "brand-staging.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 403,
+        "server": "Apache"
+    },
+    "business2.united.com": {
+        "domain": "ukb.edge2.salesforce.com",
+        "alias": [
+            "business2.united.com",
+            "business2.united.com.00d36000001gcrfea0.live.siteforce.com",
+            "n.edge2.salesforce.com",
+            "japan.edge2.salesforce.com"
+        ],
+        "ipaddr": [
+            "161.71.146.12",
+            "161.71.146.9",
+            "161.71.146.10"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "avcon.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.32",
+            "209.87.119.35"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "branddev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.119.122.37"
+        ],
+        "code": 403,
+        "server": "Apache"
+    },
+    "careers.united.com": {
+        "domain": "hubsite-prod5-1036727637.us-east-1.elb.amazonaws.com",
+        "alias": [
+            "careers.united.com",
+            "unitedairlines.phenompeople.net"
+        ],
+        "ipaddr": [
+            "54.204.249.126",
+            "50.16.177.26"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "cars.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "cars.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": "ECS (hhp/9ABD)"
+    },
+    "biz.united.com": {
+        "domain": "pi-ue1-public-lb-f0209c6950285322.elb.us-east-1.amazonaws.com",
+        "alias": [
+            "biz.united.com",
+            "go.pardot.com",
+            "pi.pardot.com",
+            "pi-ue1.pardot.com"
+        ],
+        "ipaddr": [
+            "3.215.172.219",
+            "18.208.125.13",
+            "34.237.219.119",
+            "52.54.96.194",
+            "3.92.120.28"
+        ],
+        "code": 200,
+        "server": "Sucuri/Cloudproxy"
+    },
+    "business.united.com": {
+        "domain": "pi-ue1-public-lb-f0209c6950285322.elb.us-east-1.amazonaws.com",
+        "alias": [
+            "business.united.com",
+            "go.pardot.com",
+            "pi.pardot.com",
+            "pi-ue1.pardot.com"
+        ],
+        "ipaddr": [
+            "3.215.172.219",
+            "34.237.219.119",
+            "52.54.96.194",
+            "3.92.120.28",
+            "18.208.125.13"
+        ],
+        "code": 200,
+        "server": "Sucuri/Cloudproxy"
+    },
+    "classified.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "classified.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": "Kestrel"
+    },
+    "click.e.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.110.221.128"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "cn.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "cn.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "104.97.24.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "checkin.united.com": {
+        "domain": "e2788.x.akamaiedge.net",
+        "alias": [
+            "checkin.united.com",
+            "checkin.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.9.25.89"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "contactcenter.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.16"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "bigpanda-csmc-apicalls.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "bigpanda-csmc-apicalls.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "csmc.dev.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.dev.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "collabapiauth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.63"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "collabapigw.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.64"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "crreport-dev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.119.122.39"
+        ],
+        "code": 401,
+        "server": "Apache"
+    },
+    "csmc.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "commerce.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.18"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "csmc.preprod.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.preprod.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "csmc.int.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.int.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "csmc.beta.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.beta.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "csmc.cardapi.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.204",
+            "216.136.1.204"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "cassstage.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "cassstage.united.com",
+            "cassstage.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "csmc.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "cass.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.161"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "crreport.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.119.122.39"
+        ],
+        "code": 200,
+        "server": "Apache"
+    },
+    "csmc.preprod.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.preprod.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "csmc.int.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.int.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "csmc.dev.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.dev.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "csmc.qa.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.qa.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "csmc.preprodsecure.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.preprodsecure.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "csmc.qa.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.qa.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "csmc.training.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.training.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "csmc.secure.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.secure.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "csmc.prodperf.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.prodperf.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "csmc.prodperf.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.prodperf.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "csmc.stage.cardapi.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.stage.cardapi.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "cms.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.76"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "csmc.stage.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.stage.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "cms1.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.70"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "csmcp.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.115"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "csr.united.com": {
+        "domain": "d3vvmwbnsd1exn.cloudfront.net",
+        "alias": [
+            "csr.united.com"
+        ],
+        "ipaddr": [
+            "52.222.144.75",
+            "52.222.144.5",
+            "52.222.144.72",
+            "52.222.144.42"
+        ],
+        "code": 200,
+        "server": "AmazonS3"
+    },
+    "csmc.pretraining.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.pretraining.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "csmc.uat.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.uat.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "content.united.com": {
+        "domain": "a42.x.akamai.net",
+        "alias": [
+            "content.united.com",
+            "content.united.com.edgesuite.net"
+        ],
+        "ipaddr": [
+            "104.86.189.115",
+            "104.86.189.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "csmc.pretraining.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.pretraining.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "cms2.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.83"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "clubconferencerooms.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "173.248.128.176"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "csmc.stage.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.stage.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "csmc.uat.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "csmc.uat.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "click.salescomm.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.111.100.210"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "crlext.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.54"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "cloud.salescomm.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.111.118.12"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "checkinstage.united.com": {
+        "domain": "e7893.x.akamaiedge.net",
+        "alias": [
+            "checkinstage.united.com",
+            "checkinstage.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "contenteditor.vacations.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.66.249.92"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "dev13.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev13.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev14.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev14.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev20.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev20.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev17.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev17.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev12.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev12.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev24.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev24.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev.csr.united.com": {
+        "domain": "d3vvmwbnsd1exn.cloudfront.net",
+        "alias": [
+            "dev.csr.united.com"
+        ],
+        "ipaddr": [
+            "52.222.144.5",
+            "52.222.144.75",
+            "52.222.144.72",
+            "52.222.144.42"
+        ],
+        "code": 200,
+        "server": "AmazonS3"
+    },
+    "dev11.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev11.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev15.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev15.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev10.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev10.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev2.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev2.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev19.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev19.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev18.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev18.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev21.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev21.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev16.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev16.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev23.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev23.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev22.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev22.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "csmcq.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.195"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "dev1.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev1.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev3.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev3.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev28.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev28.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev26.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev26.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev29.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev29.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "de.mystatus.united.com": {
+        "domain": "nva-as-cluster-04-1.lb.onelink-translations.com",
+        "alias": [
+            "de.mystatus.united.com",
+            "united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "54.89.198.196",
+            "54.235.107.199",
+            "52.200.25.136"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "dev4.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev4.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev27.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev27.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev32.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev32.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "customerwebcid-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.72"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "dev31.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev31.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev5.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev5.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev30.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev30.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev7.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev7.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev9.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev9.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev8.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev8.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev25.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev25.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "dev6.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "dev6.united.com",
+            "dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "csmc.training.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.141"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "csmcd.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.194"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "e.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.110.204.15"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "d1p5failback.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "165.212.117.110"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "dtm.cruises.united.com": {
+        "domain": "bfp.global.ipv4.dotomi.weighted.com.akadns.net",
+        "alias": [
+            "dtm.cruises.united.com",
+            "c82072.csd.dotomi.com",
+            "usadmm.dotomi.com"
+        ],
+        "ipaddr": [
+            "89.207.22.73"
+        ],
+        "code": 204,
+        "server": "nginx"
+    },
+    "d1p7failback.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "165.212.80.110"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "dk.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "dk.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "104.97.24.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "dev.mystatus.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "54.235.107.208"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "erespreview.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.178",
+            "12.169.195.178"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "enews.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.110.204.15"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "esgreport.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.119.122.39"
+        ],
+        "code": 200,
+        "server": "Apache"
+    },
+    "de.pp.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "de.pp.mystatus.united.com",
+            "de-pprod-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "es.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "es.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.54.92.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "es.mystatus.united.com": {
+        "domain": "nva-as-cluster-04-1.lb.onelink-translations.com",
+        "alias": [
+            "es.mystatus.united.com",
+            "united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "54.235.107.199",
+            "54.89.198.196",
+            "52.200.25.136"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "erespassrider.united.com": {
+        "domain": "e28526.dscx.akamaiedge.net",
+        "alias": [
+            "erespassrider.united.com",
+            "erespassrider.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.25",
+            "23.44.10.73"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "ecintqa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.44"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "enterprisechat.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "enterprisechat.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 503,
+        "server": "AkamaiGHost"
+    },
+    "developers.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.33"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "emprec.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.23"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "eres.app.dev.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.119"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "espanol.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "espanol.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "104.97.24.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "dutyfree.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.21.64.160"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "autodiscover.united.com": {
+        "domain": "autod.ms-acdc-autod.office.com",
+        "alias": [
+            "autodiscover.united.com",
+            "autodiscover.outlook.com",
+            "atod-g2.tm-4.office.com"
+        ],
+        "ipaddr": [
+            "52.98.88.248",
+            "52.98.123.232",
+            "52.98.58.56",
+            "40.99.31.168"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "dpgw.csmc.dev.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.104"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "es.dev.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "es.dev.mystatus.united.com",
+            "es-dev-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "eci.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.190"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "email.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "206.165.245.100"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "fly.united.com": {
+        "domain": "dovwjsw6sgtnt.cloudfront.net",
+        "alias": [
+            "fly.united.com"
+        ],
+        "ipaddr": [
+            "65.8.76.27",
+            "65.8.76.95",
+            "65.8.76.125",
+            "65.8.76.126"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "emails.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.54.184.48"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "eresstage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.211"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "eres.app.preprod.auth.united.com": {
+        "domain": "e24877.x.akamaiedge.net",
+        "alias": [
+            "eres.app.preprod.auth.united.com",
+            "eres.app.preprod.auth.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.56",
+            "23.44.10.74"
+        ],
+        "code": 503,
+        "server": "AkamaiGHost"
+    },
+    "eres.app.auth.united.com": {
+        "domain": "e28526.dscx.akamaiedge.net",
+        "alias": [
+            "eres.app.auth.united.com",
+            "erespassrider.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.25",
+            "23.44.10.73"
+        ],
+        "code": 503,
+        "server": "AkamaiGHost"
+    },
+    "enterpriseenrollment.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "enterpriseenrollment.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "fr.mystatus.united.com": {
+        "domain": "nva-as-cluster-04-1.lb.onelink-translations.com",
+        "alias": [
+            "fr.mystatus.united.com",
+            "united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "54.89.198.196",
+            "54.235.107.199",
+            "52.200.25.136"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "erespassrider-stage.united.com": {
+        "domain": "e15015.dscx.akamaiedge.net",
+        "alias": [
+            "erespassrider-stage.united.com",
+            "erespassrider-stage.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "flights.united.com": {
+        "domain": "e4756.x.akamaiedge.net",
+        "alias": [
+            "flights.united.com",
+            "flights.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.9.30.148"
+        ],
+        "code": 200,
+        "server": "cloudflare"
+    },
+    "erespassrider-preprod.united.com": {
+        "domain": "e15015.dscx.akamaiedge.net",
+        "alias": [
+            "erespassrider-preprod.united.com",
+            "erespassrider-preprod.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "gidssvcapi.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.77"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "eres.app.stage.auth.united.com": {
+        "domain": "e24877.dscx.akamaiedge.net",
+        "alias": [
+            "eres.app.stage.auth.united.com",
+            "eres.app.stage.auth.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.56",
+            "23.44.10.74"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "gidssvcapi-qa.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "gidssvcapi-qa.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "es.pp.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "es.pp.mystatus.united.com",
+            "es-pprod-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ft-assets.united.com": {
+        "domain": "e4756.x.akamaiedge.net",
+        "alias": [
+            "ft-assets.united.com",
+            "ft-assets.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.9.30.148"
+        ],
+        "code": 404,
+        "server": "AkamaiNetStorage"
+    },
+    "ets.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.84"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "guestwifi.united.com": {
+        "domain": "guestwifi.united.com.akadns.net",
+        "alias": [
+            "guestwifi.united.com"
+        ],
+        "ipaddr": [
+            "161.215.211.70"
+        ],
+        "code": 403,
+        "server": "Apache"
+    },
+    "gofly.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "3.233.108.250",
+            "3.233.187.46",
+            "54.157.2.211"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "hub.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "hub.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "ftappstore.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ftappstore.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 503,
+        "server": "AkamaiGHost"
+    },
+    "easyupdate.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.57.106.103",
+            "216.57.98.103"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "image.e.united.com": {
+        "domain": "e117018.dscx.akamaiedge.net",
+        "alias": [
+            "image.e.united.com",
+            "tlsprovisioning-san-s12-14.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.35",
+            "23.44.10.34"
+        ],
+        "code": 403,
+        "server": "AkamaiGHost"
+    },
+    "inflight-mff.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "inflight-mff.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "inflight-mffqa.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "inflight-mffqa.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "in.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "in.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.54.92.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "ir.united.com": {
+        "domain": "e16934.dsca.akamaiedge.net",
+        "alias": [
+            "ir.united.com",
+            "ir.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "173.223.48.171"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "iot.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.57",
+            "216.136.1.57"
+        ],
+        "code": 400,
+        "server": ""
+    },
+    "hotels.united.com": {
+        "domain": "e8085.x.akamaiedge.net",
+        "alias": [
+            "hotels.united.com",
+            "hotels.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.88.11"
+        ],
+        "code": 429,
+        "server": "istio-envoy"
+    },
+    "integration1.united.com": {
+        "domain": "e7895.dscx.akamaiedge.net",
+        "alias": [
+            "integration1.united.com",
+            "qacn.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.118"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "image.enews.united.com": {
+        "domain": "e182103.dscx.akamaiedge.net",
+        "alias": [
+            "image.enews.united.com",
+            "tltrs0l87zlxx96wy2qn0k1028-8.image-sap.sfmc-content.com",
+            "tlsprovisioning-san-s12-34.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.9"
+        ],
+        "code": 403,
+        "server": "AkamaiGHost"
+    },
+    "fr.pp.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "fr.pp.mystatus.united.com",
+            "fr-pprod-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "integration.united.com": {
+        "domain": "e7895.dscx.akamaiedge.net",
+        "alias": [
+            "integration.united.com",
+            "qa.united.com",
+            "qacn.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.118"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "gh.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ja.mystatus.united.com": {
+        "domain": "nva-as-cluster-04-1.lb.onelink-translations.com",
+        "alias": [
+            "ja.mystatus.united.com",
+            "united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "52.200.25.136",
+            "54.235.107.199",
+            "54.89.198.196"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "globallinks.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "74.206.103.199"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "globalchat.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "globalchat.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 503,
+        "server": "AkamaiGHost"
+    },
+    "it.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "it.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.54.92.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "image.salescomm.united.com": {
+        "domain": "a1951.b.akamai.net",
+        "alias": [
+            "image.salescomm.united.com",
+            "images.s10.exacttarget.com.edgesuite.net"
+        ],
+        "ipaddr": [
+            "23.44.10.208",
+            "23.44.11.248"
+        ],
+        "code": 403,
+        "server": "AkamaiGHost"
+    },
+    "location-dev.united.com": {
+        "domain": "e24877.x.akamaiedge.net",
+        "alias": [
+            "location-dev.united.com",
+            "location-dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.56",
+            "23.44.10.74"
+        ],
+        "code": 400,
+        "server": "AkamaiGHost"
+    },
+    "ko.mystatus.united.com": {
+        "domain": "nva-as-cluster-04-1.lb.onelink-translations.com",
+        "alias": [
+            "ko.mystatus.united.com",
+            "united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "54.235.107.199",
+            "52.200.25.136",
+            "54.89.198.196"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "kr.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "kr.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.54.92.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "ja.staging.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "ja.staging.mystatus.united.com",
+            "ja-stage-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "inflightreceipts.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.117.114"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "kw.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "kw.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.54.92.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "inflightreceiptsstage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.117.113"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ko.dev.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "ko.dev.mystatus.united.com",
+            "ko-dev-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "jobs.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.23"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "lyncdiscover.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.171"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "jetstream.united.com": {
+        "domain": "ukb.edge2.salesforce.com",
+        "alias": [
+            "jetstream.united.com",
+            "jetstream.united.com.00d36000001gcrfea0.live.siteforce.com",
+            "n.edge2.salesforce.com",
+            "japan.edge2.salesforce.com"
+        ],
+        "ipaddr": [
+            "161.71.146.12",
+            "161.71.146.13",
+            "161.71.146.9"
+        ],
+        "code": 200,
+        "server": "sfdcedge"
+    },
+    "maps.united.com": {
+        "domain": "d271wtii5xnhhe.cloudfront.net",
+        "alias": [
+            "maps.united.com",
+            "united.maps.locuslabs.com"
+        ],
+        "ipaddr": [
+            "108.158.251.76",
+            "108.158.251.26",
+            "108.158.251.114",
+            "108.158.251.64"
+        ],
+        "code": 200,
+        "server": "AmazonS3"
+    },
+    "meetings-dev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.119.122.46"
+        ],
+        "code": 200,
+        "server": "Apache"
+    },
+    "meetings.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "meetings.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 403,
+        "server": "Apache"
+    },
+    "media.united.com": {
+        "domain": "e4756.x.akamaiedge.net",
+        "alias": [
+            "media.united.com",
+            "media.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.9.30.148"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "mobileapi.stage.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "mobileapi.stage.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "mobileapi-qa2.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "mobileapi-qa2.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "mobileshopapi-qa2.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "mobileshopapi-qa2.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "mobileapi.dev.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "mobileapi.dev.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "mobileapi.qa.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "mobileapi.qa.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "mobile.united.com": {
+        "domain": "e2788.x.akamaiedge.net",
+        "alias": [
+            "mobile.united.com",
+            "mobile.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.9.25.89"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "gds.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.159",
+            "12.169.195.159"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mileageplusredirect.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.23"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mobilecontents.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.110",
+            "12.169.195.110"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mobiletravelapi-qa2.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "mobiletravelapi-qa2.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "mobiletravelapi-qa.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "mobiletravelapi-qa.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "ja.pp.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "ja.pp.mystatus.united.com",
+            "ja-pprod-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mpenroll.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "mpenroll.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "link.mileageplus.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "206.165.245.102"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndc.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "n6jq0-origin-walletservices.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.155"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndc.stage.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.stage.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "location-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.66"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndc.dev.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.dev.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "ndc.qa.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.qa.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "luxury.vacations.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "23.253.161.81"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndc.qa.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.qa.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "ndc.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "ndc.dev.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.dev.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "ndc.preprod.auth.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.preprod.auth.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "mail.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.172"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndc.stage.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.stage.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "mystatus.united.com": {
+        "domain": "united-dqk-alb-533959717.us-east-1.elb.amazonaws.com",
+        "alias": [
+            "mystatus.united.com"
+        ],
+        "ipaddr": [
+            "54.147.145.14",
+            "54.234.183.93"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndc.preprod.api.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "ndc.preprod.api.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "maintenance.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.119.122.54"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "myvideos.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "myvideos.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 502,
+        "server": "CloudFront"
+    },
+    "myaviate.united.com": {
+        "domain": "hnd.edge2.salesforce.com",
+        "alias": [
+            "myaviate.united.com",
+            "myaviate.united.com.00d5e000002ey4geas.live.siteforce.com",
+            "n.edge2.salesforce.com",
+            "japan.edge2.salesforce.com"
+        ],
+        "ipaddr": [
+            "161.71.144.16",
+            "161.71.144.10",
+            "161.71.144.13"
+        ],
+        "code": 200,
+        "server": "sfdcedge"
+    },
+    "ko.pp.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "ko.pp.mystatus.united.com",
+            "ko-pprod-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "newsroom.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "newsroom.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "news.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "23.44.10.40",
+            "23.44.10.73"
+        ],
+        "code": 404,
+        "server": "Apache"
+    },
+    "mobileapi-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.31"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "nz.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "nz.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.54.92.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "o-prodperf.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.118",
+            "216.136.1.118"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mta.e.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.110.213.230"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mta.emails.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "207.250.68.31"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mx01.mail.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.151"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "netmotion.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.90"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "nmfadev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.218.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "nmfa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "nmfo.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.90"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mx02.mail.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.21"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "nmfodev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.218.90"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mta.salescomm.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.111.19.53"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndcmsbc1.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.61"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "location.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.67",
+            "12.169.195.67"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndcxway1.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.181"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "m.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.85",
+            "216.136.1.85"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndcxway3.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.183"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndcxway2.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.182"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-hub.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.107",
+            "12.169.195.107"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "netmotiondev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.126.78"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ndcxway4.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.184"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-beta.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.181",
+            "12.169.195.181"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "o127.sg01.career.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "149.72.245.101"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "mobile-preview.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.77",
+            "12.169.195.77"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "offersqatemp.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.65"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "offersstagetemp.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.67"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "offersuattemp.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.69"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "offerspreview.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "offerspreview.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "omptrans.news.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "207.135.4.124",
+            "12.130.138.241"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "offers.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "23.9.30.148"
+        ],
+        "code": 500,
+        "server": "AkamaiGHost"
+    },
+    "omp.news.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.130.136.195",
+            "129.145.70.189"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.221"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-cn.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-content.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.90"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-bh.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-ae.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-contentqa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.125.191"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-dev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.206"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-dk.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-espanol.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-in.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-it.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-es.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-kr.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-kw.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-nz.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-preprod.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.205"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-se.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.210"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-xml.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.151",
+            "216.136.1.151"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-ru.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "partnerservices-test.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "partnerservices-test.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "partnerservices-stage.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "partnerservices-stage.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "pages.e.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.110.207.201"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "partnerauth-stage.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "partnerauth-stage.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "partnerservices.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "partnerservices.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "packages.united.com": {
+        "domain": "priceline2.map.fastly.net",
+        "alias": [
+            "packages.united.com",
+            "pkg-whitelabel.priceline.com"
+        ],
+        "ipaddr": [
+            "199.232.254.186"
+        ],
+        "code": 200,
+        "server": "istio-envoy"
+    },
+    "partnerauth-csmc.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "partnerauth-csmc.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "partnergw-csmc.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "partnergw-csmc.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "orion.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "orion.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 200,
+        "server": "Oracle-HTTP-Server"
+    },
+    "origin-uat.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.223"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-www.ae.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-tw.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-stage-hub.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.70"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "passplus.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "166.78.82.162"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-www.kr.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-www.espanol.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-preview.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.152",
+            "12.169.195.152"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "promo.qa.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "promo.qa.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "promo.qa.arv.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "promo.qa.arv.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "preprod.united.com": {
+        "domain": "e9368.x.akamaiedge.net",
+        "alias": [
+            "preprod.united.com",
+            "preprod.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.126"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "origin-pss.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.150",
+            "216.136.1.150"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "partnergw.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.26"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "preview.united.com": {
+        "domain": "e9368.x.akamaiedge.net",
+        "alias": [
+            "preview.united.com",
+            "preview.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.126"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "prodperf.united.com": {
+        "domain": "e9368.dscx.akamaiedge.net",
+        "alias": [
+            "prodperf.united.com",
+            "prodperf.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.126"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "partnerauth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.142"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "promo.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "promo.united.com",
+            "promo.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 404,
+        "server": "awselb/2.0"
+    },
+    "partners.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.155"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "pss.united.com": {
+        "domain": "e2788.x.akamaiedge.net",
+        "alias": [
+            "pss.united.com",
+            "pss.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.9.25.89"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "qacars.united.com": {
+        "domain": "cs1185.wac.sigmacdn.net",
+        "alias": [
+            "qacars.united.com",
+            "s6.ct.cartrawler.com"
+        ],
+        "ipaddr": [
+            "192.229.237.45"
+        ],
+        "code": 200,
+        "server": "ECS (tir/CDD4)"
+    },
+    "partnergw-stage.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "partnergw-stage.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "pt.mystatus.united.com": {
+        "domain": "nva-as-cluster-04-1.lb.onelink-translations.com",
+        "alias": [
+            "pt.mystatus.united.com",
+            "united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "54.89.198.196",
+            "52.200.25.136",
+            "54.235.107.199"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "qa10.united.com": {
+        "domain": "e7893.x.akamaiedge.net",
+        "alias": [
+            "qa10.united.com",
+            "stage.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qa.csr.united.com": {
+        "domain": "d3vvmwbnsd1exn.cloudfront.net",
+        "alias": [
+            "qa.csr.united.com"
+        ],
+        "ipaddr": [
+            "52.222.144.75",
+            "52.222.144.42",
+            "52.222.144.72",
+            "52.222.144.5"
+        ],
+        "code": 403,
+        "server": "AmazonS3"
+    },
+    "qa.united.com": {
+        "domain": "e7895.dscx.akamaiedge.net",
+        "alias": [
+            "qa.united.com",
+            "qacn.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.118"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qa5d.united.com": {
+        "domain": "e9365.x.akamaiedge.net",
+        "alias": [
+            "qa5d.united.com",
+            "uat.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.123"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qa5a.united.com": {
+        "domain": "e9365.x.akamaiedge.net",
+        "alias": [
+            "qa5a.united.com",
+            "uat.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.123"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qa4.united.com": {
+        "domain": "e9365.x.akamaiedge.net",
+        "alias": [
+            "qa4.united.com",
+            "uat.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.123"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qa5.united.com": {
+        "domain": "e9365.x.akamaiedge.net",
+        "alias": [
+            "qa5.united.com",
+            "uat.united.com",
+            "uat.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.123"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qa5c.united.com": {
+        "domain": "e9365.x.akamaiedge.net",
+        "alias": [
+            "qa5c.united.com",
+            "uat.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.123"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qa6.united.com": {
+        "domain": "e9365.x.akamaiedge.net",
+        "alias": [
+            "qa6.united.com",
+            "uat.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.123"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qa8.united.com": {
+        "domain": "e7893.x.akamaiedge.net",
+        "alias": [
+            "qa8.united.com",
+            "stage.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qa5b.united.com": {
+        "domain": "e9365.x.akamaiedge.net",
+        "alias": [
+            "qa5b.united.com",
+            "uat.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.91.123"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "origin-www.cn.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91",
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "qa9.united.com": {
+        "domain": "e7893.x.akamaiedge.net",
+        "alias": [
+            "qa9.united.com",
+            "stage.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "qaa.packages.united.com": {
+        "domain": "priceline2.map.fastly.net",
+        "alias": [
+            "qaa.packages.united.com",
+            "qa-pkg-whitelabel.priceline.com"
+        ],
+        "ipaddr": [
+            "151.101.2.186",
+            "151.101.66.186",
+            "151.101.130.186",
+            "151.101.194.186"
+        ],
+        "code": 403,
+        "server": "Varnish"
+    },
+    "qa7.united.com": {
+        "domain": "e7893.dscx.akamaiedge.net",
+        "alias": [
+            "qa7.united.com",
+            "stage.united.com",
+            "stagecn.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "pt.pp.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "pt.pp.mystatus.united.com",
+            "pt-pprod-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "origin-www.it.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91",
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "origin-www.kw.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91",
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "premierstatus.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "54.221.208.235"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "popcdpivr.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.126.57"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "pp.mystatus.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "204.236.232.181"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "promotions.united.com": {
+        "domain": "e15015.x.akamaiedge.net",
+        "alias": [
+            "promotions.united.com",
+            "promotions.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "118.214.106.5"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "origin-www.tw.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91",
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "salesinsight.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "salesinsight.united.com",
+            "salesinsight.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/8.0"
+    },
+    "qol-mffdev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.218.51"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "r2l6wz-location-dev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.53"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "schedules.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "schedules.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "se.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "se.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.54.92.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "schedulep.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "schedulep.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "rewardsplus.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.23"
+        ],
+        "code": 200,
+        "server": "cloudflare"
+    },
+    "ru.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "ru.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.54.92.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "securemail.united.com": {
+        "domain": "pe-00212602.gslb.pphosted.com",
+        "alias": [
+            "securemail.united.com"
+        ],
+        "ipaddr": [
+            "67.231.145.22"
+        ],
+        "code": 403,
+        "server": ""
+    },
+    "signatures.united.com": {
+        "domain": "united.sigstr.net",
+        "alias": [
+            "signatures.united.com"
+        ],
+        "ipaddr": [
+            "34.233.65.204",
+            "34.192.12.1",
+            "54.147.27.151"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "salesservices.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.48"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "sip.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.30",
+            "209.87.119.33"
+        ],
+        "code": 404,
+        "server": "RTC/6.0"
+    },
+    "salesservicesstg.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.218.48"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "smartphone-prodperf.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "smartphone-prodperf.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "smartphone-dev.united.com": {
+        "domain": "e7893.x.akamaiedge.net",
+        "alias": [
+            "smartphone-dev.united.com",
+            "smartphone-dev.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "smartphone-preprod.united.com": {
+        "domain": "e7893.x.akamaiedge.net",
+        "alias": [
+            "smartphone-preprod.united.com",
+            "smartphone-preprod.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "redcarpet.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.86"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "skype.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.171"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "scv4o1-location-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.224"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "res.alpha.vacations.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "52.158.161.255"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "smartphone-qa.united.com": {
+        "domain": "e7893.x.akamaiedge.net",
+        "alias": [
+            "smartphone-qa.united.com",
+            "smartphone-qa.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "res.beta.vacations.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "20.84.172.90"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "stage.uabusiness.united.com": {
+        "domain": "e24877.x.akamaiedge.net",
+        "alias": [
+            "stage.uabusiness.united.com",
+            "stage.uabusiness.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.74",
+            "23.44.10.56"
+        ],
+        "code": 200,
+        "server": "Kestrel"
+    },
+    "stage.united.com": {
+        "domain": "e7893.dscx.akamaiedge.net",
+        "alias": [
+            "stage.united.com",
+            "stagecn.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "salescomm.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.111.18.27"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "svcgw.stg.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "svcgw.stg.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 500,
+        "server": ""
+    },
+    "svcgw.qa.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "svcgw.qa.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "svcgw.prd.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "svcgw.prd.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "svcgw.dev.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "svcgw.dev.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "svcgw.preprod.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "svcgw.preprod.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "supplier.united.com": {
+        "domain": "ukb.edge2.salesforce.com",
+        "alias": [
+            "supplier.united.com",
+            "supplier.united.com.00d3i000000rk7meaq.live.siteforce.com",
+            "1p.edge2.salesforce.com",
+            "japan.edge2.salesforce.com"
+        ],
+        "ipaddr": [
+            "161.71.146.10",
+            "161.71.146.12",
+            "161.71.146.13"
+        ],
+        "code": 200,
+        "server": "sfdcedge"
+    },
+    "services.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.170"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "shop.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.108"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "sgb3e-location.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.67"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "qamobile.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.85",
+            "216.136.1.85"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "reslookuppss.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "74.202.77.121",
+            "12.25.230.121"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "smartphone-stage.united.com": {
+        "domain": "e7893.x.akamaiedge.net",
+        "alias": [
+            "smartphone-stage.united.com",
+            "smartphone-stage.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.87.116"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "staging.mystatus.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "54.235.107.210"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "travelhelp.services-qa.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "travelhelp.services-qa.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 503,
+        "server": "awselb/2.0"
+    },
+    "uabusiness.united.com": {
+        "domain": "e28526.x.akamaiedge.net",
+        "alias": [
+            "uabusiness.united.com",
+            "uabusiness.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.73",
+            "23.44.10.25"
+        ],
+        "code": 200,
+        "server": "Kestrel"
+    },
+    "stage.thanksamillion.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "204.86.131.26"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ssopartners.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.60"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "tr.united.com": {
+        "domain": "e2788.x.akamaiedge.net",
+        "alias": [
+            "tr.united.com",
+            "pss.united.com",
+            "pss.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.9.25.89"
+        ],
+        "code": 400,
+        "server": "AkamaiGHost"
+    },
+    "u9df4-origin.walletservices.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.155"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "rewardone.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.25.230.125",
+            "74.202.77.125"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "tw.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "tw.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.54.92.7"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "ualaki-alexa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.56",
+            "12.169.195.56"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "store.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.55"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-animaltravel.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.25"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "suitedreams.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.90"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "stage-hub.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.70"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-bigpanda-csmc-apicalls.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.46",
+            "216.136.1.46"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-biometric-pdpgw.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.49",
+            "12.169.195.49"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.143",
+            "12.169.195.143"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.142",
+            "216.136.1.142"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "u5dks1dbvqa-wifiqa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.68"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-appdevqf.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.56"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "thanksamillion.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "204.86.131.25"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "smartphone-test.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.106",
+            "216.136.1.106"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-baggageclaimform.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.24"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-bigpanda-ndc-apicalls.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.71"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "travel-pp.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.129"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "travel.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.100"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.prodperf.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.163",
+            "216.136.1.163"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "travelplanning.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "203.174.74.60"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-alexa-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.27"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-appdevqf-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.49"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-apaclient.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.132"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.int.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.126"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.int.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.127"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.prodperf.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.162",
+            "12.169.195.162"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-autodiscover.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.172"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-baggageclaimform-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.54"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-cassstage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.210.13"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.secure.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.145",
+            "12.169.195.145"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.pretraining.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.138"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-cass.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.161"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.pretraining.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.137"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmcs.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.93"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-bigpanda-ndc-stage-apicalls.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.71"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmcp.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.115"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.dev.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.124"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.dev.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.125"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-eres.app.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.213",
+            "12.169.195.213"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-erespassrider.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.213",
+            "216.136.1.213"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.training.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.140"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.stage.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.131"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-iot.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.57",
+            "12.169.195.57"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.uat.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.136"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-guestwifi.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.70"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.uat.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.134"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-enterprisechat.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.94"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-jobs.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.23"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "travelagent.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91",
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.qa.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.128"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.qa.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.129"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-gidssvcapi.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.77"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "uaflightrangep.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.87",
+            "12.169.195.87"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-globalchat.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.95"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-inflight-mff.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.65"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "uaflightranges.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.88",
+            "12.169.195.88"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.stage.cardapi.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.103"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.stage.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.130"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-location-dev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.53"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-eres.app.preprod.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.212"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-eres.app.stage.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.120"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-partnerauth-csmc.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.186",
+            "216.136.1.186"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-erespassrider-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.120"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-erespassrider-preprod.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.212"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.beta.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.144",
+            "12.169.195.144"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-gidssvcapi-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.76"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-location-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.224"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-partnergw-csmc.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.185",
+            "12.169.195.185"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-offerspreview.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.65",
+            "12.169.195.65"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.preprod.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.171",
+            "216.136.1.171"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-inflight-mffqa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.50"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.preprodsecure.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.154",
+            "216.136.1.154"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-iot-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.53"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-partnerservices.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.74",
+            "12.169.195.74"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-csmc.preprod.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.170",
+            "216.136.1.170"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-nmao.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.92"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-schedules.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.82",
+            "216.136.1.82"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "ualaki-salesinsight.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.28"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-schedulep.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.81",
+            "12.169.195.81"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "ualaki-mail.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.172"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.39"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.40"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.dev.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.218.42"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.preprod.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.212.39"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.dev.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.218.44"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-smartphone-preview.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.37",
+            "12.169.195.37"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.preprod.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.212.40"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-uatp.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.29"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-unitedperksplus.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.161",
+            "216.136.1.161"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.qa.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.154"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.qa.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.153"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.stage.auth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.155"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-salesservices.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.48"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-nmaodev.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.218.92"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-salesservicesstg.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.218.48"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-partnerauth-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.17"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-ndc.stage.api.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.156"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "uatp.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "uatp.united.com",
+            "uatp.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "ualaki-smartphone-prodperf.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.50"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "uma.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 403,
+        "server": "Apache"
+    },
+    "ualaki-u5dks1dbvqa-wifiqa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.68"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "uma-staging.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.119.122.51"
+        ],
+        "code": 403,
+        "server": "Apache"
+    },
+    "uat.united.com": {
+        "domain": "e9365.x.akamaiedge.net",
+        "alias": [
+            "uat.united.com",
+            "uat.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.53.239"
+        ],
+        "code": 401,
+        "server": "AkamaiGHost"
+    },
+    "ualaki-partnergw-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.16"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "unitedvoices-mffqa-dp.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.77"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "ualaki-wheelchair.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.68"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-wheelchair-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.66"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-partnerservices-stage.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.15"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "unitedvoices-mffdev-dp.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.218.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "ualaki-wheelchairmobapi.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.69"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "unitedvoices-mff-dp.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.73"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "uma-dev1.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.119.122.51"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "unitedperksplus.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "unitedperksplus.united.com",
+            "unitedperksplus.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "ualaki-scollabapiauth.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.63"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-partnerservices-test.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.18"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualaki-scollabapigw.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.64"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "uw7fabwb4ym-wifi.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.196"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "walletservices.united.com": {
+        "domain": "e2788.x.akamaiedge.net",
+        "alias": [
+            "walletservices.united.com",
+            "walletservices.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.61.40"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "ualaki-wheelchairmobapi-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.55"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "webauth.qa.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "webauth.qa.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "webauth.stg.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "webauth.stg.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "webauth.dev.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "webauth.dev.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "ualapi.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.85"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "ualpartners.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.157"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "wheelchairmobapi-qa.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "wheelchairmobapi-qa.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "wfbeta.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "wfbeta.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "webauth.prd.aws.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "webauth.prd.aws.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "webservices.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.52",
+            "216.136.1.52"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/8.5"
+    },
+    "wheelchairmobapi.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "wheelchairmobapi.united.com",
+            "united-onboardings.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.24",
+            "23.44.10.19"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "view.e.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.110.223.109"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "wftest.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.76",
+            "12.169.195.76"
+        ],
+        "code": 403,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "uatcars.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.69"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "wheelchair.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.68"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "wheelchair-qa.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.220.66"
+        ],
+        "code": 401,
+        "server": ""
+    },
+    "www.united.com": {
+        "domain": "e2788.x.akamaiedge.net",
+        "alias": [
+            "www.united.com",
+            "www-cn.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.35.61.40"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "www.cruises.united.com": {
+        "domain": "unitedcc.wthsites.com",
+        "alias": [
+            "www.cruises.united.com"
+        ],
+        "ipaddr": [
+            "45.60.121.26"
+        ],
+        "code": 503,
+        "server": ""
+    },
+    "www.cardmemberoffers.united.com": {
+        "domain": "ual-app-balancer-595247618.us-west-2.elb.amazonaws.com",
+        "alias": [
+            "www.cardmemberoffers.united.com",
+            "cardmemberoffers.united.lacek.net"
+        ],
+        "ipaddr": [
+            "44.239.185.170"
+        ],
+        "code": 503,
+        "server": "awselb/2.0"
+    },
+    "wifiqa.united.com": {
+        "domain": "e24877.x.akamaiedge.net",
+        "alias": [
+            "wifiqa.united.com",
+            "wifiqa.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.74",
+            "23.44.10.56"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "www.rewardsplus.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.23"
+        ],
+        "code": 200,
+        "server": "cloudflare"
+    },
+    "www.cn.united.com": {
+        "domain": "e19.b.akamaiedge.net",
+        "alias": [
+            "www.cn.united.com",
+            "redirect.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "104.88.148.6"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "wifi.united.com": {
+        "domain": "e29805.x.akamaiedge.net",
+        "alias": [
+            "wifi.united.com",
+            "wifi.united.com.edgekey.net"
+        ],
+        "ipaddr": [
+            "23.44.10.19",
+            "23.44.10.24"
+        ],
+        "code": 200,
+        "server": "AkamaiNetStorage"
+    },
+    "vss.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.211.53"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "vtc.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.9.247"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "view.salescomm.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "13.111.101.210"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.emprec.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.23"
+        ],
+        "code": 200,
+        "server": ""
+    },
+    "ualswebservices.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.19",
+            "216.136.1.19"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "webcon.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.119.34",
+            "209.87.119.31"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "uaschedules.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.136.1.80",
+            "12.169.195.80"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "uaschedulep.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "12.169.195.79",
+            "216.136.1.79"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "zadb4ge-animaltravel.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "161.215.209.25"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "zh-hk.mystatus.united.com": {
+        "domain": "nva-as-cluster-04-1.lb.onelink-translations.com",
+        "alias": [
+            "zh-hk.mystatus.united.com",
+            "united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "54.89.198.196",
+            "52.200.25.136",
+            "54.235.107.199"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "www.dk.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.nz.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.es.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.globallinks.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "74.206.103.199"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.clubconferencerooms.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "173.248.128.161"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.dutyfree.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "216.21.64.160"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.in.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.ru.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.gh.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.bh.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "zh.mystatus.united.com": {
+        "domain": "nva-as-cluster-04-1.lb.onelink-translations.com",
+        "alias": [
+            "zh.mystatus.united.com",
+            "united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "54.235.107.199",
+            "52.200.25.136",
+            "54.89.198.196"
+        ],
+        "code": 200,
+        "server": "Microsoft-IIS/10.0"
+    },
+    "www.cc.cruises.united.com": {
+        "domain": "www.unitedcc.wthsites.com",
+        "alias": [
+            "www.cc.cruises.united.com"
+        ],
+        "ipaddr": [
+            "209.202.133.131"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.se.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "zh.staging.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "zh.staging.mystatus.united.com",
+            "zh-stage-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "zh.dev.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "zh.dev.mystatus.united.com",
+            "zh-dev-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.vacations.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "199.66.249.105"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "zh.pp.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "zh.pp.mystatus.united.com",
+            "zh-pprod-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "zh-hk.pp.mystatus.united.com": {
+        "domain": "unitedairlines-stage.onelink-translations.com",
+        "alias": [
+            "zh-hk.pp.mystatus.united.com",
+            "zhhk-pprod-mystatus-united.onelink-translations.com"
+        ],
+        "ipaddr": [
+            "207.223.244.14"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "www.travelagent.united.com": {
+        "domain": "",
+        "alias": [],
+        "ipaddr": [
+            "209.87.113.91",
+            "209.87.112.91"
+        ],
+        "code": "",
+        "server": ""
+    },
+    "_meta": {
+        "name": "knockpy",
+        "version": "6.1.0",
+        "time_start": 1686131012.6798174,
+        "time_end": 1686131136.9809186,
+        "domain": "united.com",
+        "wordlist": 4889
+    }
+}

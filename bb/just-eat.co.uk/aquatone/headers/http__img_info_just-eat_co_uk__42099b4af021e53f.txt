@@ -1,0 +1,12 @@
+403 Forbidden
+Content-Type: text/html; charset=UTF-8
+Server: cloudflare
+Cf-Ray: 7d72ca834d4ff383-BOM
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=0
+Retry-Count: 0
+Date: Wed, 14 Jun 2023 13:06:31 GMT
+Cache-Control: max-age=15
+Expires: Wed, 14 Jun 2023 13:06:46 GMT
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: __cf_bm=ZJvaAMjcYwZ.1dZEjIc6NTshxUnhOVEW2uzEgz0ETgg-1686747991-0-AeYLSvKjCgTagOg0EPa/HZuO2VTgFAoQr/TuZpvmkKoe9puQ7T0tUnhYJq8Kvs7BNww0v1ensIqG0Ic5hL6M9XU=; path=/; expires=Wed, 14-Jun-23 13:36:31 GMT; domain=.just-eat.co.uk; HttpOnly; Secure; SameSite=None

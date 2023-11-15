@@ -1,0 +1,42 @@
+<!doctype html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>IKEA</title><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="importmap-type" content="systemjs-importmap"><meta name="robots" content="noindex, nofollow, noarchive, noimageindex"><link rel="preconnect" href="https://cdn.cookielaw.org" crossorigin=""><link href="https://www.ikea.com/es/es/cookieconsent/styles/cookieconsent-onetrust-css-v2.css" rel="stylesheet"><script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" charset="UTF-8" data-domain-script="d3433d0c-d29a-4ff7-91fd-3ca70e303552"></script><script>function OptanonWrapper() { }</script><link rel="icon" href="https://www.ikea.com/global/assets/logos/favicons/favicon.ico" sizes="any"><link rel="icon" href="https://www.ikea.com/global/assets/logos/favicons/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="https://www.ikea.com/global/assets/logos/favicons/apple-touch-icon.png"><link rel="manifest" href="https://www.ikea.com/global/assets/logos/favicons/site.webmanifest"><script>const pageUrl = new URL(location.href);
+    const hiddenCode = pageUrl.searchParams.get('hc');
+    if (hiddenCode) {
+      localStorage.setItem('hc', hiddenCode);
+      document.cookie = `hc=${hiddenCode}; max-age=31536000; domain=.ikea.com; path=/`
+    }</script><script src="/npm/production/regenerator-runtime/0.13.7/system/runtime.min.js"></script><script type="systemjs-importmap">{
+      "imports": {
+        "@orchestrator/root-config": "/orchestrator-root-config.js",
+        "react": "/npm/production/react/18.2.0/system/react.js",
+        "react-dom": "/npm/production/react-dom/18.2.0/system/react-dom.js"
+      }
+    }</script><script>const env = {
+      baseAPI: "",
+      basePath: "",
+    };
+
+    window.orchestrator = {
+      env: env
+    };</script><script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5ZX995F');</script><script src="/npm/production/systemjs/6.13.0/system/system.min.js"></script><script src="/npm/production/systemjs/amd/system/amd.min.js"></script><script src="/npm/production/systemjs/named-exports/system/named-exports.min.js"></script><link rel="stylesheet" href="https://www.ikea.com/global/assets/fonts/en/fonts.css"><link rel="stylesheet" href="/reset.css"><link rel="stylesheet" href="/index.css"></head><body><div id="modal"></div><header id="header-wrap"><div id="header" class="header-wrapper"></div></header><main id="center"></main><footer><div id="footer" class="footer-wrapper"></div></footer><script>System.import("@orchestrator/root-config");</script><script>window.addEventListener('tracking', async (e) => {
+        const isAuthenticated = await window.AUTH0.isAuthenticated();
+        const features = window.featureTrackingStore ? window.featureTrackingStore.get() : [];
+        const { event, event_category, event_label } = JSON.parse(e.detail);
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event, event_category,
+          event_label: JSON.stringify({
+            login: isAuthenticated,
+            data: event_label,
+            features: features
+          }),
+        });
+      })</script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOEuKA4UQzh3SRG1Eh7uo9TUbDI0itElc&callback=initMap" defer="defer"></script><script>const initMap = () => {
+        window.google = google
+      };
+      window.initMap = initMap;</script></body>

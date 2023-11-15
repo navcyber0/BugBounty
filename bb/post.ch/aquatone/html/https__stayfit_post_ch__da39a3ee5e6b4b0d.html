@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+  <head>
+    <link rel="stylesheet" href="/vite/assets/tailwind-4a7bdb52.css" media="all" data-turbo-track="reload" />
+
+
+<script>
+  // This event listener needs to be registered before importing Trix.
+  // Otherwise, this configuration change is only applied after the editor elements are parsed,
+  // and therefore <h3> tags are falsely converted to <strong> tags.
+  // See https://github.com/basecamp/trix/issues/528
+  document.addEventListener("trix-before-initialize", () => {
+    Trix.config.blockAttributes.heading2 = {
+      tagName: "h2",
+      terminal: true,
+      breakOnReturn: true,
+      group: false
+    };
+    Trix.config.blockAttributes.heading3 = {
+      tagName: "h3",
+      terminal: true,
+      breakOnReturn: true,
+      group: false
+    };
+  });
+</script>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+
+<meta name="title"
+      content="StayFit - StayFit - Dein anonymer Online-Zugang zur Laufbahn- und Sozialberatung">
+<meta name="description"
+      content="Auf der StayFit-Plattform erhältst du einfach, schnell und jederzeit Unterstützung. ​
+
+Du kannst dein Anliegen via anonymen Beratungs-Chat mit Fachpersonen besprechen oder die vielfältige Mediathek nutzen. ​​">
+
+<meta property="og:title"
+      content="StayFit - StayFit - Dein anonymer Online-Zugang zur Laufbahn- und Sozialberatung">
+<meta property="og:description"
+      content="Auf der StayFit-Plattform erhältst du einfach, schnell und jederzeit Unterstützung. ​
+
+Du kannst dein Anliegen via anonymen Beratungs-Chat mit Fachpersonen besprechen oder die vielfältige Mediathek nutzen. ​​">
+
+<meta property="og:image"
+      content="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUlhQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c97a3a615abc0d717b48332edd94d2ddb21e6a4f/512-512px-Post_Logo_digital_RGB%20(002).png">
+<meta property="og:type" content="website">
+
+<!-- Android  -->
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- iOS -->
+<meta name="apple-mobile-web-app-title" content="StayFit">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- Windows  -->
+<meta name="msapplication-navbutton-color" content="#FFFFFF">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUlhQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c97a3a615abc0d717b48332edd94d2ddb21e6a4f/512-512px-Post_Logo_digital_RGB%20(002).png">
+<meta name="msapplication-config" content="browserconfig.xml">
+<meta name="msapplication-tap-highlight" content="no">
+
+<!-- Pinned Sites  -->
+<meta name="application-name" content="StayFit">
+<meta name="msapplication-tooltip" content="StayFit">
+<meta name="msapplication-starturl" content="/">
+
+<!-- UC Mobile Browser  -->
+<meta name="full-screen" content="yes">
+<meta name="browsermode" content="application">
+<meta name="layoutmode" content="fitscreen">
+
+<meta name="nightmode" content="enable/disable">
+<meta name="imagemode" content="force">
+<meta name="screen-orientation" content="portrait">
+
+<link rel="shortcut icon" type="image/x-icon" href="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUlhQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c97a3a615abc0d717b48332edd94d2ddb21e6a4f/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkVuSmxjMmw2WlY5MGIxOW1hWFJiQjJrbGFTVT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--dc29384ec3274110561e912e1c5d3a8fb5e2eb01/512-512px-Post_Logo_digital_RGB%20(002).png">
+<link rel="apple-touch-icon" type href="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUlhQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c97a3a615abc0d717b48332edd94d2ddb21e6a4f/512-512px-Post_Logo_digital_RGB%20(002).png">
+
+<link rel="manifest" href="/manifest.json">
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="q1f5UfUU2Tz4I3nHxpSzghzi0ZQObV4C_NXOkh8UMLgBeWtyBKZRQwnA6dJMLiURubLQYrg97AK5oieV79W0-A" />
+
+
+<title>
+  StayFit
+</title>
+
+<script src="/vite/assets/application-65d9fb18.js" crossorigin="anonymous" type="module" data-turbo-track="reload"></script><link rel="modulepreload" href="/vite/assets/activestorage.esm-f2af8937.js" as="script" crossorigin="anonymous" data-turbo-track="reload">
+
+          <script src="/vite/assets/service_worker_register-096479bb.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="/vite/assets/supports-es6-4340912d.js" as="script" crossorigin="anonymous">
+
+
+  </head>
+
+  <body data-locale="de-CH">
+    <noscript>
+      <div class="fixed z-50 h-full w-full pt-16 pb-12 flex flex-col bg-white">
+  <main class="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex-shrink-0 flex justify-center">
+      <img alt="Schweizerische Post" class="h-10 w-auto" src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBODRhQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a89072f43230f6b9a3363ff95aa687a43eaa9223/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oUnlaWE5wZW1WZmRHOWZiR2x0YVhSYkJ6QnBhUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--fc3710df55de8df92104e3e82b0ba51262487ad6/512-512px-Post_Logo_digital_RGB%20(002).png" />
+    </div>
+    <div class="py-12">
+      <div class="text-center">
+        <h1 class="mt-2 text-3xl font-semibold text-gray-800 tracking-tight sm:text-4xl">JavaScript ist deaktiviert</h1>
+        <p class="mt-2 text-base text-gray-500">Um den vollen Umfang dieses Angebotes nutzen zu können, aktiviere bitte JavaScript für diese Seite.</p>
+        <p class="mt-2 text-base text-gray-500">Über den nachfolgenden Link findest du eine Anleitung, wie du JavaScript für deinen Browser aktivierst.</p>
+        <div class="mt-6">
+          <a target="_blank" norefferer href="https://www.enable-javascript.com/" class="text-base font-medium text-gray-500 hover:text-gray-800">Anleitung anzeigen</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+    </noscript>
+
+    <div aria-live="assertive" class="pointer-events-none fixed inset-0 z-40 flex items-start p-4 sm:items-end">
+  <div id="flashes" class="flex w-full flex-col items-center space-y-2 sm:items-end">
+  </div>
+</div>
+
+
+    
+  <div id="main_container">
+    <div class="h-screen m-0 flex flex-col" data-turbo="false">
+      <div class="pb-14">
+<nav class="block fixed inset-x-0 top-0 z-30 bg-white border-b border-gray-200" data-test="top-navigation">
+  <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+    <div class="flex h-14 justify-between space-x-2">
+      <div class="flex">
+        <div class="flex flex-shrink-0 items-center">
+          
+          <a class="ml-2 flex h-full items-center hover:bg-white" tabindex="-1" aria-hidden="true" data-test="company-logo" href="/">
+            <img class="max-h-[28px] max-w-[120px] flex" tabindex="-1" src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBODRhQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a89072f43230f6b9a3363ff95aa687a43eaa9223/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oUnlaWE5wZW1WZmRHOWZiR2x0YVhSYkJ6QnBhUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--fc3710df55de8df92104e3e82b0ba51262487ad6/512-512px-Post_Logo_digital_RGB%20(002).png" />
+</a>        </div>
+        <div class="hidden md:ml-4 md:flex md:space-x-4 lg:ml-6 lg:space-x-6">
+          <a class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 border-gray-900" href="/">
+    <span class="truncate">Startseite</span>
+</a>
+            <a class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 border-transparent hover:border-gray-400 hover:text-gray-500" href="/events">
+    <span class="truncate">Events</span>
+</a>
+            <a class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 border-transparent hover:border-gray-400 hover:text-gray-500" href="/media_library">
+    <span class="truncate">Mediathek</span>
+</a>
+            <a class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium text-gray-900 border-transparent hover:border-gray-400 hover:text-gray-500" href="/confidants">
+    <span class="truncate">Fachpersonen</span>
+</a>
+        </div>
+      </div>
+      <div class="flex flex-1 items-center justify-center px-2">
+        <a class="hidden group relative md:inline-flex w-full cursor-text items-center rounded-md border border-transparent bg-gray-100 px-2 py-2 text-sm font-medium text-gray-500 shadow-none hover:bg-gray-200" data-turbo-frame="modal" data-turbo="true" href="/search/search_modal">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="mx-1 h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+</svg>
+
+          <span>Suchen</span>
+</a>      </div>
+      <div class="flex items-center space-x-1">
+          <a class="group relative inline-flex cursor-pointer items-center justify-center rounded-md border border-transparent bg-white px-2 py-2 text-sm font-medium text-gray-900 shadow-none hover:bg-gray-100 aria-disabled:cursor-not-allowed aria-disabled:border-transparent aria-disabled:bg-gray-100 aria-disabled:text-gray-300 aria-disabled:shadow-none lg:px-4" data-turbo="true" data-turbo-frame="modal" href="/login_modal">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="h-6 w-6 flex-shrink-0 lg:-ml-1 lg:mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"></path>
+</svg>
+
+            <span class="hidden lg:flex">Mein Anliegen</span>
+</a>      </div>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+      <main class="flex-grow">
+        
+<div>
+    <img class="inset-0 h-44 sm:h-60 w-full bg-gray-50 object-cover md:h-80" src="/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMTBtQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e5a8e82a8c28609470233b83eec15e0bc71cb11d/Cover%20Juni%2023.png" />
+    <div class="w-full mx-auto max-w-7xl px-4 my-6 sm:my-10">
+  
+      <div class="max-w-4xl">
+          <h1 class="text-3xl leading-8 md:text-4xl md:leading-10 font-semibold pb-0">StayFit, damit es dir auch morgen gut geht!</h1>
+
+          <p class="mt-2 text-sm text-gray-900 md:mt-4 md:text-base">
+            Wir unterstützen dich, anonym und kostenlos bei Fragen zur beruflichen und privaten Entwicklung, bei Spannungen am Arbeitsplatz oder privaten Sorgen. Nutze in deiner Freizeit die Mediathek, wende dich per Chat an uns oder besuche spannende Events.
+          </p>
+      </div>
+
+</div>
+</div>
+
+
+<turbo-frame id="home_content" target="_top">
+  <div id="home" class="my-6 sm:my-8 md:my-10" data-test="home">
+    <div class="w-full mx-auto max-w-7xl px-4 my-6 sm:my-10">
+  
+      <div class="mt-6 sm:mt-8 md:mt-10 space-y-6 sm:space-y-8 md:space-y-10">
+
+
+
+
+
+                      <section data-test="grid-section">
+  <div class="flex justify-between items-center mt-2 sm:mt-4 md:mt-8 mb-1 sm:mb-2 md:mb-4">
+  </div>
+  <div class="mt-2">
+    
+                <div data-controller="employees--topic-slider--component"
+     class="relative mx-auto max-w-7xl"
+     data-employees--topic-slider--component-selected-class="bg-gray-800 text-white"
+     data-employees--topic-slider--component-unselected-class="bg-gray-100 hover:bg-gray-200 text-gray-800"
+     data-employees--topic-slider--component-visible-class="sm:flex">
+  <div data-employees--topic-slider--component-target="scrollLeft"
+       data-test="scroll-left-button"
+       class="hidden absolute top-0 h-full w-12 items-center from-white via-white to-transparent left-0 justify-start bg-gradient-to-r">
+    <button name="button" type="button" class="mx-3 inline-flex items-center rounded-full border border-gray-200 bg-white p-2 text-gray-800 shadow-md hover:shadow-lg disabled:cursor-not-allowed disabled:text-gray-300 disabled:hover:border-gray-300 md:mx-2 md:p-3 lg:mx-3" data-action="employees--topic-slider--component#scrollLeft" aria-label="Zurück">
+      <svg class="h-6 w-6 rotate-180" fill="currentColor" viewBox="0 0 16 16" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path fill_rule="evenodd" clip_rule="evenodd" d="M6.2781 2.54318C6.58869 2.24085 7.08354 2.24085 7.39413 2.54318L12.4111 7.42675
+C12.7337 7.74082 12.7337 8.25918 12.4111 8.57325L7.39413 13.4568
+C7.08354 13.7591 6.58869 13.7591 6.2781 13.4568L5.58891 12.786
+C5.26626 12.4719 5.26626 11.9535 5.58891 11.6394L9.03331 8.28663
+C9.19464 8.12959 9.19464 7.87041 9.03331 7.71337L5.58891 4.36055
+C5.26626 4.04648 5.26626 3.52811 5.58891 3.21404L6.2781 2.54318Z
+"></path></svg>
+</button>  </div>
+  <div data-employees--topic-slider--component-target="scrollRight"
+       data-test="scroll-right-button"
+       class="hidden absolute top-0 h-full w-12 items-center from-white via-white to-transparent right-0 justify-end bg-gradient-to-l">
+    <button name="button" type="button" class="mx-3 inline-flex items-center rounded-full border border-gray-200 bg-white p-2 text-gray-800 shadow-md hover:shadow-lg disabled:cursor-not-allowed disabled:text-gray-300 disabled:hover:border-gray-300 md:mx-2 md:p-3 lg:mx-3" data-action="employees--topic-slider--component#scrollRight" aria-label="Weiter">
+      <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 16 16" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path fill_rule="evenodd" clip_rule="evenodd" d="M6.2781 2.54318C6.58869 2.24085 7.08354 2.24085 7.39413 2.54318L12.4111 7.42675
+C12.7337 7.74082 12.7337 8.25918 12.4111 8.57325L7.39413 13.4568
+C7.08354 13.7591 6.58869 13.7591 6.2781 13.4568L5.58891 12.786
+C5.26626 12.4719 5.26626 11.9535 5.58891 11.6394L9.03331 8.28663
+C9.19464 8.12959 9.19464 7.87041 9.03331 7.71337L5.58891 4.36055
+C5.26626 4.04648 5.26626 3.52811 5.58891 3.21404L6.2781 2.54318Z
+"></path></svg>
+</button>  </div>
+  <div class="flex flex-col px-4 sm:px-6 lg:px-8">
+    <div data-employees--topic-slider--component-target="bar"
+         data-action="scroll->employees--topic-slider--component#watchScrollPosition"
+         class="no-scrollbar -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="inline-block min-w-full py-3 align-middle">
+        <div class="overflow-hidden">
+          <div class="flex space-x-2 px-1">
+              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/0a630c95cf7c4c1395b17102a2fce9b8">
+                Persönliche Weiterentwicklung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/454f184d40614d2799b03ffc5fc5c557">
+                Berufliche Entwicklung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/284c7026c22e449e9298568f1f9590f1">
+                Finanzen
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/1428dbbc482e4d2b85871b95e909f8bc">
+                Pensionierung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/3427c90795a94aaf9ac333f4657cf148">
+                Berufliche Neuorientierung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/d5dcadd9ba624e1797a2c66c21f8d75a">
+                Psychische Belastung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/45c8c1e8e8d1464fafc1b9c5b9ce897e">
+                Emotionale Belastung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/9b1fe9787a914902b9c39e68c21fa087">
+                Körperliche Belastung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/295c02ead8e441ffa65698aaa60f7828">
+                Positives Denken
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/0a919949ed2f4f77841153929f693594">
+                Belästigung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/d23a1320d3e0436bb5f3e791d33627a1">
+                Mobbing
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/2bd683f2f31f4a8da579d0bec7fa02af">
+                Diskriminierung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/f4fa7bb087574d7ea328c1e48cc44e7d">
+                Stress
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/138b44061a9840239b53d2d4ce0e778a">
+                Konflikt
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/9f5e13dedc504f6d8581b4f5f80d17fd">
+                Bedrohung &amp; Gewalt
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/be1b069f80f24d288ffe199d4df5861c">
+                Führung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/d1fc2b82ad98483d940943161cf5773a">
+                Betriebliche Wiedereingliederung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/5321be10e47c4d4f9a514709c660e3b6">
+                Teamarbeit
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/ca3bd7025ff04ab0b032776e00fbebef">
+                Privates Umfeld
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/cb18fe0a3d0a437d859d9bd0811fb6ad">
+                Amtliches &amp; Soziales
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/3222a863de9a419e86560e615e2f1347">
+                Sozialversicherungen
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/b397911101754110b9c435c581caa8bd">
+                Kommunikation
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/bcc552b518484da580da5b20d0547092">
+                Krankheit
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/8a5d483098af41108ab977ad854e0d10">
+                Diversität
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/b903c35c134149bba7f581665bed2871">
+                Gesundheit
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/e1ad10c082f14120a0b1a49c65a78352">
+                Erholung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/d6d518169c474db193f515e0db3e68f9">
+                Ergonomie
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/a391c227e9f34db6bdd67a6b0e97d3d5">
+                Ernährung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/ada372194d364e2999b4dca5360bc3c3">
+                Bewegung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/cfb0a28cd36a4ddc8bdc552aa976a757">
+                Haushalt &amp; Finanzen
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/e0842b0455bf406dbcaf17536089eb16">
+                Beziehung &amp; Partnerschaft
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/c179ed539ebb499a9be67089d7b38d76">
+                Elternschaft &amp; Erziehung
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/a0eae5b220004979b6cb518154717f93">
+                Schwangerschaft
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/63b482ca141449488d1124df9d5e18e7">
+                Trauer
+</a>              <a data-test="topic-button" data-turbo="false" data-turbo-action="advance" data-action="employees--topic-slider--component#toggleSelected" data-employees--topic-slider--component-target="topicButton" class="text inline-flex h-20 w-48 items-center justify-center rounded-md border border-gray-200 px-3 py-1.5 text-center text-sm font-medium md:h-24 md:w-56 md:text-base text-gray-900 hover:bg-gray-200 bg-gray-100" href="/topics/e4e4f798f6ec4fa885cc3fd828da0678">
+                Pflege
+</a>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</section>
+                      <section data-test="grid-section-beratung">
+  <div class="flex justify-between items-center mt-2 sm:mt-4 md:mt-8 mb-1 sm:mb-2 md:mb-4">
+      <h2 class="text-2xl leading-7 md:text-3xl md:leading-8 font-semibold">Beratung</h2>
+
+  </div>
+  <div class="mt-2">
+    
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-y-6" data-test="image-card-grid">
+          <a data-test="image-card" class="group" href="https://stayfit.post.ch/confidants">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMDhMQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1a2a103c0b40bee469aca832a215cf00a906d07b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTGtBMmtDTUFJPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--6011bd14c95e3b6228a0314d784fd6a76e8c8a61/home-office-gcb1a24537_1920.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMDhMQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1a2a103c0b40bee469aca832a215cf00a906d07b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXVRRGFRSXdBZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--fa3e427e05f87fc4378aecacfda2fe594d8bdfc8/home-office-gcb1a24537_1920.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Chatte mit unseren Fachpersonen
+      </h3>
+
+
+    </div>
+  </div>
+</a>
+
+          <a data-test="image-card" class="group" href="https://stayfit.post.ch/confidants/da1ae567145c4285b15139a6e174d74f">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd2NOQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d596d033145d7cca4ab8f0f732b7329b0a495219/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTGtBMmtDTUFJPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--6011bd14c95e3b6228a0314d784fd6a76e8c8a61/1make-a-phone-call-g3c3228f17_1920.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd2NOQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d596d033145d7cca4ab8f0f732b7329b0a495219/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXVRRGFRSXdBZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--fa3e427e05f87fc4378aecacfda2fe594d8bdfc8/1make-a-phone-call-g3c3228f17_1920.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Vereinbare einen Beratungstermin
+      </h3>
+
+
+    </div>
+  </div>
+</a>
+
+          <a data-test="image-card" class="group" href="https://stayfit.post.ch/confidants/c2219aa9cc994065902b2f6501d85701">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMHdMQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--78d95ea4ea1475d5b7d32793f5d48d9ecedf498c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTGtBMmtDTUFJPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--6011bd14c95e3b6228a0314d784fd6a76e8c8a61/iphone-gdf3fa5589_1920.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMHdMQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--78d95ea4ea1475d5b7d32793f5d48d9ecedf498c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXVRRGFRSXdBZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--fa3e427e05f87fc4378aecacfda2fe594d8bdfc8/iphone-gdf3fa5589_1920.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Krisensituation? Ruf hier an – 24/7
+      </h3>
+
+
+    </div>
+  </div>
+</a>
+
+          <a data-test="image-card" class="group" target="_blank" rel="noopener" href="https://forms.office.com/e/F6fj64MBkC">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMGtMQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a6ce340a779fa90f83351d79b617acd6b999b73c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTGtBMmtDTUFJPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--6011bd14c95e3b6228a0314d784fd6a76e8c8a61/desk-g492fbfc47_1920.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMGtMQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a6ce340a779fa90f83351d79b617acd6b999b73c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXVRRGFRSXdBZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--fa3e427e05f87fc4378aecacfda2fe594d8bdfc8/desk-g492fbfc47_1920.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Gib uns Feedback
+      </h3>
+
+
+    </div>
+  </div>
+</a>
+
+</div>
+
+
+  </div>
+</section>
+                      <section data-test="grid-section-mediathek">
+  <div class="flex justify-between items-center mt-2 sm:mt-4 md:mt-8 mb-1 sm:mb-2 md:mb-4">
+      <h2 class="text-2xl leading-7 md:text-3xl md:leading-8 font-semibold">Mediathek</h2>
+
+      <a class="inline-flex items-center whitespace-nowrap rounded-full border border-transparent bg-transparent text-sm font-medium text-gray-800 hover:text-gray-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-800 focus-visible:ring-offset-2" href="/media_library">Alle anzeigen</a>
+  </div>
+  <div class="mt-2">
+    
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-y-6" data-test="image-card-grid">
+          <a data-test="image-card" class="group" href="/articles/bb2a62b34efc45bfbda8a0e5c4dfa284">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdzBnQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--168aacafec75f77edbcab8811af5617632c6591c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/1staff-gf83533273_1920.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdzBnQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--168aacafec75f77edbcab8811af5617632c6591c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/1staff-gf83533273_1920.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Berufsabschluss für Erwachsene
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Beitrag
+            </span>
+
+        </div>
+
+    </div>
+  </div>
+</a>
+
+
+          <a data-test="image-card" class="group" href="/articles/e26f19ff7001430e873fc7ff892dd232">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM1VkQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--becc7d45d47d45e1871a7fcb84674ad51431674f/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/REKA%20Bild1.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBM1VkQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--becc7d45d47d45e1871a7fcb84674ad51431674f/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/REKA%20Bild1.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        REKA Ferien – Vergünstigung für dich und deine Familie
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Beitrag
+            </span>
+
+        </div>
+
+    </div>
+  </div>
+</a>
+
+
+          <a data-test="image-card" class="group" href="/articles/51ff0bac9436437bb2725d46f92cb440">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMndkQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4d924e95f28b139175ceb56b4633644cf5179e11/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/EinblickeInDepression.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMndkQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4d924e95f28b139175ceb56b4633644cf5179e11/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/EinblickeInDepression.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Einblicke in eine (Erschöpfungs-)Depression
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              10 Min • Interview
+            </span>
+
+        </div>
+
+    </div>
+  </div>
+</a>
+
+
+          <a data-test="image-card" class="group" href="/articles/3f328266d1954bb595bcd89c678f869e">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOWNhQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--68723d933d992254b4de7bebc8d41402a2cdcdca/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/positive-thinking-4933330_1280.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOWNhQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--68723d933d992254b4de7bebc8d41402a2cdcdca/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/positive-thinking-4933330_1280.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Psychische Gesundheit – Tipps für den Alltag
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Beitrag
+            </span>
+
+        </div>
+
+    </div>
+  </div>
+</a>
+
+
+          <a data-test="image-card" class="group" href="/articles/94a26a363b9640f199857059816cb0f4">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNGNUQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2103fe3a0f7c4b94f6afa0c509c071c676c09134/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/1awoman-g2312b5ff6_1920.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNGNUQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2103fe3a0f7c4b94f6afa0c509c071c676c09134/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/1awoman-g2312b5ff6_1920.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Wie weiter nach der Lehre?
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Beitrag
+            </span>
+
+        </div>
+
+    </div>
+  </div>
+</a>
+
+
+          <a data-test="image-card" class="group" href="/articles/9f5b8cf77e2649cbbb06092c7c98da1b">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN0VMQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1c3b1a2562f30465cd2f33b698bfa22a48334e69/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/Kompetenzen%20Weiterbildungen%201872x1053.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN0VMQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1c3b1a2562f30465cd2f33b698bfa22a48334e69/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/Kompetenzen%20Weiterbildungen%201872x1053.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Weiterbildungsberatung 
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              2 Min • Beitrag
+            </span>
+
+        </div>
+
+    </div>
+  </div>
+</a>
+
+
+          <a data-test="image-card" class="group" href="/articles/0cf0598720e749beba1f2b258042952f">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMm9NQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--56cd6553882a7363d6c41a796e9982604c2f4e09/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/person-g5b1aae133_1920.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMm9NQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--56cd6553882a7363d6c41a796e9982604c2f4e09/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/person-g5b1aae133_1920.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Pensionierung in Sicht?
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Beitrag
+            </span>
+
+        </div>
+
+    </div>
+  </div>
+</a>
+
+
+          <a data-test="image-card" class="group" href="/articles/f23274b9279d40fbb0b7a0e1cd573b58">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK3NCQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9075661d2a04feb46714beacabeabfb7ea185d32/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/towfiqu-barbhuiya-jpqyfK7GB4w-unsplash.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK3NCQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--9075661d2a04feb46714beacabeabfb7ea185d32/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/towfiqu-barbhuiya-jpqyfK7GB4w-unsplash.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Budgetberatung
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Beitrag
+            </span>
+
+        </div>
+
+    </div>
+  </div>
+</a>
+
+
+</div>
+
+
+  </div>
+</section>
+                      <section data-test="grid-section-events">
+  <div class="flex justify-between items-center mt-2 sm:mt-4 md:mt-8 mb-1 sm:mb-2 md:mb-4">
+      <h2 class="text-2xl leading-7 md:text-3xl md:leading-8 font-semibold">Events</h2>
+
+      <a class="inline-flex items-center whitespace-nowrap rounded-full border border-transparent bg-transparent text-sm font-medium text-gray-800 hover:text-gray-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-800 focus-visible:ring-offset-2" href="/events">Alle anzeigen</a>
+  </div>
+  <div class="mt-2">
+    
+                <turbo-frame id="events">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-y-6" data-test="image-card-grid">
+            <a data-test="image-card" class="group" href="/events/3caa2a84fb784e1d9e3d05791ec86f83">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeDhPQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d90e8d12219588831793f04323c37720df1d2695/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/jason-goodman-Ti7LQ0r-zy4-unsplash.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeDhPQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d90e8d12219588831793f04323c37720df1d2695/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/jason-goodman-Ti7LQ0r-zy4-unsplash.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Stärke deine Resilienz und lerne deine Gedanken positiv zu lenken für mehr Leichtigkeit und Gelassenheit im Alltag
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              15 Min • Energizer • Deutsch
+            </span>
+
+        </div>
+
+        <div class="mt-1">
+          <span class="line-clamp-2 flex items-center text-sm font-medium text-gray-800">
+            Mo., 26. Jun, 9:00
+          </span>
+        </div>
+    </div>
+  </div>
+</a>
+
+            <a data-test="image-card" class="group" href="/events/34ff363a27d84a33ac39bfb7bd9286d3">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeGNqQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--024e02b68cb59456ed9beeea6556aab52abb4b85/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/man-gca83c0fce_1920.webp" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeGNqQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--024e02b68cb59456ed9beeea6556aab52abb4b85/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2h3Ym1jNkUzSmxjMmw2WlY5MGIxOW1hV3hzV3dkcEFzZ0NhUUtRQVE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a5f834cbe6821a6b3cec49e3a857697ff8ab99da/man-gca83c0fce_1920.webp" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Personal Branding  - Meine Markenstrategie (Modul 1)
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              240 Min • Workshop • Deutsch
+            </span>
+
+        </div>
+
+        <div class="mt-1">
+          <span class="line-clamp-2 flex items-center text-sm font-medium text-gray-800">
+            Mo., 26. Jun, 13:00
+          </span>
+        </div>
+    </div>
+  </div>
+</a>
+
+            <a data-test="image-card" class="group" href="/events/e990bf4f0f514597bacefc0ffaeee399">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdzhPQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--62b91659dc92b14769d40e14a2b27ea325304336/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/pexels-marcus-aurelius-6787520-min.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdzhPQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--62b91659dc92b14769d40e14a2b27ea325304336/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/pexels-marcus-aurelius-6787520-min.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Steigere mit Dehnungs-Übungen dein Energie-Level und Wohlbefinden am Arbeitsplatz 
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              15 Min • Energizer • Deutsch
+            </span>
+
+        </div>
+
+        <div class="mt-1">
+          <span class="line-clamp-2 flex items-center text-sm font-medium text-gray-800">
+            Di., 27. Jun, 14:00
+          </span>
+        </div>
+    </div>
+  </div>
+</a>
+
+            <a data-test="image-card" class="group" href="/events/b94dd018618c47008aacac43b7f821ae">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[16/9]">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNUFSQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fdd53adbb0f4d35ede5f6d18373a55679bc0294c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRTElBbWtDa0FFPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--58c2c5ebe6a0322247aec26618554fa7c59270b7/1ayoung-man-g9a9711acd_1920.jpg" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNUFSQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fdd53adbb0f4d35ede5f6d18373a55679bc0294c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQXNnQ2FRS1FBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--b5be25ce22859a775225a760d0dc0bfa45745d0d/1ayoung-man-g9a9711acd_1920.jpg" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Fit im Beruf - berufliche Zukunft für mich und mein Team gestalten
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              150 Min • Workshop • Deutsch
+            </span>
+
+        </div>
+
+        <div class="mt-1">
+          <span class="line-clamp-2 flex items-center text-sm font-medium text-gray-800">
+            Di., 27. Jun, 15:00
+          </span>
+        </div>
+    </div>
+  </div>
+</a>
+
+</div>
+</turbo-frame>
+
+  </div>
+</section>
+                      <section data-test="grid-section-fachpersonen">
+  <div class="flex justify-between items-center mt-2 sm:mt-4 md:mt-8 mb-1 sm:mb-2 md:mb-4">
+      <h2 class="text-2xl leading-7 md:text-3xl md:leading-8 font-semibold">Fachpersonen</h2>
+
+      <a class="inline-flex items-center whitespace-nowrap rounded-full border border-transparent bg-transparent text-sm font-medium text-gray-800 hover:text-gray-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-800 focus-visible:ring-offset-2" href="/confidants">Alle anzeigen</a>
+  </div>
+  <div class="mt-2">
+    
+                <turbo-frame id="managers">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-y-6" data-test="image-card-grid">
+            <a data-test="image-card" class="group" href="/confidants/7f4cb026f4e34cd5b4e92de1816fab90">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[1/1}">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMjhVQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4f9f1c714fe21dd9d3d9c8d112befca7687151cf/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSXdBbWtDTUFJPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--5c874867139cd07fb760beb9f5a2f7f886b6fac0/Bildschirm%C2%ADfoto%202023-03-30%20um%2017.22.37.png" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMjhVQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4f9f1c714fe21dd9d3d9c8d112befca7687151cf/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWpBQ2FRSXdBZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--d7a491ebfd6fd49f1ccc781f9edf67158652a979/Bildschirm%C2%ADfoto%202023-03-30%20um%2017.22.37.png" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Doris Allenspach
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Sozialberatung Post
+            </span>
+
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Live-Chat: Mi 11.00-12.00 / Do 15.00-16.00
+            </span>
+        </div>
+
+    </div>
+  </div>
+</a>
+
+            <a data-test="image-card" class="group" href="/confidants/95346da974a8460abfd0d3b2218f6c09">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[1/1}">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUVTQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--82ec50eecc426aa602300d990e8d229f8ec2e4e9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSXdBbWtDTUFJPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--5c874867139cd07fb760beb9f5a2f7f886b6fac0/Bildschirm%C2%ADfoto%202023-03-27%20um%2014.23.46.png" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUVTQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--82ec50eecc426aa602300d990e8d229f8ec2e4e9/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWpBQ2FRSXdBZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--d7a491ebfd6fd49f1ccc781f9edf67158652a979/Bildschirm%C2%ADfoto%202023-03-27%20um%2014.23.46.png" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Manuela Marxer
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Laufbahnberatung Post
+            </span>
+
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Live-Chat:  Mo 08.00-09.00 / Do 14.00-15.00
+            </span>
+        </div>
+
+    </div>
+  </div>
+</a>
+
+            <a data-test="image-card" class="group" href="/confidants/1cadff71de9343828424afe5c5fdd1bc">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[1/1}">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNjhmQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--64bd6b6c08eeb998c8af1367fcac74a3b6f894e6/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSXdBbWtDTUFJPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--5c874867139cd07fb760beb9f5a2f7f886b6fac0/Foto_StayFitMF.PNG" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNjhmQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--64bd6b6c08eeb998c8af1367fcac74a3b6f894e6/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJVUU1SEJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWpBQ2FRSXdBZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a48efe2dfacec17859d41cb347e87d72701fbe3e/Foto_StayFitMF.PNG" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Michèle Fasel
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Laufbahnberatung Post
+            </span>
+
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Live-Chat: Di 09.00-10.00
+            </span>
+        </div>
+
+    </div>
+  </div>
+</a>
+
+            <a data-test="image-card" class="group" href="/confidants/a30fea93d4494bd791cac955c6b21aca">
+  <div class="flex flex-col space-y-2">
+    <div class="relative">
+      <div class="overflow-hidden bg-gray-100 relative w-full rounded-lg flex items-center aspect-[1/1}">
+    <picture>
+      <source srcset="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOVFTQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8ee0cfc1958d872100ee6e2e2752d76245b75e7d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oTnlaWE5wZW1WZmRHOWZabWxzYkZzSGFRSXdBbWtDTUFJPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--5c874867139cd07fb760beb9f5a2f7f886b6fac0/Bildschirm%C2%ADfoto%202023-03-27%20um%2014.25.13.png" type="image/webp">
+      <img src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOVFTQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8ee0cfc1958d872100ee6e2e2752d76245b75e7d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWpBQ2FRSXdBZz09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--d7a491ebfd6fd49f1ccc781f9edf67158652a979/Bildschirm%C2%ADfoto%202023-03-27%20um%2014.25.13.png" loading="lazy" aria-hidden="false" class="w-full h-full object-cover object-center pointer-events-none transition-all duration-300 ease-in-out group-hover:scale-105">
+    </picture>
+</div>
+
+
+
+    </div>
+
+    <div class="mt-2 flex flex-col">
+      <h3 class="line-clamp-2 text-base font-semibold leading-snug text-gray-800">
+        Martin Imoberdorf
+      </h3>
+
+        <div class="mt-1">
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Sozialberatung Post
+            </span>
+
+            <span class="line-clamp-2 flex items-center text-sm font-normal text-gray-500">
+              Live-Chat: Mo 10.30-11.30/ Fr 14.30-15.30
+            </span>
+        </div>
+
+    </div>
+  </div>
+</a>
+
+</div>
+</turbo-frame>
+
+  </div>
+</section>
+      </div>
+
+</div>
+  </div>
+</turbo-frame>
+
+          <div data-controller="employees--terms-and-conditions-modal--component">
+  <div class="fixed inset-0 z-50 inline-block overflow-y-auto">
+    <div class="flex min-h-screen items-center justify-center px-4 py-4 text-center sm:block sm:p-0">
+      <div aria-hidden="true" class="fixed inset-0 bg-black opacity-60 transition-opacity"></div>
+      <span aria-hidden="true" class="hiden sm:inline-block sm:h-screen sm:align-middle">&ZeroWidthSpace;</span>
+      <div role="dialog" aria-modal="true" class="relative inline-block overflow-hidden rounded-lg bg-white p-6 text-left align-middle shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
+
+        <!-- START: Logo & Locale selector -->
+        <div class="flex items-center justify-between">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="max-h-[40px] max-w-[120px]" alt="Schweizerische Post" src="/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBODRhQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a89072f43230f6b9a3363ff95aa687a43eaa9223/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oUnlaWE5wZW1WZmRHOWZiR2x0YVhSYkJ6QnBhUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--fc3710df55de8df92104e3e82b0ba51262487ad6/512-512px-Post_Logo_digital_RGB%20(002).png" />
+          </div>
+
+          <div class="relative inline-block text-left">
+          </div>
+        </div>
+        <!-- END: Logo & Locale selector -->
+
+        <div class="mt-4 space-y-3 text-gray-800">
+          <h3 class="text-xl sm:text-2xl font-semibold text-gray-800">
+            Hinweis zur Verwendung von Cookies
+          </h3>
+          <p class="font-medium">
+            Diese Website verwendet nur notwendige Cookies, die keine personenbezogenen Daten enthalten. Details findest du in unserem <a target="_blank" rel="noopener" class="underline text-gray-600 hover:text-gray-800" href="/privacy">Datenschutzhinweis</a>.
+          </p>
+
+          <hr>
+
+          <p class="text-sm text-gray-600">
+            Mit einem Klick auf "Zum Angebot" akzeptierst du unsere <a target="_blank" rel="noopener" class="underline text-gray-600 hover:text-gray-800" href="/terms">Nutzungsbedingungen</a>.
+          </p>
+
+          <div class="mt-6 block">
+            <div class="block flex-1">
+              <div data-action="click->employees--terms-and-conditions-modal--component#confirm">
+                
+    <a class="group relative px-6 py-3 border-transparent bg-blue-500 hover:bg-blue-600 text-white shadow-sm aria-disabled:bg-blue-100 aria-disabled:text-blue-300 inline-flex items-center justify-center rounded border text-sm font-medium cursor-pointer aria-disabled:cursor-not-allowed aria-disabled:shadow-none aria-disabled:border-transparent w-full" data-test="accept-terms-and-conditions">
+        
+    Zum Angebot
+
+</a>
+              </div>
+            </div>
+          </div>
+        </div>
+</div>    </div>
+  </div>
+</div>
+
+
+      </main>
+
+      <footer>
+  <div class="mx-auto max-w-7xl overflow-hidden py-6 px-4 border-t border-gray-200 mt-4">
+    <nav class="-mx-3 flex flex-wrap justify-center" aria-label="Footer">
+        <div class="px-3 py-1">
+          <a class="text-sm text-gray-800 hover:underline" href="/accessibility">Barrierefreiheit</a>
+        </div>
+        <div class="px-3 py-1">
+          <a class="text-sm text-gray-800 hover:underline" href="/faq">Häufige Fragen</a>
+        </div>
+      <div class="px-3 py-1">
+        <a class="text-sm text-gray-800 hover:underline" href="/terms">Nutzungsbedingungen</a>
+      </div>
+      <div class="px-3 py-1">
+        <a class="text-sm text-gray-800 hover:underline" href="/privacy">Datenschutz</a>
+      </div>
+      <div class="px-3 py-1">
+        <a class="text-sm text-gray-800 hover:underline" href="/imprint">Impressum</a>
+      </div>
+      <div class="px-3 py-1">
+        <a class="text-sm text-gray-800 hover:underline" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%73%75%70%70%6f%72%74@%65%76%65%72%6d%6f%6f%64.%63%6f%6d?subject=Technischer%20Support:%20stayfit.post.ch">Technischer Support</a>
+      </div>
+    </nav>
+    <p class="mt-4 text-center text-sm text-gray-800">powered by
+      <a target="_blank" class="text-sm text-gray-800 hover:underline font-semibold" rel="noopener noreferrer" href="https://evermood.com">Evermood</a>
+    </p>
+  </div>
+</footer>
+
+
+      <nav class="fixed inset-x-0 bottom-0 z-30 block border-t border-gray-200 bg-white pb-3 md:hidden"
+     data-test="bottom-navigation">
+  <ul class="flex h-14 items-center justify-between">
+    <li class="inline-block w-full justify-center overflow-hidden text-center font-semibold text-blue-500">
+  <a class="block focus-visible:underline" href="/">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" aria-hidden="true" class="mb-1 inline-block h-6 w-6">
+  <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"></path>
+  <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"></path>
+</svg>
+
+    <span class="text-xxs block truncate whitespace-nowrap">Startseite</span>
+</a></li>
+      <li class="inline-block w-full justify-center overflow-hidden text-center group cursor-pointer text-gray-700 focus-visible:text-gray-800">
+  <a class="block focus-visible:underline" href="/events">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="mb-1 inline-block h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z"></path>
+</svg>
+
+    <span class="text-xxs block truncate whitespace-nowrap">Events</span>
+</a></li>
+      <li class="inline-block w-full justify-center overflow-hidden text-center group cursor-pointer text-gray-700 focus-visible:text-gray-800">
+  <a class="block focus-visible:underline" href="/media_library">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="mb-1 inline-block h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 012.25-2.25h7.5A2.25 2.25 0 0118 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 004.5 9v.878m13.5-3A2.25 2.25 0 0119.5 9v.878m0 0a2.246 2.246 0 00-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0121 12v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6c0-.98.626-1.813 1.5-2.122"></path>
+</svg>
+
+    <span class="text-xxs block truncate whitespace-nowrap">Mediathek</span>
+</a></li>
+      <li class="inline-block w-full justify-center overflow-hidden text-center group cursor-pointer text-gray-700 focus-visible:text-gray-800">
+  <a class="block focus-visible:underline" href="/confidants">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="mb-1 inline-block h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"></path>
+</svg>
+
+    <span class="text-xxs block truncate whitespace-nowrap">Fachpersonen</span>
+</a></li>
+    <li class="inline-block w-full justify-center overflow-hidden text-center group cursor-pointer text-gray-700 focus-visible:text-gray-800">
+  <a class="block focus-visible:underline" data-turbo-frame="modal" data-turbo="true" href="/search/search_modal">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="mb-1 inline-block h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+</svg>
+
+    <span class="text-xxs block truncate whitespace-nowrap">Suchen</span>
+</a></li>
+  </ul>
+</nav>
+
+
+    </div>
+  </div>
+
+
+    <turbo-frame class="relative z-40 print:hidden print:z-0" id="modal" target="_top"></turbo-frame>
+  </body>
+</html>

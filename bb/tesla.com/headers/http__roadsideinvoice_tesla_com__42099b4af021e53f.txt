@@ -1,0 +1,14 @@
+401 Unauthorized
+Pragma: no-cache
+Date: Wed, 14 Jun 2023 13:50:47 GMT
+Server-Timing: cdn-cache; desc=MISS edge; dur=103 origin; dur=471 ak_p; desc="468541_388762182_790803151_57422_10475_5_-_-";dur=1
+Cache-Control: max-age=0, no-cache
+Retry-Count: 0
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS
+Content-Length: 14
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Authorization,Origin,Access-Control-Allow-Origin,Auth-System
+Expires: Wed, 14 Jun 2023 13:50:47 GMT
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+Content-Type: text/plain

@@ -1,0 +1,22 @@
+200 200
+Content-Type: text/html;charset=UTF-8
+Retry-Count: 0
+Age: 0
+P3p: CP="This is not a P3P policy! See the privacy statement linked from this page for information on privacy practices."
+Server: Apache
+Accept-Ranges: bytes
+Cache-Control: no-cache, no-store, must-revalidate, max-age=0, private
+Pragma: no-cache
+Set-Cookie: JSESSIONID=50A9EAB4F5DA7E874E4E38DA8ACE5E55; Path=/; Secure; SameSite=None; HttpOnly VISITOR_ID=971D4E8DFAED4367DB6B94BE1B23B9157726466661F3C4CA1DFB1D6D30B182C882D04CEE74C8F003E837C98BA0AB9A2B60D1331BDCD34A2D24B3D8DC12DC63B2; Expires=Fri, 22-Mar-2024 20:49:42 GMT; Path=/; Secure; HttpOnly X-DR-SHOPPER-defender=02E0754029F164D67D06A139A6A53A60D5BBE8C5781A6E2322A4BDFFD1D25A010F7D3FFB3B18F63CCEC2CE29F954DFA85C0205F08E57497FB34F257B373818C6; Expires=Fri, 22-Mar-2024 20:49:42 GMT; Path=/; Secure; HttpOnly gc_ss_defender=191FC8AA93D5B21C814AC11DB15B45F4900B995054BD0B600CE4F58E9316AE153B8E38A99F55A214; Path=/; Secure X-DR-LOCALE=en_US; Path=/; HttpOnly X-DR-CURRENCY=USD; Path=/; HttpOnly X-DR-THEME=26849800; Path=/; HttpOnly
+Via: 1.1 varnish (Varnish/6.6)
+X_request_id: TIME=1679583630052:NODE=gcapp_h010072064217:THREAD=311
+Content-Security-Policy-Report-Only: form-action  www.cdn-net.com *.facebook.com shop.bitdefender.com; default-src 'self' 'unsafe-eval' 'unsafe-hashes' 'unsafe-inline' data: blob: checkoutshopper-live.adyen.com as.ad4m.at fullstory.com www.google.at *.demdex.net *.linkedin.com region1.analytics.google.com *.licdn.com *.doubleclick.net *.hotjar.com a.triggit.com www.awin1.com partners.bitdefender.com download.bitdefender.com cdn.linkedin.oribi.io www.google.de *.digitalriver.com www.ojrq.net *.twitter.com ih.adscale.de www.bitdefender.com www.cdn-net.com boomerang.digitalriverws.com seal.thawte.com *.casalemedia.com www.emjcd.com secure.quantserve.com sstats.bitdefender.com www.google.ch secure.fastclick.net the.sciencebehindecommerce.com segments.company-target.com vc.hotjar.io farm.plista.com *.everesttech.net *.ad-srv.net *.redintelligence.net *.dotomi.com ad4m.at prod.accdab.net r.adserver01.de *.facebook.com d.impactradius-event.com fonts.gstatic.com api.company-target.com bat.bing.com www.googletagmanager.com assets.adobedtm.com www.google.com *.go2cloud.org *.facebook.net *.flashtalking.com scripts.demandbase.com ad11.adfarm1.adition.com *.omtrdc.net bitdefender.f9tmep.net a.twiago.com t.co tag.demandbase.com affiliates.avangate.com *.smartadserver.com pixel.quantserve.com shopper.img.digitalrivercontent.net; frame-ancestors 'self' ; report-uri /csp_report
+Date: Thu, 23 Mar 2023 15:00:30 GMT
+Expires: Wed, 31 Dec 1969 23:59:59 GMT
+Surrogate-Control: content="ESI/1.0", compress=yes
+Vary: Accept-Encoding
+X-Server-Name: gcweb@h010072064217.gc-app-prd.aws-ew1-b.vdc7.drcloud.zone
+X-Varnish: 2013257
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Cdn: Imperva
+X-Iinfo: 14-9212061-9212065 NNNY CT(134 271 0) RT(1679583629019 51) q(0 1 1 -1) r(3 3) U24

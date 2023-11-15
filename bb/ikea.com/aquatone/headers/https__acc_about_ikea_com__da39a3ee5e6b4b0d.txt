@@ -1,0 +1,14 @@
+200 OK
+Akamai-Grn: 0.f643c717.1690074557.17c2d6
+Content-Type: application/json; charset=utf-8
+Pragma: no-cache
+Request-Context: appId=cid-v1:d0a10f46-9dfb-495c-ac68-f7b0ede433c1
+Expires: Sun, 23 Jul 2023 01:09:17 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Vary: Accept-Encoding
+Retry-Count: 0
+Set-Cookie: shell#lang=en; path=/; secure; interikea#lang=; expires=Sat, 22-Jul-2023 01:09:17 GMT; path=/; secure; SC_ANALYTICS_GLOBAL_COOKIE=; expires=Sat, 22-Jul-2023 01:09:17 GMT; path=/; secure; sxa_site=InterIKEA; path=/; secure; ARRAffinity=67a0717447a6c641a66e28b16e8383369c4f51eb9357f1fd54abea5db85c6d72;Path=/;HttpOnly;Secure;Domain=acc.about.ikea.com
+Akamai-Cache-Status: Miss from child, Miss from parent
+Alt-Svc: h3=":443"; ma=93600
+Strict-Transport-Security: max-age=15768000
+Date: Sun, 23 Jul 2023 01:09:17 GMT

@@ -1,0 +1,13 @@
+200 OK
+Link: <https://geschaeftsbericht.post.ch/22/ar/en/wp-json/>; rel="https://api.w.org/"
+Vary: Accept-Encoding
+Date: Fri, 23 Jun 2023 15:24:04 GMT
+Referrer-Policy: origin
+Retry-Count: 0
+Server: Apache
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: sameorigin
+Content-Type: text/html; charset=UTF-8
+Cache-Control: public, must-revalidate, proxy-revalidate, max-age=3600
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block

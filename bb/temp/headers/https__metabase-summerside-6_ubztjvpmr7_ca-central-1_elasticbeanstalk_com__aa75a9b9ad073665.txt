@@ -1,0 +1,16 @@
+403 Forbidden
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://apis.google.com https://*.googleapis.com *.gstatic.com    'sha256-lMAh4yjVuDkQ9NqkK4H+YHUga+anpFs5JAuj/uZh0Rs=' 'sha256-ib2/2v5zC6gGM6Ety7iYgBUvpy/caRX9xV/pzzV7hf0=' 'sha256-JJa56hyDfUbgNfq+0nq6Qs866JKgZ/+qCq2pkDJED8k='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline'; font-src 'self' ; img-src * 'self' data:; connect-src 'self' metabase.us10.list-manage.com   ; manifest-src 'self';  frame-ancestors 'none';
+Content-Type: text/plain
+Content-Length: 38
+X-Permitted-Cross-Domain-Policies: none
+X-Content-Type-Options: nosniff
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Retry-Count: 0
+Set-Cookie: AWSALB=K9WklNSkJKDMAZ2qrFJOzV21ilYCn0xTkeR7A2PpCWKZkBRIu/5Jse6N3giW0j7reXrOkPZ+Nly7bJ6aTLH/SB2tpWc0d+WNu4mZoEvLiKmRZwMuTMiTROxQxcEu; Expires=Sat, 08 Apr 2023 21:31:09 GMT; Path=/ AWSALBCORS=K9WklNSkJKDMAZ2qrFJOzV21ilYCn0xTkeR7A2PpCWKZkBRIu/5Jse6N3giW0j7reXrOkPZ+Nly7bJ6aTLH/SB2tpWc0d+WNu4mZoEvLiKmRZwMuTMiTROxQxcEu; Expires=Sat, 08 Apr 2023 21:31:09 GMT; Path=/; SameSite=None; Secure metabase.DEVICE=ffef8514-67ed-4e92-887e-1e280cc1acf6;HttpOnly;Path=/;SameSite=Lax;Expires=Wed, 1 Apr 2043 11:04:03 -0300
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+Last-Modified: Sat, 1 Apr 2023 18:31:09 -0300
+Date: Sat, 01 Apr 2023 21:31:09 GMT
+Server: nginx/1.22.1
+X-Frame-Options: DENY

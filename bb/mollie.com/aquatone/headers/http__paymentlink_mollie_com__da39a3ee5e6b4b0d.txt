@@ -1,0 +1,17 @@
+200 OK
+Date: Wed, 22 Mar 2023 14:28:30 GMT
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Strict-Transport-Security: max-age=31536000; preload
+Retry-Count: 0
+Cache-Control: max-age=0, must-revalidate, private
+X-Xss-Protection: 1; mode=block
+Expires: Wed, 22 Mar 2023 14:28:30 GMT
+Via: 1.1 google
+Server: nginx
+X-Frame-Options: DENY
+X-Content-Security-Policy: default-src 'self'; block-all-mixed-content; connect-src 'self' www.google-analytics.com stats.g.doubleclick.net plink-production.s3-eu-central-1.amazonaws.com plink-development.s3-eu-central-1.amazonaws.com; frame-ancestors 'none'; img-src 'self' *.mollie.com mollie.dev stats.g.doubleclick.net googleads.g.doubleclick.net www.googleadservices.com www.google.at www.google.be www.google.bg www.google.ca www.google.ch www.google.cn www.google.co.in www.google.co.ma www.google.co.th www.google.co.uk www.google.com www.google.com.hk www.google.cz www.google.de www.google.dk www.google.es www.google.fi www.google.fr www.google.hu www.google.ie www.google.it www.google.lu www.google.lv www.google.nl www.google.no www.google.pl www.google.pt www.google.ro www.google.ru www.google.se www.google.si www.google.sk play-lh.googleusercontent.com www.google-analytics.com www.gstatic.com www.facebook.com; script-src 'self' www.google-analytics.com www.googleadservices.com ajax.googleapis.com connect.facebook.net 'nonce-Cb2vd0mVABjGuDbT21WMxQ=='; style-src 'self' 'unsafe-inline'; report-uri https://o29109.ingest.sentry.io/api/5384345/security/?sentry_key=70667fd3313e41ae8a6af1ac55828e78&sentry_environment=prod
+Content-Security-Policy: default-src 'self'; block-all-mixed-content; connect-src 'self' www.google-analytics.com stats.g.doubleclick.net plink-production.s3-eu-central-1.amazonaws.com plink-development.s3-eu-central-1.amazonaws.com; frame-ancestors 'none'; img-src 'self' *.mollie.com mollie.dev stats.g.doubleclick.net googleads.g.doubleclick.net www.googleadservices.com www.google.at www.google.be www.google.bg www.google.ca www.google.ch www.google.cn www.google.co.in www.google.co.ma www.google.co.th www.google.co.uk www.google.com www.google.com.hk www.google.cz www.google.de www.google.dk www.google.es www.google.fi www.google.fr www.google.hu www.google.ie www.google.it www.google.lu www.google.lv www.google.nl www.google.no www.google.pl www.google.pt www.google.ro www.google.ru www.google.se www.google.si www.google.sk play-lh.googleusercontent.com www.google-analytics.com www.gstatic.com www.facebook.com; script-src 'self' www.google-analytics.com www.googleadservices.com ajax.googleapis.com connect.facebook.net 'nonce-Cb2vd0mVABjGuDbT21WMxQ=='; style-src 'self' 'unsafe-inline'; report-uri https://o29109.ingest.sentry.io/api/5384345/security/?sentry_key=70667fd3313e41ae8a6af1ac55828e78&sentry_environment=prod
+Set-Cookie: plink_locale=en; path=/; secure; httponly; samesite=lax
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Type: text/html; charset=UTF-8
+X-Content-Type-Options: nosniff

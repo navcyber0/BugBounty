@@ -1,0 +1,19 @@
+200 OK
+Content-Type: text/html;charset=UTF-8
+Retry-Count: 0
+X-Xss-Protection: 1; mode=block
+Date: Wed, 22 Mar 2023 14:28:32 GMT
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy-Report-Only: default-src 'self'; child-src https://*; connect-src 'self' https://d1gx5xnbxsi8e4.cloudfront.net https://d8ejoa1fys2rk.cloudfront.net https://sentry10.bynder.cloud https://api2.amplitude.com https://analytics.com https://*.google-analytics.com https://stats.g.doubleclick.net https://*.amazonaws.com fast.appcues.com https://api.appcues.com https://api.appcues.net wss://api.appcues.net wss://assets.mollie.com; font-src https://* data: ; img-src https://* data: blob:; media-src https://*; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://d1gx5xnbxsi8e4.cloudfront.net https://d8ejoa1fys2rk.cloudfront.net https://www.googletagmanager.com https://www.google-analytics.com https://cdn.amplitude.com https://js.hs-analytics.net fast.appcues.com browser.sentry-cdn.com bynder-static.s3.amazonaws.com; style-src 'self' 'unsafe-inline' https://d1gx5xnbxsi8e4.cloudfront.net https://d8ejoa1fys2rk.cloudfront.net https://fonts.googleapis.com fast.appcues.com; report-uri https://sentry10.bynder.cloud/api/1817/security/?sentry_key=54eb95cff224477bbb80958bc3e5f251
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Amz-Cf-Id: hTwfoLgL4hlR88VShaInAfgjl6ktVRTRnG9WCGy3z1nCDYmiKf7GzQ==
+Permissions-Policy: camera=(), geolocation=(), microphone=()
+Cross-Origin-Resource-Policy: cross-origin
+X-Cache: Miss from cloudfront
+Via: 1.1 ba5b3e5f05146fdad741cec2f268501e.cloudfront.net (CloudFront)
+Cache-Control: no-cache, no-store, must-revalidate
+Strict-Transport-Security: max-age=63072000; includeSubdomains
+X-Api-Correlation-Id: 11c1f287-a89d-0aa2-0009-d2bfc1073001
+X-Amz-Cf-Pop: MAA51-P1

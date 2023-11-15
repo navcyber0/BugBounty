@@ -1,0 +1,14 @@
+403 Forbidden
+X-Frame-Options: SAMEORIGIN
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Cf-Ray: 7aad0acd4edb52d4-CCU
+Date: Mon, 20 Mar 2023 09:48:55 GMT
+Referrer-Policy: same-origin
+Set-Cookie: __cf_bm=zp83F14.9MGKNSnmJ.lNVw94MMNzgo50O5wQNUMd8x8-1679305735-0-Ab0yBOjav9Xr6XWD12LCVE2/HH4g9L5ehZluJv+j1DP+h4wO5NKNhjz55qKZTreYxUYdJ9SPrrTIh1AcD0Celgo=; path=/; expires=Mon, 20-Mar-23 10:18:55 GMT; domain=.menulog.com.au; HttpOnly; Secure; SameSite=None
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=0
+Server: cloudflare
+Retry-Count: 0
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 16

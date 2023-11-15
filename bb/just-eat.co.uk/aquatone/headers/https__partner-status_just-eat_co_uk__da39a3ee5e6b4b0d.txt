@@ -1,0 +1,15 @@
+200 OK
+Retry-Count: 0
+Last-Modified: Wed, 09 Nov 2022 09:57:15 GMT
+Cache-Control: max-age=86400
+Set-Cookie: __cf_bm=51fWiGTrihm9o3Vy3Xext0yJ7PABejlshI8K6fy2LPE-1679240699-0-ARrMh07GoQzXlwjnlyekKlihQwmHiWqcoL7+Qn2BKz7EM4Fu8kufrguTPiO6MNzWxXsz4xnd/TDKszZhFsdAKEs=; path=/; expires=Sun, 19-Mar-23 16:14:59 GMT; domain=.just-eat.co.uk; HttpOnly; Secure; SameSite=None
+Cf-Ray: 7aa6d70398d50e31-AMS
+Content-Type: text/html
+X-Amz-Cf-Pop: BRU50-C1
+X-Amz-Cf-Id: bYBWgSRPAa9YKLSFE-Z_DeQCTJrhIK9ssMOLR5nEm_P8nD4STCHL1Q==
+X-Cache: RefreshHit from cloudfront
+Via: 1.1 d04998a67c7a3fb6819bd5fdd0bbe124.cloudfront.net (CloudFront)
+Strict-Transport-Security: max-age=0
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Date: Sun, 19 Mar 2023 15:44:59 GMT

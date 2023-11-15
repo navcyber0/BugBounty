@@ -1,0 +1,20 @@
+200 OK
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Cf-Ray: 7ac78a4c7b4a3228-BOM
+Content-Type: text/html
+Cache-Control: max-age=0
+X-Content-Type-Options: nosniff
+Date: Thu, 23 Mar 2023 14:59:47 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Webkit-Csp: default-src 'self' *.kdn.bitdefender.net https://catch-nimbus.bitdefender.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://consent.cookiebot.com https://consentcdn.cookiebot.com; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: *.kdn.bitdefender.net; media-src 'self'; frame-src 'self' https://consentcdn.cookiebot.com; font-src 'self' https://cdn.jsdelivr.net/katex/latest/fonts/
+Vary: Accept-Encoding
+Expires: Thu, 23 Mar 2023 14:59:47 GMT
+Content-Security-Policy: default-src 'self' *.kdn.bitdefender.net https://catch-nimbus.bitdefender.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://consent.cookiebot.com https://consentcdn.cookiebot.com; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: *.kdn.bitdefender.net; media-src 'self'; frame-src 'self' https://consentcdn.cookiebot.com; font-src 'self' https://cdn.jsdelivr.net/katex/latest/fonts/
+X-Content-Security-Policy: default-src 'self' *.kdn.bitdefender.net https://catch-nimbus.bitdefender.net; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://consent.cookiebot.com https://consentcdn.cookiebot.com; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: *.kdn.bitdefender.net; media-src 'self'; frame-src 'self' https://consentcdn.cookiebot.com; font-src 'self' https://cdn.jsdelivr.net/katex/latest/fonts/
+Via: 1.1 google
+Retry-Count: 0
+Last-Modified: Thu, 16 Mar 2023 10:52:31 GMT
+Etag: W/"6412f4ef-3aa"

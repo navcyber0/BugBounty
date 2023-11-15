@@ -1,0 +1,2 @@
+[credentials-disclosure] [http] [unknown] https://giftcards.just-eat.ie ["apiKey":"HLDGDr-KBkydbUjKLbQYNQ17906"]
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/just-eat.ie/v2.0/.well-known/openid-configuration [c2836782-58bb-4552-a503-21c2a59466f9]

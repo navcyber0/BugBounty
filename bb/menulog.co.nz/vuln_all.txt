@@ -1,0 +1,9 @@
+[credentials-disclosure] [http] [unknown] https://restaurantawards.menulog.co.nz ["API_KEY":"CcWYHaNuMk7tkdDp5giyQahKMiupUvCh1FrPDzU2"]
+[mismatched-ssl-certificate] [ssl] [low] click.email.menulog.co.nz:443 [CN: *.menulog.com]
+[mismatched-ssl-certificate] [ssl] [low] eatoutnz.menulog.co.nz:443 [CN: *.menulog.com]
+[mismatched-ssl-certificate] [ssl] [low] events.menulog.co.nz:443 [CN: *.menulog.com]
+[mismatched-ssl-certificate] [ssl] [low] ablink.emails.menulog.co.nz:443 [CN: *.emails.menulog.com.au]
+[mismatched-ssl-certificate] [ssl] [low] mta.email.menulog.co.nz:443 [CN: *.menulog.com]
+[mismatched-ssl-certificate] [ssl] [low] view.email.menulog.co.nz:443 [CN: *.menulog.com]
+[editor-exposure] [http] [low] https://restaurantawards.menulog.co.nz/.editorconfig
+[weak-cipher-suites] [ssl] [medium] ablink.emails.menulog.co.nz:443 [[tls11 TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]]

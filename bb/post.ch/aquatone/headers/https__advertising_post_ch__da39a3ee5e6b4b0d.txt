@@ -1,0 +1,14 @@
+200 OK
+Cache-Control: public, max-age=0
+Content-Type: text/html; charset=UTF-8
+Etag: W/"2bbec-188b4ab5590"
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Accept-Ranges: bytes
+Content-Security-Policy: default-src 'self' 'unsafe-inline' post.ch *.post.ch www.googletagmanager.com www.google-analytics.com *.google-analytics.com *.googleanalytics.com *.googleoptimize.com *.googletagmanager.com *.google.ch *.google.com *.doubleclick.net *.googleadservices.net *.googleadservices.com *.gstatic.com *.googleapis.com *.facebook.com *.facebook.net *.hotjar.com *.hotjar.io *.bing.com *.tiqcdn.com *.tealiumiq.com *.ipify.org *.gstatic.com *.static.cloud.coveo.com *.licdn.com *.linkedin.com *.linkedin.oribi.io *.adsymptotic.com *.bizographics.com; img-src 'self' data: post.ch *.post.ch simplex.tv *.simplex.tv *.google-analytics.com *.googleanalytics.com *.googleoptimize.com *.googletagmanager.com *.google.ch *.google.com *.doubleclick.net *.googleadservices.net *.googleadservices.com *.gstatic.com *.googleapis.com *.googlesyndication.com *.l.facebook.com *.facebook.com *.facebook.net *.hotjar.com *.hotjar.io *.bing.com *.tiqcdn.com *.tealiumiq.com *.ipify.org *.gstatic.com *.static.cloud.coveo.com *.licdn.com *.linkedin.com *.linkedin.oribi.io *.adsymptotic.com *.bizographics.com; font-src 'self' data: post.ch *.post.ch *.gstatic.com *.hotjar.com *.hotjar.io; frame-src 'self' post.ch *.post.ch simplex.tv *.simplex.tv *.google.ch *.google.com *.doubleclick.net *.googleadservices.net *.googleadservices.com *.gstatic.com *.hotjar.com *.hotjar.io; script-src 'self' 'unsafe-inline' 'unsafe-eval' post.ch *.post.ch www.googletagmanager.com www.google-analytics.com *.google-analytics.com *.googleanalytics.com *.googleoptimize.com *.googletagmanager.com *.google.ch *.google.com *.doubleclick.net *.googleadservices.net *.googleadservices.com *.gstatic.com *.googleapis.com *.facebook.com *.facebook.net *.hotjar.com *.hotjar.io *.bing.com *.tiqcdn.com *.tealiumiq.com *.ipify.org *.gstatic.com *.static.cloud.coveo.com *.licdn.com *.linkedin.com *.linkedin.oribi.io *.adsymptotic.com *.bizographics.com;
+Date: Fri, 23 Jun 2023 15:16:30 GMT
+X-Xss-Protection: 1; mode=block
+Last-Modified: Tue, 13 Jun 2023 12:11:47 GMT
+Strict-Transport-Security: max-age=31536000; preload
+Retry-Count: 0

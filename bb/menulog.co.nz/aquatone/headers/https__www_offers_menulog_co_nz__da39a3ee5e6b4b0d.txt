@@ -1,0 +1,22 @@
+200 OK
+X-Content-Type-Options: nosniff
+X-Amz-Cf-Pop: MAA51-P1
+X-Amz-Cf-Id: RSHxkr_JYcgmuF6xrKZ31a5bAc-Mr4RrFWouXbKI_dj96eLw3buPrw==
+Content-Type: text/html
+X-Amz-Server-Side-Encryption: AES256
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+X-Cache: Hit from cloudfront
+Age: 1159
+Retry-Count: 0
+X-Amz-Id-2: 3ilM3gQBoxKo8E+XHxAT3JUSgNwg3nJLgCQcGxmzttINK9dKH5+pRF3Ctq0kLtsbQqGzGs1cPIw=
+X-Frame-Options: DENY
+Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=*, battery=(), camera=(), display-capture=(), document-domain=(), encrypted-media=(), fullscreen=*, geolocation=(), gyroscope=(), magnetometer=*, microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), usb=(), web-share=*, xr-spatial-tracking=()
+Referrer-Policy: same-origin
+Date: Sun, 19 Mar 2023 17:24:51 GMT
+X-Amz-Version-Id: M0EC2oaVhMBug8ott4lBEwjMFBpYS7Rr
+Etag: W/"b38327b7bd3adb4c6fe13451835cbe2e"
+Server: AmazonS3
+Vary: Accept-Encoding
+Via: 1.1 655d1fc97324faef9cb3d27b7e9d051e.cloudfront.net (CloudFront)
+X-Amz-Request-Id: Q9T0831TF1A0FP95
+Last-Modified: Sun, 05 Feb 2023 22:13:34 GMT

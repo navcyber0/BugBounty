@@ -1,0 +1,26 @@
+200 OK
+Strict-Transport-Security: max-age=0
+X-Content-Type-Options: nosniff
+X-Drupal-Dynamic-Cache: UNCACHEABLE
+Vary: Cookie
+X-Debug-Info: eyJyZXRyaWVzIjowfQ==
+X-Generator: Drupal 9 (https://www.drupal.org)
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Retry-Count: 0
+X-Drupal-Cache: HIT
+X-Platform-Router: 7mn7c7pbjtgaqup3vuo4vf3pea
+X-Ua-Compatible: IE=edge
+Cache-Control: max-age=86400, public
+Last-Modified: Fri, 17 Mar 2023 14:48:49 GMT
+X-Platform-Processor: r24ltid2w3ad2vcp4il4w7aquu
+X-Platform-Cache: MISS
+Date: Sun, 19 Mar 2023 15:38:32 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: __cf_bm=jgyO7Ly8YCsf0zK7wqVDVflNY69mTrUA_CxdA53zNHM-1679240312-0-Ae8h17uVejRTWjiBLgGVW8TnqAhD6/FU4mVt9zxTQPvcMuKAjkqCC3CpnbVA4W+TteR4osVrKM7ADvX3R4mB1LI=; path=/; expires=Sun, 19-Mar-23 16:08:32 GMT; domain=.just-eat.co.uk; HttpOnly; Secure; SameSite=None
+Cf-Ray: 7aa6cd921d8bb96e-AMS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+X-Frame-Options: SAMEORIGIN
+X-Platform-Cluster: i3pk5qrqvf7ly-main-bvxea6i
+Traceresponse: 00-174ddc2adb383ea714c5e07113d27499-b55972788fbc3c03-00
+Content-Language: en

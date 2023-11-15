@@ -1,0 +1,1 @@
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/issuu.com/v2.0/.well-known/openid-configuration [f3c6fd86-4e77-4620-83ac-a1025e5c1522]

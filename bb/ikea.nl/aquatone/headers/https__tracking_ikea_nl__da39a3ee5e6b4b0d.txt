@@ -1,0 +1,11 @@
+200 OK
+X-Azure-Ref: 20230723T010411Z-4cpqgsvuy10vv9807r0ke32dpc00000009ag000000006sy1
+Date: Sun, 23 Jul 2023 01:04:11 GMT
+Retry-Count: 0
+Last-Modified: Tue, 13 Jun 2023 08:37:17 GMT
+Set-Cookie: currency=DKK; Path=/ theme=ikea-{variant}; Path=/
+Vary: Accept-Encoding
+X-Cache: CONFIG_NOCACHE
+Content-Type: text/html; charset=utf-8
+Cache-Control: public, max-age=0
+Etag: W/"1696-188b3e6f248"

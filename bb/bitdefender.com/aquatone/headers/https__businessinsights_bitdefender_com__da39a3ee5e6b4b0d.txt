@@ -1,0 +1,25 @@
+200 OK
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+X-Hs-Content-Id: 65743792948
+Set-Cookie: __cf_bm=fQt5r9.YAXdV0Yp6rgWjVB_10sZYyQNy7Edqk72kRKw-1679583552-0-ARl3mYNCsVxI7TVRomF2TvhPGLyFrC7cfpX0b7N6eHpZkxLRW0a2k2mGyLf4JTrDtZvCbbfJdYEKRCs2pn/qdgM=; path=/; expires=Thu, 23-Mar-23 15:29:12 GMT; domain=.businessinsights.bitdefender.com; HttpOnly; Secure; SameSite=None __cfruid=c4fabefcd0b1084c29e5110e37d72ebd69035920-1679583552; path=/; domain=.businessinsights.bitdefender.com; HttpOnly; Secure; SameSite=None
+Vary: Accept-Encoding
+Referrer-Policy: no-referrer-when-downgrade
+X-Hs-Prerendered: Thu, 23 Mar 2023 09:01:25 GMT
+Cache-Control: s-maxage=10800, max-age=0
+Last-Modified: Thu, 23 Mar 2023 09:01:25 GMT
+Strict-Transport-Security: max-age=31536000
+X-Hs-Cache-Control: s-maxage=10800, max-age=0
+X-Hs-Cf-Cache-Status: HIT
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=u3QyQK0LdiOLw7ZUPMqAmwhRHiinsKuVxlPJ4uZGZ4n%2BuvSf7RueSaUVpiwolt4bxiisuYHHMqp27opLt6Fg8iItTOf0iNr8Q2Kn4Nf957LFUW%2B6NxnmfTUhEzDjx4XrFJmQZHrZtIH3KPDAJ%2FPBj9mQIVq2lV%2FxmMf4Nv3%2B"}],"group":"cf-nel","max_age":604800}
+Nel: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
+Etag: W/"983b31b945c09e31957e8eb688aa9d85"
+Content-Security-Policy: upgrade-insecure-requests
+Edge-Cache-Tag: CT-65743404607,CT-65743404608,CT-65743404609,CT-65743404610,CT-65743404611,CT-65743792948,CG-536377005,P-341979,L-51708974999,L-51708975011,L-52279679069,L-55787865108,W-51713407920,CW-17787477408,CW-51724810634,CW-52276020020,E-2658216881,E-50318523527,E-50318523767,E-51715507512,E-51716098645,MENU-2565552663,MENU-51713407920,PGS-ALL,SW-2,B-536377005,GC-106416305741,GC-59001416275,GC-61806674021,GC-61992520807
+Cf-Ray: 7ac789705b25529d-CCU
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Server: cloudflare
+Date: Thu, 23 Mar 2023 14:59:12 GMT
+Link: </hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js>; rel=preload; as=script,</hs/hsstatic/HubspotToolsMenu/static-1.154/js/index.js>; rel=preload; as=script,</hs/hsstatic/cos-i18n/static-1.53/bundles/project.js>; rel=preload; as=script,</_hcms/forms/v2.js>; rel=preload; as=script
+X-Hs-Cache-Config: BrowserCache-5s-EdgeCache-180s
+X-Hs-Hub-Id: 341979

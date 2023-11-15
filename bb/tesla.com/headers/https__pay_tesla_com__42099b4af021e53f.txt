@@ -1,0 +1,14 @@
+200 OK
+Retry-Count: 0
+Last-Modified: Thu, 01 Jun 2023 17:43:58 GMT
+X-Edgeconnect-Origin-Mex-Latency: 478
+Vary: Accept-Encoding
+Server-Timing: cdn-cache; desc=MISS edge; dur=115 origin; dur=478 ak_p; desc="468541_388762182_791053801_59241_14080_6_-_-";dur=1
+X-Akamai-Transformed: 9 228 0 pmb=mRUM,1
+Date: Wed, 14 Jun 2023 13:53:46 GMT
+X-Powered-By: Express
+Cache-Control: public, max-age=60
+Etag: W/"120-188780f2330"
+Content-Type: text/html; charset=utf-8
+X-Edgeconnect-Midmile-Rtt: 93
+Strict-Transport-Security: max-age=15768000

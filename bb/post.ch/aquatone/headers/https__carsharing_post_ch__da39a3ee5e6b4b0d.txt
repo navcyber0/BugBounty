@@ -1,0 +1,24 @@
+200 OK
+Origin-Agent-Cluster: ?1
+Accept-Ranges: bytes
+Last-Modified: Wed, 21 Jun 2023 11:10:39 GMT
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: totalItems
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+X-Permitted-Cross-Domain-Policies: none
+Date: Fri, 23 Jun 2023 15:17:56 GMT
+Retry-Count: 0
+X-Download-Options: noopen
+X-Xss-Protection: 0
+X-Dns-Prefetch-Control: off
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Cross-Origin-Opener-Policy: same-origin
+Cross-Origin-Resource-Policy: same-origin
+X-Content-Type-Options: nosniff
+X-Powered-By: Express
+Cache-Control: public, max-age=0
+Content-Type: text/html; charset=UTF-8
+Expect-Ct: max-age=63072000, enforce, report-uri="https://fleetster.de/"
+Etag: W/"d63-188dda63b98"

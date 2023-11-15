@@ -1,0 +1,11 @@
+200 OK
+Last-Modified: Wed, 05 Apr 2023 14:34:32 GMT
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Date: Sun, 09 Apr 2023 08:11:18 GMT
+Content-Type: text/html
+X-Powered-By: ASP.NET
+Set-Cookie: __cf_bm=tPjZPODe8Bqydxuj9Os4IYSlnJu_OfBI1uFpc7SpMTU-1681027878-0-AYxfiBHMPVkGq/zs2Lr7VdKwt4np9o2c0Gr8oeF4c/UKdr8HXsBE1bK/aGIy12vXOw/owVrzkRG+/1T/GHAr3WU=; path=/; expires=Sun, 09-Apr-23 08:41:18 GMT; domain=.justeat.it; HttpOnly; Secure; SameSite=None
+Strict-Transport-Security: max-age=0
+Cf-Ray: 7b51474e9da200b6-AMS
+Retry-Count: 0

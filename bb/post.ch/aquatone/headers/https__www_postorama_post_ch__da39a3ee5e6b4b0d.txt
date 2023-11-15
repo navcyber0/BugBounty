@@ -1,0 +1,10 @@
+200 OK
+Etag: "354-5b1a273536bc8-gzip"
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Type: text/html
+Retry-Count: 0
+Date: Fri, 23 Jun 2023 15:15:29 GMT
+Server: Apache
+Last-Modified: Wed, 14 Oct 2020 14:36:01 GMT
+Accept-Ranges: bytes

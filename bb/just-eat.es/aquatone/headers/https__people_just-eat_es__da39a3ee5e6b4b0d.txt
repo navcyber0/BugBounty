@@ -1,0 +1,14 @@
+403 Forbidden
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Set-Cookie: __cf_bm=w32dxONYbOexWG.TzgN22z671DllNanzhZ7Y9EZzIDc-1679305300-0-ARl8DLIxC9MHk+2HSO1ogI8jssd+8CJFDU3475D6DRL5eoEvJHGcIcQqiCKQlAClY/3kInNAO0jhp5kxFuIQye0=; path=/; expires=Mon, 20-Mar-23 10:11:40 GMT; domain=.just-eat.es; HttpOnly; Secure; SameSite=None
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=0
+Cf-Ray: 7aad00327e99529e-CCU
+Retry-Count: 0
+Server: cloudflare
+Date: Mon, 20 Mar 2023 09:41:40 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 16
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: same-origin
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0

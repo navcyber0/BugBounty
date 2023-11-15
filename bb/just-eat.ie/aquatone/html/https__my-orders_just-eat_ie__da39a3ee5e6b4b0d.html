@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en-IE">
+
+	<head>
+
+		<!-- Character Set -->
+
+		<meta charset="UTF-8" />
+
+		<!-- Viewport -->
+
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<!-- Base -->
+
+		<base href="/" />
+
+	<link href="css/e7cbfaa9e1815cff5646.css" rel="stylesheet"><link href="css/291e1af86105ee769db5.css" rel="stylesheet"></head>
+
+	<body class="ie just-eat">
+
+		<div id="root">
+
+			<!-- Application will render here -->
+
+		</div>
+
+		<script type="text/javascript">
+
+			window.addEventListener('DOMContentLoaded', function ()
+			{
+				orderpadlite.start({
+					tenant                    : 'ie',
+					environment               : 'i18n-production',
+					locale                    : 'en-IE',
+					authorization             : 'connect',
+					connectClientId           : 'OrderpadLite',
+					uriToLoggingService       : 'https://logging.je-apps.com',
+					uriToConnect              : 'https://connect.just-eat.ie',
+					uriToOrderpadApi          : '//i18n.api.just-eat.io/applications/orderpad-app',
+					identityCheckInterval     : 5000,
+					ordersCheckInterval       : 30000,
+					onlineStatusCheckInterval : 60000
+				});
+			});
+
+		</script>
+
+	<script type="text/javascript" src="js/19be7470e35dfd99a929.js"></script><script type="text/javascript" src="js/cfd2d71590fbd283a1c2.js"></script><script type="text/javascript" src="js/f9e6a771a05c13a2feb9.js"></script></body>
+
+</html>

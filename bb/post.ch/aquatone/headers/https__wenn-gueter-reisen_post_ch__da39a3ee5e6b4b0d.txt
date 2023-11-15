@@ -1,0 +1,18 @@
+200 OK
+Cache-Control: max-age=44
+Content-Language: de
+Content-Type: text/html; charset=utf-8
+Referrer-Policy: strict-origin
+Strict-Transport-Security: max-age=0
+X-Debug-Info: eyJyZXRyaWVzIjowfQ==
+X-Platform-Cache: BYPASS
+Traceresponse: 00-176b529ee24fffa6bd9a4f4e6e1a5c49-949be4e8fc44f969-00
+Retry-Count: 0
+Content-Length: 20986
+Date: Fri, 23 Jun 2023 15:15:27 GMT
+Expires: Fri, 23 Jun 2023 15:16:11 GMT
+Vary: , Cookie
+X-Platform-Cluster: xcrhuivlpqzh6-master-7rqtwti
+X-Platform-Router: dv4t2da2rhrme377auujmy6voq
+X-Xss-Protection: 1; mode=block
+X-Platform-Processor: sf4zgdr5gnhrpvqvboeeoxsykm

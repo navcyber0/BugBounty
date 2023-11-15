@@ -1,0 +1,12 @@
+404 Not Found
+Content-Type: application/json
+Content-Length: 42
+V-C-Correlation-Id: 9ba8c4dc-add0-4e5e-ad4c-b12084d0ceb9
+Set-Cookie: __cf_bm=gaaZE2I4KKQbUK3xXyLjizM5t9FzPgNrxKfaRclQ010-1680161639-0-AUIUjHzzKwy3BluqL9KqZJrMKI447DnhlqjW7EoMJ7bS4gdc+P9Mt6sElsf+MN6OjnXuIk2Zf+/DuwW10ptn5Ac=; path=/; expires=Thu, 30-Mar-23 08:03:59 GMT; domain=.gateway-portal.nab.com.au; HttpOnly; Secure; SameSite=None __cfruid=68beffb0b91f457529976e1bc5eeeecb6bd4edbb-1680161639; path=/; domain=.gateway-portal.nab.com.au; HttpOnly; Secure; SameSite=None
+Cf-Ray: 7afeaae85fa96eef-BOM
+Retry-Count: 0
+Date: Thu, 30 Mar 2023 07:33:59 GMT
+Strict-Transport-Security: max-age=15552000; includeSubDomains; preload
+V-C-Response-Time: 1680161639
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare

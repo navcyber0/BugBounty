@@ -1,0 +1,12 @@
+404 Not Found
+X-Xss-Protection: 1, mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: sameorigin
+Content-Length: 30
+Date: Sun, 23 Jul 2023 01:09:07 GMT
+Retry-Count: 0
+Server: IHP3 Server
+X-Permitted-Cross-Domain-Policies: none
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: application/problem+json

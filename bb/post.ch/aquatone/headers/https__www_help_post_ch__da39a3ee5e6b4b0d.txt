@@ -1,0 +1,16 @@
+200 OK
+Date: Fri, 23 Jun 2023 15:15:24 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Language: de
+X-Generator: Drupal 8 (https://www.drupal.org)
+Retry-Count: 0
+X-Ua-Compatible: IE=edge
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Vary: Accept-Encoding
+Cache-Control: must-revalidate, no-cache, private
+X-Drupal-Dynamic-Cache: HIT
+Server: nginx
+Link: <https://help.post.ch/>; rel="shortlink", <https://help.post.ch/>; rel="canonical", <https://help.post.ch/start>; rel="alternate"; hreflang="de", <https://help.poste.ch/start>; rel="alternate"; hreflang="fr", <https://help.posta.ch/start>; rel="alternate"; hreflang="it", <https://help.swisspost.ch/start>; rel="alternate"; hreflang="en", <https://help.post.ch/start>; rel="revision"
+Expires: -1
+Pragma: no-cache

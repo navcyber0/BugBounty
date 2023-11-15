@@ -1,0 +1,12 @@
+200 OK
+Date: Thu, 23 Mar 2023 14:59:40 GMT
+Content-Security-Policy: default-src 'self'; img-src https: http: data:; style-src 'self' 'unsafe-inline' *.bitdefender.com fonts.googleapis.com; script-src 'self' 'self' assets.adobedtm.com www.google.com www.gstatic.com js.hs-scripts.com consentcdn.cookiebot.com bitdefender.demdex.net consent.cookiebot.com www.googletagmanager.com www.googleadservices.com tag.demandbase.com *.doubleclick.net sentry.nmbapp.net snap.licdn.com edge.fullstory.com *.hotjar.com js.hsforms.net js.hscta.net js.hs-analytics.net js.hsleadflows.net js.hsadspixel.net js.hs-banner.com js.usemessages.com cdn.scarabresearch.com bat.bing.com static.ads-twitter.com www.redditstatic.com d.impactradius-event.com connect.facebook.net *.clarity.ms *.bitdefender.com *.scarabresearch.com www.dwin1.com *.taboola.com *.outbrain.com retrack-kupona.kuponacdn.de ad4m.at *.google-analytics.com cdn.bizible.com 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'none'; object-src 'none'; frame-src *.facebook.com www.google.com consentcdn.cookiebot.com bitdefender.demdex.net 5165113.fls.doubleclick.net vars.hotjar.com www.youtube.com hal9000.redintelligence.net ad.ad-srv.net forms.hsforms.com ad4m.at; connect-src hubspot-forms-static-embed.s3.amazonaws.com forms.hsforms.com *.hubapi.com *.hubspot.com *.facebook.com sentry.nmbapp.net api.company-target.com *.bitdefender.com geolocation-db.com dpm.demdex.net consent.cookiebot.com www.google.com *.scarabresearch.com rs.fullstory.com googleads.g.doubleclick.net consentcdn.cookiebot.com *.google-analytics.com *.analytics.google.com analytics.google.com *.clarity.ms *.doubleclick.net *.hotjar.com *.taboola.com cdn.linkedin.oribi.io vc.hotjar.io 'self' localhost blog.bitdefender-com.nmbapp.net; font-src 'self' data: www.bitdefender.com fonts.googleapis.com fonts.gstatic.com; base-uri *.bitdefender.com *.bitdefender.com.au *.bitdefender.co.uk *.bitdefender.ro *.bitdefender.fr *.bitdefender.de
+Accept-Ranges: none
+Vary: Accept-Encoding
+Server: cloudflare
+Cf-Ray: 7ac78a1fad74858d-BOM
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+Etag: "4496e-K4faEFu1GfNSfTyMRGVJTYeFVM0"
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+Cf-Cache-Status: DYNAMIC

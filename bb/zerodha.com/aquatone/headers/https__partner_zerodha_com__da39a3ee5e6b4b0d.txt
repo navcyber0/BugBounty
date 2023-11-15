@@ -1,0 +1,13 @@
+200 OK
+Set-Cookie: _cfuvid=SkuLhC6L6C01zmhPNTGBPPPwo.hOcymyQ4oQ7NoLUUE-1680012152370-0-604800000; path=/; domain=.zerodha.com; HttpOnly; Secure; SameSite=None
+Date: Tue, 28 Mar 2023 14:02:32 GMT
+Content-Type: text/html; charset=utf-8
+Retry-Count: 0
+Vary: Origin, Cookie
+Strict-Transport-Security: max-age=15552000
+X-Frame-Options: DENY
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 7af069501879f30b-BOM
+X-Content-Type-Options: nosniff
+Server: cloudflare
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400

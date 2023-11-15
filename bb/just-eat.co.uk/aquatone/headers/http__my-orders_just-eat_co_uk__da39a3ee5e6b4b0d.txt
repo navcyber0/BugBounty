@@ -1,0 +1,15 @@
+200 OK
+Date: Sun, 19 Mar 2023 15:44:49 GMT
+Content-Type: text/html
+Last-Modified: Tue, 26 Apr 2022 09:58:32 GMT
+Cache-Control: max-age=300
+X-Cache: RefreshHit from cloudfront
+Via: 1.1 e086ec27af2d3105a1a9fa7efa1be454.cloudfront.net (CloudFront)
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+X-Amz-Cf-Pop: AMS1-P1
+X-Amz-Cf-Id: FCvjXoUSlfBroCNd24huEDoaGUTIHrw3l6OsllxAfr7ZW-s9hEndPw==
+Cf-Ray: 7aa6d6c5ddb8b8df-AMS
+Retry-Count: 0
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=0

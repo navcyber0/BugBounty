@@ -1,0 +1,13 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+Content-Length: 5266
+Strict-Transport-Security: max-age=31536000
+P3p: CP="CAO PSA OUR"
+X-Frame-Options: deny
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ssl.google-analytics.com https://www.google-analytics.com https://app-cdn.vision6.com; connect-src 'self' https://www.google-analytics.com https://app-cdn.vision6.com; child-src 'self'; frame-src 'self'; style-src 'self' 'unsafe-inline' http://fonts.googleapis.com https://fonts.googleapis.com https://app-cdn.vision6.com; img-src *; media-src 'none'; font-src *; form-action *; base-uri 'none'; frame-ancestors 'none'; object-src 'none';
+Server: nginx
+Date: Thu, 30 Mar 2023 07:32:26 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Retry-Count: 0

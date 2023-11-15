@@ -1,0 +1,10 @@
+200 OK
+Vary: Accept-Encoding
+Last-Modified: Wed, 27 Jul 2022 10:30:00 GMT
+Etag: W/"62e113a8-a89"
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Date: Thu, 23 Mar 2023 15:00:28 GMT
+Retry-Count: 0
+Content-Type: text/html
+Cache-Control: no-cache
+Strict-Transport-Security: max-age=15724800; includeSubDomains

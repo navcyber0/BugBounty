@@ -1,0 +1,7 @@
+account.krisp.ai
+jpmchase.krisp.ai
+whatsnew.krisp.ai
+livedemo.krisp.ai
+sdk-docs.krisp.ai
+webcdn.krisp.ai
+help-jp.krisp.ai

@@ -1,0 +1,19 @@
+200 OK
+Referrer-Policy: strict-origin
+X-Platform-Router: t2mywyq25gwjuwsbfmhoadx5hm
+X-Xss-Protection: 1; mode=block
+Content-Language: de
+Traceresponse: 00-176b5290426101351cb9c6dd0fbf9b62-43e7d4902b46b87e-00
+Vary: , Cookie
+Date: Fri, 23 Jun 2023 15:14:24 GMT
+X-Platform-Cache: BYPASS
+X-Platform-Processor: 54dgo55r7sloguhs3e3j6tcsfm
+Content-Type: text/html; charset=utf-8
+Content-Length: 24765
+Content-Security-Policy: frame-src 'self' 'self' 'unsafe-inline' learningapps.org; default-src 'self' 'self' 'unsafe-inline'; child-src 'self' 'self' 'unsafe-inline'
+Expires: Fri, 23 Jun 2023 15:14:57 GMT
+Strict-Transport-Security: max-age=0
+X-Debug-Info: eyJyZXRyaWVzIjowfQ==
+X-Platform-Cluster: kfcvw6srngq2s-master-7rqtwti
+Retry-Count: 0
+Cache-Control: max-age=32

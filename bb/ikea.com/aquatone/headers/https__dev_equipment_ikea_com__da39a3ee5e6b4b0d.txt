@@ -1,0 +1,32 @@
+200 OK
+Content-Security-Policy: frame-ancestors 'none'
+Ot-Tracer-Traceid: 740334dd174ab47b
+Alt-Svc: h3=":443"; ma=86400
+Content-Language: en
+Traceparent: 00-0000000000000000740334dd174ab47b-393366531416ab8b-01
+Content-Type: text/html; charset=utf-8
+Pragma: no-cache
+X-Auth0-Requestid: d22b3e38a8b6a777ff19
+X-Content-Type-Options: nosniff
+X-Ratelimit-Limit: 20
+X-Ratelimit-Remaining: 19
+Strict-Transport-Security: max-age=31536000
+Tracestate: auth0-request-id=7eb00c243ca73977,auth0=true
+Referrer-Policy: same-origin
+Etag: W/"5bf6-4AGkVDddbTtMLrC+tT6wx5xLiHw"
+Ot-Tracer-Sampled: true
+X-Frame-Options: deny
+Date: Sun, 23 Jul 2023 01:11:05 GMT
+Vary: Accept-Encoding
+Ot-Baggage-Auth0-Request-Id: 7eb00c243ca73977
+Server: cloudflare
+Cache-Control: no-store, max-age=0, no-transform
+Expires: Sun, 23 Jul 2023 01:11:05 GMT
+Ot-Tracer-Spanid: 393366531416ab8b
+X-Robots-Tag: noindex, nofollow
+Cf-Cache-Status: DYNAMIC
+P3p: CP="Auth0 does not have a P3P policy but our privacy policy is available here: https://auth0.com/privacy"
+X-Ratelimit-Reset: 1690074672
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Cf-Ray: 7eb00c243ca73977-MAA

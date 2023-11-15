@@ -1,0 +1,16 @@
+200 OK
+Cache-Control: max-age=7200
+Expires: Wed, 22 Mar 2023 16:57:06 GMT
+Last-Modified: Fri, 24 Sep 2021 10:50:45 GMT
+X-Cache: HIT
+Server: ECAcc (tir/CD4F)
+Accept-Ranges: bytes
+Age: 6368
+Content-Security-Policy: frame-ancestors 'self';
+Content-Type: text/html
+Etag: "614dad85-0"
+X-Frame-Options: SAMEORIGIN *.bitdefender.com
+X-Robots-Tag: noindex, nofollow, nosnippet, noarchive
+Retry-Count: 0
+Date: Wed, 22 Mar 2023 14:57:06 GMT
+Content-Length: 0

@@ -1,0 +1,16 @@
+403 Forbidden
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Last-Modified: Sun, 2 Apr 2023 09:37:28 +1200
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://accounts.google.com https://www.google-analytics.com   'sha256-K2AkR/jTLsGV8PyzWha7/ey1iaD9c5jWRYwa++ZlMZc=' 'sha256-ib2/2v5zC6gGM6Ety7iYgBUvpy/caRX9xV/pzzV7hf0=' 'sha256-dOe3xMBHtHKyTxiaaXmoGHWp3kFOofsxatAcYZZ6Vvg='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline' https://accounts.google.com; font-src *; img-src * 'self' data:; connect-src 'self' https://accounts.google.com metabase.us10.list-manage.com www.google-analytics.com https://sp.metabase.com ; manifest-src 'self';  frame-ancestors 'none';
+Server: Jetty(9.4.48.v20220622)
+Date: Sat, 01 Apr 2023 21:37:28 GMT
+Content-Type: text/plain
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: metabase.DEVICE=d5b35443-8540-4921-a767-7992a86390aa;HttpOnly;Path=/;Expires=Thu, 2 Apr 2043 09:37:28 +1300;SameSite=None;Secure
+Content-Length: 38
+Retry-Count: 0

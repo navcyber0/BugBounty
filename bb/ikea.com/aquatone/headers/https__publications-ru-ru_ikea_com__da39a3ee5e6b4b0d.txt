@@ -1,0 +1,20 @@
+200 OK
+Via: 1.1 a80cd80742ea1725768094354cb5f566.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: 5wMF8BkX-D5RVFSuZUMjYsGRdcS6KztVavJmhJ1SPYvk2AV1DcwGOA==
+X-Content-Type-Options: nosniff
+Cross-Origin-Opener-Policy: same-origin
+X-Runtime: 0.042356
+Retry-Count: 0
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+Date: Sun, 23 Jul 2023 01:05:41 GMT
+X-Download-Options: noopen
+X-Request-Id: 6e905048-d634-4f9b-98dd-fe239e4d004c
+Server: nginx
+Referrer-Policy: strict-origin-when-cross-origin
+Strict-Transport-Security: max-age=63113904
+X-Amz-Cf-Pop: MAA51-P1
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: max-age=60, public
+Etag: W/"baa4459e1b78b81796b5cf6d9c6bc2b8"
+X-Cache: Miss from cloudfront

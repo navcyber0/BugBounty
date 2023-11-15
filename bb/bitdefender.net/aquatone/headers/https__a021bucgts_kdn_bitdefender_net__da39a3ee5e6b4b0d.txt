@@ -1,0 +1,12 @@
+200 OK
+Access-Control-Max-Age: 86400
+Strict-Transport-Security: max-age=15768000
+Retry-Count: 0
+Server: nginx
+Date: Wed, 22 Mar 2023 14:56:56 GMT
+Content-Length: 2
+Access-Control-Allow-Headers: Authorization, Origin, Content-Type, Accept
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Request-Id: lfjt5rkl01yt3c33038f9wvp
+Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="scripts/bundle.vendor.js?v=0.2.2222.0"></script>
+
+    <!-- Page title set in pageTitle directive -->
+    <title page-title>{{title}}</title>
+    <link
+      href="styles/app.vendor.css?v=0.2.2222.0"
+      rel="stylesheet"
+    />
+    <link
+      href="styles/app.nl.css?v=0.2.2222.0"
+      rel="stylesheet"
+    />
+
+    <link id="favicon" rel="icon" type="image/icon" href="favicon_tops.ico" />
+
+    <script>
+      var html = document.getElementsByTagName('html')[0];
+      var head = document.getElementsByTagName('head')[0];
+      window.environment = 'UAT';
+      window.country = 'nl';
+      if (window.country.indexOf('#') > -1) {
+        window.country = 'uk';
+        var script = document.createElement('script');
+        script.src =
+          'scripts/bundle.' +
+          window.country +
+          '.js?v=0.2.2222.0';
+        var countryCss = document.createElement('link');
+        countryCss.href =
+          'styles/app.' + window.country + '.css?v=0.2.2222.0';
+        countryCss.rel = 'stylesheet';
+        head.appendChild(countryCss);
+        html.appendChild(script);
+      }
+    </script>
+  </head>
+
+  <body ng-class="skin">
+    <body-content></body-content>
+    <div id="splashScreen" class="splashScreen">
+      <div class="row">
+        <div
+          class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1"
+          style="min-height: 100vh; display: flex; align-items: center"
+        >
+          <div class="wrapper wrapper-content" style="width: 100%">
+            <div class="ibox">
+              <div
+                class="ibox-content text-center animated fadeInDown"
+                style="height: 100%; display: block; background-color: white"
+              >
+                <div>
+                  <h1 class="logo-name"><span class="appName"></span></h1>
+                </div>
+                <h3>Welcome to <span class="appName"></span></h3>
+                <p class="appDescription"></p>
+                <div class="sk-loading">
+                  <div class="sk-spinner sk-spinner-wave">
+                    <div class="sk-rect1"></div>
+                    <div class="sk-rect2"></div>
+                    <div class="sk-rect3"></div>
+                    <div class="sk-rect4"></div>
+                    <div class="sk-rect5"></div>
+                  </div>
+                </div>
+                <p>
+                  <span id="loading-things">Loading...</span>
+                </p>
+                <div id="progress" style="width: 100%; background-color: grey">
+                  <div
+                    id="bar"
+                    style="width: 1%; height: 15px; background-color: #1584c7"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/bundle.nl.js?v=0.2.2222.0"></script>
+</html>

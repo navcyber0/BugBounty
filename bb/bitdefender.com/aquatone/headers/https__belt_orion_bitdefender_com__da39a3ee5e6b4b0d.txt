@@ -1,0 +1,11 @@
+200 OK
+X-Content-Type-Options: nosniff
+Content-Security-Policy: script-src 'strict-dynamic' 'nonce-rAnd0m123' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script'
+X-Robots-Tag: noindex, follow
+Retry-Count: 0
+Server: nginx/1.23.2
+Date: Thu, 23 Mar 2023 14:59:07 GMT
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=86400; includeSubDomains
+Content-Length: 19
+X-Xss-Protection: 1; mode=block

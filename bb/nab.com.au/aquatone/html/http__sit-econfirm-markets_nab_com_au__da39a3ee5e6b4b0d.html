@@ -1,0 +1,21 @@
+
+<html>
+<head>
+    <title>eConfirm Login</title>
+</head>
+<body>
+    <div id="container">
+        <div id="root"></div>
+        <div id="Login" style="width:300px"></div>
+        <div id="native" style="width:300px"></div>
+
+        <script type="text/javascript" src="/Scripts/static/DAFApiAuth.js"></script>
+        <script type="text/javascript">
+        document.userAuthenticationCallback((data) => {
+            window.location.href = "/NAB/Fx/Transactions";
+        });
+        </script>
+    </div>
+    <link href="/Content/Styles/style.css" rel="stylesheet" />
+</body>
+</html>

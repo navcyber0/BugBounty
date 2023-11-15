@@ -1,0 +1,14 @@
+200 OK
+Referrer-Policy: origin
+Content-Security-Policy: script-src 'nonce-PoaGmBP6ItCNuuMccY6bmQ==' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:; object-src 'none'; base-uri 'none'
+Strict-Transport-Security: max-age=63072000
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+X-Frame-Options: DENY
+X-Permitted-Cross-Domain-Policies: none
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Request-Time: 1
+Date: Fri, 23 Jun 2023 15:19:27 GMT
+Vary: Accept-Encoding,Origin
+Server: nginx

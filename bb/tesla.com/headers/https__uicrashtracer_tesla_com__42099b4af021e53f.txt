@@ -1,0 +1,14 @@
+401 Unauthorized
+X-Robots-Tag: noindex, nofollow
+Location: /auth/login/
+X-Content-Type-Options: nosniff
+Set-Cookie: sentrysid="gAJ9cQFVBV9uZXh0cQJYAQAAAC9zLg:1q9QuO:yfZOmgrlSYdAchVxcBS2_Umf5Vg"; expires=Wed, 28-Jun-2023 13:51:36 GMT; httponly; Max-Age=1209600; Path=/
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+Content-Length: 0
+X-Xss-Protection: 1; mode=block
+Content-Language: en
+Vary: Accept-Language, Cookie
+X-Frame-Options: deny
+Date: Wed, 14 Jun 2023 13:51:36 GMT
+Server: nginx

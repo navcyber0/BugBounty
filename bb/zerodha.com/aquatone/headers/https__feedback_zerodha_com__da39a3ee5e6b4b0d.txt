@@ -1,0 +1,13 @@
+200 OK
+Content-Type: text/html; charset=utf-8
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+Date: Tue, 28 Mar 2023 14:02:33 GMT
+X-Frame-Options: DENY
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Set-Cookie: session=475f96be-e618-4081-9edb-dd0cdb363123.EQJaNmJatxKPVeuP1kw4xaOi2o0; Expires=Fri, 28 Apr 2023 14:02:33 GMT; Secure; HttpOnly; Path=/
+Strict-Transport-Security: max-age=15552000
+Cf-Ray: 7af06958df348600-BOM
+Permissions-Policy: interest-cohort=()
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare

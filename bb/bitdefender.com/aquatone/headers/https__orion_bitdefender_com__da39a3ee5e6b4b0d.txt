@@ -1,0 +1,13 @@
+200 OK
+X-Robots-Tag: noindex, follow
+Server: cloudflare
+Cf-Ray: 7ac78a8f5f55f3e5-BOM
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=86400; includeSubDomains
+Content-Security-Policy: script-src 'strict-dynamic' 'nonce-rAnd0m123' 'unsafe-inline' http: https:; object-src 'none'; base-uri 'none'; require-trusted-types-for 'script'
+Cf-Cache-Status: DYNAMIC
+Retry-Count: 0
+Date: Thu, 23 Mar 2023 14:59:58 GMT
+Content-Length: 19
+X-Frame-Options: SAMEORIGIN

@@ -1,0 +1,14 @@
+200 OK
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Server: Server
+Content-Language: en-US
+Pragma: no-cache
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Retry-Count: 0
+X-Amz-Cognito-Request-Id: dc76ac85-6a4c-483f-8993-98beadcccf8a
+Expires: 0
+X-Frame-Options: DENY
+Date: Sun, 19 Mar 2023 13:30:51 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: text/html;charset=UTF-8

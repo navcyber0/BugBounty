@@ -1,0 +1,13 @@
+403 Forbidden
+X-Amz-Request-Id: 674HYTMDTZZKYSCB
+X-Amz-Id-2: /7VKuLEN++Ce7rP+49zH5N06KNhW3Dpf4WScYRXV0KHKYLkqFAV1r1jWyaLxQtWw95jscIvh3PlcuzHrqkY8LQ==
+Set-Cookie: _cfuvid=iQiogvqVWcr_0895SLbznKkJFiDuYY_jQQRLYEfPSPk-1680012156679-0-604800000; path=/; domain=.zerodha.com; HttpOnly; Secure; SameSite=None
+Cf-Ray: 7af0696b1e96f42d-BOM
+Retry-Count: 0
+Content-Type: application/xml
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Date: Tue, 28 Mar 2023 14:02:36 GMT
+X-Amz-Bucket-Region: ap-south-1
+Strict-Transport-Security: max-age=15552000

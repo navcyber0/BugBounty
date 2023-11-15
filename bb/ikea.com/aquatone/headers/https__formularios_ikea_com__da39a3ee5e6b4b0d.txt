@@ -1,0 +1,13 @@
+200 OK
+Strict-Transport-Security: max-age=31536000
+Pragma: no-cache
+Vary: Accept-Encoding
+Server: Apache/2.4.52 (Ubuntu)
+Upgrade: h2,h2c
+Content-Type: text/html; charset=UTF-8
+Retry-Count: 0
+Date: Sun, 23 Jul 2023 01:12:43 GMT
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-store, no-cache, must-revalidate
+Set-Cookie: BOMULTIFORMIKEA=utk3ff1rtn41ev0qff3dvsfmq9; path=/; domain=formularios.ikea.com; secure; HttpOnly

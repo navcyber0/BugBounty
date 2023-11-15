@@ -1,0 +1,18 @@
+200 OK
+X-Amz-Meta-Esi: true
+Vary: Accept-Encoding
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' *.ikea.com *.ikea.net api.addressy.com google.com *.google.com *.gstatic.com www.youtube-nocookie.com www.youtube.com blob: data: prod-cmp-latency.edgecompute.app gooh.site https://storage.googleapis.com/learnwithikeavideos/ *.ingka.com *.cdtapps.com *.ctfassets.net cdn.dimma.ingka.dev *.ipex-insights.com api.parcellab.com cdn.parcellab.com *.survicate.com *.adform.net insight.adsrvr.org js.adsrvr.org *.bing.com *.doubleclick.net *.facebook.com *.facebook.net *.mypurecloud.com.au wss://streaming.mypurecloud.com.au *.cookielaw.org *.onetrust.com *.akamaihd.net *.akstat.io *.appdynamics.com *.eum-appdynamics.com *.contentsquare.net app.contentsquare.com *.google-analytics.com www.googletagmanager.com *.go-mpulse.net *.optimizely.com sentry.io *.sentry.io *.techlab-cdn.com *.avo.app oppwa.com *.oppwa.com mpsnare.iesnare.com *.iesnare.com maps.googleapis.com fonts.googleapis.com www.googleapis.com icsp.ingka.ikea.com wss://icsp.ingka.ikea.com *.bambuser.com firestore.googleapis.com liveshopping-widgets.firebaseapp.com; img-src * blob: data:; frame-src *; frame-ancestors *.ikea.com; object-src 'self'; report-uri https://prod-csp-prefilter.edgecompute.app
+Strict-Transport-Security: max-age=31536000
+Permissions-Policy: interest-cohort=()
+X-Content-Type-Options: nosniff
+Server-Timing: origin; dur=0 edge; dur=149 cdn-cache; desc=HIT ak_p; desc="469465_388762278_328416_14905_29889_15_-_-";dur=1
+X-Akamai-Transformed: 9 181758 0 pmb=mTOE,2
+Cache-Control: private, max-age=300
+Content-Type: text/html; charset=utf-8
+Set-Cookie: ikea_geo=KR; path=/au/en/; secure bm_sz=CB82AEA88B86041BC263FC0ECE04089A~YAAQpgosF885J3+JAQAAVXVOgBTnPWYD7+xSaU3KyJl9BtR1tQH46dK2DGwv17X6zhxYZY1Sv+3wPNveT+OhZcyIZKTQ4ChDsq4FY4z4jDaao3BwC39v3xSMfnGgkoaBVEQkuGOeD/k0Ye3nhudtx4806K4Wz6DOy3U6Dm/SdMyzhz8PJ1I2YttChXZsRor9dXWf0ATUTeK+5DPi8IdsUd/uc+/UmCgujnENjLSBBWMZd1hKTVeloy/OcsM2bHR0EfyyqwrQ63Hdyv8DXGPyenZnpVE76ha7PsxpGMJ5TBDo~3356740~3749172; Domain=.ikea.com; Path=/; Expires=Sun, 23 Jul 2023 05:12:52 GMT; Max-Age=14400 _abck=9FB89D8109F9194D269FA3F0DA274EA7~-1~YAAQpgosF845J3+JAQAAVXVOgAoq4zpOUjHU8c+WIJ4XF3hlnO9MJLF6hrNSNvghHdBC1MKDEOvCOGDNOGWbj4k1+RyGRT1z8Yw1ezTpPttLMJKFMUVy/Fnbf8zPdXy7NtjDG3RLTyFz8NKxuylww+PnnYidRclpUvwjaC7CqFrPkSLMXm/mYfCPngKbVbVixNimSKtWIKYMTr4UhGD+n4nd87VLG6+Bpl4THLB/U2GTZqv+q/O6NwJUZG2lOK3zAnBERRuHBbJQYzvAn+K/VXl0LZgqDAUpqUbGB4WWxwnkm7+wbdaqKg0cXbCverAYtO6qmFitCqwI1LbkE4yieeZoI+gkO81CdY0HeQYPqMaaC19BD16NDHk3XQ==~-1~-1~1690078262; Domain=.ikea.com; Path=/; Expires=Mon, 22 Jul 2024 01:12:52 GMT; Max-Age=31536000; Secure
+Etag: "207c666807a1794d0fb291c3e4389634"
+Retry-Count: 0
+Date: Sun, 23 Jul 2023 01:12:53 GMT
+Server: IKEA Server
+X-Amz-Server-Side-Encryption: AES256
+Expires: Sun, 23 Jul 2023 01:17:53 GMT

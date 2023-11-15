@@ -1,0 +1,9 @@
+200 200
+Retry-Count: 0
+Content-Type: text/html; charset=UTF-8
+Date: Fri, 23 Jun 2023 15:20:47 GMT
+Server: Microsoft-IIS/10.0
+Strict-Transport-Security: max-age=31536000
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Content-Length: 3316

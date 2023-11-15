@@ -1,0 +1,14 @@
+[credentials-disclosure] [http] [unknown] https://assetservicing-prod-preview.prod.nab.com.au [API_key="RZFWD-FDPSJ-FFH5D-YR27N-GZ35Q"]
+[credentials-disclosure] [http] [unknown] https://assetservicing-prod-publish.prod.nab.com.au [API_key="RZFWD-FDPSJ-FFH5D-YR27N-GZ35Q"]
+[credentials-disclosure] [http] [unknown] https://assetservicing-stage-preview.prod.nab.com.au [API_key="RZFWD-FDPSJ-FFH5D-YR27N-GZ35Q"]
+[credentials-disclosure] [http] [unknown] https://assetservicing-stage-publish.prod.nab.com.au [API_key="RZFWD-FDPSJ-FFH5D-YR27N-GZ35Q"]
+[credentials-disclosure] [http] [unknown] https://assetservicing.nab.com.au [API_key="RZFWD-FDPSJ-FFH5D-YR27N-GZ35Q"]
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/nab.com.au/v2.0/.well-known/openid-configuration [48d6943f-580e-40b1-a0e1-c07fa3707873]
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/transact.nab.com.au/v2.0/.well-known/openid-configuration [3ab04f11-3fa3-4f60-a77d-c3291f714b28]
+[ds-store-file] [http] [info] https://news.nab.com.au/.DS_Store
+[google-api-key] [http] [info] https://news.nab.com.au [AIzaSyBjNnmFUpnMlDWkCiWOC12d0AVnHCXJGRA]
+[google-api-key] [http] [info] https://news.nab.com.au/hopfully404 [AIzaSyBjNnmFUpnMlDWkCiWOC12d0AVnHCXJGRA]
+[exposed-gitignore] [http] [info] https://apply.nabeasyrent.nab.com.au/.gitignore
+[package-json] [http] [info] https://propertyinsights.nab.com.au/package.json
+[keycloak-openid-config] [http] [info] https://customer.api.nab.com.au/.well-known/openid-configuration
+[keycloak-openid-config] [http] [info] https://customer.api-pilot.nab.com.au/.well-known/openid-configuration

@@ -1,0 +1,16 @@
+200 OK
+Content-Security-Policy: default-src 'self'; connect-src 'self' https://nimbus.bitdefender.net ; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com; object-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://central.bitdefender.com; media-src 'self'; frame-src 'self'; font-src 'self' https://fonts.gstatic.com
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Cf-Ray: 7abf48f26f0aa91d-MAA
+Expires: Wed, 22 Mar 2023 14:57:05 GMT
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Retry-Count: 0
+Date: Wed, 22 Mar 2023 14:57:05 GMT
+X-Webkit-Csp: default-src 'self'; connect-src 'self' https://nimbus.bitdefender.net ; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com; object-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://central.bitdefender.com; media-src 'self'; frame-src 'self'; font-src 'self' https://fonts.gstatic.com
+Last-Modified: Mon, 13 Dec 2021 13:43:16 GMT
+Cache-Control: max-age=0
+X-Content-Security-Policy: default-src 'self'; connect-src 'self' https://nimbus.bitdefender.net ; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://ajax.googleapis.com; object-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://central.bitdefender.com; media-src 'self'; frame-src 'self'; font-src 'self' https://fonts.gstatic.com

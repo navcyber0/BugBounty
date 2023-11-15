@@ -1,0 +1,24 @@
+200 OK
+Retry-Count: 0
+X-Discourse-Route: list/category_default
+Cf-Ray: 7af0695b4dd5364d-FRA
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Runtime: 0.140610
+X-Discourse-Trackview: 1
+Date: Tue, 28 Mar 2023 14:02:34 GMT
+Content-Type: text/html; charset=utf-8
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: upgrade-insecure-requests; base-uri 'self'; object-src 'none'; script-src https://tradingqna.com/logs/ https://tradingqna.com/sidekiq/ https://tradingqna.com/mini-profiler-resources/ https://tradingqna.com/assets/ https://tradingqna.com/brotli_asset/ https://tradingqna.com/extra-locales/ https://tradingqna.com/highlight-js/ https://tradingqna.com/javascripts/ https://tradingqna.com/plugins/ https://tradingqna.com/theme-javascripts/ https://tradingqna.com/svg-sprite/ https://www.google-analytics.com/analytics.js 'sha256-Gty3/aPWFfSvz7pdT39HY97/+2opLup9V0L19ZF0IwY='; worker-src 'self' https://tradingqna.com/assets/ https://tradingqna.com/brotli_asset/ https://tradingqna.com/javascripts/ https://tradingqna.com/plugins/; frame-ancestors 'self'; manifest-src 'self'
+Server: cloudflare
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4Eh0UEVUF2wWeZ7Sw5SFTMtOaAavE1lkeUX%2F1oQ4fV3EwEMWMAPq4Sd8slp%2BhvK4n9LPkjVj2Nb6u8QEfA1Ch27BGwLzCQdihGFAxbs3dU2mqdTivT43x2e%2FJAQwd5pI8w%3D%3D"}],"group":"cf-nel","max_age":604800}
+Vary: Accept-Encoding Accept
+Cache-Control: no-cache, no-store
+X-Discourse-Cached: skip
+X-Request-Id: 2daa7765-8776-4716-a488-10e50e5b9f88
+Cf-Cache-Status: DYNAMIC

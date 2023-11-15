@@ -1,0 +1,14 @@
+200 OK
+Retry-Count: 0
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: upgrade-insecure-requests; frame-ancestors 'none'; report-uri https://7eae552da389ebb083bedadbd9428ed2.report-uri.com/r/d/csp/reportOnly
+Server: nginx
+Vary: Accept-Encoding
+Date: Tue, 28 Mar 2023 14:02:36 GMT
+Strict-Transport-Security: max-age=63072000;
+X-Content-Type-Options: nosniff
+Content-Type: text/html
+Last-Modified: Thu, 02 Mar 2023 12:39:12 GMT
+Etag: W/"640098f0-2903"
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy-Report-Only: upgrade-insecure-requests; frame-ancestors 'none'; report-uri https://7eae552da389ebb083bedadbd9428ed2.report-uri.com/r/d/csp/reportOnly

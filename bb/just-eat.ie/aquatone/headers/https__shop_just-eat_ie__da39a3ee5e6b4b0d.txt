@@ -1,0 +1,13 @@
+200 OK
+Retry-Count: 0
+Date: Sun, 19 Mar 2023 13:30:45 GMT
+Content-Type: text/html; charset=UTF-8
+Cf-Ray: 7aa6125c2f45b8dc-AMS
+Set-Cookie: AWSALB=vkC/0ZYe5y5LDFZHzitcHufu+f8VqB0rVGBtsnLWmwvl/cs7xr4p8Rw871N6D9mm3oKc1+zfnsFs+YIrINXuPMlybKGLungBMi54WP4MXArM6N0dF1c5lxNAXoow; Expires=Sun, 26 Mar 2023 13:30:44 GMT; Path=/ AWSALBCORS=vkC/0ZYe5y5LDFZHzitcHufu+f8VqB0rVGBtsnLWmwvl/cs7xr4p8Rw871N6D9mm3oKc1+zfnsFs+YIrINXuPMlybKGLungBMi54WP4MXArM6N0dF1c5lxNAXoow; Expires=Sun, 26 Mar 2023 13:30:44 GMT; Path=/; SameSite=None; Secure PLAY_SESSION=eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImNzcmZUb2tlbiI6IjZlZThkMDVjMjViYTEyNDQzNmRlNzFhNjk3MTAyZmIxM2ZjM2U3ODctMTY3OTIzMjY0NTIyMy02ODFhMWYyZGJhYTBlYzI1ZWM1OTMwNjMifSwibmJmIjoxNjc5MjMyNjQ1LCJpYXQiOjE2NzkyMzI2NDV9.s3P95IS-tNbFnjLdeRX10UzlVIt-yRzMi8TvWoL9rQQ; SameSite=None; Path=/; Secure; HTTPOnly
+Cf-Cache-Status: DYNAMIC
+Cache-Control: no-cache, no-store, must-revalidate
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: upgrade-insecure-requests;base-uri 'self';default-src https: wss:;font-src https: data:;img-src https: data:;object-src 'none';frame-ancestors 'none';style-src https: 'unsafe-inline';script-src https: 'unsafe-inline' 'unsafe-eval';report-uri https://shop.takeaway.com/csp-report;
+Pragma: no-cache
+Expires: 0
+Server: cloudflare

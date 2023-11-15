@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<title>Just Eat for Business</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/favicon.ico?v=4755a216c">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/css/intlTelInput.css" rel="stylesheet" type="text/css">
+</head><body class="site">
+<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/98871cab5b54d72b2814e093/script.js"></script>
+<script>
+
+    // Used for Optimize callbacks, based off following template https://support.google.com/optimize/answer/9059383?hl=en
+    function gtag() {dataLayer.push(arguments)}
+
+    // Data Layer compliant with GTM specifications for handling Google Optimize activation events
+    var dataLayer = [];
+
+    // Google Optimize injects user specific experiment/variant data into this array on experiment activation
+    var userABTestIdentifiers = [];
+
+  </script>
+<script src="https://js.stripe.com/v3/"></script>
+
+<link rel="preload" href="/menus/citypantry-icons.woff2?d2b3a1" as="font" crossorigin="anonymous">
+<style>@charset "UTF-8";html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;line-height:1.15;}body{margin:0;}h1{font-size:2em;margin:.67em 0;}@font-face{font-weight:100;font-style:normal;font-family:Radikal;src:url(Radikal-Thin.fcc2edcadc0bbcbdcf6c.eot?#iefix) format("embedded-opentype"),url(Radikal-Thin.b19136624fff89f9b935.woff2) format("woff2"),url(Radikal-Thin.a283b8e4106e54f2e1bb.woff) format("woff"),url(Radikal-Thin.b290e4d78c4f98e4a59e.ttf) format("truetype");}@font-face{font-weight:100;font-style:italic;font-family:Radikal;src:url(Radikal-ThinItalic.8df84a2fe70c1321ea62.eot?#iefix) format("embedded-opentype"),url(Radikal-ThinItalic.680a627f754708762a91.woff2) format("woff2"),url(Radikal-ThinItalic.5bfa04aed00a314ad2ff.woff) format("woff"),url(Radikal-ThinItalic.f37be38be54530759d21.ttf) format("truetype");}@font-face{font-weight:300;font-style:normal;font-family:Radikal;src:url(Radikal-Light.cb1157e126868894f82f.eot?#iefix) format("embedded-opentype"),url(Radikal-Light.53a2d865c54c76a88097.woff2) format("woff2"),url(Radikal-Light.9487bf6c928e29d66a89.woff) format("woff"),url(Radikal-Light.bc02467895d3c84f0580.ttf) format("truetype");}@font-face{font-weight:300;font-style:italic;font-family:Radikal;src:url(Radikal-LightItalic.8761038d6b7a0ae96d8c.eot?#iefix) format("embedded-opentype"),url(Radikal-LightItalic.610c928ba4aed51949d4.woff2) format("woff2"),url(Radikal-LightItalic.c63681874bf365df6108.woff) format("woff"),url(Radikal-LightItalic.df7ce45d40458b0ca44c.ttf) format("truetype");}@font-face{font-weight:400;font-style:normal;font-family:Radikal;src:url(Radikal-Regular.9105ba721455e62a221f.eot?#iefix) format("embedded-opentype"),url(Radikal-Regular.a216951c068cfa288af6.woff2) format("woff2"),url(Radikal-Regular.93b51b38b7c484ebc399.woff) format("woff"),url(Radikal-Regular.0fd5dba8aa78656395b6.ttf) format("truetype");}@font-face{font-weight:400;font-style:italic;font-family:Radikal;src:url(Radikal-RegularItalic.98378af2fa10890e11db.eot?#iefix) format("embedded-opentype"),url(Radikal-RegularItalic.6fad826506272348ebbd.woff2) format("woff2"),url(Radikal-RegularItalic.837436379f4aeaed9aef.woff) format("woff"),url(Radikal-RegularItalic.a171f025ac7d66591619.ttf) format("truetype");}@font-face{font-weight:500;font-style:normal;font-family:Radikal;src:url(Radikal-Medium.787d4b9450beda141141.eot?#iefix) format("embedded-opentype"),url(Radikal-Medium.a90c9d3dd85623edee9a.woff2) format("woff2"),url(Radikal-Medium.e05ad2eec6384b342c20.woff) format("woff"),url(Radikal-Medium.233eae2504018907bad2.ttf) format("truetype");}@font-face{font-weight:500;font-style:italic;font-family:Radikal;src:url(Radikal-MediumItalic.3f822e4bdd4341469385.eot?#iefix) format("embedded-opentype"),url(Radikal-MediumItalic.1415ca279e23ead999dd.woff2) format("woff2"),url(Radikal-MediumItalic.995b177952b3b4cfcedb.woff) format("woff"),url(Radikal-MediumItalic.f2ab6376c2c2ab169ca6.ttf) format("truetype");}@font-face{font-weight:700;font-style:normal;font-family:Radikal;src:url(Radikal-Bold.edcca0af7c76d2e1feb8.eot?#iefix) format("embedded-opentype"),url(Radikal-Bold.d49270bc18c00851513e.woff2) format("woff2"),url(Radikal-Bold.491276cf120513fc0f2d.woff) format("woff"),url(Radikal-Bold.d627e870b9069d7d00ea.ttf) format("truetype");}@font-face{font-weight:700;font-style:italic;font-family:Radikal;src:url(Radikal-BoldItalic.6c30d813d07dc73df981.eot?#iefix) format("embedded-opentype"),url(Radikal-BoldItalic.bdf1c1e05b17f0a3c546.woff2) format("woff2"),url(Radikal-BoldItalic.132488010a5e155c4ce0.woff) format("woff"),url(Radikal-BoldItalic.d3abd4444c2e0fa1bfd0.ttf) format("truetype");}@font-face{font-weight:900;font-style:normal;font-family:Radikal;src:url(Radikal-Black.d5d8ed4d73331b3e3700.eot?#iefix) format("embedded-opentype"),url(Radikal-Black.6892711f0081270b54bf.woff2) format("woff2"),url(Radikal-Black.0773ff0ead48151c6a2f.woff) format("woff"),url(Radikal-Black.3ae6c954f874445bae4f.ttf) format("truetype");}@font-face{font-weight:900;font-style:italic;font-family:Radikal;src:url(Radikal-BlackItalic.35241b06b435712bb743.eot?#iefix) format("embedded-opentype"),url(Radikal-BlackItalic.ca2387da645bb416f4fe.woff2) format("woff2"),url(Radikal-BlackItalic.31db119dd8da97bad72b.woff) format("woff"),url(Radikal-BlackItalic.8a4272bef35345a92da4.ttf) format("truetype");}html{box-sizing:border-box;}*,:after,:before{box-sizing:inherit;}body{color:#474751;font-weight:400;font-size:16px;font-family:Radikal,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;line-height:1.2;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.text-center{text-align:center!important;}.pt-5{padding-top:2rem!important;}.loading-animation{display:block;width:100%;height:305.6px;position:relative;overflow:hidden;}.loading-animation:before{display:block;content:"";width:calc(100% + 478px);height:174px;position:absolute;top:65.8px;background-position:0 0;background-size:478px 174px;background-repeat:repeat-x;background-image:url(https://cdn.citypantry.com/img/loading-animation/buildings.bdd748a1.svg);animation-duration:1s;animation-name:loading-animation-background-slide;animation-timing-function:linear;animation-iteration-count:infinite;}.loading-animation:after{display:block;content:"";width:178px;height:94px;position:absolute;left:50%;margin-left:-89px;bottom:18px;background-position:50%;background-size:178px 94px;background-repeat:no-repeat;background-image:url(https://cdn.citypantry.com/img/loading-animation/van.aebb6e1e.svg);animation-duration:.2s;animation-name:loading-animation-van-chug;animation-timing-function:ease;animation-iteration-count:infinite;animation-direction:alternate;}@keyframes loading-animation-van-chug{0%{transform:translateY(0);}to{transform:translateY(-2.35px);}}@keyframes loading-animation-background-slide{0%{transform:translateX(0);}to{transform:translateX(-478px);}}h1{font-family:Radikal,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;line-height:1.2;margin:0 0 1rem;text-transform:none;font-size:2rem;line-height:1.19;}@media screen and (min-width: 768px){h1{font-size:2rem;}}@media screen and (min-width: 1024px){h1{font-size:3rem;}}@media screen and (min-width: 1280px){h1{font-size:3rem;}}@media screen and (min-width: 768px){h1{line-height:1.19;}}@media screen and (min-width: 1024px){h1{line-height:1.17;}}@media screen and (min-width: 1280px){h1{line-height:1.17;}}@media print{body,html{font-size:10px;}*,:after,:before{box-shadow:none!important;text-shadow:none!important;}p{orphans:3;widows:3;}}body,html{min-height:100%;}</style><link rel="stylesheet" href="/menus/styles.5e6b083b3e9ceb384962.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="/menus/styles.5e6b083b3e9ceb384962.css"></noscript>
+<noscript>
+  <h1>Just Eat for Business</h1>
+
+  <p>Unfortunately, you need Javascript enabled to use our website.<br>
+  If you would like to place an order or find out more about Just Eat for Business, you can speak to someone from our team on <a href="tel:+442038933500">020 3893 3500</a>.</p>
+</noscript>
+<div id="loadingAnimationWrapper">
+
+
+<style>
+    #loadingAnimation,#loadingAnimation h1{font-family:Radikal,'Helvetica Neue',Helvetica,Roboto,Arial,sans-serif}.loading-animation{display:block;width:100%;height:305.6px;position:relative;overflow:hidden}.loading-animation::after,.loading-animation::before{display:block;content:'';position:absolute;animation-iteration-count:infinite}.loading-animation::before{width:calc(100% + 478px);height:174px;top:65.8px;background-position:top left;background-size:478px 174px;;background-repeat:repeat-x;background-image:url(https://cdn.citypantry.com/img/loading-animation/buildings.bdd748a1.svg);animation-duration:1s;animation-name:loading-animation-background-slide;animation-timing-function:linear}.loading-animation::after{width:200px;height:165px;left:50%;margin-left:-89px;bottom:18px;background-position:center;background-size:776px 456px;background-repeat:no-repeat;background-image:url(https://cdn.citypantry.com/img/loading-animation/van.e4ef76ac.svg);animation-duration:.2s;animation-name:loading-animation-van-chug;animation-timing-function:ease;animation-direction:alternate}@keyframes loading-animation-van-chug{from{transform:translateY(0)}to{transform:translateY(-2.35px)}}@keyframes loading-animation-background-slide{from{transform:translateX(0)}to{transform:translateX(-478px)}}#loadingAnimation{padding-top:2rem!important;text-align:center}#loadingAnimation h1{margin:0 0 1rem;text-transform:capitalise;font-size:2rem;line-height:1.19}@media screen and (min-width:768px){#loadingAnimation h1{font-size:2rem;line-height:1.19}}@media screen and (min-width:1024px){#loadingAnimation h1{font-size:3rem;line-height:1.17}}@media screen and (min-width:1280px){#loadingAnimation h1{font-size:3rem;line-height:1.17}}
+  </style>
+<script>
+    setTimeout(function () {
+      const loadingElement = document.getElementById('loadingAnimation');
+      if (loadingElement) {
+        window.loadingAnimationStarted = new Date().getTime();
+        loadingElement.style.display = null;
+      }
+    }, 500);
+  </script>
+<div class="pt-5 text-center" id="loadingAnimation" style="display: none">
+<h1>
+Just Eat for Business
+</h1>
+<div class="loading-animation">
+</div>
+<p>
+Fetching your team lunch...
+</p>
+</div>
+</div>
+<app-root>
+</app-root>
+<script>
+// Segment analytics
+!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+}}();
+// Google analytics
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+// HubSpot analytics in AppComponent
+var _hsq = _hsq || [];
+
+
+// Zendesk Widget
+window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="citypantrysupport.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();
+
+</script>
+
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<style type="text/css">
+@media only screen and (max-width: 768px) { .zopim { display: none !important; } }
+</style>
+<script>
+  // When adding booleans to the config, be sure to append ' === "true" ' for correct typing
+  window.config = {};
+  window.config.ADDRESS_AUTOCOMPLETE_ENABLED = "false" === "true";
+  window.config.API_BASE = "https://app.business.just-eat.co.uk/api";
+  window.config.IDENTITY_BASE = "https://id.business.just-eat.co.uk/realms/jefb";
+  window.config.LOSTBAR_API_BASE = "https://app.business.just-eat.co.uk/lostbar";
+  window.config.BRAINTREE_ENV = "production";
+  window.config.EATER_FEEDBACK_ENABLED = "false" === "true";
+  window.config.COOKIE_YES_SLUG = "98871cab5b54d72b2814e093";
+  window.config.ENV = "prod";
+  window.config.GIT_SHORT_SHA = "5e4d19d";
+  window.config.GOOGLE_ANALYTICS_ID = "UA-44429548-1";
+  window.config.GOOGLE_OPTIMIZE_ENABLED = "true" === "true";
+  window.config.GOOGLE_OPTIMIZE_ID = "GTM-KLHTJBR";
+  window.config.HUBSPOT_ENABLED = "true" === "true";
+  window.config.HUBSPOT_ID = "481217";
+  window.config.INCLUDE_ZENDESK = "true" === "true";
+  window.config.LATEST_ORDER_HOURS = "21";
+  window.config.SAME_DAY_DELIVERY_ENABLED = "true" === "true";
+  window.config.SEGMENT_ID = "vAnR8zSFWvy7DM3iFIZziRRb1YMSnn9u";
+  window.config.SENTRY_ENABLED = "true" === "true";
+  window.config.SSO_ENABLED = "true" === "true";
+  window.config.STRIPE_PUBLIC_KEY = "pk_live_jkBiGZk8G5IpUH757YfSNEuS";
+  window.config.VERSION = "5e4d19d";
+  // ALLOK - used for healthcheck
+</script>
+<script src="/menus/runtime.d37fd8c50372edfbc7c2.js" defer></script><script src="/menus/polyfills.9354f92b2966364397be.js" defer></script><script src="/menus/scripts.6e29bd322c204c3aeefe.js" defer></script><script src="/menus/main.6063cc462fa4fee23038.js" defer></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7d72d30b9a74179a","version":"2023.4.0","b":1,"token":"f02365aad37f4f61a8080421603e2561","si":100}' crossorigin="anonymous"></script>
+</body></html>

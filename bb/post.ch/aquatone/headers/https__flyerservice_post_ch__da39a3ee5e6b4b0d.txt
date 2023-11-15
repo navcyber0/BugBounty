@@ -1,0 +1,14 @@
+403 Forbidden
+Cache-Control: no-cache, no-store, must-revalidate
+Upgrade: h2,h2c
+X-Xss-Protection: 1; mode=block
+Date: Fri, 23 Jun 2023 15:23:27 GMT
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' 	*.l.facebook.com *.facebook.com *.facebook.net 	*.hotjar.com *.hotjar.io wss://*.hotjar.com		*.google-analytics.com *.analytics.google.com *.googletagmanager.com *.google.com *.google.ch *.googleadservices.com *.fls.doubleclick.net *.g.doubleclick.net 	*.gstatic.com maps.googleapis.com fonts.googleapis.com 	*.tiqcdn.com *.tealiumiq.com 	*.post.ch proofr.co s3.eu-central-1.wasabisys.com *.bing.com *.ipify.org *.static.cloud.coveo.com; img-src 'self' 	*.google-analytics.com *.analytics.google.com *.googletagmanager.com *.g.doubleclick.net *.google.com *.google.ch *.fls.doubleclick.net ad.doubleclick.net ade.googlesyndication.com *.googleadservices.com ssl.gstatic.com www.gstatic.com *.l.facebook.com *.facebook.com *.facebook.net *.hotjar.com *.hotjar.io *.bing.com *.tiqcdn.com *.tealiumiq.com *.ipify.org *.gstatic.com *.static.cloud.coveo.com data: https:;
+Content-Type: text/html; charset=UTF-8
+Pragma: no-cache
+X-Content-Type-Options: nosniff nosniff
+X-Frame-Options: SAMEORIGIN, SAMEORIGIN
+Server: Apache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 max-age=3600
+Retry-Count: 0

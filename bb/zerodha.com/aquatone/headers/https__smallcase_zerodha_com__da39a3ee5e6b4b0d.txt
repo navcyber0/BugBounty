@@ -1,0 +1,17 @@
+200 OK
+Date: Tue, 28 Mar 2023 08:22:35 GMT
+Cache-Control: no-cache
+Vary: Accept-Encoding
+Via: 1.1 bc70ec22b8cbf0b7bfa4fdf4685d09aa.cloudfront.net (CloudFront)
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Retry-Count: 0
+X-Cache: Hit from cloudfront
+X-Amz-Cf-Id: 93fxTr59xXkO-3z6dK9pjyk29Z0goUkQ_IHUZuZTBccPjy3gUebIhQ==
+Server: AmazonS3
+Etag: W/"953a814b9877715ee50d585ca9a6b4c1"
+X-Amz-Cf-Pop: MAA51-P2
+Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://www.googletagmanager.com https://cdn.mxpnl.com https://www.google-analytics.com https://www.googleadservices.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://chat.fuguchat.com; script-src-elem 'self' https://www.googletagmanager.com https://cdn.mxpnl.com https://www.google-analytics.com https://www.googleadservices.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://chat.fuguchat.com; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.smallcase.com https://sentry.smallcase.com https://config.smallcase.com https://cms.smallcase.com https://www.google-analytics.com; child-src 'none'; font-src data: https://assets.smallcase.com; img-src 'self' data: https://assets.smallcase.com https://cimg.smallcase.com; media-src https://assets.smallcase.com; object-src 'none'; worker-src 'none'; script-src-attr 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://sentry.smallcase.com/api/16/security/?sentry_key=aeb9400f194b4c61926366dae1e607c9
+Last-Modified: Thu, 23 Mar 2023 13:37:19 GMT
+Age: 20400
+X-Content-Type-Options: nosniff
+Content-Type: text/html

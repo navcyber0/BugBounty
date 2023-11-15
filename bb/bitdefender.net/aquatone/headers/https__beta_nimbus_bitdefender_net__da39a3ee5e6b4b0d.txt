@@ -1,0 +1,8 @@
+400 Bad Request
+Server: nginx
+Date: Wed, 22 Mar 2023 14:57:02 GMT
+Content-Type: text/plain
+Content-Length: 11
+Retry-Count: 0
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Headers: origin, content-type, accept, x-nimbus-clientid

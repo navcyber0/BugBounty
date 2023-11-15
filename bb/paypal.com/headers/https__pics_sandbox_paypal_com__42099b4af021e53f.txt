@@ -1,0 +1,14 @@
+404 Not Found
+Content-Length: 0
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Paypal-Debug-Id: f4359722cc3f7
+Date: Wed, 14 Jun 2023 13:51:39 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Cache: MISS, MISS
+X-Timer: S1686750699.164895,VS0,VE781
+Set-Cookie: x-cdn=fastly:HYD; Domain=paypal.com; Path=/; Secure
+Via: 1.1 varnish, 1.1 varnish
+X-Served-By: cache-qpg1235-QPG, cache-hyd1100027-HYD
+X-Cache-Hits: 0, 0
+Retry-Count: 0
+Accept-Ranges: bytes

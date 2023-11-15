@@ -1,0 +1,218 @@
+ <!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10.000" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="cache-control" content="no-cache,no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta name='mswebdialog-title' content='Connecting to Bitdefender' />
+<title>Error</title>
+<script type="f31cc5c24c20377034342982-text/javascript">
+//<![CDATA[
+function Errors(){this.reportSubject = 'Error Report'; }
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="/adfs/portal/css/style.css?id=DBC0B4741D4217A138377E7BCC747D0D30B93B979DC99146E4C4016785BA8C42" /><style>.illustrationClass {background-image:url(/adfs/portal/illustration/illustration.png?id=4BA568164396B0237FCB4EACE437B13DEE537A3406DEB137C4328F752AFF665D);}</style>
+</head>
+<body dir="ltr" class="body">
+<div id="noScript" style="position:static; width:100%; height:100%; z-index:100">
+<h1>JavaScript required</h1>
+<p>JavaScript is required. This web browser does not support JavaScript or JavaScript in this web browser is not enabled.</p>
+<p>To find out if your web browser supports JavaScript or to enable JavaScript, see web browser help.</p>
+</div>
+<script type="f31cc5c24c20377034342982-text/javascript" language="JavaScript">
+         document.getElementById("noScript").style.display = "none";
+    </script>
+<div id="fullPage">
+<div id="brandingWrapper" class="float">
+<div id="branding"></div>
+</div>
+<div id="contentWrapper" class="float">
+<div id="content">
+<div id="header">
+<img class="logoImage" src="/adfs/portal/logo/logo.png?id=3141DCAA4441913536B8B23D14629A9FCD3542B75D8D13FF94EB751FFB41B678" alt="Bitdefender" />
+</div>
+<div id="workArea">
+<div id="authArea" class="groupMargin">
+<div id="errorArea">
+<div class="groupMargin bigText">
+An error occurred
+</div>
+<div id="errorMessage" class="groupMargin">
+An error occurred. Contact your administrator for more information.
+</div>
+<div style="display:none">
+<a class="actionLink" href="#" id="ReportByEmail" onclick="if (!window.__cfRLUnblockHandlers) return false; ERR.report(''); return false;" data-cf-modified-f31cc5c24c20377034342982-=""></a>
+</div>
+<a class="actionLink" href="#" id="errorDetailsLink" onclick="if (!window.__cfRLUnblockHandlers) return false; ERR.showDetails(); return false;" data-cf-modified-f31cc5c24c20377034342982-="">Error details</a>
+<ul id="errorDetails" class="indent block smallText" style="display:none">
+<li id='activityID'>Activity ID: 00000000-0000-0000-b600-0080010000f5</li>
+<li>Error time: Thu, 23 Mar 2023 15:00:53 GMT</li>
+</ul>
+<script type="f31cc5c24c20377034342982-text/javascript">
+            //<![CDATA[
+            function ERR() {
+            }
+            ERR.report = function (email) {
+                var errors = new Errors();
+
+                var body_message = '';
+                var activityID = document.getElementById('activityID').innerText;
+                var details = document.getElementById('errorDetails');
+                if (details && details.childElementCount > 0)
+                {
+                    var children = details.childNodes;
+                    for (var i = 0; i < children.length; i++) {
+                        if (children[i].innerText && children[i].innerText != '') {
+                            body_message = body_message + children[i].innerText + "%0A";
+                        }
+                    };
+                }
+                var mailto_link = 'mailto:' + email + '?subject=' + errors.reportSubject + " " + activityID + '&body=' + body_message;
+                window.location = mailto_link;
+            }
+            ERR.showDetails = function () {
+                var node = document.getElementById('errorDetails');
+                if (node) {
+                    node.style.display = (node.style.display == 'none') ? '' : 'none';
+                }
+            }
+            ERR.addDetail = function (text) {
+                var detail = document.createElement('li');
+                detail.innerText = text;
+                return detail;
+            }
+            ERR.addAgentDetails = function () {
+                var node = document.getElementById('errorDetails');
+                node.insertAdjacentElement('beforeEnd', ERR.addDetail('Cookie: ' + (navigator.cookieEnabled ? 'enabled' : 'disabled')));
+                node.insertAdjacentElement('beforeEnd', ERR.addDetail('User agent string: ' + navigator.userAgent));
+            }();
+        //]]>
+        </script>
+</div>
+</div>
+</div>
+<div id="footerPlaceholder"></div>
+</div>
+<div id="footer">
+<div id="footerLinks" class="floatReverse">
+<div><span id="copyright">&#169; 2013 Microsoft</span><a id="privacy" class="pageLink" href="http://www.bitdefender.com/site/view/privacy_policy.html">Privacy Policy</a><a id="helpDesk" class="pageLink" href="http://www.bitdefender.com/support/">Support</a></div>
+</div>
+</div>
+</div>
+</div>
+<script type="f31cc5c24c20377034342982-text/javascript">
+//<![CDATA[
+// Copyright (c) Microsoft Corporation.  All rights reserved.
+
+// This file contains several workarounds on inconsistent browser behaviors that administrators may customize.
+"use strict";
+
+// iPhone email friendly keyboard does not include "\" key, use regular keyboard instead.
+// Note change input type does not work on all versions of all browsers.
+if (navigator.userAgent.match(/iPhone/i) != null) {
+    var emails = document.querySelectorAll("input[type='email']");
+    if (emails) {
+        for (var i = 0; i < emails.length; i++) {
+            emails[i].type = 'text';
+        }
+    }
+}
+
+//username hint
+var userNameInput = document.getElementById(Login.userNameInput);
+	if(userNameInput){
+		userNameInput.setAttribute('placeholder','username@bitdefender.biz');
+}
+
+// !!!!!!!!!!!!!!! START: ADDED BY ABADULESCU - DISABLE IdpInitiatedSignonPage - VA-2154 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+var checkidp_OtherRpPanel = document.getElementById('idp_OtherRpPanel');
+if ( checkidp_OtherRpPanel ) {
+checkidp_OtherRpPanel.style.display = 'none';
+}
+// !!!!!!!!!!!!!!! STOP: ADDED BY ABADULESCU - DISABLE IdpInitiatedSignonPage - VA-2154 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// In the CSS file we set the ms-viewport to be consistent with the device dimensions, 
+// which is necessary for correct functionality of immersive IE. 
+// However, for Windows 8 phone we need to reset the ms-viewport's dimension to its original
+// values (auto), otherwise the viewport dimensions will be wrong for Windows 8 phone.
+// Windows 8 phone has agent string 'IEMobile 10.0'
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement("style");
+    msViewportStyle.appendChild(
+        document.createTextNode(
+            "@-ms-viewport{width:auto!important}"
+        )
+    );
+    msViewportStyle.appendChild(
+        document.createTextNode(
+            "@-ms-viewport{height:auto!important}"
+        )
+    );
+    document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+}
+
+// If the innerWidth is defined, use it as the viewport width.
+if (window.innerWidth && window.outerWidth && window.innerWidth !== window.outerWidth) {
+    var viewport = document.querySelector("meta[name=viewport]");
+    viewport.setAttribute('content', 'width=' + window.innerWidth + 'px; initial-scale=1.0; maximum-scale=1.0');
+}
+
+// Gets the current style of a specific property for a specific element.
+function getStyle(element, styleProp) {
+    var propStyle = null;
+
+    if (element && element.currentStyle) {
+        propStyle = element.currentStyle[styleProp];
+    }
+    else if (element && window.getComputedStyle) {
+        propStyle = document.defaultView.getComputedStyle(element, null).getPropertyValue(styleProp);
+    }
+
+    return propStyle;
+}
+
+// The script below is used for downloading the illustration image 
+// only when the branding is displaying. This script work together
+// with the code in PageBase.cs that sets the html inline style
+// containing the class 'illustrationClass' with the background image.
+var computeLoadIllustration = function () {
+    var branding = document.getElementById("branding");
+    var brandingDisplay = getStyle(branding, "display");
+    var brandingWrapperDisplay = getStyle(document.getElementById("brandingWrapper"), "display");
+
+    if (brandingDisplay && brandingDisplay !== "none" &&
+        brandingWrapperDisplay && brandingWrapperDisplay !== "none") {
+        var newClass = "illustrationClass";
+
+        if (branding.classList && branding.classList.add) {
+            branding.classList.add(newClass);
+        } else if (branding.className !== undefined) {
+            branding.className += " " + newClass;
+        }
+        if (window.removeEventListener) {
+            window.removeEventListener('load', computeLoadIllustration, false);
+            window.removeEventListener('resize', computeLoadIllustration, false);
+        }
+        else if (window.detachEvent) {
+            window.detachEvent('onload', computeLoadIllustration);
+            window.detachEvent('onresize', computeLoadIllustration);
+        }
+    }
+};
+
+if (window.addEventListener) {
+    window.addEventListener('resize', computeLoadIllustration, false);
+    window.addEventListener('load', computeLoadIllustration, false);
+}
+else if (window.attachEvent) {
+    window.attachEvent('onresize', computeLoadIllustration);
+    window.attachEvent('onload', computeLoadIllustration);
+}
+
+//]]>
+</script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="f31cc5c24c20377034342982-|49" defer=""></script></body>
+</html>

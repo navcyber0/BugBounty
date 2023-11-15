@@ -1,0 +1,17 @@
+200 OK
+Pragma: no-cache
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Referrer-Policy: no-referrer
+X-Content-Type-Options: nosniff
+X-Akamai-Transformed: 9 12308 0 pmb=mTOE,1
+Retry-Count: 0
+Set-Cookie: PHPSESSID=q2qm1b1ojsn340e7552uas12v0; path=/;HttpOnly;Secure;HttpOnly;Secure
+Server: Apache
+X-Frame-Options: deny, SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Content-Type: text/html; charset=UTF-8
+Date: Thu, 30 Mar 2023 07:32:35 GMT
+Vary: Accept-Encoding,User-Agent
+X-Permitted-Cross-Domain-Policies: none

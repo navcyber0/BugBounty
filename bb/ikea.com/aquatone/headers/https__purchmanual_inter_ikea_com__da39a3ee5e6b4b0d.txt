@@ -1,0 +1,14 @@
+403 Forbidden
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Length: 42
+X-Amzn-Requestid: 6555826c-04a6-4d9b-b3f6-b905cb74dc1c
+X-Amzn-Errortype: MissingAuthenticationTokenException
+X-Amz-Apigw-Id: Ifh2VFJLFiAFiww=
+Retry-Count: 0
+X-Ua-Compatible: IE=edge
+Content-Type: application/json
+Date: Sun, 23 Jul 2023 01:05:57 GMT
+Strict-Transport-Security: max-age=15768000
+Server: IKEA Server
+X-Xss-Protection: 1; mode=block

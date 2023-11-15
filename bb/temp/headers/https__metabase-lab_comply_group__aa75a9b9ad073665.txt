@@ -1,0 +1,16 @@
+403 Forbidden
+Retry-Count: 0
+Last-Modified: Sun, 2 Apr 2023 07:32:03 +1000
+X-Permitted-Cross-Domain-Policies: none
+Content-Security-Policy: default-src 'none'; script-src 'self' 'unsafe-eval' https://maps.google.com https://apis.google.com https://*.googleapis.com *.gstatic.com    'sha256-lMAh4yjVuDkQ9NqkK4H+YHUga+anpFs5JAuj/uZh0Rs=' 'sha256-ib2/2v5zC6gGM6Ety7iYgBUvpy/caRX9xV/pzzV7hf0=' 'sha256-JJa56hyDfUbgNfq+0nq6Qs866JKgZ/+qCq2pkDJED8k='; child-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline'; font-src 'self' ; img-src * 'self' data:; connect-src 'self' metabase.us10.list-manage.com   ; manifest-src 'self';  frame-ancestors 'none';
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Content-Type: text/plain
+Server: nginx/1.14.0 (Ubuntu)
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=31536000
+Date: Sat, 01 Apr 2023 21:32:03 GMT
+Content-Length: 38
+X-Xss-Protection: 1; mode=block
+Set-Cookie: metabase.DEVICE=595a8ec6-9468-4f98-9aaf-d043c4aae72f;HttpOnly;Path=/;Expires=Thu, 2 Apr 2043 07:32:03 +1100;SameSite=None;Secure
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate
+X-Content-Type-Options: nosniff

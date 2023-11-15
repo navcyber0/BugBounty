@@ -1,0 +1,13 @@
+200 OK
+Content-Type: text/html; charset=UTF-8
+Accept-Ranges: bytes
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'unsafe-inline' 'unsafe-eval' 'self' https://*.post.ch;
+Retry-Count: 0
+Date: Fri, 23 Jun 2023 15:18:00 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains max-age=63072000
+Content-Length: 6537
+Etag: W/"6537-1687418043944"
+Last-Modified: Thu, 22 Jun 2023 07:14:03 GMT
+X-Xss-Protection: 1; mode=block
+Server: unknown

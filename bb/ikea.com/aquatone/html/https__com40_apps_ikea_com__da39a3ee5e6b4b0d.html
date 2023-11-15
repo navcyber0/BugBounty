@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+  <html lang="en" >
+  <head>
+        <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+    <meta name="robots" content="noindex, nofollow" />
+    
+    
+    <link rel="stylesheet" href="https://cdn.auth0.com/ulp/react-components/1.76.1/css/main.cdn.min.css" />
+    <style id="custom-styles-container">
+      
+        
+
+
+
+
+        
+          :root {
+    --primary-color: #fbd914;
+  }
+        
+      
+
+        
+          :root {
+    --button-font-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --secondary-button-border-color: #c9cace;
+    --social-button-border-color: #c9cace;
+    --radio-button-border-color: #c9cace;
+  }
+        
+      
+
+        
+          :root {
+    --secondary-button-text-color: #1e212a;
+  }
+        
+      
+
+        
+          :root {
+    --link-color: #0058ab;
+  }
+        
+      
+
+        
+          :root {
+    --title-font-color: #1e212a;
+  }
+        
+      
+
+        
+          :root {
+    --font-default-color: #1e212a;
+  }
+        
+      
+
+        
+          :root {
+    --widget-background-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --box-border-color: #c9cace;
+  }
+        
+      
+
+        
+          :root {
+    --font-light-color: #65676e;
+  }
+        
+      
+
+        
+          :root {
+    --input-text-color: #000000;
+  }
+        
+      
+
+        
+          :root {
+    --input-border-color: #c9cace;
+    --border-default-color: #c9cace;
+  }
+        
+      
+
+        
+          :root {
+    --input-background-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --icon-default-color: #65676e;
+  }
+        
+      
+
+        
+          :root {
+    --error-color: #d03c38;
+    --error-text-color: #ffffff;
+  }
+        
+      
+
+        
+          :root {
+    --success-color: #13a688;
+  }
+        
+      
+
+        
+          :root {
+    --base-focus-color: #0058ab;
+    --transparency-focus-color: rgba(0,88,171, 0.15);
+  }
+        
+      
+
+        
+          :root {
+    --base-hover-color: #000000;
+    --transparency-hover-color: rgba(0,0,0, var(--hover-transparency-value));
+  }
+        
+      
+
+
+
+
+        
+          
+        
+      
+
+        
+          html, :root {
+    font-size: 16px;
+    --default-font-size: 16px;
+  }
+        
+      
+
+        
+          body {
+    --title-font-size: 1.5rem;
+    --title-font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .cb47b1075 {
+    font-size: 0.875rem;
+    font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .c7bd5e6dd {
+    font-size: 0.875rem;
+    font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .c3768468a, .c7e8b6319 {
+    font-size: 1rem;
+    font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .c5ee62a5a {
+    font-size: 1rem;
+    font-weight: var(--font-default-weight);
+  }
+        
+      
+
+        
+          .cbedbe5ed, .c8eae5860, [id^='ulp-container-'] a {
+    font-size: 0.875rem;
+    font-weight: var(--font-bold-weight) !important;
+  }
+        
+      
+
+        
+          
+        
+      
+
+
+
+
+        
+          :root {
+    --button-border-width: 1px;
+    --social-button-border-width: 1px;
+    --radio-border-width: 1px;
+  }
+        
+      
+
+        
+          body {
+    --button-border-radius: 3px;
+    --radio-border-radius: 3px;
+  }
+        
+      
+
+        
+          :root {
+    --input-border-width: 1px;
+  }
+        
+      
+
+        
+          body {
+    --input-border-radius: 3px;
+  }
+        
+      
+
+        
+          :root {
+    --border-radius-outer: 5px;
+  }
+        
+      
+
+        
+          :root {
+    --box-border-width: 0px;
+  }
+        
+      
+
+        
+          
+        
+      
+
+
+
+
+        
+          
+    body {
+      --logo-alignment: 0 auto;
+    }
+  
+        
+      
+
+        
+          
+    .ccec4e90c {
+      content: url('https://adfstou.blob.core.windows.net/auth0/IKEA_2018_h58.png');
+    }
+  
+        
+      
+
+        
+          body {
+    --logo-height: 52px;
+  }
+  .ccec4e90c {
+    height: var(--logo-height);
+  }
+  
+        
+      
+
+        
+          
+    body {
+      --header-alignment: center;
+    }
+  
+        
+      
+
+        
+          .cb6ef9106 {
+    display: flex;
+    flex-direction: column;
+  }
+  .cb6ef9106 form, .cb6ef9106 > .ca5ac6fbf {
+    order: 3;
+  }
+  .cb6ef9106 ._alternate-action {
+    order: 4
+  }
+  .cb6ef9106 > .ca017d3e4 {
+    order: 2;
+    margin-bottom: 24px;
+  }
+  .cb6ef9106 .c1c614334 {
+    order: 1;
+    margin-top: 0;
+  }
+        
+      
+
+
+
+
+        
+          .ca82dd33d {
+    --page-background-alignment: center;
+  }
+        
+      
+
+        
+          body {
+    --page-background-color: #0058ab;
+  }
+        
+      
+
+        
+          
+        
+      
+
+
+
+
+      
+    </style>
+    <style>
+      /* By default, hide features for javascript-disabled browsing */
+      /* We use !important to override any css with higher specificity */
+      /* It is also overriden by the styles in <noscript> in the header file */
+      .no-js {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+      }
+    </style>
+    <noscript>
+      <style>
+        /* We use !important to override the default for js enabled */
+        /* If the display should be other than block, it should be defined specifically here */
+        .js-required { display: none !important; }
+        .no-js {
+          clip: auto;
+          clip-path: none;
+          height: auto;
+          overflow: auto;
+          position: static;
+          white-space: normal;
+          width: var(--prompt-width);
+        }
+      </style>
+    </noscript>
+    
+    <title>Log in | IKEA Web Application Delivery</title>
+  </head>
+  
+  <body>
+    <div class="c6708bd19 ca82dd33d">
+  
+<main class="cc9f0952c login-id">
+  <section class="c22d42f7e _prompt-box-outer ce1ecc585">
+    <div class="c63580e18 cc29cdfb1">
+      
+    
+      
+    
+      <div class="c1f4727c4">
+        <header class="cc293e231 c818f6509">
+          <div title="IKEA" id="custom-prompt-logo" style="width: auto !important; height: 60px !important; position: static !important; margin: auto !important; padding: 0 !important; background-color: transparent !important; background-position: center !important; background-size: contain !important; background-repeat: no-repeat !important"></div>
+        
+          <img class="ccec4e90c c3a092662" id="prompt-logo-center" src="https://adfstou.blob.core.windows.net/auth0/IKEA_2018_h58.png" alt="IKEA" />
+        
+          
+            <h1 class="c7c593d5e cc39cb39e">Welcome</h1>
+          
+        
+          <div class="cb47b1075 cb8030357">
+            <p class="cc62200eb c431e9ec4">Log in to IKEA to continue to IKEA Web Application Delivery.</p>
+          </div>
+        </header>
+      
+        <div class="c7bd5e6dd cb6ef9106">
+          
+        
+          
+            <div class="ce1e7f1a1 ca5ac6fbf">
+              <div class="c9e0a5e8d">
+                
+              
+                <form method="POST" class="c5b634b9f _form-login-id" data-form-primary="true">
+                  <input type="hidden" name="state" value="hKFo2SBIMmlhOXZzUkdQY2JIejdlWG1HTmk3dVNUX1JKci0tT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIEdPRC1iNlJJWkxtNU5rcXFNTUlqMFVfWDlfVUJQb2Zuo2NpZNkgbWFmT3VpOTFjZXNLYWliamQ4czhHanhhNjNHTnJMdW8" />
+                
+                  
+                
+                  <div class="ce1e7f1a1 ca5ac6fbf">
+                    <div class="c9e0a5e8d">
+                      
+                    
+                      
+                        <div class="input-wrapper _input-wrapper">
+                          <div class="c7ab7dc9b c0019dde8 text cf3b89ce0" data-action-text="" data-alternate-action-text="">
+                            <label class="c5ee62a5a no-js c7e9e752c c79eca7ed" for="username">
+                              Email address
+                            </label>
+                          
+                            <input class="input cbb249144 c3abbaa84" inputMode="email" name="username" id="username" type="text" value="" required autoComplete="username" autoCapitalize="none" spellCheck="false" autoFocus />
+                          
+                            <div class="c5ee62a5a js-required c7e9e752c c79eca7ed" data-dynamic-label-for="username" aria-hidden="true">
+                              Email address
+                            </div>
+                          </div>
+                        
+                          
+                        </div>
+                      
+                    
+                      
+                    </div>
+                  </div>
+                
+                  
+                
+                  <input class="hide" type="password" autoComplete="off" tabindex="-1" aria-hidden="true" />
+                
+                  <input type="hidden" id="js-available" name="js-available" value="false" />
+                
+                  <input type="hidden" id="webauthn-available" name="webauthn-available" value="false" />
+                
+                  <input type="hidden" id="is-brave" name="is-brave" value="false" />
+                
+                  <input type="hidden" id="webauthn-platform-available" name="webauthn-platform-available" value="false" />
+                
+                  <div class="c5cafd14f">
+                    
+                      <button type="submit" name="action" value="default" class="c3768468a cd7c8bf9c c4a5884bf c127814b1 _button-login-id" data-action-button-primary="true">Continue</button>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          
+        
+          
+        
+          
+            <div class="ce34512d1 ca017d3e4">
+              <span>Or</span>
+            </div>
+          
+        
+          
+        
+          
+            
+          
+            <div class="c652144b2 c1c614334">
+              
+                <form method="post" data-provider="waad" class="c7e8b6319 c1d77cc89 c4bda0840" data-form-secondary="true">
+                  <input type="hidden" name="state" value="hKFo2SBIMmlhOXZzUkdQY2JIejdlWG1HTmk3dVNUX1JKci0tT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIEdPRC1iNlJJWkxtNU5rcXFNTUlqMFVfWDlfVUJQb2Zuo2NpZNkgbWFmT3VpOTFjZXNLYWliamQ4czhHanhhNjNHTnJMdW8" />
+                
+                  <input type="hidden" name="connection" value="ikea-waad" />
+                
+                  <button type="submit" class="c9896a921 c83665ce2 c4d5897a7" data-provider="waad" data-action-button-secondary="true">
+                    
+                      <span class="caad507d1 c2f30129e" data-provider="waad"></span>
+                    
+                  
+                    <span class="cba09aff6">Ingka</span>
+                  </button>
+                </form>
+              
+                <form method="post" data-provider="waad" class="c7e8b6319 c1d77cc89 c4bda0840" data-form-secondary="true">
+                  <input type="hidden" name="state" value="hKFo2SBIMmlhOXZzUkdQY2JIejdlWG1HTmk3dVNUX1JKci0tT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIEdPRC1iNlJJWkxtNU5rcXFNTUlqMFVfWDlfVUJQb2Zuo2NpZNkgbWFmT3VpOTFjZXNLYWliamQ4czhHanhhNjNHTnJMdW8" />
+                
+                  <input type="hidden" name="connection" value="interikea-waad" />
+                
+                  <button type="submit" class="c9896a921 c83665ce2 c4d5897a7" data-provider="waad" data-action-button-secondary="true">
+                    
+                      <span class="caad507d1 c2f30129e" data-provider="waad"></span>
+                    
+                  
+                    <span class="cba09aff6">Inter IKEA</span>
+                  </button>
+                </form>
+              
+                <form method="post" data-provider="samlp" class="c7e8b6319 c1d77cc89 c61bcaa8c" data-form-secondary="true">
+                  <input type="hidden" name="state" value="hKFo2SBIMmlhOXZzUkdQY2JIejdlWG1HTmk3dVNUX1JKci0tT6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIEdPRC1iNlJJWkxtNU5rcXFNTUlqMFVfWDlfVUJQb2Zuo2NpZNkgbWFmT3VpOTFjZXNLYWliamQ4czhHanhhNjNHTnJMdW8" />
+                
+                  <input type="hidden" name="connection" value="IKEA-ADFS-NIR" />
+                
+                  <button type="submit" class="c9896a921 c83665ce2 c0f2dfff0" data-provider="samlp" data-action-button-secondary="true">
+                    
+                      <span class="caad507d1 c2f30129e" data-provider="samlp"></span>
+                    
+                  
+                    <span class="cba09aff6">Non Ingka Retailer or Supplier</span>
+                  </button>
+                </form>
+              
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  
+    
+  </section>
+</main>
+<script id="client-scripts" type="text/javascript">
+!function(){var e,f,d,p,v,t,n={exports:function(n,r){var a={};function i(e,t,n,a){return e.addEventListener(t,n,a)}function o(e){return"string"==typeof e}function c(e,t){return e.getAttribute(t)}function s(e,t,n){return e.setAttribute(t,n)}return{addClass:function(e,t){if(e.classList)return e.classList.add(t);var n=e.className.split(" ");-1===n.indexOf(t)&&(n.push(t),e.className=n.join(" "))},toggleClass:function(e,t){if(e.classList)return e.classList.toggle(t);var n=e.className.split(" "),a=n.indexOf(t);-1!==a?n.splice(a,1):n.push(t),e.className=n.join(" ")},hasClass:function(e,t){return e.classList?e.classList.contains(t):-1!==e.className.split(" ").indexOf(t)},addClickListener:function(e,t){return i(e,"click",t)},addEventListener:i,getAttribute:c,getElementById:function(e){return r.getElementById(e)},getParent:function(e){return e.parentNode},isString:o,loadScript:function(e,t){var n=r.createElement("script");for(var a in t)n[a]=t[a];n.src=e,r.body.appendChild(n)},poll:function(e){var i=e.interval||2e3,t=e.url||n.location.href,o=e.condition||function(){return!0},c=e.onSuccess||function(){},s=e.onError||function(){};return setTimeout(function a(){var r=new XMLHttpRequest;return r.open("GET",t),r.setRequestHeader("Accept","application/json"),r.onload=function(){if(200===r.status){var e="application/json"===r.getResponseHeader("Content-Type").split(";")[0]?JSON.parse(r.responseText):r.responseText;return o(e)?c():setTimeout(a,i)}if(429!==r.status)return s({status:r.status,responseText:r.responseText});var t=1e3*Number.parseInt(r.getResponseHeader("X-RateLimit-Reset")),n=t-(new Date).getTime();return setTimeout(a,i<n?n:i)},r.send()},i)},querySelector:function(e,t){return o(e)?r.querySelector(e):e.querySelector(t)},querySelectorAll:function(e,t){var n=o(e)?r.querySelectorAll(e):e.querySelectorAll(t);return Array.prototype.slice.call(n)},removeClass:function(e,t){if(e.classList)return e.classList.remove(t);var n=e.className.split(" "),a=n.indexOf(t);-1!==a&&(n.splice(a,1),e.className=n.join(" "))},removeElement:function(e){return e.remove()},setAttribute:s,removeAttribute:function(e,t){return e.removeAttribute(t)},swapAttributes:function(e,t,n){var a=c(e,t),r=c(e,n);s(e,n,a),s(e,t,r)},setGlobalFlag:function(e,t){a[e]=!!t},getGlobalFlag:function(e){return!!a[e]},preventFormSubmit:function(e){e.stopPropagation(),e.preventDefault()},matchMedia:function(e){return"function"!=typeof n.matchMedia&&n.matchMedia(e).matches},dispatchEvent:function(e,t,n){var a;"function"!=typeof Event?(a=r.createEvent("Event")).initCustomEvent(t,n,!1):a=new Event(t,{bubbles:n}),e.dispatchEvent(a)},setTimeout:setTimeout,timeoutPromise:function(e,r){return new Promise(function(t,n){var a=setTimeout(function(){n(new Error("timeoutPromise: promise timed out"))},e);r.then(function(e){clearTimeout(a),t(e)},function(e){clearTimeout(a),n(e)})})},createMutationObserver:function(e){return"undefined"==typeof MutationObserver?null:new MutationObserver(e)}}}}.exports(window,document),a={exports:function(e,t){for(var i="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_",l=new Uint8Array(256),o=0;o<i.length;o++)l[i.charCodeAt(o)]=o;function c(e){var t,n=new Uint8Array(e),a=n.length,r="";for(t=0;t<a;t+=3)r+=i[n[t]>>2],r+=i[(3&n[t])<<4|n[t+1]>>4],r+=i[(15&n[t+1])<<2|n[t+2]>>6],r+=i[63&n[t+2]];return a%3==2?r=r.substring(0,r.length-1):a%3==1&&(r=r.substring(0,r.length-2)),r}function n(){return navigator&&navigator.credentials&&"undefined"!=typeof PublicKeyCredential}return{base64URLEncode:c,base64URLDecode:function(e){var t,n,a,r,i,o=.75*e.length,c=e.length,s=0,u=new Uint8Array(o);for(t=0;t<c;t+=4)n=l[e.charCodeAt(t)],a=l[e.charCodeAt(t+1)],r=l[e.charCodeAt(t+2)],i=l[e.charCodeAt(t+3)],u[s++]=n<<2|a>>4,u[s++]=(15&a)<<4|r>>2,u[s++]=(3&r)<<6|63&i;return u.buffer},publicKeyCredentialToJSON:function e(t){if(t instanceof Array){var n=[];for(o=0;o<t.length;o+=1)n.push(e(t[o]));return n}if(t instanceof ArrayBuffer)return c(t);if(t instanceof Object){var a={};for(var r in t)a[r]=e(t[r]);return a}return t},str2ab:function(e){for(var t=new ArrayBuffer(e.length),n=new Uint8Array(t),a=0,r=e.length;a<r;a++)n[a]=e.charCodeAt(a);return t},isWebAuthnAvailable:n,isWebauthnPlatformAuthenticatorAvailableAsync:function(e){return n()?e(1e3,PublicKeyCredential.isUserVerifyingPlatformAuthenticatorAvailable()):Promise.resolve(!1)}}}}.exports(window,document);({exports:function(e,a,r,t){var n=e(".cc9f0952c"),i=e("#alert-trigger"),o=e(".cb24ba03c"),c=e(".cbeea3b27"),s=!1;i&&c&&n&&t(n,function(e){var t=e.target===i,n=c.contains(e.target);return t&&!s?(a(o,"show"),void(s=!0)):t&&s||s&&!n?(r(o,"show"),void(s=!1)):void 0})}}).exports(n.querySelector,n.addClass,n.removeClass,n.addClickListener),(f="recaptcha_v2",d="recaptcha_enterprise",p="hcaptcha",v="friendly_captcha",(e={}).exports=function(n,e,a,r){var i=e("div[data-captcha-sitekey]"),t=e("div[data-captcha-sitekey] input");function o(){return e(function(){switch(s()){case f:case d:return"#ulp-recaptcha";case p:return"#ulp-hcaptcha";case v:return"#ulp-friendly-captcha"}}())}function c(){return i.getAttribute("data-captcha-lang")}function s(){return i.getAttribute("data-captcha-provider")}function u(){return i.getAttribute("data-captcha-sitekey")}function l(e){return t.value=e}i&&function(){var e="captchaCallback_"+Math.floor(1000001*Math.random());window[e]=function(){delete window[e],function(){var e=function(){switch(s()){case f:return window.grecaptcha;case d:return window.grecaptcha.enterprise;case p:return window.hcaptcha;case v:return window.friendlyChallenge}}();if(s()===v)var t=new e.WidgetInstance(o(),{sitekey:u(),language:c(),doneCallback:function(e){l(e)}});else var t=e.render(o(),{sitekey:u(),"expired-callback":function(){l(""),a(i,"c0511b4a3"),e.reset(t)},callback:function(e){l(e),r(i,"c0511b4a3")}})}()};var t={async:!0,defer:!0};s()===v&&(t.onload=window[e]),n(function(e,t){switch(s()){case f:return"https://www.recaptcha.net/recaptcha/api.js?render=explicit&hl="+e+"&onload="+t;case d:return"https://www.recaptcha.net/recaptcha/enterprise.js?render=explicit&hl="+e+"&onload="+t;case p:return"https://js.hcaptcha.com/1/api.js?render=explicit&hl="+e+"&onload="+t;case v:return"https://cdn.jsdelivr.net/npm/friendly-challenge@0.9.12/widget.min.js"}}(c(),e),t)}()},e.exports)(n.loadScript,n.querySelector,n.addClass,n.removeClass),((t={}).exports=function(a,e,r,i,o,c,s,u,n,l){function f(e){var t=e.target,n=c(t);t.value||l(t,"data-autofilled")?i(n,"c1c5e48dd"):o(n,"c1c5e48dd")}function d(e){var t=e.target;"onAutoFillStart"===e.animationName&&(n(t,"data-autofilled",!0),u(e.target,"change",!0),r(t,"keyup",p,{once:!0}))}function p(e){var t=e.target;n(t,"data-autofilled","")}if(a("body._simple-labels"))return e(".c5ee62a5a.no-js").forEach(function(e){o(e,"no-js")}),void e(".c5ee62a5a.js-required").forEach(function(e){i(e,"hide")});e(".c7ab7dc9b:not(.cb03aab03):not(disabled)").forEach(function(e){i(e,"cd6d391ac");var t,n=a(e,".input");n.value&&i(e,"c1c5e48dd"),r(e,"change",f),r(n,"blur",f),r(n,"animationstart",d),t=n,s(function(){t.value&&u(t,"change",!0)},100)})},t.exports)(n.querySelector,n.querySelectorAll,n.addEventListener,n.addClass,n.removeClass,n.getParent,n.setTimeout,n.dispatchEvent,n.setAttribute,n.getAttribute),{exports:function(e,t,n,a,r,i){function o(e){var t=n("submitted");a("submitted",!0),t?r(e):"apple"===i(e.target,"data-provider")&&setTimeout(function(){a("submitted",!1)},2e3)}var c=e("form");c&&c.forEach(function(e){t(e,"submit",o)})}}.exports(n.querySelectorAll,n.addEventListener,n.getGlobalFlag,n.setGlobalFlag,n.preventFormSubmit,n.getAttribute),{exports:function(t,e,n){var a=t("form._form-detect-browser-capabilities"),r=t("main.login-id"),i=t("main.signup-with-passkeys");if(a||r||i){var o=e.isWebAuthnAvailable();t("#webauthn-available").value=o?"true":"false",t("#js-available").value="true",navigator.brave?navigator.brave.isBrave().then(function(e){t("#is-brave").value=e,c()}):c()}function c(){o?e.isWebauthnPlatformAuthenticatorAvailableAsync(n).then(function(e){t("#webauthn-platform-available").value=e?"true":"false",a&&a.submit()}).catch(function(e){t("#webauthn-platform-available").value="false",a&&a.submit()}):(t("#webauthn-platform-available").value="false",a&&a.submit())}}}.exports(n.querySelector,a,n.timeoutPromise),function(){var e={};function i(e,t,n,a){var r="user-initiated-passkey-challenge",i=t("#allow-passkeys");if(i&&i.value){var o=JSON.parse(t("#config").value),c=t(".passkey-begin-button"),s=n.isWebauthnPlatformAuthenticatorAvailableAsync(a),u=t("#username"),l=o,f=new AbortController;l.publicKey.challenge=n.base64URLDecode(l.publicKey.challenge),c&&e(c,function(e){c.disabled=!0,f.abort(r),navigator.credentials.get(l).then(function(e){var t=h(e);s.then(function(e){t.isUserVerifyingPlatformAuthenticatorAvailable=e,v(JSON.stringify(t)),d()})}).catch(function(e){p()})}),window.PublicKeyCredential&&window.PublicKeyCredential.isConditionalMediationAvailable&&window.PublicKeyCredential.isConditionalMediationAvailable().then(function(e){if(e){var t=Object.assign({},l,{mediation:"conditional",signal:f.signal});navigator.credentials.get(t).then(function(e){u.blur();var t=h(e);s.then(function(e){t.isUserVerifyingPlatformAuthenticatorAvailable=e,v(JSON.stringify(t)),d()})}).catch(function(e){e!==r&&p()})}}).catch(function(e){})}function d(){t("form._form-passkey-challenge").submit()}function p(){t("#action").value="showError",t("form._form-passkey-challenge").submit()}function v(e){t("#passkey").value=e}function h(e){var t={id:e.id,rawId:n.base64URLEncode(e.rawId),type:e.type,response:{clientDataJSON:n.base64URLEncode(e.response.clientDataJSON),authenticatorData:n.base64URLEncode(e.response.authenticatorData),signature:n.base64URLEncode(e.response.signature),userHandle:e.response.userHandle?n.base64URLEncode(e.response.userHandle):null}};return e.authenticatorAttachment&&(t.authenticatorAttachment=e.authenticatorAttachment),t}}return e.exports=function(e,t,n,a,r){return e(window,"load",function(e){i(t,n,a,r)}),{configurePasskeys:i}},e.exports}()(n.addEventListener,n.addClickListener,n.querySelector,a,n.timeoutPromise),{exports:function(t,e,n){var a=e(".passkey-hidden-ui");!a||a.length<=0||window.PublicKeyCredential&&window.PublicKeyCredential.isConditionalMediationAvailable&&window.PublicKeyCredential.isConditionalMediationAvailable().then(function(e){e?a.forEach(function(e){n(e)}):a.forEach(function(e){t(e,"passkey-hidden-ui")})}).catch(function(e){a.forEach(function(e){t(e,"passkey-hidden-ui")})})}}.exports(n.removeClass,n.querySelectorAll,n.removeElement)}();
+</script>
+    </div>
+  </body>
+</html>

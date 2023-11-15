@@ -1,0 +1,16 @@
+200 OK
+Vary: Accept-Encoding
+X-Debug-Info: eyJyZXRyaWVzIjowfQ==
+X-Nextjs-Cache: HIT
+X-Platform-Cache: HIT
+X-Platform-Processor: x4kqddkpquturdfrgbyy6k3lja
+Cache-Control: s-maxage=31536000, stale-while-revalidate
+Content-Type: text/html; charset=utf-8
+Strict-Transport-Security: max-age=0
+Retry-Count: 0
+Date: Fri, 23 Jun 2023 15:32:17 GMT
+X-Platform-Cluster: vxpinvjuxcpxy-master-7rqtwti
+X-Powered-By: Next.js
+Traceresponse: 00-176b538a162a14beb7f382f454b78386-d71a3f6043d14072-00
+Etag: "oi9renqq4fxmd"
+X-Platform-Router: pzuwx2zwkblk6byn2lqwgpgppe

@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="mainApp">
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>BBSS online</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://download.bitdefender.com/resources/images/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://download.bitdefender.com/resources/images/favicon/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://download.bitdefender.com/resources/images/favicon/favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="https://download.bitdefender.com/resources/images/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://download.bitdefender.com/resources/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://download.bitdefender.com/resources/images/favicon/favicon-16x16.png" sizes="16x16">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./src/app/app.js?v=1.2.0"></script>
+    <link rel="stylesheet" type="text/css" href="./src/app/style.css?v=1.2.0">
+</head>
+<body>
+    <div class="container pt-5" ng-controller="mainController">
+        <div class="row mt-5">
+            <div class="col-md-6 offset-md-3">
+                <div class="alert" ng-class="{'alert-secondary': status_code==='LOADING', 'alert-success': status_code==='SUCCESS', 'alert-danger': status_code!=='SUCCESS'&&status_code!=='LOADING'}" role="alert">
+                    <h4 class="alert-heading text-center">{{action_response}}</h4>
+                    <p ng-show="status_code !== 'INVALID_REDIRECT_URL'" class="text-center">{{locale.redirecting.replace('{0}', counter).replace('{1}', vendor_name)}}</p>
+                    <hr ng-show="status_code !== 'INVALID_REDIRECT_URL'">
+                    <p ng-show="status_code !== 'INVALID_REDIRECT_URL'" class="mb-0 text-center">
+                        <a ng-href="{{redirect_url}}" class="alert-link">{{locale.continue_to.replace('{0}', vendor_name)}}</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="push"></div>
+    </div>
+    <footer class="footer">
+        <p class="text-center small">Copyright © Bitdefender</p>
+    </footer>
+</body>
+</html>

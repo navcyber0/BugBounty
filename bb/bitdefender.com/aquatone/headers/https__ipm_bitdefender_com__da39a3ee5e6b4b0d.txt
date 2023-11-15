@@ -1,0 +1,24 @@
+404 Not Found
+X-Timer: S1679583579.696858,VS0,VS0,VE235
+Vary: Accept-Encoding,cf-ipcountry,x-aem-client-country,Cookie
+Date: Thu, 23 Mar 2023 14:59:38 GMT
+Referrer-Policy: no-referrer-when-downgrade
+X-Vhost: bitdefender.com
+X-Aem-Cloudflare-Geolocation: IN
+X-Cache: MISS
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31557600
+X-Served-By: cache-bom4726-BOM
+Retry-Count: 0
+X-Aem-Client-Country: IN
+Set-Cookie: cf-ipcountry=IN;path=/;Max-age=1800 affinity="4589145f991c652d"; Path=/; HttpOnly
+Content-Type: text/html;charset=utf-8
+Content-Security-Policy: upgrade-insecure-requests; frame-ancestors 'self' https://explore.bitdefender.com/;
+Expect-Ct: enforce, max-age=21600
+Age: 6985
+Accept-Ranges: bytes
+Cf-Ray: 7ac78a16b8e8321e-BOM
+X-Aem-Client-Continent: AS
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare

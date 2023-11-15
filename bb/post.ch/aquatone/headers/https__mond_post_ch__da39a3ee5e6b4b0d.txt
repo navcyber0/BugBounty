@@ -1,0 +1,11 @@
+200 OK
+Content-Length: 35
+Date: Fri, 23 Jun 2023 15:27:53 GMT
+Strict-Transport-Security: max-age=15768000
+X-Cache: Miss from cloudfront
+X-Amz-Cf-Pop: MAA50-C2
+Retry-Count: 0
+Content-Type: image/gif
+Cache-Control: no-store
+Via: 1.1 e802d5f99b153be2d10ff6bcafa22328.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: mRDyAh6UVUHAod0H7lgX1DRyYC1CS97DtCQ-52OMOxPtv5CbaAEWew==

@@ -1,0 +1,19 @@
+200 OK
+X-Srcache-Fetch: BYPASS
+Access-Control-Allow-Headers: X-Requested-With,content-type,Authorization,openToken
+Access-Control-Allow-Credentials: true
+X-Backend-Host: 0269:80
+Server: cloudflare
+Cf-Ray: 7e724075eeee1be5-BOM
+Date: Sat, 15 Jul 2023 13:11:31 GMT
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, must-revalidate
+X-Xss-Protection: 1; mode=block
+Expires: 0
+X-Frame-Options: DENY
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+X-Gateway-Host: a1fa925c6bf222dd539d7bc077f0f6b3b2afd245cc9d429a8965a43ae2a8c575e32eb2f642624214231600df6af460fb
+Cf-Cache-Status: DYNAMIC
+Content-Type: application/json;charset=UTF-8
+Retry-Count: 0
+Pragma: no-cache

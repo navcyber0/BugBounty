@@ -1,0 +1,27 @@
+200 OK
+Content-Security-Policy: frame-ancestors 'self'
+Last-Modified: Thu, 23 Mar 2023 14:59:20 GMT
+X-Lookup-Mode: normal
+X-Vanilla-Version: 2023.004
+Cache-Control: max-age=120
+Age: 11
+X-App: 680ace1183a653f99732197bd52508515a83b915/cl50074
+X-Xss-Protection: 0
+X-Content-Type-Options: nosniff nosniff
+X-Permitted-Cross-Domain-Policies: master-only
+X-Backend: cl50074
+Server: cloudflare
+Cf-Ray: 7ac789e83e2f8513-BOM
+Expires: Thu, 23 Mar 2023 15:01:20 GMT
+X-Vanilla-Cache-Control: public, max-age=120
+Date: Thu, 23 Mar 2023 14:59:31 GMT
+Content-Type: text/html; charset=utf-8
+X-Cache-Tag: resourceType:dynamic,deviceType:desktop
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+Vary: Accept-Encoding, Cookie
+Retry-Count: 0
+P3p: CP="CAO PSA OUR"
+Link: <https://community.bitdefender.com/en/discussions/p2>; rel="next"
+X-Backend-Time: 2023-03-23T14:59:20Z
+Cf-Cache-Status: DYNAMIC

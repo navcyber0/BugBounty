@@ -1,0 +1,12 @@
+404 Not Found
+Date: Thu, 23 Mar 2023 17:56:49 GMT
+Access-Control-Expose-Headers: Authorization
+Server: nginx/1.18.0
+Vary: Accept-Encoding
+Cache-Control: no-cache, private
+Access-Control-Allow-Methods: HEAD, GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Headers: 
+Content-Type: application/json
+Retry-Count: 0
+Access-Control-Allow-Origin: *
+Strict-Transport-Security: max-age=31536000; includeSubDomains

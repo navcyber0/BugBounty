@@ -1,0 +1,10 @@
+403 Forbidden
+X-Amz-Id-2: pJLkz3bnGmmPViIjycjA3N5oyNQ9nf0ER14zSTw3n24zVoL7Igmgt2wPNWAj8QDuVOTqFjN1MQs=
+Expires: Fri, 23 Jun 2023 15:20:12 GMT
+Date: Fri, 23 Jun 2023 15:19:12 GMT
+X-Amz-Bucket-Region: us-east-1
+X-Amz-Request-Id: MS4C0JZ6T5VY84GJ
+Content-Type: application/xml
+Server: AmazonS3
+Cache-Control: max-age=60
+Retry-Count: 0

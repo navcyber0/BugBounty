@@ -1,0 +1,18 @@
+429 Too Many Requests
+X-Frame-Options: SAMEORIGIN
+Expires: Thu, 01 Jan 1970 00:00:01 GMT
+Vary: Accept-Encoding
+Server: cloudflare
+Cross-Origin-Resource-Policy: same-origin
+Strict-Transport-Security: max-age=15552000
+Alt-Svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+Date: Tue, 28 Mar 2023 14:02:41 GMT
+Content-Type: text/html; charset=UTF-8
+Cross-Origin-Opener-Policy: same-origin
+Permissions-Policy: accelerometer=(),autoplay=(),camera=(),clipboard-read=(),clipboard-write=(),fullscreen=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()
+Cache-Control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Set-Cookie: _cfuvid=anFttLgDhLtjAu4luwCWZlS7Thh8TQfjwLqSoJjk1KA-1680012161627-0-604800000; path=/; domain=.zerodha.com; HttpOnly; Secure; SameSite=None
+Cf-Ray: 7af0698a1d69f46a-BOM
+Cross-Origin-Embedder-Policy: require-corp
+Referrer-Policy: same-origin
+Retry-Count: 0

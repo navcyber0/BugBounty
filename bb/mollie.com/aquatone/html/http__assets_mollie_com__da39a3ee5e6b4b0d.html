@@ -1,0 +1,772 @@
+
+<!doctype html>
+
+    <html id="bynder" class="no-js " lang="en&#95;US">
+
+
+<head>
+	<meta charset="utf-8" />
+	
+		<link rel="shortcut icon" href="https://d8ejoa1fys2rk.cloudfront.net/5.0.5/includes/img/icons/bynder.ico" />
+		
+		<title>Mollie Brand Portal</title>
+		<meta http-equiv="version" content="4.3" />
+		<meta http-equiv="language" content="EN&#95;US" />
+		<meta name="base-cloudfront-url" content="https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.306/">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=1024,maximum-scale=1.0" />
+	
+		<meta name="robots" content="noindex, follow" />
+	
+
+    
+        <link href="https://d8ejoa1fys2rk.cloudfront.net/static/2DBD3D4F5568D5611B91725F6DD849E4.cache.css.gz" type="text/css" rel="stylesheet" /><link href="https://d8ejoa1fys2rk.cloudfront.net/static/3FD7F4BB1A784E1049B56EF617899226.cache.css.gz" type="text/css" rel="stylesheet" /><link href="https://d8ejoa1fys2rk.cloudfront.net/static/62A48BFB93AF83D261064AC5E9D0258F.cache.css.gz" type="text/css" rel="stylesheet" /><link href="https://d8ejoa1fys2rk.cloudfront.net/static/714918FC51762B562F864F3FD8D3F8E7.cache.css.gz" type="text/css" rel="stylesheet" /><link href="https://d8ejoa1fys2rk.cloudfront.net/static/CDAE6C67B91FFEBAF6579C018AA4811E.cache.css.gz" type="text/css" rel="stylesheet" /><link href="https://d8ejoa1fys2rk.cloudfront.net/static/66BA9115D78DFC9E4696987C638C6ABB.cache.css.gz" type="text/css" rel="stylesheet" />
+
+    
+        <link rel="stylesheet" href="https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.306/styles/css/notifications.css" />
+    
+	<style>.farbtastic *{position:absolute;cursor:crosshair}</style>
+	<link rel="stylesheet" href="/v7/portal/theme/?format=css">
+	
+		<link href="https://d8ejoa1fys2rk.cloudfront.net/5.0.5/includes/themes/default.css" type="text/css" rel="stylesheet" />
+	
+
+    <link rel="stylesheet" href="https://d8ejoa1fys2rk.cloudfront.net/5.0.5/includes/css/vendor/font-awesome.min.css" />
+
+
+    
+    </head>
+    <body id="login">
+        <div id="bynder-modal-container"></div>
+        <div id="rootLoginNotification"></div>
+        <style>
+	.internet-explorer-warning {
+		display: none;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: 100;
+		text-align: center;
+		background: rgba(0,34,51,0.80);
+		padding: 12px 48px;
+		min-height: 50px;
+		box-sizing: border-box;
+		font-size: 16px;
+		line-height: 24px;
+		color: #fff;
+	}
+</style>
+
+<div class="internet-explorer-warning">
+	As of March 2021 we are no longer supporting Internet Explorer 11. To ensure a better experience we recommend you to use a different browser.
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		var isIE = /Trident/.test(window.navigator.userAgent);
+
+		if (!isIE) {
+			return;
+		}
+
+		var header = document.querySelector('#login header.base');
+		var warning = document.querySelector('.internet-explorer-warning');
+
+		warning.style.display = 'block';
+
+		/* If the login page header ends up hidden underneath the notification when
+		 * the notification is placed at the top of the window, the header should be
+		 * moved down by the height of the notification so that it is visible.
+		 *
+		 * The login page header has 'position: fixed' and this could not be changed
+		 * due to custom theming, so a translation is needed to change its position.
+		 */
+		var headerBoundingRect = header.getBoundingClientRect();
+		var notificationHeight = warning.getBoundingClientRect().height;
+
+		if (headerBoundingRect.top < notificationHeight) {
+			header.style.transform = 'translateY(' + notificationHeight + 'px)';
+		}
+	});
+</script>
+
+        <div class="update info">
+            <div class="loader hidden" style="display:none;">
+                <div style="width:40%;"><span><span></span></span></div>
+            </div>
+            <div class="notification">
+                <h1><i class="icon-tasks-white"></i></h1>
+                <a href="#" class="cancel"><i class="fa fa-times-circle"></i></a>
+            </div>
+        </div>
+        <header class="base">
+            
+                <div class="admin-bar clearfix">
+                    
+                        <ul class="app-switch">
+                            <li>
+                                <a href="https://www.bynder.com/"
+                                    title="Bynder"
+                                    class="admin-bar-logo">
+                                    Bynder
+                                </a>
+                            </li>
+                        </ul>
+                    
+                    <div class="admin-right">
+                        <ul class="admin-options">
+                            <li>
+                                
+
+
+<a href="#" >
+    <i class="fa fa-globe fa-fw"></i> Language
+</a>
+<div id="languageSwitch" class="admin-dropdown language-switch">
+    <ul class="single">
+        
+            
+                
+                
+            
+            <li class="active">
+                <form action="/user/switchlanguage/" method="post">
+                    <input name="csrf" type="hidden" value="2144f6677dfc770034defba6617cb7f1eb02e460">
+                    <input type="hidden" name="language" value="en&#95;US" />
+                    <a href="#" class="admin-option" dir="ltr">
+                        English (United States)<i class="fa fa-check language-switch__selected-indicator"></i>
+                    </a>
+                </form>
+            </li>
+        
+            
+                
+                
+            
+            <li>
+                <form action="/user/switchlanguage/" method="post">
+                    <input name="csrf" type="hidden" value="2144f6677dfc770034defba6617cb7f1eb02e460">
+                    <input type="hidden" name="language" value="de&#95;DE" />
+                    <a href="#" class="admin-option" dir="ltr">
+                        Deutsch (Deutschland)
+                    </a>
+                </form>
+            </li>
+        
+            
+                
+                
+            
+            <li>
+                <form action="/user/switchlanguage/" method="post">
+                    <input name="csrf" type="hidden" value="2144f6677dfc770034defba6617cb7f1eb02e460">
+                    <input type="hidden" name="language" value="fr&#95;FR" />
+                    <a href="#" class="admin-option" dir="ltr">
+                        Français (France)
+                    </a>
+                </form>
+            </li>
+        
+            
+                
+                
+            
+            <li>
+                <form action="/user/switchlanguage/" method="post">
+                    <input name="csrf" type="hidden" value="2144f6677dfc770034defba6617cb7f1eb02e460">
+                    <input type="hidden" name="language" value="nl&#95;NL" />
+                    <a href="#" class="admin-option" dir="ltr">
+                        Nederlands (Nederland)
+                    </a>
+                </form>
+            </li>
+        
+            
+                
+                
+            
+            <li>
+                <form action="/user/switchlanguage/" method="post">
+                    <input name="csrf" type="hidden" value="2144f6677dfc770034defba6617cb7f1eb02e460">
+                    <input type="hidden" name="language" value="es&#95;ES" />
+                    <a href="#" class="admin-option" dir="ltr">
+                        Español (España)
+                    </a>
+                </form>
+            </li>
+        
+    </ul>
+</div>
+
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+        </header>
+        
+
+<div class="login-container ">
+    
+        
+            
+            
+                
+            
+            <a href="/?redirectToken="
+                title="Mollie&#32;Brand&#32;Portal"
+                class="account-logo">
+                Mollie Brand Portal
+            </a>
+        
+        <div class="form clearfix">
+            
+
+	
+            
+                
+
+<div class="alt-login">
+    
+        <form action="/sso/saml/initiate/" method="post">
+            <input name="csrf"
+                type="hidden"
+                value="2144f6677dfc770034defba6617cb7f1eb02e460" />
+            <input name="urlhash"
+                class="urlhash"
+                type="hidden"/>
+            
+            <input name="navigateRoute"
+                type="hidden"
+                value="" />
+
+            
+            
+                <p>
+                    
+                    
+                        On the Mollie Okta SSO network?
+                    
+                </p>
+            
+
+            <ul class="single public-sub alt-login">
+                <li>
+                    <button type="submit"
+                            class="action-btn block blue"
+                            tabindex="4">
+                        <i class="hidden fa fa-refresh fa-spin"></i>
+                        
+                        
+                            
+                                Sign in with Okta
+                            
+                        
+                    </button>
+                </li>
+            </ul>
+            
+                <p class="login-hide"
+                        id="regular-login-info">
+                    
+                    
+                        If you don't have Mollie Okta SSO credentials or you are not using the Mollie Okta SSO network, use the login option below.
+                    
+                </p>
+
+                
+                    <p><a href="#"
+                            id="regular-login-activate">
+                        
+                        
+                            Not on the Mollie Okta SSO network? Click here to log in or request a new account.
+                        
+                    </a></p>
+                
+            
+        </form>
+    
+</div>
+
+
+            
+            
+                <form class="clearfix login-hide"
+                        id="regular-login"
+                        action="/user/doLogin/"
+                        method="post">
+                    <input name="csrf"
+                        type="hidden"
+                        value="2144f6677dfc770034defba6617cb7f1eb02e460">
+                    <input name="urlhash"
+                        class="urlhash"
+                        type="hidden"/>
+                    
+                        <input name="redirectToken"
+                            type="hidden"
+                            value="" />
+                    
+                    
+                    <span class="validate hidden">
+                        Wrong username
+                    </span>
+                    <div class="input-holder">
+                        <span><i class="fa fa-fw fa-user"></i></span>
+                        <input name="username"
+                            type="text"
+                            id="inputEmail"
+                            placeholder="Email/Username"
+                            tabindex="1"
+                            autofocus />
+                    </div>
+                    <div class="input-holder">
+                        <span><i class="fa fa-fw fa-lock"></i></span>
+                        <input name="password"
+                            type="password"
+                            id="inputPassword"
+                            autocomplete="off"
+                            placeholder="Password"
+                            tabindex="2" />
+                    </div>
+                    <div class="lost-password">
+                        <a href="/user/forgotPassword/?redirectToken=">
+                            
+                                Lost password?
+                            
+                        </a>
+                    </div>
+                    <div class="form-bottom">
+                        <button type="submit"
+                                class="login-btn action-btn blue block"
+                                tabindex="4">
+                            <i class="hidden fa fa-refresh fa-spin"></i>
+                            Login
+                        </button>
+                        
+                    </div>
+                </form>
+            
+        </div>
+        
+        
+
+    
+</div>
+
+
+        
+        
+<footer class="fixed">
+	
+	<div class="active-downloads" >
+		<span class="download-count"></span> <span class="progress-description"></span>
+		<span>
+			<span class="dot">.</span>
+			<span class="dot">.</span>
+			<span class="dot">.</span>
+		</span>
+	</div>
+
+	
+	<a class="scrollup" href="#top">Back to top</a>
+
+	
+	<ul class="footer-btns clearfix">
+		
+		
+		
+		
+		
+		
+			<li>
+				
+    <div id="request-box">
+        <div class="acceptOverlay request-overlay">
+            <div class="request-content">
+                <header class="clearfix">
+                    <i class="icon-download"></i>
+                    <h1>Download reason</h1>
+                    <p>Please specify the reason for this download</p>
+                </header>
+                <div class="content">
+                    <form>
+                        <textarea 
+                            data-parsley-required-message="This&#32;field&#32;is&#32;required." 
+                            data-parsley-required="true"></textarea>
+                    </form>
+                </div>
+                <button class="action-btn cancel">
+                    Cancel
+                </button>
+                <button class="action-btn blue send">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+			</li>
+		
+		
+		
+		
+	</ul>
+</footer>
+
+
+
+
+
+        
+	
+<style>
+body#login.loginBackgroundMedium { background-image:url(https://d1ra4hr810e003.cloudfront.net/visual/accountbackground/F00AE94D-8835-4482-A6A963EFBAD7E0F6/medium-A4AC3627-CCA0-4F21-9401485B57BAE9E9.png);}
+body#login.loginBackgroundXMedium { background-image:url(https://d1ra4hr810e003.cloudfront.net/visual/accountbackground/F00AE94D-8835-4482-A6A963EFBAD7E0F6/xmedium-A4AC3627-CCA0-4F21-9401485B57BAE9E9.png);}
+body#login.loginBackgroundLarge { background-image:url(https://d1ra4hr810e003.cloudfront.net/visual/accountbackground/F00AE94D-8835-4482-A6A963EFBAD7E0F6/large-A4AC3627-CCA0-4F21-9401485B57BAE9E9.png);}
+
+</style>
+<style>
+	#login .login-container a.account-logo  {
+		background: 50% 50% no-repeat white url('https://d1ra4hr810e003.cloudfront.net/visual/accountloginlogo/F00AE94D-8835-4482-A6A963EFBAD7E0F6/medium-DC44C8C1-FE3E-4C09-89733B26C6592F92.png');
+		background-size: contain;
+	}
+</style>
+<script>
+	(function(bc){
+		var validBackgrounds = {"loginBackgroundMedium":"https://d1ra4hr810e003.cloudfront.net/visual/accountbackground/F00AE94D-8835-4482-A6A963EFBAD7E0F6/medium-A4AC3627-CCA0-4F21-9401485B57BAE9E9.png","loginBackgroundXMedium":"https://d1ra4hr810e003.cloudfront.net/visual/accountbackground/F00AE94D-8835-4482-A6A963EFBAD7E0F6/xmedium-A4AC3627-CCA0-4F21-9401485B57BAE9E9.png","loginBackgroundLarge":"https://d1ra4hr810e003.cloudfront.net/visual/accountbackground/F00AE94D-8835-4482-A6A963EFBAD7E0F6/large-A4AC3627-CCA0-4F21-9401485B57BAE9E9.png"};
+		if( validBackgrounds["loginBackgroundMedium"] !== undefined && window.innerWidth < 1200 )
+			bc = "loginBackgroundMedium";
+		else if( validBackgrounds["loginBackgroundXMedium"] !== undefined && window.innerWidth < 2000 )
+			bc = "loginBackgroundXMedium";
+		if( validBackgrounds[bc] !== undefined )
+			document.getElementById("login").className += " " + bc;
+	})("loginBackgroundLarge");
+</script>
+
+        
+        
+
+        
+
+
+    
+
+    <script src="https://d8ejoa1fys2rk.cloudfront.net/static/B2EC870FE40E6F1DDF269A641F27AEAF.cache.js.gz" type="text/javascript"></script>
+
+    
+
+    
+
+    <script src="https://d8ejoa1fys2rk.cloudfront.net/static/0E0B5477CA6E5F47D63A4512FADE16D0.cache.js.gz" type="text/javascript"></script>
+
+    <script>
+        bynder.Config.registerFeatures(["download-cdn","videothumbnail","self-service-ssl-configuration","mark-as-public","metadata-write-csv","support-form","transfer","solrcloud","hide-brandsnavigation","hide-brands","hide-dropbox","watermark-date-picker","spotlight-help-modal","pyusermanagement","improved-portal-provisioning","waiting-room-filtering","show-prefix-download-btn","sso-debug","change-history","focus-point","readonly-individual-share","crop-canvas","video-filter-duration","reactivate-user-check","bynder-support-opt-in","SearchAndOperator","download-product-data","news-slider","spotlight-recent-searches","uploader-bare","inspiration","pysolr-atomic-add","external-option-links","taxonomy-csv-import","disable-webm","unified-share","share-login-required","enable-CDN","rewriteUrls","download-additionals","media-detail-share","meta-selectall","workflow-sidebar","access-request-form","hide-categories","disable-replyto","pdfviewer","disable-file-merge","gdpr-message","pynder-solr","hide-styleguidebrandsfilter","wr-mpo-approve-download-requests","disable-media-webversion","save-search-filter","improved-taxonomy-management","transfer-share-by-link","workflow-asset-bulk-editor","metapropertyLevelAccess","Appcues","watermark","crop","alternative-asset-detail-view","metadata-presets-sharing","custom-thumbnails","duplicate-view","mfa","public-links","popover","dashboard","showOriginalFilename","unified-share-improvements","SSO","sticky-search","asset-permission-viewer","package-analysis","compact","collection-embed","download-request","upload-for-approval","autotags","news","reporting","metadata-presets","sqs","media-embed","download-preselect","notifications-center"]);
+    </script>
+
+    <meta name="videojs" data-jsmin="true" content='<script src="https://d8ejoa1fys2rk.cloudfront.net/static/D1F13441208BC0929C48C9BFA921CDFC.cache.js.gz" type="text/javascript"></script>'>
+
+    <!-- require modules setup // begin -->
+    <script type="text/javascript">
+        var require = {
+            waitSeconds: 0, // no timeouts, saves widget on slow connection;
+            baseUrl: 'https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.306/',
+            deps: ['requireSettings'],
+            paths: {
+                requireSettings: 'https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.306/scripts/modules/base/requireSettings'
+            }
+        };
+    </script>
+    <script src="https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.306/deps/requirejs/require.js" type="text/javascript"></script>
+    
+        <script type="text/javascript">
+            require(['requireSettings'], function (requireSettings) {
+                require(['Bynder'], function (Bynder) {
+                    Bynder.init();
+                });
+            });
+        </script>
+    
+    <!-- require modules setup // end -->
+
+    <script>
+        var defaultChunkSize = Number(5242880);
+        var minChunkSize = Number(5242880);
+        var maxChunkSize = Number(1048576000);
+        var chunkSize = Number(5 * 1024 * 1024);
+        if (bynder.helpers.ApplicationHelper.useFlashRuntime()) {
+            // Flash takes too much time for processing larger chunks
+            maxChunkSize = 10 * 1024 * 1024;
+        }
+        if (!is.numeric(chunkSize)) {
+            chunkSize = defaultChunkSize;
+        }
+        else if (chunkSize < minChunkSize) {
+            chunkSize = minChunkSize;
+        }
+        else if (chunkSize > maxChunkSize) {
+            chunkSize = maxChunkSize;
+        }
+        bynder.Config.setSetting(
+            'default_chunk_size',
+            chunkSize
+        );
+        bynder.Config.tinymceUrl = 'https://d8ejoa1fys2rk.cloudfront.net/5.0.5/includes/js/vendor/tinymce-4.3.11/tinymce.min.js';
+        
+        
+            
+            
+                bynder.Config.setSetting('metaExtensionMapping', '05A86076-A43B-4F8F-8700401A8ED12AEA');
+            
+        
+        
+    </script>
+
+    
+	
+    
+    <script>
+        bynder.Bynder.use('bynder.modules.Language', function(Language) {
+            Language.addKeys({"shareLinkPeopleCan":"People with the link can","taxonomy.hideByDefaultSuccessfullyDisabled":"Hide by default successfully disabled","generalRemoveOnlineLink":"Remove online link","customSupportFormEmailDomain":"Only email addresses with domain 'akzonobel.com' are allowed","groupmanagement.details.add-new-users":"Add new users","spotlightHelp.operators.or.example":"E.g. ocean {or} mountains","upload.versionUpdater":"Mass Version Updater","collectionsCollectionHasBeenCreated":"Collection has been created","collectionSharingValidUntil":"Valid until: %s","modalActionDelete":"Delete","relatedFor":"Related assets for","uploadingNewVersion":"Uploading new version","WizardNeedCategory":"You need at least one category to continue with the wizard.","portalsDomainCanNotIncludeADot":"Domain can not include a dot character.","collectionOnlineLinkInfo":"The collection is now published online and the media can be view without having to log in.","groupmanagement.modals.delete-group.content":"Removing this group will result in permanent loss of all members and their configurations that was attached to the group.","pmEditProfileName":"Edit profile name","quarantine.table.title":"Title","generalDateEditFormatString":"mm/dd/yyyy","filter.scrollDownForMore":"Scroll down for more","generalCancel":"Cancel","pmDefaultProfile":"Set as default profile","FilesIETooBig":"Your browser is not supported for uploading files larger than 2GB. If you'd like to upload files larger than 2GB, please use a different browser, such as a recent version of Google Chrome (13+), Firefox (6+), Safari (6+) or Internet Explorer (10).","quarantine.processingAssets":"Queue","groupmanagement.modals.remove-users.content":"Removing users from this group will result in permanent loss of their configurations that was attached to the group","profileGiveName":"Please enter a name for the profile","pmPermissionProfiles":"Permission profiles","save":"Save","user-outofoffice.Description.BackupUser":"This person will receive access to your jobs and tasks","admin.portalSettings":"Portal settings","languagePolish":"Polish","cropButtonCrop":"Crop image","adminExtra.newsManagement":"News Management","passwordStrength":"Strength","preset.presetCreated":"Preset created","uploadMax":"Wow! You reached the maximum of our uploader, which can handle up to 250 files! The first 250 files of your selection will now be uploaded.","countryGermany":"Germany","AssetTracker":"Asset tracker","cropHeightOverflow":"The requested size is bigger than the maximum possible height of %s","propertyNoProperty":"Clear selection","download.notifyDownloadReady":"You'll receive an email when your requested files are ready for download.","generalUsername":"Username","waitingroom.assets.count":"{count} asset(s)","FilesSharingNoConnection":"It looks like you lost your internet connection. We will continue your transfer as soon as the connection resumes.","groupmanagement.modals.update-group.groupDescriptionPlaceholder":"Write description here","shareCollection":"Share collection","hybriddriveOnline":"Hybrid Mode Online","waitingroom.waitingroom":"Waiting room","generalportrait":"Portrait","collectionsCollectionHasBeenShared":"Collection has been shared","portalsNextUserDetails":"Next: User details","generalName":"Name","generalUser":"User","generalOrderBy":"Order by","generalDomain":"Domain","edit.task":"Close this message to continue working. You will receive a notification when your edit is ready.","shareInfoArchivedMedia":"Archived and limited use media will be visible.","preparingDownload":"We are preparing your download, please wait...","groupmanagement.modals.add-group.groupNamePlaceholder":"Name your group","FilesSharingError":"Something went wrong with the upload. Please try again, or contact support if problems persist.","profileDeleted":"Deleting profile..","mediaRequest":"Request media","spotlightHelp.shortcuts.close.title":"Close search","collectionsLinkPermissionLabel":"People with access to this link can","generalFileSize":"File size","admin.brandTemplates":"Brand templates","groupmanagement.modals.add-users.user-not-found":"User not found or already in the group","generalDownload":"Download","error.filesModified":"The files have been modified. A new zip file is in the making. Please refresh the screen.","loadingDuplicates1":"Searching for duplicates in","generalNoResultsFor":"No results for","duplicate.noDuplicateFound":"No duplicates found","mediaLoading":"The selected media is being loaded..","disclaimer.restrictions":"The following restriction is in effect","downloadTaskInProgress":"edits/downloads in progress","spotlightHelp.operators.not.title":"NOT operator","pmProfileName":"Profile Name","generalYes":"Yes","hybriddriveOfflineText":"Hybrid mode lets you lorem ipsum doler sit amet","collectionEmbedLabel":"Embed collection on your site","generalInactive":"Inactive","GeneralTheme":"Theme","presetsNameVisibility":"'%s' visibility","generalAccept":"Accept","admin.createNewAccount":"Create new account","account.languageEN":"English","cropButtonNewAsset":"Crop & create new asset","collection.callbackMessage":"Your collection has been created/modified. You can view this collection right away or continue with what you were doing.","brandstore.goTo":"Go to brandstore","collectionsRequireLogin":"Require login","generalAllow":"Allow","collectionOptions.readAccess":"Download watermarked assets","meta.titleRemove":"Remove media from option","portalsStepOneOfTwo":"Step 1 of 2","collection.transfer.ownership":"Transfer","ajaxFailed":"Connection failed, try again.","error.enablepopup":"Please enable pop-ups in your browser settings","generalEdit":"Edit","ampAssetEdit":"can edit assets","activity.noTasks":"You have no tasks","ampAuditUpload":"can audit upload requests","spotlightHelp.shortcuts.nav":"Keyboard Shortcuts","downloadtask.progress":"edits/downloads in progress","mediaRemoved":"Media is removed from collection.","generalCheckboxMsg":"No item was checked. Please chose items to delete or restore.","portalsDefaultLanguage":"Default language","user.requests":"User Access Requests","pmToEnablePermission":"To enable this permission one of the following permissions needs to be enabled","user-outofoffice.StartDate":"Start date","cropCheckTop":"Check the top margin.","fileNotAllowed":"Uploading of this filetype is not allowed. Valid extensions are jpg or png.","generalErrorSavingChanges":"Error saving changes","pmProfileCanNotBeDeleted":"This profile can not be deleted. Please remove users first.","pmToggleAllModulePermissions":"Toggle all module permissions on or off","collectionsExpiredLinkMessage":"Share link has expired. Extend end date or create a new link.","shareLinkCreate":"Create share link","generalPrivate":"Private","groupmanagement.modals.update-group.groupNamePlaceholder":"Name your group","pmFindUsers":"Find users","newCollectionName":"New collection name","visibilitySpecificUsersSubTitle":"Specific users, groups and profiles have access","collection.transfer":"Transfer","groupmanagement.modals.add-users.users":"Users","meta.confirmSubtitle":"After saving the media will be removed from this option","visibilitySearchUsersGroupsOrProfiles":"Search for users, groups or profiles to add","transferbox.error":"Something went wrong processing your file. Please contact the administrator of this portal.","groupmanagement.details.actions.delete":"Delete","noresults.supportNeeded":"Need support?","waitingroom.selected.room":"{selectedRoom} request(s)","account.enterContactMail":"Enter Contact email","generalYou":"you","groupmanagement.modals.delete-group.title":"Deleting {title} group","portalsBackPortalDetails":"Back: Portal details","pmProfileNameUpdated":"Profile name successfully updated","sessionExpired":"Your session has expired","countryPoland":"Poland","generalLearnMore":"Learn more","collectionSharingRemoveFromShare":"Remove access","collection.owner.select":"Select an owner","meta.language.french":"French","pmUnableToAddPermissions":"Unable to add the following permissions to Permission profile “%s” because there are not enough user seats available in the profile type “{2}”","shareCollectionTitle":"Share collection","groupmanagement.modals.add-group.title":"Create group","generalTimeZone":"Timezone","countryItaly":"Italy","hybriddriveOnlineText":"Hybrid mode lets you lorem ipsum doler sit amet","generalGridView":"Grid view","workflow.CampaignManagement":"Campaign Management","preset.createNewPreset":"Create new preset","generalStepViolation":"Input a multiple of {1}","generalOwner":"Owner","groupmanagement.add-group-cta":"Add Group","collectionsLinkSharingTooltip":"A share link will be created for this collection.","generalCategories":"Categories","brandstoreReorder":"Reorder","groupmanagement.details.delete-selected-users":"Delete selected users","quarantine.table.type":"Type","generalShareMedia":"Share media","user-outofoffice.KeepReceivingNotifications":"Keep receiving notifications","quarantine.noProcessingAssets.title":"No pending assets","collectionsEmbedCodeHasBeenCopied":"Embed code has been copied to the clipboard.","generalInviteIndividuals":"Invite individuals","groupmanagement.modals.add-users.loading-users":"Loading users","simpleSaveError":"you need to edit at least one field in order to be able to save","duplicate.find":"Find duplicates","collectionsOn":"On","portalsPortalDetails":"Portal details","generalAddTo":"Add to %s","viewAndDownload":"View and download","preset.editPresetName":"Edit preset name","saved":"Saved","collectionsManageCollection":"Manage collection","requestSend":"A request has been sent","cart.total":"Cart total","generalQuickLinks":"Quick links","spotlightHelp.shortcuts.view.title":"View results","groupmanagement.modals.update-group.cancel":"Cancel","ampAuditDownload":"can audit download requests","activity.yourTasks":"Your tasks","spotlightHelp.shortcuts.down.title":"Navigate to next result","brandstoreReadMore":"Read more","admin.bynderSuperadmin":"Bynder superadmin","collectionsEditLink":"Edit link","ampAssetMetapropertyPermissions":"Asset metaproperty permissions","generalBrand":"Brand","portalsCreateNewPortal":"Create new portal","generalAudit":"Audit","selectVisible":"Select visible media","spotlightHelp.operators.quotes.example":"E.g. “ocean view”","adddescription":"Add description","saveMedia":"Store selected files","preset.presetUpdated":"Preset updated","visibilityRetrievingSettings":"Retrieving settings...","spotlightHelp.operators.not.content":"Use NOT before a search term to exclude results that match that term.","workflow.Rejected":"Rejected","groupmanagement.actions":"Actions","filter.sortAsc":"Sort ascending","portalsReEnterData":"Re-enter data","preset.updatePreset":"Update current preset","generalDimensions":"Dimensions","duplicateImageFinder":"Duplicate Image Finder","workflow.ActiveJobs":"Active jobs","portalsUnableCreateNewPortal":"Unable to create new portal","collectionsAddMessage":"Add message","collectionsInvalidDates":"The date(s) entered are invalid, please verify","portalsPortalSuccessfullyCreated":"The portal has been successfully created","preset.presetDeleted":"The preset has been deleted","upload.whitelist.warning.short":"Cannot complete upload","portalsCreatePortal":"Create portal","generalStoreSelected":"Store selected files","pmUserLimitExceeded":"User limit exceeded","download.progress":"download(s) being prepared","pdfViewerWarning":"This PDF viewer is optimized for IE10+, Chrome, Firefox and Safari. With another browser or version you might see this PDF different from the original.","collectionOptions.view":"View collection","generalChangeHistory":"Change history","workflow.NoGroup":"No groups found","pendingRequest":"Pending request","account.defaultLanguage":"Default language","notAnImage":"The file chosen is not an image file. Please choose a valid image file.","groupmanagement.actions.delete-cta":"Delete","workflow.YesRemove":"Yes, remove","admin.workflow":"Workflow","collectionsDownloadAssets":"Download assets","assetViewsTotal":"total views","trashSingleMediaRestore":"The chosen media was restored back to the image bank","visibilityWhoHasAccess":"Who has access","ampViewAssetPermissions":"View asset permissions","uploadingAdditionalFiles":"Uploading additional files","generalLimited":"LIMITED","generalSearch":"Search","account.isLoginDomain":"Is general login domain","errorPeopleSelected":"Please select people to share with","brandRemoving":"Removing brand...","pmDeleteProfile":"Delete profile","groupmanagement.modals.add-group.descriptionLabel":"Description","account.additionalInformation":"Additional Info","workflow.EditGroup":"Edit group","groupmanagement.modals.update-group.submit":"Save","downloadInProgress":"download(s) being prepared","pmPermissiondependencies":"Permission dependencies","uploadLeave":"Uploading files is canceled when leaving this page.","generalEmail":"Email","trashMultiMediaRestore":"The chosen media were restored back to the image bank","generalCategory":"Category","cropCheckRight":"Check the right margin.","cropButtonDownload":"Crop & download","generalPublishedOnline":"Published online","admin.accountManagement":"Account Management","request.login":"You must log in to request the download of the asset(s).","workflow.TaskAdd":"Add task","downloadTask":"Close this message to continue working. You will receive a notification when your download is ready.","noresults":"There are currently no results","media.personal.edit.noaccess":"You can only edit your personal assets","user-outofoffice.UserHasOverlapingOOO":"You are already set as out of office in this time range","pmUndefinedType":"Undefined type","assetDownloadsTotal":"total downloads","spotlightHelp.shortcuts.up.key":"Arrow Up","collectionsAddUsersGroupsOrEmails":"Add users, groups, or email addresses...","disclaimer.loading":"Checking for disclaimer..","uploadNewWindow":"Uploading may take some time. While you're waiting you can already start Tagging, setting up Brands & Categories, and more!","generalResolution":"Resolution","generalBy":"by","waitingroom.no.requests":"No request","shareWithPeople":"Share with people","metaHighlighted":"The highlighted fields are required","captcha.incorrectToken":"The text you've entered is incorrect","collectionsLoading":"Loading","cropNoPathQuad":"Incorrect path defined for this asset, cannot show minimum crop area","countryDenmark":"Denmark","spotlightHelp.recentSearches":"Recent Searches","workflow.campaigns.allFor":"All campaigns for","workflow.SelectUser":"Select a user","action.shareFiles":"Share selected files","spotlightHelp.operators.or.content":"Use OR between your search terms to find results that match any of your terms.","admin.insights":"Insights","collectionsValidFrom":"Valid from","groupmanagement.modals.add-group.cancel-cta":"Cancel","saving":"Saving","addcategoryName":"Add category","portalsPortalName":"Portal name","validate.NoSpacesAllowed":"Invalid character. Use only letters, numbers, dash (-) and underscore (_).","generalDelete":"Delete","generalFocusPointSaved":"Focus point saved.","media.detailConvertError":"Error converting media","quarantine.noUnscannedAssets.title":"No unscanned assets","pmSelectOrCreateProfile":"Select or create a profile to see which permissions are activated for that profile","brandstore.reorder.ProductNotFound":"Product couldn't be found for reorder.","sharesRevoked":"The shares have been revoked","collectionOptions.download":"Download collection","workflow.AddAsset":"Add asset","requestInvalid":"It looks like you cannot register for this account. Make sure you have selected the correct account type.","IncludeVat":"Inc. VAT","download.task":"Close this message to continue working. You will receive a notification when your download is ready.","spotlightHelp.operators.quotes.title":"Double quotes","user-outofoffice.IsOutOfOfficeUntil":"Out of office until {1}","shareManageCollection":"Manage collection","user-outofoffice.SetOutOfOfficeClearError":"We weren’t able to clear your out of office, please try again later.","generalRequestedOn":"Requested on","convertingFailed":"Converting failed","collectionsSaveChanges":"Save changes","quarantine.noScannedAssets.title":"No scanned assets","quarantine.noUnscannedAssets.description":"There are no unscanned assets pending at this time.","meta.confirmRemove":"Are you sure you want to remove the selected media from this option?","portalsFilllValidEmail":"Fill in valid email.","countryUnitedStates":"United States","collectionsReadOnlyFeature":"Recipients can only view this collection","noresults.tryDiff":"<p>Please change your <strong>filters</strong>,<strong>tags</strong> or try a different <strong>search</strong></p>","presetRequired":"For some assets a specific workflow is required","dateTimeFormat":"MM/DD/YYYY HH:mm","workflow.Cancel":"Cancel","collectionNoLongerOnline":"The collection is no longer available online","downloadNotifyReady":"You'll receive an email when your requested files are ready for download.","collections.allFor":"All collections for","generalDeleted":"Deleted","user-outofoffice.SetOutOfOfficeClear":"Clear out of office","generalHide":"Hide","validate.Invalid":"Invalid input","groupmanagement.modals.add-users.search-users":"Search users","validateAjaxCheck":"This value already exists","admin.reporting":"Reporting","orderBy.score":"Relevance","groupmanagement.details.actions":"Actions","generalSaveSelected":"Save selected files","shareTimeframeTitle":"Start / End date","exportingFile":"The file is being exported. This could take a while","groupmanagement.modals.update-group.groupNameLabel":"Group name","selectFilesToEdit":"Select files to edit","viewOnly":"View only","media.withoutMeta":"Media without","workflow.Campaign":"Campaign","generalRemovePreview":"Remove image","groupmanagement.title":"Group management","addcopyright":"Add copyright","pmNoProfileSelected":"No profile selected","generalFilesAdded":"Your files have been added","waitingroom.datecreated":"Date added","portalsSomethingWentWrong":"Something went wrong.","generalFirstName":"First name","categoryDeleted":"The category has been deleted","addingToExistingCollection":"Adding media to collection, please wait..","generalFocusPointErrorSaving":"Error saving the focus point.","download.requestSent":"has sent a download request.","cropWidthOverflow":"The requested size is bigger than the maximum possible width of %s","collection.owner":"Collection owner","pmIdentityProfileDuplicated":"Identity - profile duplicated","waitingroomOptionAccess":"In order to add media to this option you need permission. Your media will first be send for approval. When audited you will receive a notification.","DateAdded":"Date added","workflow.TemplateManagement":"Template Management","preset.name":"Preset name","preset.managePreset":"Manage presets","generalDone":"Done","shareShowHiddenMedia":"Show hidden media","account.enterDomain":"Enter Domain","collectionsDownloadInLowResolution":"Only allow download in low resolution","generalStart":"Start","admin.usersRights":"Users & rights","generalLoading":"Loading","portalsFillPortalName":"Fill in portal name.","generalFiles":"Files","spotlightHelp.operators.and.title":"AND operator","request.requestAccess":"Register a new account","portalsUnexpectedError":"An unexpected error occured. Try again and if the problem continues contact Bynder support.","customSupportFormFieldRequired":"This field is required.","mediaBelongs":"This asset belongs to","account.enterLatLong":"Enter Latitude/Longitude","styleguideEmbedCollection":"Embed collection","generallandscape":"Landscape","workflow.Save":"Save","collectionsExpired":"Expired","hybriddriveConnectingText":"Hybrid mode lets you lorem ipsum doler sit amet","generalError":"Something went wrong, please try again later.","user.select":"Please select a user","workflow.Close":"Close","upload.whitelist.warning.long":"This file type does not meet security guidelines. Verify the file type.","pmCompareProfile":"Compare profile","generalResults":"Results","admin.lookAndFeel":"Look & feel","account.enterTheme":"Enter Theme","generalYesDelete":"Yes, delete","countryFrance":"France","quarantine.table.requestdate":"Request date","shareEnterMessage":"Enter a message","validate.InvalidNr":"Not a valid number","groupmanagement.details.remove":"Remove","groupmanagement.modals.add-group.descriptionPlaceholder":"Write description here","mediaSavingChanges":"Saving media...","shareAddPeople":"Add groups or users","cart.goToMy":"Go to my cart","workflow.VariableManagement":"Variable Management","shareLinkCopied":"Link has been copied","noresults.enterNew":"Enter new search","collectionSharingSharedWithSpecificUsers":"Shared with specific people","workflow.Job":"Job","pmIdentityProfileDeleted":"Identity - profile deleted","selectCollection":"Select a collection","generalCreateNew":"Create new %s","groupmanagement.modals.add-group.error":"A group with that name already exists","error.heading":"Oops, something went wrong!","pmEnterProfileName":"Enter profile name","spotlightHelp.operators.combinations.content":"All the search operators mentioned above can also be used together.","account.contactName":"Contact name","noresults.checkFilters":"<p>Check your filters. Adjust your filter settings to allow more types (RM or RF) and formats (Creative or Editorial) images are included.</p>","generatingCollection":"Generating collection, please wait...","workflow.No":"No","pmGetMoreUsers":"Get more users","collectionViewEmbed":"View embed","groupmanagement.modals.add-group.groupNameLabel":"Group name","account.version":"Version","brandstoreDrafts":"Drafts","generalClose":"Close","selectFromImagebank":"Choose image from image bank","workflow.InReview":"In review","generalLogin":"Login","collectionsOnlineLinkHasBeenCopied":"Online link has been copied to the clipboard.","generalChange":"Change","collectionsCopyEmbed":"Copy embed","alreadyInInspiration":"The selected image is already part of the inspiration.","generalClearFilters":"Clear filters","cropButtonVersion":"Crop & save as version","collectionsViewCollection":"View collection","groupmanagement.fields.user_count":"Group members","meta.language.italian":"Italian","generalTags":"Tags","UploadFlashRequiredWarning":"Flash is required to upload files.","generalOr":"or","collection.created":"Collection created","trashMulitMediaDelete":"The chosen medias were deleted","access.requestSentFor":"has sent an access request for","generalExpand":"expand","preset.createPreset":"Create preset","generalProfile":"profile","groupmanagement.modals.delete-group.cancel-cta":"Cancel","collectionsCollectionTitleTooltip":"A collection will be created when assets are shared with individuals or via a share link.","spotlightHelp.operators.or.title":"OR operator","preset.errorApply":"It is not possible to apply the preset, please try again.","brandstore.MyCart":"My cart","spotlightHelp.shortcuts.down.key":"Arrow Down","mediaDeleted":"Media has been successfully deleted.","duplicateRemoved":"Duplicates were removed successfully!","generalChangesSavedSuccessfully":"Changes saved successfully","languageDanish":"Danish","presetsVisibility":"Preset visibility","waitingroomAccess":"Before your media will be published to the image bank, it will first be sent for approval. When audited you will receive a notification.","pmEditPermissionProfile":"Edit permission profile","quarantine.unscannedAssets":"Unscanned assets","GeneralCopyright":"Copyright","user-outofoffice.OutOfOffice":"Out of office","user-outofoffice.Description.KeepReceivingNotifications":"Stay in the loop while you're unavailable","account.appAccess":"App Access","collection.saved":"The collection has been updated.","profileCantDelete":"This profile cannot be deleted. First change the profile of the linked users.","dependencyError":"Cannot remove dependency right now","quarantine.infectedAssets":"Infected assets","account.contactMail":"Contact email","collectionRemoveEmbed":"Remove embed","activity.sendWithDropbox":"has sent you files with External Uploader","collectionsValidUntil":"Valid until","workflow.StageAdd":"Add stage","generalOptional":"optional","groupmanagement.modals.update-group.title":"Editing group","cropCheckBottom":"Check the bottom margin.","cart.youHaveNoItems":"You have no products in your cart","indexingCollection":"Indexing (%s), please wait..","groupmanagement.modals.add-users.add-cta":"Add","pmSearchPermissions":"Search permissions...","generalUploadMedia":"Upload media","ampAddAndPublish":"can add & publish assets","user-outofoffice.MainAlreadyBackup":"You are set as backup for another user in the selected time range. Please adjust your dates.","shareRequireLogin":"Require login","generalPassword":"Password","collection.transfer.complete":"Collection ownership has been transfered","selectNone":"Select none","spotlight.searchSomething":"Want to search for something?","brandstoreShowLess":"Show less","portalsThisCanTakeAMinute":"This can take a minute","brandstore.reorder.InvalidInput":"Invalid input was used for reorder.","cropNoPath":"No path defined for this asset, cannot show minimum crop area.","addOption":"Add option","generalLogout":"Logout","collectionOnlineLinkUrl":"Link to online collection","pmAddNewProfile":"Add a new profile","admin.smartfilterManagement":"Smartfilter Management","quarantine.noProcessingAssets.description":"There are no pending assets, the queue is empty","generalBrands":"Brands","sharePeopleCan":"People with access can","generalSaveChanges":"Save changes","categoryRemoving":"Removing category...","ampNoAssetPermissions":"No asset permissions have been set.","duplicateRemoving":"Removing duplicates, please wait...","collectionSharingValidFrom":"Valid from: %s","workflow.MetapropertyManagement":"Metaproperty Management","collectionsShareXAssets":"Share %s assets","cropSelectedAreaError":"Please crop only over the allowed area.","generalBack":"Back","preset.typePresetName":"Type a preset name","pmNewPermissionProfile":"New permission profile","waitingroom.asset.count":"{count, plural, one {1 asset} other {{count} assets}}","presetsCreatedByYou":"Created by you","goToMedia":"Go to your media","groupmanagement.modals.add-users.cancel.cta":"Cancel","groupmanagement.modals.update-group.groupDescriptionLabel":"Description","ampProductHidden":"product is hidden","spotlightHelp.operators.title":"Search Operators","selectAll":"Select all","portalsDomainCanNotBeEmpty":"Domain can not be empty.","validate.NoSpecialAllowed":"Invalid character. Use only letters, numbers, dash (-) and underscore (_).","generalGroup":"group","account.details":"Account details","task.progress":"edit(s) in progress","admin.groupManagement":"Group Management","pmViewUser":"View user","collection.transfer.ownershipButton":"Transfer ownership","collectionNoLongerEmbeddable":"The collection is no longer embeddable","preset.noPresetSelected":"No preset selected","preset.preset":"Preset","ampProductShown":"product is shown","presetsSharedWithMe":"Shared with me","quarantine.NumThreatsDetected":"{count} threat(s) detected","visibilitySpecificUsersTitle":"Specific users","collectionsRestrictAccessOption":"Respect access rights of recipients","email.duplicate":"An user with that email already exists","portalsTryAgain":"Try again","visibilityPrivateSubTitle":"Only you have access","orderBy.name":"Name","filter.searchForMore":"Use search for more","noBrandSelected":"Please select a brand before saving.","loadingDuplicates2":"results ( page","groupmanagement.modals.remove-users.remove":"Remove","brandAdded":"Brand added","generalAnotherSearch":"Why not try another search?","groupmanagement.generic-api-error":"An unexpected error has occurred. Please try again and if the problem persists, contact Bynder support.","account.select-search.empty-option":"No specific timezone","relatedAssets":"related assets","pmRemovePermissionProfile":"Are you sure you want to remove the permission profile “%s”? This action can not be undone.","workflow.FTEManagement":"FTE Management","ampAssetHasMetaproperty":"This asset has metaproperty option permissions set.","collectionsRestrictAccessSubtext":"Rights of recipients determine asset access.","importingFile":"The file is being imported. This could take a while","brandstoreReadyToOrder":"Ready to order","generalContactSheetView":"Contact sheet view","Integration":"Integration","admin.permissionManagement":"Permission Management","generalOkGotIt":"Ok, got it","pmProfileSuccessfulyDeleted":"Profile successfuly deleted","portalsDomainNotAvailable":"This domain is not available. Try a different domain.","transfer.history":"Transfer history","pmDuplicateProfile":"Duplicate profile","addtrue":"Add","generalNone":"None","user-outofoffice.SetOutOfOfficeSuccess":"Your out of office has been set successfully","portalsPortalType":"Portal type","requestApproval":"Approval request: {1}","generalSessionExpired":"Your session has expired","permissions.manage":"Manage permissions","user-outofoffice.SearchForAUser":"Search for a user","workflow.PresetManagement":"Preset Management","taxonomy.hideByDefault":"Hide by default","meta.language.spanish":"Spanish","ampAssetHidden":"asset is hidden","quarantine.noScannedAssets.description":"There are no scanned assets pending at this time.","brands.makeNew":"Create new brand","extra.lowResDownload":"Download in low resolution","errorTryAgain":"There was an error, please try again","countryUnitedKingdom":"United Kingdom","loadingCollections":"Loading collections...","collection.modified":"Collection modified","workflow.jobs":"Jobs","groupmanagement.details.users":"Users","user":"user","bulkEditUpdateTitles":"Update %s titles","user-outofoffice.SetOutOfOfficeClearSuccess":"Your out of office has been cleared successfully","collectionOptions.edit":"Edit collection","workflow.DeleteConfirmation":"Are you sure you want to remove {1}?","spotlightHelp.operators.and.content":"Use AND between your search terms to find results that match all your terms.","brandstore.goToJob":"Go to product","generalShare":"Share","download.preparing":"We are preparing your download, please wait...","generalGroupDeleted":"Group deleted","collectionsCollectionDescriptionLabel":"Collection description","generalSearchForOptions":"Search for options","editTask":"Close this message to continue working. You will receive a notification when your edit is ready.","collectionsDone":"Done","ampRemove":"can remove assets","admin.homepage":"Homepage","cropMultiplePath":"Multiple paths defined for this asset, cannot show minimum crop area.","generalPublishOnline":"Publish online","trashSingleMediaDelete":"The chosen media was deleted","collectionsCreating":"Creating","bulkSelectCollection":"Select or add collection","addpublicationdate":"Add publication date","workflow.ManageGroups":"Manage groups","preset.errorUpdate":"It is not possible to update the preset, please try again.","tags.allTagsFor":"All tags for","groupmanagement.modals.remove-users.cancel":"Cancel","cropNotEnoughPixels":"Cannot create crop: The resolution of this asset is not sufficient.","generalViews":"Views","spotlightHelp.operators.combinations.example":"E.g. bicycle {andnot} city","user-outofoffice.BackupUnavailable":"This person is unavailable in the selected time range. Please adjust your dates or select someone else.","searching":"Searching...","portalsFillLastName":"Fill in last name.","account.enterVersionNr":"Enter Version number","generalResultsFor":"Results for","spotlightHelp.shortcuts.title":"Keyboard shortcuts","WizardNeedBrand":"You need at least one brand to continue with the wizard.","admin.trash":"Trash","orderBy.dateCreated":"Date added","collectionsLinkSharing":"Link sharing","generalShow":"Show","workflow.CreateNew":"Create new","hybriddriveConnecting":"Hybrid mode Connecting","generalsquare":"Square","admin.metapropertiesmanagement":"Metaproperties management","portalsFillFirstName":"Fill in first name.","collectionsShareWithSpecificPeople":"Share with specific people","collectionsCollectionTitlePlaceholder":"Enter collection title","workflow.RoleManagement":"Role Management","workflow.Name":"Name","pmProfileSaved":"Profile successfully saved","collectionsEditSharingCollectionIsViewOnly":"This collection has been set to view only by the owner, recipients can only view assets in this collection.","generalEndDate":"End date","collectionsCollectionDescriptionPlaceholder":"Enter description","exportUserHeading":"Your user data is being exported. When the export is done, you will receive an email.","hybriddriveOffline":"Hybrid Mode Offline","requestSentDownload":"A request has been sent. Your download will begin shortly","collectionsOff":"Off","customCreated":"Added: custom","ampAssetShown":"asset is shown","addTags":"Add tags","noRecords":"No records","FilesSharingErrorRetrying":"An error occurred during the transfer, please check if the file is still available. We're trying the transfer again... If this takes too long please retry, or contact support.","sidekicks":"Grouped Assets","portalsDomainCanNotIncludeEmptySpace":"Domain can not include an empty space character.","countryNetherlands":"Netherlands","viewAndDownloadTheirs":"View and/or download based on their rights","news.addNews":"Add news","errorCollectionName":"Please type a collection name","groupmanagement.modals.remove-users.title":"Removing {amountOfUsers} users in {groupName} group","validate.OnlyAlphanumericAndUnderscoreAllowed":"Invalid character. Use only letters, numbers and underscore (_). No leading or trailing spaces allowed.","generalAdd":"Add","LoginLostPassword":"Lost password?","cropCheckLeft":"Check the left margin.","brandstoreReorderError":"Couldn't reorder products","errorHeading":"Oops, something went wrong!","generalListView":"List view","collectionsDownloadAssetsWithWatermark":"Download assets with watermark","user-outofoffice.SetYourselfAsOutOfOffice":"Set yourself as out of office","deletingDependency":"Removing dependency...","movingAssets":"Moving assets..","addbrandName":"Select a brand","spotlightHelp.operators.combinations.title":"Combinations","collectionsShareLink":"Share link","shareAddMessage":"Add a message","admin.taxonomy":"Taxonomy","groupmanagement.details.actions.edit":"Edit","deselectAll":"Deselect all","generalLanguage":"Language","ampAssetPermissions":"Asset permissions","brandstore.order.failed":"Failed to save your order, please try again.","orderBy.dateModified":"Date modified","spotlightHelp.shortcuts.close.key":"ESC","brandstore.orderHistory":"Order history","upload.bareUploader":"Mass Uploader","collectionsEnterMessage":"Enter message","clickToView":"Click to view","ClickToDownloadInstallFlash":"Click here to download and install Flash.","generalTaskDownloadReady":"is ready","account.info":"Account Info","brandDeleted":"Brand deleted.","portalsDomain":"Domain","generalFilesNotFound":"The requested files could not be found :( please try again later..","user-outofoffice.BackupUser":"Set as backup user","confirm.RemoveGroup":"Remove group","waitingroom.requestor":"Added by","collectionsRecipientsCan":"Recipients can","preset.pleasePresetName":"Please type a preset name","portalsStepTwoOfTwo":"Step 2 of 2","generalEmailUsername":"Email/Username","spotlightHelp.operators.quotes.content":"Wrap your search in “” to find results that are an exact match.","generalLastName":"Last name","generalWhoHasAccess":"Who has access","collectionSharingValidFromUntil":"Valid from: %s until: %s","removingMedia":"Removing media from collection.","quarantine.table.requester":"Requestor","workflow.Users":"Users","collectionsShareLinkHasBeenCreated":"Share link has been created.","presetsCreatedBy":"Created by %s","uploadComplete":"Upload completed!","shareOptional":"(optional)","noFiltersFound":"No filters were found.","collectionEmbedded":"Embed code available","account.gps":"GPS (lat,lng)","collectionsShareLinkSettings":"Share link settings","spotlightHelp.shortcuts.up.title":"Navigate to previous result","spotlightHelp.operators.not.example":"E.g. {not} forest","spotlightHelp.operators.and.example":"E.g. boston {and} hotel","account.enterContactName":"Enter Contact name","generalSettings":"Settings","groupmanagement.details.user_count":"{count, plural, one {{count} user} other {{count} users}}","collectionsCollectionTitleNeeded":"Please enter a collection title","noresults.supportContact":"You can send in a support request via email at support@getbynder.com or contact the portal owner","orderBy.datePublished":"Date published","user-outofoffice.EndDate":"End date","admin.advancedSettings":"Advanced settings","shareLinkInfoMessage":"A public share link will be created after the collection has been shared.","collectionsAddPeople":"Add people","generalNo":"No","groupmanagement.fields.name":"Group name","customPublished":"Published: custom","collectionEmbed":"Embed the collection in your website using the embed code.","countrySpain":"Spain","admin.userManagement":"User Management","continue":"Continue","filter.sortDesc":"Sort descending","statisticsPleaseWait":"Please wait while we load your statistics..","spotlightHelp.title":"Search Help","deletingMedia":"Deleting media","copyclipboard":"Link copied on clipboard","meta.language.german":"German","editTitle":"Update title","duplicate.numberOfAssets":"{numberOfAssets} assets are checked for duplicate images","generalRequestedBetween":"Requested between","generalInspiration":"Inspiration","generalOnlineURL":"Online link URL","workflow.NeedsChanges":"Needs changes","shareInfoHiddenMedia":"Hidden media will be visible.","quarantine.quarantine":"Quarantine","groupmanagement.group-amount":"{count, plural, one {{count} group} other {{count} groups}}","generalArchive":"Archive","groupmanagement.modals.delete-group.delete-cta":"Delete group","generalNoResults":"No results","collectionsCopyLink":"Copy link","collectionsCreateLink":"Create link","spotlight.showMetaPropertyResults":"All {1} results for {2}","uploadNewWindowLink":"Continu with {Bynder}","requestRequested":"Requested","workflow.StartAddGroup":"Start adding your first group","presetsMyPresets":"My presets","account.enterName":"Enter Name","brandstore.reorder.InvalidProductAmount":"Invalid quantity was selected for product.","ampDisable":"can disable option in upload & edit","pmViewAssetsFor":"View assets for %s","generalWatch":"View","filesNotFound":"The requested files could not be found :( please try again later..","groupmanagement.modals.add-group.submit-cta":"Create group","collectionsCollectionTitleLabel":"Collection title","groupmanagement.fields.description":"Description","taxonomy.hideByDefaultSuccessfullyEnabled":"Hide by default successfully enabled","waitingroom.requests.count":"{count, plural, one {1 request} other {{count} requests}}","collectionViewOnlineLink":"View online link","sendForApproval":"Send for approval","user.editProfile":"Edit profile","groupmanagement.actions.edit-cta":"Edit","zoom":"Zoom","workflow.GroupManagement":"Group Management","generalOkay":"OK","workflow.personal":"Personal","shareSuccessfullyShared":"Successfully shared","collections.editShare":"Edit share","portalsNewPortalBeingCreated":"New portal is being created","collectionsShareCollection":"Share collection","generalMore":"More","categoryAdded":"added category","workflow.AddPreset":"Add preset","workflow.Remove":"Remove","admin.cockpit":"Cockpit","dependencySaveError":"Cannot save dependency right now","admin.editCurrentAccount":"Edit current account","workflow.AddGroup":"Add group","groupmanagement.modals.add-users.adding-users":"Adding users","spotlightHelp.operators.nav":"Search Operators","redirectingToCollection":"Redirecting to collection, please wait..","generalCroppingFailed":"Cropping the asset failed. Please try again later.","media.loadingMedia":"Loading media...","pmActiveUsers":"%s active users","collectionsNoResults":"No results","preset.deletePreset":"Delete preset","portalsFillUsername":"Fill in username.","taskInProgress":"edit(s) in progress","convertGuidelines":"Convert Guidelines to PDF","uploadImage":"Upload image","admin.analytics":"Analytics","generalType":"Type","workflowAnnotation":"Annotation","generalClear":"Clear","account.languageNL":"Dutch","filter.endOfList":"End of the list","collection.enterNameCollection":"Enter a name for your collection","portalsUserDetails":"User details","generalFocusPointErrorRetrieving":"Error retrieving the focus point.","waitingroom.no.requests.detail":"There are no {status} at this time.","collectionsExtraCollectionOptions":"Extra collection options:","collectionOptions.readOnly":"Read-only collection","generalDuplicateFinder":"Duplicate Image Finder","ampAssetHiddenByDefault":"Assets with this option are hidden by default","spotlightHelp.shortcuts.view.key":"ENTER","generalSelectAll":"Select all","showMedia":"Show for which media","pmSelectProfile":"Select a profile to see the differences between the two"});
+        });
+    </script>
+    
+
+
+    <script>
+        window.csrf = "2144f6677dfc770034defba6617cb7f1eb02e460";
+        window.getStaticURL = "https\x3a//d8ejoa1fys2rk\x2ecloudfront\x2enet/5\x2e0\x2e5";
+    </script>
+    
+
+    
+    <script>
+        window.bynder = window.bynder || {};
+
+        window.bynder.user = {
+            id: '1FA95C9A-CEC9-4A0A-BD6D1B69FADC48FC',
+            name: '',
+        };
+
+        
+        if (window.bynder.user.id) {
+            window.bynder.user.id =
+                window.bynder.user.id.substring(0, 23) + '-' + window.bynder.user.id.substring(23);
+            window.bynder.user.id = window.bynder.user.id.toLowerCase();
+        }
+    </script>
+
+    <script>
+        window.parsley.options.excluded = "input[type=button], input[type=submit], input[type=reset], input[type=hidden], [disabled], :hidden, div.invisible *";
+    </script>
+
+    
+
+    
+        
+    
+
+    
+
+    
+        <script src="/includes/node_modules/historyjs/scripts/bundled/html4%2Bhtml5/jquery.history.js"></script>
+    
+
+    
+    
+        
+        
+            <script src="https://d8ejoa1fys2rk.cloudfront.net/frontend/0.1.306/scripts/templates/components.js"></script>
+        
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+        <script type="text/javascript">
+            require.config({
+                waitSeconds: 0,
+                paths: {
+                    raven: 'https://d8ejoa1fys2rk.cloudfront.net/5.0.5/includes/js/vendor/raven.min'
+                }
+            });
+            require(['raven'], function (Raven) {
+                Raven.config('https://2b555212b26f48dc98591a61c5ba0e5a@sentry10.bynder.cloud/14', {
+                    release: '5\x2e0\x2e5-dc661a6'
+                }).install().noConflict();
+                Raven.safeCaptureException = function(exc, message, obj) {
+                    if (typeof obj === "undefined") {
+                        var obj = {extra:{}};
+                    }
+                    if (typeof message === "undefined") {
+                        message = "Error";
+                    }
+                    if (exc instanceof Error) {
+                        obj.extra.traceback = exc.stack;
+                        message += ": " + exc.message;
+                    } else if (typeof exc === "string") {
+                        message += ": " + exc;
+                    }
+
+                    return Raven.captureMessage(message, obj);
+                };
+                window.Raven = Raven;
+            });
+        </script>
+    
+
+    
+
+    <script src="https://d8ejoa1fys2rk.cloudfront.net/static/13DA7186FD2737F5C47D5ADA7C17EA24.cache.js.gz" type="text/javascript"></script>
+    
+        <script src="https://d8ejoa1fys2rk.cloudfront.net/static/0D309C11CE0F9F49E23080A635760D96.cache.js.gz" type="text/javascript"></script>
+    
+
+    
+
+    <script type="text/javascript">
+        (function($) {
+            $(function() {
+                bynder.Locale = "en\x5fUS";
+                moment.locale(bynder.Locale);
+                if (is.set($.fn.datetimepicker) && is.set($.fn.datetimepicker.defaults)) {
+                    $.fn.datetimepicker.defaults.locale = bynder.Locale;
+                }
+
+                
+                
+                
+                
+                    bynder.interceptors.DownloadInterceptor.register("download-select", ["selection","collection", "share"]);
+                
+                
+                    bynder.interceptors.DownloadInterceptor.register("download-request");
+                
+                
+                
+                
+                
+                    bynder.helpers.MediaHelper.usePopover();
+                
+                
+                
+
+                if (bynder.modules.SessionKeepAlive) {
+                    new bynder.modules.SessionKeepAlive().start();
+                }
+
+                
+
+                
+                
+                    bynder.Config.setSetting(
+                        'useMetaKeyProduct',
+                        false
+                    );
+                
+                
+                
+
+                
+            });
+        })(jQuery);
+    </script>
+
+    
+
+    <script>
+        bynder.track = function (title, props) {};
+
+        var amplitude = window.amplitude || null;
+    </script>
+
+
+
+    
+    
+    
+
+
+
+
+        
+
+    <div
+        id="bynderParamountRoot"
+        style="display: none;"
+    ></div>
+    <script type="text/javascript" src="https://d8ejoa1fys2rk.cloudfront.net/pynder/microfrontends/0.1.76/app.bundle.js"></script>
+    <script type="text/javascript">
+       
+        var baseUrl = '/v7/paramount/js/';
+        var manifest = 'manifest.json';
+        var scriptId =  'paramount-microfrontend-script';
+        var localUrl = 'https://localhost:3018/';
+
+        var isDevelopment = baseUrl.includes('bynder-frontend')
+
+        function appendScript(url){
+            var script = document.createElement('script');
+         
+            script.type = 'text/javascript';
+            script.src = url;
+            script.setAttribute('id', scriptId);
+
+            document.body.appendChild(script);
+
+        };
+       
+
+        function getAppBundle($, url, callback ) {
+                $.ajax({
+                        type: 'get',
+                        url: url + manifest,
+        
+                        success: function (templateData) {
+                            
+                            var value = templateData['app.js'];
+                            appendScript(url + value)
+                        },
+                        error: function (e) {
+                            callback(e);
+                        }
+                });
+
+        }
+
+        if(isDevelopment) {
+            (function($) {
+                getAppBundle($, localUrl, function () {
+                    getAppBundle($, baseUrl, function (e) {
+                            console.error(e)
+                        })
+                })
+
+            })(jQuery);
+            
+        }
+        else {
+            (function($) {
+                getAppBundle($, baseUrl, function (e) {
+                        console.error(e)
+                    })
+            })(jQuery);
+        }
+        
+    </script>
+
+
+        </body>
+    </html>
+

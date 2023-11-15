@@ -1,0 +1,9 @@
+200 OK
+Retry-Count: 0
+Content-Length: 512
+Content-Type: text/html
+Last-Modified: Mon, 08 Jan 2018 15:26:06 GMT
+Etag: "07b4609588d31:0"
+Content-Security-Policy: default-src *  data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval' 'unsafe-dynamic'; script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob: 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ; style-src * data: blob: 'unsafe-inline'; font-src * data: blob: 'unsafe-inline'; frame-ancestors * data: blob: 'unsafe-inline';
+Date: Thu, 23 Mar 2023 15:00:46 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains

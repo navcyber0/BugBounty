@@ -1,0 +1,22 @@
+200 OK
+Referrer-Policy: no-referrer
+X-Powered-By: Next.js
+Etag: "57692-W/TprMWCkNS/r2d1AlZK35/U//g"
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-Permitted-Cross-Domain-Policies: none
+Access-Control-Allow-Credentials: true
+X-Download-Options: noopen
+X-Xss-Protection: 0
+Date: Tue, 28 Mar 2023 13:54:59 GMT
+Via: 1.1 e062e15dc382654089d5ed4efa058fe4.cloudfront.net (CloudFront)
+Retry-Count: 0
+X-Dns-Prefetch-Control: off
+Expect-Ct: max-age=0
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Vary: Accept-Encoding
+X-Cache: Hit from cloudfront
+X-Amz-Cf-Pop: MAA51-P3
+X-Amz-Cf-Id: C0155gVuSj7UHIyvACuuHH6zqh2TpxgSty0wOFulCdc0QE42Okn9Ew==
+Content-Type: text/html; charset=utf-8
+Age: 462

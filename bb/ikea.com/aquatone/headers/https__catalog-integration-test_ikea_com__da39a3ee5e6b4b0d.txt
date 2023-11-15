@@ -1,0 +1,12 @@
+403 Forbidden
+Content-Type: application/json
+X-Amzn-Requestid: 856415de-7de7-4ab7-aa95-033a94259e69
+X-Cache: Error from cloudfront
+X-Amz-Cf-Pop: MAA50-P1
+Retry-Count: 0
+Content-Length: 177
+Date: Sun, 23 Jul 2023 01:09:31 GMT
+X-Amzn-Errortype: AccessDeniedException
+X-Amz-Apigw-Id: IfiX1GBWjoEF36g=
+Via: 1.1 2ab6e529487965f7c0304e0b38af60d4.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: EWCsHjOcMrbXoLTtZx2v-3s4H1GegAx9J3TEPD-qRIiuNLXAzeg9AQ==

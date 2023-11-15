@@ -1,0 +1,12 @@
+200 OK
+Server: nginx
+Retry-Count: 0
+Requestid: 641c697b47dae1845c06afd3
+Strict-Transport-Security: max-age=63072000; includeSubdomains; preload
+X-Content-Type-Options: nosniff
+Date: Thu, 23 Mar 2023 15:00:11 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 6059
+Cache-Control: public, no-cache="Set-Cookie"
+Expires: Thu, 23 Mar 2023 15:00:12 GMT
+Set-Cookie: X-CSRF-Token=5edd8203-6c05-4765-bf00-7b88dcc31a15; expires=Sun, 23-Mar-2053 15:00:11 GMT; path=/; secure; SameSite=None .ASPXAUTH=; expires=Tue, 12-Oct-1999 04:00:00 GMT; path=/; secure; HttpOnly; SameSite=None

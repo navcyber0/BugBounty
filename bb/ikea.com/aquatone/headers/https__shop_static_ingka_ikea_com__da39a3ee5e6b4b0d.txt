@@ -1,0 +1,12 @@
+404 Not Found
+Retry-Count: 0
+Accept-Ranges: bytes
+Cache-Control: max-age=2592000
+Date: Sun, 23 Jul 2023 01:06:50 GMT
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Length: 10
+Expires: Tue, 22 Aug 2023 01:06:50 GMT
+Server: IKEA Shoppable App
+X-Xss-Protection: 1; mode=block

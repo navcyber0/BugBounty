@@ -1,0 +1,10 @@
+200 OK
+Date: Sun, 23 Jul 2023 01:09:59 GMT
+Content-Security-Policy: frame-ancestors 'self' *.ikea.com
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+Retry-Count: 0
+Set-Cookie: Ikea.cid=be4b3e2e-2ab4-451d-87cd-16529c7b88cc; path=/; secure; HttpOnly; SameSite=None __RequestVerificationToken=-xjcr0S0IGJpTGMqgQaMPZbJtMd9AdePDdtySNta_ljqLAUxKah3Qyfsw5B_WAqTIhZ05zydeEcfL9kBhkHGODqDsx5YojQ1WtyHU_Uf5C01; path=/; secure; HttpOnly
+Cache-Control: private
+Strict-Transport-Security: max-age=31536000
+X-Frame-Options: SAMEORIGIN

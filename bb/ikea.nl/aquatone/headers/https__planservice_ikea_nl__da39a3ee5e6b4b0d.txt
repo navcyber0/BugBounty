@@ -1,0 +1,26 @@
+200 OK
+Etag: "311ad909e54e93a330a42542a05496cc"
+X-Amz-Request-Id: ZDJQZVNMMD12V0YT
+Date: Sun, 23 Jul 2023 01:04:07 GMT
+X-Amz-Meta-Md5: 311ad909e54e93a330a42542a05496cc
+Permissions-Policy: interest-cohort=()
+Strict-Transport-Security: max-age=31536000
+X-Amz-Meta-Edge-Cache-Tag: pub-nl-nl-rooms,pub-nl-nl-rooms-kitchen
+X-Amz-Server-Side-Encryption: AES256
+Expires: Sun, 23 Jul 2023 01:19:07 GMT
+X-Amz-Id-2: wPi+BaoRaBgCZiI9/sfwHGwtQ5DIau6+9PUI3opl8yxqqbky9h81gWkOVcB3L9zfeSZmxb8RMNM=
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+X-Amz-Meta-Prioritized: false
+X-Akamai-Transformed: 9 187847 0 pmb=mTOE,1
+Content-Security-Policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' *.ikea.com *.ikea.net api.addressy.com google.com *.google.com *.gstatic.com www.youtube-nocookie.com www.youtube.com blob: data: prod-cmp-latency.edgecompute.app gooh.site https://storage.googleapis.com/learnwithikeavideos/ *.ingka.com *.cdtapps.com *.ctfassets.net cdn.dimma.ingka.dev *.ipex-insights.com teenplanner.ikea.nlcampaigns.nl https://storage.googleapis.com/wallspice-assets/ https://storage.googleapis.com/wallspice-cdn-prod/ acdn.adnxs.com api.crobox.com cdn.crobox.io *.doubleclick.net googleads.g.doubleclick.net *.facebook.com *.facebook.net www.googleadservices.com adservice.google.nl *.googlesyndication.com *.pinterest.com s.pinimg.com *.cookielaw.org *.onetrust.com *.akamaihd.net *.akstat.io *.appdynamics.com *.eum-appdynamics.com *.contentsquare.net app.contentsquare.com *.google-analytics.com www.googletagmanager.com *.go-mpulse.net *.optimizely.com sentry.io *.sentry.io *.techlab-cdn.com *.avo.app oppwa.com *.oppwa.com mpsnare.iesnare.com *.iesnare.com maps.googleapis.com fonts.googleapis.com www.googleapis.com icsp.ingka.ikea.com wss://icsp.ingka.ikea.com d.lemonpi.io www.surveygizmo.eu widgixeu-beacon.s3.amazonaws.com *.bambuser.com firestore.googleapis.com liveshopping-widgets.firebaseapp.com hub-api.personalised-content-optimisation.com; img-src * blob: data:; frame-src *; frame-ancestors *.ikea.com; object-src 'self'; report-uri https://prod-csp-prefilter.edgecompute.app
+Server-Timing: origin; dur=0 edge; dur=142 cdn-cache; desc=HIT ak_p; desc="469465_388762278_248482_14156_9357_10_-_-";dur=1
+X-Amz-Version-Id: rJaTlJMo3NkyMRjTdEW.V0bfXnkII9UE
+Retry-Count: 0
+Content-Type: text/html; charset=utf-8
+X-Amz-Replication-Status: COMPLETED
+Cache-Control: private, max-age=900
+X-Amz-Tagging-Count: 2
+X-Amz-Meta-Esi: true
+Server: IKEA Server
+Set-Cookie: ikea_geo=CN; path=/nl/nl/; secure bm_sz=1378523841B6527C1D4487CFFCEC5895~YAAQpgosF7A1J3+JAQAAVWtGgBSgp0clERsCtMOnQbj7/44zuG5Lf8mS/I099br/nGlai/eYtGp4eNwwQL9wjOz03rgaRqMHntuNr5Km43U2IGYlul0q+z+4dUKDS/vwz/K37oYMcVs6ErD1dwLoXv2qK3nq8mrq/YYW3kv8FhsFe6QlJnBbCrpsw9GCtHa2vwFbrXcnyR8rGCmaXcHJoiDuS71do/ahAjou8HBSKpmfDZRWtEfQihX0anBU0NiwM+WpKL2cPVKzFhL7bwZUV0IVzWrQEPW53kfeO+50TJOo~4339763~3749954; Domain=.ikea.com; Path=/; Expires=Sun, 23 Jul 2023 05:04:05 GMT; Max-Age=14400 _abck=DD05512D5D19CEDD87F4D9EFC603EDEC~-1~YAAQpgosF681J3+JAQAAVWtGgArVu8PKJHdWoRawCpW+IXaDN0FLvwNT9PALIgyEQ08lrr3UWUqxzg22MGG4TJCVZUl0fA9ejtUcwq5H89m8iiEmE/6tbLMwT6Unc9eRkX44NBMCdpph6rJBtrkmsRbJ+G4Q4+tgEUnifavkwjY1G4g837iykStYhhZUNLFZ0s//rS9AsqsC6uCIe1gm+Ce3+ijNs87LkFwPrlgNTOnnEKNwq2HLbCvWnWaem5q+BeMdhFO42LSoqsbgRt5/dsfy/3DuGvRvo43wWV/sNkF2UZc1VPm3pWZOFu9jaoIehAjWWfZeE4YgRwOhcZIpURxOcJAYcfvx5QMRLBHYEgiehnh9AKQ8KXtA~-1~-1~1690077802; Domain=.ikea.com; Path=/; Expires=Mon, 22 Jul 2024 01:04:05 GMT; Max-Age=31536000; Secure

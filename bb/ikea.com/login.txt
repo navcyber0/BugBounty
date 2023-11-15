@@ -1,0 +1,19 @@
+POST /LRS.Gateway/Account/Login?ReturnUrl=%2FLRS.Gateway%2Fconnect%2Fauthorize%2Fcallback%3Fresponse_type%3Dcode%26client_id%3Dvpsx-8ec62eca-59ea-4ced-8a5c-feae28fb0790%26redirect_uri%3Dhttps%253A%252F%252Fmyprinters.ikea.com%252Flrs%252Fnlrswc2.exe%252FVPSX%26scope%3Demail%2520profile%2520openid%2520gw%253Adirectory%2520offline_access%26code_challenge%3DotfyHRynhEnq5hRF58E0Btj998Lve4AGncjiQ2_b8xY%26code_challenge_method%3DS256%26state%3DJmp0cmlkPXZ4dnBybCZyZWRpcmVjdF91cmk9aHR0cHM6Ly9teXByaW50ZXJzLmlrZWEuY29tL2xycy9ubHJzd2MyLmV4ZS9WUFNYJnN0cmlkPWF1dGh3ZWI%253D%26theme%3Dlrs HTTP/1.1
+Host: myprinters.ikea.com
+Cookie: .AspNetCore.Antiforgery.Qe1SkhZhx_A=CfDJ8G7aN7wMAfdHihgegK47IqcFu87VCEHzkPyn4GAVNwRBAGtxy1rrd3IcDvH8XfR68bG_ILeMuPqe1E5bYtg9OwXZzEN-j-dNMYolm5JeQdOlRmLQ8Si9Gy5Gc5TYmeRBnCIdCDO9ZGXK1LMMFoFPcj4; RT="z=1&dm=ikea.com&si=1kjvdk5iboui&ss=lkequju4&sl=0&tt=0"; ak_bmsc=5F48AEE6550FA0015D3616F7C53F0FB4~000000000000000000000000000000~YAAQFZUvF5VGe2yJAQAAke0igRTwXSTqXe/KFBqHt/aK3gYw1XBIhRedm6ATa2F1gk6TcCqeCzF5j0FPTP21KFPXEXpVHXaRTSuBZxIuKcQdZ5icpdrruyS4D3v/eajKzVjR9J2ecc23DJoukhpDTjlc6simRSNdvvdq0P74hmbyzfeI5FjH0IFjL7ZSMczxdpEi7TVvSfey7AMErXMiCPX9dOZQUf9EWab+3GhPmyFerMxqlb66Rp7DFIhSNb/zwe6EE8ofdKZ24LrIszQNmU86kzLwUQe25ON8HQRhda7g8FaRZJjmOM/V0DMiXu7POqRZ0RPZmYCG98OMqnJe4v0sXy6gw4yEmGtxlVAq7UMG9PMzBqmgv+b7nSVPogrNNtp7VtHGuM8=; VMCFX_VSV_DMZ.TRIDSFX=; VMCFX_VSV_DMZ.CODEVERIFIER=9LGlGxunDGM1konXWE9KofYMQdvYmeZdYLicnJl3cIw; lrs_gw_theme=lrs
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 794
+Origin: null
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: same-origin
+Sec-Fetch-User: ?1
+Te: trailers
+Connection: close
+
+ReturnUrl=%2FLRS.Gateway%2Fconnect%2Fauthorize%2Fcallback%3Fresponse_type%3Dcode%26client_id%3Dvpsx-8ec62eca-59ea-4ced-8a5c-feae28fb0790%26redirect_uri%3Dhttps%253A%252F%252Fmyprinters.ikea.com%252Flrs%252Fnlrswc2.exe%252FVPSX%26scope%3Demail%2520profile%2520openid%2520gw%253Adirectory%2520offline_access%26code_challenge%3DotfyHRynhEnq5hRF58E0Btj998Lve4AGncjiQ2_b8xY%26code_challenge_method%3DS256%26state%3DJmp0cmlkPXZ4dnBybCZyZWRpcmVjdF91cmk9aHR0cHM6Ly9teXByaW50ZXJzLmlrZWEuY29tL2xycy9ubHJzd2MyLmV4ZS9WUFNYJnN0cmlkPWF1dGh3ZWI%253D%26theme%3Dlrs&Username=admin&Password=FUZZ&button=login&__RequestVerificationToken=CfDJ8G7aN7wMAfdHihgegK47Iqfd2QApVBgPCeLdpNmSl4A3U87hdWCwpoGe4GGoeFIPWBMPjZSbJ-C2eLgP4tqULJp4wagEKUp5nculvFl_mXomfBy0VlhbxMWPi4pwJ8JgideLbC2sB43j9A7PfNe_5dQ&RememberLogin=false

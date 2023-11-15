@@ -1,0 +1,15 @@
+401 Unauthorized
+X-Xss-Protection: 1; mode=block
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+Content-Security-Policy: default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://maps.google.com https://apis.google.com https://www.google-analytics.com https://*.googleapis.com *.gstatic.com ; child-src 'self' https://accounts.google.com; style-src 'unsafe-inline' 'self' fonts.googleapis.com; font-src 'self' fonts.gstatic.com themes.googleusercontent.com ; img-src * 'self' data:; connect-src 'self' metabase.us10.list-manage.com ;
+Retry-Count: 0
+Date: Sat, 01 Apr 2023 21:29:45 GMT
+Server: nginx/1.14.1
+Expires: Tue, 03 Jul 2001 06:00:00 GMT
+Content-Length: 15
+Content-Type: text/plain
+X-Frame-Options: DENY
+Last-Modified: Sat, 01 Apr 2023 21:29:45 +0000
+X-Permitted-Cross-Domain-Policies: none
+Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate

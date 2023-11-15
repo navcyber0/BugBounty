@@ -1,0 +1,8 @@
+403 FORBIDDEN
+Content-Type: text/plain; charset=utf-8
+Content-Length: 13
+Retry-Count: 0
+Request-Id: f0b0bfa0-6130-d07c-c746-4ab7fa7e4aa0
+X-Content-Type-Options: nosniff
+X-Ms-Invokeapp: 1; RequireReadOnly
+Date: Fri, 23 Jun 2023 15:31:56 GMT

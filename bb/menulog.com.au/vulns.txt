@@ -1,0 +1,8 @@
+[azure-domain-tenant] [http] [info] https://login.microsoftonline.com:443/menulog.com.au/v2.0/.well-known/openid-configuration [c2836782-58bb-4552-a503-21c2a59466f9]
+[ds-store-file] [http] [info] https://restaurantawards.menulog.com.au/.DS_Store
+[readme-md] [http] [info] https://restaurantawards.menulog.com.au/README.md
+[credentials-disclosure] [http] [unknown] https://restaurantawards.menulog.com.au ["API_KEY":"CcWYHaNuMk7tkdDp5giyQahKMiupUvCh1FrPDzU2"]
+[wordpress-readme-file] [http] [info] https://restaurantawards.menulog.com.au/wp/readme.html
+[composer-config:composer.json] [http] [info] https://partneressentials.menulog.com.au/vendor/composer/installed.json
+[google-api-key] [http] [info] https://partnersignup.menulog.com.au [AIzaSyDKp-xPCVBgO2c3aHqeSEP1u5NOVLZHVCE]
+[google-api-key] [http] [info] https://partnersignup.menulog.com.au/hopfully404 [AIzaSyDKp-xPCVBgO2c3aHqeSEP1u5NOVLZHVCE]

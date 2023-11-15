@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/static/img/favicon.ico?v=16ff6bd-1688465698">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" type="text/css"
+    rel="stylesheet" />
+  <link href="/static/css/ikea-styles.css?v=16ff6bd-1688465698" type="text/css" rel="stylesheet" />
+  <link href="/static/css/styles.css?v=16ff6bd-1688465698" type="text/css" rel="stylesheet" />
+
+  <title>IKEA</title>
+  <script type="text/javascript"></script>
+</head>
+
+<body class="error">
+  <div class="full-page-message">
+    <img class="full-page-message__image" src="/static/img/ill-alien.svg?v=16ff6bd-1688465698"
+      alt="404 - Page not found" />
+    <h1 class="full-page-message__title">Oh nein! Leider konnten wir nicht finden wonach du gesucht hast.</h2>
+      <p class="full-page-message__body">404 -  Die Seite konnte nicht gefunden werden.</p>
+  </div>
+  <pre class="error-details"><code>Request ID                              5941cb59-c0a6-4895-86fe-b3e5c942b999</code></pre>
+</body>
+
+<script type="text/javascript">
+ document.onkeyup = function(event) {
+   if (event.keyCode === 27){
+       window.parent.postMessage({eventType:"publitasPopUpClose"}, "*");
+   }
+}
+window.parent.postMessage({eventType:"pageNotFoundPopup",msg:"Page not found"}, "*");
+</script>
+
+</html>

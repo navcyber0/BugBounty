@@ -1,0 +1,16 @@
+200 OK
+Permissions-Policy: geolocation=(self), microphone=(), camera=(), fullscreen=*
+Accept-Ranges: bytes
+Date: Fri, 23 Jun 2023 15:26:59 GMT
+Last-Modified: Wed, 21 Jun 2023 16:29:43 GMT
+Retry-Count: 0
+Content-Length: 6253
+Etag: "64932577-186d"
+Content-Type: text/html
+Content-Security-Policy: default-src 'self'; object-src 'none'; script-src 'self' https://cdn.segment.com https://cdn.mxpnl.com https://cdn.announcekit.app https://js.refiner.io; connect-src 'self' *.openstreetmap.org *.locatee.ch https://api.segment.io https://cdn.segment.com https://api-js.mixpanel.com https://announcekit.app https://api.mapbox.com https://*.tiles.mapbox.com https://*.launchdarkly.com https://api.refiner.io wss://api.us.flatfile.io https://api.us.flatfile.io; img-src 'self' data: *.openstreetmap.org *.arcgisonline.com https://api.mapbox.com https://img.announcekit.app; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.announcekit.app; font-src 'self' data: https://fonts.googleapis.com https://fonts.gstatic.com; frame-src 'self' https://announcekit.app https://js.refiner.io https://app.flatfile.io https://app.flatfile.com; frame-ancestors 'self' https://dgs.post.ch https://dgs.aws.pnetcloud.ch https://int.dgs.aws.pnetcloud.ch;
+Referrer-Policy: strict-origin-when-cross-origin
+Strict-Transport-Security: max-age=63072000
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache, must-revalidate

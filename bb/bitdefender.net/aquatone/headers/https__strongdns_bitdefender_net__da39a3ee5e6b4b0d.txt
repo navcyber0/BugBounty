@@ -1,0 +1,16 @@
+200 OK
+Referrer-Policy: no-referrer-when-downgrade
+Cache-Control: public, no-cache
+Date: Wed, 22 Mar 2023 14:57:24 GMT
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Feature-Policy: accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+Server: nginx
+Last-Modified: Fri, 19 Mar 2021 05:58:33 GMT
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Content-Security-Policy: default-src 'self'; connect-src https://strongdns-api.bitdefender.net; script-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: ; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'none'; object-src 'none'
+Etag: W/"60543d89-3f3"
+X-Content-Type-Options: nosniff
+Retry-Count: 0
+Content-Type: text/html
